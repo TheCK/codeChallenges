@@ -1,0 +1,6 @@
+2
+Hello World
+CodeEval
+Quick Fox
+A
+San Francisco

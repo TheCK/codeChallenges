@@ -1,2 +1,9 @@
 # codeChallenges
-assortment of my solution to various coding challenges around the internet
+
+## [Project Euler](projectEuler/readme.md)
+
+## [codeEval](codeEval/readme.md)
+
+## [HackerRank](hackerRank/readme.md)
+
+

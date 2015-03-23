@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 125, name = "Predict the Number", description = "Try to go beyond the limits", url = "https://www.codeeval.com/open_challenges/125/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

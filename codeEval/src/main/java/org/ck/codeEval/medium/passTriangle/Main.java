@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 89, name = "Pass Triangle", description = "Lead the way within the triangle", url = "https://www.codeeval.com/open_challenges/89/", category = "Moderate callenges")
 public class Main
 {
 	private static int[][] sumSoFar = null;

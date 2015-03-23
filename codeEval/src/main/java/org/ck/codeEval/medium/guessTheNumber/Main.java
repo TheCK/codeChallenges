@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 170, name = "Guess the Number", description = "Guess the number in log2(N) steps.", url = "https://www.codeeval.com/open_challenges/170/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

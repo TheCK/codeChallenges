@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 73, name = "Decode Numbers", description = "Count the number of ways to decode a string.", url = "https://www.codeeval.com/open_challenges/73/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

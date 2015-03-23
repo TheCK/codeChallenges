@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 161, name = "Game of Life", description = "Implement the classical cellular automaton game.", url = "https://www.codeeval.com/open_challenges/161/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception
@@ -31,12 +34,12 @@ public class Main
 
 				++row;
 			}
-			
+
 			for (int i = 0; i < 10; ++i)
 			{
 				field = live(field);
 			}
-			
+
 			if (field != null)
 			{
 				for (row = 0; row < field.length; ++row)
@@ -55,13 +58,13 @@ public class Main
 	private static boolean[][] live(boolean[][] field)
 	{
 		boolean[][] newField = new boolean[field.length][field.length];
-		
+
 		for (int row = 0; row < field.length; ++row)
 		{
 			for (int column = 0; column < field[row].length; ++column)
 			{
 				int count = count(field, row, column);
-				
+
 				if (count == 3 && !field[row][column])
 				{
 					newField[row][column] = true;
@@ -76,14 +79,14 @@ public class Main
 				}
 			}
 		}
-		
+
 		return newField;
 	}
 
 	private static int count(boolean[][] field, int row, int column)
 	{
 		int count = 0;
-		
+
 		if (row > 0 && column > 0 && field[row - 1][column - 1])
 		{
 			++count;
@@ -116,7 +119,7 @@ public class Main
 		{
 			++count;
 		}
-		
+
 		return count;
 	}
 }

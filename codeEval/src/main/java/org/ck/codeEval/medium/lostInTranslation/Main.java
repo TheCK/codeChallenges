@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 121, name = "Lost In Translation", description = "Try to become a native speaker", url = "https://www.codeeval.com/open_challenges/121/", category = "Moderate callenges")
 public class Main
 {
 	private static final Map<Character, Character> translation = new HashMap<>();

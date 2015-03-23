@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 13, name = "Remove Characters", description = "Delete specific characters from a string.", url = "https://www.codeeval.com/open_challenges/13/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.util.Arrays;
 import java.util.List;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 177, name = "Justify the Text", description = "Align the text to the specified width.", url = "https://www.codeeval.com/open_challenges/177/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

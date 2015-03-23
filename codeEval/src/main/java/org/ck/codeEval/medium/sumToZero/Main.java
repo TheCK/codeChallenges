@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 81, name = "Sum to Zero", description = "Count of ways in which the sum of four numbers is zero", url = "https://www.codeeval.com/open_challenges/81/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

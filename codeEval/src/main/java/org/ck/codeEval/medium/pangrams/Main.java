@@ -7,6 +7,9 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 37, name = "Pangrams", description = "Find the missing alphabets", url = "https://www.codeeval.com/open_challenges/37/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

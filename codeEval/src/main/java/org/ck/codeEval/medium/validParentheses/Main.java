@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 68, name = "Valid parentheses", description = "Determine if string is a well-formed parentheses", url = "https://www.codeeval.com/open_challenges/68/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

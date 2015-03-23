@@ -4,12 +4,17 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Queue;
 import java.util.Stack;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 94, name = "Simple Calculator", description = "Create a simple calculator", url = "https://www.codeeval.com/open_challenges/94/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception
@@ -26,7 +31,7 @@ public class Main
 
 				Double result = calculate(postfix);
 				
-				DecimalFormat df = new DecimalFormat("0.#####");
+				DecimalFormat df = new DecimalFormat("0.#####", DecimalFormatSymbols.getInstance(Locale.US));
 				System.out.println(result.isNaN() ? "600" : df.format(result));
 			}
 		}

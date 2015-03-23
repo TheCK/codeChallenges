@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 33, name = "Double Squares", description = "FaceBook Hacker Cup 2011: Output the number of ways to write X as the sum of two squares", url = "https://www.codeeval.com/open_challenges/33/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

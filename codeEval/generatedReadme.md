@@ -34,7 +34,6 @@
 | 100 | Even Numbers                | [Determine if a number is even or not][100]                       | &#9989;[&#128190;][100solution] | &#9989;[&#128190;][100tests] |
 | 102 | JSON menu IDs               | [Calculate IDs in JSON menu][102]                                 | &#9989;[&#128190;][102solution] | &#9989;[&#128190;][102tests] |
 | 103 | Lowest Unique Number        | [Find the lowest unique number in a set][103]                     | &#9989;[&#128190;][103solution] | &#9989;[&#128190;][103tests] |
-| 103 | Lowest Unique Number        | [Find the lowest unique number in a set][103]                     | &#9989;[&#128190;][103solution] | &#9989;[&#128190;][103tests] |
 | 104 | Word to Digit               | [Substitute words to digits][104]                                 | &#9989;[&#128190;][104solution] | &#9989;[&#128190;][104tests] |
 | 106 | Roman Numerals              | [Convert a cardinal number to a Roman numeral][106]               | &#9989;[&#128190;][106solution] | &#9989;[&#128190;][106tests] |
 | 107 | Shortest Repetition         | [Find the shortest repetition in a string][107]                   | &#9989;[&#128190;][107solution] | &#9989;[&#128190;][107tests] |
@@ -61,6 +60,7 @@
 | 167 | Read More                   | [Limit the length of the text.][167]                              | &#9989;[&#128190;][167solution] | &#9989;[&#128190;][167tests] |
 | 173 | Without Repetitions         | [Delete characters that are consistently repeated.][173]          | &#9989;[&#128190;][173solution] | &#9989;[&#128190;][173tests] |
 | 174 | Slang Flavor                | [Add some slang to the text.][174]                                | &#9989;[&#128190;][174solution] | &#9989;[&#128190;][174tests] |
+| 179 | Matrix Rotation             | [Rotate a 2D matrix 90 degrees clockwise.][179]                   | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
 | 180 | Knight Moves                | [Find positions for the next move of the knight.][180]            | &#9989;[&#128190;][180solution] | &#9989;[&#128190;][180tests] |
 | 183 | Details                     | [Determine how many cells will be shifted detail.][183]           | &#9989;[&#128190;][183solution] | &#9989;[&#128190;][183tests] |
 | 186 | Max Range Sum               | [Determine max sum at the range.][186]                            | &#9989;[&#128190;][186solution] | &#9989;[&#128190;][186tests] |
@@ -97,7 +97,6 @@
 [100]: https://www.codeeval.com/open_challenges/100/
 [102]: https://www.codeeval.com/open_challenges/102/
 [103]: https://www.codeeval.com/open_challenges/103/
-[103]: https://www.codeeval.com/open_challenges/103/
 [104]: https://www.codeeval.com/open_challenges/104/
 [106]: https://www.codeeval.com/open_challenges/106/
 [107]: https://www.codeeval.com/open_challenges/107/
@@ -124,6 +123,7 @@
 [167]: https://www.codeeval.com/open_challenges/167/
 [173]: https://www.codeeval.com/open_challenges/173/
 [174]: https://www.codeeval.com/open_challenges/174/
+[179]: https://www.codeeval.com/open_challenges/179/
 [180]: https://www.codeeval.com/open_challenges/180/
 [183]: https://www.codeeval.com/open_challenges/183/
 [186]: https://www.codeeval.com/open_challenges/186/
@@ -160,7 +160,6 @@
 [100solution]: src/main/java/org/ck/codeEval/easy/evenNumbers/Main.java
 [102solution]: src/main/java/org/ck/codeEval/easy/jsonMenuIds/Main.java
 [103solution]: src/main/java/org/ck/codeEval/easy/lowestUniqueNumber/Main.java
-[103solution]: src/main/java/org/ck/codeEval/easy/matrixRotation/Main.java
 [104solution]: src/main/java/org/ck/codeEval/easy/wordToDigit/Main.java
 [106solution]: src/main/java/org/ck/codeEval/easy/romanNumerals/Main.java
 [107solution]: src/main/java/org/ck/codeEval/easy/shortestRepetition/Main.java
@@ -187,6 +186,7 @@
 [167solution]: src/main/java/org/ck/codeEval/easy/readMore/Main.java
 [173solution]: src/main/java/org/ck/codeEval/easy/withoutRepetitions/Main.java
 [174solution]: src/main/java/org/ck/codeEval/easy/slangFlavor/Main.java
+[179solution]: src/main/java/org/ck/codeEval/easy/matrixRotation/Main.java
 [180solution]: src/main/java/org/ck/codeEval/easy/knightMoves/Main.java
 [183solution]: src/main/java/org/ck/codeEval/easy/details/Main.java
 [186solution]: src/main/java/org/ck/codeEval/easy/maxRangeSum/Main.java
@@ -223,7 +223,6 @@
 [100tests]: src/test/java/org/ck/codeEval/easy/evenNumbers/MainTest.java
 [102tests]: src/test/java/org/ck/codeEval/easy/jsonMenuIds/MainTest.java
 [103tests]: src/test/java/org/ck/codeEval/easy/lowestUniqueNumber/MainTest.java
-[103tests]: src/test/java/org/ck/codeEval/easy/matrixRotation/MainTest.java
 [104tests]: src/test/java/org/ck/codeEval/easy/wordToDigit/MainTest.java
 [106tests]: src/test/java/org/ck/codeEval/easy/romanNumerals/MainTest.java
 [107tests]: src/test/java/org/ck/codeEval/easy/shortestRepetition/MainTest.java
@@ -250,6 +249,7 @@
 [167tests]: src/test/java/org/ck/codeEval/easy/readMore/MainTest.java
 [173tests]: src/test/java/org/ck/codeEval/easy/withoutRepetitions/MainTest.java
 [174tests]: src/test/java/org/ck/codeEval/easy/slangFlavor/MainTest.java
+[179tests]: src/test/java/org/ck/codeEval/easy/matrixRotation/MainTest.java
 [180tests]: src/test/java/org/ck/codeEval/easy/knightMoves/MainTest.java
 [183tests]: src/test/java/org/ck/codeEval/easy/details/MainTest.java
 [186tests]: src/test/java/org/ck/codeEval/easy/maxRangeSum/MainTest.java
@@ -326,71 +326,263 @@
 [155tests]: src/test/java/org/ck/codeEval/hard/asciiDecryption/MainTest.java
 [157tests]: src/test/java/org/ck/codeEval/hard/theLabyrinth/MainTest.java
 
-# Moderate callenges (12/15)
+# Moderate callenges (60/63)
 
-|   # | Name                      | Description                                                                                                  | Solution                        | Test                         |
-|----:|---------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
-|  41 | Array Absurdity           | [Determine if an array contains a duplicated entry][41]                                                      | &#9989;[&#128190;][41solution]  | &#9989;[&#128190;][41tests]  |
-|  54 | Cash Register             | [Determine the amount of change to be returned][54]                                                          | &#9989;[&#128190;][54solution]  | &#9989;[&#128190;][54tests]  |
-|  63 | Counting Primes           | [Count the number of primes between two integers.][63]                                                       | &#9989;[&#128190;][63solution]  | &#9989;[&#128190;][63tests]  |
-|  84 | Balanced Smileys          | [Facebook Hacker Cup 2013 problem.][84]                                                                      | [&#128190;][84solution]         | [&#128190;][84tests]         |
-| 117 | A Pile of Bricks          | [Close a hole in a wall][117]                                                                                | &#9989;[&#128190;][117solution] | &#9989;[&#128190;][117tests] |
-| 119 | Chain Inspection          | [Try to pass a chain][119]                                                                                   | &#9989;[&#128190;][119solution] | &#9989;[&#128190;][119tests] |
-| 130 | Sequence Transformation   | [Transform a binary sequence into a string][130]                                                             | [&#128190;][130solution]        | [&#128190;][130tests]        |
-| 133 | City Blocks Flyover       | [Chart the path of a helicopter from above to discover how many city blocks it flew over.][133]              | &#9989;[&#128190;][133solution] | &#9989;[&#128190;][133tests] |
-| 138 | Car Race                  | [Determine the fastest car][138]                                                                             | &#9989;[&#128190;][138solution] | &#9989;[&#128190;][138tests] |
-| 146 | Bats Challenge            | [Count bats on the wire.][146]                                                                               | &#9989;[&#128190;][146solution] | &#9989;[&#128190;][146tests] |
-| 148 | Color Code Converter      | [Determine and convert the color code][148]                                                                  | &#9989;[&#128190;][148solution] | &#9989;[&#128190;][148tests] |
-| 172 | Card number validation    | [Check if bank card numbers are valid.][172]                                                                 | &#9989;[&#128190;][172solution] | &#9989;[&#128190;][172tests] |
-| 179 | Broken LCD                | [Determine whether a given number can be displayed on the damaged LCD.][179]                                 | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
-| 184 | Burrows-Wheeler transform | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
-| 187 | Consecutive Primes        | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
+|   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
+|----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
+|   2 | Longest Lines                | [Finding the 'N' longest lines within a file.][2]                                                            | &#9989;[&#128190;][2solution]   | &#9989;[&#128190;][2tests]   |
+|   5 | Detecting Cycles             | [Detecting loops within a sequence.][5]                                                                      | &#9989;[&#128190;][5solution]   | &#9989;[&#128190;][5tests]   |
+|   9 | Stack Implementation         | [Implement a stack interface][9]                                                                             | &#9989;[&#128190;][9solution]   | &#9989;[&#128190;][9tests]   |
+|  10 | Mth to last element          | [Determine the Mth to last element][10]                                                                      | &#9989;[&#128190;][10solution]  | &#9989;[&#128190;][10tests]  |
+|  11 | Lowest Common Ancestor       | [Determine the lowest common ancestor within a tree][11]                                                     | &#9989;[&#128190;][11solution]  | &#9989;[&#128190;][11tests]  |
+|  12 | First Non-Repeated Character | [Find the first non repeated character in a string.][12]                                                     | &#9989;[&#128190;][12solution]  | &#9989;[&#128190;][12tests]  |
+|  13 | Remove Characters            | [Delete specific characters from a string.][13]                                                              | &#9989;[&#128190;][13solution]  | &#9989;[&#128190;][13tests]  |
+|  15 | Endianness                   | [Determine the endianness of a system.][15]                                                                  | &#9989;[&#128190;][15solution]  | &#9989;[&#128190;][15tests]  |
+|  16 | Number of Ones               | [Determine the number of one bits in an integer.][16]                                                        | &#9989;[&#128190;][16solution]  | &#9989;[&#128190;][16tests]  |
+|  17 | Sum of integers              | [Determine the largest sum of contiguous integers in an array.][17]                                          | &#9989;[&#128190;][17solution]  | &#9989;[&#128190;][17tests]  |
+|  27 | Decimal To Binary            | [Print the binary representation of a decimal number.][27]                                                   | &#9989;[&#128190;][27solution]  | &#9989;[&#128190;][27tests]  |
+|  32 | Trailing String              | [Determine if a string 'B' occurs at the end of string 'A'][32]                                              | &#9989;[&#128190;][32solution]  | &#9989;[&#128190;][32tests]  |
+|  33 | Double Squares               | [FaceBook Hacker Cup 2011: Output the number of ways to write X as the sum of two squares][33]               | &#9989;[&#128190;][33solution]  | &#9989;[&#128190;][33tests]  |
+|  34 | Number Pairs                 | [Find pairs of numbers in a sorted array whose sum is X][34]                                                 | &#9989;[&#128190;][34solution]  | &#9989;[&#128190;][34tests]  |
+|  35 | Email Validation             | [Write a regular expression to validate an email address][35]                                                | &#9989;[&#128190;][35solution]  | &#9989;[&#128190;][35tests]  |
+|  37 | Pangrams                     | [Find the missing alphabets][37]                                                                             | &#9989;[&#128190;][37solution]  | &#9989;[&#128190;][37tests]  |
+|  41 | Array Absurdity              | [Determine if an array contains a duplicated entry][41]                                                      | &#9989;[&#128190;][41solution]  | &#9989;[&#128190;][41tests]  |
+|  43 | Jolly Jumpers                | [Determine if a sequence of numbers is a Jolly Jumper][43]                                                   | &#9989;[&#128190;][43solution]  | &#9989;[&#128190;][43tests]  |
+|  45 | Reverse and Add              | [Continually add a number to its reverse to arrive at a palindrome][45]                                      | &#9989;[&#128190;][45solution]  | &#9989;[&#128190;][45tests]  |
+|  46 | Prime Numbers                | [Print prime numbers less than N][46]                                                                        | &#9989;[&#128190;][46solution]  | &#9989;[&#128190;][46tests]  |
+|  54 | Cash Register                | [Determine the amount of change to be returned][54]                                                          | &#9989;[&#128190;][54solution]  | &#9989;[&#128190;][54tests]  |
+|  63 | Counting Primes              | [Count the number of primes between two integers.][63]                                                       | &#9989;[&#128190;][63solution]  | &#9989;[&#128190;][63tests]  |
+|  66 | Pascals Triangle             | [Print out pascals triangle upto a certain depth.][66]                                                       | &#9989;[&#128190;][66solution]  | &#9989;[&#128190;][66tests]  |
+|  68 | Valid parentheses            | [Determine if string is a well-formed parentheses][68]                                                       | &#9989;[&#128190;][68solution]  | &#9989;[&#128190;][68tests]  |
+|  70 | Overlapping Rectangles       | [Determine if two rectangles overlap.][70]                                                                   | &#9989;[&#128190;][70solution]  | &#9989;[&#128190;][70tests]  |
+|  71 | Reverse Groups               | [Reverse elements in a list k items at a time.][71]                                                          | &#9989;[&#128190;][71solution]  | &#9989;[&#128190;][71tests]  |
+|  73 | Decode Numbers               | [Count the number of ways to decode a string.][73]                                                           | &#9989;[&#128190;][73solution]  | &#9989;[&#128190;][73tests]  |
+|  74 | Minimum Coins                | [Find the minimum number of coins to arrive at a total.][74]                                                 | &#9989;[&#128190;][74solution]  | &#9989;[&#128190;][74tests]  |
+|  75 | Flavius Josephus             | [Eliminate every i'th item from a circular list.][75]                                                        | &#9989;[&#128190;][75solution]  | &#9989;[&#128190;][75tests]  |
+|  76 | String Rotation              | [Find if a string is the rotation of another string.][76]                                                    | &#9989;[&#128190;][76solution]  | &#9989;[&#128190;][76tests]  |
+|  78 | Sudoku                       | [Determine if a grid layout is a valid sudoku solution.][78]                                                 | &#9989;[&#128190;][78solution]  | &#9989;[&#128190;][78tests]  |
+|  80 | URI Comparison               | [Determine if two URIs match][80]                                                                            | &#9989;[&#128190;][80solution]  | &#9989;[&#128190;][80tests]  |
+|  81 | Sum to Zero                  | [Count of ways in which the sum of four numbers is zero][81]                                                 | &#9989;[&#128190;][81solution]  | &#9989;[&#128190;][81tests]  |
+|  84 | Balanced Smileys             | [Facebook Hacker Cup 2013 problem.][84]                                                                      | [&#128190;][84solution]         | [&#128190;][84tests]         |
+|  89 | Pass Triangle                | [Lead the way within the triangle][89]                                                                       | &#9989;[&#128190;][89solution]  | &#9989;[&#128190;][89tests]  |
+|  94 | Simple Calculator            | [Create a simple calculator][94]                                                                             | &#9989;[&#128190;][94solution]  | &#9989;[&#128190;][94tests]  |
+|  98 | Point in Circle              | [Define whether a point is in a circle][98]                                                                  | &#9989;[&#128190;][98solution]  | &#9989;[&#128190;][98tests]  |
+| 101 | Find a Square                | [Do 4 points make a square?][101]                                                                            | &#9989;[&#128190;][101solution] | &#9989;[&#128190;][101tests] |
+| 117 | A Pile of Bricks             | [Close a hole in a wall][117]                                                                                | &#9989;[&#128190;][117solution] | &#9989;[&#128190;][117tests] |
+| 119 | Chain Inspection             | [Try to pass a chain][119]                                                                                   | &#9989;[&#128190;][119solution] | &#9989;[&#128190;][119tests] |
+| 121 | Lost In Translation          | [Try to become a native speaker][121]                                                                        | &#9989;[&#128190;][121solution] | &#9989;[&#128190;][121tests] |
+| 125 | Predict the Number           | [Try to go beyond the limits][125]                                                                           | &#9989;[&#128190;][125solution] | &#9989;[&#128190;][125tests] |
+| 130 | Sequence Transformation      | [Transform a binary sequence into a string][130]                                                             | [&#128190;][130solution]        | [&#128190;][130tests]        |
+| 133 | City Blocks Flyover          | [Chart the path of a helicopter from above to discover how many city blocks it flew over.][133]              | &#9989;[&#128190;][133solution] | &#9989;[&#128190;][133tests] |
+| 135 | Word chain                   | [Find the longest chain of words][135]                                                                       | &#9989;[&#128190;][135solution] | &#9989;[&#128190;][135tests] |
+| 137 | Seek for an Intruder         | [Find the IP address of an intruder][137]                                                                    | &#9989;[&#128190;][137solution] | &#9989;[&#128190;][137tests] |
+| 138 | Car Race                     | [Determine the fastest car][138]                                                                             | &#9989;[&#128190;][138solution] | &#9989;[&#128190;][138tests] |
+| 143 | The Ministry of Truth        | [Your task is to help the Big Brother][143]                                                                  | &#9989;[&#128190;][143solution] | &#9989;[&#128190;][143tests] |
+| 146 | Bats Challenge               | [Count bats on the wire.][146]                                                                               | &#9989;[&#128190;][146solution] | &#9989;[&#128190;][146tests] |
+| 148 | Color Code Converter         | [Determine and convert the color code][148]                                                                  | &#9989;[&#128190;][148solution] | &#9989;[&#128190;][148tests] |
+| 150 | Roman and Arabic             | [Calculate aromatic numbers.][150]                                                                           | &#9989;[&#128190;][150solution] | &#9989;[&#128190;][150tests] |
+| 153 | Locks                        | [Calculate unlocked doors.][153]                                                                             | &#9989;[&#128190;][153solution] | &#9989;[&#128190;][153tests] |
+| 158 | Interrupted Bubble Sort      | [Sort a list of elements. Partially.][158]                                                                   | &#9989;[&#128190;][158solution] | &#9989;[&#128190;][158tests] |
+| 161 | Game of Life                 | [Implement the classical cellular automaton game.][161]                                                      | &#9989;[&#128190;][161solution] | &#9989;[&#128190;][161tests] |
+| 165 | Suggest Groups               | [Help your friends to join groups.][165]                                                                     | &#9989;[&#128190;][165solution] | &#9989;[&#128190;][165tests] |
+| 169 | Filename Pattern             | [Filter a list of filenames.][169]                                                                           | &#9989;[&#128190;][169solution] | &#9989;[&#128190;][169tests] |
+| 170 | Guess the Number             | [Guess the number in log2(N) steps.][170]                                                                    | &#9989;[&#128190;][170solution] | &#9989;[&#128190;][170tests] |
+| 172 | Card number validation       | [Check if bank card numbers are valid.][172]                                                                 | &#9989;[&#128190;][172solution] | &#9989;[&#128190;][172tests] |
+| 177 | Justify the Text             | [Align the text to the specified width.][177]                                                                | &#9989;[&#128190;][177solution] | &#9989;[&#128190;][177tests] |
+| 179 | Broken LCD                   | [Determine whether a given number can be displayed on the damaged LCD.][179]                                 | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
+| 181 | Gronsfeld cipher             | [Decipher the message enciphered with the Gronsfeld cipher.][181]                                            | &#9989;[&#128190;][181solution] | &#9989;[&#128190;][181tests] |
+| 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
+| 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
 
+[2]: https://www.codeeval.com/open_challenges/2/
+[5]: https://www.codeeval.com/open_challenges/5/
+[9]: https://www.codeeval.com/open_challenges/9/
+[10]: https://www.codeeval.com/open_challenges/10/
+[11]: https://www.codeeval.com/open_challenges/11/
+[12]: https://www.codeeval.com/open_challenges/12/
+[13]: https://www.codeeval.com/open_challenges/13/
+[15]: https://www.codeeval.com/open_challenges/15/
+[16]: https://www.codeeval.com/open_challenges/16/
+[17]: https://www.codeeval.com/open_challenges/17/
+[27]: https://www.codeeval.com/open_challenges/27/
+[32]: https://www.codeeval.com/open_challenges/32/
+[33]: https://www.codeeval.com/open_challenges/33/
+[34]: https://www.codeeval.com/open_challenges/34/
+[35]: https://www.codeeval.com/open_challenges/35/
+[37]: https://www.codeeval.com/open_challenges/37/
 [41]: https://www.codeeval.com/open_challenges/41/
+[43]: https://www.codeeval.com/open_challenges/43/
+[45]: https://www.codeeval.com/open_challenges/45/
+[46]: https://www.codeeval.com/open_challenges/46/
 [54]: https://www.codeeval.com/open_challenges/54/
 [63]: https://www.codeeval.com/open_challenges/63/
+[66]: https://www.codeeval.com/open_challenges/66/
+[68]: https://www.codeeval.com/open_challenges/68/
+[70]: https://www.codeeval.com/open_challenges/70/
+[71]: https://www.codeeval.com/open_challenges/71/
+[73]: https://www.codeeval.com/open_challenges/73/
+[74]: https://www.codeeval.com/open_challenges/74/
+[75]: https://www.codeeval.com/open_challenges/75/
+[76]: https://www.codeeval.com/open_challenges/76/
+[78]: https://www.codeeval.com/open_challenges/78/
+[80]: https://www.codeeval.com/open_challenges/80/
+[81]: https://www.codeeval.com/open_challenges/81/
 [84]: https://www.codeeval.com/open_challenges/84/
+[89]: https://www.codeeval.com/open_challenges/89/
+[94]: https://www.codeeval.com/open_challenges/94/
+[98]: https://www.codeeval.com/open_challenges/98/
+[101]: https://www.codeeval.com/open_challenges/101/
 [117]: https://www.codeeval.com/open_challenges/117/
 [119]: https://www.codeeval.com/open_challenges/119/
+[121]: https://www.codeeval.com/open_challenges/121/
+[125]: https://www.codeeval.com/open_challenges/125/
 [130]: https://www.codeeval.com/open_challenges/130/
 [133]: https://www.codeeval.com/open_challenges/133/
+[135]: https://www.codeeval.com/open_challenges/135/
+[137]: https://www.codeeval.com/open_challenges/137/
 [138]: https://www.codeeval.com/open_challenges/138/
+[143]: https://www.codeeval.com/open_challenges/143/
 [146]: https://www.codeeval.com/open_challenges/146/
 [148]: https://www.codeeval.com/open_challenges/148/
+[150]: https://www.codeeval.com/open_challenges/150/
+[153]: https://www.codeeval.com/open_challenges/153/
+[158]: https://www.codeeval.com/open_challenges/158/
+[161]: https://www.codeeval.com/open_challenges/161/
+[165]: https://www.codeeval.com/open_challenges/165/
+[169]: https://www.codeeval.com/open_challenges/169/
+[170]: https://www.codeeval.com/open_challenges/170/
 [172]: https://www.codeeval.com/open_challenges/172/
+[177]: https://www.codeeval.com/open_challenges/177/
 [179]: https://www.codeeval.com/open_challenges/179/
+[181]: https://www.codeeval.com/open_challenges/181/
 [184]: https://www.codeeval.com/open_challenges/184/
 [187]: https://www.codeeval.com/open_challenges/187/
 
+[2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
+[5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
+[9solution]: src/main/java/org/ck/codeEval/medium/stackImplementation/Main.java
+[10solution]: src/main/java/org/ck/codeEval/medium/mThToLastElement/Main.java
+[11solution]: src/main/java/org/ck/codeEval/medium/lowestCommonAncestor/Main.java
+[12solution]: src/main/java/org/ck/codeEval/medium/firstNonRepeatedCharacter/Main.java
+[13solution]: src/main/java/org/ck/codeEval/medium/removeCharacters/Main.java
+[15solution]: src/main/java/org/ck/codeEval/medium/endianess/Main.java
+[16solution]: src/main/java/org/ck/codeEval/medium/numberOfOnes/Main.java
+[17solution]: src/main/java/org/ck/codeEval/medium/sumOfIntegers/Main.java
+[27solution]: src/main/java/org/ck/codeEval/medium/decimalToBinary/Main.java
+[32solution]: src/main/java/org/ck/codeEval/medium/trailingString/Main.java
+[33solution]: src/main/java/org/ck/codeEval/medium/doubleSquares/Main.java
+[34solution]: src/main/java/org/ck/codeEval/medium/numberPairs/Main.java
+[35solution]: src/main/java/org/ck/codeEval/medium/emailValidation/Main.java
+[37solution]: src/main/java/org/ck/codeEval/medium/pangrams/Main.java
 [41solution]: src/main/java/org/ck/codeEval/medium/arrayAbsurdity/Main.java
+[43solution]: src/main/java/org/ck/codeEval/medium/jollyJumpers/Main.java
+[45solution]: src/main/java/org/ck/codeEval/medium/reverseAndAdd/Main.java
+[46solution]: src/main/java/org/ck/codeEval/medium/primeNumbers/Main.java
 [54solution]: src/main/java/org/ck/codeEval/medium/cashRegister/Main.java
 [63solution]: src/main/java/org/ck/codeEval/medium/countingPrimes/Main.java
+[66solution]: src/main/java/org/ck/codeEval/medium/pascalsTriangle/Main.java
+[68solution]: src/main/java/org/ck/codeEval/medium/validParentheses/Main.java
+[70solution]: src/main/java/org/ck/codeEval/medium/overlappingRectangles/Main.java
+[71solution]: src/main/java/org/ck/codeEval/medium/reverseGroups/Main.java
+[73solution]: src/main/java/org/ck/codeEval/medium/decodeNumbers/Main.java
+[74solution]: src/main/java/org/ck/codeEval/medium/minimumCoins/Main.java
+[75solution]: src/main/java/org/ck/codeEval/medium/flaviusJosephus/Main.java
+[76solution]: src/main/java/org/ck/codeEval/medium/stringRotation/Main.java
+[78solution]: src/main/java/org/ck/codeEval/medium/sudoku/Main.java
+[80solution]: src/main/java/org/ck/codeEval/medium/uriComparison/Main.java
+[81solution]: src/main/java/org/ck/codeEval/medium/sumToZero/Main.java
 [84solution]: src/main/java/org/ck/codeEval/medium/balancedSmileys/Main.java
+[89solution]: src/main/java/org/ck/codeEval/medium/passTriangle/Main.java
+[94solution]: src/main/java/org/ck/codeEval/medium/simpleCalculator/Main.java
+[98solution]: src/main/java/org/ck/codeEval/medium/pointInCircle/Main.java
+[101solution]: src/main/java/org/ck/codeEval/medium/findASquare/Main.java
 [117solution]: src/main/java/org/ck/codeEval/medium/aPileOfBricks/Main.java
 [119solution]: src/main/java/org/ck/codeEval/medium/chainInspection/Main.java
+[121solution]: src/main/java/org/ck/codeEval/medium/lostInTranslation/Main.java
+[125solution]: src/main/java/org/ck/codeEval/medium/predictTheNumber/Main.java
 [130solution]: src/main/java/org/ck/codeEval/medium/sequenceTransformation/Main.java
 [133solution]: src/main/java/org/ck/codeEval/medium/cityBlocksFlyover/Main.java
+[135solution]: src/main/java/org/ck/codeEval/medium/wordChain/Main.java
+[137solution]: src/main/java/org/ck/codeEval/medium/seekForAnIntruder/Main.java
 [138solution]: src/main/java/org/ck/codeEval/medium/carRace/Main.java
+[143solution]: src/main/java/org/ck/codeEval/medium/theMinistryOfTruth/Main.java
 [146solution]: src/main/java/org/ck/codeEval/medium/batsChallenge/Main.java
 [148solution]: src/main/java/org/ck/codeEval/medium/colorCodeConverter/Main.java
+[150solution]: src/main/java/org/ck/codeEval/medium/romanAndArabic/Main.java
+[153solution]: src/main/java/org/ck/codeEval/medium/locks/Main.java
+[158solution]: src/main/java/org/ck/codeEval/medium/interruptedBubbleSort/Main.java
+[161solution]: src/main/java/org/ck/codeEval/medium/gameOfLife/Main.java
+[165solution]: src/main/java/org/ck/codeEval/medium/suggestGroups/Main.java
+[169solution]: src/main/java/org/ck/codeEval/medium/filenamePattern/Main.java
+[170solution]: src/main/java/org/ck/codeEval/medium/guessTheNumber/Main.java
 [172solution]: src/main/java/org/ck/codeEval/medium/cardNumberValidation/Main.java
+[177solution]: src/main/java/org/ck/codeEval/medium/justifyTheText/Main.java
 [179solution]: src/main/java/org/ck/codeEval/medium/brokenLCD/Main.java
+[181solution]: src/main/java/org/ck/codeEval/medium/gronsfeldCipher/Main.java
 [184solution]: src/main/java/org/ck/codeEval/medium/burrowsWheelerTransform/Main.java
 [187solution]: src/main/java/org/ck/codeEval/medium/consecutivePrimes/Main.java
 
+[2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
+[5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
+[9tests]: src/test/java/org/ck/codeEval/medium/stackImplementation/MainTest.java
+[10tests]: src/test/java/org/ck/codeEval/medium/mThToLastElement/MainTest.java
+[11tests]: src/test/java/org/ck/codeEval/medium/lowestCommonAncestor/MainTest.java
+[12tests]: src/test/java/org/ck/codeEval/medium/firstNonRepeatedCharacter/MainTest.java
+[13tests]: src/test/java/org/ck/codeEval/medium/removeCharacters/MainTest.java
+[15tests]: src/test/java/org/ck/codeEval/medium/endianess/MainTest.java
+[16tests]: src/test/java/org/ck/codeEval/medium/numberOfOnes/MainTest.java
+[17tests]: src/test/java/org/ck/codeEval/medium/sumOfIntegers/MainTest.java
+[27tests]: src/test/java/org/ck/codeEval/medium/decimalToBinary/MainTest.java
+[32tests]: src/test/java/org/ck/codeEval/medium/trailingString/MainTest.java
+[33tests]: src/test/java/org/ck/codeEval/medium/doubleSquares/MainTest.java
+[34tests]: src/test/java/org/ck/codeEval/medium/numberPairs/MainTest.java
+[35tests]: src/test/java/org/ck/codeEval/medium/emailValidation/MainTest.java
+[37tests]: src/test/java/org/ck/codeEval/medium/pangrams/MainTest.java
 [41tests]: src/test/java/org/ck/codeEval/medium/arrayAbsurdity/MainTest.java
+[43tests]: src/test/java/org/ck/codeEval/medium/jollyJumpers/MainTest.java
+[45tests]: src/test/java/org/ck/codeEval/medium/reverseAndAdd/MainTest.java
+[46tests]: src/test/java/org/ck/codeEval/medium/primeNumbers/MainTest.java
 [54tests]: src/test/java/org/ck/codeEval/medium/cashRegister/MainTest.java
 [63tests]: src/test/java/org/ck/codeEval/medium/countingPrimes/MainTest.java
+[66tests]: src/test/java/org/ck/codeEval/medium/pascalsTriangle/MainTest.java
+[68tests]: src/test/java/org/ck/codeEval/medium/validParentheses/MainTest.java
+[70tests]: src/test/java/org/ck/codeEval/medium/overlappingRectangles/MainTest.java
+[71tests]: src/test/java/org/ck/codeEval/medium/reverseGroups/MainTest.java
+[73tests]: src/test/java/org/ck/codeEval/medium/decodeNumbers/MainTest.java
+[74tests]: src/test/java/org/ck/codeEval/medium/minimumCoins/MainTest.java
+[75tests]: src/test/java/org/ck/codeEval/medium/flaviusJosephus/MainTest.java
+[76tests]: src/test/java/org/ck/codeEval/medium/stringRotation/MainTest.java
+[78tests]: src/test/java/org/ck/codeEval/medium/sudoku/MainTest.java
+[80tests]: src/test/java/org/ck/codeEval/medium/uriComparison/MainTest.java
+[81tests]: src/test/java/org/ck/codeEval/medium/sumToZero/MainTest.java
 [84tests]: src/test/java/org/ck/codeEval/medium/balancedSmileys/MainTest.java
+[89tests]: src/test/java/org/ck/codeEval/medium/passTriangle/MainTest.java
+[94tests]: src/test/java/org/ck/codeEval/medium/simpleCalculator/MainTest.java
+[98tests]: src/test/java/org/ck/codeEval/medium/pointInCircle/MainTest.java
+[101tests]: src/test/java/org/ck/codeEval/medium/findASquare/MainTest.java
 [117tests]: src/test/java/org/ck/codeEval/medium/aPileOfBricks/MainTest.java
 [119tests]: src/test/java/org/ck/codeEval/medium/chainInspection/MainTest.java
+[121tests]: src/test/java/org/ck/codeEval/medium/lostInTranslation/MainTest.java
+[125tests]: src/test/java/org/ck/codeEval/medium/predictTheNumber/MainTest.java
 [130tests]: src/test/java/org/ck/codeEval/medium/sequenceTransformation/MainTest.java
 [133tests]: src/test/java/org/ck/codeEval/medium/cityBlocksFlyover/MainTest.java
+[135tests]: src/test/java/org/ck/codeEval/medium/wordChain/MainTest.java
+[137tests]: src/test/java/org/ck/codeEval/medium/seekForAnIntruder/MainTest.java
 [138tests]: src/test/java/org/ck/codeEval/medium/carRace/MainTest.java
+[143tests]: src/test/java/org/ck/codeEval/medium/theMinistryOfTruth/MainTest.java
 [146tests]: src/test/java/org/ck/codeEval/medium/batsChallenge/MainTest.java
 [148tests]: src/test/java/org/ck/codeEval/medium/colorCodeConverter/MainTest.java
+[150tests]: src/test/java/org/ck/codeEval/medium/romanAndArabic/MainTest.java
+[153tests]: src/test/java/org/ck/codeEval/medium/locks/MainTest.java
+[158tests]: src/test/java/org/ck/codeEval/medium/interruptedBubbleSort/MainTest.java
+[161tests]: src/test/java/org/ck/codeEval/medium/gameOfLife/MainTest.java
+[165tests]: src/test/java/org/ck/codeEval/medium/suggestGroups/MainTest.java
+[169tests]: src/test/java/org/ck/codeEval/medium/filenamePattern/MainTest.java
+[170tests]: src/test/java/org/ck/codeEval/medium/guessTheNumber/MainTest.java
 [172tests]: src/test/java/org/ck/codeEval/medium/cardNumberValidation/MainTest.java
+[177tests]: src/test/java/org/ck/codeEval/medium/justifyTheText/MainTest.java
 [179tests]: src/test/java/org/ck/codeEval/medium/brokenLCD/MainTest.java
+[181tests]: src/test/java/org/ck/codeEval/medium/gronsfeldCipher/MainTest.java
 [184tests]: src/test/java/org/ck/codeEval/medium/burrowsWheelerTransform/MainTest.java
 [187tests]: src/test/java/org/ck/codeEval/medium/consecutivePrimes/MainTest.java
 

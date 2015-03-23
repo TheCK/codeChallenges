@@ -7,6 +7,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 43, name = "Jolly Jumpers", description = "Determine if a sequence of numbers is a Jolly Jumper", url = "https://www.codeeval.com/open_challenges/43/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

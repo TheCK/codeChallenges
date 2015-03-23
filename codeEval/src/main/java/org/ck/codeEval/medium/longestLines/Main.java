@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 2, name = "Longest Lines", description = "Finding the 'N' longest lines within a file.", url = "https://www.codeeval.com/open_challenges/2/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

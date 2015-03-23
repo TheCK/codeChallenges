@@ -9,6 +9,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 101, name = "Find a Square", description = "Do 4 points make a square?", url = "https://www.codeeval.com/open_challenges/101/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

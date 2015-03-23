@@ -9,6 +9,9 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 165, name = "Suggest Groups", description = "Help your friends to join groups.", url = "https://www.codeeval.com/open_challenges/165/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

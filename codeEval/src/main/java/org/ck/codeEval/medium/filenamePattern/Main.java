@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 169, name = "Filename Pattern", description = "Filter a list of filenames.", url = "https://www.codeeval.com/open_challenges/169/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

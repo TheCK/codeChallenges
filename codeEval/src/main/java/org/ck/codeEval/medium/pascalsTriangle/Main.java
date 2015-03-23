@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 66, name = "Pascals Triangle", description = "Print out pascals triangle upto a certain depth.", url = "https://www.codeeval.com/open_challenges/66/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

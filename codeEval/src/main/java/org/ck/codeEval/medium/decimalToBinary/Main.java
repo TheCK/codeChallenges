@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
+@Solution(id = 27, name = "Decimal To Binary", description = "Print the binary representation of a decimal number.", url = "https://www.codeeval.com/open_challenges/27/", category = "Moderate callenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

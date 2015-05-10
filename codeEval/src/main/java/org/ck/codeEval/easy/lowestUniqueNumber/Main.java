@@ -8,7 +8,7 @@ import java.util.TreeMap;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 103, name = "Lowest Unique Number", description = "Find the lowest unique number in a set", url = "https://www.codeeval.com/open_challenges/103/", category = "Easy callenges")
+@Solution(id = 103, name = "Lowest Unique Number", description = "Find the lowest unique number in a set", url = "https://www.codeeval.com/open_challenges/103/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -1,69 +1,71 @@
-# Easy callenges (62/62)
+# Easy challenges (64/64)
 
-|   # | Name                        | Description                                                       | Solution                        | Test                         |
-|----:|-----------------------------|-------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
-|   1 | Fizz Buzz                   | [A simple game involving divisibility tests.][1]                  | &#9989;[&#128190;][1solution]   | &#9989;[&#128190;][1tests]   |
-|   3 | Prime Palindrome            | [Biggest prime palindrome < 1000.][3]                             | &#9989;[&#128190;][3solution]   | &#9989;[&#128190;][3tests]   |
-|   4 | Sum of Primes               | [Sum of first 1000 primes.][4]                                    | &#9989;[&#128190;][4solution]   | &#9989;[&#128190;][4tests]   |
-|   8 | Reverse words               | [Reversing an input sequence of words.][8]                        | &#9989;[&#128190;][8solution]   | &#9989;[&#128190;][8tests]   |
-|  18 | Multiples of a Number       | [Multiples of a number greater than another number.][18]          | &#9989;[&#128190;][18solution]  | &#9989;[&#128190;][18tests]  |
-|  19 | Bit Positions               | [Bits in position x,y are same or different.][19]                 | &#9989;[&#128190;][19solution]  | &#9989;[&#128190;][19tests]  |
-|  20 | Lowercase                   | [Lowercase text][20]                                              | &#9989;[&#128190;][20solution]  | &#9989;[&#128190;][20tests]  |
-|  21 | Sum of Digits               | [Sum of digits comprising a number][21]                           | &#9989;[&#128190;][21solution]  | &#9989;[&#128190;][21tests]  |
-|  22 | Fibonacci Series            | [Print out the nth fibonacci number][22]                          | &#9989;[&#128190;][22solution]  | &#9989;[&#128190;][22tests]  |
-|  23 | Multiplication Tables       | [Print out the grade school multiplication table upto 12*12][23]  | &#9989;[&#128190;][23solution]  | &#9989;[&#128190;][23tests]  |
-|  24 | Sum of Integers from File   | [Print the sum of integers read from a file.][24]                 | &#9989;[&#128190;][24solution]  | &#9989;[&#128190;][24tests]  |
-|  25 | Odd Numbers                 | [Print the odd numbers from 1 to 99.][25]                         | &#9989;[&#128190;][25solution]  | &#9989;[&#128190;][25tests]  |
-|  26 | File Size                   | [Print the file size in bytes.][26]                               | &#9989;[&#128190;][26solution]  | &#9989;[&#128190;][26tests]  |
-|  29 | Unique Elements             | [Extract unique list from a sorted list of numbers.][29]          | &#9989;[&#128190;][29solution]  | &#9989;[&#128190;][29tests]  |
-|  30 | Set Intersection            | [Print the intersection of two sets of numbers.][30]              | &#9989;[&#128190;][30solution]  | &#9989;[&#128190;][30tests]  |
-|  31 | Rightmost Char              | [Print the position of the rightmost occurrence of a char.][31]   | &#9989;[&#128190;][31solution]  | &#9989;[&#128190;][31tests]  |
-|  39 | Happy Numbers               | [Determine if a number is a happy number or not][39]              | &#9989;[&#128190;][39solution]  | &#9989;[&#128190;][39tests]  |
-|  40 | Self Describing Numbers     | [Determine if a number is a self-describing number or not][40]    | &#9989;[&#128190;][40solution]  | &#9989;[&#128190;][40tests]  |
-|  62 | N Mod M                     | [Determine the modulus (without the modulus operator).][62]       | &#9989;[&#128190;][62solution]  | &#9989;[&#128190;][62tests]  |
-|  67 | Hex to Decimal              | [Convert a hex number to it's decimal equivalent.][67]            | &#9989;[&#128190;][67solution]  | &#9989;[&#128190;][67tests]  |
-|  82 | Armstrong Numbers           | [Determine if a number is an armstrong number.][82]               | &#9989;[&#128190;][82solution]  | &#9989;[&#128190;][82tests]  |
-|  83 | Beautiful Strings           | [Facebook Hacker Cup 2013 problem.][83]                           | &#9989;[&#128190;][83solution]  | &#9989;[&#128190;][83tests]  |
-|  87 | Query Board                 | [Set and get values from a matrix using tiny DSL][87]             | &#9989;[&#128190;][87solution]  | &#9989;[&#128190;][87tests]  |
-|  91 | Simple Sorting              | [Sort several numbers][91]                                        | &#9989;[&#128190;][91solution]  | &#9989;[&#128190;][91tests]  |
-|  92 | Penultimate Word            | [Find the next-to-last word][92]                                  | &#9989;[&#128190;][92solution]  | &#9989;[&#128190;][92tests]  |
-|  93 | Capitalize Words            | [Capitalize words in a sentence][93]                              | &#9989;[&#128190;][93solution]  | &#9989;[&#128190;][93tests]  |
-|  96 | Swap Case                   | [Swap case in a string][96]                                       | &#9989;[&#128190;][96solution]  | &#9989;[&#128190;][96tests]  |
-|  97 | Find a Writer               | [Find a famous writer in a string][97]                            | &#9989;[&#128190;][97solution]  | &#9989;[&#128190;][97tests]  |
-|  99 | Calculate Distance          | [Calculate a distance between two points][99]                     | &#9989;[&#128190;][99solution]  | &#9989;[&#128190;][99tests]  |
-| 100 | Even Numbers                | [Determine if a number is even or not][100]                       | &#9989;[&#128190;][100solution] | &#9989;[&#128190;][100tests] |
-| 102 | JSON menu IDs               | [Calculate IDs in JSON menu][102]                                 | &#9989;[&#128190;][102solution] | &#9989;[&#128190;][102tests] |
-| 103 | Lowest Unique Number        | [Find the lowest unique number in a set][103]                     | &#9989;[&#128190;][103solution] | &#9989;[&#128190;][103tests] |
-| 104 | Word to Digit               | [Substitute words to digits][104]                                 | &#9989;[&#128190;][104solution] | &#9989;[&#128190;][104tests] |
-| 106 | Roman Numerals              | [Convert a cardinal number to a Roman numeral][106]               | &#9989;[&#128190;][106solution] | &#9989;[&#128190;][106tests] |
-| 107 | Shortest Repetition         | [Find the shortest repetition in a string][107]                   | &#9989;[&#128190;][107solution] | &#9989;[&#128190;][107tests] |
-| 111 | Longest Word                | [Get the longest word in a sentence][111]                         | &#9989;[&#128190;][111solution] | &#9989;[&#128190;][111tests] |
-| 112 | Swap Elements               | [Swap elements in a list][112]                                    | &#9989;[&#128190;][112solution] | &#9989;[&#128190;][112tests] |
-| 113 | Multiply Lists              | [Multiply elements in 2 lists][113]                               | &#9989;[&#128190;][113solution] | &#9989;[&#128190;][113tests] |
-| 115 | Mixed Content               | [Separate words with digits][115]                                 | &#9989;[&#128190;][115solution] | &#9989;[&#128190;][115tests] |
-| 116 | Morse Code                  | [Decode Morse code][116]                                          | &#9989;[&#128190;][116solution] | &#9989;[&#128190;][116tests] |
-| 122 | Hidden Digits               | [Try to look behind the scenes][122]                              | &#9989;[&#128190;][122solution] | &#9989;[&#128190;][122tests] |
-| 124 | Road Trip                   | [Do not be left without petrol][124]                              | &#9989;[&#128190;][124solution] | &#9989;[&#128190;][124tests] |
-| 128 | Compressed Sequence         | [Write a program that compresses a sequence of numbers][128]      | &#9989;[&#128190;][128solution] | &#9989;[&#128190;][128tests] |
-| 131 | Split The Number            | [Evaluate the number according to the pattern][131]               | &#9989;[&#128190;][131solution] | &#9989;[&#128190;][131tests] |
-| 132 | The Major Element           | [Find the major element in a sequence][132]                       | &#9989;[&#128190;][132solution] | &#9989;[&#128190;][132tests] |
-| 136 | Racing Chars                | [Explore a race track avoiding crashes][136]                      | &#9989;[&#128190;][136solution] | &#9989;[&#128190;][136tests] |
-| 139 | Working experience          | [Retrieve an actual value][139]                                   | &#9989;[&#128190;][139solution] | &#9989;[&#128190;][139tests] |
-| 140 | Data Recovery               | [Reconstruct a sentence using hints][140]                         | &#9989;[&#128190;][140solution] | &#9989;[&#128190;][140tests] |
-| 147 | Lettercase Percentage Ratio | [Find the percentage ratio.][147]                                 | &#9989;[&#128190;][147solution] | &#9989;[&#128190;][147tests] |
-| 149 | Juggling With Zeros         | [Convert a zero-based number into integer.][149]                  | &#9989;[&#128190;][149solution] | &#9989;[&#128190;][149tests] |
-| 152 | Age distribution            | [Print out where the person is.][152]                             | &#9989;[&#128190;][152solution] | &#9989;[&#128190;][152tests] |
-| 156 | Roller Coaster              | [Turn the text into RoLlErCoAsTeR case.][156]                     | &#9989;[&#128190;][156solution] | &#9989;[&#128190;][156tests] |
-| 160 | Nice angles                 | [Convert angle values to sexagesimal format.][160]                | &#9989;[&#128190;][160solution] | &#9989;[&#128190;][160tests] |
-| 163 | Big Digits                  | [Print out magnified digits using pseudographics.][163]           | &#9989;[&#128190;][163solution] | &#9989;[&#128190;][163tests] |
-| 166 | Delta Time                  | [Find the time difference.][166]                                  | &#9989;[&#128190;][166solution] | &#9989;[&#128190;][166tests] |
-| 167 | Read More                   | [Limit the length of the text.][167]                              | &#9989;[&#128190;][167solution] | &#9989;[&#128190;][167tests] |
-| 173 | Without Repetitions         | [Delete characters that are consistently repeated.][173]          | &#9989;[&#128190;][173solution] | &#9989;[&#128190;][173tests] |
-| 174 | Slang Flavor                | [Add some slang to the text.][174]                                | &#9989;[&#128190;][174solution] | &#9989;[&#128190;][174tests] |
-| 179 | Matrix Rotation             | [Rotate a 2D matrix 90 degrees clockwise.][179]                   | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
-| 180 | Knight Moves                | [Find positions for the next move of the knight.][180]            | &#9989;[&#128190;][180solution] | &#9989;[&#128190;][180tests] |
-| 183 | Details                     | [Determine how many cells will be shifted detail.][183]           | &#9989;[&#128190;][183solution] | &#9989;[&#128190;][183tests] |
-| 186 | Max Range Sum               | [Determine max sum at the range.][186]                            | &#9989;[&#128190;][186solution] | &#9989;[&#128190;][186tests] |
+|   # | Name                        | Description                                                                             | Solution                        | Test                         |
+|----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
+|   1 | Fizz Buzz                   | [A simple game involving divisibility tests.][1]                                        | &#9989;[&#128190;][1solution]   | &#9989;[&#128190;][1tests]   |
+|   3 | Prime Palindrome            | [Biggest prime palindrome < 1000.][3]                                                   | &#9989;[&#128190;][3solution]   | &#9989;[&#128190;][3tests]   |
+|   4 | Sum of Primes               | [Sum of first 1000 primes.][4]                                                          | &#9989;[&#128190;][4solution]   | &#9989;[&#128190;][4tests]   |
+|   8 | Reverse words               | [Reversing an input sequence of words.][8]                                              | &#9989;[&#128190;][8solution]   | &#9989;[&#128190;][8tests]   |
+|  18 | Multiples of a Number       | [Multiples of a number greater than another number.][18]                                | &#9989;[&#128190;][18solution]  | &#9989;[&#128190;][18tests]  |
+|  19 | Bit Positions               | [Bits in position x,y are same or different.][19]                                       | &#9989;[&#128190;][19solution]  | &#9989;[&#128190;][19tests]  |
+|  20 | Lowercase                   | [Lowercase text][20]                                                                    | &#9989;[&#128190;][20solution]  | &#9989;[&#128190;][20tests]  |
+|  21 | Sum of Digits               | [Sum of digits comprising a number][21]                                                 | &#9989;[&#128190;][21solution]  | &#9989;[&#128190;][21tests]  |
+|  22 | Fibonacci Series            | [Print out the nth fibonacci number][22]                                                | &#9989;[&#128190;][22solution]  | &#9989;[&#128190;][22tests]  |
+|  23 | Multiplication Tables       | [Print out the grade school multiplication table upto 12*12][23]                        | &#9989;[&#128190;][23solution]  | &#9989;[&#128190;][23tests]  |
+|  24 | Sum of Integers from File   | [Print the sum of integers read from a file.][24]                                       | &#9989;[&#128190;][24solution]  | &#9989;[&#128190;][24tests]  |
+|  25 | Odd Numbers                 | [Print the odd numbers from 1 to 99.][25]                                               | &#9989;[&#128190;][25solution]  | &#9989;[&#128190;][25tests]  |
+|  26 | File Size                   | [Print the file size in bytes.][26]                                                     | &#9989;[&#128190;][26solution]  | &#9989;[&#128190;][26tests]  |
+|  29 | Unique Elements             | [Extract unique list from a sorted list of numbers.][29]                                | &#9989;[&#128190;][29solution]  | &#9989;[&#128190;][29tests]  |
+|  30 | Set Intersection            | [Print the intersection of two sets of numbers.][30]                                    | &#9989;[&#128190;][30solution]  | &#9989;[&#128190;][30tests]  |
+|  31 | Rightmost Char              | [Print the position of the rightmost occurrence of a char.][31]                         | &#9989;[&#128190;][31solution]  | &#9989;[&#128190;][31tests]  |
+|  39 | Happy Numbers               | [Determine if a number is a happy number or not][39]                                    | &#9989;[&#128190;][39solution]  | &#9989;[&#128190;][39tests]  |
+|  40 | Self Describing Numbers     | [Determine if a number is a self-describing number or not][40]                          | &#9989;[&#128190;][40solution]  | &#9989;[&#128190;][40tests]  |
+|  62 | N Mod M                     | [Determine the modulus (without the modulus operator).][62]                             | &#9989;[&#128190;][62solution]  | &#9989;[&#128190;][62tests]  |
+|  67 | Hex to Decimal              | [Convert a hex number to it's decimal equivalent.][67]                                  | &#9989;[&#128190;][67solution]  | &#9989;[&#128190;][67tests]  |
+|  82 | Armstrong Numbers           | [Determine if a number is an armstrong number.][82]                                     | &#9989;[&#128190;][82solution]  | &#9989;[&#128190;][82tests]  |
+|  83 | Beautiful Strings           | [Facebook Hacker Cup 2013 problem.][83]                                                 | &#9989;[&#128190;][83solution]  | &#9989;[&#128190;][83tests]  |
+|  87 | Query Board                 | [Set and get values from a matrix using tiny DSL][87]                                   | &#9989;[&#128190;][87solution]  | &#9989;[&#128190;][87tests]  |
+|  91 | Simple Sorting              | [Sort several numbers][91]                                                              | &#9989;[&#128190;][91solution]  | &#9989;[&#128190;][91tests]  |
+|  92 | Penultimate Word            | [Find the next-to-last word][92]                                                        | &#9989;[&#128190;][92solution]  | &#9989;[&#128190;][92tests]  |
+|  93 | Capitalize Words            | [Capitalize words in a sentence][93]                                                    | &#9989;[&#128190;][93solution]  | &#9989;[&#128190;][93tests]  |
+|  96 | Swap Case                   | [Swap case in a string][96]                                                             | &#9989;[&#128190;][96solution]  | &#9989;[&#128190;][96tests]  |
+|  97 | Find a Writer               | [Find a famous writer in a string][97]                                                  | &#9989;[&#128190;][97solution]  | &#9989;[&#128190;][97tests]  |
+|  99 | Calculate Distance          | [Calculate a distance between two points][99]                                           | &#9989;[&#128190;][99solution]  | &#9989;[&#128190;][99tests]  |
+| 100 | Even Numbers                | [Determine if a number is even or not][100]                                             | &#9989;[&#128190;][100solution] | &#9989;[&#128190;][100tests] |
+| 102 | JSON menu IDs               | [Calculate IDs in JSON menu][102]                                                       | &#9989;[&#128190;][102solution] | &#9989;[&#128190;][102tests] |
+| 103 | Lowest Unique Number        | [Find the lowest unique number in a set][103]                                           | &#9989;[&#128190;][103solution] | &#9989;[&#128190;][103tests] |
+| 104 | Word to Digit               | [Substitute words to digits][104]                                                       | &#9989;[&#128190;][104solution] | &#9989;[&#128190;][104tests] |
+| 106 | Roman Numerals              | [Convert a cardinal number to a Roman numeral][106]                                     | &#9989;[&#128190;][106solution] | &#9989;[&#128190;][106tests] |
+| 107 | Shortest Repetition         | [Find the shortest repetition in a string][107]                                         | &#9989;[&#128190;][107solution] | &#9989;[&#128190;][107tests] |
+| 111 | Longest Word                | [Get the longest word in a sentence][111]                                               | &#9989;[&#128190;][111solution] | &#9989;[&#128190;][111tests] |
+| 112 | Swap Elements               | [Swap elements in a list][112]                                                          | &#9989;[&#128190;][112solution] | &#9989;[&#128190;][112tests] |
+| 113 | Multiply Lists              | [Multiply elements in 2 lists][113]                                                     | &#9989;[&#128190;][113solution] | &#9989;[&#128190;][113tests] |
+| 115 | Mixed Content               | [Separate words with digits][115]                                                       | &#9989;[&#128190;][115solution] | &#9989;[&#128190;][115tests] |
+| 116 | Morse Code                  | [Decode Morse code][116]                                                                | &#9989;[&#128190;][116solution] | &#9989;[&#128190;][116tests] |
+| 122 | Hidden Digits               | [Try to look behind the scenes][122]                                                    | &#9989;[&#128190;][122solution] | &#9989;[&#128190;][122tests] |
+| 124 | Road Trip                   | [Do not be left without petrol][124]                                                    | &#9989;[&#128190;][124solution] | &#9989;[&#128190;][124tests] |
+| 128 | Compressed Sequence         | [Write a program that compresses a sequence of numbers][128]                            | &#9989;[&#128190;][128solution] | &#9989;[&#128190;][128tests] |
+| 131 | Split The Number            | [Evaluate the number according to the pattern][131]                                     | &#9989;[&#128190;][131solution] | &#9989;[&#128190;][131tests] |
+| 132 | The Major Element           | [Find the major element in a sequence][132]                                             | &#9989;[&#128190;][132solution] | &#9989;[&#128190;][132tests] |
+| 136 | Racing Chars                | [Explore a race track avoiding crashes][136]                                            | &#9989;[&#128190;][136solution] | &#9989;[&#128190;][136tests] |
+| 139 | Working experience          | [Retrieve an actual value][139]                                                         | &#9989;[&#128190;][139solution] | &#9989;[&#128190;][139tests] |
+| 140 | Data Recovery               | [Reconstruct a sentence using hints][140]                                               | &#9989;[&#128190;][140solution] | &#9989;[&#128190;][140tests] |
+| 147 | Lettercase Percentage Ratio | [Find the percentage ratio.][147]                                                       | &#9989;[&#128190;][147solution] | &#9989;[&#128190;][147tests] |
+| 149 | Juggling With Zeros         | [Convert a zero-based number into integer.][149]                                        | &#9989;[&#128190;][149solution] | &#9989;[&#128190;][149tests] |
+| 152 | Age distribution            | [Print out where the person is.][152]                                                   | &#9989;[&#128190;][152solution] | &#9989;[&#128190;][152tests] |
+| 156 | Roller Coaster              | [Turn the text into RoLlErCoAsTeR case.][156]                                           | &#9989;[&#128190;][156solution] | &#9989;[&#128190;][156tests] |
+| 160 | Nice angles                 | [Convert angle values to sexagesimal format.][160]                                      | &#9989;[&#128190;][160solution] | &#9989;[&#128190;][160tests] |
+| 163 | Big Digits                  | [Print out magnified digits using pseudographics.][163]                                 | &#9989;[&#128190;][163solution] | &#9989;[&#128190;][163tests] |
+| 166 | Delta Time                  | [Find the time difference.][166]                                                        | &#9989;[&#128190;][166solution] | &#9989;[&#128190;][166tests] |
+| 167 | Read More                   | [Limit the length of the text.][167]                                                    | &#9989;[&#128190;][167solution] | &#9989;[&#128190;][167tests] |
+| 173 | Without Repetitions         | [Delete characters that are consistently repeated.][173]                                | &#9989;[&#128190;][173solution] | &#9989;[&#128190;][173tests] |
+| 174 | Slang Flavor                | [Add some slang to the text.][174]                                                      | &#9989;[&#128190;][174solution] | &#9989;[&#128190;][174tests] |
+| 179 | Matrix Rotation             | [Rotate a 2D matrix 90 degrees clockwise.][179]                                         | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
+| 180 | Knight Moves                | [Find positions for the next move of the knight.][180]                                  | &#9989;[&#128190;][180solution] | &#9989;[&#128190;][180tests] |
+| 183 | Details                     | [Determine how many cells will be shifted detail.][183]                                 | &#9989;[&#128190;][183solution] | &#9989;[&#128190;][183tests] |
+| 186 | Max Range Sum               | [Determine max sum at the range.][186]                                                  | &#9989;[&#128190;][186solution] | &#9989;[&#128190;][186tests] |
+| 189 | Minimum Distance            | [Find a point with the smallest sum of distances to every given point.][189]            | &#9989;[&#128190;][189solution] | &#9989;[&#128190;][189tests] |
+| 192 | Compare Points              | [Given two (x, y) points A and B, determine which cardinal direction B is from A.][192] | &#9989;[&#128190;][192solution] | &#9989;[&#128190;][192tests] |
 
 [1]: https://www.codeeval.com/open_challenges/1/
 [3]: https://www.codeeval.com/open_challenges/3/
@@ -127,6 +129,8 @@
 [180]: https://www.codeeval.com/open_challenges/180/
 [183]: https://www.codeeval.com/open_challenges/183/
 [186]: https://www.codeeval.com/open_challenges/186/
+[189]: https://www.codeeval.com/open_challenges/189/
+[192]: https://www.codeeval.com/open_challenges/192/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
 [3solution]: src/main/java/org/ck/codeEval/easy/primePalindrome/Main.java
@@ -190,6 +194,8 @@
 [180solution]: src/main/java/org/ck/codeEval/easy/knightMoves/Main.java
 [183solution]: src/main/java/org/ck/codeEval/easy/details/Main.java
 [186solution]: src/main/java/org/ck/codeEval/easy/maxRangeSum/Main.java
+[189solution]: src/main/java/org/ck/codeEval/easy/minimumDistance/Main.java
+[192solution]: src/main/java/org/ck/codeEval/easy/comparePoints/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
 [3tests]: src/test/java/org/ck/codeEval/easy/primePalindrome/MainTest.java
@@ -253,6 +259,8 @@
 [180tests]: src/test/java/org/ck/codeEval/easy/knightMoves/MainTest.java
 [183tests]: src/test/java/org/ck/codeEval/easy/details/MainTest.java
 [186tests]: src/test/java/org/ck/codeEval/easy/maxRangeSum/MainTest.java
+[189tests]: src/test/java/org/ck/codeEval/easy/minimumDistance/MainTest.java
+[192tests]: src/test/java/org/ck/codeEval/easy/comparePoints/MainTest.java
 
 # Hard callenges (14/16)
 

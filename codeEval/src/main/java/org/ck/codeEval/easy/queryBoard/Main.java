@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 87, name = "Query Board", description = "Set and get values from a matrix using tiny DSL", url = "https://www.codeeval.com/open_challenges/87/", category = "Easy callenges")
+@Solution(id = 87, name = "Query Board", description = "Set and get values from a matrix using tiny DSL", url = "https://www.codeeval.com/open_challenges/87/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

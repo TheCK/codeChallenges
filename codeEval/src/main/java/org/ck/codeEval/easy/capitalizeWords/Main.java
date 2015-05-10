@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 93, name = "Capitalize Words", description = "Capitalize words in a sentence", url = "https://www.codeeval.com/open_challenges/93/", category = "Easy callenges")
+@Solution(id = 93, name = "Capitalize Words", description = "Capitalize words in a sentence", url = "https://www.codeeval.com/open_challenges/93/", category = "Easy challenges")
 public class Main
 {
 

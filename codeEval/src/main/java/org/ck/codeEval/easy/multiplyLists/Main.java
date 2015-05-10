@@ -11,7 +11,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 113, name = "Multiply Lists", description = "Multiply elements in 2 lists", url = "https://www.codeeval.com/open_challenges/113/", category = "Easy callenges")
+@Solution(id = 113, name = "Multiply Lists", description = "Multiply elements in 2 lists", url = "https://www.codeeval.com/open_challenges/113/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

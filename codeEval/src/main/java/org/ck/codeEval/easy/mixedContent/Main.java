@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 115, name = "Mixed Content", description = "Separate words with digits", url = "https://www.codeeval.com/open_challenges/115/", category = "Easy callenges")
+@Solution(id = 115, name = "Mixed Content", description = "Separate words with digits", url = "https://www.codeeval.com/open_challenges/115/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

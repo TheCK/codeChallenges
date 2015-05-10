@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 22, name = "Fibonacci Series", description = "Print out the nth fibonacci number", url = "https://www.codeeval.com/open_challenges/22/", category = "Easy callenges")
+@Solution(id = 22, name = "Fibonacci Series", description = "Print out the nth fibonacci number", url = "https://www.codeeval.com/open_challenges/22/", category = "Easy challenges")
 public class Main
 {
 	private static Map<Integer, Integer> cache = new HashMap<>();

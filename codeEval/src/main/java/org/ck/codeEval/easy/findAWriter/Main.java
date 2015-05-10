@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 97, name = "Find a Writer", description = "Find a famous writer in a string", url = "https://www.codeeval.com/open_challenges/97/", category = "Easy callenges")
+@Solution(id = 97, name = "Find a Writer", description = "Find a famous writer in a string", url = "https://www.codeeval.com/open_challenges/97/", category = "Easy challenges")
 public class Main
 {
 

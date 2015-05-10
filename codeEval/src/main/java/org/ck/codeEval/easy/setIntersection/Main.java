@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 30, name = "Set Intersection", description = "Print the intersection of two sets of numbers.", url = "https://www.codeeval.com/open_challenges/30/", category = "Easy callenges")
+@Solution(id = 30, name = "Set Intersection", description = "Print the intersection of two sets of numbers.", url = "https://www.codeeval.com/open_challenges/30/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

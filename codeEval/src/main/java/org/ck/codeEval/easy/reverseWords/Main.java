@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 8, name = "Reverse words", description = "Reversing an input sequence of words.", url = "https://www.codeeval.com/open_challenges/8/", category = "Easy callenges")
+@Solution(id = 8, name = "Reverse words", description = "Reversing an input sequence of words.", url = "https://www.codeeval.com/open_challenges/8/", category = "Easy challenges")
 public class Main
 {
 

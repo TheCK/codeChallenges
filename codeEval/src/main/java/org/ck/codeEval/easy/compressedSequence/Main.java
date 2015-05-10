@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 128, name = "Compressed Sequence", description = "Write a program that compresses a sequence of numbers", url = "https://www.codeeval.com/open_challenges/128/", category = "Easy callenges")
+@Solution(id = 128, name = "Compressed Sequence", description = "Write a program that compresses a sequence of numbers", url = "https://www.codeeval.com/open_challenges/128/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

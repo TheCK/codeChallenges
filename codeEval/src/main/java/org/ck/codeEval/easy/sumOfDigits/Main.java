@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 21, name = "Sum of Digits", description = "Sum of digits comprising a number", url = "https://www.codeeval.com/open_challenges/21/", category = "Easy callenges")
+@Solution(id = 21, name = "Sum of Digits", description = "Sum of digits comprising a number", url = "https://www.codeeval.com/open_challenges/21/", category = "Easy challenges")
 public class Main
 {
 

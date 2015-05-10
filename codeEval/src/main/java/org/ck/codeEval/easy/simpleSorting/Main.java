@@ -10,7 +10,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 91, name = "Simple Sorting", description = "Sort several numbers", url = "https://www.codeeval.com/open_challenges/91/", category = "Easy callenges")
+@Solution(id = 91, name = "Simple Sorting", description = "Sort several numbers", url = "https://www.codeeval.com/open_challenges/91/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

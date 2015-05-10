@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 131, name = "Split The Number", description = "Evaluate the number according to the pattern", url = "https://www.codeeval.com/open_challenges/131/", category = "Easy callenges")
+@Solution(id = 131, name = "Split The Number", description = "Evaluate the number according to the pattern", url = "https://www.codeeval.com/open_challenges/131/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

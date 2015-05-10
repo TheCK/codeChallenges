@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 18, name = "Multiples of a Number", description = "Multiples of a number greater than another number.", url = "https://www.codeeval.com/open_challenges/18/", category = "Easy callenges")
+@Solution(id = 18, name = "Multiples of a Number", description = "Multiples of a number greater than another number.", url = "https://www.codeeval.com/open_challenges/18/", category = "Easy challenges")
 public class Main
 {
 

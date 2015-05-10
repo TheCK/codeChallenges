@@ -9,7 +9,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 124, name = "Road Trip", description = "Do not be left without petrol", url = "https://www.codeeval.com/open_challenges/124/", category = "Easy callenges")
+@Solution(id = 124, name = "Road Trip", description = "Do not be left without petrol", url = "https://www.codeeval.com/open_challenges/124/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

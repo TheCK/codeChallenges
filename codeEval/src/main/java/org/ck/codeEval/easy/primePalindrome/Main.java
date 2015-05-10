@@ -2,7 +2,7 @@ package org.ck.codeEval.easy.primePalindrome;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 3, name = "Prime Palindrome", description = "Biggest prime palindrome < 1000.", url = "https://www.codeeval.com/open_challenges/3/", category = "Easy callenges")
+@Solution(id = 3, name = "Prime Palindrome", description = "Biggest prime palindrome < 1000.", url = "https://www.codeeval.com/open_challenges/3/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args)

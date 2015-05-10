@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id=163, name="Big Digits", description="Print out magnified digits using pseudographics.", url="https://www.codeeval.com/open_challenges/163/", category="Easy callenges")
+@Solution(id=163, name="Big Digits", description="Print out magnified digits using pseudographics.", url="https://www.codeeval.com/open_challenges/163/", category="Easy challenges")
 public class Main
 {
 	private static Map<String, String> line1Codes = new HashMap<>();

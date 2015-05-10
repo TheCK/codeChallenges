@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 104, name = "Word to Digit", description = "Substitute words to digits", url = "https://www.codeeval.com/open_challenges/104/", category = "Easy callenges")
+@Solution(id = 104, name = "Word to Digit", description = "Substitute words to digits", url = "https://www.codeeval.com/open_challenges/104/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

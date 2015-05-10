@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 29, name = "Unique Elements", description = "Extract unique list from a sorted list of numbers.", url = "https://www.codeeval.com/open_challenges/29/", category = "Easy callenges")
+@Solution(id = 29, name = "Unique Elements", description = "Extract unique list from a sorted list of numbers.", url = "https://www.codeeval.com/open_challenges/29/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

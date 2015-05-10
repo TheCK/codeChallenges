@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 39, name = "Happy Numbers", description = "Determine if a number is a happy number or not", url = "https://www.codeeval.com/open_challenges/39/", category = "Easy callenges")
+@Solution(id = 39, name = "Happy Numbers", description = "Determine if a number is a happy number or not", url = "https://www.codeeval.com/open_challenges/39/", category = "Easy challenges")
 public class Main
 {
 

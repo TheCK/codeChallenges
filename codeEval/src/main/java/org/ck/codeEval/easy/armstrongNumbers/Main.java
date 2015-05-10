@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id=82, name="Armstrong Numbers", description="Determine if a number is an armstrong number.", url="https://www.codeeval.com/open_challenges/82/", category="Easy callenges")
+@Solution(id=82, name="Armstrong Numbers", description="Determine if a number is an armstrong number.", url="https://www.codeeval.com/open_challenges/82/", category="Easy challenges")
 public class Main
 {
 

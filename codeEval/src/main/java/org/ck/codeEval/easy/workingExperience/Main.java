@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 139, name = "Working experience", description = "Retrieve an actual value", url = "https://www.codeeval.com/open_challenges/139/", category = "Easy callenges")
+@Solution(id = 139, name = "Working experience", description = "Retrieve an actual value", url = "https://www.codeeval.com/open_challenges/139/", category = "Easy challenges")
 public class Main
 {
 	private static final Integer YEARS = 31;

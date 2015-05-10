@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 174, name = "Slang Flavor", description = "Add some slang to the text.", url = "https://www.codeeval.com/open_challenges/174/", category = "Easy callenges")
+@Solution(id = 174, name = "Slang Flavor", description = "Add some slang to the text.", url = "https://www.codeeval.com/open_challenges/174/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

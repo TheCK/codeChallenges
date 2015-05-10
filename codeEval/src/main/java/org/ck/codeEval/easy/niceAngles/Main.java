@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 160, name = "Nice angles", description = "Convert angle values to sexagesimal format.", url = "https://www.codeeval.com/open_challenges/160/", category = "Easy callenges")
+@Solution(id = 160, name = "Nice angles", description = "Convert angle values to sexagesimal format.", url = "https://www.codeeval.com/open_challenges/160/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

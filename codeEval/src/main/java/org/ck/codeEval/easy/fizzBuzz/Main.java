@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 1, name = "Fizz Buzz", description = "A simple game involving divisibility tests.", url = "https://www.codeeval.com/open_challenges/1/", category = "Easy callenges")
+@Solution(id = 1, name = "Fizz Buzz", description = "A simple game involving divisibility tests.", url = "https://www.codeeval.com/open_challenges/1/", category = "Easy challenges")
 public class Main
 {
 

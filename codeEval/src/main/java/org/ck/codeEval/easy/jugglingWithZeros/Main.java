@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 149, name = "Juggling With Zeros", description = "Convert a zero-based number into integer.", url = "https://www.codeeval.com/open_challenges/149/", category = "Easy callenges")
+@Solution(id = 149, name = "Juggling With Zeros", description = "Convert a zero-based number into integer.", url = "https://www.codeeval.com/open_challenges/149/", category = "Easy challenges")
 public class Main
 {
 	

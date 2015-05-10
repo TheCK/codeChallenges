@@ -2,7 +2,7 @@ package org.ck.codeEval.easy.oddNumbers;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 25, name = "Odd Numbers", description = "Print the odd numbers from 1 to 99.", url = "https://www.codeeval.com/open_challenges/25/", category = "Easy callenges")
+@Solution(id = 25, name = "Odd Numbers", description = "Print the odd numbers from 1 to 99.", url = "https://www.codeeval.com/open_challenges/25/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args)

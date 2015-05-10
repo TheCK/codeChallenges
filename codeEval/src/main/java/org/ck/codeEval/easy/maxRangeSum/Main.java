@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 186, name = "Max Range Sum", description = "Determine max sum at the range.", url = "https://www.codeeval.com/open_challenges/186/", category = "Easy callenges")
+@Solution(id = 186, name = "Max Range Sum", description = "Determine max sum at the range.", url = "https://www.codeeval.com/open_challenges/186/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

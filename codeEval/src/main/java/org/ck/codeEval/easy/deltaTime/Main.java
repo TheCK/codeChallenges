@@ -10,7 +10,7 @@ import java.util.TimeZone;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 166, name = "Delta Time", description = "Find the time difference.", url = "https://www.codeeval.com/open_challenges/166/", category = "Easy callenges")
+@Solution(id = 166, name = "Delta Time", description = "Find the time difference.", url = "https://www.codeeval.com/open_challenges/166/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

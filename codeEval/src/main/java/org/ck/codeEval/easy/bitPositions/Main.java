@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 19, name = "Bit Positions", description = "Bits in position x,y are same or different.", url = "https://www.codeeval.com/open_challenges/19/", category = "Easy callenges")
+@Solution(id = 19, name = "Bit Positions", description = "Bits in position x,y are same or different.", url = "https://www.codeeval.com/open_challenges/19/", category = "Easy challenges")
 public class Main
 {
 

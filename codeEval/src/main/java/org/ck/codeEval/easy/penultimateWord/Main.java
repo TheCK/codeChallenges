@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 92, name = "Penultimate Word", description = "Find the next-to-last word", url = "https://www.codeeval.com/open_challenges/92/", category = "Easy callenges")
+@Solution(id = 92, name = "Penultimate Word", description = "Find the next-to-last word", url = "https://www.codeeval.com/open_challenges/92/", category = "Easy challenges")
 public class Main
 {
 

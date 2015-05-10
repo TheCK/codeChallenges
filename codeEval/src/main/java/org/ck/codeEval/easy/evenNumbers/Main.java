@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 100, name = "Even Numbers", description = "Determine if a number is even or not", url = "https://www.codeeval.com/open_challenges/100/", category = "Easy callenges")
+@Solution(id = 100, name = "Even Numbers", description = "Determine if a number is even or not", url = "https://www.codeeval.com/open_challenges/100/", category = "Easy challenges")
 public class Main
 {
 

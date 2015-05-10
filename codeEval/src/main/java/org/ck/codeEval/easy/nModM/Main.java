@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 62, name = "N Mod M", description = "Determine the modulus (without the modulus operator).", url = "https://www.codeeval.com/open_challenges/62/", category = "Easy callenges")
+@Solution(id = 62, name = "N Mod M", description = "Determine the modulus (without the modulus operator).", url = "https://www.codeeval.com/open_challenges/62/", category = "Easy challenges")
 public class Main
 {
 

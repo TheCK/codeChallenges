@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 102, name = "JSON menu IDs", description = "Calculate IDs in JSON menu", url = "https://www.codeeval.com/open_challenges/102/", category = "Easy callenges")
+@Solution(id = 102, name = "JSON menu IDs", description = "Calculate IDs in JSON menu", url = "https://www.codeeval.com/open_challenges/102/", category = "Easy challenges")
 public class Main
 {
 	private static Pattern pattern = Pattern.compile("\\{.*?\\}");

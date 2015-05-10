@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 106, name = "Roman Numerals", description = "Convert a cardinal number to a Roman numeral", url = "https://www.codeeval.com/open_challenges/106/", category = "Easy callenges")
+@Solution(id = 106, name = "Roman Numerals", description = "Convert a cardinal number to a Roman numeral", url = "https://www.codeeval.com/open_challenges/106/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 132, name = "The Major Element", description = "Find the major element in a sequence", url = "https://www.codeeval.com/open_challenges/132/", category = "Easy callenges")
+@Solution(id = 132, name = "The Major Element", description = "Find the major element in a sequence", url = "https://www.codeeval.com/open_challenges/132/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 180, name = "Knight Moves", description = "Find positions for the next move of the knight.", url = "https://www.codeeval.com/open_challenges/180/", category = "Easy callenges")
+@Solution(id = 180, name = "Knight Moves", description = "Find positions for the next move of the knight.", url = "https://www.codeeval.com/open_challenges/180/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

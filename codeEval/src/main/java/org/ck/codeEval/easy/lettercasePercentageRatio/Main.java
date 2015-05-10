@@ -8,7 +8,7 @@ import java.util.Locale;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 147, name = "Lettercase Percentage Ratio", description = "Find the percentage ratio.", url = "https://www.codeeval.com/open_challenges/147/", category = "Easy callenges")
+@Solution(id = 147, name = "Lettercase Percentage Ratio", description = "Find the percentage ratio.", url = "https://www.codeeval.com/open_challenges/147/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

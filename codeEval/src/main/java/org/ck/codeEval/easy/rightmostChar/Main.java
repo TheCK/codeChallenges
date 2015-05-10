@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 31, name = "Rightmost Char", description = "Print the position of the rightmost occurrence of a char.", url = "https://www.codeeval.com/open_challenges/31/", category = "Easy callenges")
+@Solution(id = 31, name = "Rightmost Char", description = "Print the position of the rightmost occurrence of a char.", url = "https://www.codeeval.com/open_challenges/31/", category = "Easy challenges")
 public class Main
 {
 

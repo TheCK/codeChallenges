@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 116, name = "Morse Code", description = "Decode Morse code", url = "https://www.codeeval.com/open_challenges/116/", category = "Easy callenges")
+@Solution(id = 116, name = "Morse Code", description = "Decode Morse code", url = "https://www.codeeval.com/open_challenges/116/", category = "Easy challenges")
 public class Main
 {
 	private static Map<String, String> morseCode = new HashMap<>();

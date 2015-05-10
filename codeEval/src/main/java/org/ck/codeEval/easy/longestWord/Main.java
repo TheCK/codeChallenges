@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 111, name = "Longest Word", description = "Get the longest word in a sentence", url = "https://www.codeeval.com/open_challenges/111/", category = "Easy callenges")
+@Solution(id = 111, name = "Longest Word", description = "Get the longest word in a sentence", url = "https://www.codeeval.com/open_challenges/111/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

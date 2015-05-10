@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 99, name = "Calculate Distance", description = "Calculate a distance between two points", url = "https://www.codeeval.com/open_challenges/99/", category = "Easy callenges")
+@Solution(id = 99, name = "Calculate Distance", description = "Calculate a distance between two points", url = "https://www.codeeval.com/open_challenges/99/", category = "Easy challenges")
 public class Main
 {
 

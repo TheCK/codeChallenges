@@ -12,7 +12,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id=83, name="Beautiful Strings", description="Facebook Hacker Cup 2013 problem.", url="https://www.codeeval.com/open_challenges/83/", category="Easy callenges")
+@Solution(id=83, name="Beautiful Strings", description="Facebook Hacker Cup 2013 problem.", url="https://www.codeeval.com/open_challenges/83/", category="Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

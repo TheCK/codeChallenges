@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 67, name = "Hex to Decimal", description = "Convert a hex number to it's decimal equivalent.", url = "https://www.codeeval.com/open_challenges/67/", category = "Easy callenges")
+@Solution(id = 67, name = "Hex to Decimal", description = "Convert a hex number to it's decimal equivalent.", url = "https://www.codeeval.com/open_challenges/67/", category = "Easy challenges")
 public class Main
 {
 

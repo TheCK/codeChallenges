@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 40, name = "Self Describing Numbers", description = "Determine if a number is a self-describing number or not", url = "https://www.codeeval.com/open_challenges/40/", category = "Easy callenges")
+@Solution(id = 40, name = "Self Describing Numbers", description = "Determine if a number is a self-describing number or not", url = "https://www.codeeval.com/open_challenges/40/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

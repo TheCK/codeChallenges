@@ -4,7 +4,7 @@ import java.io.File;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 26, name = "File Size", description = "Print the file size in bytes.", url = "https://www.codeeval.com/open_challenges/26/", category = "Easy callenges")
+@Solution(id = 26, name = "File Size", description = "Print the file size in bytes.", url = "https://www.codeeval.com/open_challenges/26/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args)

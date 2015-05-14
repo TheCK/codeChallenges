@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 84, name = "Balanced Smileys", description = "Facebook Hacker Cup 2013 problem.", url = "https://www.codeeval.com/open_challenges/84/", category = "Moderate callenges", solved = false)
+@Solution(id = 84, name = "Balanced Smileys", description = "Facebook Hacker Cup 2013 problem.", url = "https://www.codeeval.com/open_challenges/84/", category = "Moderate challenges", solved = false)
 public class Main
 {
 	public static void main(String[] args) throws Exception

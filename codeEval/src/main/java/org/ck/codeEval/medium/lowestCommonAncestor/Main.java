@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 11, name = "Lowest Common Ancestor", description = "Determine the lowest common ancestor within a tree", url = "https://www.codeeval.com/open_challenges/11/", category = "Moderate callenges")
+@Solution(id = 11, name = "Lowest Common Ancestor", description = "Determine the lowest common ancestor within a tree", url = "https://www.codeeval.com/open_challenges/11/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

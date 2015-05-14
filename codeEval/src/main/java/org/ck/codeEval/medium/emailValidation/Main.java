@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 35, name = "Email Validation", description = "Write a regular expression to validate an email address", url = "https://www.codeeval.com/open_challenges/35/", category = "Moderate callenges")
+@Solution(id = 35, name = "Email Validation", description = "Write a regular expression to validate an email address", url = "https://www.codeeval.com/open_challenges/35/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

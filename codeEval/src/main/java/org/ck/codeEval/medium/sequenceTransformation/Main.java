@@ -8,7 +8,7 @@ import java.util.Queue;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 130, name = "Sequence Transformation", description = "Transform a binary sequence into a string", url = "https://www.codeeval.com/open_challenges/130/", category = "Moderate callenges", solved = false)
+@Solution(id = 130, name = "Sequence Transformation", description = "Transform a binary sequence into a string", url = "https://www.codeeval.com/open_challenges/130/", category = "Moderate challenges", solved = false)
 public class Main
 {
 	public static void main(String[] args) throws Exception

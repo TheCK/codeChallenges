@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 10, name = "Mth to last element", description = "Determine the Mth to last element", url = "https://www.codeeval.com/open_challenges/10/", category = "Moderate callenges")
+@Solution(id = 10, name = "Mth to last element", description = "Determine the Mth to last element", url = "https://www.codeeval.com/open_challenges/10/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

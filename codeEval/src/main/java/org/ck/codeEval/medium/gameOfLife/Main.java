@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 161, name = "Game of Life", description = "Implement the classical cellular automaton game.", url = "https://www.codeeval.com/open_challenges/161/", category = "Moderate callenges")
+@Solution(id = 161, name = "Game of Life", description = "Implement the classical cellular automaton game.", url = "https://www.codeeval.com/open_challenges/161/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

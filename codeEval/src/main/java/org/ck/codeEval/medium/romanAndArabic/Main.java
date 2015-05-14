@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 150, name = "Roman and Arabic", description = "Calculate aromatic numbers.", url = "https://www.codeeval.com/open_challenges/150/", category = "Moderate callenges")
+@Solution(id = 150, name = "Roman and Arabic", description = "Calculate aromatic numbers.", url = "https://www.codeeval.com/open_challenges/150/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

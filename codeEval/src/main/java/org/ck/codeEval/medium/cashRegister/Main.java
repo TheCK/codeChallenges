@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 54, name = "Cash Register", description = "Determine the amount of change to be returned", url = "https://www.codeeval.com/open_challenges/54/", category = "Moderate callenges")
+@Solution(id = 54, name = "Cash Register", description = "Determine the amount of change to be returned", url = "https://www.codeeval.com/open_challenges/54/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

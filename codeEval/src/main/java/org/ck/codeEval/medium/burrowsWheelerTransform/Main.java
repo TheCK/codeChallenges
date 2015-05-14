@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 184, name = "Burrows-Wheeler transform", description = "Complete file decompression by inverting BWT.", url = "https://www.codeeval.com/open_challenges/184/", category = "Moderate callenges")
+@Solution(id = 184, name = "Burrows-Wheeler transform", description = "Complete file decompression by inverting BWT.", url = "https://www.codeeval.com/open_challenges/184/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 41, name = "Array Absurdity", description = "Determine if an array contains a duplicated entry", url = "https://www.codeeval.com/open_challenges/41/", category = "Moderate callenges")
+@Solution(id = 41, name = "Array Absurdity", description = "Determine if an array contains a duplicated entry", url = "https://www.codeeval.com/open_challenges/41/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

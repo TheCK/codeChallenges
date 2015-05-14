@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 32, name = "Trailing String", description = "Determine if a string 'B' occurs at the end of string 'A'", url = "https://www.codeeval.com/open_challenges/32/", category = "Moderate callenges")
+@Solution(id = 32, name = "Trailing String", description = "Determine if a string 'B' occurs at the end of string 'A'", url = "https://www.codeeval.com/open_challenges/32/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 169, name = "Filename Pattern", description = "Filter a list of filenames.", url = "https://www.codeeval.com/open_challenges/169/", category = "Moderate callenges")
+@Solution(id = 169, name = "Filename Pattern", description = "Filter a list of filenames.", url = "https://www.codeeval.com/open_challenges/169/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

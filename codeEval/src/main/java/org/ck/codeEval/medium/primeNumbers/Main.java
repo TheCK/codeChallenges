@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 46, name = "Prime Numbers", description = "Print prime numbers less than N", url = "https://www.codeeval.com/open_challenges/46/", category = "Moderate callenges")
+@Solution(id = 46, name = "Prime Numbers", description = "Print prime numbers less than N", url = "https://www.codeeval.com/open_challenges/46/", category = "Moderate challenges")
 public class Main
 {
 	private static int BORDER = 32;

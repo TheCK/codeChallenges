@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 117, name = "A Pile of Bricks", description = "Close a hole in a wall", url = "https://www.codeeval.com/open_challenges/117/", category = "Moderate callenges")
+@Solution(id = 117, name = "A Pile of Bricks", description = "Close a hole in a wall", url = "https://www.codeeval.com/open_challenges/117/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

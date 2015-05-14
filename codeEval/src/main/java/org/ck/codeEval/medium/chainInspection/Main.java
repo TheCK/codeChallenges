@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 119, name = "Chain Inspection", description = "Try to pass a chain", url = "https://www.codeeval.com/open_challenges/119/", category = "Moderate callenges")
+@Solution(id = 119, name = "Chain Inspection", description = "Try to pass a chain", url = "https://www.codeeval.com/open_challenges/119/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

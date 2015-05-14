@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 135, name = "Word chain", description = "Find the longest chain of words", url = "https://www.codeeval.com/open_challenges/135/", category = "Moderate callenges")
+@Solution(id = 135, name = "Word chain", description = "Find the longest chain of words", url = "https://www.codeeval.com/open_challenges/135/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 17, name = "Sum of integers", description = "Determine the largest sum of contiguous integers in an array.", url = "https://www.codeeval.com/open_challenges/17/", category = "Moderate callenges")
+@Solution(id = 17, name = "Sum of integers", description = "Determine the largest sum of contiguous integers in an array.", url = "https://www.codeeval.com/open_challenges/17/", category = "Moderate challenges")
 public class Main
 {
 	private static Map<List<Integer>, Integer> sums = new HashMap<>();

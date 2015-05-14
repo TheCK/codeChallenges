@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 98, name = "Point in Circle", description = "Define whether a point is in a circle", url = "https://www.codeeval.com/open_challenges/98/", category = "Moderate callenges")
+@Solution(id = 98, name = "Point in Circle", description = "Define whether a point is in a circle", url = "https://www.codeeval.com/open_challenges/98/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 177, name = "Justify the Text", description = "Align the text to the specified width.", url = "https://www.codeeval.com/open_challenges/177/", category = "Moderate callenges")
+@Solution(id = 177, name = "Justify the Text", description = "Align the text to the specified width.", url = "https://www.codeeval.com/open_challenges/177/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

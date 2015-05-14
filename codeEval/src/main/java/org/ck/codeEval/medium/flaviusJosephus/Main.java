@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 75, name = "Flavius Josephus", description = "Eliminate every i'th item from a circular list.", url = "https://www.codeeval.com/open_challenges/75/", category = "Moderate callenges")
+@Solution(id = 75, name = "Flavius Josephus", description = "Eliminate every i'th item from a circular list.", url = "https://www.codeeval.com/open_challenges/75/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 76, name = "String Rotation", description = "Find if a string is the rotation of another string.", url = "https://www.codeeval.com/open_challenges/76/", category = "Moderate callenges")
+@Solution(id = 76, name = "String Rotation", description = "Find if a string is the rotation of another string.", url = "https://www.codeeval.com/open_challenges/76/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

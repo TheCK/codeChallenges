@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 138, name = "Car Race", description = "Determine the fastest car", url = "https://www.codeeval.com/open_challenges/138/", category = "Moderate callenges")
+@Solution(id = 138, name = "Car Race", description = "Determine the fastest car", url = "https://www.codeeval.com/open_challenges/138/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

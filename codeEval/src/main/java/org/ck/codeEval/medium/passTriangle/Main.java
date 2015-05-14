@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 89, name = "Pass Triangle", description = "Lead the way within the triangle", url = "https://www.codeeval.com/open_challenges/89/", category = "Moderate callenges")
+@Solution(id = 89, name = "Pass Triangle", description = "Lead the way within the triangle", url = "https://www.codeeval.com/open_challenges/89/", category = "Moderate challenges")
 public class Main
 {
 	private static int[][] sumSoFar = null;

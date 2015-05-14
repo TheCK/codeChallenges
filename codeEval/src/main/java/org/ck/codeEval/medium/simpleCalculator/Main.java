@@ -14,7 +14,7 @@ import java.util.Stack;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 94, name = "Simple Calculator", description = "Create a simple calculator", url = "https://www.codeeval.com/open_challenges/94/", category = "Moderate callenges")
+@Solution(id = 94, name = "Simple Calculator", description = "Create a simple calculator", url = "https://www.codeeval.com/open_challenges/94/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

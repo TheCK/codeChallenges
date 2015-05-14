@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 78, name = "Sudoku", description = "Determine if a grid layout is a valid sudoku solution.", url = "https://www.codeeval.com/open_challenges/78/", category = "Moderate callenges")
+@Solution(id = 78, name = "Sudoku", description = "Determine if a grid layout is a valid sudoku solution.", url = "https://www.codeeval.com/open_challenges/78/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

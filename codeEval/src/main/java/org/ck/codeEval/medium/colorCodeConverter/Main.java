@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 148, name = "Color Code Converter", description = "Determine and convert the color code", url = "https://www.codeeval.com/open_challenges/148/", category = "Moderate callenges")
+@Solution(id = 148, name = "Color Code Converter", description = "Determine and convert the color code", url = "https://www.codeeval.com/open_challenges/148/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

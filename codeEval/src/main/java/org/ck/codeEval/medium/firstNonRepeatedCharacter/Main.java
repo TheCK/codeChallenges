@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 12, name = "First Non-Repeated Character", description = "Find the first non repeated character in a string.", url = "https://www.codeeval.com/open_challenges/12/", category = "Moderate callenges")
+@Solution(id = 12, name = "First Non-Repeated Character", description = "Find the first non repeated character in a string.", url = "https://www.codeeval.com/open_challenges/12/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

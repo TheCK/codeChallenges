@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 70, name = "Overlapping Rectangles", description = "Determine if two rectangles overlap.", url = "https://www.codeeval.com/open_challenges/70/", category = "Moderate callenges")
+@Solution(id = 70, name = "Overlapping Rectangles", description = "Determine if two rectangles overlap.", url = "https://www.codeeval.com/open_challenges/70/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

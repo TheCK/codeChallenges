@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 63, name = "Counting Primes", description = "Count the number of primes between two integers.", url = "https://www.codeeval.com/open_challenges/63/", category = "Moderate callenges")
+@Solution(id = 63, name = "Counting Primes", description = "Count the number of primes between two integers.", url = "https://www.codeeval.com/open_challenges/63/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

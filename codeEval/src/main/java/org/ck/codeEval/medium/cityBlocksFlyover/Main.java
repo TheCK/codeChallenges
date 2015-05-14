@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 133, name = "City Blocks Flyover", description = "Chart the path of a helicopter from above to discover how many city blocks it flew over.", url = "https://www.codeeval.com/open_challenges/133/", category = "Moderate callenges")
+@Solution(id = 133, name = "City Blocks Flyover", description = "Chart the path of a helicopter from above to discover how many city blocks it flew over.", url = "https://www.codeeval.com/open_challenges/133/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 45, name = "Reverse and Add", description = "Continually add a number to its reverse to arrive at a palindrome", url = "https://www.codeeval.com/open_challenges/45/", category = "Moderate callenges")
+@Solution(id = 45, name = "Reverse and Add", description = "Continually add a number to its reverse to arrive at a palindrome", url = "https://www.codeeval.com/open_challenges/45/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

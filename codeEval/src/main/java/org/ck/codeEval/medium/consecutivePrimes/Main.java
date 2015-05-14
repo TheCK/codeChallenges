@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 187, name = "Consecutive Primes", description = "Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.", url = "https://www.codeeval.com/open_challenges/187/", category = "Moderate callenges", solved = false)
+@Solution(id = 187, name = "Consecutive Primes", description = "Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.", url = "https://www.codeeval.com/open_challenges/187/", category = "Moderate challenges", solved = false)
 public class Main
 {
 	public static void main(String[] args) throws Exception

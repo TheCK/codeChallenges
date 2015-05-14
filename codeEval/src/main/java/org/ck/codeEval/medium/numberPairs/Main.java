@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 34, name = "Number Pairs", description = "Find pairs of numbers in a sorted array whose sum is X", url = "https://www.codeeval.com/open_challenges/34/", category = "Moderate callenges")
+@Solution(id = 34, name = "Number Pairs", description = "Find pairs of numbers in a sorted array whose sum is X", url = "https://www.codeeval.com/open_challenges/34/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

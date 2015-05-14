@@ -9,7 +9,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 37, name = "Pangrams", description = "Find the missing alphabets", url = "https://www.codeeval.com/open_challenges/37/", category = "Moderate callenges")
+@Solution(id = 37, name = "Pangrams", description = "Find the missing alphabets", url = "https://www.codeeval.com/open_challenges/37/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

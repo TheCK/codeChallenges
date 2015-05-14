@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 71, name = "Reverse Groups", description = "Reverse elements in a list k items at a time.", url = "https://www.codeeval.com/open_challenges/71/", category = "Moderate callenges")
+@Solution(id = 71, name = "Reverse Groups", description = "Reverse elements in a list k items at a time.", url = "https://www.codeeval.com/open_challenges/71/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 158, name = "Interrupted Bubble Sort", description = "Sort a list of elements. Partially.", url = "https://www.codeeval.com/open_challenges/158/", category = "Moderate callenges")
+@Solution(id = 158, name = "Interrupted Bubble Sort", description = "Sort a list of elements. Partially.", url = "https://www.codeeval.com/open_challenges/158/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

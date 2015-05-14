@@ -334,7 +334,7 @@
 [155tests]: src/test/java/org/ck/codeEval/hard/asciiDecryption/MainTest.java
 [157tests]: src/test/java/org/ck/codeEval/hard/theLabyrinth/MainTest.java
 
-# Moderate callenges (60/63)
+# Moderate challenges (61/64)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -401,6 +401,7 @@
 | 181 | Gronsfeld cipher             | [Decipher the message enciphered with the Gronsfeld cipher.][181]                                            | &#9989;[&#128190;][181solution] | &#9989;[&#128190;][181tests] |
 | 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
 | 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
+| 193 | Magic Numbers                | [Print out a list of all the magic numbers in a provided range.][193]                                        | &#9989;[&#128190;][193solution] | &#9989;[&#128190;][193tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -465,6 +466,7 @@
 [181]: https://www.codeeval.com/open_challenges/181/
 [184]: https://www.codeeval.com/open_challenges/184/
 [187]: https://www.codeeval.com/open_challenges/187/
+[193]: https://www.codeeval.com/open_challenges/193/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -529,6 +531,7 @@
 [181solution]: src/main/java/org/ck/codeEval/medium/gronsfeldCipher/Main.java
 [184solution]: src/main/java/org/ck/codeEval/medium/burrowsWheelerTransform/Main.java
 [187solution]: src/main/java/org/ck/codeEval/medium/consecutivePrimes/Main.java
+[193solution]: src/main/java/org/ck/codeEval/medium/magicNumbers/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -593,4 +596,5 @@
 [181tests]: src/test/java/org/ck/codeEval/medium/gronsfeldCipher/MainTest.java
 [184tests]: src/test/java/org/ck/codeEval/medium/burrowsWheelerTransform/MainTest.java
 [187tests]: src/test/java/org/ck/codeEval/medium/consecutivePrimes/MainTest.java
+[193tests]: src/test/java/org/ck/codeEval/medium/magicNumbers/MainTest.java
 

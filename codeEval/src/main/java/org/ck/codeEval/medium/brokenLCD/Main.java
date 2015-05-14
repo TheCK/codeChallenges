@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 179, name = "Broken LCD", description = "Determine whether a given number can be displayed on the damaged LCD.", url = "https://www.codeeval.com/open_challenges/179/", category = "Moderate callenges")
+@Solution(id = 179, name = "Broken LCD", description = "Determine whether a given number can be displayed on the damaged LCD.", url = "https://www.codeeval.com/open_challenges/179/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

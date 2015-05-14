@@ -7,7 +7,7 @@ import java.util.Stack;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 9, name = "Stack Implementation", description = "Implement a stack interface", url = "https://www.codeeval.com/open_challenges/9/", category = "Moderate callenges")
+@Solution(id = 9, name = "Stack Implementation", description = "Implement a stack interface", url = "https://www.codeeval.com/open_challenges/9/", category = "Moderate challenges")
 public class Main
 {
 	private static Stack<Integer> stack = new Stack<>();

@@ -8,7 +8,7 @@ import java.net.URLDecoder;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 80, name = "URI Comparison", description = "Determine if two URIs match", url = "https://www.codeeval.com/open_challenges/80/", category = "Moderate callenges")
+@Solution(id = 80, name = "URI Comparison", description = "Determine if two URIs match", url = "https://www.codeeval.com/open_challenges/80/", category = "Moderate challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

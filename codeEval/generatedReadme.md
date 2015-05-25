@@ -1,4 +1,4 @@
-# Easy challenges (64/64)
+# Easy challenges (65/65)
 
 |   # | Name                        | Description                                                                             | Solution                        | Test                         |
 |----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -66,6 +66,7 @@
 | 186 | Max Range Sum               | [Determine max sum at the range.][186]                                                  | &#9989;[&#128190;][186solution] | &#9989;[&#128190;][186tests] |
 | 189 | Minimum Distance            | [Find a point with the smallest sum of distances to every given point.][189]            | &#9989;[&#128190;][189solution] | &#9989;[&#128190;][189tests] |
 | 192 | Compare Points              | [Given two (x, y) points A and B, determine which cardinal direction B is from A.][192] | &#9989;[&#128190;][192solution] | &#9989;[&#128190;][192tests] |
+| 196 | Swap Numbers                | [Swap numbers surrounding a word][196]                                                  | &#9989;[&#128190;][196solution] | &#9989;[&#128190;][196tests] |
 
 [1]: https://www.codeeval.com/open_challenges/1/
 [3]: https://www.codeeval.com/open_challenges/3/
@@ -131,6 +132,7 @@
 [186]: https://www.codeeval.com/open_challenges/186/
 [189]: https://www.codeeval.com/open_challenges/189/
 [192]: https://www.codeeval.com/open_challenges/192/
+[196]: https://www.codeeval.com/open_challenges/196/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
 [3solution]: src/main/java/org/ck/codeEval/easy/primePalindrome/Main.java
@@ -196,6 +198,7 @@
 [186solution]: src/main/java/org/ck/codeEval/easy/maxRangeSum/Main.java
 [189solution]: src/main/java/org/ck/codeEval/easy/minimumDistance/Main.java
 [192solution]: src/main/java/org/ck/codeEval/easy/comparePoints/Main.java
+[196solution]: src/main/java/org/ck/codeEval/easy/swapNumbers/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
 [3tests]: src/test/java/org/ck/codeEval/easy/primePalindrome/MainTest.java
@@ -261,6 +264,7 @@
 [186tests]: src/test/java/org/ck/codeEval/easy/maxRangeSum/MainTest.java
 [189tests]: src/test/java/org/ck/codeEval/easy/minimumDistance/MainTest.java
 [192tests]: src/test/java/org/ck/codeEval/easy/comparePoints/MainTest.java
+[196tests]: src/test/java/org/ck/codeEval/easy/swapNumbers/MainTest.java
 
 # Hard callenges (14/16)
 

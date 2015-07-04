@@ -1,4 +1,4 @@
-# Easy challenges (65/65)
+# Easy challenges (68/68)
 
 |   # | Name                        | Description                                                                             | Solution                        | Test                         |
 |----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -67,6 +67,9 @@
 | 189 | Minimum Distance            | [Find a point with the smallest sum of distances to every given point.][189]            | &#9989;[&#128190;][189solution] | &#9989;[&#128190;][189tests] |
 | 192 | Compare Points              | [Given two (x, y) points A and B, determine which cardinal direction B is from A.][192] | &#9989;[&#128190;][192solution] | &#9989;[&#128190;][192tests] |
 | 196 | Swap Numbers                | [Swap numbers surrounding a word][196]                                                  | &#9989;[&#128190;][196solution] | &#9989;[&#128190;][196tests] |
+| 199 | String mask                 | [Change case letters by mask][199]                                                      | &#9989;[&#128190;][199solution] | &#9989;[&#128190;][199tests] |
+| 202 | Stepwise word               | [Print the longest word in a stepwise manner][202]                                      | &#9989;[&#128190;][202solution] | &#9989;[&#128190;][202tests] |
+| 203 | Strings and arrows          | [Print the number of arrows in a string][203]                                           | &#9989;[&#128190;][203solution] | &#9989;[&#128190;][203tests] |
 
 [1]: https://www.codeeval.com/open_challenges/1/
 [3]: https://www.codeeval.com/open_challenges/3/
@@ -133,6 +136,9 @@
 [189]: https://www.codeeval.com/open_challenges/189/
 [192]: https://www.codeeval.com/open_challenges/192/
 [196]: https://www.codeeval.com/open_challenges/196/
+[199]: https://www.codeeval.com/open_challenges/199/
+[202]: https://www.codeeval.com/open_challenges/202/
+[203]: https://www.codeeval.com/open_challenges/203/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
 [3solution]: src/main/java/org/ck/codeEval/easy/primePalindrome/Main.java
@@ -199,6 +205,9 @@
 [189solution]: src/main/java/org/ck/codeEval/easy/minimumDistance/Main.java
 [192solution]: src/main/java/org/ck/codeEval/easy/comparePoints/Main.java
 [196solution]: src/main/java/org/ck/codeEval/easy/swapNumbers/Main.java
+[199solution]: src/main/java/org/ck/codeEval/easy/stringMask/Main.java
+[202solution]: src/main/java/org/ck/codeEval/easy/stepwiseWord/Main.java
+[203solution]: src/main/java/org/ck/codeEval/easy/stringAndArrows/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
 [3tests]: src/test/java/org/ck/codeEval/easy/primePalindrome/MainTest.java
@@ -265,6 +274,9 @@
 [189tests]: src/test/java/org/ck/codeEval/easy/minimumDistance/MainTest.java
 [192tests]: src/test/java/org/ck/codeEval/easy/comparePoints/MainTest.java
 [196tests]: src/test/java/org/ck/codeEval/easy/swapNumbers/MainTest.java
+[199tests]: src/test/java/org/ck/codeEval/easy/stringMask/MainTest.java
+[202tests]: src/test/java/org/ck/codeEval/easy/stepwiseWord/MainTest.java
+[203tests]: src/test/java/org/ck/codeEval/easy/stringAndArrows/MainTest.java
 
 # Hard callenges (14/16)
 
@@ -338,7 +350,7 @@
 [155tests]: src/test/java/org/ck/codeEval/hard/asciiDecryption/MainTest.java
 [157tests]: src/test/java/org/ck/codeEval/hard/theLabyrinth/MainTest.java
 
-# Moderate challenges (61/64)
+# Moderate challenges (62/65)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -406,6 +418,7 @@
 | 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
 | 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
 | 193 | Magic Numbers                | [Print out a list of all the magic numbers in a provided range.][193]                                        | &#9989;[&#128190;][193solution] | &#9989;[&#128190;][193tests] |
+| 197 | Column Names                 | [Convert integer to excel-style column name][197]                                                            | &#9989;[&#128190;][197solution] | &#9989;[&#128190;][197tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -471,6 +484,7 @@
 [184]: https://www.codeeval.com/open_challenges/184/
 [187]: https://www.codeeval.com/open_challenges/187/
 [193]: https://www.codeeval.com/open_challenges/193/
+[197]: https://www.codeeval.com/open_challenges/197/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -536,6 +550,7 @@
 [184solution]: src/main/java/org/ck/codeEval/medium/burrowsWheelerTransform/Main.java
 [187solution]: src/main/java/org/ck/codeEval/medium/consecutivePrimes/Main.java
 [193solution]: src/main/java/org/ck/codeEval/medium/magicNumbers/Main.java
+[197solution]: src/main/java/org/ck/codeEval/medium/columnNames/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -601,4 +616,5 @@
 [184tests]: src/test/java/org/ck/codeEval/medium/burrowsWheelerTransform/MainTest.java
 [187tests]: src/test/java/org/ck/codeEval/medium/consecutivePrimes/MainTest.java
 [193tests]: src/test/java/org/ck/codeEval/medium/magicNumbers/MainTest.java
+[197tests]: src/test/java/org/ck/codeEval/medium/columnNames/MainTest.java
 

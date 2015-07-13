@@ -35,8 +35,7 @@ public class FibonacciSpliterator extends Spliterators.AbstractLongSpliterator
 	public boolean tryAdvance(Consumer<? super Long> action)
 	{
 		Long result = getNextValue();
-		
-		
+
 		if (result != null)
 		{
 			action.accept(result);

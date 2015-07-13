@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 72, name = "Minimum Path Sum", description = "Calculate the minimum sum of a path through a matrix.", url = "https://www.codeeval.com/open_challenges/72/", category = "Hard callenges")
+@Solution(id = 72, name = "Minimum Path Sum", description = "Calculate the minimum sum of a path through a matrix.", url = "https://www.codeeval.com/open_challenges/72/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

@@ -278,7 +278,7 @@
 [202tests]: src/test/java/org/ck/codeEval/easy/stepwiseWord/MainTest.java
 [203tests]: src/test/java/org/ck/codeEval/easy/stringAndArrows/MainTest.java
 
-# Hard callenges (14/16)
+# Hard challenges (16/18)
 
 |   # | Name               | Description                                                                                                                 | Solution                        | Test                         |
 |----:|--------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -294,10 +294,12 @@
 |  59 | Telephone Words    | [Print out the words corresponding to a telephone number][59]                                                               | &#9989;[&#128190;][59solution]  | &#9989;[&#128190;][59tests]  |
 |  72 | Minimum Path Sum   | [Calculate the minimum sum of a path through a matrix.][72]                                                                 | &#9989;[&#128190;][72solution]  | &#9989;[&#128190;][72tests]  |
 |  79 | Minesweeper        | [Find the mines within a M*N matrix.][79]                                                                                   | &#9989;[&#128190;][79solution]  | &#9989;[&#128190;][79tests]  |
+| 108 | Computer Terminal  | [Print text to terminal with control sequences][108]                                                                        | &#9989;[&#128190;][108solution] | &#9989;[&#128190;][108tests] |
 | 126 | Play with DNA      | [Write an algorithm that a finds DNA segment in a given DNA string][126]                                                    | [&#128190;][126solution]        | [&#128190;][126tests]        |
 | 144 | Digit statistics   | [Find statistics in sequence][144]                                                                                          | &#9989;[&#128190;][144solution] | &#9989;[&#128190;][144tests] |
 | 155 | ASCII Decryption   | [Decrypt a message.][155]                                                                                                   | &#9989;[&#128190;][155solution] | &#9989;[&#128190;][155tests] |
 | 157 | The Labyrinth      | [Find the shortest way to exit.][157]                                                                                       | [&#128190;][157solution]        | [&#128190;][157tests]        |
+| 162 | Too unique         | [Find and mark the biggest submatrices of unique elements.][162]                                                            | &#9989;[&#128190;][162solution] | &#9989;[&#128190;][162tests] |
 
 [28]: https://www.codeeval.com/open_challenges/28/
 [36]: https://www.codeeval.com/open_challenges/36/
@@ -311,10 +313,12 @@
 [59]: https://www.codeeval.com/open_challenges/59/
 [72]: https://www.codeeval.com/open_challenges/72/
 [79]: https://www.codeeval.com/open_challenges/79/
+[108]: https://www.codeeval.com/open_challenges/108/
 [126]: https://www.codeeval.com/open_challenges/126/
 [144]: https://www.codeeval.com/open_challenges/144/
 [155]: https://www.codeeval.com/open_challenges/155/
 [157]: https://www.codeeval.com/open_challenges/157/
+[162]: https://www.codeeval.com/open_challenges/162/
 
 [28solution]: src/main/java/org/ck/codeEval/hard/stringSearching/Main.java
 [36solution]: src/main/java/org/ck/codeEval/hard/messageDecoding/Main.java
@@ -328,10 +332,12 @@
 [59solution]: src/main/java/org/ck/codeEval/hard/telephoneWords/Main.java
 [72solution]: src/main/java/org/ck/codeEval/hard/minimumPathSum/Main.java
 [79solution]: src/main/java/org/ck/codeEval/hard/minesweeper/Main.java
+[108solution]: src/main/java/org/ck/codeEval/hard/computerTerminal/Main.java
 [126solution]: src/main/java/org/ck/codeEval/hard/playWithDNA/Main.java
 [144solution]: src/main/java/org/ck/codeEval/hard/digitStatistics/Main.java
 [155solution]: src/main/java/org/ck/codeEval/hard/asciiDecryption/Main.java
 [157solution]: src/main/java/org/ck/codeEval/hard/theLabyrinth/Main.java
+[162solution]: src/main/java/org/ck/codeEval/hard/tooUnique/Main.java
 
 [28tests]: src/test/java/org/ck/codeEval/hard/stringSearching/MainTest.java
 [36tests]: src/test/java/org/ck/codeEval/hard/messageDecoding/MainTest.java
@@ -345,12 +351,14 @@
 [59tests]: src/test/java/org/ck/codeEval/hard/telephoneWords/MainTest.java
 [72tests]: src/test/java/org/ck/codeEval/hard/minimumPathSum/MainTest.java
 [79tests]: src/test/java/org/ck/codeEval/hard/minesweeper/MainTest.java
+[108tests]: src/test/java/org/ck/codeEval/hard/computerTerminal/MainTest.java
 [126tests]: src/test/java/org/ck/codeEval/hard/playWithDNA/MainTest.java
 [144tests]: src/test/java/org/ck/codeEval/hard/digitStatistics/MainTest.java
 [155tests]: src/test/java/org/ck/codeEval/hard/asciiDecryption/MainTest.java
 [157tests]: src/test/java/org/ck/codeEval/hard/theLabyrinth/MainTest.java
+[162tests]: src/test/java/org/ck/codeEval/hard/tooUnique/MainTest.java
 
-# Moderate challenges (62/65)
+# Moderate challenges (61/64)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -418,7 +426,6 @@
 | 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
 | 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
 | 193 | Magic Numbers                | [Print out a list of all the magic numbers in a provided range.][193]                                        | &#9989;[&#128190;][193solution] | &#9989;[&#128190;][193tests] |
-| 197 | Column Names                 | [Convert integer to excel-style column name][197]                                                            | &#9989;[&#128190;][197solution] | &#9989;[&#128190;][197tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -484,7 +491,6 @@
 [184]: https://www.codeeval.com/open_challenges/184/
 [187]: https://www.codeeval.com/open_challenges/187/
 [193]: https://www.codeeval.com/open_challenges/193/
-[197]: https://www.codeeval.com/open_challenges/197/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -550,7 +556,6 @@
 [184solution]: src/main/java/org/ck/codeEval/medium/burrowsWheelerTransform/Main.java
 [187solution]: src/main/java/org/ck/codeEval/medium/consecutivePrimes/Main.java
 [193solution]: src/main/java/org/ck/codeEval/medium/magicNumbers/Main.java
-[197solution]: src/main/java/org/ck/codeEval/medium/columnNames/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -616,5 +621,4 @@
 [184tests]: src/test/java/org/ck/codeEval/medium/burrowsWheelerTransform/MainTest.java
 [187tests]: src/test/java/org/ck/codeEval/medium/consecutivePrimes/MainTest.java
 [193tests]: src/test/java/org/ck/codeEval/medium/magicNumbers/MainTest.java
-[197tests]: src/test/java/org/ck/codeEval/medium/columnNames/MainTest.java
 

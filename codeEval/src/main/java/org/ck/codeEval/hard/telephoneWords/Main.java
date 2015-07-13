@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 59, name = "Telephone Words", description = "Print out the words corresponding to a telephone number", url = "https://www.codeeval.com/open_challenges/59/", category = "Hard callenges")
+@Solution(id = 59, name = "Telephone Words", description = "Print out the words corresponding to a telephone number", url = "https://www.codeeval.com/open_challenges/59/", category = "Hard challenges")
 public class Main
 {
 	private static Map<String, String[]> map = new HashMap<>();

@@ -12,7 +12,7 @@ import java.util.TreeMap;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 126, name = "Play with DNA", description = "Write an algorithm that a finds DNA segment in a given DNA string", url = "https://www.codeeval.com/open_challenges/126/", category = "Hard callenges", solved = false)
+@Solution(id = 126, name = "Play with DNA", description = "Write an algorithm that a finds DNA segment in a given DNA string", url = "https://www.codeeval.com/open_challenges/126/", category = "Hard challenges", solved = false)
 public class Main
 {
 	private static Map<String, Integer> cache = new HashMap<>();

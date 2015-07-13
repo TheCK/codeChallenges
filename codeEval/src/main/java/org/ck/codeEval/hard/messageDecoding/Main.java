@@ -11,7 +11,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 36, name = "Message Decoding", description = "Decode an encoded message", url = "https://www.codeeval.com/open_challenges/36/", category = "Hard callenges")
+@Solution(id = 36, name = "Message Decoding", description = "Decode an encoded message", url = "https://www.codeeval.com/open_challenges/36/", category = "Hard challenges")
 public class Main
 {
 	private static int READ_LENGTH = 0;

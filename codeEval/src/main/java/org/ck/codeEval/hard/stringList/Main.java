@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 38, name = "String List", description = "Create a new string from constituent alphabets", url = "https://www.codeeval.com/open_challenges/38/", category = "Hard callenges")
+@Solution(id = 38, name = "String List", description = "Create a new string from constituent alphabets", url = "https://www.codeeval.com/open_challenges/38/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

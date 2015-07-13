@@ -10,7 +10,7 @@ public class Problem
 {
 	public static void main(String[] args)
 	{
-		OptionalInt result = StreamSupport.intStream(new TriangleSpliterator(1, 100000000), false).filter(x -> MyMath.getDivisors(x).size() > 500).findFirst();
+		OptionalInt result = StreamSupport.intStream(new TriangleSpliterator(1, 100000000), true).filter(x -> MyMath.getDivisors(x).size() > 500).findFirst();
 		
 		System.out.println(result.getAsInt());
 	}

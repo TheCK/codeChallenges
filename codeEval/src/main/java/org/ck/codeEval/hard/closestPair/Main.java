@@ -10,7 +10,7 @@ import java.util.Locale;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 51, name = "Closest Pair", description = "Given a set of points in a two dimensional space, you will have to find the distance between the closest two points.", url = "https://www.codeeval.com/open_challenges/51/", category = "Hard callenges")
+@Solution(id = 51, name = "Closest Pair", description = "Given a set of points in a two dimensional space, you will have to find the distance between the closest two points.", url = "https://www.codeeval.com/open_challenges/51/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

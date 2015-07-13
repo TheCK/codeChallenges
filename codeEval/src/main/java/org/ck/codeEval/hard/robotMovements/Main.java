@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 56, name = "Robot Movements", description = "Number of ways a robot can reach its destination", url = "https://www.codeeval.com/open_challenges/56/", category = "Hard callenges")
+@Solution(id = 56, name = "Robot Movements", description = "Number of ways a robot can reach its destination", url = "https://www.codeeval.com/open_challenges/56/", category = "Hard challenges")
 public class Main
 {
 	private static final Integer MIN_X = 0;

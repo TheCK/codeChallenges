@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 144, name = "Digit statistics", description = "Find statistics in sequence", url = "https://www.codeeval.com/open_challenges/144/", category = "Hard callenges")
+@Solution(id = 144, name = "Digit statistics", description = "Find statistics in sequence", url = "https://www.codeeval.com/open_challenges/144/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

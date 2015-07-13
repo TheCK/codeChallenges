@@ -143,5 +143,4 @@ public class MyMath
     {
     	return isPalindrome(Integer.toString(number));
     }
-	
 }

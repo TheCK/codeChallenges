@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 79, name = "Minesweeper", description = "Find the mines within a M*N matrix.", url = "https://www.codeeval.com/open_challenges/79/", category = "Hard callenges")
+@Solution(id = 79, name = "Minesweeper", description = "Find the mines within a M*N matrix.", url = "https://www.codeeval.com/open_challenges/79/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

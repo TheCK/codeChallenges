@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 44, name = "Following Integer", description = "Determine the next number in a sequence", url = "https://www.codeeval.com/open_challenges/44/", category = "Hard callenges")
+@Solution(id = 44, name = "Following Integer", description = "Determine the next number in a sequence", url = "https://www.codeeval.com/open_challenges/44/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

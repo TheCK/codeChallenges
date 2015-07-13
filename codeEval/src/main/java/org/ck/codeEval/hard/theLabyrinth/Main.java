@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 157, name = "The Labyrinth", description = "Find the shortest way to exit.", url = "https://www.codeeval.com/open_challenges/157/", category = "Hard callenges", solved = false)
+@Solution(id = 157, name = "The Labyrinth", description = "Find the shortest way to exit.", url = "https://www.codeeval.com/open_challenges/157/", category = "Hard challenges", solved = false)
 public class Main
 {
 	private static int shortest = Integer.MAX_VALUE;

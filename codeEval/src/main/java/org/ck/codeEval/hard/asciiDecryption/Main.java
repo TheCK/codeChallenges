@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 155, name = "ASCII Decryption", description = "Decrypt a message.", url = "https://www.codeeval.com/open_challenges/155/", category = "Hard callenges")
+@Solution(id = 155, name = "ASCII Decryption", description = "Decrypt a message.", url = "https://www.codeeval.com/open_challenges/155/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

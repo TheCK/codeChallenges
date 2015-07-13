@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 47, name = "Palindromic Ranges", description = "Find out a range of palindromic numbers", url = "https://www.codeeval.com/open_challenges/47/", category = "Hard callenges")
+@Solution(id = 47, name = "Palindromic Ranges", description = "Find out a range of palindromic numbers", url = "https://www.codeeval.com/open_challenges/47/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

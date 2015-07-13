@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 28, name = "String Searching", description = "Determine if substring match exists.", url = "https://www.codeeval.com/open_challenges/28/", category = "Hard callenges")
+@Solution(id = 28, name = "String Searching", description = "Determine if substring match exists.", url = "https://www.codeeval.com/open_challenges/28/", category = "Hard challenges")
 public class Main
 {
 	public static void main(String[] args) throws Exception

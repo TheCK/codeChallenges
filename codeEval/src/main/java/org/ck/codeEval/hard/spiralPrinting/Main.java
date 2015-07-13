@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
-@Solution(id = 57, name = "Spiral Printing", description = "Print out a 2D array in spiral order", url = "https://www.codeeval.com/open_challenges/57/", category = "Hard callenges")
+@Solution(id = 57, name = "Spiral Printing", description = "Print out a 2D array in spiral order", url = "https://www.codeeval.com/open_challenges/57/", category = "Hard challenges")
 public class Main
 {
 	private static final int LEFT = 1;

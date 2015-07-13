@@ -278,7 +278,7 @@
 [202tests]: src/test/java/org/ck/codeEval/easy/stepwiseWord/MainTest.java
 [203tests]: src/test/java/org/ck/codeEval/easy/stringAndArrows/MainTest.java
 
-# Hard challenges (16/18)
+# Hard challenges (17/19)
 
 |   # | Name               | Description                                                                                                                 | Solution                        | Test                         |
 |----:|--------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -294,6 +294,7 @@
 |  59 | Telephone Words    | [Print out the words corresponding to a telephone number][59]                                                               | &#9989;[&#128190;][59solution]  | &#9989;[&#128190;][59tests]  |
 |  72 | Minimum Path Sum   | [Calculate the minimum sum of a path through a matrix.][72]                                                                 | &#9989;[&#128190;][72solution]  | &#9989;[&#128190;][72tests]  |
 |  79 | Minesweeper        | [Find the mines within a M*N matrix.][79]                                                                                   | &#9989;[&#128190;][79solution]  | &#9989;[&#128190;][79tests]  |
+| 105 | Largest Sub-Matrix | [Determine the largest sub-matrix in a matrix][105]                                                                         | &#9989;[&#128190;][105solution] | &#9989;[&#128190;][105tests] |
 | 108 | Computer Terminal  | [Print text to terminal with control sequences][108]                                                                        | &#9989;[&#128190;][108solution] | &#9989;[&#128190;][108tests] |
 | 126 | Play with DNA      | [Write an algorithm that a finds DNA segment in a given DNA string][126]                                                    | [&#128190;][126solution]        | [&#128190;][126tests]        |
 | 144 | Digit statistics   | [Find statistics in sequence][144]                                                                                          | &#9989;[&#128190;][144solution] | &#9989;[&#128190;][144tests] |
@@ -313,6 +314,7 @@
 [59]: https://www.codeeval.com/open_challenges/59/
 [72]: https://www.codeeval.com/open_challenges/72/
 [79]: https://www.codeeval.com/open_challenges/79/
+[105]: https://www.codeeval.com/open_challenges/105/
 [108]: https://www.codeeval.com/open_challenges/108/
 [126]: https://www.codeeval.com/open_challenges/126/
 [144]: https://www.codeeval.com/open_challenges/144/
@@ -332,6 +334,7 @@
 [59solution]: src/main/java/org/ck/codeEval/hard/telephoneWords/Main.java
 [72solution]: src/main/java/org/ck/codeEval/hard/minimumPathSum/Main.java
 [79solution]: src/main/java/org/ck/codeEval/hard/minesweeper/Main.java
+[105solution]: src/main/java/org/ck/codeEval/hard/largestSubMatrix/Main.java
 [108solution]: src/main/java/org/ck/codeEval/hard/computerTerminal/Main.java
 [126solution]: src/main/java/org/ck/codeEval/hard/playWithDNA/Main.java
 [144solution]: src/main/java/org/ck/codeEval/hard/digitStatistics/Main.java
@@ -351,6 +354,7 @@
 [59tests]: src/test/java/org/ck/codeEval/hard/telephoneWords/MainTest.java
 [72tests]: src/test/java/org/ck/codeEval/hard/minimumPathSum/MainTest.java
 [79tests]: src/test/java/org/ck/codeEval/hard/minesweeper/MainTest.java
+[105tests]: src/test/java/org/ck/codeEval/hard/largestSubMatrix/MainTest.java
 [108tests]: src/test/java/org/ck/codeEval/hard/computerTerminal/MainTest.java
 [126tests]: src/test/java/org/ck/codeEval/hard/playWithDNA/MainTest.java
 [144tests]: src/test/java/org/ck/codeEval/hard/digitStatistics/MainTest.java

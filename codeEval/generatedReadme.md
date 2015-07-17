@@ -362,7 +362,7 @@
 [157tests]: src/test/java/org/ck/codeEval/hard/theLabyrinth/MainTest.java
 [162tests]: src/test/java/org/ck/codeEval/hard/tooUnique/MainTest.java
 
-# Moderate challenges (64/67)
+# Moderate challenges (65/68)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -429,6 +429,7 @@
 | 181 | Gronsfeld cipher             | [Decipher the message enciphered with the Gronsfeld cipher.][181]                                            | &#9989;[&#128190;][181solution] | &#9989;[&#128190;][181tests] |
 | 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
 | 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
+| 190 | Number Operations            | [Determine if it is possible to produce the number 42 with five cards.][190]                                 | &#9989;[&#128190;][190solution] | &#9989;[&#128190;][190tests] |
 | 193 | Magic Numbers                | [Print out a list of all the magic numbers in a provided range.][193]                                        | &#9989;[&#128190;][193solution] | &#9989;[&#128190;][193tests] |
 | 194 | Twenty Forty Eight           | [Implement the 2048 game logic][194]                                                                         | &#9989;[&#128190;][194solution] | &#9989;[&#128190;][194tests] |
 | 197 | Column Names                 | [Convert integer to excel-style column name][197]                                                            | &#9989;[&#128190;][197solution] | &#9989;[&#128190;][197tests] |
@@ -497,6 +498,7 @@
 [181]: https://www.codeeval.com/open_challenges/181/
 [184]: https://www.codeeval.com/open_challenges/184/
 [187]: https://www.codeeval.com/open_challenges/187/
+[190]: https://www.codeeval.com/open_challenges/190/
 [193]: https://www.codeeval.com/open_challenges/193/
 [194]: https://www.codeeval.com/open_challenges/194/
 [197]: https://www.codeeval.com/open_challenges/197/
@@ -565,6 +567,7 @@
 [181solution]: src/main/java/org/ck/codeEval/medium/gronsfeldCipher/Main.java
 [184solution]: src/main/java/org/ck/codeEval/medium/burrowsWheelerTransform/Main.java
 [187solution]: src/main/java/org/ck/codeEval/medium/consecutivePrimes/Main.java
+[190solution]: src/main/java/org/ck/codeEval/medium/numberOperations/Main.java
 [193solution]: src/main/java/org/ck/codeEval/medium/magicNumbers/Main.java
 [194solution]: src/main/java/org/ck/codeEval/medium/twentyFortyEight/Main.java
 [197solution]: src/main/java/org/ck/codeEval/medium/columnNames/Main.java
@@ -633,6 +636,7 @@
 [181tests]: src/test/java/org/ck/codeEval/medium/gronsfeldCipher/MainTest.java
 [184tests]: src/test/java/org/ck/codeEval/medium/burrowsWheelerTransform/MainTest.java
 [187tests]: src/test/java/org/ck/codeEval/medium/consecutivePrimes/MainTest.java
+[190tests]: src/test/java/org/ck/codeEval/medium/numberOperations/MainTest.java
 [193tests]: src/test/java/org/ck/codeEval/medium/magicNumbers/MainTest.java
 [194tests]: src/test/java/org/ck/codeEval/medium/twentyFortyEight/MainTest.java
 [197tests]: src/test/java/org/ck/codeEval/medium/columnNames/MainTest.java

@@ -6,4 +6,5 @@
 
 ## [HackerRank](hackerRank/readme.md)
 
+## [Codility](codility/readme.md)
 

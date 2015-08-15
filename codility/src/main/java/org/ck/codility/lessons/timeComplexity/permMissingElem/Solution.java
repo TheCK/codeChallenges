@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.timeComplexity.permMissingElem;
 
-@org.ck.codeChallengeLib.annotation.Solution(id = 2, name = "PermMissingElem", url = "https://codility.com/programmers/lessons/1", category = "Lessons", subCategory = "Time Complexity")
+@org.ck.codeChallengeLib.annotation.Solution(id = 2, name = "PermMissingElem", description = "Find the missing element in a given permutation.", url = "https://codility.com/programmers/lessons/1", category = "Lessons", subCategory = "1. Time Complexity")
 class Solution
 {
 	public int solution(int[] A)

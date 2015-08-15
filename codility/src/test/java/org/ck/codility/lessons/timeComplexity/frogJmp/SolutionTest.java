@@ -10,7 +10,7 @@ public class SolutionTest extends BaseTest
 	@Test(timeout = TIMEOUT)
 	public void test00() throws Exception
 	{
-		int result = new org.ck.codility.lessons.timeComplexity.frogJmp.Solution().solution(10, 85, 30);
+		int result = new Solution().solution(10, 85, 30);
 
 		assertEquals(3, result);
 	}

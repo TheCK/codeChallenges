@@ -1,4 +1,4 @@
-# Easy challenges (71/72)
+# Easy challenges (73/73)
 
 |   # | Name                        | Description                                                                             | Solution                        | Test                         |
 |----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -72,7 +72,8 @@
 | 203 | Strings and arrows          | [Print the number of arrows in a string][203]                                           | &#9989;[&#128190;][203solution] | &#9989;[&#128190;][203tests] |
 | 205 | Clean up the words          | [Print the words separated by spaces][205]                                              | &#9989;[&#128190;][205solution] | &#9989;[&#128190;][205tests] |
 | 208 | Find the highest score      | [Find the highest rate in the table][208]                                               | &#9989;[&#128190;][208solution] | &#9989;[&#128190;][208tests] |
-| 211 | Chardonnay or Cabernet      | [Guess a wine name.][211]                                                               | [&#128190;][211solution]        | [&#128190;][211tests]        |
+| 211 | Chardonnay or Cabernet      | [Guess a wine name.][211]                                                               | &#9989;[&#128190;][211solution] | &#9989;[&#128190;][211tests] |
+| 214 | Time to eat                 | [Sort timestamps in the right order.][214]                                              | &#9989;[&#128190;][214solution] | &#9989;[&#128190;][214tests] |
 | 217 | One zero, two zeros...      | [Count zeros in a binary system.][217]                                                  | &#9989;[&#128190;][217solution] | &#9989;[&#128190;][217tests] |
 
 [1]: https://www.codeeval.com/open_challenges/1/
@@ -146,6 +147,7 @@
 [205]: https://www.codeeval.com/open_challenges/205/
 [208]: https://www.codeeval.com/open_challenges/208/
 [211]: https://www.codeeval.com/open_challenges/211/
+[214]: https://www.codeeval.com/open_challenges/214/
 [217]: https://www.codeeval.com/open_challenges/217/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
@@ -219,6 +221,7 @@
 [205solution]: src/main/java/org/ck/codeEval/easy/cleanUpTheWords/Main.java
 [208solution]: src/main/java/org/ck/codeEval/easy/findthehighestscore/Main.java
 [211solution]: src/main/java/org/ck/codeEval/easy/chardonnayorcabernet/Main.java
+[214solution]: src/main/java/org/ck/codeEval/easy/timetoeat/Main.java
 [217solution]: src/main/java/org/ck/codeEval/easy/onezerotwozeros/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
@@ -292,6 +295,7 @@
 [205tests]: src/test/java/org/ck/codeEval/easy/cleanUpTheWords/MainTest.java
 [208tests]: src/test/java/org/ck/codeEval/easy/findthehighestscore/MainTest.java
 [211tests]: src/test/java/org/ck/codeEval/easy/chardonnayorcabernet/MainTest.java
+[214tests]: src/test/java/org/ck/codeEval/easy/timetoeat/MainTest.java
 [217tests]: src/test/java/org/ck/codeEval/easy/onezerotwozeros/MainTest.java
 
 # Hard challenges (17/19)

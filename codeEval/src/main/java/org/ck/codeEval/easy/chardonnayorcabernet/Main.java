@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-@Solution(id = 211, name = "Chardonnay or Cabernet", description = "Guess a wine name.", url = "https://www.codeeval.com/open_challenges/211/", category = "Easy challenges", solved = false)
+@Solution(id = 211, name = "Chardonnay or Cabernet", description = "Guess a wine name.", url = "https://www.codeeval.com/open_challenges/211/", category = "Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException
@@ -25,32 +25,31 @@ public class Main
 				List<String> wines = Arrays.asList(arguments[0].trim().split(" "));
 				List<String> letters = Arrays.asList(arguments[1].trim().split(""));
 
-				Map<String, Integer> usedLetters = new HashMap<>();
-				for (String letter : letters)
+				List<String> matchedWines = new ArrayList<>();
+				for (String wine : wines)
 				{
-					List<String> matches = new ArrayList<>();
+					Map<String, Integer> usedLetters = new HashMap<>();
+					boolean wineMatches = true;
 
-					if (!usedLetters.containsKey(letter))
+					for (String letter : letters)
 					{
-						for (String wine : wines)
+						if (!usedLetters.containsKey(letter))
 						{
-							if (wine.contains(letter))
+							if (!wine.contains(letter))
 							{
-								matches.add(wine);
+								wineMatches = false;
+								break;
 							}
+
+							usedLetters.put(letter, 1);
 						}
-
-						usedLetters.put(letter, 1);
-					}
-					else
-					{
-						int count = usedLetters.get(letter) + 1;
-
-						for (String wine : wines)
+						else
 						{
+							int count = usedLetters.get(letter) + 1;
+
 							boolean containsLettersSeveralTimes = true;
 
-							int lastIndex = 0;
+							int lastIndex = -1;
 							for (int i = 0; i < count; ++i)
 							{
 								int index = wine.indexOf(letter, lastIndex + 1);
@@ -66,20 +65,24 @@ public class Main
 								}
 							}
 
-							if (containsLettersSeveralTimes)
+							if (!containsLettersSeveralTimes)
 							{
-								matches.add(wine);
+								wineMatches = false;
+								break;
 							}
-						}
 
-						usedLetters.put(letter, count);
+							usedLetters.put(letter, count);
+						}
 					}
 
-					wines = matches;
+					if (wineMatches)
+					{
+						matchedWines.add(wine);
+					}
 				}
 
 				StringBuilder builder = new StringBuilder();
-				for (String match : wines)
+				for (String match : matchedWines)
 				{
 					builder.append(match);
 					builder.append(" ");

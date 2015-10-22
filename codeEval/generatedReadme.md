@@ -1,4 +1,4 @@
-# Easy challenges (69/69)
+# Easy challenges (70/71)
 
 |   # | Name                        | Description                                                                             | Solution                        | Test                         |
 |----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -71,6 +71,8 @@
 | 202 | Stepwise word               | [Print the longest word in a stepwise manner][202]                                      | &#9989;[&#128190;][202solution] | &#9989;[&#128190;][202tests] |
 | 203 | Strings and arrows          | [Print the number of arrows in a string][203]                                           | &#9989;[&#128190;][203solution] | &#9989;[&#128190;][203tests] |
 | 205 | Clean up the words          | [Print the words separated by spaces][205]                                              | &#9989;[&#128190;][205solution] | &#9989;[&#128190;][205tests] |
+| 208 | Find the highest score      | [Find the highest rate in the table][208]                                               | &#9989;[&#128190;][208solution] | &#9989;[&#128190;][208tests] |
+| 211 | Chardonnay or Cabernet      | [Guess a wine name.][211]                                                               | [&#128190;][211solution]        | [&#128190;][211tests]        |
 
 [1]: https://www.codeeval.com/open_challenges/1/
 [3]: https://www.codeeval.com/open_challenges/3/
@@ -141,6 +143,8 @@
 [202]: https://www.codeeval.com/open_challenges/202/
 [203]: https://www.codeeval.com/open_challenges/203/
 [205]: https://www.codeeval.com/open_challenges/205/
+[208]: https://www.codeeval.com/open_challenges/208/
+[211]: https://www.codeeval.com/open_challenges/211/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
 [3solution]: src/main/java/org/ck/codeEval/easy/primePalindrome/Main.java
@@ -211,6 +215,8 @@
 [202solution]: src/main/java/org/ck/codeEval/easy/stepwiseWord/Main.java
 [203solution]: src/main/java/org/ck/codeEval/easy/stringAndArrows/Main.java
 [205solution]: src/main/java/org/ck/codeEval/easy/cleanUpTheWords/Main.java
+[208solution]: src/main/java/org/ck/codeEval/easy/findthehighestscore/Main.java
+[211solution]: src/main/java/org/ck/codeEval/easy/chardonnayorcabernet/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
 [3tests]: src/test/java/org/ck/codeEval/easy/primePalindrome/MainTest.java
@@ -281,6 +287,8 @@
 [202tests]: src/test/java/org/ck/codeEval/easy/stepwiseWord/MainTest.java
 [203tests]: src/test/java/org/ck/codeEval/easy/stringAndArrows/MainTest.java
 [205tests]: src/test/java/org/ck/codeEval/easy/cleanUpTheWords/MainTest.java
+[208tests]: src/test/java/org/ck/codeEval/easy/findthehighestscore/MainTest.java
+[211tests]: src/test/java/org/ck/codeEval/easy/chardonnayorcabernet/MainTest.java
 
 # Hard challenges (17/19)
 

@@ -12,15 +12,15 @@
 
 [1001tests]: src/test/java/org/ck/codility/challenges/alpha2010/SolutionTest.java
 
-# Lessons (5/5)
+# Lessons (6/6)
 
 ## 1. Time Complexity (3/3)
 
-| # | Name            | Description                                                              | Solution                      | Test                       |
-|--:|-----------------|--------------------------------------------------------------------------|:-----------------------------:|:--------------------------:|
-| 1 | TapeEquilibrium | [Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.][1] | &#9989;[&#128190;][1solution] | &#9989;[&#128190;][1tests] |
-| 2 | PermMissingElem | [Find the missing element in a given permutation.][2]                    | &#9989;[&#128190;][2solution] | &#9989;[&#128190;][2tests] |
-| 3 | FrogJmp         | [Count minimal number of jumps from position X to Y.][3]                 | &#9989;[&#128190;][3solution] | &#9989;[&#128190;][3tests] |
+| # | Name            | Description                                                                | Solution                      | Test                       |
+|--:|-----------------|----------------------------------------------------------------------------|:-----------------------------:|:--------------------------:|
+| 1 | TapeEquilibrium | [Minimize the value \|(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])\|.][1] | &#9989;[&#128190;][1solution] | &#9989;[&#128190;][1tests] |
+| 2 | PermMissingElem | [Find the missing element in a given permutation.][2]                      | &#9989;[&#128190;][2solution] | &#9989;[&#128190;][2tests] |
+| 3 | FrogJmp         | [Count minimal number of jumps from position X to Y.][3]                   | &#9989;[&#128190;][3solution] | &#9989;[&#128190;][3tests] |
 
 [1]: https://codility.com/programmers/lessons/1
 [2]: https://codility.com/programmers/lessons/1
@@ -50,4 +50,17 @@
 
 [11tests]: src/test/java/org/ck/codility/lessons/countingElements/frogRiverOne/SolutionTest.java
 [12tests]: src/test/java/org/ck/codility/lessons/countingElements/permCheck/SolutionTest.java
+
+
+## 3. Prefix Sums (1/1)
+
+|  # | Name        | Description                                         | Solution                       | Test                        |
+|---:|-------------|-----------------------------------------------------|:------------------------------:|:---------------------------:|
+| 21 | PassingCars | [Count the number of passing cars on the road.][21] | &#9989;[&#128190;][21solution] | &#9989;[&#128190;][21tests] |
+
+[21]: https://codility.com/programmers/lessons/3
+
+[21solution]: src/main/java/org/ck/codility/lessons/prefixSums/passingCars/Solution.java
+
+[21tests]: src/test/java/org/ck/codility/lessons/prefixSums/passingCars/SolutionTest.java
 

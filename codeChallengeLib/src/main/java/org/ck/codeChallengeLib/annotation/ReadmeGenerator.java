@@ -83,7 +83,10 @@ public class ReadmeGenerator extends AbstractProcessor
 
 	private static void processSubCategories(FileWriter writer, Messager messager, Map<String, List<SolutionInfo>> bySubCategory) throws IOException
 	{
-		for (String subCategory : bySubCategory.keySet())
+		List<String> subCategories = new ArrayList<>(bySubCategory.keySet());
+		Collections.sort(subCategories);
+
+		for (String subCategory : subCategories)
 		{
 			List<SolutionInfo> infosInThisSubCategory = bySubCategory.get(subCategory);
 			Collections.sort(infosInThisSubCategory);
@@ -287,7 +290,7 @@ public class ReadmeGenerator extends AbstractProcessor
 			this.id = id;
 
 			this.name = name;
-			this.description = description;
+			this.description = description.replaceAll("\\|", "\\\\|");
 			this.url = url;
 
 			this.category = category;

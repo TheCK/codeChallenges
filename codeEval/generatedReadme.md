@@ -390,7 +390,7 @@
 [162tests]: src/test/java/org/ck/codeEval/hard/tooUnique/MainTest.java
 [210tests]: src/test/java/org/ck/codeEval/hard/brainfuck/MainTest.java
 
-# Moderate challenges (66/69)
+# Moderate challenges (67/70)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -462,6 +462,7 @@
 | 194 | Twenty Forty Eight           | [Implement the 2048 game logic][194]                                                                         | &#9989;[&#128190;][194solution] | &#9989;[&#128190;][194tests] |
 | 197 | Column Names                 | [Convert integer to excel-style column name][197]                                                            | &#9989;[&#128190;][197solution] | &#9989;[&#128190;][197tests] |
 | 200 | Sort matrix columns          | [Sort matrix columns from lowest to highest numbers][200]                                                    | &#9989;[&#128190;][200solution] | &#9989;[&#128190;][200tests] |
+| 206 | Lucky tickets                | [Count the lucky tickets][206]                                                                               | &#9989;[&#128190;][206solution] | &#9989;[&#128190;][206tests] |
 | 212 | Robo and Robitta             | [Count all nuts.][212]                                                                                       | &#9989;[&#128190;][212solution] | &#9989;[&#128190;][212tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
@@ -532,6 +533,7 @@
 [194]: https://www.codeeval.com/open_challenges/194/
 [197]: https://www.codeeval.com/open_challenges/197/
 [200]: https://www.codeeval.com/open_challenges/200/
+[206]: https://www.codeeval.com/open_challenges/206/
 [212]: https://www.codeeval.com/open_challenges/212/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
@@ -602,6 +604,7 @@
 [194solution]: src/main/java/org/ck/codeEval/medium/twentyFortyEight/Main.java
 [197solution]: src/main/java/org/ck/codeEval/medium/columnNames/Main.java
 [200solution]: src/main/java/org/ck/codeEval/medium/sortMatrixColums/Main.java
+[206solution]: src/main/java/org/ck/codeEval/medium/luckytickets/Main.java
 [212solution]: src/main/java/org/ck/codeEval/medium/roboandrobitta/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
@@ -672,5 +675,6 @@
 [194tests]: src/test/java/org/ck/codeEval/medium/twentyFortyEight/MainTest.java
 [197tests]: src/test/java/org/ck/codeEval/medium/columnNames/MainTest.java
 [200tests]: src/test/java/org/ck/codeEval/medium/sortMatrixColums/MainTest.java
+[206tests]: src/test/java/org/ck/codeEval/medium/luckytickets/MainTest.java
 [212tests]: src/test/java/org/ck/codeEval/medium/roboandrobitta/MainTest.java
 

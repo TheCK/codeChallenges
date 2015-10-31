@@ -386,7 +386,7 @@
 [162tests]: src/test/java/org/ck/codeEval/hard/tooUnique/MainTest.java
 [210tests]: src/test/java/org/ck/codeEval/hard/brainfuck/MainTest.java
 
-# Moderate challenges (69/72)
+# Moderate challenges (70/73)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -462,6 +462,7 @@
 | 209 | Black or white               | [Find the smallest submatrix][209]                                                                           | &#9989;[&#128190;][209solution] | &#9989;[&#128190;][209tests] |
 | 212 | Robo and Robitta             | [Count all nuts.][212]                                                                                       | &#9989;[&#128190;][212solution] | &#9989;[&#128190;][212tests] |
 | 215 | Double trouble               | [Calculate the number of correct variants for messages.][215]                                                | &#9989;[&#128190;][215solution] | &#9989;[&#128190;][215tests] |
+| 218 | Builders team.               | [Count all squares on the map.][218]                                                                         | &#9989;[&#128190;][218solution] | &#9989;[&#128190;][218tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -535,6 +536,7 @@
 [209]: https://www.codeeval.com/open_challenges/209/
 [212]: https://www.codeeval.com/open_challenges/212/
 [215]: https://www.codeeval.com/open_challenges/215/
+[218]: https://www.codeeval.com/open_challenges/218/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -608,6 +610,7 @@
 [209solution]: src/main/java/org/ck/codeEval/medium/blackorwhite/Main.java
 [212solution]: src/main/java/org/ck/codeEval/medium/roboandrobitta/Main.java
 [215solution]: src/main/java/org/ck/codeEval/medium/doubletrouble/Main.java
+[218solution]: src/main/java/org/ck/codeEval/medium/buildersteam/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -681,4 +684,5 @@
 [209tests]: src/test/java/org/ck/codeEval/medium/blackorwhite/MainTest.java
 [212tests]: src/test/java/org/ck/codeEval/medium/roboandrobitta/MainTest.java
 [215tests]: src/test/java/org/ck/codeEval/medium/doubletrouble/MainTest.java
+[218tests]: src/test/java/org/ck/codeEval/medium/buildersteam/MainTest.java
 

@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-@Solution(id=152, name="Age distribution", description="Print out where the person is.", url="https://www.codeeval.com/open_challenges/152/", category="Easy challenges")
+@Solution(id=220, name="Trick or Treat", description="Count all candies.", url="https://www.codeeval.com/open_challenges/220/", category="Easy challenges")
 public class Main
 {
 	public static void main(String[] args) throws IOException

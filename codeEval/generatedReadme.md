@@ -306,7 +306,7 @@
 [220tests]: src/test/java/org/ck/codeEval/easy/trickortreat/MainTest.java
 [222tests]: src/test/java/org/ck/codeEval/easy/blackcard/MainTest.java
 
-# Hard challenges (20/22)
+# Hard challenges (21/23)
 
 |   # | Name                  | Description                                                                                                                 | Solution                        | Test                         |
 |----:|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -331,6 +331,7 @@
 | 157 | The Labyrinth         | [Find the shortest way to exit.][157]                                                                                       | [&#128190;][157solution]        | [&#128190;][157tests]        |
 | 162 | Too unique            | [Find and mark the biggest submatrices of unique elements.][162]                                                            | &#9989;[&#128190;][162solution] | &#9989;[&#128190;][162tests] |
 | 210 | Brainf*ck             | [Blow your mind][210]                                                                                                       | &#9989;[&#128190;][210solution] | &#9989;[&#128190;][210tests] |
+| 213 | Lakes, not cakes      | [Count all lakes.][213]                                                                                                     | &#9989;[&#128190;][213solution] | &#9989;[&#128190;][213tests] |
 | 216 | Everything or nothing | [Check if a code is correct.][216]                                                                                          | &#9989;[&#128190;][216solution] | &#9989;[&#128190;][216tests] |
 
 [7]: https://www.codeeval.com/open_challenges/7/
@@ -354,6 +355,7 @@
 [157]: https://www.codeeval.com/open_challenges/157/
 [162]: https://www.codeeval.com/open_challenges/162/
 [210]: https://www.codeeval.com/open_challenges/210/
+[213]: https://www.codeeval.com/open_challenges/213/
 [216]: https://www.codeeval.com/open_challenges/216/
 
 [7solution]: src/main/java/org/ck/codeEval/hard/prefixexpressions/Main.java
@@ -377,6 +379,7 @@
 [157solution]: src/main/java/org/ck/codeEval/hard/theLabyrinth/Main.java
 [162solution]: src/main/java/org/ck/codeEval/hard/tooUnique/Main.java
 [210solution]: src/main/java/org/ck/codeEval/hard/brainfuck/Main.java
+[213solution]: src/main/java/org/ck/codeEval/hard/lakesnotcakes/Main.java
 [216solution]: src/main/java/org/ck/codeEval/hard/everythingornothing/Main.java
 
 [7tests]: src/test/java/org/ck/codeEval/hard/prefixexpressions/MainTest.java
@@ -400,6 +403,7 @@
 [157tests]: src/test/java/org/ck/codeEval/hard/theLabyrinth/MainTest.java
 [162tests]: src/test/java/org/ck/codeEval/hard/tooUnique/MainTest.java
 [210tests]: src/test/java/org/ck/codeEval/hard/brainfuck/MainTest.java
+[213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
 # Moderate challenges (71/74)

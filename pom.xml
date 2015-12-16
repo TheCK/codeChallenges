@@ -16,6 +16,8 @@
 	<modules>
 		<module>codeChallengeLib</module>
 		<module>codeEval</module>
+		<module>hackerRank</module>
+		<module>projectEuler</module>
 	</modules>
 
 	<build>

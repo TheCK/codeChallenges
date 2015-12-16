@@ -12,6 +12,6 @@ public class ProblemTest extends BaseTest
 	{
 		Problem.main(null);
 		
-		assertEquals(getResult(""), this.output.toString());
+		assertEquals(getResult("333082500"), this.output.toString());
 	}
 }

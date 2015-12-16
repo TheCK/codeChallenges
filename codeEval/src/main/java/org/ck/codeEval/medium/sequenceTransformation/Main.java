@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 
@@ -28,12 +29,12 @@ public class Main
 
 				boolean matches = false;
 				
-				Queue<Position> queue = new LinkedList<>();
-				queue.add(new Position(0, 0, null));
+				Stack<Position> queue = new Stack<>();
+				queue.push(new Position(0, 0, 'x'));
 
 				while (!queue.isEmpty())
 				{
-					Position position = queue.remove();
+					Position position = queue.pop();
 
 					int patternPosition = position.getPatternPosition();
 					int resultPosition = position.getResultPosition();
@@ -54,15 +55,15 @@ public class Main
 						continue;
 					}
 
-					String currentPattern = pattern.substring(patternPosition, patternPosition + 1);
-					String currentResult = result.substring(resultPosition, resultPosition + 1);
+					char currentPattern = pattern.charAt(patternPosition);
+					char currentResult = result.charAt(resultPosition);
 
-					if (currentPattern.equals("0"))
+					if (currentPattern == '0')
 					{
-						if (currentResult.equals("A"))
+						if (currentResult == 'A')
 						{
-							queue.add(new Position(patternPosition, resultPosition + 1, null));
-							queue.add(new Position(patternPosition + 1, resultPosition + 1, null));
+							queue.push(new Position(patternPosition, resultPosition + 1, 'x'));
+							queue.push(new Position(patternPosition + 1, resultPosition + 1, 'x'));
 						}
 						
 						continue;
@@ -70,22 +71,22 @@ public class Main
 
 					/* currentPattern is 1 here */
 					
-					String lastChoice = position.getLastChoice();
+					char lastChoice = position.getLastChoice();
 
-					if (lastChoice != null)
+					if (lastChoice != 'x')
 					{
-						if (currentResult.equals(lastChoice))
+						if (currentResult == lastChoice)
 						{
-							queue.add(new Position(patternPosition, resultPosition + 1, lastChoice));
-							queue.add(new Position(patternPosition + 1, resultPosition + 1, null));
+							queue.push(new Position(patternPosition, resultPosition + 1, lastChoice));
+							queue.push(new Position(patternPosition + 1, resultPosition + 1, 'x'));
 						}
 						
 						continue;
 					}
 					
 					/* pattern is 1 here and we had no former choice */
-					queue.add(new Position(patternPosition, resultPosition + 1, currentResult));
-					queue.add(new Position(patternPosition + 1, resultPosition + 1, null));
+					queue.push(new Position(patternPosition, resultPosition + 1, currentResult));
+					queue.push(new Position(patternPosition + 1, resultPosition + 1, 'x'));
 				}
 
 				System.out.println(matches ? "Yes" : "No");
@@ -99,9 +100,9 @@ public class Main
 		private int patternPosition;
 		private int resultPosition;
 
-		private String lastChoice;
+		private char lastChoice;
 
-		public Position(int patternPosition, int resultPosition, String lastChoice)
+		public Position(int patternPosition, int resultPosition, char lastChoice)
 		{
 			this.patternPosition = patternPosition;
 			this.resultPosition = resultPosition;
@@ -119,7 +120,7 @@ public class Main
 			return this.resultPosition;
 		}
 
-		public String getLastChoice()
+		public char getLastChoice()
 		{
 			return this.lastChoice;
 		}

@@ -306,7 +306,7 @@
 [220tests]: src/test/java/org/ck/codeEval/easy/trickortreat/MainTest.java
 [222tests]: src/test/java/org/ck/codeEval/easy/blackcard/MainTest.java
 
-# Hard challenges (21/23)
+# Hard challenges (22/24)
 
 |   # | Name                  | Description                                                                                                                 | Solution                        | Test                         |
 |----:|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -321,6 +321,7 @@
 |  56 | Robot Movements       | [Number of ways a robot can reach its destination][56]                                                                      | &#9989;[&#128190;][56solution]  | &#9989;[&#128190;][56tests]  |
 |  57 | Spiral Printing       | [Print out a 2D array in spiral order][57]                                                                                  | &#9989;[&#128190;][57solution]  | &#9989;[&#128190;][57tests]  |
 |  59 | Telephone Words       | [Print out the words corresponding to a telephone number][59]                                                               | &#9989;[&#128190;][59solution]  | &#9989;[&#128190;][59tests]  |
+|  65 | Word Search           | [Find if a word exists in a grid][65]                                                                                       | &#9989;[&#128190;][65solution]  | &#9989;[&#128190;][65tests]  |
 |  72 | Minimum Path Sum      | [Calculate the minimum sum of a path through a matrix.][72]                                                                 | &#9989;[&#128190;][72solution]  | &#9989;[&#128190;][72tests]  |
 |  79 | Minesweeper           | [Find the mines within a M*N matrix.][79]                                                                                   | &#9989;[&#128190;][79solution]  | &#9989;[&#128190;][79tests]  |
 | 105 | Largest Sub-Matrix    | [Determine the largest sub-matrix in a matrix][105]                                                                         | &#9989;[&#128190;][105solution] | &#9989;[&#128190;][105tests] |
@@ -345,6 +346,7 @@
 [56]: https://www.codeeval.com/open_challenges/56/
 [57]: https://www.codeeval.com/open_challenges/57/
 [59]: https://www.codeeval.com/open_challenges/59/
+[65]: https://www.codeeval.com/open_challenges/65/
 [72]: https://www.codeeval.com/open_challenges/72/
 [79]: https://www.codeeval.com/open_challenges/79/
 [105]: https://www.codeeval.com/open_challenges/105/
@@ -369,6 +371,7 @@
 [56solution]: src/main/java/org/ck/codeEval/hard/robotMovements/Main.java
 [57solution]: src/main/java/org/ck/codeEval/hard/spiralPrinting/Main.java
 [59solution]: src/main/java/org/ck/codeEval/hard/telephoneWords/Main.java
+[65solution]: src/main/java/org/ck/codeEval/hard/wordsearch/Main.java
 [72solution]: src/main/java/org/ck/codeEval/hard/minimumPathSum/Main.java
 [79solution]: src/main/java/org/ck/codeEval/hard/minesweeper/Main.java
 [105solution]: src/main/java/org/ck/codeEval/hard/largestSubMatrix/Main.java
@@ -393,6 +396,7 @@
 [56tests]: src/test/java/org/ck/codeEval/hard/robotMovements/MainTest.java
 [57tests]: src/test/java/org/ck/codeEval/hard/spiralPrinting/MainTest.java
 [59tests]: src/test/java/org/ck/codeEval/hard/telephoneWords/MainTest.java
+[65tests]: src/test/java/org/ck/codeEval/hard/wordsearch/MainTest.java
 [72tests]: src/test/java/org/ck/codeEval/hard/minimumPathSum/MainTest.java
 [79tests]: src/test/java/org/ck/codeEval/hard/minesweeper/MainTest.java
 [105tests]: src/test/java/org/ck/codeEval/hard/largestSubMatrix/MainTest.java
@@ -406,7 +410,7 @@
 [213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
-# Moderate challenges (71/74)
+# Moderate challenges (71/75)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -483,7 +487,8 @@
 | 212 | Robo and Robitta             | [Count all nuts.][212]                                                                                       | &#9989;[&#128190;][212solution] | &#9989;[&#128190;][212tests] |
 | 215 | Double trouble               | [Calculate the number of correct variants for messages.][215]                                                | &#9989;[&#128190;][215solution] | &#9989;[&#128190;][215tests] |
 | 218 | Builders team.               | [Count all squares on the map.][218]                                                                         | &#9989;[&#128190;][218solution] | &#9989;[&#128190;][218tests] |
-| 221 | Organizational Hierarchy     | [Recreate the hierarchy tree.][221]                                                                          | &#9989;[&#128190;][221solution] | &#9989;[&#128190;][221tests] |
+| 221 | Organizational Hierarchy     | [Recreate the hierarchy tree.][221]                                                                          | [&#128190;][221solution]        | [&#128190;][221tests]        |
+| 223 | Alternative reality          | [Count all alternative ways.][223]                                                                           | &#9989;[&#128190;][223solution] | &#9989;[&#128190;][223tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -559,6 +564,7 @@
 [215]: https://www.codeeval.com/open_challenges/215/
 [218]: https://www.codeeval.com/open_challenges/218/
 [221]: https://www.codeeval.com/open_challenges/221/
+[223]: https://www.codeeval.com/open_challenges/223/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -634,6 +640,7 @@
 [215solution]: src/main/java/org/ck/codeEval/medium/doubletrouble/Main.java
 [218solution]: src/main/java/org/ck/codeEval/medium/buildersteam/Main.java
 [221solution]: src/main/java/org/ck/codeEval/medium/organizationalhierarchy/Main.java
+[223solution]: src/main/java/org/ck/codeEval/medium/alternativereality/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -709,4 +716,5 @@
 [215tests]: src/test/java/org/ck/codeEval/medium/doubletrouble/MainTest.java
 [218tests]: src/test/java/org/ck/codeEval/medium/buildersteam/MainTest.java
 [221tests]: src/test/java/org/ck/codeEval/medium/organizationalhierarchy/MainTest.java
+[223tests]: src/test/java/org/ck/codeEval/medium/alternativereality/MainTest.java
 

@@ -15,7 +15,7 @@ public class MainTest extends BaseTest
 
 		assertEquals(getResult("Yes", "Yes", "Yes", "No"), this.output.toString());
 	}
-	
+
 	@Ignore
 	@Test(timeout = TIMEOUT)
 	public void test01() throws Exception

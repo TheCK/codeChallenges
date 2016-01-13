@@ -1,4 +1,4 @@
-# Easy challenges (75/75)
+# Easy challenges (78/78)
 
 |   # | Name                        | Description                                                                             | Solution                        | Test                         |
 |----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -77,6 +77,9 @@
 | 217 | One zero, two zeros...      | [Count zeros in a binary system.][217]                                                  | &#9989;[&#128190;][217solution] | &#9989;[&#128190;][217tests] |
 | 220 | Trick or Treat              | [Count all candies.][220]                                                               | &#9989;[&#128190;][220solution] | &#9989;[&#128190;][220tests] |
 | 222 | Black card                  | [Find the winner.][222]                                                                 | &#9989;[&#128190;][222solution] | &#9989;[&#128190;][222tests] |
+| 225 | Testing                     | [Wanna try to be a tester?][225]                                                        | &#9989;[&#128190;][225solution] | &#9989;[&#128190;][225tests] |
+| 227 | Real fake                   | [Check credit card numbers.][227]                                                       | &#9989;[&#128190;][227solution] | &#9989;[&#128190;][227tests] |
+| 230 | Football                    | [Find countries that are football fans.][230]                                           | &#9989;[&#128190;][230solution] | &#9989;[&#128190;][230tests] |
 
 [1]: https://www.codeeval.com/open_challenges/1/
 [3]: https://www.codeeval.com/open_challenges/3/
@@ -153,6 +156,9 @@
 [217]: https://www.codeeval.com/open_challenges/217/
 [220]: https://www.codeeval.com/open_challenges/220/
 [222]: https://www.codeeval.com/open_challenges/222/
+[225]: https://www.codeeval.com/open_challenges/225/
+[227]: https://www.codeeval.com/open_challenges/227/
+[230]: https://www.codeeval.com/open_challenges/230/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
 [3solution]: src/main/java/org/ck/codeEval/easy/primePalindrome/Main.java
@@ -229,6 +235,9 @@
 [217solution]: src/main/java/org/ck/codeEval/easy/onezerotwozeros/Main.java
 [220solution]: src/main/java/org/ck/codeEval/easy/trickortreat/Main.java
 [222solution]: src/main/java/org/ck/codeEval/easy/blackcard/Main.java
+[225solution]: src/main/java/org/ck/codeEval/easy/testing/Main.java
+[227solution]: src/main/java/org/ck/codeEval/easy/realfake/Main.java
+[230solution]: src/main/java/org/ck/codeEval/easy/football/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
 [3tests]: src/test/java/org/ck/codeEval/easy/primePalindrome/MainTest.java
@@ -305,6 +314,9 @@
 [217tests]: src/test/java/org/ck/codeEval/easy/onezerotwozeros/MainTest.java
 [220tests]: src/test/java/org/ck/codeEval/easy/trickortreat/MainTest.java
 [222tests]: src/test/java/org/ck/codeEval/easy/blackcard/MainTest.java
+[225tests]: src/test/java/org/ck/codeEval/easy/testing/MainTest.java
+[227tests]: src/test/java/org/ck/codeEval/easy/realfake/MainTest.java
+[230tests]: src/test/java/org/ck/codeEval/easy/football/MainTest.java
 
 # Hard challenges (22/24)
 
@@ -410,7 +422,7 @@
 [213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
-# Moderate challenges (71/75)
+# Moderate challenges (73/76)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -487,8 +499,9 @@
 | 212 | Robo and Robitta             | [Count all nuts.][212]                                                                                       | &#9989;[&#128190;][212solution] | &#9989;[&#128190;][212tests] |
 | 215 | Double trouble               | [Calculate the number of correct variants for messages.][215]                                                | &#9989;[&#128190;][215solution] | &#9989;[&#128190;][215tests] |
 | 218 | Builders team.               | [Count all squares on the map.][218]                                                                         | &#9989;[&#128190;][218solution] | &#9989;[&#128190;][218tests] |
-| 221 | Organizational Hierarchy     | [Recreate the hierarchy tree.][221]                                                                          | [&#128190;][221solution]        | [&#128190;][221tests]        |
+| 221 | Organizational Hierarchy     | [Recreate the hierarchy tree.][221]                                                                          | &#9989;[&#128190;][221solution] | &#9989;[&#128190;][221tests] |
 | 223 | Alternative reality          | [Count all alternative ways.][223]                                                                           | &#9989;[&#128190;][223solution] | &#9989;[&#128190;][223tests] |
+| 226 | Try to solve it              | [How good decoder are you?][226]                                                                             | &#9989;[&#128190;][226solution] | &#9989;[&#128190;][226tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -565,6 +578,7 @@
 [218]: https://www.codeeval.com/open_challenges/218/
 [221]: https://www.codeeval.com/open_challenges/221/
 [223]: https://www.codeeval.com/open_challenges/223/
+[226]: https://www.codeeval.com/open_challenges/226/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -641,6 +655,7 @@
 [218solution]: src/main/java/org/ck/codeEval/medium/buildersteam/Main.java
 [221solution]: src/main/java/org/ck/codeEval/medium/organizationalhierarchy/Main.java
 [223solution]: src/main/java/org/ck/codeEval/medium/alternativereality/Main.java
+[226solution]: src/main/java/org/ck/codeEval/medium/trytosolveit/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -717,4 +732,5 @@
 [218tests]: src/test/java/org/ck/codeEval/medium/buildersteam/MainTest.java
 [221tests]: src/test/java/org/ck/codeEval/medium/organizationalhierarchy/MainTest.java
 [223tests]: src/test/java/org/ck/codeEval/medium/alternativereality/MainTest.java
+[226tests]: src/test/java/org/ck/codeEval/medium/trytosolveit/MainTest.java
 

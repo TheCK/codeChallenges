@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.*;
 
-@Solution(id = 221, name = "Organizational Hierarchy", description = "Recreate the hierarchy tree.", url = "https://www.codeeval.com/open_challenges/221/", category = "Moderate challenges", solved = false)
+@Solution(id = 221, name = "Organizational Hierarchy", description = "Recreate the hierarchy tree.", url = "https://www.codeeval.com/open_challenges/221/", category = "Moderate challenges")
 public class Main
 {
 	private static Map<String, Employee> employees;

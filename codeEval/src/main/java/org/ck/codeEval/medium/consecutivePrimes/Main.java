@@ -11,8 +11,13 @@ import java.util.List;
 @Solution(id = 187, name = "Consecutive Primes", description = "Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.", url = "https://www.codeeval.com/open_challenges/187/", category = "Moderate challenges", solved = false)
 public class Main
 {
+	private static int MAX_SUM = 36;
+	private static boolean[] cache = new boolean[MAX_SUM];
+
 	public static void main(String[] args) throws Exception
 	{
+		initPrimes();
+
 		File file = new File(args[0]);
 		try (BufferedReader buffer = new BufferedReader(new FileReader(file)))
 		{
@@ -22,41 +27,32 @@ public class Main
 				line = line.trim();
 				int max = Integer.parseInt(line);
 
-				List<Integer> numbers = new ArrayList<>();
-
-				for(int i = 1; i <= max; ++i)
-				{
-					numbers.add(i);
-				}
-
-				List<List<Integer>> necklaces = new ArrayList<>();
-				getPermutations(necklaces, numbers, new ArrayList<Integer>());
-
 				int count = 0;
-				for (List<Integer> necklace : necklaces)
+
+				if (max % 2 == 0)
 				{
-					boolean matches = true;
+					List<Integer> numbers = new ArrayList<>(max);
 
-					for(int i = 0; i < necklace.size(); ++i)
+					for (int i = 2; i <= max; ++i)
 					{
-						int first = necklace.get(i);
-						int second = necklace.get((i + 1) % necklace.size());
-
-						if (!isPrime(first + second))
-						{
-							matches = false;
-							break;
-						}
+						numbers.add(i);
 					}
+					List<Integer> current = new ArrayList<>(max);
+					current.add(1);
 
-					if (matches)
-					{
-						++count;
-					}
+					count = getPermutations(numbers, current);
 				}
 
-				System.out.println(count / max);
+				System.out.println(count);
 			}
+		}
+	}
+
+	private static void initPrimes()
+	{
+		for (int i = 2; i < MAX_SUM; ++i)
+		{
+			cache[i] = isPrime(i);
 		}
 	}
 
@@ -76,24 +72,67 @@ public class Main
 		return isPrime;
 	}
 
-	private static void getPermutations(List<List<Integer>> permutations, List<Integer> remainingNumbers, List<Integer> current)
+	private static int getPermutations(List<Integer> remainingNumbers, List<Integer> current)
 	{
-		for (Integer number : remainingNumbers)
+		int permutations = 0;
+
+		for (int i = 0; i < remainingNumbers.size(); ++i)
 		{
-			List<Integer> copyOfRemainingNumbers = new ArrayList<>(remainingNumbers);
-			copyOfRemainingNumbers.remove(number);
+			Integer number = remainingNumbers.get(i);
+			remainingNumbers.remove(number);
 
-			List<Integer> copyOfCurrent = new ArrayList<>(current);
-			copyOfCurrent.add(number);
+			current.add(number);
+			if (current.size() < 2 || cache[number + current.get(current.size() - 2)])
+			{
+				if (remainingNumbers.size() == 0)
+				{
+					if (cache[number + current.get(0)])
+					{
+						permutations = 1;
+					}
+					else
+					{
+						permutations = 0;
+					}
+				}
+				else
+				{
+					permutations += getPermutations(remainingNumbers, current);
+				}
+			}
 
-			if (copyOfRemainingNumbers.size() == 0)
-			{
-				permutations.add(copyOfCurrent);
-			}
-			else
-			{
-				getPermutations(permutations, copyOfRemainingNumbers, copyOfCurrent);
-			}
+			current.remove(number);
+			remainingNumbers.add(i, number);
 		}
+
+		return permutations;
 	}
+
+	//	private static void getPermutations(List<List<Integer>> permutations, List<Integer> remainingNumbers,
+	//			List<Integer> current)
+	//	{
+	//		for (Integer number : remainingNumbers)
+	//		{
+	//			List<Integer> copyOfRemainingNumbers = new ArrayList<>(remainingNumbers);
+	//			copyOfRemainingNumbers.remove(number);
+	//
+	//			List<Integer> copyOfCurrent = new ArrayList<>(current);
+	//			copyOfCurrent.add(number);
+	//
+	//			if (copyOfCurrent.size() < 2 || cache[number + current.get(current.size() - 1)])
+	//			{
+	//				if (copyOfRemainingNumbers.size() == 0)
+	//				{
+	//					if (cache[number + current.get(0)])
+	//					{
+	//						permutations.add(copyOfCurrent);
+	//					}
+	//				}
+	//				else
+	//				{
+	//					getPermutations(permutations, copyOfRemainingNumbers, copyOfCurrent);
+	//				}
+	//			}
+	//		}
+	//	}
 }

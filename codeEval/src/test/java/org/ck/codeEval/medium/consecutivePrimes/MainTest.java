@@ -16,12 +16,11 @@ public class MainTest extends BaseTest
 		assertEquals(getResult("1", "2", "0"), this.output.toString());
 	}
 
-	@Ignore
 	@Test
 	public void testCustom00() throws Exception
 	{
 		Main.main(getFileAsArgs("custom00"));
 
-		assertEquals(getResult("0"), this.output.toString());
+		assertEquals(getResult("132477"), this.output.toString());
 	}
 }

@@ -1,4 +1,4 @@
-# Easy challenges (78/78)
+# Easy challenges (82/82)
 
 |   # | Name                        | Description                                                                             | Solution                        | Test                         |
 |----:|-----------------------------|-----------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -80,6 +80,10 @@
 | 225 | Testing                     | [Wanna try to be a tester?][225]                                                        | &#9989;[&#128190;][225solution] | &#9989;[&#128190;][225tests] |
 | 227 | Real fake                   | [Check credit card numbers.][227]                                                       | &#9989;[&#128190;][227solution] | &#9989;[&#128190;][227tests] |
 | 230 | Football                    | [Find countries that are football fans.][230]                                           | &#9989;[&#128190;][230solution] | &#9989;[&#128190;][230tests] |
+| 232 | Not so clever               | [Simplicity is not always good.][232]                                                   | &#9989;[&#128190;][232solution] | &#9989;[&#128190;][232tests] |
+| 235 | Simple or trump             | [Check which card is higher.][235]                                                      | &#9989;[&#128190;][235solution] | &#9989;[&#128190;][235tests] |
+| 237 | Panacea - truth or lie      | [Check whether the virus was stopped by antivirus.][237]                                | &#9989;[&#128190;][237solution] | &#9989;[&#128190;][237tests] |
+| 240 | Mersenne prime              | [Find all Mersenne numbers smaller than n.][240]                                        | &#9989;[&#128190;][240solution] | &#9989;[&#128190;][240tests] |
 
 [1]: https://www.codeeval.com/open_challenges/1/
 [3]: https://www.codeeval.com/open_challenges/3/
@@ -159,6 +163,10 @@
 [225]: https://www.codeeval.com/open_challenges/225/
 [227]: https://www.codeeval.com/open_challenges/227/
 [230]: https://www.codeeval.com/open_challenges/230/
+[232]: https://www.codeeval.com/open_challenges/232/
+[235]: https://www.codeeval.com/open_challenges/325/
+[237]: https://www.codeeval.com/open_challenges/237/
+[240]: https://www.codeeval.com/open_challenges/240/
 
 [1solution]: src/main/java/org/ck/codeEval/easy/fizzBuzz/Main.java
 [3solution]: src/main/java/org/ck/codeEval/easy/primePalindrome/Main.java
@@ -238,6 +246,10 @@
 [225solution]: src/main/java/org/ck/codeEval/easy/testing/Main.java
 [227solution]: src/main/java/org/ck/codeEval/easy/realfake/Main.java
 [230solution]: src/main/java/org/ck/codeEval/easy/football/Main.java
+[232solution]: src/main/java/org/ck/codeEval/easy/notsoclever/Main.java
+[235solution]: src/main/java/org/ck/codeEval/easy/simpleortrump/Main.java
+[237solution]: src/main/java/org/ck/codeEval/easy/panaceatruthorlie/Main.java
+[240solution]: src/main/java/org/ck/codeEval/easy/mersenneprime/Main.java
 
 [1tests]: src/test/java/org/ck/codeEval/easy/fizzBuzz/MainTest.java
 [3tests]: src/test/java/org/ck/codeEval/easy/primePalindrome/MainTest.java
@@ -317,36 +329,42 @@
 [225tests]: src/test/java/org/ck/codeEval/easy/testing/MainTest.java
 [227tests]: src/test/java/org/ck/codeEval/easy/realfake/MainTest.java
 [230tests]: src/test/java/org/ck/codeEval/easy/football/MainTest.java
+[232tests]: src/test/java/org/ck/codeEval/easy/notsoclever/MainTest.java
+[235tests]: src/test/java/org/ck/codeEval/easy/simpleortrump/MainTest.java
+[237tests]: src/test/java/org/ck/codeEval/easy/panaceatruthorlie/MainTest.java
+[240tests]: src/test/java/org/ck/codeEval/easy/mersenneprime/MainTest.java
 
-# Hard challenges (22/24)
+# Hard challenges (23/25)
 
-|   # | Name                  | Description                                                                                                                 | Solution                        | Test                         |
-|----:|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
-|   7 | Prefix expressions    | [Evaluating a prefix expression.][7]                                                                                        | &#9989;[&#128190;][7solution]   | &#9989;[&#128190;][7tests]   |
-|  28 | String Searching      | [Determine if substring match exists.][28]                                                                                  | &#9989;[&#128190;][28solution]  | &#9989;[&#128190;][28tests]  |
-|  36 | Message Decoding      | [Decode an encoded message][36]                                                                                             | &#9989;[&#128190;][36solution]  | &#9989;[&#128190;][36tests]  |
-|  38 | String List           | [Create a new string from constituent alphabets][38]                                                                        | &#9989;[&#128190;][38solution]  | &#9989;[&#128190;][38tests]  |
-|  44 | Following Integer     | [Determine the next number in a sequence][44]                                                                               | &#9989;[&#128190;][44solution]  | &#9989;[&#128190;][44tests]  |
-|  47 | Palindromic Ranges    | [Find out a range of palindromic numbers][47]                                                                               | &#9989;[&#128190;][47solution]  | &#9989;[&#128190;][47tests]  |
-|  51 | Closest Pair          | [Given a set of points in a two dimensional space, you will have to find the distance between the closest two points.][51]  | &#9989;[&#128190;][51solution]  | &#9989;[&#128190;][51tests]  |
-|  52 | Text Dollar           | [Print out the text dollar amount of a given quantity][52]                                                                  | &#9989;[&#128190;][52solution]  | &#9989;[&#128190;][52tests]  |
-|  56 | Robot Movements       | [Number of ways a robot can reach its destination][56]                                                                      | &#9989;[&#128190;][56solution]  | &#9989;[&#128190;][56tests]  |
-|  57 | Spiral Printing       | [Print out a 2D array in spiral order][57]                                                                                  | &#9989;[&#128190;][57solution]  | &#9989;[&#128190;][57tests]  |
-|  59 | Telephone Words       | [Print out the words corresponding to a telephone number][59]                                                               | &#9989;[&#128190;][59solution]  | &#9989;[&#128190;][59tests]  |
-|  65 | Word Search           | [Find if a word exists in a grid][65]                                                                                       | &#9989;[&#128190;][65solution]  | &#9989;[&#128190;][65tests]  |
-|  72 | Minimum Path Sum      | [Calculate the minimum sum of a path through a matrix.][72]                                                                 | &#9989;[&#128190;][72solution]  | &#9989;[&#128190;][72tests]  |
-|  79 | Minesweeper           | [Find the mines within a M*N matrix.][79]                                                                                   | &#9989;[&#128190;][79solution]  | &#9989;[&#128190;][79tests]  |
-| 105 | Largest Sub-Matrix    | [Determine the largest sub-matrix in a matrix][105]                                                                         | &#9989;[&#128190;][105solution] | &#9989;[&#128190;][105tests] |
-| 108 | Computer Terminal     | [Print text to terminal with control sequences][108]                                                                        | &#9989;[&#128190;][108solution] | &#9989;[&#128190;][108tests] |
-| 126 | Play with DNA         | [Write an algorithm that a finds DNA segment in a given DNA string][126]                                                    | [&#128190;][126solution]        | [&#128190;][126tests]        |
-| 144 | Digit statistics      | [Find statistics in sequence][144]                                                                                          | &#9989;[&#128190;][144solution] | &#9989;[&#128190;][144tests] |
-| 155 | ASCII Decryption      | [Decrypt a message.][155]                                                                                                   | &#9989;[&#128190;][155solution] | &#9989;[&#128190;][155tests] |
-| 157 | The Labyrinth         | [Find the shortest way to exit.][157]                                                                                       | [&#128190;][157solution]        | [&#128190;][157tests]        |
-| 162 | Too unique            | [Find and mark the biggest submatrices of unique elements.][162]                                                            | &#9989;[&#128190;][162solution] | &#9989;[&#128190;][162tests] |
-| 210 | Brainf*ck             | [Blow your mind][210]                                                                                                       | &#9989;[&#128190;][210solution] | &#9989;[&#128190;][210tests] |
-| 213 | Lakes, not cakes      | [Count all lakes.][213]                                                                                                     | &#9989;[&#128190;][213solution] | &#9989;[&#128190;][213tests] |
-| 216 | Everything or nothing | [Check if a code is correct.][216]                                                                                          | &#9989;[&#128190;][216solution] | &#9989;[&#128190;][216tests] |
+|   # | Name                       | Description                                                                                                                 | Solution                        | Test                         |
+|----:|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
+|   6 | Longest Common Subsequence | [LCS between two strings.][6]                                                                                               | &#9989;[&#128190;][6solution]   | &#9989;[&#128190;][6tests]   |
+|   7 | Prefix expressions         | [Evaluating a prefix expression.][7]                                                                                        | &#9989;[&#128190;][7solution]   | &#9989;[&#128190;][7tests]   |
+|  28 | String Searching           | [Determine if substring match exists.][28]                                                                                  | &#9989;[&#128190;][28solution]  | &#9989;[&#128190;][28tests]  |
+|  36 | Message Decoding           | [Decode an encoded message][36]                                                                                             | &#9989;[&#128190;][36solution]  | &#9989;[&#128190;][36tests]  |
+|  38 | String List                | [Create a new string from constituent alphabets][38]                                                                        | &#9989;[&#128190;][38solution]  | &#9989;[&#128190;][38tests]  |
+|  44 | Following Integer          | [Determine the next number in a sequence][44]                                                                               | &#9989;[&#128190;][44solution]  | &#9989;[&#128190;][44tests]  |
+|  47 | Palindromic Ranges         | [Find out a range of palindromic numbers][47]                                                                               | &#9989;[&#128190;][47solution]  | &#9989;[&#128190;][47tests]  |
+|  51 | Closest Pair               | [Given a set of points in a two dimensional space, you will have to find the distance between the closest two points.][51]  | &#9989;[&#128190;][51solution]  | &#9989;[&#128190;][51tests]  |
+|  52 | Text Dollar                | [Print out the text dollar amount of a given quantity][52]                                                                  | &#9989;[&#128190;][52solution]  | &#9989;[&#128190;][52tests]  |
+|  56 | Robot Movements            | [Number of ways a robot can reach its destination][56]                                                                      | &#9989;[&#128190;][56solution]  | &#9989;[&#128190;][56tests]  |
+|  57 | Spiral Printing            | [Print out a 2D array in spiral order][57]                                                                                  | &#9989;[&#128190;][57solution]  | &#9989;[&#128190;][57tests]  |
+|  59 | Telephone Words            | [Print out the words corresponding to a telephone number][59]                                                               | &#9989;[&#128190;][59solution]  | &#9989;[&#128190;][59tests]  |
+|  65 | Word Search                | [Find if a word exists in a grid][65]                                                                                       | &#9989;[&#128190;][65solution]  | &#9989;[&#128190;][65tests]  |
+|  72 | Minimum Path Sum           | [Calculate the minimum sum of a path through a matrix.][72]                                                                 | &#9989;[&#128190;][72solution]  | &#9989;[&#128190;][72tests]  |
+|  79 | Minesweeper                | [Find the mines within a M*N matrix.][79]                                                                                   | &#9989;[&#128190;][79solution]  | &#9989;[&#128190;][79tests]  |
+| 105 | Largest Sub-Matrix         | [Determine the largest sub-matrix in a matrix][105]                                                                         | &#9989;[&#128190;][105solution] | &#9989;[&#128190;][105tests] |
+| 108 | Computer Terminal          | [Print text to terminal with control sequences][108]                                                                        | &#9989;[&#128190;][108solution] | &#9989;[&#128190;][108tests] |
+| 126 | Play with DNA              | [Write an algorithm that a finds DNA segment in a given DNA string][126]                                                    | [&#128190;][126solution]        | [&#128190;][126tests]        |
+| 144 | Digit statistics           | [Find statistics in sequence][144]                                                                                          | &#9989;[&#128190;][144solution] | &#9989;[&#128190;][144tests] |
+| 155 | ASCII Decryption           | [Decrypt a message.][155]                                                                                                   | &#9989;[&#128190;][155solution] | &#9989;[&#128190;][155tests] |
+| 157 | The Labyrinth              | [Find the shortest way to exit.][157]                                                                                       | [&#128190;][157solution]        | [&#128190;][157tests]        |
+| 162 | Too unique                 | [Find and mark the biggest submatrices of unique elements.][162]                                                            | &#9989;[&#128190;][162solution] | &#9989;[&#128190;][162tests] |
+| 210 | Brainf*ck                  | [Blow your mind][210]                                                                                                       | &#9989;[&#128190;][210solution] | &#9989;[&#128190;][210tests] |
+| 213 | Lakes, not cakes           | [Count all lakes.][213]                                                                                                     | &#9989;[&#128190;][213solution] | &#9989;[&#128190;][213tests] |
+| 216 | Everything or nothing      | [Check if a code is correct.][216]                                                                                          | &#9989;[&#128190;][216solution] | &#9989;[&#128190;][216tests] |
 
+[6]: https://www.codeeval.com/open_challenges/6/
 [7]: https://www.codeeval.com/open_challenges/7/
 [28]: https://www.codeeval.com/open_challenges/28/
 [36]: https://www.codeeval.com/open_challenges/36/
@@ -372,6 +390,7 @@
 [213]: https://www.codeeval.com/open_challenges/213/
 [216]: https://www.codeeval.com/open_challenges/216/
 
+[6solution]: src/main/java/org/ck/codeEval/hard/longestCommonSubsequence/Main.java
 [7solution]: src/main/java/org/ck/codeEval/hard/prefixexpressions/Main.java
 [28solution]: src/main/java/org/ck/codeEval/hard/stringSearching/Main.java
 [36solution]: src/main/java/org/ck/codeEval/hard/messageDecoding/Main.java
@@ -397,6 +416,7 @@
 [213solution]: src/main/java/org/ck/codeEval/hard/lakesnotcakes/Main.java
 [216solution]: src/main/java/org/ck/codeEval/hard/everythingornothing/Main.java
 
+[6tests]: src/test/java/org/ck/codeEval/hard/longestCommonSubsequence/MainTest.java
 [7tests]: src/test/java/org/ck/codeEval/hard/prefixexpressions/MainTest.java
 [28tests]: src/test/java/org/ck/codeEval/hard/stringSearching/MainTest.java
 [36tests]: src/test/java/org/ck/codeEval/hard/messageDecoding/MainTest.java
@@ -422,7 +442,7 @@
 [213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
-# Moderate challenges (73/76)
+# Moderate challenges (75/78)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -502,6 +522,8 @@
 | 221 | Organizational Hierarchy     | [Recreate the hierarchy tree.][221]                                                                          | &#9989;[&#128190;][221solution] | &#9989;[&#128190;][221tests] |
 | 223 | Alternative reality          | [Count all alternative ways.][223]                                                                           | &#9989;[&#128190;][223solution] | &#9989;[&#128190;][223tests] |
 | 226 | Try to solve it              | [How good decoder are you?][226]                                                                             | &#9989;[&#128190;][226solution] | &#9989;[&#128190;][226tests] |
+| 228 | To PI or not to PI           | [Print a PI number.][228]                                                                                    | &#9989;[&#128190;][228solution] | &#9989;[&#128190;][228tests] |
+| 231 | Meet Cocktail sort           | [Learn more about cocktail sort algorithm.][231]                                                             | &#9989;[&#128190;][231solution] | &#9989;[&#128190;][231tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -579,6 +601,8 @@
 [221]: https://www.codeeval.com/open_challenges/221/
 [223]: https://www.codeeval.com/open_challenges/223/
 [226]: https://www.codeeval.com/open_challenges/226/
+[228]: https://www.codeeval.com/open_challenges/228/
+[231]: https://www.codeeval.com/open_challenges/231/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -656,6 +680,8 @@
 [221solution]: src/main/java/org/ck/codeEval/medium/organizationalhierarchy/Main.java
 [223solution]: src/main/java/org/ck/codeEval/medium/alternativereality/Main.java
 [226solution]: src/main/java/org/ck/codeEval/medium/trytosolveit/Main.java
+[228solution]: src/main/java/org/ck/codeEval/medium/topiornottopi/Main.java
+[231solution]: src/main/java/org/ck/codeEval/medium/meetcocktailsort/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -733,4 +759,6 @@
 [221tests]: src/test/java/org/ck/codeEval/medium/organizationalhierarchy/MainTest.java
 [223tests]: src/test/java/org/ck/codeEval/medium/alternativereality/MainTest.java
 [226tests]: src/test/java/org/ck/codeEval/medium/trytosolveit/MainTest.java
+[228tests]: src/test/java/org/ck/codeEval/medium/topiornottopi/MainTest.java
+[231tests]: src/test/java/org/ck/codeEval/medium/meetcocktailsort/MainTest.java
 

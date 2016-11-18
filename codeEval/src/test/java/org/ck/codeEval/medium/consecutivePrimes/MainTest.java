@@ -17,6 +17,7 @@ public class MainTest extends BaseTest
 	}
 
 	@Test
+	@Ignore
 	public void testCustom00() throws Exception
 	{
 		Main.main(getFileAsArgs("custom00"));

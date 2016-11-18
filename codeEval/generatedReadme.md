@@ -442,7 +442,7 @@
 [213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
-# Moderate challenges (75/78)
+# Moderate challenges (76/79)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -524,6 +524,7 @@
 | 226 | Try to solve it              | [How good decoder are you?][226]                                                                             | &#9989;[&#128190;][226solution] | &#9989;[&#128190;][226tests] |
 | 228 | To PI or not to PI           | [Print a PI number.][228]                                                                                    | &#9989;[&#128190;][228solution] | &#9989;[&#128190;][228tests] |
 | 231 | Meet Cocktail sort           | [Learn more about cocktail sort algorithm.][231]                                                             | &#9989;[&#128190;][231solution] | &#9989;[&#128190;][231tests] |
+| 238 | Code combinations            | [Check whether you can make words from the given letters.][238]                                              | &#9989;[&#128190;][238solution] | &#9989;[&#128190;][238tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
 [5]: https://www.codeeval.com/open_challenges/5/
@@ -603,6 +604,7 @@
 [226]: https://www.codeeval.com/open_challenges/226/
 [228]: https://www.codeeval.com/open_challenges/228/
 [231]: https://www.codeeval.com/open_challenges/231/
+[238]: https://www.codeeval.com/open_challenges/238/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
 [5solution]: src/main/java/org/ck/codeEval/medium/detectingCycles/Main.java
@@ -682,6 +684,7 @@
 [226solution]: src/main/java/org/ck/codeEval/medium/trytosolveit/Main.java
 [228solution]: src/main/java/org/ck/codeEval/medium/topiornottopi/Main.java
 [231solution]: src/main/java/org/ck/codeEval/medium/meetcocktailsort/Main.java
+[238solution]: src/main/java/org/ck/codeEval/medium/codecombinations/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
 [5tests]: src/test/java/org/ck/codeEval/medium/detectingCycles/MainTest.java
@@ -761,4 +764,5 @@
 [226tests]: src/test/java/org/ck/codeEval/medium/trytosolveit/MainTest.java
 [228tests]: src/test/java/org/ck/codeEval/medium/topiornottopi/MainTest.java
 [231tests]: src/test/java/org/ck/codeEval/medium/meetcocktailsort/MainTest.java
+[238tests]: src/test/java/org/ck/codeEval/medium/codecombinations/MainTest.java
 

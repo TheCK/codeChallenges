@@ -1,4 +1,4 @@
-package org.ck.codeEval.medium.topiornottopi;
+package org.ck.codeEval.easy.simpleortrump;
 
 import org.ck.codeEval.test.BaseTest;
 import org.junit.Test;
@@ -12,6 +12,6 @@ public class MainTest extends BaseTest
 	{
 		Main.main(getFileAsArgs("00"));
 
-		assertEquals(getResult("4", "3", "1"), this.output.toString());
+		assertEquals(getResult("2H", "KD KH", "JH"), this.output.toString());
 	}
 }

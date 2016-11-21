@@ -11,7 +11,7 @@ public class DigitFactorialChainsTest extends BaseTest
 	public void test00() throws Exception
 	{
 		DigitFactorialChains.main(null);
-		
+
 		assertEquals(getResult("402"), this.output.toString());
 	}
 }

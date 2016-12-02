@@ -442,7 +442,7 @@
 [213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
-# Moderate challenges (77/80)
+# Moderate challenges (78/80)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -508,7 +508,7 @@
 | 179 | Broken LCD                   | [Determine whether a given number can be displayed on the damaged LCD.][179]                                 | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
 | 181 | Gronsfeld cipher             | [Decipher the message enciphered with the Gronsfeld cipher.][181]                                            | &#9989;[&#128190;][181solution] | &#9989;[&#128190;][181tests] |
 | 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
-| 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | [&#128190;][187solution]        | [&#128190;][187tests]        |
+| 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | &#9989;[&#128190;][187solution] | &#9989;[&#128190;][187tests] |
 | 190 | Number Operations            | [Determine if it is possible to produce the number 42 with five cards.][190]                                 | &#9989;[&#128190;][190solution] | &#9989;[&#128190;][190tests] |
 | 193 | Magic Numbers                | [Print out a list of all the magic numbers in a provided range.][193]                                        | &#9989;[&#128190;][193solution] | &#9989;[&#128190;][193tests] |
 | 194 | Twenty Forty Eight           | [Implement the 2048 game logic][194]                                                                         | &#9989;[&#128190;][194solution] | &#9989;[&#128190;][194tests] |

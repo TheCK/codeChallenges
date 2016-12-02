@@ -1,7 +1,6 @@
 package org.ck.codeEval.medium.consecutivePrimes;
 
 import org.ck.codeEval.test.BaseTest;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -17,11 +16,10 @@ public class MainTest extends BaseTest
 	}
 
 	@Test
-	@Ignore
 	public void testCustom00() throws Exception
 	{
 		Main.main(getFileAsArgs("custom00"));
 
-		assertEquals(getResult("132477"), this.output.toString());
+		assertEquals(getResult("770144"), this.output.toString());
 	}
 }

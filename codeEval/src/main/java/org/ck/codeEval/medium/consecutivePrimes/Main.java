@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-@Solution(id = 187, name = "Consecutive Primes", description = "Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.", url = "https://www.codeeval.com/open_challenges/187/", category = "Moderate challenges", solved = false)
+@Solution(id = 187, name = "Consecutive Primes", description = "Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.", url = "https://www.codeeval.com/open_challenges/187/", category = "Moderate challenges")
 public class Main
 {
 	private static int MAX_SUM = 36;
@@ -82,7 +82,7 @@ public class Main
 			remainingNumbers.remove(number);
 
 			current.add(number);
-			if (current.size() < 2 || cache[number + current.get(current.size() - 2)])
+			if (cache[number + current.get(current.size() - 2)])
 			{
 				if (remainingNumbers.size() == 0)
 				{
@@ -107,32 +107,4 @@ public class Main
 
 		return permutations;
 	}
-
-	//	private static void getPermutations(List<List<Integer>> permutations, List<Integer> remainingNumbers,
-	//			List<Integer> current)
-	//	{
-	//		for (Integer number : remainingNumbers)
-	//		{
-	//			List<Integer> copyOfRemainingNumbers = new ArrayList<>(remainingNumbers);
-	//			copyOfRemainingNumbers.remove(number);
-	//
-	//			List<Integer> copyOfCurrent = new ArrayList<>(current);
-	//			copyOfCurrent.add(number);
-	//
-	//			if (copyOfCurrent.size() < 2 || cache[number + current.get(current.size() - 1)])
-	//			{
-	//				if (copyOfRemainingNumbers.size() == 0)
-	//				{
-	//					if (cache[number + current.get(0)])
-	//					{
-	//						permutations.add(copyOfCurrent);
-	//					}
-	//				}
-	//				else
-	//				{
-	//					getPermutations(permutations, copyOfRemainingNumbers, copyOfCurrent);
-	//				}
-	//			}
-	//		}
-	//	}
 }

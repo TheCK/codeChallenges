@@ -442,7 +442,7 @@
 [213tests]: src/test/java/org/ck/codeEval/hard/lakesnotcakes/MainTest.java
 [216tests]: src/test/java/org/ck/codeEval/hard/everythingornothing/MainTest.java
 
-# Moderate challenges (78/80)
+# Moderate challenges (81/81)
 
 |   # | Name                         | Description                                                                                                  | Solution                        | Test                         |
 |----:|------------------------------|--------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -479,7 +479,7 @@
 |  78 | Sudoku                       | [Determine if a grid layout is a valid sudoku solution.][78]                                                 | &#9989;[&#128190;][78solution]  | &#9989;[&#128190;][78tests]  |
 |  80 | URI Comparison               | [Determine if two URIs match][80]                                                                            | &#9989;[&#128190;][80solution]  | &#9989;[&#128190;][80tests]  |
 |  81 | Sum to Zero                  | [Count of ways in which the sum of four numbers is zero][81]                                                 | &#9989;[&#128190;][81solution]  | &#9989;[&#128190;][81tests]  |
-|  84 | Balanced Smileys             | [Facebook Hacker Cup 2013 problem.][84]                                                                      | [&#128190;][84solution]         | [&#128190;][84tests]         |
+|  84 | Balanced Smileys             | [Facebook Hacker Cup 2013 problem.][84]                                                                      | &#9989;[&#128190;][84solution]  | &#9989;[&#128190;][84tests]  |
 |  89 | Pass Triangle                | [Lead the way within the triangle][89]                                                                       | &#9989;[&#128190;][89solution]  | &#9989;[&#128190;][89tests]  |
 |  94 | Simple Calculator            | [Create a simple calculator][94]                                                                             | &#9989;[&#128190;][94solution]  | &#9989;[&#128190;][94tests]  |
 |  98 | Point in Circle              | [Define whether a point is in a circle][98]                                                                  | &#9989;[&#128190;][98solution]  | &#9989;[&#128190;][98tests]  |
@@ -488,7 +488,7 @@
 | 119 | Chain Inspection             | [Try to pass a chain][119]                                                                                   | &#9989;[&#128190;][119solution] | &#9989;[&#128190;][119tests] |
 | 121 | Lost In Translation          | [Try to become a native speaker][121]                                                                        | &#9989;[&#128190;][121solution] | &#9989;[&#128190;][121tests] |
 | 125 | Predict the Number           | [Try to go beyond the limits][125]                                                                           | &#9989;[&#128190;][125solution] | &#9989;[&#128190;][125tests] |
-| 130 | Sequence Transformation      | [Transform a binary sequence into a string][130]                                                             | [&#128190;][130solution]        | [&#128190;][130tests]        |
+| 130 | Sequence Transformation      | [Transform a binary sequence into a string][130]                                                             | &#9989;[&#128190;][130solution] | &#9989;[&#128190;][130tests] |
 | 133 | City Blocks Flyover          | [Chart the path of a helicopter from above to discover how many city blocks it flew over.][133]              | &#9989;[&#128190;][133solution] | &#9989;[&#128190;][133tests] |
 | 135 | Word chain                   | [Find the longest chain of words][135]                                                                       | &#9989;[&#128190;][135solution] | &#9989;[&#128190;][135tests] |
 | 137 | Seek for an Intruder         | [Find the IP address of an intruder][137]                                                                    | &#9989;[&#128190;][137solution] | &#9989;[&#128190;][137tests] |
@@ -525,6 +525,7 @@
 | 228 | To PI or not to PI           | [Print a PI number.][228]                                                                                    | &#9989;[&#128190;][228solution] | &#9989;[&#128190;][228tests] |
 | 231 | Meet Cocktail sort           | [Learn more about cocktail sort algorithm.][231]                                                             | &#9989;[&#128190;][231solution] | &#9989;[&#128190;][231tests] |
 | 233 | Meet Comb sort               | [Learn more about the comb sort algorithm.][233]                                                             | &#9989;[&#128190;][233solution] | &#9989;[&#128190;][233tests] |
+| 236 | Beat or bit                  | [Learn more about the Gray code algorithm.][236]                                                             | &#9989;[&#128190;][236solution] | &#9989;[&#128190;][236tests] |
 | 238 | Code combinations            | [Check whether you can make words from the given letters.][238]                                              | &#9989;[&#128190;][238solution] | &#9989;[&#128190;][238tests] |
 
 [2]: https://www.codeeval.com/open_challenges/2/
@@ -606,6 +607,7 @@
 [228]: https://www.codeeval.com/open_challenges/228/
 [231]: https://www.codeeval.com/open_challenges/231/
 [233]: https://www.codeeval.com/open_challenges/233/
+[236]: https://www.codeeval.com/open_challenges/236/
 [238]: https://www.codeeval.com/open_challenges/238/
 
 [2solution]: src/main/java/org/ck/codeEval/medium/longestLines/Main.java
@@ -687,6 +689,7 @@
 [228solution]: src/main/java/org/ck/codeEval/medium/topiornottopi/Main.java
 [231solution]: src/main/java/org/ck/codeEval/medium/meetcocktailsort/Main.java
 [233solution]: src/main/java/org/ck/codeEval/medium/meetcombsort/Main.java
+[236solution]: src/main/java/org/ck/codeEval/medium/beatorbit/Main.java
 [238solution]: src/main/java/org/ck/codeEval/medium/codecombinations/Main.java
 
 [2tests]: src/test/java/org/ck/codeEval/medium/longestLines/MainTest.java
@@ -768,5 +771,6 @@
 [228tests]: src/test/java/org/ck/codeEval/medium/topiornottopi/MainTest.java
 [231tests]: src/test/java/org/ck/codeEval/medium/meetcocktailsort/MainTest.java
 [233tests]: src/test/java/org/ck/codeEval/medium/meetcombsort/MainTest.java
+[236tests]: src/test/java/org/ck/codeEval/medium/beatorbit/MainTest.java
 [238tests]: src/test/java/org/ck/codeEval/medium/codecombinations/MainTest.java
 

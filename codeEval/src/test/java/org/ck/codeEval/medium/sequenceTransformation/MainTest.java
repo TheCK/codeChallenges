@@ -1,10 +1,9 @@
 package org.ck.codeEval.medium.sequenceTransformation;
 
-import static org.junit.Assert.assertEquals;
-
 import org.ck.codeEval.test.BaseTest;
-import org.junit.Ignore;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class MainTest extends BaseTest
 {
@@ -16,12 +15,22 @@ public class MainTest extends BaseTest
 		assertEquals(getResult("Yes", "Yes", "Yes", "No"), this.output.toString());
 	}
 
-	@Ignore
 	@Test(timeout = TIMEOUT)
 	public void test01() throws Exception
 	{
 		Main.main(getFileAsArgs("01"));
 
-		assertEquals(getResult(""), this.output.toString());
+		assertEquals(getResult(
+			"Yes", "No", "No", "No", "No",
+			"No", "Yes", "No", "Yes", "Yes",
+			"No", "No", "Yes", "Yes", "No",
+			"No", "No", "Yes", "Yes", "No",
+			"Yes", "Yes", "Yes", "No", "No",
+			"No", "No", "Yes", "No", "No",
+			"No", "Yes", "Yes", "Yes", "No",
+			"No", "No", "No", "No", "No",
+			"No", "No", "Yes", "No", "No",
+			"Yes", "No", "No", "No", "No"
+		), this.output.toString());
 	}
 }

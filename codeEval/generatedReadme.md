@@ -334,7 +334,7 @@
 [237tests]: src/test/java/org/ck/codeEval/easy/panaceatruthorlie/MainTest.java
 [240tests]: src/test/java/org/ck/codeEval/easy/mersenneprime/MainTest.java
 
-# Hard challenges (23/25)
+# Hard challenges (24/26)
 
 |   # | Name                       | Description                                                                                                                 | Solution                        | Test                         |
 |----:|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -345,6 +345,7 @@
 |  38 | String List                | [Create a new string from constituent alphabets][38]                                                                        | &#9989;[&#128190;][38solution]  | &#9989;[&#128190;][38tests]  |
 |  44 | Following Integer          | [Determine the next number in a sequence][44]                                                                               | &#9989;[&#128190;][44solution]  | &#9989;[&#128190;][44tests]  |
 |  47 | Palindromic Ranges         | [Find out a range of palindromic numbers][47]                                                                               | &#9989;[&#128190;][47solution]  | &#9989;[&#128190;][47tests]  |
+|  50 | String Substitution        | [Create a new string by replacing substrings within it][50]                                                                 | &#9989;[&#128190;][50solution]  | &#9989;[&#128190;][50tests]  |
 |  51 | Closest Pair               | [Given a set of points in a two dimensional space, you will have to find the distance between the closest two points.][51]  | &#9989;[&#128190;][51solution]  | &#9989;[&#128190;][51tests]  |
 |  52 | Text Dollar                | [Print out the text dollar amount of a given quantity][52]                                                                  | &#9989;[&#128190;][52solution]  | &#9989;[&#128190;][52tests]  |
 |  56 | Robot Movements            | [Number of ways a robot can reach its destination][56]                                                                      | &#9989;[&#128190;][56solution]  | &#9989;[&#128190;][56tests]  |
@@ -371,6 +372,7 @@
 [38]: https://www.codeeval.com/open_challenges/38/
 [44]: https://www.codeeval.com/open_challenges/44/
 [47]: https://www.codeeval.com/open_challenges/47/
+[50]: https://www.codeeval.com/open_challenges/50/
 [51]: https://www.codeeval.com/open_challenges/51/
 [52]: https://www.codeeval.com/open_challenges/52/
 [56]: https://www.codeeval.com/open_challenges/56/
@@ -397,6 +399,7 @@
 [38solution]: src/main/java/org/ck/codeEval/hard/stringList/Main.java
 [44solution]: src/main/java/org/ck/codeEval/hard/followingInteger/Main.java
 [47solution]: src/main/java/org/ck/codeEval/hard/palindromicRanges/Main.java
+[50solution]: src/main/java/org/ck/codeEval/hard/stringsubstitution/Main.java
 [51solution]: src/main/java/org/ck/codeEval/hard/closestPair/Main.java
 [52solution]: src/main/java/org/ck/codeEval/hard/textDollar/Main.java
 [56solution]: src/main/java/org/ck/codeEval/hard/robotMovements/Main.java
@@ -423,6 +426,7 @@
 [38tests]: src/test/java/org/ck/codeEval/hard/stringList/MainTest.java
 [44tests]: src/test/java/org/ck/codeEval/hard/followingInteger/MainTest.java
 [47tests]: src/test/java/org/ck/codeEval/hard/palindromicRanges/MainTest.java
+[50tests]: src/test/java/org/ck/codeEval/hard/stringsubstitution/MainTest.java
 [51tests]: src/test/java/org/ck/codeEval/hard/closestPair/MainTest.java
 [52tests]: src/test/java/org/ck/codeEval/hard/textDollar/MainTest.java
 [56tests]: src/test/java/org/ck/codeEval/hard/robotMovements/MainTest.java

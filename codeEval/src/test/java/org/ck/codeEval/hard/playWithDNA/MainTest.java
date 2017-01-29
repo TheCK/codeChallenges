@@ -1,9 +1,9 @@
 package org.ck.codeEval.hard.playWithDNA;
 
-import static org.junit.Assert.assertEquals;
-
 import org.ck.codeEval.test.BaseTest;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class MainTest extends BaseTest
 {
@@ -12,15 +12,23 @@ public class MainTest extends BaseTest
 	{
 		Main.main(getFileAsArgs("00"));
 
-		assertEquals(getResult("CCC CCA CCG CGC GCC TCC", "GCAAG GCAAG GCCAG GCGCG GCGCA GCTAA", "No match"), this.output.toString());
+		assertEquals(getFileAsResult("00"), this.output.toString());
 	}
-	
+
 	@Test
 	public void testCustom00() throws Exception
 	{
 		Main.main(getFileAsArgs("custom00"));
 
-		//assertEquals(getResult(""), this.output.toString());
+		assertEquals(getFileAsResult("custom00"), this.output.toString());
+	}
+
+	@Test
+	public void testCustom01() throws Exception
+	{
+		Main.main(getFileAsArgs("custom01"));
+
+		assertEquals(getFileAsResult("custom01"), this.output.toString());
 	}
 }
 

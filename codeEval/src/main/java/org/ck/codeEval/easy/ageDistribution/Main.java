@@ -1,13 +1,19 @@
 package org.ck.codeEval.easy.ageDistribution;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.ck.codeChallengeLib.annotation.Solution;
-
-@Solution(id=152, name="Age distribution", description="Print out where the person is.", url="https://www.codeeval.com/open_challenges/152/", category="Easy challenges")
+@Solution(
+		id = 152,
+		name = "Age distribution",
+		description = "Print out where the person is.",
+		url = "https://www.codeeval.com/open_challenges/152/",
+		category = "Easy challenges"
+)
 public class Main
 {
 	public static void main(String[] args) throws IOException
@@ -20,7 +26,7 @@ public class Main
 			{
 				line = line.trim();
 				Integer age = Integer.valueOf(line);
-				
+
 				if (0 <= age && age <= 2)
 				{
 					System.out.println("Still in Mama's arms");

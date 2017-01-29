@@ -1,22 +1,24 @@
 package org.ck.codeEval.hard.playWithDNA;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
-import org.ck.codeChallengeLib.annotation.Solution;
-
-@Solution(id = 126, name = "Play with DNA", description = "Write an algorithm that a finds DNA segment in a given DNA string", url = "https://www.codeeval.com/open_challenges/126/", category = "Hard challenges", solved = false)
+@Solution(
+		id = 126,
+		name = "Play with DNA",
+		description = "Write an algorithm that a finds DNA segment in a given DNA string",
+		url = "https://www.codeeval.com/open_challenges/126/",
+		category = "Hard challenges",
+		solved = false
+)
 public class Main
 {
 	private static Map<String, Integer> cache = new HashMap<>();
-	
+
 	public static void main(String[] args) throws Exception
 	{
 		File file = new File(args[0]);
@@ -42,7 +44,7 @@ public class Main
 					{
 						if (!matches.containsKey(distance))
 						{
-							matches.put(distance, new ArrayList<String>());
+							matches.put(distance, new ArrayList<>());
 						}
 
 						matches.get(distance).add(candidate);
@@ -77,35 +79,35 @@ public class Main
 		{
 			return 0;
 		}
-		
+
 		if (a.equals(""))
 		{
-			return 10000;//b.length();
+			return b.length();
 		}
-		
+
 		if (b.equals(""))
 		{
-			return 10000;//a.length();
+			return a.length();
 		}
 
 		if (a.substring(0, 1).equals(b.substring(0, 1)))
 		{
 			return levenshtein(a.substring(1), b.substring(1));
 		}
-		
+
 		String key = a + " " + b;
 		if (cache.containsKey(key))
 		{
 			return cache.get(key);
 		}
-		
+
 		int lefSub = levenshtein(a.substring(1), b.substring(1));
 		int lefDelA = levenshtein(a.substring(1), b);
 		int lefDelB = levenshtein(a, b.substring(1));
 
 		int distance = 1 + Math.min(Math.min(lefDelA, lefDelB), lefSub);
 		cache.put(key, distance);
-		
+
 		return distance;
 	}
 }

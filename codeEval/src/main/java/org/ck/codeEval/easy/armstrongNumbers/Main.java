@@ -1,12 +1,18 @@
 package org.ck.codeEval.easy.armstrongNumbers;
 
+import org.ck.codeChallengeLib.annotation.Solution;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
-import org.ck.codeChallengeLib.annotation.Solution;
-
-@Solution(id=82, name="Armstrong Numbers", description="Determine if a number is an armstrong number.", url="https://www.codeeval.com/open_challenges/82/", category="Easy challenges")
+@Solution(
+		id = 82,
+		name = "Armstrong Numbers",
+		description = "Determine if a number is an armstrong number.",
+		url = "https://www.codeeval.com/open_challenges/82/",
+		category = "Easy challenges"
+)
 public class Main
 {
 
@@ -26,7 +32,7 @@ public class Main
 				{
 					a += (int) Math.pow(Integer.valueOf(line.substring(i, i + 1)), n);
 				}
-				
+
 				System.out.println(a.toString().equals(line) ? "True" : "False");
 			}
 		}

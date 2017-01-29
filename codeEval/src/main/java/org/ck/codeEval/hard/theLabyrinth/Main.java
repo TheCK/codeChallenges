@@ -1,23 +1,29 @@
 package org.ck.codeEval.hard.theLabyrinth;
 
-import java.awt.Point;
+import org.ck.codeChallengeLib.annotation.Solution;
+
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ck.codeChallengeLib.annotation.Solution;
-
-@Solution(id = 157, name = "The Labyrinth", description = "Find the shortest way to exit.", url = "https://www.codeeval.com/open_challenges/157/", category = "Hard challenges", solved = false)
+@Solution(
+		id = 157,
+		name = "The Labyrinth",
+		description = "Find the shortest way to exit.",
+		url = "https://www.codeeval.com/open_challenges/157/",
+		category = "Hard challenges"
+)
 public class Main
 {
 	private static int shortest = Integer.MAX_VALUE;
-	
+
 	public static void main(String[] args) throws Exception
 	{
 		shortest = Integer.MAX_VALUE;
-		
+
 		List<String> lines = new ArrayList<>();
 
 		File file = new File(args[0]);
@@ -43,7 +49,7 @@ public class Main
 			}
 		}
 
-		List<Point> path =	go(bField, new ArrayList<Point>(), lines.size() - 1, lines.get(0).length() - 1, 0, lines.get(0).indexOf(" "));
+		List<Point> path = go(bField, new ArrayList<Point>(), lines.size() - 1, lines.get(0).length() - 1, 0, lines.get(0).indexOf(" "));
 
 		for (Point point : path)
 		{
@@ -60,7 +66,7 @@ public class Main
 		if (x == maxX && field[x][y])
 		{
 			path.add(point);
-			
+
 			if (path.size() < shortest)
 			{
 				shortest = path.size();
@@ -75,7 +81,7 @@ public class Main
 		}
 
 		path.add(new Point(x, y));
-		
+
 		if (path.size() > shortest)
 		{
 			return null;
@@ -126,7 +132,7 @@ public class Main
 			{
 				System.out.print(box);
 			}
-			
+
 			System.out.println("");
 		}
 	}

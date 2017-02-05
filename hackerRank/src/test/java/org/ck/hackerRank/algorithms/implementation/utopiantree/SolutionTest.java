@@ -2,7 +2,7 @@ package org.ck.hackerRank.algorithms.implementation.utopiantree;
 
 import static org.junit.Assert.assertEquals;
 
-import org.ck.hackerRank.test.BaseTest;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;
 
 public class SolutionTest extends BaseTest

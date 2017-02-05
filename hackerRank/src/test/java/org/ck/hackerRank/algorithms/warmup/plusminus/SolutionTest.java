@@ -1,6 +1,6 @@
 package org.ck.hackerRank.algorithms.warmup.plusminus;
 
-import org.ck.hackerRank.test.BaseTest;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

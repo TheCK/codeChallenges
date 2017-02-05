@@ -1,4 +1,4 @@
-# Algorithms (30/30)
+# Algorithms (37/37)
 
 ## Bit Manipulation (3/3)
 
@@ -47,26 +47,40 @@
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
 
-## Implementation (10/10)
+## Implementation (17/17)
 
-|     # | Name                          | Solution                          | Test                           |
-|------:|-------------------------------|:---------------------------------:|:------------------------------:|
-| 10201 | [Mini-Max Sum][10201]         | &#9989;[&#128190;][10201solution] | &#9989;[&#128190;][10201tests] |
-| 10202 | [Designer PDF Viewer][10202]  | &#9989;[&#128190;][10202solution] | &#9989;[&#128190;][10202tests] |
-| 10203 | [Apple and Orange][10203]     | &#9989;[&#128190;][10203solution] | &#9989;[&#128190;][10203tests] |
-| 10204 | [Kangaroo][10204]             | &#9989;[&#128190;][10204solution] | &#9989;[&#128190;][10204tests] |
-| 10209 | [Utopian Tree][10209]         | &#9989;[&#128190;][10209solution] | &#9989;[&#128190;][10209tests] |
-| 10215 | [Find Digits][10215]          | &#9989;[&#128190;][10215solution] | &#9989;[&#128190;][10215tests] |
-| 10218 | [Sherlock and Squares][10218] | &#9989;[&#128190;][10218solution] | &#9989;[&#128190;][10218tests] |
-| 10225 | [ACM ICPC Team][10225]        | &#9989;[&#128190;][10225solution] | &#9989;[&#128190;][10225tests] |
-| 10231 | [Manasa and Stones][10231]    | &#9989;[&#128190;][10231solution] | &#9989;[&#128190;][10231tests] |
-| 10235 | [Chocolate Feast][10235]      | &#9989;[&#128190;][10235solution] | &#9989;[&#128190;][10235tests] |
+|     # | Name                                  | Solution                          | Test                           |
+|------:|---------------------------------------|:---------------------------------:|:------------------------------:|
+| 10201 | [Mini-Max Sum][10201]                 | &#9989;[&#128190;][10201solution] | &#9989;[&#128190;][10201tests] |
+| 10202 | [Designer PDF Viewer][10202]          | &#9989;[&#128190;][10202solution] | &#9989;[&#128190;][10202tests] |
+| 10203 | [Apple and Orange][10203]             | &#9989;[&#128190;][10203solution] | &#9989;[&#128190;][10203tests] |
+| 10204 | [Kangaroo][10204]                     | &#9989;[&#128190;][10204solution] | &#9989;[&#128190;][10204tests] |
+| 10206 | [Divisible Sum Pairs][10206]          | &#9989;[&#128190;][10206solution] | &#9989;[&#128190;][10206tests] |
+| 10207 | [Bon Appétit][10207]                  | &#9989;[&#128190;][10207solution] | &#9989;[&#128190;][10207tests] |
+| 10208 | [Sock Merchant][10208]                | &#9989;[&#128190;][10208solution] | &#9989;[&#128190;][10208tests] |
+| 10209 | [Utopian Tree][10209]                 | &#9989;[&#128190;][10209solution] | &#9989;[&#128190;][10209tests] |
+| 10210 | [Angry Professor][10210]              | &#9989;[&#128190;][10210solution] | &#9989;[&#128190;][10210tests] |
+| 10211 | [Beautiful Days at the Movies][10211] | &#9989;[&#128190;][10211solution] | &#9989;[&#128190;][10211tests] |
+| 10212 | [Viral Advertising][10212]            | &#9989;[&#128190;][10212solution] | &#9989;[&#128190;][10212tests] |
+| 10213 | [Save the Prisoner!][10213]           | &#9989;[&#128190;][10213solution] | &#9989;[&#128190;][10213tests] |
+| 10215 | [Find Digits][10215]                  | &#9989;[&#128190;][10215solution] | &#9989;[&#128190;][10215tests] |
+| 10218 | [Sherlock and Squares][10218]         | &#9989;[&#128190;][10218solution] | &#9989;[&#128190;][10218tests] |
+| 10225 | [ACM ICPC Team][10225]                | &#9989;[&#128190;][10225solution] | &#9989;[&#128190;][10225tests] |
+| 10231 | [Manasa and Stones][10231]            | &#9989;[&#128190;][10231solution] | &#9989;[&#128190;][10231tests] |
+| 10235 | [Chocolate Feast][10235]              | &#9989;[&#128190;][10235solution] | &#9989;[&#128190;][10235tests] |
 
 [10201]: https://www.hackerrank.com/challenges/mini-max-sum
 [10202]: https://www.hackerrank.com/challenges/designer-pdf-viewer
 [10203]: https://www.hackerrank.com/challenges/apple-and-orange
 [10204]: https://www.hackerrank.com/challenges/kangaroo
+[10206]: https://www.hackerrank.com/challenges/divisible-sum-pairs
+[10207]: https://www.hackerrank.com/challenges/bon-appetit
+[10208]: https://www.hackerrank.com/challenges/sock-merchant
 [10209]: https://www.hackerrank.com/challenges/utopian-tree
+[10210]: https://www.hackerrank.com/challenges/angry-professor
+[10211]: https://www.hackerrank.com/challenges/beautiful-days-at-the-movies
+[10212]: https://www.hackerrank.com/challenges/strange-advertising
+[10213]: https://www.hackerrank.com/challenges/save-the-prisoner
 [10215]: https://www.hackerrank.com/challenges/find-digits
 [10218]: https://www.hackerrank.com/challenges/sherlock-and-squares
 [10225]: https://www.hackerrank.com/challenges/acm-icpc-team
@@ -77,7 +91,14 @@
 [10202solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/Solution.java
 [10203solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/appleandorange/Solution.java
 [10204solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/kangaroo/Solution.java
+[10206solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/divisiblesumpairs/Solution.java
+[10207solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/bonappetit/Solution.java
+[10208solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sockmerchant/Solution.java
 [10209solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/utopiantree/Solution.java
+[10210solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/angryprofessor/Solution.java
+[10211solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/beautifuldaysatthemovies/Solution.java
+[10212solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/viraladvertising/Solution.java
+[10213solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/savetheprisoner/Solution.java
 [10215solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/finddigits/Solution.java
 [10218solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/Solution.java
 [10225solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/acmicpcteam/Solution.java
@@ -88,7 +109,14 @@
 [10202tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/SolutionTest.java
 [10203tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/appleandorange/SolutionTest.java
 [10204tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/kangaroo/SolutionTest.java
+[10206tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/divisiblesumpairs/SolutionTest.java
+[10207tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/bonappetit/SolutionTest.java
+[10208tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/sockmerchant/SolutionTest.java
 [10209tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/utopiantree/SolutionTest.java
+[10210tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/angryprofessor/SolutionTest.java
+[10211tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/beautifuldaysatthemovies/SolutionTest.java
+[10212tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/viraladvertising/SolutionTest.java
+[10213tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/savetheprisoner/SolutionTest.java
 [10215tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/finddigits/SolutionTest.java
 [10218tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/SolutionTest.java
 [10225tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/acmicpcteam/SolutionTest.java

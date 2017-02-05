@@ -1,4 +1,4 @@
-# Algorithms (26/26)
+# Algorithms (30/30)
 
 ## Bit Manipulation (3/3)
 
@@ -47,10 +47,14 @@
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
 
-## Implementation (6/6)
+## Implementation (10/10)
 
 |     # | Name                          | Solution                          | Test                           |
 |------:|-------------------------------|:---------------------------------:|:------------------------------:|
+| 10201 | [Mini-Max Sum][10201]         | &#9989;[&#128190;][10201solution] | &#9989;[&#128190;][10201tests] |
+| 10202 | [Designer PDF Viewer][10202]  | &#9989;[&#128190;][10202solution] | &#9989;[&#128190;][10202tests] |
+| 10203 | [Apple and Orange][10203]     | &#9989;[&#128190;][10203solution] | &#9989;[&#128190;][10203tests] |
+| 10204 | [Kangaroo][10204]             | &#9989;[&#128190;][10204solution] | &#9989;[&#128190;][10204tests] |
 | 10209 | [Utopian Tree][10209]         | &#9989;[&#128190;][10209solution] | &#9989;[&#128190;][10209tests] |
 | 10215 | [Find Digits][10215]          | &#9989;[&#128190;][10215solution] | &#9989;[&#128190;][10215tests] |
 | 10218 | [Sherlock and Squares][10218] | &#9989;[&#128190;][10218solution] | &#9989;[&#128190;][10218tests] |
@@ -58,6 +62,10 @@
 | 10231 | [Manasa and Stones][10231]    | &#9989;[&#128190;][10231solution] | &#9989;[&#128190;][10231tests] |
 | 10235 | [Chocolate Feast][10235]      | &#9989;[&#128190;][10235solution] | &#9989;[&#128190;][10235tests] |
 
+[10201]: https://www.hackerrank.com/challenges/mini-max-sum
+[10202]: https://www.hackerrank.com/challenges/designer-pdf-viewer
+[10203]: https://www.hackerrank.com/challenges/apple-and-orange
+[10204]: https://www.hackerrank.com/challenges/kangaroo
 [10209]: https://www.hackerrank.com/challenges/utopian-tree
 [10215]: https://www.hackerrank.com/challenges/find-digits
 [10218]: https://www.hackerrank.com/challenges/sherlock-and-squares
@@ -65,6 +73,10 @@
 [10231]: https://www.hackerrank.com/challenges/manasa-and-stones
 [10235]: https://www.hackerrank.com/challenges/chocolate-feast
 
+[10201solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/Solution.java
+[10202solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/Solution.java
+[10203solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/appleandorange/Solution.java
+[10204solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/kangaroo/Solution.java
 [10209solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/utopiantree/Solution.java
 [10215solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/finddigits/Solution.java
 [10218solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/Solution.java
@@ -72,6 +84,10 @@
 [10231solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/Solution.java
 [10235solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/Solution.java
 
+[10201tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/SolutionTest.java
+[10202tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/SolutionTest.java
+[10203tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/appleandorange/SolutionTest.java
+[10204tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/kangaroo/SolutionTest.java
 [10209tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/utopiantree/SolutionTest.java
 [10215tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/finddigits/SolutionTest.java
 [10218tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/SolutionTest.java

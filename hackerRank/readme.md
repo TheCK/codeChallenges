@@ -572,23 +572,23 @@ This project contains all the tests for problems on https://www.hackerrank.com.
 [alWa22]: https://www.hackerrank.com/challenges/is-fibo
 
 [alWa01s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/warmup/solvemefirst/Solution.java
-[alWa02s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/lonelyInteger/Solution.java
+[alWa02s]: src/main/java/org/ck/hackerRank/algorithms/bitmanipulation/lonelyinteger/Solution.java
 [alWa03s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/solvemesecond/Solution.java
-[alWa04s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/flippingBits/Solution.java
-[alWa05s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/utopianTree/Solution.java
-[alWa06s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/maximisingXOR/Solution.java
-[alWa07s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/alternatingCharacters/Solution.java
-[alWa08s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/theLoveLetterMystery/Solution.java
-[alWa10s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/gameOfThrones/Solution.java
-[alWa11s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/acmIcpcTeam/Solution.java
-[alWa12s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/fillingJars/Solution.java
-[alWa13s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/chocolateFeast/Solution.java
-[alWa14s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/sherlockAndSquares/Solution.java
-[alWa15s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/halloweenParty/Solution.java
-[alWa16s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/manasaAndStones/Solution.java
-[alWa19s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/twoStrings/Solution.java
-[alWa20s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/findDigits/Solution.java
-[alWa22s]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/isFibo/Solution.java
+[alWa04s]: src/main/java/org/ck/hackerRank/algorithms/bitmanipulation/flippingbits/Solution.java
+[alWa05s]: src/main/java/org/ck/hackerRank/algorithms/implementation/utopiantree/Solution.java
+[alWa06s]: src/main/java/org/ck/hackerRank/algorithms/bitmanipulation/maximisingxor/Solution.java
+[alWa07s]: src/main/java/org/ck/hackerRank/algorithms/strings/alternatingcharacters/Solution.java
+[alWa08s]: src/main/java/org/ck/hackerRank/algorithms/strings/thelovelettermystery/Solution.java
+[alWa10s]: src/main/java/org/ck/hackerRank/algorithms/strings/gameofthronesi/Solution.java
+[alWa11s]: src/main/java/org/ck/hackerRank/algorithms/implementation/acmicpcteam/Solution.java
+[alWa12s]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/fillingjars/Solution.java
+[alWa13s]: src/main/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/Solution.java
+[alWa14s]: src/main/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/Solution.java
+[alWa15s]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/halloweenparty/Solution.java
+[alWa16s]: src/main/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/Solution.java
+[alWa19s]: src/main/java/org/ck/hackerRank/algorithms/strings/twostrings/Solution.java
+[alWa20s]: src/main/java/org/ck/hackerRank/algorithms/implementation/finddigits/Solution.java
+[alWa22s]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/isfibo/Solution.java
 
 [alWa01t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/solveMeFirst/SolutionTest.java
 [alWa02t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/lonelyInteger/SolutionTest.java
@@ -638,8 +638,8 @@ This project contains all the tests for problems on https://www.hackerrank.com.
 [alAr18]: https://www.hackerrank.com/challenges/sherlock-and-pairs
 [alAr19]: https://www.hackerrank.com/challenges/almost-sorted
 
-[alAr01s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/arraysAndSorting/introToTutorialChallenges/Solution.java
-[alAr02s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/arraysAndSorting/insertionSortPart1/Solution.java
+[alAr01s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/sorting/intrototutorialchallenges/Solution.java
+[alAr02s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/sorting/insertionsortpart1/Solution.java
 
 [alAr01t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/arraysAndSorting/introToTutorialChallenges/SolutionTest.java
 [alAr02t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/arraysAndSorting/insertionSortPart1/SolutionTest.java
@@ -719,7 +719,7 @@ This project contains all the tests for problems on https://www.hackerrank.com.
 [alDy48]: https://www.hackerrank.com/challenges/dortmund-dilemma
 [alDy49]: https://www.hackerrank.com/challenges/separate-the-chocolate
 
-[alDy01s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/dynamicProgramming/maxSubarray/Solution.java
+[alDy01s]: ../hackerRank/src/main/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/Solution.java
 
 [alDy01t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/dynamicProgramming/maxSubarray/SolutionTest.java
 

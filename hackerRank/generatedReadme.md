@@ -1,4 +1,4 @@
-# Algorithms (37/37)
+# Algorithms (43/44)
 
 ## Bit Manipulation (3/3)
 
@@ -47,7 +47,7 @@
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
 
-## Implementation (17/17)
+## Implementation (23/24)
 
 |     # | Name                                  | Solution                          | Test                           |
 |------:|---------------------------------------|:---------------------------------:|:------------------------------:|
@@ -65,7 +65,14 @@
 | 10213 | [Save the Prisoner!][10213]           | &#9989;[&#128190;][10213solution] | &#9989;[&#128190;][10213tests] |
 | 10215 | [Find Digits][10215]                  | &#9989;[&#128190;][10215solution] | &#9989;[&#128190;][10215tests] |
 | 10218 | [Sherlock and Squares][10218]         | &#9989;[&#128190;][10218solution] | &#9989;[&#128190;][10218tests] |
+| 10222 | [Repeated String][10222]              | &#9989;[&#128190;][10222solution] | &#9989;[&#128190;][10222tests] |
+| 10223 | [Jumping on the Clouds][10223]        | &#9989;[&#128190;][10223solution] | &#9989;[&#128190;][10223tests] |
+| 10224 | [Equalize the Array][10224]           | &#9989;[&#128190;][10224solution] | &#9989;[&#128190;][10224tests] |
 | 10225 | [ACM ICPC Team][10225]                | &#9989;[&#128190;][10225solution] | &#9989;[&#128190;][10225tests] |
+| 10226 | [Taum and B'day][10226]               | &#9989;[&#128190;][10226solution] | &#9989;[&#128190;][10226tests] |
+| 10227 | [Encryption][10227]                   | &#9989;[&#128190;][10227solution] | &#9989;[&#128190;][10227tests] |
+| 10228 | [Bigger is Greater][10228]            | &#9989;[&#128190;][10228solution] | &#9989;[&#128190;][10228tests] |
+| 10229 | [Modified Kaprekar Numbers][10229]    | [&#128190;][10229solution]        | [&#128190;][10229tests]        |
 | 10231 | [Manasa and Stones][10231]            | &#9989;[&#128190;][10231solution] | &#9989;[&#128190;][10231tests] |
 | 10235 | [Chocolate Feast][10235]              | &#9989;[&#128190;][10235solution] | &#9989;[&#128190;][10235tests] |
 
@@ -83,7 +90,14 @@
 [10213]: https://www.hackerrank.com/challenges/save-the-prisoner
 [10215]: https://www.hackerrank.com/challenges/find-digits
 [10218]: https://www.hackerrank.com/challenges/sherlock-and-squares
+[10222]: https://www.hackerrank.com/challenges/repeated-string
+[10223]: https://www.hackerrank.com/challenges/jumping-on-the-clouds
+[10224]: https://www.hackerrank.com/challenges/equality-in-a-array
 [10225]: https://www.hackerrank.com/challenges/acm-icpc-team
+[10226]: https://www.hackerrank.com/challenges/taum-and-bday
+[10227]: https://www.hackerrank.com/challenges/encryption
+[10228]: https://www.hackerrank.com/challenges/bigger-is-greater
+[10229]: https://www.hackerrank.com/challenges/kaprekar-numbers
 [10231]: https://www.hackerrank.com/challenges/manasa-and-stones
 [10235]: https://www.hackerrank.com/challenges/chocolate-feast
 
@@ -101,7 +115,14 @@
 [10213solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/savetheprisoner/Solution.java
 [10215solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/finddigits/Solution.java
 [10218solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/Solution.java
+[10222solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/repeatedstring/Solution.java
+[10223solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/jumpingontheclouds/Solution.java
+[10224solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/equalizethearray/Solution.java
 [10225solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/acmicpcteam/Solution.java
+[10226solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/taumandbday/Solution.java
+[10227solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/encryption/Solution.java
+[10228solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/biggerisgreater/Solution.java
+[10229solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/modifiedkaprekarnumbers/Solution.java
 [10231solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/Solution.java
 [10235solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/Solution.java
 
@@ -119,7 +140,14 @@
 [10213tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/savetheprisoner/SolutionTest.java
 [10215tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/finddigits/SolutionTest.java
 [10218tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/SolutionTest.java
+[10222tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/repeatedstring/SolutionTest.java
+[10223tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/jumpingontheclouds/SolutionTest.java
+[10224tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/equalizethearray/SolutionTest.java
 [10225tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/acmicpcteam/SolutionTest.java
+[10226tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/taumandbday/SolutionTest.java
+[10227tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/encryption/SolutionTest.java
+[10228tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/biggerisgreater/SolutionTest.java
+[10229tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/modifiedkaprekarnumbers/SolutionTest.java
 [10231tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/SolutionTest.java
 [10235tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/SolutionTest.java
 

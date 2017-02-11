@@ -1,4 +1,4 @@
-# Algorithms (49/50)
+# Algorithms (59/60)
 
 ## Bit Manipulation (3/3)
 
@@ -47,7 +47,7 @@
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
 
-## Implementation (28/29)
+## Implementation (38/39)
 
 |     # | Name                                      | Solution                          | Test                           |
 |------:|-------------------------------------------|:---------------------------------:|:------------------------------:|
@@ -77,9 +77,19 @@
 | 10226 | [Taum and B'day][10226]                   | &#9989;[&#128190;][10226solution] | &#9989;[&#128190;][10226tests] |
 | 10227 | [Encryption][10227]                       | &#9989;[&#128190;][10227solution] | &#9989;[&#128190;][10227tests] |
 | 10228 | [Bigger is Greater][10228]                | &#9989;[&#128190;][10228solution] | &#9989;[&#128190;][10228tests] |
-| 10229 | [Modified Kaprekar Numbers][10229]        | [&#128190;][10229solution]        | [&#128190;][10229tests]        |
+| 10229 | [Modified Kaprekar Numbers][10229]        | &#9989;[&#128190;][10229solution] | &#9989;[&#128190;][10229tests] |
+| 10230 | [Beautiful Triplets][10230]               | &#9989;[&#128190;][10230solution] | &#9989;[&#128190;][10230tests] |
 | 10231 | [Manasa and Stones][10231]                | &#9989;[&#128190;][10231solution] | &#9989;[&#128190;][10231tests] |
+| 10232 | [Minimum Distances][10232]                | &#9989;[&#128190;][10232solution] | &#9989;[&#128190;][10232tests] |
+| 10233 | [The Time in Words][10233]                | &#9989;[&#128190;][10233solution] | &#9989;[&#128190;][10233tests] |
+| 10234 | [Cavity Map][10234]                       | &#9989;[&#128190;][10234solution] | &#9989;[&#128190;][10234tests] |
 | 10235 | [Chocolate Feast][10235]                  | &#9989;[&#128190;][10235solution] | &#9989;[&#128190;][10235tests] |
+| 10236 | [Service Lane][10236]                     | &#9989;[&#128190;][10236solution] | &#9989;[&#128190;][10236tests] |
+| 10237 | [Lisa's Workbook][10237]                  | &#9989;[&#128190;][10237solution] | &#9989;[&#128190;][10237tests] |
+| 10238 | [The Grid Search][10238]                  | &#9989;[&#128190;][10238solution] | &#9989;[&#128190;][10238tests] |
+| 10239 | [Flatland Space Stations][10239]          | &#9989;[&#128190;][10239solution] | &#9989;[&#128190;][10239tests] |
+| 10241 | [Flatland Space Stations][10241]          | &#9989;[&#128190;][10241solution] | &#9989;[&#128190;][10241tests] |
+| 10242 | [Strange Counter][10242]                  | [&#128190;][10242solution]        | [&#128190;][10242tests]        |
 
 [10201]: https://www.hackerrank.com/challenges/mini-max-sum
 [10202]: https://www.hackerrank.com/challenges/designer-pdf-viewer
@@ -108,8 +118,18 @@
 [10227]: https://www.hackerrank.com/challenges/encryption
 [10228]: https://www.hackerrank.com/challenges/bigger-is-greater
 [10229]: https://www.hackerrank.com/challenges/kaprekar-numbers
+[10230]: https://www.hackerrank.com/challenges/beautiful-triplets
 [10231]: https://www.hackerrank.com/challenges/manasa-and-stones
+[10232]: https://www.hackerrank.com/challenges/minimum-distances
+[10233]: https://www.hackerrank.com/challenges/the-time-in-words
+[10234]: https://www.hackerrank.com/challenges/cavity-map
 [10235]: https://www.hackerrank.com/challenges/chocolate-feast
+[10236]: https://www.hackerrank.com/challenges/service-lane
+[10237]: https://www.hackerrank.com/challenges/lisa-workbook
+[10238]: https://www.hackerrank.com/challenges/the-grid-search
+[10239]: https://www.hackerrank.com/challenges/flatland-space-stations
+[10241]: https://www.hackerrank.com/challenges/flatland-space-stations
+[10242]: https://www.hackerrank.com/challenges/strange-code
 
 [10201solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/Solution.java
 [10202solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/Solution.java
@@ -138,8 +158,18 @@
 [10227solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/encryption/Solution.java
 [10228solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/biggerisgreater/Solution.java
 [10229solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/modifiedkaprekarnumbers/Solution.java
+[10230solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/beautifultriplets/Solution.java
 [10231solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/Solution.java
+[10232solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/minimumdistances/Solution.java
+[10233solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/thetimeinwords/Solution.java
+[10234solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/cavitymap/Solution.java
 [10235solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/Solution.java
+[10236solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/servicelane/Solution.java
+[10237solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/lisasworkbook/Solution.java
+[10238solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/thegridsearch/Solution.java
+[10239solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/Solution.java
+[10241solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/Solution.java
+[10242solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/strangecounter/Solution.java
 
 [10201tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/SolutionTest.java
 [10202tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/SolutionTest.java
@@ -168,8 +198,18 @@
 [10227tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/encryption/SolutionTest.java
 [10228tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/biggerisgreater/SolutionTest.java
 [10229tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/modifiedkaprekarnumbers/SolutionTest.java
+[10230tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/beautifultriplets/SolutionTest.java
 [10231tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/SolutionTest.java
+[10232tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/minimumdistances/SolutionTest.java
+[10233tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/thetimeinwords/SolutionTest.java
+[10234tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/cavitymap/SolutionTest.java
 [10235tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/SolutionTest.java
+[10236tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/servicelane/SolutionTest.java
+[10237tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/lisasworkbook/SolutionTest.java
+[10238tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/thegridsearch/SolutionTest.java
+[10239tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/SolutionTest.java
+[10241tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/SolutionTest.java
+[10242tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/strangecounter/SolutionTest.java
 
 
 ## Sorting (2/2)

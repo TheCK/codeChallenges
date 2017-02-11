@@ -9,8 +9,7 @@ import java.util.stream.IntStream;
 		name = "Modified Kaprekar Numbers",
 		url = "https://www.hackerrank.com/challenges/kaprekar-numbers",
 		category = "Algorithms",
-		subCategory = "Implementation",
-		solved = false
+		subCategory = "Implementation"
 )
 public class Solution
 {
@@ -35,23 +34,24 @@ public class Solution
 		int numberLength = String.valueOf(number).length();
 
 		String square = String.valueOf(number * number);
-		String firstPart = square.substring(0, numberLength);
-		String lastPart = square.substring(numberLength);
+		int divider = square.length() - numberLength;
+		String firstPart = square.substring(0, divider);
+		String lastPart = square.substring(divider);
 
-		long rightPart;
-		if (lastPart.length() > 0)
+		long leftPart;
+		if (firstPart.length() > 0)
 		{
-			rightPart = Long.parseLong(lastPart);
-			if (rightPart == 0)
+			leftPart = Long.parseLong(firstPart);
+			if (leftPart == 0)
 			{
 				return false;
 			}
 		}
 		else
 		{
-			rightPart = 0;
+			leftPart = 0;
 		}
 
-		return Long.parseLong(firstPart) + rightPart == number;
+		return leftPart + Long.parseLong(lastPart) == number;
 	}
 }

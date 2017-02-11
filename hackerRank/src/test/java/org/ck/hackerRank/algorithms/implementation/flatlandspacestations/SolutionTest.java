@@ -1,4 +1,4 @@
-package org.ck.hackerRank.algorithms.implementation.modifiedkaprekarnumbers;
+package org.ck.hackerRank.algorithms.implementation.flatlandspacestations;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;
@@ -14,7 +14,7 @@ public class SolutionTest extends BaseTest
 
 		Solution.main(null);
 
-		assertEquals(getResult("1 9 45 55 99"), this.output.toString());
+		assertEquals(getResult("2"), this.output.toString());
 	}
 
 	@Test
@@ -24,6 +24,16 @@ public class SolutionTest extends BaseTest
 
 		Solution.main(null);
 
-		assertEquals(getResult("297"), this.output.toString());
+		assertEquals(getResult("0"), this.output.toString());
+	}
+
+	@Test
+	public void test02() throws Exception
+	{
+		pipeResource("02");
+
+		Solution.main(null);
+
+		assertEquals(getResult("63"), this.output.toString());
 	}
 }

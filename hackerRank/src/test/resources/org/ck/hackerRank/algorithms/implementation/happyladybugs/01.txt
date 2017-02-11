@@ -1,0 +1,15 @@
+7
+1
+G
+2
+GR
+4
+_GR_
+5
+_R_G_
+5
+R_R_R
+8
+RRGGBBXX
+8
+RRGGBBXY

@@ -7,8 +7,7 @@ import java.util.Scanner;
 		name = "Strange Counter",
 		url = "https://www.hackerrank.com/challenges/strange-code",
 		category = "Algorithms",
-		subCategory = "Implementation",
-		solved = false
+		subCategory = "Implementation"
 )
 public class Solution
 {
@@ -17,23 +16,16 @@ public class Solution
 		try (Scanner in = new Scanner(System.in))
 		{
 			long time = in.nextLong();
-			System.err.println("time: " + time);
+			long currentInital = 3;
+			long timeRemaining = time;
 
-			long cycles = (long) (Math.log(time) / Math.log(3));
-			System.err.println("cycles: " + cycles);
-
-			long maxThisCycle = (long) Math.pow(2, cycles) * 3;
-			System.err.println("maxThis: " + maxThisCycle);
-
-			long passedCycles = 0;
-			for (long i = 0; i < cycles; ++i)
+			while (timeRemaining > currentInital)
 			{
-				passedCycles += (long) Math.pow(2, i) * 3;
+				timeRemaining -= currentInital;
+				currentInital *= 2;
 			}
-			System.err.println("passed: " + passedCycles);
-			System.err.println("remaining: " + (time - passedCycles - 1));
 
-			System.out.println(maxThisCycle - (time - passedCycles - 1));
+			System.out.println(currentInital - timeRemaining + 1);
 		}
 	}
 }

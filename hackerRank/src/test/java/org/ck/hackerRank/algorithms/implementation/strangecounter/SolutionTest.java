@@ -1,7 +1,6 @@
 package org.ck.hackerRank.algorithms.implementation.strangecounter;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -18,7 +17,6 @@ public class SolutionTest extends BaseTest
 		assertEquals(getResult("6"), this.output.toString());
 	}
 
-	@Ignore
 	@Test
 	public void test02() throws Exception
 	{
@@ -37,5 +35,25 @@ public class SolutionTest extends BaseTest
 		Solution.main(null);
 
 		assertEquals(getResult("5"), this.output.toString());
+	}
+
+	@Test
+	public void testCustom01() throws Exception
+	{
+		pipeResource("custom01");
+
+		Solution.main(null);
+
+		assertEquals(getResult("11"), this.output.toString());
+	}
+
+	@Test
+	public void testCustom02() throws Exception
+	{
+		pipeResource("custom02");
+
+		Solution.main(null);
+
+		assertEquals(getResult("1"), this.output.toString());
 	}
 }

@@ -1,4 +1,4 @@
-# Algorithms (59/60)
+# Algorithms (61/62)
 
 ## Bit Manipulation (3/3)
 
@@ -47,7 +47,7 @@
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
 
-## Implementation (38/39)
+## Implementation (40/41)
 
 |     # | Name                                      | Solution                          | Test                           |
 |------:|-------------------------------------------|:---------------------------------:|:------------------------------:|
@@ -89,7 +89,9 @@
 | 10238 | [The Grid Search][10238]                  | &#9989;[&#128190;][10238solution] | &#9989;[&#128190;][10238tests] |
 | 10239 | [Flatland Space Stations][10239]          | &#9989;[&#128190;][10239solution] | &#9989;[&#128190;][10239tests] |
 | 10241 | [Flatland Space Stations][10241]          | &#9989;[&#128190;][10241solution] | &#9989;[&#128190;][10241tests] |
-| 10242 | [Strange Counter][10242]                  | [&#128190;][10242solution]        | [&#128190;][10242tests]        |
+| 10242 | [Strange Counter][10242]                  | &#9989;[&#128190;][10242solution] | &#9989;[&#128190;][10242tests] |
+| 10243 | [Almost Sorted][10243]                    | &#9989;[&#128190;][10243solution] | &#9989;[&#128190;][10243tests] |
+| 10244 | [Absolute Permutation][10244]             | [&#128190;][10244solution]        | [&#128190;][10244tests]        |
 
 [10201]: https://www.hackerrank.com/challenges/mini-max-sum
 [10202]: https://www.hackerrank.com/challenges/designer-pdf-viewer
@@ -130,6 +132,8 @@
 [10239]: https://www.hackerrank.com/challenges/flatland-space-stations
 [10241]: https://www.hackerrank.com/challenges/flatland-space-stations
 [10242]: https://www.hackerrank.com/challenges/strange-code
+[10243]: https://www.hackerrank.com/challenges/almost-sorted
+[10244]: https://www.hackerrank.com/challenges/absolute-permutation
 
 [10201solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/Solution.java
 [10202solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/Solution.java
@@ -170,6 +174,8 @@
 [10239solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/Solution.java
 [10241solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/Solution.java
 [10242solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/strangecounter/Solution.java
+[10243solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/almostsorted/Solution.java
+[10244solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/absolutepermutation/Solution.java
 
 [10201tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/SolutionTest.java
 [10202tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/SolutionTest.java
@@ -210,6 +216,8 @@
 [10239tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/SolutionTest.java
 [10241tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/SolutionTest.java
 [10242tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/strangecounter/SolutionTest.java
+[10243tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/almostsorted/SolutionTest.java
+[10244tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/absolutepermutation/SolutionTest.java
 
 
 ## Sorting (2/2)

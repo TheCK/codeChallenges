@@ -1,16 +1,15 @@
 package org.ck.hackerRank.algorithms.implementation.absolutepermutation;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 @org.ck.codeChallengeLib.annotation.Solution(
 		id = 10244,
 		name = "Absolute Permutation",
 		url = "https://www.hackerrank.com/challenges/absolute-permutation",
 		category = "Algorithms",
-		subCategory = "Implementation",
-		solved = false
+		subCategory = "Implementation"
 )
 public class Solution
 {
@@ -25,31 +24,34 @@ public class Solution
 				int n = in.nextInt();
 				int k = in.nextInt();
 
-				if (k == 0)
+				int[] permutation = new int[n];
+				Arrays.fill(permutation, 0);
+				for (int i = 1; i <= n; ++i)
 				{
-					System.out.println(IntStream.range(1, n + 1)
-							.boxed()
-							.map(String::valueOf)
-							.collect(Collectors.joining(" "))
-					);
+					for (int candidate : Arrays.asList(i - k, i + k))
+					{
+						if (candidate > 0 && candidate <= n && permutation[candidate - 1] == 0)
+						{
+							permutation[candidate - 1] = i;
+							break;
+						}
+					}
 				}
-				else if (n % 2 == 0 && n / 2 == k)
+
+				int[] containedNumbers = Arrays.copyOf(permutation, permutation.length);
+				Arrays.sort(containedNumbers);
+				if (Arrays.binarySearch(containedNumbers, 0) < 0)
 				{
-					System.out.print(IntStream.range(n / 2 + 1, n + 1)
-							.boxed()
-							.map(String::valueOf)
-							.collect(Collectors.joining(" "))
-					);
-					System.out.print(" ");
-					System.out.println(IntStream.range(1, n / 2 + 1)
-							.boxed()
-							.map(String::valueOf)
-							.collect(Collectors.joining(" "))
+					System.out.println(
+							Arrays.stream(permutation)
+									.boxed()
+									.map(number -> number.toString())
+									.collect(Collectors.joining(" "))
 					);
 				}
 				else
 				{
-					System.out.println("-1");
+					System.out.println(-1);
 				}
 			}
 		}

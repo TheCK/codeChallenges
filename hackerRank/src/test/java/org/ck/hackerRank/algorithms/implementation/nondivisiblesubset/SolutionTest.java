@@ -1,4 +1,4 @@
-package org.ck.hackerRank.algorithms.implementation.absolutepermutation;
+package org.ck.hackerRank.algorithms.implementation.nondivisiblesubset;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;
@@ -14,7 +14,7 @@ public class SolutionTest extends BaseTest
 
 		Solution.main(null);
 
-		assertEquals(getResult("2 1", "1 2 3", "-1"), this.output.toString());
+		assertEquals(getResult("3"), this.output.toString());
 	}
 
 	@Test
@@ -24,16 +24,16 @@ public class SolutionTest extends BaseTest
 
 		Solution.main(null);
 
-		assertEquals(getFileAsResult("01"), this.output.toString());
+		assertEquals(getResult("1"), this.output.toString());
 	}
 
 	@Test
-	public void testCustom00() throws Exception
+	public void test02() throws Exception
 	{
-		pipeResource("custom00");
+		pipeResource("02");
 
 		Solution.main(null);
 
-		assertEquals(getResult("1 2 3 4", "2 1 4 3", "3 4 1 2", "-1"), this.output.toString());
+		assertEquals(getResult("5"), this.output.toString());
 	}
 }

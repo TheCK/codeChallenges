@@ -1,4 +1,4 @@
-# Algorithms (62/63)
+# Algorithms (69/69)
 
 ## Bit Manipulation (3/3)
 
@@ -47,7 +47,7 @@
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
 
-## Implementation (41/42)
+## Implementation (44/44)
 
 |     # | Name                                      | Solution                          | Test                           |
 |------:|-------------------------------------------|:---------------------------------:|:------------------------------:|
@@ -71,6 +71,7 @@
 | 10218 | [Sherlock and Squares][10218]             | &#9989;[&#128190;][10218solution] | &#9989;[&#128190;][10218tests] |
 | 10219 | [Library Fine][10219]                     | &#9989;[&#128190;][10219solution] | &#9989;[&#128190;][10219tests] |
 | 10220 | [Cut the sticks][10220]                   | &#9989;[&#128190;][10220solution] | &#9989;[&#128190;][10220tests] |
+| 10221 | [Non-Divisible Subset][10221]             | &#9989;[&#128190;][10221solution] | &#9989;[&#128190;][10221tests] |
 | 10222 | [Repeated String][10222]                  | &#9989;[&#128190;][10222solution] | &#9989;[&#128190;][10222tests] |
 | 10223 | [Jumping on the Clouds][10223]            | &#9989;[&#128190;][10223solution] | &#9989;[&#128190;][10223tests] |
 | 10224 | [Equalize the Array][10224]               | &#9989;[&#128190;][10224solution] | &#9989;[&#128190;][10224tests] |
@@ -89,10 +90,11 @@
 | 10237 | [Lisa's Workbook][10237]                  | &#9989;[&#128190;][10237solution] | &#9989;[&#128190;][10237tests] |
 | 10238 | [The Grid Search][10238]                  | &#9989;[&#128190;][10238solution] | &#9989;[&#128190;][10238tests] |
 | 10239 | [Flatland Space Stations][10239]          | &#9989;[&#128190;][10239solution] | &#9989;[&#128190;][10239tests] |
+| 10240 | [Fair Rations][10240]                     | &#9989;[&#128190;][10240solution] | &#9989;[&#128190;][10240tests] |
 | 10241 | [Flatland Space Stations][10241]          | &#9989;[&#128190;][10241solution] | &#9989;[&#128190;][10241tests] |
 | 10242 | [Strange Counter][10242]                  | &#9989;[&#128190;][10242solution] | &#9989;[&#128190;][10242tests] |
 | 10243 | [Almost Sorted][10243]                    | &#9989;[&#128190;][10243solution] | &#9989;[&#128190;][10243tests] |
-| 10244 | [Absolute Permutation][10244]             | [&#128190;][10244solution]        | [&#128190;][10244tests]        |
+| 10244 | [Absolute Permutation][10244]             | &#9989;[&#128190;][10244solution] | &#9989;[&#128190;][10244tests] |
 
 [10201]: https://www.hackerrank.com/challenges/mini-max-sum
 [10202]: https://www.hackerrank.com/challenges/designer-pdf-viewer
@@ -114,6 +116,7 @@
 [10218]: https://www.hackerrank.com/challenges/sherlock-and-squares
 [10219]: https://www.hackerrank.com/challenges/library-fine
 [10220]: https://www.hackerrank.com/challenges/cut-the-sticks
+[10221]: https://www.hackerrank.com/challenges/non-divisible-subset
 [10222]: https://www.hackerrank.com/challenges/repeated-string
 [10223]: https://www.hackerrank.com/challenges/jumping-on-the-clouds
 [10224]: https://www.hackerrank.com/challenges/equality-in-a-array
@@ -132,6 +135,7 @@
 [10237]: https://www.hackerrank.com/challenges/lisa-workbook
 [10238]: https://www.hackerrank.com/challenges/the-grid-search
 [10239]: https://www.hackerrank.com/challenges/flatland-space-stations
+[10240]: https://www.hackerrank.com/challenges/fair-rations
 [10241]: https://www.hackerrank.com/challenges/flatland-space-stations
 [10242]: https://www.hackerrank.com/challenges/strange-code
 [10243]: https://www.hackerrank.com/challenges/almost-sorted
@@ -157,6 +161,7 @@
 [10218solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/Solution.java
 [10219solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/libraryfine/Solution.java
 [10220solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/cutthesticks/Solution.java
+[10221solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/nondivisiblesubset/Solution.java
 [10222solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/repeatedstring/Solution.java
 [10223solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/jumpingontheclouds/Solution.java
 [10224solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/equalizethearray/Solution.java
@@ -175,6 +180,7 @@
 [10237solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/lisasworkbook/Solution.java
 [10238solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/thegridsearch/Solution.java
 [10239solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/Solution.java
+[10240solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/fairrations/Solution.java
 [10241solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/Solution.java
 [10242solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/strangecounter/Solution.java
 [10243solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/almostsorted/Solution.java
@@ -200,6 +206,7 @@
 [10218tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/SolutionTest.java
 [10219tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/libraryfine/SolutionTest.java
 [10220tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/cutthesticks/SolutionTest.java
+[10221tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/nondivisiblesubset/SolutionTest.java
 [10222tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/repeatedstring/SolutionTest.java
 [10223tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/jumpingontheclouds/SolutionTest.java
 [10224tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/equalizethearray/SolutionTest.java
@@ -218,6 +225,7 @@
 [10237tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/lisasworkbook/SolutionTest.java
 [10238tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/thegridsearch/SolutionTest.java
 [10239tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/SolutionTest.java
+[10240tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/fairrations/SolutionTest.java
 [10241tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/SolutionTest.java
 [10242tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/strangecounter/SolutionTest.java
 [10243tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/almostsorted/SolutionTest.java
@@ -241,29 +249,45 @@
 [10502tests]: src/test/java/org/ck/hackerRank/algorithms/sorting/insertionsortpart1/SolutionTest.java
 
 
-## Strings (5/5)
+## Strings (9/9)
 
 |     # | Name                             | Solution                          | Test                           |
 |------:|----------------------------------|:---------------------------------:|:------------------------------:|
 | 10402 | [CamelCase][10402]               | &#9989;[&#128190;][10402solution] | &#9989;[&#128190;][10402tests] |
+| 10403 | [Two Characters][10403]          | &#9989;[&#128190;][10403solution] | &#9989;[&#128190;][10403tests] |
+| 10404 | [Pangrams][10404]                | &#9989;[&#128190;][10404solution] | &#9989;[&#128190;][10404tests] |
+| 10405 | [Caesar Cipher][10405]           | &#9989;[&#128190;][10405solution] | &#9989;[&#128190;][10405tests] |
+| 10406 | [Mars Exploration][10406]        | &#9989;[&#128190;][10406solution] | &#9989;[&#128190;][10406tests] |
 | 10409 | [Alternating Characters][10409]  | &#9989;[&#128190;][10409solution] | &#9989;[&#128190;][10409tests] |
 | 10411 | [The Love-Letter Mystery][10411] | &#9989;[&#128190;][10411solution] | &#9989;[&#128190;][10411tests] |
 | 10415 | [Game of Thrones - I][10415]     | &#9989;[&#128190;][10415solution] | &#9989;[&#128190;][10415tests] |
 | 10416 | [Two Strings][10416]             | &#9989;[&#128190;][10416solution] | &#9989;[&#128190;][10416tests] |
 
 [10402]: https://www.hackerrank.com/challenges/camelcase
+[10403]: https://www.hackerrank.com/challenges/two-characters
+[10404]: https://www.hackerrank.com/challenges/pangrams
+[10405]: https://www.hackerrank.com/challenges/caesar-cipher-1
+[10406]: https://www.hackerrank.com/challenges/mars-exploration
 [10409]: https://www.hackerrank.com/challenges/alternating-characters
 [10411]: https://www.hackerrank.com/challenges/the-love-letter-mystery
 [10415]: https://www.hackerrank.com/challenges/game-of-thrones
 [10416]: https://www.hackerrank.com/challenges/two-strings
 
 [10402solution]: src/main/java/org/ck/hackerRank/algorithms/strings/camelcase/Solution.java
+[10403solution]: src/main/java/org/ck/hackerRank/algorithms/strings/twocharacters/Solution.java
+[10404solution]: src/main/java/org/ck/hackerRank/algorithms/strings/pangrams/Solution.java
+[10405solution]: src/main/java/org/ck/hackerRank/algorithms/strings/caesarcipher/Solution.java
+[10406solution]: src/main/java/org/ck/hackerRank/algorithms/strings/marsexploration/Solution.java
 [10409solution]: src/main/java/org/ck/hackerRank/algorithms/strings/alternatingcharacters/Solution.java
 [10411solution]: src/main/java/org/ck/hackerRank/algorithms/strings/thelovelettermystery/Solution.java
 [10415solution]: src/main/java/org/ck/hackerRank/algorithms/strings/gameofthronesi/Solution.java
 [10416solution]: src/main/java/org/ck/hackerRank/algorithms/strings/twostrings/Solution.java
 
 [10402tests]: src/test/java/org/ck/hackerRank/algorithms/strings/camelcase/SolutionTest.java
+[10403tests]: src/test/java/org/ck/hackerRank/algorithms/strings/twocharacters/SolutionTest.java
+[10404tests]: src/test/java/org/ck/hackerRank/algorithms/strings/pangrams/SolutionTest.java
+[10405tests]: src/test/java/org/ck/hackerRank/algorithms/strings/caesarcipher/SolutionTest.java
+[10406tests]: src/test/java/org/ck/hackerRank/algorithms/strings/marsexploration/SolutionTest.java
 [10409tests]: src/test/java/org/ck/hackerRank/algorithms/strings/alternatingcharacters/SolutionTest.java
 [10411tests]: src/test/java/org/ck/hackerRank/algorithms/strings/thelovelettermystery/SolutionTest.java
 [10415tests]: src/test/java/org/ck/hackerRank/algorithms/strings/gameofthronesi/SolutionTest.java

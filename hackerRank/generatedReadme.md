@@ -12,9 +12,9 @@
 [11002]: https://www.hackerrank.com/challenges/maximizing-xor
 [11006]: https://www.hackerrank.com/challenges/flipping-bits
 
-[11001solution]: src/main/java/org/ck/hackerRank/algorithms/bitmanipulation/lonelyinteger/Solution.java
-[11002solution]: src/main/java/org/ck/hackerRank/algorithms/bitmanipulation/maximisingxor/Solution.java
-[11006solution]: src/main/java/org/ck/hackerRank/algorithms/bitmanipulation/flippingbits/Solution.java
+[11001solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/bitmanipulation/lonelyinteger/Solution.java
+[11002solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/bitmanipulation/maximisingxor/Solution.java
+[11006solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/bitmanipulation/flippingbits/Solution.java
 
 [11001tests]: src/test/java/org/ck/hackerRank/algorithms/bitmanipulation/lonelyinteger/SolutionTest.java
 [11002tests]: src/test/java/org/ck/hackerRank/algorithms/bitmanipulation/maximisingxor/SolutionTest.java
@@ -29,7 +29,7 @@
 
 [19901]: https://www.hackerrank.com/challenges/solve-me-second
 
-[19901solution]: src/main/java/org/ck/hackerRank/algorithms/decommissioned/solvemesecond/Solution.java
+[19901solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/decommissioned/solvemesecond/Solution.java
 
 [19901tests]: src/test/java/org/ck/hackerRank/algorithms/decommissioned/solvemesecond/SolutionTest.java
 
@@ -42,7 +42,7 @@
 
 [10910]: https://www.hackerrank.com/challenges/maxsubarray
 
-[10910solution]: src/main/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/Solution.java
+[10910solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/dynamicprogramming/maxsubarray/Solution.java
 
 [10910tests]: src/test/java/org/ck/hackerRank/algorithms/dynamicprogramming/maxsubarray/SolutionTest.java
 
@@ -141,50 +141,50 @@
 [10243]: https://www.hackerrank.com/challenges/almost-sorted
 [10244]: https://www.hackerrank.com/challenges/absolute-permutation
 
-[10201solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/Solution.java
-[10202solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/Solution.java
-[10203solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/appleandorange/Solution.java
-[10204solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/kangaroo/Solution.java
-[10205solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/betweentwosets/Solution.java
-[10206solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/divisiblesumpairs/Solution.java
-[10207solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/bonappetit/Solution.java
-[10208solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sockmerchant/Solution.java
-[10209solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/utopiantree/Solution.java
-[10210solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/angryprofessor/Solution.java
-[10211solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/beautifuldaysatthemovies/Solution.java
-[10212solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/viraladvertising/Solution.java
-[10213solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/savetheprisoner/Solution.java
-[10214solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/jumpingonthecloudsrevisited/Solution.java
-[10215solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/finddigits/Solution.java
-[10216solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/extralongfactorials/Solution.java
-[10217solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/appendanddelete/Solution.java
-[10218solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/sherlockandsquares/Solution.java
-[10219solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/libraryfine/Solution.java
-[10220solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/cutthesticks/Solution.java
-[10221solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/nondivisiblesubset/Solution.java
-[10222solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/repeatedstring/Solution.java
-[10223solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/jumpingontheclouds/Solution.java
-[10224solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/equalizethearray/Solution.java
-[10225solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/acmicpcteam/Solution.java
-[10226solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/taumandbday/Solution.java
-[10227solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/encryption/Solution.java
-[10228solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/biggerisgreater/Solution.java
-[10229solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/modifiedkaprekarnumbers/Solution.java
-[10230solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/beautifultriplets/Solution.java
-[10231solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/manasaandstones/Solution.java
-[10232solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/minimumdistances/Solution.java
-[10233solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/thetimeinwords/Solution.java
-[10234solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/cavitymap/Solution.java
-[10235solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/chocolatefeast/Solution.java
-[10236solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/servicelane/Solution.java
-[10237solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/lisasworkbook/Solution.java
-[10238solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/thegridsearch/Solution.java
-[10239solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/flatlandspacestations/Solution.java
-[10240solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/fairrations/Solution.java
-[10241solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/happyladybugs/Solution.java
-[10242solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/strangecounter/Solution.java
-[10243solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/almostsorted/Solution.java
-[10244solution]: src/main/java/org/ck/hackerRank/algorithms/implementation/absolutepermutation/Solution.java
+[10201solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/minimaxsum/Solution.java
+[10202solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/designerpdfviewer/Solution.java
+[10203solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/appleandorange/Solution.java
+[10204solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/kangaroo/Solution.java
+[10205solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/betweentwosets/Solution.java
+[10206solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/divisiblesumpairs/Solution.java
+[10207solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/bonappetit/Solution.java
+[10208solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/sockmerchant/Solution.java
+[10209solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/utopiantree/Solution.java
+[10210solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/angryprofessor/Solution.java
+[10211solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/beautifuldaysatthemovies/Solution.java
+[10212solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/viraladvertising/Solution.java
+[10213solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/savetheprisoner/Solution.java
+[10214solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/jumpingonthecloudsrevisited/Solution.java
+[10215solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/finddigits/Solution.java
+[10216solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/extralongfactorials/Solution.java
+[10217solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/appendanddelete/Solution.java
+[10218solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/sherlockandsquares/Solution.java
+[10219solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/libraryfine/Solution.java
+[10220solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/cutthesticks/Solution.java
+[10221solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/nondivisiblesubset/Solution.java
+[10222solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/repeatedstring/Solution.java
+[10223solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/jumpingontheclouds/Solution.java
+[10224solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/equalizethearray/Solution.java
+[10225solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/acmicpcteam/Solution.java
+[10226solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/taumandbday/Solution.java
+[10227solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/encryption/Solution.java
+[10228solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/biggerisgreater/Solution.java
+[10229solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/modifiedkaprekarnumbers/Solution.java
+[10230solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/beautifultriplets/Solution.java
+[10231solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/manasaandstones/Solution.java
+[10232solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/minimumdistances/Solution.java
+[10233solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/thetimeinwords/Solution.java
+[10234solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/cavitymap/Solution.java
+[10235solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/chocolatefeast/Solution.java
+[10236solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/servicelane/Solution.java
+[10237solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/lisasworkbook/Solution.java
+[10238solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/thegridsearch/Solution.java
+[10239solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/flatlandspacestations/Solution.java
+[10240solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/fairrations/Solution.java
+[10241solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/happyladybugs/Solution.java
+[10242solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/strangecounter/Solution.java
+[10243solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/almostsorted/Solution.java
+[10244solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/absolutepermutation/Solution.java
 
 [10201tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/minimaxsum/SolutionTest.java
 [10202tests]: src/test/java/org/ck/hackerRank/algorithms/implementation/designerpdfviewer/SolutionTest.java
@@ -242,8 +242,8 @@
 [10501]: https://www.hackerrank.com/challenges/tutorial-intro
 [10502]: https://www.hackerrank.com/challenges/insertionsort1
 
-[10501solution]: src/main/java/org/ck/hackerRank/algorithms/sorting/intrototutorialchallenges/Solution.java
-[10502solution]: src/main/java/org/ck/hackerRank/algorithms/sorting/insertionsortpart1/Solution.java
+[10501solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/sorting/intrototutorialchallenges/Solution.java
+[10502solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/sorting/insertionsortpart1/Solution.java
 
 [10501tests]: src/test/java/org/ck/hackerRank/algorithms/sorting/intrototutorialchallenges/SolutionTest.java
 [10502tests]: src/test/java/org/ck/hackerRank/algorithms/sorting/insertionsortpart1/SolutionTest.java
@@ -273,15 +273,15 @@
 [10415]: https://www.hackerrank.com/challenges/game-of-thrones
 [10416]: https://www.hackerrank.com/challenges/two-strings
 
-[10402solution]: src/main/java/org/ck/hackerRank/algorithms/strings/camelcase/Solution.java
-[10403solution]: src/main/java/org/ck/hackerRank/algorithms/strings/twocharacters/Solution.java
-[10404solution]: src/main/java/org/ck/hackerRank/algorithms/strings/pangrams/Solution.java
-[10405solution]: src/main/java/org/ck/hackerRank/algorithms/strings/caesarcipher/Solution.java
-[10406solution]: src/main/java/org/ck/hackerRank/algorithms/strings/marsexploration/Solution.java
-[10409solution]: src/main/java/org/ck/hackerRank/algorithms/strings/alternatingcharacters/Solution.java
-[10411solution]: src/main/java/org/ck/hackerRank/algorithms/strings/thelovelettermystery/Solution.java
-[10415solution]: src/main/java/org/ck/hackerRank/algorithms/strings/gameofthronesi/Solution.java
-[10416solution]: src/main/java/org/ck/hackerRank/algorithms/strings/twostrings/Solution.java
+[10402solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/camelcase/Solution.java
+[10403solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/twocharacters/Solution.java
+[10404solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/pangrams/Solution.java
+[10405solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/caesarcipher/Solution.java
+[10406solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/marsexploration/Solution.java
+[10409solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/alternatingcharacters/Solution.java
+[10411solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/thelovelettermystery/Solution.java
+[10415solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/gameofthronesi/Solution.java
+[10416solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/twostrings/Solution.java
 
 [10402tests]: src/test/java/org/ck/hackerRank/algorithms/strings/camelcase/SolutionTest.java
 [10403tests]: src/test/java/org/ck/hackerRank/algorithms/strings/twocharacters/SolutionTest.java
@@ -318,15 +318,15 @@
 [10108]: https://www.hackerrank.com/challenges/time-conversion
 [10109]: https://www.hackerrank.com/challenges/circular-array-rotation
 
-[10101solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/solvemefirst/Solution.java
-[10102solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/simplearraysum/Solution.java
-[10103solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/comparethetriplets/Solution.java
-[10104solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/averybigsum/Solution.java
-[10105solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/diagonaldifference/Solution.java
-[10106solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/plusminus/Solution.java
-[10107solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/staircase/Solution.java
-[10108solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/timeconversion/Solution.java
-[10109solution]: src/main/java/org/ck/hackerRank/algorithms/warmup/circulararrayrotation/Solution.java
+[10101solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/solvemefirst/Solution.java
+[10102solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/simplearraysum/Solution.java
+[10103solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/comparethetriplets/Solution.java
+[10104solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/averybigsum/Solution.java
+[10105solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/diagonaldifference/Solution.java
+[10106solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/plusminus/Solution.java
+[10107solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/staircase/Solution.java
+[10108solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/timeconversion/Solution.java
+[10109solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/Solution.java
 
 [10101tests]: src/test/java/org/ck/hackerRank/algorithms/warmup/solvemefirst/SolutionTest.java
 [10102tests]: src/test/java/org/ck/hackerRank/algorithms/warmup/simplearraysum/SolutionTest.java
@@ -358,12 +358,12 @@
 [30119]: https://www.hackerrank.com/challenges/filling-jars
 [30120]: https://www.hackerrank.com/challenges/is-fibo
 
-[30102solution]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/maximumdraws/Solution.java
-[30103solution]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/handshake/Solution.java
-[30105solution]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/connectingtowns/Solution.java
-[30118solution]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/halloweenparty/Solution.java
-[30119solution]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/fillingjars/Solution.java
-[30120solution]: src/main/java/org/ck/hackerRank/mathematics/fundamentals/isfibo/Solution.java
+[30102solution]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/maximumdraws/Solution.java
+[30103solution]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/handshake/Solution.java
+[30105solution]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/connectingtowns/Solution.java
+[30118solution]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/halloweenparty/Solution.java
+[30119solution]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/fillingjars/Solution.java
+[30120solution]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/isfibo/Solution.java
 
 [30102tests]: src/test/java/org/ck/hackerRank/mathematics/fundamentals/maximumdraws/SolutionTest.java
 [30103tests]: src/test/java/org/ck/hackerRank/mathematics/fundamentals/handshake/SolutionTest.java

@@ -1,4 +1,4 @@
-package org.ck.hackerRank.languages.java.introduction.javaifelse;
+package org.ck.hackerRank.languages.java.introduction.ifelse;
 
 import java.util.Scanner;
 

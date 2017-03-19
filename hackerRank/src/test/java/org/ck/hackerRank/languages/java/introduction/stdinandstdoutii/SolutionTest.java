@@ -1,4 +1,4 @@
-package org.ck.hackerRank.languages.java.introduction.javaifelse;
+package org.ck.hackerRank.languages.java.introduction.stdinandstdoutii;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;
@@ -14,7 +14,7 @@ public class SolutionTest extends BaseTest
 
 		Solution.main(null);
 
-		assertEquals(getResult("Weird"), this.output.toString());
+		assertEquals(getFileAsResult("00"), this.output.toString());
 	}
 
 	@Test
@@ -24,6 +24,6 @@ public class SolutionTest extends BaseTest
 
 		Solution.main(null);
 
-		assertEquals(getResult("Not Weird"), this.output.toString());
+		assertEquals(getFileAsResult("01"), this.output.toString());
 	}
 }

@@ -1,0 +1,3 @@
+Hello world
+I am a file
+Read me until end-of-file.

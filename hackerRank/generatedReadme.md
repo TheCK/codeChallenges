@@ -393,27 +393,88 @@
 [20202tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeatthetailofalinkedlist/SolutionTest.java
 [20203tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeattheheadofalinkedlist/SolutionTest.java
 
-# Java (3/3)
+# Java (16/16)
 
-## Introduction (3/3)
+## Introduction (13/13)
 
-|        # | Name                                | Solution                             | Test                              |
-|---------:|-------------------------------------|:------------------------------------:|:---------------------------------:|
-| 40201001 | [Welcome to Java!][40201001]        | &#9989;[&#128190;][40201001solution] | &#9989;[&#128190;][40201001tests] |
-| 40201002 | [Java Stdin and Stdout I][40201002] | &#9989;[&#128190;][40201002solution] | &#9989;[&#128190;][40201002tests] |
-| 40201003 | [Java If-Else][40201003]            | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
+|        # | Name                                      | Solution                             | Test                              |
+|---------:|-------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40201001 | [Welcome to Java!][40201001]              | &#9989;[&#128190;][40201001solution] | &#9989;[&#128190;][40201001tests] |
+| 40201002 | [Java Stdin and Stdout I][40201002]       | &#9989;[&#128190;][40201002solution] | &#9989;[&#128190;][40201002tests] |
+| 40201003 | [Java If-Else][40201003]                  | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
+| 40201003 | [Java Stdin and Stdout II][40201003]      | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
+| 40201005 | [Java Output Formatting][40201005]        | &#9989;[&#128190;][40201005solution] | &#9989;[&#128190;][40201005tests] |
+| 40201006 | [Java Loops I][40201006]                  | &#9989;[&#128190;][40201006solution] | &#9989;[&#128190;][40201006tests] |
+| 40201007 | [Java Loops II][40201007]                 | &#9989;[&#128190;][40201007solution] | &#9989;[&#128190;][40201007tests] |
+| 40201008 | [Java Datatypes][40201008]                | &#9989;[&#128190;][40201008solution] | &#9989;[&#128190;][40201008tests] |
+| 40201009 | [Java End-of-file][40201009]              | &#9989;[&#128190;][40201009solution] | &#9989;[&#128190;][40201009tests] |
+| 40201010 | [Java Static Initializer Block][40201010] | &#9989;[&#128190;][40201010solution] | &#9989;[&#128190;][40201010tests] |
+| 40201011 | [Java Int to String][40201011]            | &#9989;[&#128190;][40201011solution] | &#9989;[&#128190;][40201011tests] |
+| 40201012 | [Java Date and Time][40201012]            | &#9989;[&#128190;][40201012solution] | &#9989;[&#128190;][40201012tests] |
+| 40201013 | [Java Currency Formatter][40201013]       | &#9989;[&#128190;][40201013solution] | &#9989;[&#128190;][40201013tests] |
 
 [40201001]: https://www.hackerrank.com/challenges/welcome-to-java
 [40201002]: https://www.hackerrank.com/challenges/java-stdin-and-stdout-1
 [40201003]: https://www.hackerrank.com/challenges/java-if-else
+[40201003]: https://www.hackerrank.com/challenges/java-stdin-stdout
+[40201005]: https://www.hackerrank.com/challenges/java-output-formatting
+[40201006]: https://www.hackerrank.com/challenges/java-loops-i
+[40201007]: https://www.hackerrank.com/challenges/java-loops
+[40201008]: https://www.hackerrank.com/challenges/java-datatypes
+[40201009]: https://www.hackerrank.com/challenges/java-end-of-file
+[40201010]: https://www.hackerrank.com/challenges/java-static-initializer-block
+[40201011]: https://www.hackerrank.com/challenges/java-int-to-string
+[40201012]: https://www.hackerrank.com/challenges/java-date-and-time
+[40201013]: https://www.hackerrank.com/challenges/java-currency-formatter
 
 [40201001solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/welcometojava/Solution.java
-[40201002solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/javastdinandstdouti/Solution.java
-[40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/javaifelse/Solution.java
+[40201002solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/Solution.java
+[40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/ifelse/Solution.java
+[40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/Solution.java
+[40201005solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/outputformatting/Solution.java
+[40201006solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/loopsi/Solution.java
+[40201007solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/loopsii/Solution.java
+[40201008solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/datatypes/Solution.java
+[40201009solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/endoffile/Solution.java
+[40201010solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/staticinitializerblock/Solution.java
+[40201011solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/inttostring/Solution.java
+[40201012solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/dateandtime/Solution.java
+[40201013solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/Solution.java
 
 [40201001tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/welcometojava/SolutionTest.java
-[40201002tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/javastdinandstdouti/SolutionTest.java
-[40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/javaifelse/SolutionTest.java
+[40201002tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/SolutionTest.java
+[40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/ifelse/SolutionTest.java
+[40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/SolutionTest.java
+[40201005tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/outputformatting/SolutionTest.java
+[40201006tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/loopsi/SolutionTest.java
+[40201007tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/loopsii/SolutionTest.java
+[40201008tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/datatypes/SolutionTest.java
+[40201009tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/endoffile/SolutionTest.java
+[40201010tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/staticinitializerblock/SolutionTest.java
+[40201011tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/inttostring/SolutionTest.java
+[40201012tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/dateandtime/SolutionTest.java
+[40201013tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/SolutionTest.java
+
+
+## Strings (3/3)
+
+|        # | Name                                  | Solution                             | Test                              |
+|---------:|---------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40202001 | [Java Strings Introduction][40202001] | &#9989;[&#128190;][40202001solution] | &#9989;[&#128190;][40202001tests] |
+| 40202002 | [Java Substring][40202002]            | &#9989;[&#128190;][40202002solution] | &#9989;[&#128190;][40202002tests] |
+| 40202003 | [Java String Compare][40202003]       | &#9989;[&#128190;][40202003solution] | &#9989;[&#128190;][40202003tests] |
+
+[40202001]: https://www.hackerrank.com/challenges/java-strings-introduction
+[40202002]: https://www.hackerrank.com/challenges/java-substring
+[40202003]: https://www.hackerrank.com/challenges/java-string-compare
+
+[40202001solution]: src/main/java/org/ck/hackerRank/languages/java/strings/stringintroduction/Solution.java
+[40202002solution]: src/main/java/org/ck/hackerRank/languages/java/strings/substring/Solution.java
+[40202003solution]: src/main/java/org/ck/hackerRank/languages/java/strings/stringcompare/Solution.java
+
+[40202001tests]: src/test/java/org/ck/hackerRank/languages/java/strings/stringintroduction/SolutionTest.java
+[40202002tests]: src/test/java/org/ck/hackerRank/languages/java/strings/substring/SolutionTest.java
+[40202003tests]: src/test/java/org/ck/hackerRank/languages/java/strings/stringcompare/SolutionTest.java
 
 # Mathematics (6/6)
 

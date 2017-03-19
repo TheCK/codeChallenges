@@ -1,4 +1,4 @@
-package org.ck.hackerRank.languages.java.introduction.javastdinandstdouti;
+package org.ck.hackerRank.languages.java.introduction.stdinandstdouti;
 
 import java.util.Scanner;
 
@@ -15,12 +15,13 @@ public class Solution
 
 	public static void main(String[] args)
 	{
-		Scanner scan = new Scanner(System.in);
-
-		for (int i = 0; i < NUMBER; ++i)
+		try (Scanner in = new Scanner(System.in))
 		{
-			int number = scan.nextInt();
-			System.out.println(number);
+			for (int i = 0; i < NUMBER; ++i)
+			{
+				int number = in.nextInt();
+				System.out.println(number);
+			}
 		}
 	}
 }

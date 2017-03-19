@@ -338,7 +338,7 @@
 [10109tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/timeconversion/SolutionTest.java
 [10221tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/SolutionTest.java
 
-# Data Structures (9/9)
+# Data Structures (14/14)
 
 ## Arrays (6/6)
 
@@ -373,25 +373,45 @@
 [20105tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/algorithmiccrush/SolutionTest.java
 
 
-## Linked Lists (3/3)
+## Linked Lists (8/8)
 
-|     # | Name                                                | Solution                          | Test                           |
-|------:|-----------------------------------------------------|:---------------------------------:|:------------------------------:|
-| 20201 | [Print the Elements of a Linked List][20201]        | &#9989;[&#128190;][20201solution] | &#9989;[&#128190;][20201tests] |
-| 20202 | [Insert a Node at the Tail of a Linked List][20202] | &#9989;[&#128190;][20202solution] | &#9989;[&#128190;][20202tests] |
-| 20203 | [Insert a node at the head of a linked list][20203] | &#9989;[&#128190;][20203solution] | &#9989;[&#128190;][20203tests] |
+|     # | Name                                                           | Solution                          | Test                           |
+|------:|----------------------------------------------------------------|:---------------------------------:|:------------------------------:|
+| 20201 | [Print the Elements of a Linked List][20201]                   | &#9989;[&#128190;][20201solution] | &#9989;[&#128190;][20201tests] |
+| 20202 | [Insert a Node at the Tail of a Linked List][20202]            | &#9989;[&#128190;][20202solution] | &#9989;[&#128190;][20202tests] |
+| 20203 | [Insert a node at the head of a linked list][20203]            | &#9989;[&#128190;][20203solution] | &#9989;[&#128190;][20203tests] |
+| 20204 | [Insert a node at a specific position in a linked list][20204] | &#9989;[&#128190;][20204solution] | &#9989;[&#128190;][20204tests] |
+| 20205 | [Delete a Node][20205]                                         | &#9989;[&#128190;][20205solution] | &#9989;[&#128190;][20205tests] |
+| 20206 | [Print in Reverse][20206]                                      | &#9989;[&#128190;][20206solution] | &#9989;[&#128190;][20206tests] |
+| 20207 | [Reverse a linked list][20207]                                 | &#9989;[&#128190;][20207solution] | &#9989;[&#128190;][20207tests] |
+| 20208 | [Compare two linked lists][20208]                              | &#9989;[&#128190;][20208solution] | &#9989;[&#128190;][20208tests] |
 
 [20201]: https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list
 [20202]: https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list
 [20203]: https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list
+[20204]: https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list
+[20205]: https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list
+[20206]: https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse
+[20207]: https://www.hackerrank.com/challenges/reverse-a-linked-list
+[20208]: https://www.hackerrank.com/challenges/compare-two-linked-lists
 
 [20201solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/printtheelementsofalinkedlist/Solution.java
 [20202solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeatthetailofalinkedlist/Solution.java
 [20203solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeattheheadofalinkedlist/Solution.java
+[20204solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeataspecificpositioninalinkedlist/Solution.java
+[20205solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/deleteanode/Solution.java
+[20206solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/printinreverse/Solution.java
+[20207solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/Solution.java
+[20208solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/Solution.java
 
 [20201tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/printtheelementsofalinkedlist/SolutionTest.java
 [20202tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeatthetailofalinkedlist/SolutionTest.java
 [20203tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeattheheadofalinkedlist/SolutionTest.java
+[20204tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/insertanodeataspecificpositioninalinkedlist/SolutionTest.java
+[20205tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/deleteanode/SolutionTest.java
+[20206tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/printinreverse/SolutionTest.java
+[20207tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/SolutionTest.java
+[20208tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/SolutionTest.java
 
 # Java (16/16)
 

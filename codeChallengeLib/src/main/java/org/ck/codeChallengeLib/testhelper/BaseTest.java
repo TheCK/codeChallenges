@@ -72,6 +72,25 @@ public abstract class BaseTest
 		return builder.toString();
 	}
 
+	protected String getFileAsResultNoNewLine(String name)
+	{
+		File resultFile = new File(getClass().getResource(name + ".result.txt").getFile());
+
+		StringBuilder builder = new StringBuilder();
+		try (Scanner resultScanner = new Scanner(resultFile))
+		{
+			while (resultScanner.hasNextLine())
+			{
+				builder.append(resultScanner.nextLine()).append(resultScanner.hasNextLine() ? System.lineSeparator() : "");
+			}
+		}
+		catch (FileNotFoundException e)
+		{
+		}
+
+		return builder.toString();
+	}
+
 	protected static String getResult(String... restults)
 	{
 		StringBuilder builder = new StringBuilder();

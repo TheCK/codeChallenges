@@ -530,3 +530,110 @@
 [30119tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/fillingjars/SolutionTest.java
 [30120tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/isfibo/SolutionTest.java
 
+# SQL (21/22)
+
+## Advanced Select (1/2)
+
+|        # | Name                         | Solution                             | Test                              |
+|---------:|------------------------------|:------------------------------------:|:---------------------------------:|
+| 30202001 | [Type of Triangle][30202001] | &#9989;[&#128190;][30202001solution] | &#9989;[&#128190;][30202001tests] |
+| 30202002 | [The PADS][30202002]         | [&#128190;][30202002solution]        | [&#128190;][30202002tests]        |
+
+[30202001]: https://www.hackerrank.com/challenges/what-type-of-triangle
+[30202002]: https://www.hackerrank.com/challenges/the-pads
+
+[30202001solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/advancedselect/typeoftriangle/Solution.java
+[30202002solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/advancedselect/thepads/Solution.java
+
+[30202001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/advancedselect/typeoftriangle/SolutionTest.java
+[30202002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/advancedselect/thepads/SolutionTest.java
+
+
+## Basic Select (20/20)
+
+|        # | Name                                       | Solution                             | Test                              |
+|---------:|--------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 30201001 | [Revising the Select Query I][30201001]    | &#9989;[&#128190;][30201001solution] | &#9989;[&#128190;][30201001tests] |
+| 30201002 | [Revising the Select Query II][30201002]   | &#9989;[&#128190;][30201002solution] | &#9989;[&#128190;][30201002tests] |
+| 30201003 | [Select All][30201003]                     | &#9989;[&#128190;][30201003solution] | &#9989;[&#128190;][30201003tests] |
+| 30201004 | [Select By ID][30201004]                   | &#9989;[&#128190;][30201004solution] | &#9989;[&#128190;][30201004tests] |
+| 30201005 | [Japanese Cities' Attributes][30201005]    | &#9989;[&#128190;][30201005solution] | &#9989;[&#128190;][30201005tests] |
+| 30201006 | [Japanese Cities' Names][30201006]         | &#9989;[&#128190;][30201006solution] | &#9989;[&#128190;][30201006tests] |
+| 30201007 | [Weather Observation Station 1][30201007]  | &#9989;[&#128190;][30201007solution] | &#9989;[&#128190;][30201007tests] |
+| 30201008 | [Weather Observation Station 3][30201008]  | &#9989;[&#128190;][30201008solution] | &#9989;[&#128190;][30201008tests] |
+| 30201009 | [Weather Observation Station 4][30201009]  | &#9989;[&#128190;][30201009solution] | &#9989;[&#128190;][30201009tests] |
+| 30201010 | [Weather Observation Station 5][30201010]  | &#9989;[&#128190;][30201010solution] | &#9989;[&#128190;][30201010tests] |
+| 30201011 | [Weather Observation Station 6][30201011]  | &#9989;[&#128190;][30201011solution] | &#9989;[&#128190;][30201011tests] |
+| 30201012 | [Weather Observation Station 7][30201012]  | &#9989;[&#128190;][30201012solution] | &#9989;[&#128190;][30201012tests] |
+| 30201013 | [Weather Observation Station 8][30201013]  | &#9989;[&#128190;][30201013solution] | &#9989;[&#128190;][30201013tests] |
+| 30201014 | [Weather Observation Station 9][30201014]  | &#9989;[&#128190;][30201014solution] | &#9989;[&#128190;][30201014tests] |
+| 30201015 | [Weather Observation Station 10][30201015] | &#9989;[&#128190;][30201015solution] | &#9989;[&#128190;][30201015tests] |
+| 30201016 | [Weather Observation Station 11][30201016] | &#9989;[&#128190;][30201016solution] | &#9989;[&#128190;][30201016tests] |
+| 30201017 | [Weather Observation Station 12][30201017] | &#9989;[&#128190;][30201017solution] | &#9989;[&#128190;][30201017tests] |
+| 30201018 | [Higher Than 75 Marks][30201018]           | &#9989;[&#128190;][30201018solution] | &#9989;[&#128190;][30201018tests] |
+| 30201019 | [Employee Names][30201019]                 | &#9989;[&#128190;][30201019solution] | &#9989;[&#128190;][30201019tests] |
+| 30201020 | [Employee Salaries][30201020]              | &#9989;[&#128190;][30201020solution] | &#9989;[&#128190;][30201020tests] |
+
+[30201001]: https://www.hackerrank.com/challenges/revising-the-select-query
+[30201002]: https://www.hackerrank.com/challenges/revising-the-select-query-2
+[30201003]: https://www.hackerrank.com/challenges/select-all-sql
+[30201004]: https://www.hackerrank.com/challenges/select-by-id
+[30201005]: https://www.hackerrank.com/challenges/japanese-cities-attributes
+[30201006]: https://www.hackerrank.com/challenges/japanese-cities-name
+[30201007]: https://www.hackerrank.com/challenges/weather-observation-station-1
+[30201008]: https://www.hackerrank.com/challenges/weather-observation-station-3
+[30201009]: https://www.hackerrank.com/challenges/weather-observation-station-4
+[30201010]: https://www.hackerrank.com/challenges/weather-observation-station-5
+[30201011]: https://www.hackerrank.com/challenges/weather-observation-station-6
+[30201012]: https://www.hackerrank.com/challenges/weather-observation-station-7
+[30201013]: https://www.hackerrank.com/challenges/weather-observation-station-8
+[30201014]: https://www.hackerrank.com/challenges/weather-observation-station-9
+[30201015]: https://www.hackerrank.com/challenges/weather-observation-station-10
+[30201016]: https://www.hackerrank.com/challenges/weather-observation-station-11
+[30201017]: https://www.hackerrank.com/challenges/weather-observation-station-12
+[30201018]: https://www.hackerrank.com/challenges/more-than-75-marks
+[30201019]: https://www.hackerrank.com/challenges/name-of-employees
+[30201020]: https://www.hackerrank.com/challenges/salary-of-employees
+
+[30201001solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/revisingtheselectqueryi/Solution.java
+[30201002solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/revisingtheselectqueryii/Solution.java
+[30201003solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/selectall/Solution.java
+[30201004solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/selectbyid/Solution.java
+[30201005solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/japanesecitiesattributes/Solution.java
+[30201006solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/japanesecitiesnames/Solution.java
+[30201007solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation1/Solution.java
+[30201008solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation3/Solution.java
+[30201009solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation4/Solution.java
+[30201010solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation5/Solution.java
+[30201011solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation6/Solution.java
+[30201012solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation7/Solution.java
+[30201013solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation8/Solution.java
+[30201014solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation9/Solution.java
+[30201015solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation10/Solution.java
+[30201016solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation11/Solution.java
+[30201017solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation12/Solution.java
+[30201018solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/higherthan75marks/Solution.java
+[30201019solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/employeename/Solution.java
+[30201020solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicselect/employesalaries/Solution.java
+
+[30201001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/revisingtheselectqueryi/SolutionTest.java
+[30201002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/revisingtheselectqueryii/SolutionTest.java
+[30201003tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/selectall/SolutionTest.java
+[30201004tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/selectbyid/SolutionTest.java
+[30201005tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/japanesecitiesattributes/SolutionTest.java
+[30201006tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/japanesecitiesnames/SolutionTest.java
+[30201007tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation1/SolutionTest.java
+[30201008tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation3/SolutionTest.java
+[30201009tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation4/SolutionTest.java
+[30201010tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation5/SolutionTest.java
+[30201011tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation6/SolutionTest.java
+[30201012tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation7/SolutionTest.java
+[30201013tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation8/SolutionTest.java
+[30201014tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation9/SolutionTest.java
+[30201015tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation10/SolutionTest.java
+[30201016tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation11/SolutionTest.java
+[30201017tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/weatherobservationstation12/SolutionTest.java
+[30201018tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/higherthan75marks/SolutionTest.java
+[30201019tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/employeename/SolutionTest.java
+[30201020tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicselect/employesalaries/SolutionTest.java
+

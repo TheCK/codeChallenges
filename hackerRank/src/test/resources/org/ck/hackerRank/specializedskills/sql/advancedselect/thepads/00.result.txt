@@ -1,0 +1,14 @@
+Ashley(P)
+Christeen(P)
+Jane(A)
+Jenny(D)
+Julia(A)
+Ketty(P)
+Maria(A)
+Meera(S)
+Priya(S)
+Samantha(D)
+There are total 2 doctors.
+There are total 2 singers.
+There are total 3 actors.
+There are total 3 professors.

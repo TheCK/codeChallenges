@@ -10,5 +10,6 @@ package org.ck.hackerRank.specializedskills.sql.advancedselect.thepads;
 )
 public class Solution
 {
-	public static final String SQL = "SELECT CONCAT(name, '(', SUBSTRING(occupation, 1, 1), ')') FROM occupations ORDER BY name;";
+	public static final String SQL = "SELECT CONCAT(name, '(', SUBSTRING(occupation, 1, 1), ')') text FROM occupations order by text;"
+			+ "SELECT CONCAT('There are total ', COUNT(*), ' ', LOWER(occupation), 's.') text FROM occupations GROUP BY occupation ORDER BY COUNT(*), text;";
 }

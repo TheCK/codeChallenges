@@ -1,6 +1,5 @@
 package org.ck.hackerRank.specializedskills.sql.advancedselect.typeoftriangle;
 
-import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.ck.codeChallengeLib.testhelper.BaseMySqlTest;
 import org.junit.Test;
 
@@ -11,12 +10,11 @@ import static org.junit.Assert.assertEquals;
 public class SolutionTest extends BaseMySqlTest
 {
 	@Test
-	public void test() throws Exception
+	public void test00() throws Exception
 	{
-		prepareDb("org/ck/hackerRank/specializedskills/sql/advancedselect/typeoftriangle/00.sql");
+		prepareDb("00");
 
-		List<String> results = runner.query(connection, Solution.SQL, new ColumnListHandler<String>());
-		System.err.println(results.toString());
+		List<String> results = queryDb(Solution.SQL);
 
 		assertEquals(getFileAsResultNoNewLine("00"), String.join(System.lineSeparator(), results));
 	}

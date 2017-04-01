@@ -4,11 +4,14 @@ import ch.vorburger.mariadb4j.DB;
 import ch.vorburger.mariadb4j.DBConfigurationBuilder;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.junit.After;
 import org.junit.Before;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class BaseMySqlTest extends BaseTest
 {
@@ -32,7 +35,20 @@ public abstract class BaseMySqlTest extends BaseTest
 
 	public void prepareDb(String name) throws Exception
 	{
-		db.source(name);
+		String fullPath = getClass().getResource(name + ".sql").getPath();
+		db.source(fullPath.split("test-classes/")[1]);
+	}
+
+	protected List<String> queryDb(String sql) throws Exception
+	{
+		List<String> result = new ArrayList<>();
+
+		for (String query : sql.split(";"))
+		{
+			result.addAll(runner.query(connection, query, new ColumnListHandler<String>()));
+		}
+
+		return result;
 	}
 
 	@After

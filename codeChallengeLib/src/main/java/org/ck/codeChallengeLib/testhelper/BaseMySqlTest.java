@@ -1,6 +1,7 @@
 package org.ck.codeChallengeLib.testhelper;
 
 import ch.vorburger.mariadb4j.DB;
+import ch.vorburger.mariadb4j.DBConfigurationBuilder;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.junit.After;
@@ -20,10 +21,13 @@ public abstract class BaseMySqlTest extends BaseTest
 	@Before
 	public void setUp() throws Exception
 	{
-		db = DB.newEmbeddedDB(3306);
+		DBConfigurationBuilder config = DBConfigurationBuilder.newBuilder();
+		config.setPort(0);
+
+		db = DB.newEmbeddedDB(config.build());
 		db.start();
 
-		connection = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "");
+		connection = DriverManager.getConnection(config.getURL("test"), "root", "");
 	}
 
 	public void prepareDb(String name) throws Exception

@@ -530,14 +530,14 @@
 [30119tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/fillingjars/SolutionTest.java
 [30120tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/isfibo/SolutionTest.java
 
-# SQL (21/22)
+# SQL (29/29)
 
-## Advanced Select (1/2)
+## Advanced Select (2/2)
 
 |        # | Name                         | Solution                             | Test                              |
 |---------:|------------------------------|:------------------------------------:|:---------------------------------:|
 | 30202001 | [Type of Triangle][30202001] | &#9989;[&#128190;][30202001solution] | &#9989;[&#128190;][30202001tests] |
-| 30202002 | [The PADS][30202002]         | [&#128190;][30202002solution]        | [&#128190;][30202002tests]        |
+| 30202002 | [The PADS][30202002]         | &#9989;[&#128190;][30202002solution] | &#9989;[&#128190;][30202002tests] |
 
 [30202001]: https://www.hackerrank.com/challenges/what-type-of-triangle
 [30202002]: https://www.hackerrank.com/challenges/the-pads
@@ -547,6 +547,43 @@
 
 [30202001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/advancedselect/typeoftriangle/SolutionTest.java
 [30202002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/advancedselect/thepads/SolutionTest.java
+
+
+## Aggregation (7/7)
+
+|        # | Name                                                   | Solution                             | Test                              |
+|---------:|--------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 30203001 | [Revising Aggregations - The Count Function][30203001] | &#9989;[&#128190;][30203001solution] | &#9989;[&#128190;][30203001tests] |
+| 30203002 | [Revising Aggregations - The Sum Function][30203002]   | &#9989;[&#128190;][30203002solution] | &#9989;[&#128190;][30203002tests] |
+| 30203003 | [Revising Aggregations - Averages][30203003]           | &#9989;[&#128190;][30203003solution] | &#9989;[&#128190;][30203003tests] |
+| 30203004 | [Average Population][30203004]                         | &#9989;[&#128190;][30203004solution] | &#9989;[&#128190;][30203004tests] |
+| 30203005 | [Japan Population][30203005]                           | &#9989;[&#128190;][30203005solution] | &#9989;[&#128190;][30203005tests] |
+| 30203006 | [Population Density Difference][30203006]              | &#9989;[&#128190;][30203006solution] | &#9989;[&#128190;][30203006tests] |
+| 30203007 | [The Blunder][30203007]                                | &#9989;[&#128190;][30203007solution] | &#9989;[&#128190;][30203007tests] |
+
+[30203001]: https://www.hackerrank.com/challenges/revising-aggregations-the-count-function
+[30203002]: https://www.hackerrank.com/challenges/revising-aggregations-sum
+[30203003]: https://www.hackerrank.com/challenges/revising-aggregations-the-average-function
+[30203004]: https://www.hackerrank.com/challenges/average-population
+[30203005]: https://www.hackerrank.com/challenges/japan-population
+[30203006]: https://www.hackerrank.com/challenges/population-density-difference
+[30203007]: https://www.hackerrank.com/challenges/the-blunder
+
+[30203001solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthecountfunction/Solution.java
+[30203002solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthesumfunction/Solution.java
+[30203003solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsaverages/Solution.java
+[30203004solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/averagepopulation/Solution.java
+[30203005solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/japanpopulation/Solution.java
+[30203006solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/populationdensitydifference/Solution.java
+[30203007solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/theblunder/Solution.java
+
+[30203001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthecountfunction/SolutionTest.java
+[30203002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthesumfunction/SolutionTest.java
+[30203003tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsaverages/SolutionTest.java
+[30203004tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/averagepopulation/SolutionTest.java
+[30203005tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/japanpopulation/SolutionTest.java
+[30203006tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/populationdensitydifference/SolutionTest.java
+[30203007tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/theblunder/SolutionTest.java
 
 
 ## Basic Select (20/20)

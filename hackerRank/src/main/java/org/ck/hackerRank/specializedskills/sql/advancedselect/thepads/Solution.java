@@ -5,8 +5,7 @@ package org.ck.hackerRank.specializedskills.sql.advancedselect.thepads;
 		name = "The PADS",
 		url = "https://www.hackerrank.com/challenges/the-pads",
 		category = "SQL",
-		subCategory = "Advanced Select",
-		solved = false
+		subCategory = "Advanced Select"
 )
 public class Solution
 {

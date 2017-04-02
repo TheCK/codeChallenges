@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class BaseMySqlTest extends BaseTest
 {
@@ -39,16 +40,23 @@ public abstract class BaseMySqlTest extends BaseTest
 		db.source(fullPath.split("test-classes/")[1]);
 	}
 
-	protected List<String> queryDb(String sql) throws Exception
+	protected String queryDb(String sql) throws Exception
 	{
-		List<String> result = new ArrayList<>();
+		List<Object> result = new ArrayList<>();
 
 		for (String query : sql.split(";"))
 		{
-			result.addAll(runner.query(connection, query, new ColumnListHandler<String>()));
+			result.addAll(runner.query(connection, query, new ColumnListHandler<>()));
 		}
 
-		return result;
+		return resultToString(result);
+	}
+
+	private String resultToString(List<Object> results)
+	{
+		return results.stream()
+				.map(object -> object.toString())
+				.collect(Collectors.joining(System.lineSeparator()));
 	}
 
 	@After

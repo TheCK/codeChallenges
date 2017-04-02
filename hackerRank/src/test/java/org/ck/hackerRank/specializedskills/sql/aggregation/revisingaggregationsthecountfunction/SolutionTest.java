@@ -1,4 +1,4 @@
-package org.ck.hackerRank.specializedskills.sql.advancedselect.typeoftriangle;
+package org.ck.hackerRank.specializedskills.sql.aggregation.revisingaggregationsthecountfunction;
 
 import org.ck.codeChallengeLib.testhelper.BaseMySqlTest;
 import org.junit.Test;

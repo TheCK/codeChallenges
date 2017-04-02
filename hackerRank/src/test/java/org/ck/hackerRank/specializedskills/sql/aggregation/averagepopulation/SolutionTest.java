@@ -1,4 +1,4 @@
-package org.ck.hackerRank.specializedskills.sql.advancedselect.typeoftriangle;
+package org.ck.hackerRank.specializedskills.sql.aggregation.averagepopulation;
 
 import org.ck.codeChallengeLib.testhelper.BaseMySqlTest;
 import org.junit.Test;

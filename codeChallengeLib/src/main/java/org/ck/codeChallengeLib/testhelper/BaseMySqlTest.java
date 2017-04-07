@@ -4,7 +4,7 @@ import ch.vorburger.mariadb4j.DB;
 import ch.vorburger.mariadb4j.DBConfigurationBuilder;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.ColumnListHandler;
+import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.junit.After;
 import org.junit.Before;
 
@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public abstract class BaseMySqlTest extends BaseTest
@@ -42,20 +43,23 @@ public abstract class BaseMySqlTest extends BaseTest
 
 	protected String queryDb(String sql) throws Exception
 	{
-		List<Object> result = new ArrayList<>();
+		List<Map<String, Object>> result = new ArrayList<>();
 
 		for (String query : sql.split(";"))
 		{
-			result.addAll(runner.query(connection, query, new ColumnListHandler<>()));
+			result.addAll(runner.query(connection, query, new MapListHandler()));
 		}
 
 		return resultToString(result);
 	}
 
-	private String resultToString(List<Object> results)
+	private String resultToString(List<Map<String, Object>> results)
 	{
 		return results.stream()
-				.map(object -> object.toString())
+				.map(map -> map.values()
+						.stream()
+						.map(object -> object.toString())
+						.collect(Collectors.joining(" ")))
 				.collect(Collectors.joining(System.lineSeparator()));
 	}
 

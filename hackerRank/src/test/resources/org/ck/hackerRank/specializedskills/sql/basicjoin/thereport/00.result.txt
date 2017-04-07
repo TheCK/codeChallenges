@@ -1,0 +1,6 @@
+Maria 10 99
+Jane 9 81
+Julia 9 88
+Scarlet 8 78
+NULL 7 63
+NULL 7 68

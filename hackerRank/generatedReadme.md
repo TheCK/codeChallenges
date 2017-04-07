@@ -530,7 +530,7 @@
 [30119tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/fillingjars/SolutionTest.java
 [30120tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/isfibo/SolutionTest.java
 
-# SQL (29/29)
+# SQL (42/43)
 
 ## Advanced Select (2/2)
 
@@ -549,7 +549,7 @@
 [30202002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/advancedselect/thepads/SolutionTest.java
 
 
-## Aggregation (7/7)
+## Aggregation (16/17)
 
 |        # | Name                                                   | Solution                             | Test                              |
 |---------:|--------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -560,6 +560,16 @@
 | 30203005 | [Japan Population][30203005]                           | &#9989;[&#128190;][30203005solution] | &#9989;[&#128190;][30203005tests] |
 | 30203006 | [Population Density Difference][30203006]              | &#9989;[&#128190;][30203006solution] | &#9989;[&#128190;][30203006tests] |
 | 30203007 | [The Blunder][30203007]                                | &#9989;[&#128190;][30203007solution] | &#9989;[&#128190;][30203007tests] |
+| 30203008 | [Top Earners][30203008]                                | &#9989;[&#128190;][30203008solution] | &#9989;[&#128190;][30203008tests] |
+| 30203009 | [Weather Observation Station 2][30203009]              | &#9989;[&#128190;][30203009solution] | &#9989;[&#128190;][30203009tests] |
+| 30203010 | [Weather Observation Station 13][30203010]             | &#9989;[&#128190;][30203010solution] | &#9989;[&#128190;][30203010tests] |
+| 30203011 | [Weather Observation Station 14][30203011]             | &#9989;[&#128190;][30203011solution] | &#9989;[&#128190;][30203011tests] |
+| 30203012 | [Weather Observation Station 15][30203012]             | &#9989;[&#128190;][30203012solution] | &#9989;[&#128190;][30203012tests] |
+| 30203013 | [Weather Observation Station 16][30203013]             | &#9989;[&#128190;][30203013solution] | &#9989;[&#128190;][30203013tests] |
+| 30203014 | [Weather Observation Station 17][30203014]             | &#9989;[&#128190;][30203014solution] | &#9989;[&#128190;][30203014tests] |
+| 30203015 | [Weather Observation Station 18][30203015]             | &#9989;[&#128190;][30203015solution] | &#9989;[&#128190;][30203015tests] |
+| 30203016 | [Weather Observation Station 19][30203016]             | &#9989;[&#128190;][30203016solution] | &#9989;[&#128190;][30203016tests] |
+| 30203017 | [Weather Observation Station 20][30203017]             | [&#128190;][30203017solution]        | [&#128190;][30203017tests]        |
 
 [30203001]: https://www.hackerrank.com/challenges/revising-aggregations-the-count-function
 [30203002]: https://www.hackerrank.com/challenges/revising-aggregations-sum
@@ -568,6 +578,16 @@
 [30203005]: https://www.hackerrank.com/challenges/japan-population
 [30203006]: https://www.hackerrank.com/challenges/population-density-difference
 [30203007]: https://www.hackerrank.com/challenges/the-blunder
+[30203008]: https://www.hackerrank.com/challenges/earnings-of-employees
+[30203009]: https://www.hackerrank.com/challenges/weather-observation-station-2
+[30203010]: https://www.hackerrank.com/challenges/weather-observation-station-13
+[30203011]: https://www.hackerrank.com/challenges/weather-observation-station-14
+[30203012]: https://www.hackerrank.com/challenges/weather-observation-station-15
+[30203013]: https://www.hackerrank.com/challenges/weather-observation-station-16
+[30203014]: https://www.hackerrank.com/challenges/weather-observation-station-17
+[30203015]: https://www.hackerrank.com/challenges/weather-observation-station-18
+[30203016]: https://www.hackerrank.com/challenges/weather-observation-station-19
+[30203017]: https://www.hackerrank.com/challenges/weather-observation-station-20
 
 [30203001solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthecountfunction/Solution.java
 [30203002solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthesumfunction/Solution.java
@@ -576,6 +596,16 @@
 [30203005solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/japanpopulation/Solution.java
 [30203006solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/populationdensitydifference/Solution.java
 [30203007solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/theblunder/Solution.java
+[30203008solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/topearners/Solution.java
+[30203009solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation2/Solution.java
+[30203010solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation13/Solution.java
+[30203011solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation14/Solution.java
+[30203012solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation15/Solution.java
+[30203013solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation16/Solution.java
+[30203014solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation17/Solution.java
+[30203015solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation18/Solution.java
+[30203016solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation19/Solution.java
+[30203017solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation20/Solution.java
 
 [30203001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthecountfunction/SolutionTest.java
 [30203002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/revisingaggregationsthesumfunction/SolutionTest.java
@@ -584,6 +614,41 @@
 [30203005tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/japanpopulation/SolutionTest.java
 [30203006tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/populationdensitydifference/SolutionTest.java
 [30203007tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/theblunder/SolutionTest.java
+[30203008tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/topearners/SolutionTest.java
+[30203009tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation2/SolutionTest.java
+[30203010tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation13/SolutionTest.java
+[30203011tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation14/SolutionTest.java
+[30203012tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation15/SolutionTest.java
+[30203013tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation16/SolutionTest.java
+[30203014tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation17/SolutionTest.java
+[30203015tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation18/SolutionTest.java
+[30203016tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation19/SolutionTest.java
+[30203017tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation20/SolutionTest.java
+
+
+## Basic Join (4/4)
+
+|        # | Name                                             | Solution                             | Test                              |
+|---------:|--------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 30204001 | [Asian Population][30204001]                     | &#9989;[&#128190;][30204001solution] | &#9989;[&#128190;][30204001tests] |
+| 30204002 | [African Cities][30204002]                       | &#9989;[&#128190;][30204002solution] | &#9989;[&#128190;][30204002tests] |
+| 30204003 | [Average Population of Each Continent][30204003] | &#9989;[&#128190;][30204003solution] | &#9989;[&#128190;][30204003tests] |
+| 30204004 | [The Report][30204004]                           | &#9989;[&#128190;][30204004solution] | &#9989;[&#128190;][30204004tests] |
+
+[30204001]: https://www.hackerrank.com/challenges/asian-population
+[30204002]: https://www.hackerrank.com/challenges/african-cities
+[30204003]: https://www.hackerrank.com/challenges/average-population-of-each-continent
+[30204004]: https://www.hackerrank.com/challenges/the-report
+
+[30204001solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicjoin/asianpopulation/Solution.java
+[30204002solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicjoin/africancities/Solution.java
+[30204003solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicjoin/averagepopulationofeachcontinent/Solution.java
+[30204004solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/basicjoin/thereport/Solution.java
+
+[30204001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicjoin/asianpopulation/SolutionTest.java
+[30204002tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicjoin/africancities/SolutionTest.java
+[30204003tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicjoin/averagepopulationofeachcontinent/SolutionTest.java
+[30204004tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/basicjoin/thereport/SolutionTest.java
 
 
 ## Basic Select (20/20)

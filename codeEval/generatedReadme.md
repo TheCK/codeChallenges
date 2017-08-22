@@ -334,12 +334,13 @@
 [237tests]: src/test/java/org/ck/codeEval/easy/panaceatruthorlie/MainTest.java
 [240tests]: src/test/java/org/ck/codeEval/easy/mersenneprime/MainTest.java
 
-# Hard challenges (24/26)
+# Hard challenges (26/27)
 
 |   # | Name                       | Description                                                                                                                 | Solution                        | Test                         |
 |----:|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
 |   6 | Longest Common Subsequence | [LCS between two strings.][6]                                                                                               | &#9989;[&#128190;][6solution]   | &#9989;[&#128190;][6tests]   |
 |   7 | Prefix expressions         | [Evaluating a prefix expression.][7]                                                                                        | &#9989;[&#128190;][7solution]   | &#9989;[&#128190;][7tests]   |
+|  14 | String Permutations        | [Print out all permutations of a string.][14]                                                                               | &#9989;[&#128190;][14solution]  | &#9989;[&#128190;][14tests]  |
 |  28 | String Searching           | [Determine if substring match exists.][28]                                                                                  | &#9989;[&#128190;][28solution]  | &#9989;[&#128190;][28tests]  |
 |  36 | Message Decoding           | [Decode an encoded message][36]                                                                                             | &#9989;[&#128190;][36solution]  | &#9989;[&#128190;][36tests]  |
 |  38 | String List                | [Create a new string from constituent alphabets][38]                                                                        | &#9989;[&#128190;][38solution]  | &#9989;[&#128190;][38tests]  |
@@ -359,7 +360,7 @@
 | 126 | Play with DNA              | [Write an algorithm that a finds DNA segment in a given DNA string][126]                                                    | [&#128190;][126solution]        | [&#128190;][126tests]        |
 | 144 | Digit statistics           | [Find statistics in sequence][144]                                                                                          | &#9989;[&#128190;][144solution] | &#9989;[&#128190;][144tests] |
 | 155 | ASCII Decryption           | [Decrypt a message.][155]                                                                                                   | &#9989;[&#128190;][155solution] | &#9989;[&#128190;][155tests] |
-| 157 | The Labyrinth              | [Find the shortest way to exit.][157]                                                                                       | [&#128190;][157solution]        | [&#128190;][157tests]        |
+| 157 | The Labyrinth              | [Find the shortest way to exit.][157]                                                                                       | &#9989;[&#128190;][157solution] | &#9989;[&#128190;][157tests] |
 | 162 | Too unique                 | [Find and mark the biggest submatrices of unique elements.][162]                                                            | &#9989;[&#128190;][162solution] | &#9989;[&#128190;][162tests] |
 | 210 | Brainf*ck                  | [Blow your mind][210]                                                                                                       | &#9989;[&#128190;][210solution] | &#9989;[&#128190;][210tests] |
 | 213 | Lakes, not cakes           | [Count all lakes.][213]                                                                                                     | &#9989;[&#128190;][213solution] | &#9989;[&#128190;][213tests] |
@@ -367,6 +368,7 @@
 
 [6]: https://www.codeeval.com/open_challenges/6/
 [7]: https://www.codeeval.com/open_challenges/7/
+[14]: https://www.codeeval.com/open_challenges/14/
 [28]: https://www.codeeval.com/open_challenges/28/
 [36]: https://www.codeeval.com/open_challenges/36/
 [38]: https://www.codeeval.com/open_challenges/38/
@@ -394,6 +396,7 @@
 
 [6solution]: src/main/java/org/ck/codeEval/hard/longestCommonSubsequence/Main.java
 [7solution]: src/main/java/org/ck/codeEval/hard/prefixexpressions/Main.java
+[14solution]: src/main/java/org/ck/codeEval/hard/stringpermutations/Main.java
 [28solution]: src/main/java/org/ck/codeEval/hard/stringSearching/Main.java
 [36solution]: src/main/java/org/ck/codeEval/hard/messageDecoding/Main.java
 [38solution]: src/main/java/org/ck/codeEval/hard/stringList/Main.java
@@ -421,6 +424,7 @@
 
 [6tests]: src/test/java/org/ck/codeEval/hard/longestCommonSubsequence/MainTest.java
 [7tests]: src/test/java/org/ck/codeEval/hard/prefixexpressions/MainTest.java
+[14tests]: src/test/java/org/ck/codeEval/hard/stringpermutations/MainTest.java
 [28tests]: src/test/java/org/ck/codeEval/hard/stringSearching/MainTest.java
 [36tests]: src/test/java/org/ck/codeEval/hard/messageDecoding/MainTest.java
 [38tests]: src/test/java/org/ck/codeEval/hard/stringList/MainTest.java

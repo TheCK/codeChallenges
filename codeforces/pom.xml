@@ -4,22 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.ck</groupId>
-	<artifactId>codeChallenges</artifactId>
+	<artifactId>codeforces</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
-	<modules>
-		<module>codeChallengeLib</module>
-		<module>codeEval</module>
-		<module>hackerRank</module>
-		<module>projectEuler</module>
-		<module>codeforces</module>
-	</modules>
 
 	<build>
 		<plugins>
@@ -28,18 +20,30 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
+					<forceJavacCompilerUse>true</forceJavacCompilerUse>
+					<annotationProcessors>
+						<annotationProcessor>
+							org.ck.codeChallengeLib.annotation.ReadmeGenerator
+						</annotationProcessor>
+					</annotationProcessors>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
-					<compilerArgument>-proc:none</compilerArgument>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
 		<dependency>
+			<groupId>org.ck</groupId>
+			<artifactId>codeChallengeLib</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

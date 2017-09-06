@@ -9,7 +9,7 @@ import java.util.Scanner;
 		id = 101,
 		name = "A. Theatre Square",
 		url = "http://codeforces.com/problemset/problem/1/A",
-		category = ""
+		category = "1"
 )
 public class Main
 {

@@ -1,6 +1,12 @@
 package org.ck.codility.lessons.prefixSums.countDiv;
 
-@org.ck.codeChallengeLib.annotation.Solution(id = 21, name = "CountDiv", description = "Compute number of integers divisible by k in range [a..b].", url = "https://codility.com/programmers/lessons/3", category = "Lessons", subCategory = "3. Prefix Sums")
+@org.ck.codeChallengeLib.annotation.Solution(
+		id = 21, name = "CountDiv",
+		description = "Compute number of integers divisible by k in range [a..b].",
+		url = "https://codility.com/programmers/lessons/3",
+		category = "Lessons",
+		subCategory = "3. Prefix Sums",
+		solved = false)
 public class Solution
 {
 	public int solution(int A, int B, int K)
@@ -21,6 +27,6 @@ public class Solution
 			}
 		}
 
-		return count;
+		return (int) count;
 	}
 }

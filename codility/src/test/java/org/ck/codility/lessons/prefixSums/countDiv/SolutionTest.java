@@ -1,6 +1,7 @@
 package org.ck.codility.lessons.prefixSums.countDiv;
 
 import org.ck.codility.test.BaseTest;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -15,6 +16,7 @@ public class SolutionTest extends BaseTest
 		assertEquals(3, result);
 	}
 
+	@Ignore
 	@Test(timeout = TIMEOUT)
 	public void test00b() throws Exception
 	{
@@ -23,6 +25,7 @@ public class SolutionTest extends BaseTest
 		assertEquals(4, result);
 	}
 
+	@Ignore
 	@Test(timeout = TIMEOUT)
 	public void test01() throws Exception
 	{
@@ -71,6 +74,7 @@ public class SolutionTest extends BaseTest
 		assertEquals(0, result);
 	}
 
+	@Ignore
 	@Test(timeout = TIMEOUT)
 	public void test07() throws Exception
 	{
@@ -79,6 +83,7 @@ public class SolutionTest extends BaseTest
 		assertEquals(0, result);
 	}
 
+	@Ignore
 	@Test(timeout = TIMEOUT)
 	public void test08() throws Exception
 	{

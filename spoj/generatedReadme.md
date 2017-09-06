@@ -1,12 +1,12 @@
-#  (1/1)
+# classical (1/1)
 
-|   # | Name                     | Solution                        | Test                         |
-|----:|--------------------------|:-------------------------------:|:----------------------------:|
-| 101 | [A. Theatre Square][101] | &#9989;[&#128190;][101solution] | &#9989;[&#128190;][101tests] |
+|       # | Name                                                 | Solution                            | Test                             |
+|--------:|------------------------------------------------------|:-----------------------------------:|:--------------------------------:|
+| 1000001 | [TEST - Life, the Universe, and Everything][1000001] | &#9989;[&#128190;][1000001solution] | &#9989;[&#128190;][1000001tests] |
 
-[101]: http://codeforces.com/problemset/problem/1/A
+[1000001]: http://www.spoj.com/problems/TEST/
 
-[101solution]: src/main/java/org/ck/spoj/classical/test/Main.java
+[1000001solution]: src/main/java/org/ck/spoj/classical/test/Main.java
 
-[101tests]: src/test/java/org/ck/spoj/classical/theatresquare/MainTest.java
+[1000001tests]: src/test/java/org/ck/spoj/classical/test/MainTest.java
 

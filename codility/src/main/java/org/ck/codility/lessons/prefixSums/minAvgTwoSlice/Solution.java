@@ -1,8 +1,12 @@
 package org.ck.codility.lessons.prefixSums.minAvgTwoSlice;
 
-import java.util.Arrays;
-
-@org.ck.codeChallengeLib.annotation.Solution(id = 23, name = "MinAvgTwoSlice", description = "Find the minimal average of any slice containing at least two elements.", url = "https://codility.com/programmers/lessons/3", category = "Lessons", subCategory = "3. Prefix Sums")
+@org.ck.codeChallengeLib.annotation.Solution(
+		id = 23, name = "MinAvgTwoSlice",
+		description = "Find the minimal average of any slice containing at least two elements.",
+		url = "https://codility.com/programmers/lessons/3",
+		category = "Lessons",
+		subCategory = "3. Prefix Sums",
+		solved = false)
 class Solution
 {
 	public int solution(int[] A)
@@ -14,8 +18,6 @@ class Solution
 		{
 			prefixSums[i] = prefixSums[i - 1] + A[i - 1];
 		}
-
-
 
 		return 0;
 	}

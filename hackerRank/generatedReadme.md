@@ -530,7 +530,7 @@
 [30119tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/fillingjars/SolutionTest.java
 [30120tests]: src/test/java/org/ck/hackerRank/corecs/mathematics/fundamentals/isfibo/SolutionTest.java
 
-# SQL (42/43)
+# SQL (42/44)
 
 ## Advanced Select (2/2)
 
@@ -624,6 +624,19 @@
 [30203015tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation18/SolutionTest.java
 [30203016tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation19/SolutionTest.java
 [30203017tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/aggregation/weatherobservationstation20/SolutionTest.java
+
+
+## Alternative Queries (0/1)
+
+|        # | Name                            | Solution                             | Test                              |
+|---------:|---------------------------------|:------------------------------------:|:---------------------------------:|
+| 30206001 | [Draw The Triangle 1][30206001] | [&#128190;][30206001solution]        | [&#128190;][30206001tests]        |
+
+[30206001]: https://www.hackerrank.com/challenges/draw-the-triangle-1
+
+[30206001solution]: src/main/java/org/ck/hackerRank/specializedskills/sql/alternativequeries/drawthetrianlge1/Solution.java
+
+[30206001tests]: src/test/java/org/ck/hackerRank/specializedskills/sql/alternativequeries/drawthetrianlge1/SolutionTest.java
 
 
 ## Basic Join (4/4)

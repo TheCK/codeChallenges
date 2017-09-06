@@ -12,7 +12,7 @@
 
 [1001tests]: src/test/java/org/ck/codility/challenges/alpha2010/SolutionTest.java
 
-# Lessons (6/6)
+# Lessons (8/10)
 
 ## 1. Time Complexity (3/3)
 
@@ -35,32 +35,48 @@
 [3tests]: src/test/java/org/ck/codility/lessons/timeComplexity/frogJmp/SolutionTest.java
 
 
-## 2. Counting Elements (2/2)
+## 2. Counting Elements (4/4)
 
-|  # | Name         | Description                                                                     | Solution                       | Test                        |
-|---:|--------------|---------------------------------------------------------------------------------|:------------------------------:|:---------------------------:|
-| 11 | FrogRiverOne | [Find the earliest time when a frog can jump to the other side of a river.][11] | &#9989;[&#128190;][11solution] | &#9989;[&#128190;][11tests] |
-| 12 | PermCheck    | [Check whether array A is a permutation.][12]                                   | &#9989;[&#128190;][12solution] | &#9989;[&#128190;][12tests] |
+|  # | Name           | Description                                                                                                                                            | Solution                       | Test                        |
+|---:|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------:|:---------------------------:|
+| 11 | FrogRiverOne   | [Find the earliest time when a frog can jump to the other side of a river.][11]                                                                        | &#9989;[&#128190;][11solution] | &#9989;[&#128190;][11tests] |
+| 12 | PermCheck      | [Check whether array A is a permutation.][12]                                                                                                          | &#9989;[&#128190;][12solution] | &#9989;[&#128190;][12tests] |
+| 13 | MissingInteger | [Find the minimal positive integer not occurring in a given sequence.][13]                                                                             | &#9989;[&#128190;][13solution] | &#9989;[&#128190;][13tests] |
+| 14 | MaxCounters    | [Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.][14] | &#9989;[&#128190;][14solution] | &#9989;[&#128190;][14tests] |
 
 [11]: https://codility.com/programmers/lessons/2
 [12]: https://codility.com/programmers/lessons/2
+[13]: https://codility.com/programmers/lessons/2
+[14]: https://codility.com/programmers/lessons/2
 
 [11solution]: src/main/java/org/ck/codility/lessons/countingElements/frogRiverOne/Solution.java
 [12solution]: src/main/java/org/ck/codility/lessons/countingElements/permCheck/Solution.java
+[13solution]: src/main/java/org/ck/codility/lessons/countingElements/missingInteger/Solution.java
+[14solution]: src/main/java/org/ck/codility/lessons/countingElements/maxCounters/Solution.java
 
 [11tests]: src/test/java/org/ck/codility/lessons/countingElements/frogRiverOne/SolutionTest.java
 [12tests]: src/test/java/org/ck/codility/lessons/countingElements/permCheck/SolutionTest.java
+[13tests]: src/test/java/org/ck/codility/lessons/countingElements/missingInteger/SolutionTest.java
+[14tests]: src/test/java/org/ck/codility/lessons/countingElements/maxCounters/SolutionTest.java
 
 
-## 3. Prefix Sums (1/1)
+## 3. Prefix Sums (1/3)
 
-|  # | Name        | Description                                         | Solution                       | Test                        |
-|---:|-------------|-----------------------------------------------------|:------------------------------:|:---------------------------:|
-| 21 | PassingCars | [Count the number of passing cars on the road.][21] | &#9989;[&#128190;][21solution] | &#9989;[&#128190;][21tests] |
+|  # | Name           | Description                                                                   | Solution                       | Test                        |
+|---:|----------------|-------------------------------------------------------------------------------|:------------------------------:|:---------------------------:|
+| 21 | CountDiv       | [Compute number of integers divisible by k in range [a..b].][21]              | [&#128190;][21solution]        | [&#128190;][21tests]        |
+| 22 | PassingCars    | [Count the number of passing cars on the road.][22]                           | &#9989;[&#128190;][22solution] | &#9989;[&#128190;][22tests] |
+| 23 | MinAvgTwoSlice | [Find the minimal average of any slice containing at least two elements.][23] | [&#128190;][23solution]        | [&#128190;][23tests]        |
 
 [21]: https://codility.com/programmers/lessons/3
+[22]: https://codility.com/programmers/lessons/3
+[23]: https://codility.com/programmers/lessons/3
 
-[21solution]: src/main/java/org/ck/codility/lessons/prefixSums/passingCars/Solution.java
+[21solution]: src/main/java/org/ck/codility/lessons/prefixSums/countDiv/Solution.java
+[22solution]: src/main/java/org/ck/codility/lessons/prefixSums/passingCars/Solution.java
+[23solution]: src/main/java/org/ck/codility/lessons/prefixSums/minAvgTwoSlice/Solution.java
 
-[21tests]: src/test/java/org/ck/codility/lessons/prefixSums/passingCars/SolutionTest.java
+[21tests]: src/test/java/org/ck/codility/lessons/prefixSums/countDiv/SolutionTest.java
+[22tests]: src/test/java/org/ck/codility/lessons/prefixSums/passingCars/SolutionTest.java
+[23tests]: src/test/java/org/ck/codility/lessons/prefixSums/minAvgTwoSlice/SolutionTest.java
 

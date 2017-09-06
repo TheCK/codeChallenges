@@ -1,15 +1,5 @@
 package org.ck.codeChallengeLib.annotation;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.RoundEnvironment;
@@ -18,6 +8,11 @@ import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic.Kind;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @SupportedAnnotationTypes("org.ck.codeChallengeLib.annotation.Solution")
 public class ReadmeGenerator extends AbstractProcessor
@@ -62,14 +57,14 @@ public class ReadmeGenerator extends AbstractProcessor
 	{
 		List<String> keys = new ArrayList<>(byCategory.keySet());
 		Collections.sort(keys);
-		
+
 		for (String category : keys)
 		{
 			Map<String, List<SolutionInfo>> bySubCategory = byCategory.get(category).stream().collect(Collectors.groupingBy(SolutionInfo::getSubCategory));
-			
+
 			int solved = (int) byCategory.get(category).stream().filter(x -> x.isSolved()).count();
 			int all = byCategory.get(category).size();
-			
+
 			write(writer, messager, getHeading(category, solved, all));
 
 			processSubCategories(writer, messager, bySubCategory);
@@ -90,9 +85,9 @@ public class ReadmeGenerator extends AbstractProcessor
 		{
 			List<SolutionInfo> infosInThisSubCategory = bySubCategory.get(subCategory);
 			Collections.sort(infosInThisSubCategory);
-			
+
 			int solved = (int) infosInThisSubCategory.stream().filter(x -> x.isSolved()).count();
-			
+
 			if (!"".equals(subCategory))
 			{
 				write(writer, messager, getSubHeading(subCategory, solved, infosInThisSubCategory.size()));
@@ -108,12 +103,12 @@ public class ReadmeGenerator extends AbstractProcessor
 				maxNameLength = Math.max(maxNameLength, info.getName().length());
 				maxDescriptionLength = Math.max(maxDescriptionLength, info.getDescription().length());
 			}
-			
+
 			String formatString = getTableFormatString(maxIdlength, maxNameLength, maxDescriptionLength);
 
 			write(writer, messager, "");
 			write(writer, messager, getTableHeadline(formatString));
-			
+
 			write(writer, messager, getTableFormatLine(maxIdlength, maxNameLength, maxDescriptionLength));
 
 			for (SolutionInfo info : infosInThisSubCategory)
@@ -145,7 +140,7 @@ public class ReadmeGenerator extends AbstractProcessor
 			write(writer, messager, "");
 		}
 	}
-	
+
 	private static String getTestsLinkLine(String formatString, SolutionInfo info)
 	{
 		return String.format(formatString, info.getId(), info.getTestPath());
@@ -176,7 +171,7 @@ public class ReadmeGenerator extends AbstractProcessor
 		{
 			name = String.format("[%s][%s]", info.getName(), info.getId());
 		}
-		
+
 		return String.format(formatString, info.getId(), name, description, solution, tests);
 	}
 
@@ -186,9 +181,9 @@ public class ReadmeGenerator extends AbstractProcessor
 		int actualNameLength = nameLength;
 		int solutionLength = idlength + 28;
 		int testsLength = idlength + 25;
-		
+
 		String formatString = null;
-		
+
 		if (actualDescriptionLength != 0)
 		{
 			actualDescriptionLength += idlength + 4;
@@ -199,7 +194,7 @@ public class ReadmeGenerator extends AbstractProcessor
 			actualNameLength += idlength + 4;
 			formatString = String.format("| %%1$%ds:| %%2$-%ds |:%%4$-%ds:|:%%5$-%ds:|", idlength, actualNameLength, solutionLength, testsLength);
 		}
-		
+
 		return String.format(formatString, "", "", "", "", "").replace(' ', '-');
 	}
 
@@ -216,7 +211,7 @@ public class ReadmeGenerator extends AbstractProcessor
 		int testsLength = idlength + 25;
 
 		String formatString = null;
-		
+
 		if (actualDescriptionLength != 0)
 		{
 			actualDescriptionLength += idlength + 4;
@@ -227,7 +222,7 @@ public class ReadmeGenerator extends AbstractProcessor
 			actualNameLength += idlength + 4;
 			formatString = String.format("| %%1$%ds | %%2$-%ds | %%4$-%ds | %%5$-%ds |", idlength, actualNameLength, solutionLength, testsLength);
 		}
-		
+
 		return formatString;
 	}
 
@@ -280,7 +275,7 @@ public class ReadmeGenerator extends AbstractProcessor
 
 		String category;
 		String subCategory;
-		
+
 		boolean solved;
 
 		String fullyQualifiedName;
@@ -295,7 +290,7 @@ public class ReadmeGenerator extends AbstractProcessor
 
 			this.category = category;
 			this.subCategory = subCategory;
-			
+
 			this.solved = solved;
 
 			this.fullyQualifiedName = fullyQualifiedName;
@@ -330,7 +325,7 @@ public class ReadmeGenerator extends AbstractProcessor
 		{
 			return this.subCategory;
 		}
-		
+
 		public boolean isSolved()
 		{
 			return this.solved;
@@ -345,7 +340,7 @@ public class ReadmeGenerator extends AbstractProcessor
 		{
 			return String.format("%sTest.java", getFullPath("test"));
 		}
-		
+
 		private String getFullPath(String context)
 		{
 			return String.format("src/%s/java/%s", context, getNameAsPath());

@@ -1,4 +1,4 @@
-package org.ck.codeforces.theatresquare;
+package org.ck.codeforces.n00001.theatresquare;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;

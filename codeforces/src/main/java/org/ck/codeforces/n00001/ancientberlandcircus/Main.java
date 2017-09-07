@@ -1,4 +1,4 @@
-package org.ck.codeforces.ancientberlandcircus;
+package org.ck.codeforces.n00001.ancientberlandcircus;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 

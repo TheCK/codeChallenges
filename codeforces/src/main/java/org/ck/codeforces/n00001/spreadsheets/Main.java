@@ -1,4 +1,4 @@
-package org.ck.codeforces.spreadsheets;
+package org.ck.codeforces.n00001.spreadsheets;
 
 import org.ck.codeChallengeLib.annotation.Solution;
 

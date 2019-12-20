@@ -1,10 +1,20 @@
 # codeChallenges
 
-## [Project Euler](projectEuler/readme.md)
+## [codeEval](codeEval/generatedReadme.md)
 
-## [codeEval](codeEval/readme.md)
+## [codeforces](codeforces/generatedReadme.md)
 
-## [HackerRank](hackerRank/readme.md)
+## [codewars](codewars/generatedReadme.md)
 
-## [Codility](codility/readme.md)
+## [Codility](codility/generatedReadme.md)
+
+## [HackerRank](hackerRank/generatedReadme.md)
+
+## [Project Euler](projectEuler/generatedReadme.md)
+
+## [Sphere Judge Online](spoj/generatedReadme.md)
+
+
+
+
 

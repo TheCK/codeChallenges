@@ -413,7 +413,7 @@
 [20207tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/SolutionTest.java
 [20208tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/SolutionTest.java
 
-# Java (19/19)
+# Java (23/23)
 
 ## Introduction (13/13)
 
@@ -476,16 +476,20 @@
 [40201013tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/SolutionTest.java
 
 
-## Strings (6/6)
+## Strings (10/10)
 
-|        # | Name                                  | Solution                             | Test                              |
-|---------:|---------------------------------------|:------------------------------------:|:---------------------------------:|
-| 40202001 | [Java Strings Introduction][40202001] | &#9989;[&#128190;][40202001solution] | &#9989;[&#128190;][40202001tests] |
-| 40202002 | [Java Substring][40202002]            | &#9989;[&#128190;][40202002solution] | &#9989;[&#128190;][40202002tests] |
-| 40202003 | [Java String Compare][40202003]       | &#9989;[&#128190;][40202003solution] | &#9989;[&#128190;][40202003tests] |
-| 40202004 | [Java String Reverse][40202004]       | &#9989;[&#128190;][40202004solution] | &#9989;[&#128190;][40202004tests] |
-| 40202005 | [Java Anagrams][40202005]             | &#9989;[&#128190;][40202005solution] | &#9989;[&#128190;][40202005tests] |
-| 40202006 | [Java String Tokens][40202006]        | &#9989;[&#128190;][40202006solution] | &#9989;[&#128190;][40202006tests] |
+|        # | Name                                          | Solution                             | Test                              |
+|---------:|-----------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40202001 | [Java Strings Introduction][40202001]         | &#9989;[&#128190;][40202001solution] | &#9989;[&#128190;][40202001tests] |
+| 40202002 | [Java Substring][40202002]                    | &#9989;[&#128190;][40202002solution] | &#9989;[&#128190;][40202002tests] |
+| 40202003 | [Java String Compare][40202003]               | &#9989;[&#128190;][40202003solution] | &#9989;[&#128190;][40202003tests] |
+| 40202004 | [Java String Reverse][40202004]               | &#9989;[&#128190;][40202004solution] | &#9989;[&#128190;][40202004tests] |
+| 40202005 | [Java Anagrams][40202005]                     | &#9989;[&#128190;][40202005solution] | &#9989;[&#128190;][40202005tests] |
+| 40202006 | [Java String Tokens][40202006]                | &#9989;[&#128190;][40202006solution] | &#9989;[&#128190;][40202006tests] |
+| 40202007 | [Pattern Syntax Checker][40202007]            | &#9989;[&#128190;][40202007solution] | &#9989;[&#128190;][40202007tests] |
+| 40202008 | [Java Regex][40202008]                        | &#9989;[&#128190;][40202008solution] | &#9989;[&#128190;][40202008tests] |
+| 40202009 | [Java Regex 2 - Duplicate Words][40202009]    | &#9989;[&#128190;][40202009solution] | &#9989;[&#128190;][40202009tests] |
+| 40202010 | [Valid Username Regular Expression][40202010] | &#9989;[&#128190;][40202010solution] | &#9989;[&#128190;][40202010tests] |
 
 [40202001]: https://www.hackerrank.com/challenges/java-strings-introduction
 [40202002]: https://www.hackerrank.com/challenges/java-substring
@@ -493,6 +497,10 @@
 [40202004]: https://www.hackerrank.com/challenges/java-string-reverse
 [40202005]: https://www.hackerrank.com/challenges/java-anagrams
 [40202006]: https://www.hackerrank.com/challenges/java-string-tokens
+[40202007]: https://www.hackerrank.com/challenges/pattern-syntax-checker
+[40202008]: https://www.hackerrank.com/challenges/java-regex
+[40202009]: https://www.hackerrank.com/challenges/duplicate-word
+[40202010]: https://www.hackerrank.com/challenges/valid-username-checker
 
 [40202001solution]: src/main/java/org/ck/hackerRank/languages/java/strings/stringintroduction/Solution.java
 [40202002solution]: src/main/java/org/ck/hackerRank/languages/java/strings/substring/Solution.java
@@ -500,6 +508,10 @@
 [40202004solution]: src/main/java/org/ck/hackerRank/languages/java/strings/stringreverse/Solution.java
 [40202005solution]: src/main/java/org/ck/hackerRank/languages/java/strings/anagrams/Solution.java
 [40202006solution]: src/main/java/org/ck/hackerRank/languages/java/strings/stringtokens/Solution.java
+[40202007solution]: src/main/java/org/ck/hackerRank/languages/java/strings/patternsyntaxchecker/Solution.java
+[40202008solution]: src/main/java/org/ck/hackerRank/languages/java/strings/javaregex/Solution.java
+[40202009solution]: src/main/java/org/ck/hackerRank/languages/java/strings/javaregexduplicatewords/Solution.java
+[40202010solution]: src/main/java/org/ck/hackerRank/languages/java/strings/validusernameregularexpression/Solution.java
 
 [40202001tests]: src/test/java/org/ck/hackerRank/languages/java/strings/stringintroduction/SolutionTest.java
 [40202002tests]: src/test/java/org/ck/hackerRank/languages/java/strings/substring/SolutionTest.java
@@ -507,6 +519,10 @@
 [40202004tests]: src/test/java/org/ck/hackerRank/languages/java/strings/stringreverse/SolutionTest.java
 [40202005tests]: src/test/java/org/ck/hackerRank/languages/java/strings/anagrams/SolutionTest.java
 [40202006tests]: src/test/java/org/ck/hackerRank/languages/java/strings/stringtokens/SolutionTest.java
+[40202007tests]: src/test/java/org/ck/hackerRank/languages/java/strings/patternsyntaxchecker/SolutionTest.java
+[40202008tests]: src/test/java/org/ck/hackerRank/languages/java/strings/javaregex/SolutionTest.java
+[40202009tests]: src/test/java/org/ck/hackerRank/languages/java/strings/javaregexduplicatewords/SolutionTest.java
+[40202010tests]: src/test/java/org/ck/hackerRank/languages/java/strings/validusernameregularexpression/SolutionTest.java
 
 # Mathematics (6/6)
 

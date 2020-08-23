@@ -5,9 +5,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 @org.ck.codeChallengeLib.annotation.Solution(
-		id = 20104,
-		name = "Left Rotation",
-		url = "https://www.hackerrank.com/challenges/array-left-rotation",
+		id = 20105,
+		name = "Sparse Array",
+		url = "https://www.hackerrank.com/challenges/sparse-arrays",
 		category = "Data Structures",
 		subCategory = "Arrays"
 )

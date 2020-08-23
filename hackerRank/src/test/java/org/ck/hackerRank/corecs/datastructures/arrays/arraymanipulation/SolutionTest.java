@@ -1,4 +1,4 @@
-package org.ck.hackerRank.corecs.datastructures.arrays.algorithmiccrush;
+package org.ck.hackerRank.corecs.datastructures.arrays.arraymanipulation;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.Test;

@@ -1,11 +1,11 @@
-package org.ck.hackerRank.corecs.datastructures.arrays.algorithmiccrush;
+package org.ck.hackerRank.corecs.datastructures.arrays.arraymanipulation;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 @org.ck.codeChallengeLib.annotation.Solution(
-		id = 20105,
-		name = "Algorithmic Crush",
+		id = 20106,
+		name = "Array Manipulation",
 		url = "https://www.hackerrank.com/challenges/crush",
 		category = "Data Structures",
 		subCategory = "Arrays"

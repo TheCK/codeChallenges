@@ -342,35 +342,35 @@
 
 ## Arrays (6/6)
 
-|     # | Name                       | Solution                          | Test                           |
-|------:|----------------------------|:---------------------------------:|:------------------------------:|
-| 20101 | [Arrays - DS][20101]       | &#9989;[&#128190;][20101solution] | &#9989;[&#128190;][20101tests] |
-| 20102 | [2D Array - DS][20102]     | &#9989;[&#128190;][20102solution] | &#9989;[&#128190;][20102tests] |
-| 20103 | [Dynamic Array][20103]     | &#9989;[&#128190;][20103solution] | &#9989;[&#128190;][20103tests] |
-| 20104 | [Left Rotation][20104]     | &#9989;[&#128190;][20104solution] | &#9989;[&#128190;][20104tests] |
-| 20104 | [Left Rotation][20104]     | &#9989;[&#128190;][20104solution] | &#9989;[&#128190;][20104tests] |
-| 20105 | [Algorithmic Crush][20105] | &#9989;[&#128190;][20105solution] | &#9989;[&#128190;][20105tests] |
+|     # | Name                        | Solution                          | Test                           |
+|------:|-----------------------------|:---------------------------------:|:------------------------------:|
+| 20101 | [Arrays - DS][20101]        | &#9989;[&#128190;][20101solution] | &#9989;[&#128190;][20101tests] |
+| 20102 | [2D Array - DS][20102]      | &#9989;[&#128190;][20102solution] | &#9989;[&#128190;][20102tests] |
+| 20103 | [Dynamic Array][20103]      | &#9989;[&#128190;][20103solution] | &#9989;[&#128190;][20103tests] |
+| 20104 | [Left Rotation][20104]      | &#9989;[&#128190;][20104solution] | &#9989;[&#128190;][20104tests] |
+| 20105 | [Sparse Array][20105]       | &#9989;[&#128190;][20105solution] | &#9989;[&#128190;][20105tests] |
+| 20106 | [Array Manipulation][20106] | &#9989;[&#128190;][20106solution] | &#9989;[&#128190;][20106tests] |
 
 [20101]: https://www.hackerrank.com/challenges/arrays-ds
 [20102]: https://www.hackerrank.com/challenges/2d-array
 [20103]: https://www.hackerrank.com/challenges/dynamic-array
 [20104]: https://www.hackerrank.com/challenges/array-left-rotation
-[20104]: https://www.hackerrank.com/challenges/array-left-rotation
-[20105]: https://www.hackerrank.com/challenges/crush
+[20105]: https://www.hackerrank.com/challenges/sparse-arrays
+[20106]: https://www.hackerrank.com/challenges/crush
 
 [20101solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/arraysds/Solution.java
 [20102solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/array2dds/Solution.java
 [20103solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/dynamicarray/Solution.java
 [20104solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/leftrotation/Solution.java
-[20104solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/sparsearray/Solution.java
-[20105solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/algorithmiccrush/Solution.java
+[20105solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/sparsearray/Solution.java
+[20106solution]: src/main/java/org/ck/hackerRank/corecs/datastructures/arrays/arraymanipulation/Solution.java
 
 [20101tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/arraysds/SolutionTest.java
 [20102tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/array2dds/SolutionTest.java
 [20103tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/dynamicarray/SolutionTest.java
 [20104tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/leftrotation/SolutionTest.java
-[20104tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/sparsearray/SolutionTest.java
-[20105tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/algorithmiccrush/SolutionTest.java
+[20105tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/sparsearray/SolutionTest.java
+[20106tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/arrays/arraymanipulation/SolutionTest.java
 
 
 ## Linked Lists (8/8)

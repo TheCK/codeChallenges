@@ -18,15 +18,19 @@
 [102tests]: src/test/java/org/ck/codeforces/n00001/spreadsheets/MainTest.java
 [103tests]: src/test/java/org/ck/codeforces/n00001/ancientberlandcircus/MainTest.java
 
-# 2 (1/1)
+# 2 (1/2)
 
-|   # | Name             | Solution                        | Test                         |
-|----:|------------------|:-------------------------------:|:----------------------------:|
-| 201 | [A. Winner][201] | &#9989;[&#128190;][201solution] | &#9989;[&#128190;][201tests] |
+|   # | Name                          | Solution                        | Test                         |
+|----:|-------------------------------|:-------------------------------:|:----------------------------:|
+| 201 | [A. Winner][201]              | &#9989;[&#128190;][201solution] | &#9989;[&#128190;][201tests] |
+| 202 | [B. The least round way][202] | [&#128190;][202solution]        | [&#128190;][202tests]        |
 
 [201]: http://codeforces.com/problemset/problem/2/A
+[202]: http://codeforces.com/problemset/problem/2/B
 
 [201solution]: src/main/java/org/ck/codeforces/n00002/winner/Main.java
+[202solution]: src/main/java/org/ck/codeforces/n00002/theleastroundway/Main.java
 
 [201tests]: src/test/java/org/ck/codeforces/n00002/winner/MainTest.java
+[202tests]: src/test/java/org/ck/codeforces/n00002/theleastroundway/MainTest.java
 

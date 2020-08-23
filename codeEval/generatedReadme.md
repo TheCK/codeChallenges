@@ -334,7 +334,7 @@
 [237tests]: src/test/java/org/ck/codeEval/easy/panaceatruthorlie/MainTest.java
 [240tests]: src/test/java/org/ck/codeEval/easy/mersenneprime/MainTest.java
 
-# Hard challenges (26/27)
+# Hard challenges (26/28)
 
 |   # | Name                       | Description                                                                                                                 | Solution                        | Test                         |
 |----:|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
@@ -344,6 +344,7 @@
 |  28 | String Searching           | [Determine if substring match exists.][28]                                                                                  | &#9989;[&#128190;][28solution]  | &#9989;[&#128190;][28tests]  |
 |  36 | Message Decoding           | [Decode an encoded message][36]                                                                                             | &#9989;[&#128190;][36solution]  | &#9989;[&#128190;][36tests]  |
 |  38 | String List                | [Create a new string from constituent alphabets][38]                                                                        | &#9989;[&#128190;][38solution]  | &#9989;[&#128190;][38tests]  |
+|  42 | Ugly Numbers               | [Count the number of expressions that can be created from a number][42]                                                     | [&#128190;][42solution]         | [&#128190;][42tests]         |
 |  44 | Following Integer          | [Determine the next number in a sequence][44]                                                                               | &#9989;[&#128190;][44solution]  | &#9989;[&#128190;][44tests]  |
 |  47 | Palindromic Ranges         | [Find out a range of palindromic numbers][47]                                                                               | &#9989;[&#128190;][47solution]  | &#9989;[&#128190;][47tests]  |
 |  50 | String Substitution        | [Create a new string by replacing substrings within it][50]                                                                 | &#9989;[&#128190;][50solution]  | &#9989;[&#128190;][50tests]  |
@@ -372,6 +373,7 @@
 [28]: https://www.codeeval.com/open_challenges/28/
 [36]: https://www.codeeval.com/open_challenges/36/
 [38]: https://www.codeeval.com/open_challenges/38/
+[42]: https://www.codeeval.com/open_challenges/42/
 [44]: https://www.codeeval.com/open_challenges/44/
 [47]: https://www.codeeval.com/open_challenges/47/
 [50]: https://www.codeeval.com/open_challenges/50/
@@ -400,6 +402,7 @@
 [28solution]: src/main/java/org/ck/codeEval/hard/stringSearching/Main.java
 [36solution]: src/main/java/org/ck/codeEval/hard/messageDecoding/Main.java
 [38solution]: src/main/java/org/ck/codeEval/hard/stringList/Main.java
+[42solution]: src/main/java/org/ck/codeEval/hard/uglynumers/Main.java
 [44solution]: src/main/java/org/ck/codeEval/hard/followingInteger/Main.java
 [47solution]: src/main/java/org/ck/codeEval/hard/palindromicRanges/Main.java
 [50solution]: src/main/java/org/ck/codeEval/hard/stringsubstitution/Main.java
@@ -428,6 +431,7 @@
 [28tests]: src/test/java/org/ck/codeEval/hard/stringSearching/MainTest.java
 [36tests]: src/test/java/org/ck/codeEval/hard/messageDecoding/MainTest.java
 [38tests]: src/test/java/org/ck/codeEval/hard/stringList/MainTest.java
+[42tests]: src/test/java/org/ck/codeEval/hard/uglynumers/MainTest.java
 [44tests]: src/test/java/org/ck/codeEval/hard/followingInteger/MainTest.java
 [47tests]: src/test/java/org/ck/codeEval/hard/palindromicRanges/MainTest.java
 [50tests]: src/test/java/org/ck/codeEval/hard/stringsubstitution/MainTest.java

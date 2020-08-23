@@ -32,7 +32,7 @@ public abstract class BaseMySqlTest extends BaseTest
 		db = DB.newEmbeddedDB(config.build());
 		db.start();
 
-		connection = DriverManager.getConnection(config.getURL("test"), "root", "");
+		connection = DriverManager.getConnection(config.getURL("test") + "?serverTimezone=UTC", "root", "");
 	}
 
 	public void prepareDb(String name) throws Exception

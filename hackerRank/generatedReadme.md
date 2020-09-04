@@ -413,7 +413,7 @@
 [20207tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/SolutionTest.java
 [20208tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/SolutionTest.java
 
-# Java (42/42)
+# Java (46/46)
 
 ## BigNumber (3/3)
 
@@ -564,6 +564,31 @@
 [40201011tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/inttostring/SolutionTest.java
 [40201012tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/dateandtime/SolutionTest.java
 [40201013tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/SolutionTest.java
+
+
+## Object Oriented Programming (4/4)
+
+|        # | Name                            | Solution                             | Test                              |
+|---------:|---------------------------------|:------------------------------------:|:---------------------------------:|
+| 40205001 | [Java Inheritance I][40205001]  | &#9989;[&#128190;][40205001solution] | &#9989;[&#128190;][40205001tests] |
+| 40205002 | [Java Inheritance II][40205002] | &#9989;[&#128190;][40205002solution] | &#9989;[&#128190;][40205002tests] |
+| 40205003 | [Java Abstract Class][40205003] | &#9989;[&#128190;][40205003solution] | &#9989;[&#128190;][40205003tests] |
+| 40205004 | [Java Interface][40205004]      | &#9989;[&#128190;][40205004solution] | &#9989;[&#128190;][40205004tests] |
+
+[40205001]: https://www.hackerrank.com/challenges/java-inheritance-1
+[40205002]: https://www.hackerrank.com/challenges/java-inheritance-2
+[40205003]: https://www.hackerrank.com/challenges/java-abstract-class
+[40205004]: https://www.hackerrank.com/challenges/java-interface
+
+[40205001solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance1/Solution.java
+[40205002solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance2/Solution.java
+[40205003solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/abstractclass/Solution.java
+[40205004solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/javainterface/Solution.java
+
+[40205001tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance1/SolutionTest.java
+[40205002tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance2/SolutionTest.java
+[40205003tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/abstractclass/SolutionTest.java
+[40205004tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/javainterface/SolutionTest.java
 
 
 ## Strings (11/11)

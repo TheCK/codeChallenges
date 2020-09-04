@@ -1,0 +1,11 @@
+10
+ab 6
+bcc 0
+ade 5
+cab 2
+dee 0
+bda 2
+c 5
+db 2
+a 1
+cbb 1

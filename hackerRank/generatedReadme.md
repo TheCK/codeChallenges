@@ -413,19 +413,96 @@
 [20207tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/SolutionTest.java
 [20208tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/SolutionTest.java
 
-# Java (25/25)
+# Java (42/42)
 
-## BigNumber (1/1)
+## BigNumber (3/3)
 
-|        # | Name                        | Solution                             | Test                              |
-|---------:|-----------------------------|:------------------------------------:|:---------------------------------:|
-| 40203001 | [Java BigDecimal][40203001] | &#9989;[&#128190;][40203001solution] | &#9989;[&#128190;][40203001tests] |
+|        # | Name                            | Solution                             | Test                              |
+|---------:|---------------------------------|:------------------------------------:|:---------------------------------:|
+| 40203001 | [Java BigDecimal][40203001]     | &#9989;[&#128190;][40203001solution] | &#9989;[&#128190;][40203001tests] |
+| 40203002 | [Java Primality Test][40203002] | &#9989;[&#128190;][40203002solution] | &#9989;[&#128190;][40203002tests] |
+| 40203003 | [Java BigInteger][40203003]     | &#9989;[&#128190;][40203003solution] | &#9989;[&#128190;][40203003tests] |
 
 [40203001]: https://www.hackerrank.com/challenges/java-bigdecimal
+[40203002]: https://www.hackerrank.com/challenges/java-primality-test
+[40203003]: https://www.hackerrank.com/challenges/java-biginteger
 
 [40203001solution]: src/main/java/org/ck/hackerRank/languages/java/bignumber/bigdecimal/Solution.java
+[40203002solution]: src/main/java/org/ck/hackerRank/languages/java/bignumber/javaprimarilytest/Solution.java
+[40203003solution]: src/main/java/org/ck/hackerRank/languages/java/bignumber/biginteger/Solution.java
 
 [40203001tests]: src/test/java/org/ck/hackerRank/languages/java/bignumber/bigdecimal/SolutionTest.java
+[40203002tests]: src/test/java/org/ck/hackerRank/languages/java/bignumber/javaprimarilytest/SolutionTest.java
+[40203003tests]: src/test/java/org/ck/hackerRank/languages/java/bignumber/biginteger/SolutionTest.java
+
+
+## Data Structures (15/15)
+
+|        # | Name                               | Solution                             | Test                              |
+|---------:|------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40204001 | [Java 1D Array][40204001]          | &#9989;[&#128190;][40204001solution] | &#9989;[&#128190;][40204001tests] |
+| 40204002 | [Java 2D Array][40204002]          | &#9989;[&#128190;][40204002solution] | &#9989;[&#128190;][40204002tests] |
+| 40204003 | [Java Subarray][40204003]          | &#9989;[&#128190;][40204003solution] | &#9989;[&#128190;][40204003tests] |
+| 40204004 | [Java Arraylist][40204004]         | &#9989;[&#128190;][40204004solution] | &#9989;[&#128190;][40204004tests] |
+| 40204005 | [Java 1D Array (Part 2)][40204005] | &#9989;[&#128190;][40204005solution] | &#9989;[&#128190;][40204005tests] |
+| 40204006 | [Java List][40204006]              | &#9989;[&#128190;][40204006solution] | &#9989;[&#128190;][40204006tests] |
+| 40204007 | [Java Map][40204007]               | &#9989;[&#128190;][40204007solution] | &#9989;[&#128190;][40204007tests] |
+| 40204008 | [Java Stack][40204008]             | &#9989;[&#128190;][40204008solution] | &#9989;[&#128190;][40204008tests] |
+| 40204009 | [Java Hashset][40204009]           | &#9989;[&#128190;][40204009solution] | &#9989;[&#128190;][40204009tests] |
+| 40204010 | [Java Generics][40204010]          | &#9989;[&#128190;][40204010solution] | &#9989;[&#128190;][40204010tests] |
+| 40204011 | [Java Comparator][40204011]        | &#9989;[&#128190;][40204011solution] | &#9989;[&#128190;][40204011tests] |
+| 40204012 | [Java Sort][40204012]              | &#9989;[&#128190;][40204012solution] | &#9989;[&#128190;][40204012tests] |
+| 40204013 | [Java Dequeue][40204013]           | &#9989;[&#128190;][40204013solution] | &#9989;[&#128190;][40204013tests] |
+| 40204014 | [Java Dequeue][40204014]           | &#9989;[&#128190;][40204014solution] | &#9989;[&#128190;][40204014tests] |
+| 40204015 | [Java Priority Queue][40204015]    | &#9989;[&#128190;][40204015solution] | &#9989;[&#128190;][40204015tests] |
+
+[40204001]: https://www.hackerrank.com/challenges/java-1d-array-introduction
+[40204002]: https://www.hackerrank.com/challenges/java-2d-array
+[40204003]: https://www.hackerrank.com/challenges/java-negative-subarray
+[40204004]: https://www.hackerrank.com/challenges/java-arraylist
+[40204005]: https://www.hackerrank.com/challenges/java-1d-array
+[40204006]: https://www.hackerrank.com/challenges/java-list
+[40204007]: https://www.hackerrank.com/challenges/phone-book
+[40204008]: https://www.hackerrank.com/challenges/java-stack
+[40204009]: https://www.hackerrank.com/challenges/java-hashset
+[40204010]: https://www.hackerrank.com/challenges/java-generics
+[40204011]: https://www.hackerrank.com/challenges/java-comparator
+[40204012]: https://www.hackerrank.com/challenges/java-sort
+[40204013]: https://www.hackerrank.com/challenges/java-dequeue
+[40204014]: https://www.hackerrank.com/challenges/java-dequeue
+[40204015]: https://www.hackerrank.com/challenges/java-priority-queue
+
+[40204001solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/java1darray/Solution.java
+[40204002solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/java2darray/Solution.java
+[40204003solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/subarray/Solution.java
+[40204004solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/arraylist/Solution.java
+[40204005solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/java1darray2/Solution.java
+[40204006solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/list/Solution.java
+[40204007solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/map/Solution.java
+[40204008solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/stack/Solution.java
+[40204009solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/hashset/Solution.java
+[40204010solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/generics/Solution.java
+[40204011solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/comparator/Solution.java
+[40204012solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/sort/Solution.java
+[40204013solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/deque/Solution.java
+[40204014solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/bitset/Solution.java
+[40204015solution]: src/main/java/org/ck/hackerRank/languages/java/datastructures/priorityqueue/Solution.java
+
+[40204001tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/java1darray/SolutionTest.java
+[40204002tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/java2darray/SolutionTest.java
+[40204003tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/subarray/SolutionTest.java
+[40204004tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/arraylist/SolutionTest.java
+[40204005tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/java1darray2/SolutionTest.java
+[40204006tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/list/SolutionTest.java
+[40204007tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/map/SolutionTest.java
+[40204008tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/stack/SolutionTest.java
+[40204009tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/hashset/SolutionTest.java
+[40204010tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/generics/SolutionTest.java
+[40204011tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/comparator/SolutionTest.java
+[40204012tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/sort/SolutionTest.java
+[40204013tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/deque/SolutionTest.java
+[40204014tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/bitset/SolutionTest.java
+[40204015tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/priorityqueue/SolutionTest.java
 
 
 ## Introduction (13/13)

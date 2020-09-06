@@ -413,7 +413,20 @@
 [20207tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/SolutionTest.java
 [20208tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/SolutionTest.java
 
-# Java (46/46)
+# Java (53/53)
+
+## Advanced (1/1)
+
+|        # | Name                                       | Solution                             | Test                              |
+|---------:|--------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40207001 | [Java Varargs - Simple Addition][40207001] | &#9989;[&#128190;][40207001solution] | &#9989;[&#128190;][40207001tests] |
+
+[40207001]: https://www.hackerrank.com/challenges/simple-addition-varargs
+
+[40207001solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/varargs/Solution.java
+
+[40207001tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/varargs/SolutionTest.java
+
 
 ## BigNumber (3/3)
 
@@ -505,6 +518,23 @@
 [40204015tests]: src/test/java/org/ck/hackerRank/languages/java/datastructures/priorityqueue/SolutionTest.java
 
 
+## Exception Handling (2/2)
+
+|        # | Name                                            | Solution                             | Test                              |
+|---------:|-------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40206001 | [Java Exception Handling (Try-catch)][40206001] | &#9989;[&#128190;][40206001solution] | &#9989;[&#128190;][40206001tests] |
+| 40206002 | [Java Exception Handling][40206002]             | &#9989;[&#128190;][40206002solution] | &#9989;[&#128190;][40206002tests] |
+
+[40206001]: https://www.hackerrank.com/challenges/java-exception-handling-try-catch
+[40206002]: https://www.hackerrank.com/challenges/java-exception-handling
+
+[40206001solution]: src/main/java/org/ck/hackerRank/languages/java/exceptionhandling/trycatch/Solution.java
+[40206002solution]: src/main/java/org/ck/hackerRank/languages/java/exceptionhandling/exceptionhandling/Solution.java
+
+[40206001tests]: src/test/java/org/ck/hackerRank/languages/java/exceptionhandling/trycatch/SolutionTest.java
+[40206002tests]: src/test/java/org/ck/hackerRank/languages/java/exceptionhandling/exceptionhandling/SolutionTest.java
+
+
 ## Introduction (13/13)
 
 |        # | Name                                      | Solution                             | Test                              |
@@ -566,29 +596,45 @@
 [40201013tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/SolutionTest.java
 
 
-## Object Oriented Programming (4/4)
+## Object Oriented Programming (8/8)
 
-|        # | Name                            | Solution                             | Test                              |
-|---------:|---------------------------------|:------------------------------------:|:---------------------------------:|
-| 40205001 | [Java Inheritance I][40205001]  | &#9989;[&#128190;][40205001solution] | &#9989;[&#128190;][40205001tests] |
-| 40205002 | [Java Inheritance II][40205002] | &#9989;[&#128190;][40205002solution] | &#9989;[&#128190;][40205002tests] |
-| 40205003 | [Java Abstract Class][40205003] | &#9989;[&#128190;][40205003solution] | &#9989;[&#128190;][40205003tests] |
-| 40205004 | [Java Interface][40205004]      | &#9989;[&#128190;][40205004solution] | &#9989;[&#128190;][40205004tests] |
+|        # | Name                                                 | Solution                             | Test                              |
+|---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 40205001 | [Java Inheritance I][40205001]                       | &#9989;[&#128190;][40205001solution] | &#9989;[&#128190;][40205001tests] |
+| 40205002 | [Java Inheritance II][40205002]                      | &#9989;[&#128190;][40205002solution] | &#9989;[&#128190;][40205002tests] |
+| 40205003 | [Java Abstract Class][40205003]                      | &#9989;[&#128190;][40205003solution] | &#9989;[&#128190;][40205003tests] |
+| 40205004 | [Java Interface][40205004]                           | &#9989;[&#128190;][40205004solution] | &#9989;[&#128190;][40205004tests] |
+| 40205005 | [Java Method Overriding][40205005]                   | &#9989;[&#128190;][40205005solution] | &#9989;[&#128190;][40205005tests] |
+| 40205006 | [Java Method Overriding 2 (Super Keyword)][40205006] | &#9989;[&#128190;][40205006solution] | &#9989;[&#128190;][40205006tests] |
+| 40205007 | [Java Instanceof keyword][40205007]                  | &#9989;[&#128190;][40205007solution] | &#9989;[&#128190;][40205007tests] |
+| 40205008 | [Java Iterator][40205008]                            | &#9989;[&#128190;][40205008solution] | &#9989;[&#128190;][40205008tests] |
 
 [40205001]: https://www.hackerrank.com/challenges/java-inheritance-1
 [40205002]: https://www.hackerrank.com/challenges/java-inheritance-2
 [40205003]: https://www.hackerrank.com/challenges/java-abstract-class
 [40205004]: https://www.hackerrank.com/challenges/java-interface
+[40205005]: https://www.hackerrank.com/challenges/java-method-overriding
+[40205006]: https://www.hackerrank.com/challenges/java-method-overriding-2-super-keyword
+[40205007]: https://www.hackerrank.com/challenges/java-instanceof-keyword
+[40205008]: https://www.hackerrank.com/challenges/java-iterator
 
 [40205001solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance1/Solution.java
 [40205002solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance2/Solution.java
 [40205003solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/abstractclass/Solution.java
 [40205004solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/javainterface/Solution.java
+[40205005solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/methodoverriding/Solution.java
+[40205006solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/methodoverriding2/Solution.java
+[40205007solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/instanceofkeyword/Solution.java
+[40205008solution]: src/main/java/org/ck/hackerRank/languages/java/objectorientedprogramming/iterator/Solution.java
 
 [40205001tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance1/SolutionTest.java
 [40205002tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/inheritance2/SolutionTest.java
 [40205003tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/abstractclass/SolutionTest.java
 [40205004tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/javainterface/SolutionTest.java
+[40205005tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/methodoverriding/SolutionTest.java
+[40205006tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/methodoverriding2/SolutionTest.java
+[40205007tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/instanceofkeyword/SolutionTest.java
+[40205008tests]: src/test/java/org/ck/hackerRank/languages/java/objectorientedprogramming/iterator/SolutionTest.java
 
 
 ## Strings (11/11)

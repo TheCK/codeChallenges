@@ -1,17 +1,15 @@
 package org.ck.projectEuler.solutions.problem032;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import org.ck.projectEuler.test.BaseTest;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PandigitalProductsTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		PandigitalProducts.main(null);
-		
-		assertEquals(getResult("45228"), this.output.toString());
-	}
+public class PandigitalProductsTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    PandigitalProducts.main(null);
+
+    assertEquals(getResult("45228"), this.output.toString());
+  }
 }

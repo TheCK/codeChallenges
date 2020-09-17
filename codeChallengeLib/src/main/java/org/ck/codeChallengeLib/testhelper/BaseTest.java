@@ -1,105 +1,112 @@
 package org.ck.codeChallengeLib.testhelper;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.rules.TestName;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInfo;
 
 import java.io.*;
 import java.util.Scanner;
 
-public abstract class BaseTest
-{
-	protected ByteArrayOutputStream output = null;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-	private InputStream input = null;
+public abstract class BaseTest {
+  protected ByteArrayOutputStream output = null;
 
-	@Rule
-	public TestName testName = new TestName();
-	private Long start = null;
+  private InputStream input = null;
 
-	@Before
-	public void setUp() throws Exception
-	{
-		this.output = new ByteArrayOutputStream();
-		System.setOut(new PrintStream(this.output));
+  private Long start = null;
 
-		this.start = System.currentTimeMillis();
-	}
+  @BeforeEach
+  public void setUp() throws Exception {
+    this.output = new ByteArrayOutputStream();
+    System.setOut(new PrintStream(this.output));
 
-	@After
-	public void tearDown() throws Exception
-	{
-		Long end = System.currentTimeMillis();
-		System.err.println(getClass().getName() + "." + this.testName.getMethodName() + " took: " + (end - this.start) + " milliseconds.");
+    this.start = System.currentTimeMillis();
+  }
 
-		try
-		{
-			if (this.input != null)
-			{
-				this.input.close();
-			}
-		}
-		catch (IOException e)
-		{
-			//We don't care
-		}
-	}
+  @AfterEach
+  public void tearDown(TestInfo testInfo) throws Exception {
+    Long end = System.currentTimeMillis();
+    System.err.println(
+        getClass().getName()
+            + "."
+            + testInfo.getDisplayName()
+            + " took: "
+            + (end - this.start)
+            + " milliseconds.");
 
-	protected void pipeResource(String name)
-	{
-		this.input = getClass().getResourceAsStream(name + ".txt");
+    try {
+      if (this.input != null) {
+        this.input.close();
+      }
+    } catch (IOException e) {
+      // We don't care
+    }
+  }
 
-		System.setIn(this.input);
-	}
+  protected void pipeResource(String name) {
+    this.input = getClass().getResourceAsStream(name + ".txt");
 
-	protected String getFileAsResult(String name)
-	{
-		File resultFile = new File(getClass().getResource(name + ".result.txt").getFile());
+    System.setIn(this.input);
+  }
 
-		StringBuilder builder = new StringBuilder();
-		try (Scanner resultScanner = new Scanner(resultFile))
-		{
-			while (resultScanner.hasNextLine())
-			{
-				builder.append(resultScanner.nextLine()).append(System.lineSeparator());
-			}
-		}
-		catch (FileNotFoundException e)
-		{
-		}
+  protected String[] getFileAsArgs(String name) {
+    return new String[] {getClass().getResource(name + ".txt").getFile()};
+  }
 
-		return builder.toString();
-	}
+  protected String getFileAsResult(String name) {
+    File resultFile = new File(getClass().getResource(name + ".result.txt").getFile());
 
-	protected String getFileAsResultNoNewLine(String name)
-	{
-		File resultFile = new File(getClass().getResource(name + ".result.txt").getFile());
+    StringBuilder builder = new StringBuilder();
+    try (Scanner resultScanner = new Scanner(resultFile)) {
+      while (resultScanner.hasNextLine()) {
+        builder.append(resultScanner.nextLine()).append(System.lineSeparator());
+      }
+    } catch (FileNotFoundException e) {
+      // We don't care
+    }
 
-		StringBuilder builder = new StringBuilder();
-		try (Scanner resultScanner = new Scanner(resultFile))
-		{
-			while (resultScanner.hasNextLine())
-			{
-				builder.append(resultScanner.nextLine()).append(resultScanner.hasNextLine() ? System.lineSeparator() : "");
-			}
-		}
-		catch (FileNotFoundException e)
-		{
-		}
+    return builder.toString();
+  }
 
-		return builder.toString();
-	}
+  protected String getFileAsResultNoNewLine(String name) {
+    File resultFile = new File(getClass().getResource(name + ".result.txt").getFile());
 
-	protected static String getResult(String... restults)
-	{
-		StringBuilder builder = new StringBuilder();
+    StringBuilder builder = new StringBuilder();
+    try (Scanner resultScanner = new Scanner(resultFile)) {
+      while (resultScanner.hasNextLine()) {
+        builder
+            .append(resultScanner.nextLine())
+            .append(resultScanner.hasNextLine() ? System.lineSeparator() : "");
+      }
+    } catch (FileNotFoundException e) {
+      // We don't care
+    }
 
-		for (String result : restults)
-		{
-			builder.append(result + System.lineSeparator());
-		}
+    return builder.toString();
+  }
 
-		return builder.toString();
-	}
+  protected static String getResult(String... restults) {
+    StringBuilder builder = new StringBuilder();
+
+    for (String result : restults) {
+      builder.append(result).append(System.lineSeparator());
+    }
+
+    return builder.toString();
+  }
+
+  protected void runFileAsArg(Class<?> clazz, String name) throws Exception {
+    clazz.getMethod("main", String[].class).invoke(null, new Object[] {getFileAsArgs(name)});
+
+    assertEquals(getFileAsResult(name), this.output.toString());
+  }
+
+  protected void runFileAsStdIn(Class<?> clazz, String name) throws Exception {
+    pipeResource(name);
+
+    clazz.getMethod("main", String[].class).invoke(null, new Object[] {new String[] {}});
+
+    assertEquals(getFileAsResult(name), this.output.toString());
+  }
 }

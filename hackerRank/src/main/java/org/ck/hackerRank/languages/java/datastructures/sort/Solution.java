@@ -1,9 +1,6 @@
 package org.ck.hackerRank.languages.java.datastructures.sort;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 @org.ck.codeChallengeLib.annotation.Solution(
     id = 40204012,
@@ -14,7 +11,7 @@ import java.util.Scanner;
 public class Solution {
 
   public static void main(String[] args) {
-    try (Scanner in = new Scanner(System.in)) {
+    try (Scanner in = new Scanner(System.in).useLocale(Locale.ENGLISH)) {
       int testCases = Integer.parseInt(in.nextLine());
 
       List<Student> studentList = new ArrayList<>();

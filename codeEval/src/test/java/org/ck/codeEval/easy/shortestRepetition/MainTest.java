@@ -1,17 +1,15 @@
 package org.ck.codeEval.easy.shortestRepetition;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import org.ck.codeEval.test.BaseTest;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MainTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		Main.main(getFileAsArgs("00"));
+public class MainTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    Main.main(getFileAsArgs("00"));
 
-		assertEquals(getResult("3", "2", "1", "7"), this.output.toString());
-	}
+    assertEquals(getResult("3", "2", "1", "7"), this.output.toString());
+  }
 }

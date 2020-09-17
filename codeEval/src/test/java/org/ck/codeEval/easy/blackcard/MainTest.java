@@ -1,17 +1,13 @@
 package org.ck.codeEval.easy.blackcard;
 
-import org.ck.codeEval.test.BaseTest;
-import org.junit.Test;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.Assert.assertEquals;
-
-public class MainTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		Main.main(getFileAsArgs("00"));
-		
-		assertEquals(getResult("Sara", "Mary"), this.output.toString());
-	}
+public class MainTest extends BaseTest {
+  @ParameterizedTest
+  @ValueSource(strings = {"00"})
+  public void test(String name) throws Exception {
+    runFileAsArg(Main.class, name);
+  }
 }

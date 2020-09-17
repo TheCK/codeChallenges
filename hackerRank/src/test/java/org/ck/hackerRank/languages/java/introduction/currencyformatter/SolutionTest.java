@@ -1,21 +1,15 @@
 package org.ck.hackerRank.languages.java.introduction.currencyformatter;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.Assert.assertEquals;
-
-public class SolutionTest extends BaseTest
-{
-	@Test
-	@Ignore("Encoding Mismatch")
-	public void test00() throws Exception
-	{
-		pipeResource("00");
-
-		Solution.main(null);
-
-		assertEquals(getFileAsResult("00"), this.output.toString());
-	}
+public class SolutionTest extends BaseTest {
+  @ParameterizedTest
+  @ValueSource(strings = {"00"})
+  @Disabled("Encoding mismatch")
+  public void test(String name) throws Exception {
+    runFileAsStdIn(Solution.class, name);
+  }
 }

@@ -1,15 +1,15 @@
 package org.ck.projectEuler.solutions.problem074;
 
-import org.ck.projectEuler.test.BaseTest;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DigitFactorialChainsTest extends BaseTest
 {
-	@Ignore("ignored for travis ci")
 	@Test
+	@Disabled("ignored for travis ci")
 	public void test00() throws Exception
 	{
 		DigitFactorialChains.main(null);

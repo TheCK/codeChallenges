@@ -1,9 +1,9 @@
 package org.ck.hackerRank.languages.java.strings.stringreverse;
 
-import static org.junit.Assert.assertEquals;
-
 import org.ck.codeChallengeLib.testhelper.BaseTest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest extends BaseTest {
   @Test

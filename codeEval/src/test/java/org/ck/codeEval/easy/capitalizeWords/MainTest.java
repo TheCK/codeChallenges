@@ -1,17 +1,13 @@
 package org.ck.codeEval.easy.capitalizeWords;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
-import org.ck.codeEval.test.BaseTest;
-import org.junit.Test;
-
-public class MainTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		Main.main(getFileAsArgs("00"));
-
-		assertEquals(getResult("Hello World", "JavaScript Language", "A Letter", "1st Thing"), this.output.toString());
-	}
+public class MainTest extends BaseTest {
+  @ParameterizedTest
+  @ValueSource(strings = {"00"})
+  public void test(String name) throws Exception {
+    runFileAsArg(Main.class, name);
+  }
 }

@@ -1,33 +1,33 @@
 package org.ck.codility.lessons.timeComplexity.tapeEquilibrium;
 
-import org.ck.codility.test.BaseTest;
-import org.junit.Test;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SolutionTest extends BaseTest
-{
-	@Test(timeout = TIMEOUT)
-	public void test00() throws Exception
-	{
-		int result = new Solution().solution(new int[] {3, 1, 2, 4, 3});
+public class SolutionTest extends BaseTest {
+  @Test
+  @Timeout(10)
+  public void test00() throws Exception {
+    int result = new Solution().solution(new int[] {3, 1, 2, 4, 3});
 
-		assertEquals(1, result);
-	}
+    assertEquals(1, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test01() throws Exception
-	{
-		int result = new Solution().solution(new int[] {3, 1});
+  @Test
+  @Timeout(10)
+  public void test01() throws Exception {
+    int result = new Solution().solution(new int[] {3, 1});
 
-		assertEquals(2, result);
-	}
+    assertEquals(2, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test02() throws Exception
-	{
-		int result = new Solution().solution(new int[] {3, -3});
+  @Test
+  @Timeout(10)
+  public void test02() throws Exception {
+    int result = new Solution().solution(new int[] {3, -3});
 
-		assertEquals(6, result);
-	}
+    assertEquals(6, result);
+  }
 }

@@ -1,17 +1,15 @@
 package org.ck.codeEval.medium.pascalsTriangle;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import org.ck.codeEval.test.BaseTest;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MainTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		Main.main(getFileAsArgs("00"));
+public class MainTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    Main.main(getFileAsArgs("00"));
 
-		assertEquals(getResult("1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1"), this.output.toString());
-	}
+    assertEquals(getResult("1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1"), this.output.toString());
+  }
 }

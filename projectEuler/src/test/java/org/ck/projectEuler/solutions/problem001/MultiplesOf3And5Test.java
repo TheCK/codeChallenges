@@ -1,17 +1,15 @@
 package org.ck.projectEuler.solutions.problem001;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import org.ck.projectEuler.test.BaseTest;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MultiplesOf3And5Test extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		MultiplesOf3And5.main(null);
-		
-		assertEquals(getResult("233168"), this.output.toString());
-	}
+public class MultiplesOf3And5Test extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    MultiplesOf3And5.main(null);
+
+    assertEquals(getResult("233168"), this.output.toString());
+  }
 }

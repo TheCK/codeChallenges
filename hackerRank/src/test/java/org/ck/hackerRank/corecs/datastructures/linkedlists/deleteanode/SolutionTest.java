@@ -1,89 +1,84 @@
 package org.ck.hackerRank.corecs.datastructures.linkedlists.deleteanode;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class SolutionTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		Solution.Node node3 = new Solution.Node();
-		node3.data = 3;
+public class SolutionTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    Solution.Node node3 = new Solution.Node();
+    node3.data = 3;
 
-		Solution.Node node2 = new Solution.Node();
-		node2.data = 2;
-		node2.next = node3;
+    Solution.Node node2 = new Solution.Node();
+    node2.data = 2;
+    node2.next = node3;
 
-		Solution.Node node1 = new Solution.Node();
-		node1.data = 1;
-		node1.next = node2;
+    Solution.Node node1 = new Solution.Node();
+    node1.data = 1;
+    node1.next = node2;
 
-		Solution.Node result = (new Solution()).Delete(node1, 0);
+    Solution.Node result = (new Solution()).Delete(node1, 0);
 
-		assertNotNull(result);
-		assertEquals(2, result.data);
-		assertNotNull(result.next);
-		assertEquals(3, result.next.data);
-		assertNull(result.next.next);
-	}
+    assertNotNull(result);
+    assertEquals(2, result.data);
+    assertNotNull(result.next);
+    assertEquals(3, result.next.data);
+    assertNull(result.next.next);
+  }
 
-	@Test
-	public void test01() throws Exception
-	{
-		Solution.Node node = new Solution.Node();
-		node.data = 1;
+  @Test
+  public void test01() throws Exception {
+    Solution.Node node = new Solution.Node();
+    node.data = 1;
 
-		Solution.Node result = (new Solution()).Delete(node, 0);
+    Solution.Node result = (new Solution()).Delete(node, 0);
 
-		assertNull(result);
-	}
+    assertNull(result);
+  }
 
-	@Test
-	public void testCustom00() throws Exception
-	{
-		Solution.Node node3 = new Solution.Node();
-		node3.data = 3;
+  @Test
+  public void testCustom00() throws Exception {
+    Solution.Node node3 = new Solution.Node();
+    node3.data = 3;
 
-		Solution.Node node2 = new Solution.Node();
-		node2.data = 2;
-		node2.next = node3;
+    Solution.Node node2 = new Solution.Node();
+    node2.data = 2;
+    node2.next = node3;
 
-		Solution.Node node1 = new Solution.Node();
-		node1.data = 1;
-		node1.next = node2;
+    Solution.Node node1 = new Solution.Node();
+    node1.data = 1;
+    node1.next = node2;
 
-		Solution.Node result = (new Solution()).Delete(node1, 1);
+    Solution.Node result = (new Solution()).Delete(node1, 1);
 
-		assertNotNull(result);
-		assertEquals(1, result.data);
-		assertNotNull(result.next);
-		assertEquals(3, result.next.data);
-		assertNull(result.next.next);
-	}
+    assertNotNull(result);
+    assertEquals(1, result.data);
+    assertNotNull(result.next);
+    assertEquals(3, result.next.data);
+    assertNull(result.next.next);
+  }
 
-	@Test
-	public void testCustom01() throws Exception
-	{
-		Solution.Node node3 = new Solution.Node();
-		node3.data = 3;
+  @Test
+  public void testCustom01() throws Exception {
+    Solution.Node node3 = new Solution.Node();
+    node3.data = 3;
 
-		Solution.Node node2 = new Solution.Node();
-		node2.data = 2;
-		node2.next = node3;
+    Solution.Node node2 = new Solution.Node();
+    node2.data = 2;
+    node2.next = node3;
 
-		Solution.Node node1 = new Solution.Node();
-		node1.data = 1;
-		node1.next = node2;
+    Solution.Node node1 = new Solution.Node();
+    node1.data = 1;
+    node1.next = node2;
 
-		Solution.Node result = (new Solution()).Delete(node1, 2);
+    Solution.Node result = (new Solution()).Delete(node1, 2);
 
-		assertNotNull(result);
-		assertEquals(1, result.data);
-		assertNotNull(result.next);
-		assertEquals(2, result.next.data);
-		assertNull(result.next.next);
-	}
+    assertNotNull(result);
+    assertEquals(1, result.data);
+    assertNotNull(result.next);
+    assertEquals(2, result.next.data);
+    assertNull(result.next.next);
+  }
 }

@@ -1,17 +1,15 @@
 package org.ck.projectEuler.solutions.problem030;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import org.ck.projectEuler.test.BaseTest;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DigitFifthPowersTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		DigitFifthPowers.main(null);
-		
-		assertEquals(getResult("443839"), this.output.toString());
-	}
+public class DigitFifthPowersTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    DigitFifthPowers.main(null);
+
+    assertEquals(getResult("443839"), this.output.toString());
+  }
 }

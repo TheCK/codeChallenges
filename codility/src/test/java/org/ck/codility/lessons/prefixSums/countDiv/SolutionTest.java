@@ -1,94 +1,94 @@
 package org.ck.codility.lessons.prefixSums.countDiv;
 
-import org.ck.codility.test.BaseTest;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SolutionTest extends BaseTest
-{
-	@Test(timeout = TIMEOUT)
-	public void test00() throws Exception
-	{
-		int result = new Solution().solution(6, 11, 2);
+public class SolutionTest extends BaseTest {
+  @Test
+  @Timeout(10)
+  public void test00() throws Exception {
+    int result = new Solution().solution(6, 11, 2);
 
-		assertEquals(3, result);
-	}
+    assertEquals(3, result);
+  }
 
-	@Ignore
-	@Test(timeout = TIMEOUT)
-	public void test00b() throws Exception
-	{
-		int result = new Solution().solution(6, 12, 2);
+  @Disabled
+  @Test
+  @Timeout(10)
+  public void test00b() throws Exception {
+    int result = new Solution().solution(6, 12, 2);
 
-		assertEquals(4, result);
-	}
+    assertEquals(4, result);
+  }
 
-	@Ignore
-	@Test(timeout = TIMEOUT)
-	public void test01() throws Exception
-	{
-		int result = new Solution().solution(11, 345, 17);
+  @Disabled
+  @Test
+  @Timeout(10)
+  public void test01() throws Exception {
+    int result = new Solution().solution(11, 345, 17);
 
-		assertEquals(20, result);
-	}
+    assertEquals(20, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test02() throws Exception
-	{
-		int result = new Solution().solution(0, 0, 11);
+  @Test
+  @Timeout(10)
+  public void test02() throws Exception {
+    int result = new Solution().solution(0, 0, 11);
 
-		assertEquals(1, result);
-	}
+    assertEquals(1, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test03() throws Exception
-	{
-		int result = new Solution().solution(1, 1, 11);
+  @Test
+  @Timeout(10)
+  public void test03() throws Exception {
+    int result = new Solution().solution(1, 1, 11);
 
-		assertEquals(0, result);
-	}
+    assertEquals(0, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test04() throws Exception
-	{
-		int result = new Solution().solution(10, 10, 5);
+  @Test
+  @Timeout(10)
+  public void test04() throws Exception {
+    int result = new Solution().solution(10, 10, 5);
 
-		assertEquals(1, result);
-	}
+    assertEquals(1, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test05() throws Exception
-	{
-		int result = new Solution().solution(10, 10, 7);
+  @Test
+  @Timeout(10)
+  public void test05() throws Exception {
+    int result = new Solution().solution(10, 10, 7);
 
-		assertEquals(0, result);
-	}
+    assertEquals(0, result);
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test06() throws Exception
-	{
-		int result = new Solution().solution(10, 10, 20);
+  @Test
+  @Timeout(10)
+  public void test06() throws Exception {
+    int result = new Solution().solution(10, 10, 20);
 
-		assertEquals(0, result);
-	}
+    assertEquals(0, result);
+  }
 
-	@Ignore
-	@Test(timeout = TIMEOUT)
-	public void test07() throws Exception
-	{
-		int result = new Solution().solution(0, Integer.MAX_VALUE, 1);
+  @Disabled
+  @Test
+  @Timeout(10)
+  public void test07() throws Exception {
+    int result = new Solution().solution(0, Integer.MAX_VALUE, 1);
 
-		assertEquals(0, result);
-	}
+    assertEquals(0, result);
+  }
 
-	@Ignore
-	@Test(timeout = TIMEOUT)
-	public void test08() throws Exception
-	{
-		int result = new Solution().solution(0, Integer.MAX_VALUE, Integer.MAX_VALUE);
+  @Disabled
+  @Test
+  @Timeout(10)
+  public void test08() throws Exception {
+    int result = new Solution().solution(0, Integer.MAX_VALUE, Integer.MAX_VALUE);
 
-		assertEquals(0, result);
-	}
+    assertEquals(0, result);
+  }
 }

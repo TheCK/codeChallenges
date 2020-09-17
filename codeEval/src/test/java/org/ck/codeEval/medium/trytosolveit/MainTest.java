@@ -1,17 +1,15 @@
 package org.ck.codeEval.medium.trytosolveit;
 
-import org.ck.codeEval.test.BaseTest;
-import org.junit.Test;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MainTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		Main.main(getFileAsArgs("00"));
+public class MainTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    Main.main(getFileAsArgs("00"));
 
-		assertEquals(getResult("try", "to", "solve", "it"), this.output.toString());
-	}
+    assertEquals(getResult("try", "to", "solve", "it"), this.output.toString());
+  }
 }

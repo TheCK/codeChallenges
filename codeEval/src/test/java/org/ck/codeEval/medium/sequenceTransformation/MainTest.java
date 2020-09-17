@@ -1,36 +1,31 @@
 package org.ck.codeEval.medium.sequenceTransformation;
 
-import org.ck.codeEval.test.BaseTest;
-import org.junit.Test;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MainTest extends BaseTest
-{
-	@Test(timeout = TIMEOUT)
-	public void test00() throws Exception
-	{
-		Main.main(getFileAsArgs("00"));
+public class MainTest extends BaseTest {
+  @Test
+  @Timeout(10)
+  public void test00() throws Exception {
+    Main.main(getFileAsArgs("00"));
 
-		assertEquals(getResult("Yes", "Yes", "Yes", "No"), this.output.toString());
-	}
+    assertEquals(getResult("Yes", "Yes", "Yes", "No"), this.output.toString());
+  }
 
-	@Test(timeout = TIMEOUT)
-	public void test01() throws Exception
-	{
-		Main.main(getFileAsArgs("01"));
+  @Test
+  @Timeout(10)
+  public void test01() throws Exception {
+    Main.main(getFileAsArgs("01"));
 
-		assertEquals(getResult(
-			"Yes", "No", "No", "No", "No",
-			"No", "Yes", "No", "Yes", "Yes",
-			"No", "No", "Yes", "Yes", "No",
-			"No", "No", "Yes", "Yes", "No",
-			"Yes", "Yes", "Yes", "No", "No",
-			"No", "No", "Yes", "No", "No",
-			"No", "Yes", "Yes", "Yes", "No",
-			"No", "No", "No", "No", "No",
-			"No", "No", "Yes", "No", "No",
-			"Yes", "No", "No", "No", "No"
-		), this.output.toString());
-	}
+    assertEquals(
+        getResult(
+            "Yes", "No", "No", "No", "No", "No", "Yes", "No", "Yes", "Yes", "No", "No", "Yes",
+            "Yes", "No", "No", "No", "Yes", "Yes", "No", "Yes", "Yes", "Yes", "No", "No", "No",
+            "No", "Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No", "No", "No", "No", "No", "No",
+            "No", "No", "Yes", "No", "No", "Yes", "No", "No", "No", "No"),
+        this.output.toString());
+  }
 }

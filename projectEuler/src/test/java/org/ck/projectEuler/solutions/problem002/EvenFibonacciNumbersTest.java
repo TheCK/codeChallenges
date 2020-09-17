@@ -1,17 +1,15 @@
 package org.ck.projectEuler.solutions.problem002;
 
-import static org.junit.Assert.assertEquals;
+import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.junit.jupiter.api.Test;
 
-import org.ck.projectEuler.test.BaseTest;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EvenFibonacciNumbersTest extends BaseTest
-{
-	@Test
-	public void test00() throws Exception
-	{
-		EvenFibonacciNumbers.main(null);
-		
-		assertEquals(getResult("4613732"), this.output.toString());
-	}
+public class EvenFibonacciNumbersTest extends BaseTest {
+  @Test
+  public void test00() throws Exception {
+    EvenFibonacciNumbers.main(null);
+
+    assertEquals(getResult("4613732"), this.output.toString());
+  }
 }

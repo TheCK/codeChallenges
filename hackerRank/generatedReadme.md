@@ -338,6 +338,24 @@
 [10109tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/timeconversion/SolutionTest.java
 [10221tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/SolutionTest.java
 
+# Contests (2/2)
+
+## ProjectEuler+ (2/2)
+
+|        # | Name                                                 | Solution                             | Test                              |
+|---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 99990001 | [Project Euler #1: Multiples of 3 and 5][99990001]   | &#9989;[&#128190;][99990001solution] | &#9989;[&#128190;][99990001tests] |
+| 99990002 | [Project Euler #2: Even Fibonacci numbers][99990002] | &#9989;[&#128190;][99990002solution] | &#9989;[&#128190;][99990002tests] |
+
+[99990001]: https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+[99990002]: https://www.hackerrank.com/contests/projecteuler/challenges/euler002
+
+[99990001solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem001/Solution.java
+[99990002solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem002/Solution.java
+
+[99990001tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem001/SolutionTest.java
+[99990002tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem002/SolutionTest.java
+
 # Data Structures (14/14)
 
 ## Arrays (6/6)

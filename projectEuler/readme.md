@@ -611,31 +611,31 @@ This project contains all the tests for problems on https://projecteuler.net.
 [49]: https://projecteuler.net/problem=49
 [50]: https://projecteuler.net/problem=50
 
-[1solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem001/MultiplesOf3And5.java
-[2solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem002/EvenFibonacciNumbers.java
-[3solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem003/Problem.java
-[4solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem004/LargestPalindromeProduct.java
-[5solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem005/SmallestMultiple.java
-[6solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem006/Problem.java
-[7solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem007/Problem.java
-[8solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem008/Problem.java
-[9solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem009/Problem.java
-[10solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem010/Problem.java
-[12solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem012/Problem.java
-[27solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem027/QuadraticPrimes.java
-[29solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem029/DistinctPowers.java
-[30solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem030/DigitFifthPowers.java
-[31solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem031/CoinSums.java
-[32solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem032/PandigitalProducts.java
-[33solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem033/DigitCancellingFractions.java
-[34solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem034/DigitFactorials.java
-[38solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem038/PandigitalMultiples.java
-[39solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem039/IntegerRightTriangles.java
-[40solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem040/ChampernownesConstant.java
-[41solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem041/PandigitalPrime.java
-[43solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem043/SubStringDivisibility.java
-[49solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem049/PrimePermutations.java
-[50solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem050/ConsecutivePrimeSum.java
+[1solution]: src/main/java/org/ck/projecteuler/solutions/problem001/MultiplesOf3And5.java
+[2solution]: src/main/java/org/ck/projecteuler/solutions/problem002/EvenFibonacciNumbers.java
+[3solution]: src/main/java/org/ck/projecteuler/solutions/problem003/Problem.java
+[4solution]: src/main/java/org/ck/projecteuler/solutions/problem004/LargestPalindromeProduct.java
+[5solution]: src/main/java/org/ck/projecteuler/solutions/problem005/SmallestMultiple.java
+[6solution]: src/main/java/org/ck/projecteuler/solutions/problem006/Problem.java
+[7solution]: src/main/java/org/ck/projecteuler/solutions/problem007/Problem.java
+[8solution]: src/main/java/org/ck/projecteuler/solutions/problem008/Problem.java
+[9solution]: src/main/java/org/ck/projecteuler/solutions/problem009/Problem.java
+[10solution]: src/main/java/org/ck/projecteuler/solutions/problem010/Problem.java
+[12solution]: src/main/java/org/ck/projecteuler/solutions/problem012/Problem.java
+[27solution]: src/main/java/org/ck/projecteuler/solutions/problem027/QuadraticPrimes.java
+[29solution]: src/main/java/org/ck/projecteuler/solutions/problem029/DistinctPowers.java
+[30solution]: src/main/java/org/ck/projecteuler/solutions/problem030/DigitFifthPowers.java
+[31solution]: src/main/java/org/ck/projecteuler/solutions/problem031/CoinSums.java
+[32solution]: src/main/java/org/ck/projecteuler/solutions/problem032/PandigitalProducts.java
+[33solution]: src/main/java/org/ck/projecteuler/solutions/problem033/DigitCancellingFractions.java
+[34solution]: src/main/java/org/ck/projecteuler/solutions/problem034/DigitFactorials.java
+[38solution]: src/main/java/org/ck/projecteuler/solutions/problem038/PandigitalMultiples.java
+[39solution]: src/main/java/org/ck/projecteuler/solutions/problem039/IntegerRightTriangles.java
+[40solution]: src/main/java/org/ck/projecteuler/solutions/problem040/ChampernownesConstant.java
+[41solution]: src/main/java/org/ck/projecteuler/solutions/problem041/PandigitalPrime.java
+[43solution]: src/main/java/org/ck/projecteuler/solutions/problem043/SubStringDivisibility.java
+[49solution]: src/main/java/org/ck/projecteuler/solutions/problem049/PrimePermutations.java
+[50solution]: src/main/java/org/ck/projecteuler/solutions/problem050/ConsecutivePrimeSum.java
 
 [1tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem001/MultiplesOf3And5Test.java
 [2tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem002/EvenFibonacciNumbersTest.java
@@ -715,14 +715,14 @@ This project contains all the tests for problems on https://projecteuler.net.
 [99]: https://projecteuler.net/problem=99
 [100]: https://projecteuler.net/problem=100
 
-[52solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem052/PermutedMultiples.java
-[56solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem056/PowerfulDigitSum.java
-[63solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem063/PowerfulDigitCounts.java
-[74solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem074/DigitFactorialChains.java
-[99solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem099/LargestExponential.java
+[52solution]: src/main/java/org/ck/projecteuler/solutions/problem052/PermutedMultiples.java
+[56solution]: src/main/java/org/ck/projecteuler/solutions/problem056/PowerfulDigitSum.java
+[63solution]: src/main/java/org/ck/projecteuler/solutions/problem063/PowerfulDigitCounts.java
+[74solution]: src/main/java/org/ck/projecteuler/solutions/problem074/DigitFactorialChains.java
+[99solution]: src/main/java/org/ck/projecteuler/solutions/problem099/LargestExponential.java
 
-[54solution]: ../projectEuler/src/main/java/org/ck/projectEuler/unsolved/problem054/PokerHands.java
-[76solution]: ../projectEuler/src/main/java/org/ck/projectEuler/unsolved/problem076/CountingSummations.java
+[54solution]: src/main/java/org/ck/projecteuler/solutions/problem054/PokerHands.java
+[76solution]: src/main/java/org/ck/projecteuler/unsolved/problem076/CountingSummations.java
 
 [52tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem052/PermutedMultiplesTest.java
 [56tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem056/PowerfulDigitSumTest.java
@@ -782,8 +782,8 @@ This project contains all the tests for problems on https://projecteuler.net.
 [149]: https://projecteuler.net/problem=149
 [150]: https://projecteuler.net/problem=150
 
-[104solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem104/PandigitalFibonacciEnds.java
-[120solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem120/Problem.java
+[104solution]: src/main/java/org/ck/projecteuler/solutions/problem104/PandigitalFibonacciEnds.java
+[120solution]: src/main/java/org/ck/projecteuler/solutions/problem120/Problem.java
 
 [104tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem104/PandigitalFibonacciEndsTest.java
 [120tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem120/ProblemTest.java
@@ -840,7 +840,7 @@ This project contains all the tests for problems on https://projecteuler.net.
 [199]: https://projecteuler.net/problem=199
 [200]: https://projecteuler.net/problem=200
 
-[179solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem179/ConsecutivePositiveDivisors.java
+[179solution]: src/main/java/org/ck/projecteuler/solutions/problem179/ConsecutivePositiveDivisors.java
 
 [179tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem179/ConsecutivePositiveDivisorsTest.java
 
@@ -896,7 +896,7 @@ This project contains all the tests for problems on https://projecteuler.net.
 [249]: https://projecteuler.net/problem=249
 [250]: https://projecteuler.net/problem=250
 
-[206solution]: ../projectEuler/src/main/java/org/ck/projectEuler/solutions/problem206/ConcealedSquare.java
+[206solution]: src/main/java/org/ck/projecteuler/solutions/problem206/ConcealedSquare.java
 
 [206tests]: ../projectEuler/src/test/java/org/ck/projectEuler/solutions/problem206/ConcealedSquareTest.java
 
@@ -1004,7 +1004,7 @@ This project contains all the tests for problems on https://projecteuler.net.
 [349]: https://projecteuler.net/problem=349
 [350]: https://projecteuler.net/problem=350
 
-[308solution]: ../projectEuler/src/main/java/org/ck/projectEuler/unsolved/problem308/AnAmazingPrimeGeneratingAutomaton.java
+[308solution]: src/main/java/org/ck/projecteuler/unsolved/problem308/AnAmazingPrimeGeneratingAutomaton.java
 
 <!-- 351 - 400 links -->
 [351]: https://projecteuler.net/problem=351

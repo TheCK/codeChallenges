@@ -338,23 +338,39 @@
 [10109tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/timeconversion/SolutionTest.java
 [10221tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/SolutionTest.java
 
-# Contests (2/2)
+# Contests (6/6)
 
-## ProjectEuler+ (2/2)
+## ProjectEuler+ (6/6)
 
-|        # | Name                                                 | Solution                             | Test                              |
-|---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 99990001 | [Project Euler #1: Multiples of 3 and 5][99990001]   | &#9989;[&#128190;][99990001solution] | &#9989;[&#128190;][99990001tests] |
-| 99990002 | [Project Euler #2: Even Fibonacci numbers][99990002] | &#9989;[&#128190;][99990002solution] | &#9989;[&#128190;][99990002tests] |
+|        # | Name                                                     | Solution                             | Test                              |
+|---------:|----------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 99990001 | [Project Euler #1: Multiples of 3 and 5][99990001]       | &#9989;[&#128190;][99990001solution] | &#9989;[&#128190;][99990001tests] |
+| 99990002 | [Project Euler #2: Even Fibonacci numbers][99990002]     | &#9989;[&#128190;][99990002solution] | &#9989;[&#128190;][99990002tests] |
+| 99990003 | [Project Euler #3: Largest prime factor][99990003]       | &#9989;[&#128190;][99990003solution] | &#9989;[&#128190;][99990003tests] |
+| 99990004 | [Project Euler #4: Largest palindrome product][99990004] | &#9989;[&#128190;][99990004solution] | &#9989;[&#128190;][99990004tests] |
+| 99990005 | [Project Euler #5: Smallest multiple][99990005]          | &#9989;[&#128190;][99990005solution] | &#9989;[&#128190;][99990005tests] |
+| 99990006 | [Project Euler #6: Sum square difference][99990006]      | &#9989;[&#128190;][99990006solution] | &#9989;[&#128190;][99990006tests] |
 
 [99990001]: https://www.hackerrank.com/contests/projecteuler/challenges/euler001
 [99990002]: https://www.hackerrank.com/contests/projecteuler/challenges/euler002
+[99990003]: https://www.hackerrank.com/contests/projecteuler/challenges/euler003
+[99990004]: https://www.hackerrank.com/contests/projecteuler/challenges/euler004
+[99990005]: https://www.hackerrank.com/contests/projecteuler/challenges/euler005
+[99990006]: https://www.hackerrank.com/contests/projecteuler/challenges/euler006
 
 [99990001solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem001/Solution.java
 [99990002solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem002/Solution.java
+[99990003solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem003/Solution.java
+[99990004solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem004/Solution.java
+[99990005solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem005/Solution.java
+[99990006solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem006/Solution.java
 
 [99990001tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem001/SolutionTest.java
 [99990002tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem002/SolutionTest.java
+[99990003tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem003/SolutionTest.java
+[99990004tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem004/SolutionTest.java
+[99990005tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem005/SolutionTest.java
+[99990006tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem006/SolutionTest.java
 
 # Data Structures (14/14)
 

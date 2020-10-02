@@ -13,7 +13,13 @@ public class MyMath {
   }
 
   public static boolean isPrime(long num) {
-    if (num <= 1 || num % 2 == 0) return false;
+    if (num == 2) {
+      return true;
+    }
+
+    if (num <= 1 || num % 2 == 0) {
+      return false;
+    }
 
     long limit = (long) Math.sqrt(num);
 

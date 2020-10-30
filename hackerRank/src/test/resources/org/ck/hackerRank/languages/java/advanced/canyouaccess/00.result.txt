@@ -1,0 +1,2 @@
+8 is power of 2
+An instance of class: org.ck.hackerRank.languages.java.advanced.canyouaccess.Solution.Inner.Private has been created

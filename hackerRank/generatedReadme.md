@@ -1,4 +1,4 @@
-# Algorithms (69/69)
+# Algorithms (70/70)
 
 ## Bit Manipulation (3/3)
 
@@ -290,7 +290,7 @@
 [10320tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/strings/twostrings/SolutionTest.java
 
 
-## Warmup (10/10)
+## Warmup (11/11)
 
 |     # | Name                             | Solution                          | Test                           |
 |------:|----------------------------------|:---------------------------------:|:------------------------------:|
@@ -303,6 +303,7 @@
 | 10107 | [Staircase][10107]               | &#9989;[&#128190;][10107solution] | &#9989;[&#128190;][10107tests] |
 | 10108 | [Mini-Max Sum][10108]            | &#9989;[&#128190;][10108solution] | &#9989;[&#128190;][10108tests] |
 | 10109 | [Time Conversion][10109]         | &#9989;[&#128190;][10109solution] | &#9989;[&#128190;][10109tests] |
+| 10110 | [Birthday Cake Candles][10110]   | &#9989;[&#128190;][10110solution] | &#9989;[&#128190;][10110tests] |
 | 10221 | [Circular Array Rotation][10221] | &#9989;[&#128190;][10221solution] | &#9989;[&#128190;][10221tests] |
 
 [10101]: https://www.hackerrank.com/challenges/solve-me-first
@@ -314,6 +315,7 @@
 [10107]: https://www.hackerrank.com/challenges/staircase
 [10108]: https://www.hackerrank.com/challenges/mini-max-sum
 [10109]: https://www.hackerrank.com/challenges/time-conversion
+[10110]: https://www.hackerrank.com/challenges/birthday-cake-candles
 [10221]: https://www.hackerrank.com/challenges/circular-array-rotation
 
 [10101solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/solvemefirst/Solution.java
@@ -325,6 +327,7 @@
 [10107solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/staircase/Solution.java
 [10108solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/minimaxsum/Solution.java
 [10109solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/timeconversion/Solution.java
+[10110solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/birthdaycakecandles/Solution.java
 [10221solution]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/Solution.java
 
 [10101tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/solvemefirst/SolutionTest.java
@@ -336,6 +339,7 @@
 [10107tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/staircase/SolutionTest.java
 [10108tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/minimaxsum/SolutionTest.java
 [10109tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/timeconversion/SolutionTest.java
+[10110tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/birthdaycakecandles/SolutionTest.java
 [10221tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/SolutionTest.java
 
 # Contests (11/11)
@@ -467,9 +471,9 @@
 [20207tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/reversealinkedlist/SolutionTest.java
 [20208tests]: src/test/java/org/ck/hackerRank/corecs/datastructures/linkedlists/comparetwolinkedlists/SolutionTest.java
 
-# Java (58/58)
+# Java (64/64)
 
-## Advanced (6/6)
+## Advanced (12/12)
 
 |        # | Name                                       | Solution                             | Test                              |
 |---------:|--------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -479,6 +483,12 @@
 | 40207004 | [Prime Checker][40207004]                  | &#9989;[&#128190;][40207004solution] | &#9989;[&#128190;][40207004tests] |
 | 40207005 | [Java Factory Pattern][40207005]           | &#9989;[&#128190;][40207005solution] | &#9989;[&#128190;][40207005tests] |
 | 40207005 | [Java Singleton Pattern][40207005]         | &#9989;[&#128190;][40207005solution] | &#9989;[&#128190;][40207005tests] |
+| 40207007 | [Java Visitor Pattern  ][40207007]         | &#9989;[&#128190;][40207007solution] | &#9989;[&#128190;][40207007tests] |
+| 40207008 | [Java Annotations][40207008]               | &#9989;[&#128190;][40207008solution] | &#9989;[&#128190;][40207008tests] |
+| 40207009 | [Covariant Return Types][40207009]         | &#9989;[&#128190;][40207009solution] | &#9989;[&#128190;][40207009tests] |
+| 40207010 | [Java Lambda Expressions][40207010]        | &#9989;[&#128190;][40207010solution] | &#9989;[&#128190;][40207010tests] |
+| 40207011 | [Java MD5][40207011]                       | &#9989;[&#128190;][40207011solution] | &#9989;[&#128190;][40207011tests] |
+| 40207012 | [Java SHA-256][40207012]                   | &#9989;[&#128190;][40207012solution] | &#9989;[&#128190;][40207012tests] |
 
 [40207001]: https://www.hackerrank.com/challenges/simple-addition-varargs
 [40207002]: https://www.hackerrank.com/challenges/java-reflection-attributes
@@ -486,6 +496,12 @@
 [40207004]: https://www.hackerrank.com/challenges/prime-checker
 [40207005]: https://www.hackerrank.com/challenges/java-factory
 [40207005]: https://www.hackerrank.com/challenges/java-singleton
+[40207007]: https://www.hackerrank.com/challenges/java-vistor-pattern
+[40207008]: https://www.hackerrank.com/challenges/java-annotations
+[40207009]: https://www.hackerrank.com/challenges/java-covariance
+[40207010]: https://www.hackerrank.com/challenges/java-lambda-expressions
+[40207011]: https://www.hackerrank.com/challenges/java-md5
+[40207012]: https://www.hackerrank.com/challenges/sha-256
 
 [40207001solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/varargs/Solution.java
 [40207002solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/reflectionattributes/Solution.java
@@ -493,6 +509,12 @@
 [40207004solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/primechecker/Solution.java
 [40207005solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/factorypattern/Solution.java
 [40207005solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/singletonpattern/Singleton.java
+[40207007solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/visitorpattern/Solution.java
+[40207008solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/annotations/Solution.java
+[40207009solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/covariantreturntypes/Solution.java
+[40207010solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/lambdaexpressions/Solution.java
+[40207011solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/md5/Solution.java
+[40207012solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/sha256/Solution.java
 
 [40207001tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/varargs/SolutionTest.java
 [40207002tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/reflectionattributes/SolutionTest.java
@@ -500,6 +522,12 @@
 [40207004tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/primechecker/SolutionTest.java
 [40207005tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/factorypattern/SolutionTest.java
 [40207005tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/singletonpattern/SingletonTest.java
+[40207007tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/visitorpattern/SolutionTest.java
+[40207008tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/annotations/SolutionTest.java
+[40207009tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/covariantreturntypes/SolutionTest.java
+[40207010tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/lambdaexpressions/SolutionTest.java
+[40207011tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/md5/SolutionTest.java
+[40207012tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/sha256/SolutionTest.java
 
 
 ## BigNumber (3/3)

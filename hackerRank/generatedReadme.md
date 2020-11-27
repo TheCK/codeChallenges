@@ -342,23 +342,24 @@
 [10110tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/warmup/birthdaycakecandles/SolutionTest.java
 [10221tests]: src/test/java/org/ck/hackerRank/corecs/algorithms/implementation/circulararrayrotation/SolutionTest.java
 
-# Contests (11/11)
+# Contests (11/12)
 
-## ProjectEuler+ (11/11)
+## ProjectEuler+ (11/12)
 
-|        # | Name                                                      | Solution                             | Test                              |
-|---------:|-----------------------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 99990001 | [Project Euler #1: Multiples of 3 and 5][99990001]        | &#9989;[&#128190;][99990001solution] | &#9989;[&#128190;][99990001tests] |
-| 99990002 | [Project Euler #2: Even Fibonacci numbers][99990002]      | &#9989;[&#128190;][99990002solution] | &#9989;[&#128190;][99990002tests] |
-| 99990003 | [Project Euler #3: Largest prime factor][99990003]        | &#9989;[&#128190;][99990003solution] | &#9989;[&#128190;][99990003tests] |
-| 99990004 | [Project Euler #4: Largest palindrome product][99990004]  | &#9989;[&#128190;][99990004solution] | &#9989;[&#128190;][99990004tests] |
-| 99990005 | [Project Euler #5: Smallest multiple][99990005]           | &#9989;[&#128190;][99990005solution] | &#9989;[&#128190;][99990005tests] |
-| 99990006 | [Project Euler #6: Sum square difference][99990006]       | &#9989;[&#128190;][99990006solution] | &#9989;[&#128190;][99990006tests] |
-| 99990007 | [Project Euler #7: 10001st prime][99990007]               | &#9989;[&#128190;][99990007solution] | &#9989;[&#128190;][99990007tests] |
-| 99990008 | [Project Euler #8: Largest product in a series][99990008] | &#9989;[&#128190;][99990008solution] | &#9989;[&#128190;][99990008tests] |
-| 99990009 | [Project Euler #9: Special Pythagorean triplet][99990009] | &#9989;[&#128190;][99990009solution] | &#9989;[&#128190;][99990009tests] |
-| 99990010 | [Project Euler #10: Summation of primes][99990010]        | &#9989;[&#128190;][99990010solution] | &#9989;[&#128190;][99990010tests] |
-| 99990011 | [Project Euler #11: Largest product in a grid][99990011]  | &#9989;[&#128190;][99990011solution] | &#9989;[&#128190;][99990011tests] |
+|        # | Name                                                              | Solution                             | Test                              |
+|---------:|-------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 99990001 | [Project Euler #1: Multiples of 3 and 5][99990001]                | &#9989;[&#128190;][99990001solution] | &#9989;[&#128190;][99990001tests] |
+| 99990002 | [Project Euler #2: Even Fibonacci numbers][99990002]              | &#9989;[&#128190;][99990002solution] | &#9989;[&#128190;][99990002tests] |
+| 99990003 | [Project Euler #3: Largest prime factor][99990003]                | &#9989;[&#128190;][99990003solution] | &#9989;[&#128190;][99990003tests] |
+| 99990004 | [Project Euler #4: Largest palindrome product][99990004]          | &#9989;[&#128190;][99990004solution] | &#9989;[&#128190;][99990004tests] |
+| 99990005 | [Project Euler #5: Smallest multiple][99990005]                   | &#9989;[&#128190;][99990005solution] | &#9989;[&#128190;][99990005tests] |
+| 99990006 | [Project Euler #6: Sum square difference][99990006]               | &#9989;[&#128190;][99990006solution] | &#9989;[&#128190;][99990006tests] |
+| 99990007 | [Project Euler #7: 10001st prime][99990007]                       | &#9989;[&#128190;][99990007solution] | &#9989;[&#128190;][99990007tests] |
+| 99990008 | [Project Euler #8: Largest product in a series][99990008]         | &#9989;[&#128190;][99990008solution] | &#9989;[&#128190;][99990008tests] |
+| 99990009 | [Project Euler #9: Special Pythagorean triplet][99990009]         | &#9989;[&#128190;][99990009solution] | &#9989;[&#128190;][99990009tests] |
+| 99990010 | [Project Euler #10: Summation of primes][99990010]                | &#9989;[&#128190;][99990010solution] | &#9989;[&#128190;][99990010tests] |
+| 99990011 | [Project Euler #11: Largest product in a grid][99990011]          | &#9989;[&#128190;][99990011solution] | &#9989;[&#128190;][99990011tests] |
+| 99990012 | [Project Euler #12: Highly divisible triangular number][99990012] | [&#128190;][99990012solution]        | [&#128190;][99990012tests]        |
 
 [99990001]: https://www.hackerrank.com/contests/projecteuler/challenges/euler001
 [99990002]: https://www.hackerrank.com/contests/projecteuler/challenges/euler002
@@ -371,6 +372,7 @@
 [99990009]: https://www.hackerrank.com/contests/projecteuler/challenges/euler009
 [99990010]: https://www.hackerrank.com/contests/projecteuler/challenges/euler010
 [99990011]: https://www.hackerrank.com/contests/projecteuler/challenges/euler011
+[99990012]: https://www.hackerrank.com/contests/projecteuler/challenges/euler012
 
 [99990001solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem001/Solution.java
 [99990002solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem002/Solution.java
@@ -383,6 +385,7 @@
 [99990009solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem009/Solution.java
 [99990010solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem010/Solution.java
 [99990011solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem011/Solution.java
+[99990012solution]: src/main/java/org/ck/hackerRank/contests/projecteuler/problem012/Solution.java
 
 [99990001tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem001/SolutionTest.java
 [99990002tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem002/SolutionTest.java
@@ -395,6 +398,7 @@
 [99990009tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem009/SolutionTest.java
 [99990010tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem010/SolutionTest.java
 [99990011tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem011/SolutionTest.java
+[99990012tests]: src/test/java/org/ck/hackerRank/contests/projecteuler/problem012/SolutionTest.java
 
 # Data Structures (14/14)
 

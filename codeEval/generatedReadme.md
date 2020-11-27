@@ -517,7 +517,7 @@
 | 170 | Guess the Number             | [Guess the number in log2(N) steps.][170]                                                                    | &#9989;[&#128190;][170solution] | &#9989;[&#128190;][170tests] |
 | 172 | Card number validation       | [Check if bank card numbers are valid.][172]                                                                 | &#9989;[&#128190;][172solution] | &#9989;[&#128190;][172tests] |
 | 177 | Justify the Text             | [Align the text to the specified width.][177]                                                                | &#9989;[&#128190;][177solution] | &#9989;[&#128190;][177tests] |
-| 179 | Broken LCD                   | [Determine whether a given number can be displayed on the damaged LCD.][179]                                 | &#9989;[&#128190;][179solution] | &#9989;[&#128190;][179tests] |
+| 178 | Broken LCD                   | [Determine whether a given number can be displayed on the damaged LCD.][178]                                 | &#9989;[&#128190;][178solution] | &#9989;[&#128190;][178tests] |
 | 181 | Gronsfeld cipher             | [Decipher the message enciphered with the Gronsfeld cipher.][181]                                            | &#9989;[&#128190;][181solution] | &#9989;[&#128190;][181tests] |
 | 184 | Burrows-Wheeler transform    | [Complete file decompression by inverting BWT.][184]                                                         | &#9989;[&#128190;][184solution] | &#9989;[&#128190;][184tests] |
 | 187 | Consecutive Primes           | [Determine how many ways the numbers can be arranged such that every consecutive pair sums to a prime.][187] | &#9989;[&#128190;][187solution] | &#9989;[&#128190;][187tests] |
@@ -599,7 +599,7 @@
 [170]: https://www.codeeval.com/open_challenges/170/
 [172]: https://www.codeeval.com/open_challenges/172/
 [177]: https://www.codeeval.com/open_challenges/177/
-[179]: https://www.codeeval.com/open_challenges/179/
+[178]: https://www.codeeval.com/open_challenges/179/
 [181]: https://www.codeeval.com/open_challenges/181/
 [184]: https://www.codeeval.com/open_challenges/184/
 [187]: https://www.codeeval.com/open_challenges/187/
@@ -681,7 +681,7 @@
 [170solution]: src/main/java/org/ck/codeEval/medium/guessTheNumber/Main.java
 [172solution]: src/main/java/org/ck/codeEval/medium/cardNumberValidation/Main.java
 [177solution]: src/main/java/org/ck/codeEval/medium/justifyTheText/Main.java
-[179solution]: src/main/java/org/ck/codeEval/medium/brokenLCD/Main.java
+[178solution]: src/main/java/org/ck/codeEval/medium/brokenLCD/Main.java
 [181solution]: src/main/java/org/ck/codeEval/medium/gronsfeldCipher/Main.java
 [184solution]: src/main/java/org/ck/codeEval/medium/burrowsWheelerTransform/Main.java
 [187solution]: src/main/java/org/ck/codeEval/medium/consecutivePrimes/Main.java
@@ -763,7 +763,7 @@
 [170tests]: src/test/java/org/ck/codeEval/medium/guessTheNumber/MainTest.java
 [172tests]: src/test/java/org/ck/codeEval/medium/cardNumberValidation/MainTest.java
 [177tests]: src/test/java/org/ck/codeEval/medium/justifyTheText/MainTest.java
-[179tests]: src/test/java/org/ck/codeEval/medium/brokenLCD/MainTest.java
+[178tests]: src/test/java/org/ck/codeEval/medium/brokenLCD/MainTest.java
 [181tests]: src/test/java/org/ck/codeEval/medium/gronsfeldCipher/MainTest.java
 [184tests]: src/test/java/org/ck/codeEval/medium/burrowsWheelerTransform/MainTest.java
 [187tests]: src/test/java/org/ck/codeEval/medium/consecutivePrimes/MainTest.java

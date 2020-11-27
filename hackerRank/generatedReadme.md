@@ -485,8 +485,8 @@
 | 40207002 | [Java Reflection - Attributes][40207002]   | &#9989;[&#128190;][40207002solution] | &#9989;[&#128190;][40207002tests] |
 | 40207003 | [Can You Access?][40207003]                | &#9989;[&#128190;][40207003solution] | &#9989;[&#128190;][40207003tests] |
 | 40207004 | [Prime Checker][40207004]                  | &#9989;[&#128190;][40207004solution] | &#9989;[&#128190;][40207004tests] |
-| 40207005 | [Java Factory Pattern][40207005]           | &#9989;[&#128190;][40207005solution] | &#9989;[&#128190;][40207005tests] |
 | 40207005 | [Java Singleton Pattern][40207005]         | &#9989;[&#128190;][40207005solution] | &#9989;[&#128190;][40207005tests] |
+| 40207006 | [Java Factory Pattern][40207006]           | &#9989;[&#128190;][40207006solution] | &#9989;[&#128190;][40207006tests] |
 | 40207007 | [Java Visitor Pattern  ][40207007]         | &#9989;[&#128190;][40207007solution] | &#9989;[&#128190;][40207007tests] |
 | 40207008 | [Java Annotations][40207008]               | &#9989;[&#128190;][40207008solution] | &#9989;[&#128190;][40207008tests] |
 | 40207009 | [Covariant Return Types][40207009]         | &#9989;[&#128190;][40207009solution] | &#9989;[&#128190;][40207009tests] |
@@ -498,8 +498,8 @@
 [40207002]: https://www.hackerrank.com/challenges/java-reflection-attributes
 [40207003]: https://www.hackerrank.com/challenges/can-you-access
 [40207004]: https://www.hackerrank.com/challenges/prime-checker
-[40207005]: https://www.hackerrank.com/challenges/java-factory
 [40207005]: https://www.hackerrank.com/challenges/java-singleton
+[40207006]: https://www.hackerrank.com/challenges/java-factory
 [40207007]: https://www.hackerrank.com/challenges/java-vistor-pattern
 [40207008]: https://www.hackerrank.com/challenges/java-annotations
 [40207009]: https://www.hackerrank.com/challenges/java-covariance
@@ -511,8 +511,8 @@
 [40207002solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/reflectionattributes/Solution.java
 [40207003solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/canyouaccess/Solution.java
 [40207004solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/primechecker/Solution.java
-[40207005solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/factorypattern/Solution.java
 [40207005solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/singletonpattern/Singleton.java
+[40207006solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/factorypattern/Solution.java
 [40207007solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/visitorpattern/Solution.java
 [40207008solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/annotations/Solution.java
 [40207009solution]: src/main/java/org/ck/hackerRank/languages/java/advanced/covariantreturntypes/Solution.java
@@ -524,8 +524,8 @@
 [40207002tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/reflectionattributes/SolutionTest.java
 [40207003tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/canyouaccess/SolutionTest.java
 [40207004tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/primechecker/SolutionTest.java
-[40207005tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/factorypattern/SolutionTest.java
 [40207005tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/singletonpattern/SingletonTest.java
+[40207006tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/factorypattern/SolutionTest.java
 [40207007tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/visitorpattern/SolutionTest.java
 [40207008tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/annotations/SolutionTest.java
 [40207009tests]: src/test/java/org/ck/hackerRank/languages/java/advanced/covariantreturntypes/SolutionTest.java
@@ -646,9 +646,9 @@
 |        # | Name                                      | Solution                             | Test                              |
 |---------:|-------------------------------------------|:------------------------------------:|:---------------------------------:|
 | 40201001 | [Welcome to Java!][40201001]              | &#9989;[&#128190;][40201001solution] | &#9989;[&#128190;][40201001tests] |
-| 40201002 | [Java Stdin and Stdout I][40201002]       | &#9989;[&#128190;][40201002solution] | &#9989;[&#128190;][40201002tests] |
 | 40201003 | [Java If-Else][40201003]                  | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
 | 40201003 | [Java Stdin and Stdout II][40201003]      | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
+| 40201004 | [Java Stdin and Stdout I][40201004]       | &#9989;[&#128190;][40201004solution] | &#9989;[&#128190;][40201004tests] |
 | 40201005 | [Java Output Formatting][40201005]        | &#9989;[&#128190;][40201005solution] | &#9989;[&#128190;][40201005tests] |
 | 40201006 | [Java Loops I][40201006]                  | &#9989;[&#128190;][40201006solution] | &#9989;[&#128190;][40201006tests] |
 | 40201007 | [Java Loops II][40201007]                 | &#9989;[&#128190;][40201007solution] | &#9989;[&#128190;][40201007tests] |
@@ -660,9 +660,9 @@
 | 40201013 | [Java Currency Formatter][40201013]       | &#9989;[&#128190;][40201013solution] | &#9989;[&#128190;][40201013tests] |
 
 [40201001]: https://www.hackerrank.com/challenges/welcome-to-java
-[40201002]: https://www.hackerrank.com/challenges/java-stdin-and-stdout-1
 [40201003]: https://www.hackerrank.com/challenges/java-if-else
 [40201003]: https://www.hackerrank.com/challenges/java-stdin-stdout
+[40201004]: https://www.hackerrank.com/challenges/java-stdin-and-stdout-1
 [40201005]: https://www.hackerrank.com/challenges/java-output-formatting
 [40201006]: https://www.hackerrank.com/challenges/java-loops-i
 [40201007]: https://www.hackerrank.com/challenges/java-loops
@@ -674,9 +674,9 @@
 [40201013]: https://www.hackerrank.com/challenges/java-currency-formatter
 
 [40201001solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/welcometojava/Solution.java
-[40201002solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/Solution.java
 [40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/ifelse/Solution.java
 [40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/Solution.java
+[40201004solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/Solution.java
 [40201005solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/outputformatting/Solution.java
 [40201006solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/loopsi/Solution.java
 [40201007solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/loopsii/Solution.java
@@ -688,9 +688,9 @@
 [40201013solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/Solution.java
 
 [40201001tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/welcometojava/SolutionTest.java
-[40201002tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/SolutionTest.java
 [40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/ifelse/SolutionTest.java
 [40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/SolutionTest.java
+[40201004tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/SolutionTest.java
 [40201005tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/outputformatting/SolutionTest.java
 [40201006tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/loopsi/SolutionTest.java
 [40201007tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/loopsii/SolutionTest.java

@@ -1,5 +1,7 @@
 # codeChallenges
 
+## [adventOfCode](adventofcode/generatedReadme.md)
+
 ## [codeEval](codeEval/generatedReadme.md)
 
 ## [codeforces](codeforces/generatedReadme.md)

@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 public class Part2Test extends BaseTest {
   @ParameterizedTest
-  @ValueSource(strings = {"01a", "01b", "01c", "01"})
+  @ValueSource(strings = {"02a", "02b", "02"})
   public void test(String name) throws Exception {
     runFileAsStdIn(Part2.class, name);
   }

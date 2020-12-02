@@ -1,12 +1,12 @@
 package org.ck.adventofcode.year2019.day7;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Queue;
-import java.util.Scanner;
 import org.ck.codeChallengeLib.annotation.Solution;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 @Solution(
     id = 20190702,
@@ -14,7 +14,7 @@ import org.ck.codeChallengeLib.annotation.Solution;
     url = "https://adventofcode.com/2019/day/7#part2",
     category = "2019")
 public class Part2 {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     List<Integer> memory = new ArrayList<>();
 
     try (Scanner in = new Scanner(System.in)) {
@@ -25,19 +25,30 @@ public class Part2 {
       }
     }
 
-    List<List<Integer>> permutations = getPermutations(Arrays.asList(0, 1, 2, 3, 4));
+    List<List<Integer>> permutations = getPermutations(Arrays.asList(5, 6, 7, 8, 9));
     int max = Integer.MIN_VALUE;
 
     for (List<Integer> permutaion : permutations) {
-      int input = 0;
-      for (int phaseSetting : permutaion) {
-        Queue<Integer> inputs = new ArrayDeque<>();
-        inputs.add(phaseSetting);
-        inputs.add(input);
-
-        input = new Computer(memory).run(inputs).remove();
-        max = Math.max(max, input);
+      List<Queue<Integer>> pipes = new ArrayList<>();
+      for (int i = 0; i < permutaion.size(); ++i) {
+        pipes.add(new ConcurrentLinkedDeque<>());
+        pipes.get(i).add(permutaion.get(i));
       }
+
+      ExecutorService es = Executors.newCachedThreadPool();
+      for (int i = 0; i < permutaion.size(); ++i) {
+        Queue<Integer> input = pipes.get(i);
+        Queue<Integer> output = pipes.get((i + 1) % permutaion.size());
+
+        es.execute(() -> new Computer(memory).run(input, output));
+      }
+
+      pipes.get(0).add(0);
+
+      es.shutdown();
+      es.awaitTermination(1, TimeUnit.MINUTES);
+
+      max = Math.max(max, pipes.get(0).remove());
     }
 
     System.out.println(max);
@@ -76,9 +87,7 @@ public class Part2 {
       this.memory.addAll(memory);
     }
 
-    public Queue<Integer> run(Queue<Integer> inputs) {
-      Queue<Integer> outputs = new ArrayDeque<>();
-
+    public void run(Queue<Integer> inputs, Queue<Integer> outputs) {
       while (memory.get(memPointer) != 99) {
         int opCode = memory.get(memPointer) % 100;
         int mode1 = memory.get(memPointer) % 1000 / 100;
@@ -104,6 +113,7 @@ public class Part2 {
             memPointer += 4;
             break;
           case 3:
+            while (inputs.isEmpty()) {}
             memory.set(memory.get(memPointer + 1), inputs.remove());
             memPointer += 2;
             break;
@@ -160,8 +170,6 @@ public class Part2 {
             throw new RuntimeException("This should not happen");
         }
       }
-
-      return outputs;
     }
   }
 }

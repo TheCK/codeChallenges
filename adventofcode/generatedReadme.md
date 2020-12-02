@@ -68,21 +68,21 @@
 |---------:|-------------------------------------------------|:------------------------------------:|:---------------------------------:|
 | 20200101 | [Day 1: Report Repair - Part 2][20200101]       | &#9989;[&#128190;][20200101solution] | &#9989;[&#128190;][20200101tests] |
 | 20200101 | [Day 1: Report Repair][20200101]                | &#9989;[&#128190;][20200101solution] | &#9989;[&#128190;][20200101tests] |
-| 20200201 | [Day 2: Password Philosophy - Part 2][20200201] | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
 | 20200201 | [Day 2: Password Philosophy][20200201]          | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
+| 20200201 | [Day 2: Password Philosophy - Part 2][20200201] | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
 
 [20200101]: https://adventofcode.com/2020/day/1#part2
 [20200101]: https://adventofcode.com/2020/day/1
-[20200201]: https://adventofcode.com/2020/day/2#part2
 [20200201]: https://adventofcode.com/2020/day/2
+[20200201]: https://adventofcode.com/2020/day/2#part2
 
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day1/Part2.java
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day1/Part1.java
-[20200201solution]: src/main/java/org/ck/adventofcode/year2020/day2/Part2.java
 [20200201solution]: src/main/java/org/ck/adventofcode/year2020/day2/Part1.java
+[20200201solution]: src/main/java/org/ck/adventofcode/year2020/day2/Part2.java
 
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day1/Part2Test.java
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day1/Part1Test.java
-[20200201tests]: src/test/java/org/ck/adventofcode/year2020/day2/Part2Test.java
 [20200201tests]: src/test/java/org/ck/adventofcode/year2020/day2/Part1Test.java
+[20200201tests]: src/test/java/org/ck/adventofcode/year2020/day2/Part2Test.java
 

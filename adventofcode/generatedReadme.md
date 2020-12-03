@@ -1,4 +1,4 @@
-# 2019 (14/14)
+# 2019 (18/18)
 
 |        # | Name                                                           | Solution                             | Test                              |
 |---------:|----------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -16,6 +16,10 @@
 | 20190602 | [Day 6: Universal Orbit Map - Part 2][20190602]                | &#9989;[&#128190;][20190602solution] | &#9989;[&#128190;][20190602tests] |
 | 20190701 | [Day 7: Amplification Circuit][20190701]                       | &#9989;[&#128190;][20190701solution] | &#9989;[&#128190;][20190701tests] |
 | 20190702 | [Day 7: Amplification Circuit - Part 2][20190702]              | &#9989;[&#128190;][20190702solution] | &#9989;[&#128190;][20190702tests] |
+| 20190801 | [Day 8: Space Image Format][20190801]                          | &#9989;[&#128190;][20190801solution] | &#9989;[&#128190;][20190801tests] |
+| 20190802 | [Day 8: Space Image Format - Part 2][20190802]                 | &#9989;[&#128190;][20190802solution] | &#9989;[&#128190;][20190802tests] |
+| 20190901 | [Day 9: Sensor Boost][20190901]                                | &#9989;[&#128190;][20190901solution] | &#9989;[&#128190;][20190901tests] |
+| 20190902 | [Day 9: Sensor Boost - Part 2][20190902]                       | &#9989;[&#128190;][20190902solution] | &#9989;[&#128190;][20190902tests] |
 
 [20190101]: https://adventofcode.com/2019/day/1
 [20190102]: https://adventofcode.com/2019/day/1#part2
@@ -31,6 +35,10 @@
 [20190602]: https://adventofcode.com/2019/day/6#part2
 [20190701]: https://adventofcode.com/2019/day/7
 [20190702]: https://adventofcode.com/2019/day/7#part2
+[20190801]: https://adventofcode.com/2019/day/8
+[20190802]: https://adventofcode.com/2019/day/8#part2
+[20190901]: https://adventofcode.com/2019/day/9
+[20190902]: https://adventofcode.com/2019/day/9#part2
 
 [20190101solution]: src/main/java/org/ck/adventofcode/year2019/day1/Part1.java
 [20190102solution]: src/main/java/org/ck/adventofcode/year2019/day1/Part2.java
@@ -46,6 +54,10 @@
 [20190602solution]: src/main/java/org/ck/adventofcode/year2019/day6/Part2.java
 [20190701solution]: src/main/java/org/ck/adventofcode/year2019/day7/Part1.java
 [20190702solution]: src/main/java/org/ck/adventofcode/year2019/day7/Part2.java
+[20190801solution]: src/main/java/org/ck/adventofcode/year2019/day8/Part1.java
+[20190802solution]: src/main/java/org/ck/adventofcode/year2019/day8/Part2.java
+[20190901solution]: src/main/java/org/ck/adventofcode/year2019/day9/Part1.java
+[20190902solution]: src/main/java/org/ck/adventofcode/year2019/day9/Part2.java
 
 [20190101tests]: src/test/java/org/ck/adventofcode/year2019/day1/Part1Test.java
 [20190102tests]: src/test/java/org/ck/adventofcode/year2019/day1/Part2Test.java
@@ -61,28 +73,40 @@
 [20190602tests]: src/test/java/org/ck/adventofcode/year2019/day6/Part2Test.java
 [20190701tests]: src/test/java/org/ck/adventofcode/year2019/day7/Part1Test.java
 [20190702tests]: src/test/java/org/ck/adventofcode/year2019/day7/Part2Test.java
+[20190801tests]: src/test/java/org/ck/adventofcode/year2019/day8/Part1Test.java
+[20190802tests]: src/test/java/org/ck/adventofcode/year2019/day8/Part2Test.java
+[20190901tests]: src/test/java/org/ck/adventofcode/year2019/day9/Part1Test.java
+[20190902tests]: src/test/java/org/ck/adventofcode/year2019/day9/Part2Test.java
 
-# 2020 (4/4)
+# 2020 (6/6)
 
 |        # | Name                                            | Solution                             | Test                              |
 |---------:|-------------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 20200101 | [Day 1: Report Repair - Part 2][20200101]       | &#9989;[&#128190;][20200101solution] | &#9989;[&#128190;][20200101tests] |
 | 20200101 | [Day 1: Report Repair][20200101]                | &#9989;[&#128190;][20200101solution] | &#9989;[&#128190;][20200101tests] |
+| 20200102 | [Day 1: Report Repair - Part 2][20200102]       | &#9989;[&#128190;][20200102solution] | &#9989;[&#128190;][20200102tests] |
 | 20200201 | [Day 2: Password Philosophy][20200201]          | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
-| 20200201 | [Day 2: Password Philosophy - Part 2][20200201] | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
+| 20200202 | [Day 2: Password Philosophy - Part 2][20200202] | &#9989;[&#128190;][20200202solution] | &#9989;[&#128190;][20200202tests] |
+| 20200301 | [Day 3: Toboggan Trajectory - Part 2][20200301] | &#9989;[&#128190;][20200301solution] | &#9989;[&#128190;][20200301tests] |
+| 20200301 | [Day 3: Toboggan Trajectory][20200301]          | &#9989;[&#128190;][20200301solution] | &#9989;[&#128190;][20200301tests] |
 
-[20200101]: https://adventofcode.com/2020/day/1#part2
 [20200101]: https://adventofcode.com/2020/day/1
+[20200102]: https://adventofcode.com/2020/day/1#part2
 [20200201]: https://adventofcode.com/2020/day/2
-[20200201]: https://adventofcode.com/2020/day/2#part2
+[20200202]: https://adventofcode.com/2020/day/2#part2
+[20200301]: https://adventofcode.com/2020/day/3#part2
+[20200301]: https://adventofcode.com/2020/day/3
 
-[20200101solution]: src/main/java/org/ck/adventofcode/year2020/day1/Part2.java
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day1/Part1.java
+[20200102solution]: src/main/java/org/ck/adventofcode/year2020/day1/Part2.java
 [20200201solution]: src/main/java/org/ck/adventofcode/year2020/day2/Part1.java
-[20200201solution]: src/main/java/org/ck/adventofcode/year2020/day2/Part2.java
+[20200202solution]: src/main/java/org/ck/adventofcode/year2020/day2/Part2.java
+[20200301solution]: src/main/java/org/ck/adventofcode/year2020/day3/Part2.java
+[20200301solution]: src/main/java/org/ck/adventofcode/year2020/day3/Part1.java
 
-[20200101tests]: src/test/java/org/ck/adventofcode/year2020/day1/Part2Test.java
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day1/Part1Test.java
+[20200102tests]: src/test/java/org/ck/adventofcode/year2020/day1/Part2Test.java
 [20200201tests]: src/test/java/org/ck/adventofcode/year2020/day2/Part1Test.java
-[20200201tests]: src/test/java/org/ck/adventofcode/year2020/day2/Part2Test.java
+[20200202tests]: src/test/java/org/ck/adventofcode/year2020/day2/Part2Test.java
+[20200301tests]: src/test/java/org/ck/adventofcode/year2020/day3/Part2Test.java
+[20200301tests]: src/test/java/org/ck/adventofcode/year2020/day3/Part1Test.java
 

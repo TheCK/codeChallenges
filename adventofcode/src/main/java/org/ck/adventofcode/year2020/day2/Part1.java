@@ -12,8 +12,6 @@ import org.ck.codeChallengeLib.annotation.Solution;
     category = "2020")
 public class Part1 {
   public static void main(String[] args) {
-    List<Integer> numbers = new ArrayList<>();
-
     try (Scanner in = new Scanner(System.in)) {
       int count = 0;
 

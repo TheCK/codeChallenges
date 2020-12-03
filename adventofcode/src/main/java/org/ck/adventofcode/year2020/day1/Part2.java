@@ -6,7 +6,7 @@ import java.util.Scanner;
 import org.ck.codeChallengeLib.annotation.Solution;
 
 @Solution(
-    id = 20200101,
+    id = 20200102,
     name = "Day 1: Report Repair - Part 2",
     url = "https://adventofcode.com/2020/day/1#part2",
     category = "2020")

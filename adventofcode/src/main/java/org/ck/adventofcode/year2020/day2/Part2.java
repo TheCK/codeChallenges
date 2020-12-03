@@ -1,19 +1,15 @@
 package org.ck.adventofcode.year2020.day2;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import org.ck.codeChallengeLib.annotation.Solution;
 
 @Solution(
-    id = 20200201,
+    id = 20200202,
     name = "Day 2: Password Philosophy - Part 2",
     url = "https://adventofcode.com/2020/day/2#part2",
     category = "2020")
 public class Part2 {
   public static void main(String[] args) {
-    List<Integer> numbers = new ArrayList<>();
-
     try (Scanner in = new Scanner(System.in)) {
       int count = 0;
 

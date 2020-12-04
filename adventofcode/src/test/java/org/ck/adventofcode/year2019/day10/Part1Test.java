@@ -1,13 +1,13 @@
-package org.ck.adventofcode.year2020.day04;
+package org.ck.adventofcode.year2019.day10;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class Part2Test extends BaseTest {
+public class Part1Test extends BaseTest {
   @ParameterizedTest
-  @ValueSource(strings = {"02a", "02b", "02", "02-charlie"})
+  @ValueSource(strings = {"01a", "01b", "01c", "01d", "01e", "01"})
   public void test(String name) throws Exception {
-    runFileAsStdIn(Part2.class, name);
+    runFileAsStdIn(Part1.class, name);
   }
 }

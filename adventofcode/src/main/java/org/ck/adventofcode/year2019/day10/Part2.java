@@ -1,6 +1,5 @@
 package org.ck.adventofcode.year2019.day10;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.ck.codeChallengeLib.annotation.Solution;
 
 import java.util.*;

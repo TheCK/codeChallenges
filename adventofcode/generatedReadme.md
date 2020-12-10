@@ -110,7 +110,7 @@
 [20191301tests]: src/test/java/org/ck/adventofcode/year2019/day13/Part1Test.java
 [20191302tests]: src/test/java/org/ck/adventofcode/year2019/day13/Part2Test.java
 
-# 2020 (18/18)
+# 2020 (20/20)
 
 |        # | Name                                            | Solution                             | Test                              |
 |---------:|-------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -132,6 +132,8 @@
 | 20200802 | [Day 8: Handheld Halting - Part 2][20200802]    | &#9989;[&#128190;][20200802solution] | &#9989;[&#128190;][20200802tests] |
 | 20200901 | [Day 9: Encoding Error][20200901]               | &#9989;[&#128190;][20200901solution] | &#9989;[&#128190;][20200901tests] |
 | 20200902 | [Day 9: Encoding Error - Part 2][20200902]      | &#9989;[&#128190;][20200902solution] | &#9989;[&#128190;][20200902tests] |
+| 20201001 | [Day 10: Adapter Array][20201001]               | &#9989;[&#128190;][20201001solution] | &#9989;[&#128190;][20201001tests] |
+| 20201002 | [Day 10: Adapter Array - Part 2][20201002]      | &#9989;[&#128190;][20201002solution] | &#9989;[&#128190;][20201002tests] |
 
 [20200101]: https://adventofcode.com/2020/day/1
 [20200102]: https://adventofcode.com/2020/day/1#part2
@@ -151,6 +153,8 @@
 [20200802]: https://adventofcode.com/2020/day/8#part2
 [20200901]: https://adventofcode.com/2020/day/9
 [20200902]: https://adventofcode.com/2020/day/9#part2
+[20201001]: https://adventofcode.com/2020/day/10
+[20201002]: https://adventofcode.com/2020/day/10#part2
 
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part1.java
 [20200102solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part2.java
@@ -170,6 +174,8 @@
 [20200802solution]: src/main/java/org/ck/adventofcode/year2020/day08/Part2.java
 [20200901solution]: src/main/java/org/ck/adventofcode/year2020/day09/Part1.java
 [20200902solution]: src/main/java/org/ck/adventofcode/year2020/day09/Part2.java
+[20201001solution]: src/main/java/org/ck/adventofcode/year2020/day10/Part1.java
+[20201002solution]: src/main/java/org/ck/adventofcode/year2020/day10/Part2.java
 
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part1Test.java
 [20200102tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part2Test.java
@@ -189,4 +195,6 @@
 [20200802tests]: src/test/java/org/ck/adventofcode/year2020/day08/Part2Test.java
 [20200901tests]: src/test/java/org/ck/adventofcode/year2020/day09/Part1Test.java
 [20200902tests]: src/test/java/org/ck/adventofcode/year2020/day09/Part2Test.java
+[20201001tests]: src/test/java/org/ck/adventofcode/year2020/day10/Part1Test.java
+[20201002tests]: src/test/java/org/ck/adventofcode/year2020/day10/Part2Test.java
 

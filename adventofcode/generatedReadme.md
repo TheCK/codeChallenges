@@ -1,4 +1,4 @@
-# 2019 (26/26)
+# 2019 (28/28)
 
 |        # | Name                                                           | Solution                             | Test                              |
 |---------:|----------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -28,6 +28,8 @@
 | 20191202 | [Day 12: The N-Body Problem - Part 2][20191202]                | &#9989;[&#128190;][20191202solution] | &#9989;[&#128190;][20191202tests] |
 | 20191301 | [Day 13: Care Package][20191301]                               | &#9989;[&#128190;][20191301solution] | &#9989;[&#128190;][20191301tests] |
 | 20191302 | [Day 13: Care Package - Part 2][20191302]                      | &#9989;[&#128190;][20191302solution] | &#9989;[&#128190;][20191302tests] |
+| 20191401 | [Day 14: Space Stoichiometry][20191401]                        | &#9989;[&#128190;][20191401solution] | &#9989;[&#128190;][20191401tests] |
+| 20191402 | [Day 14: Space Stoichiometry - Part 2][20191402]               | &#9989;[&#128190;][20191402solution] | &#9989;[&#128190;][20191402tests] |
 
 [20190101]: https://adventofcode.com/2019/day/1
 [20190102]: https://adventofcode.com/2019/day/1#part2
@@ -55,6 +57,8 @@
 [20191202]: https://adventofcode.com/2019/day/12#part2
 [20191301]: https://adventofcode.com/2019/day/13
 [20191302]: https://adventofcode.com/2019/day/13#part2
+[20191401]: https://adventofcode.com/2019/day/14
+[20191402]: https://adventofcode.com/2019/day/14#part2
 
 [20190101solution]: src/main/java/org/ck/adventofcode/year2019/day01/Part1.java
 [20190102solution]: src/main/java/org/ck/adventofcode/year2019/day01/Part2.java
@@ -82,6 +86,8 @@
 [20191202solution]: src/main/java/org/ck/adventofcode/year2019/day12/Part2.java
 [20191301solution]: src/main/java/org/ck/adventofcode/year2019/day13/Part1.java
 [20191302solution]: src/main/java/org/ck/adventofcode/year2019/day13/Part2.java
+[20191401solution]: src/main/java/org/ck/adventofcode/year2019/day14/Part1.java
+[20191402solution]: src/main/java/org/ck/adventofcode/year2019/day14/Part2.java
 
 [20190101tests]: src/test/java/org/ck/adventofcode/year2019/day01/Part1Test.java
 [20190102tests]: src/test/java/org/ck/adventofcode/year2019/day01/Part2Test.java
@@ -109,6 +115,8 @@
 [20191202tests]: src/test/java/org/ck/adventofcode/year2019/day12/Part2Test.java
 [20191301tests]: src/test/java/org/ck/adventofcode/year2019/day13/Part1Test.java
 [20191302tests]: src/test/java/org/ck/adventofcode/year2019/day13/Part2Test.java
+[20191401tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part1Test.java
+[20191402tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part2Test.java
 
 # 2020 (22/22)
 

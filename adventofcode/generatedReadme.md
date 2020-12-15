@@ -118,38 +118,40 @@
 [20191401tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part1Test.java
 [20191402tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part2Test.java
 
-# 2020 (28/28)
+# 2020 (30/30)
 
-|        # | Name                                            | Solution                             | Test                              |
-|---------:|-------------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 20200101 | [Day 1: Report Repair][20200101]                | &#9989;[&#128190;][20200101solution] | &#9989;[&#128190;][20200101tests] |
-| 20200102 | [Day 1: Report Repair - Part 2][20200102]       | &#9989;[&#128190;][20200102solution] | &#9989;[&#128190;][20200102tests] |
-| 20200201 | [Day 2: Password Philosophy][20200201]          | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
-| 20200202 | [Day 2: Password Philosophy - Part 2][20200202] | &#9989;[&#128190;][20200202solution] | &#9989;[&#128190;][20200202tests] |
-| 20200301 | [Day 3: Toboggan Trajectory][20200301]          | &#9989;[&#128190;][20200301solution] | &#9989;[&#128190;][20200301tests] |
-| 20200302 | [Day 3: Toboggan Trajectory - Part 2][20200302] | &#9989;[&#128190;][20200302solution] | &#9989;[&#128190;][20200302tests] |
-| 20200401 | [Day 4: Passport Processing][20200401]          | &#9989;[&#128190;][20200401solution] | &#9989;[&#128190;][20200401tests] |
-| 20200402 | [Day 4: Passport Processing - Part 2][20200402] | &#9989;[&#128190;][20200402solution] | &#9989;[&#128190;][20200402tests] |
-| 20200501 | [Day 5: Binary Boarding][20200501]              | &#9989;[&#128190;][20200501solution] | &#9989;[&#128190;][20200501tests] |
-| 20200502 | [Day 5: Binary Boarding - Part 2][20200502]     | &#9989;[&#128190;][20200502solution] | &#9989;[&#128190;][20200502tests] |
-| 20200601 | [Day 6: Custom Customs][20200601]               | &#9989;[&#128190;][20200601solution] | &#9989;[&#128190;][20200601tests] |
-| 20200602 | [Day 6: Custom Customs - Part 2][20200602]      | &#9989;[&#128190;][20200602solution] | &#9989;[&#128190;][20200602tests] |
-| 20200701 | [Day 7: Handy Haversacks][20200701]             | &#9989;[&#128190;][20200701solution] | &#9989;[&#128190;][20200701tests] |
-| 20200702 | [Day 7: Handy Haversacks - Part 2][20200702]    | &#9989;[&#128190;][20200702solution] | &#9989;[&#128190;][20200702tests] |
-| 20200801 | [Day 8: Handheld Halting][20200801]             | &#9989;[&#128190;][20200801solution] | &#9989;[&#128190;][20200801tests] |
-| 20200802 | [Day 8: Handheld Halting - Part 2][20200802]    | &#9989;[&#128190;][20200802solution] | &#9989;[&#128190;][20200802tests] |
-| 20200901 | [Day 9: Encoding Error][20200901]               | &#9989;[&#128190;][20200901solution] | &#9989;[&#128190;][20200901tests] |
-| 20200902 | [Day 9: Encoding Error - Part 2][20200902]      | &#9989;[&#128190;][20200902solution] | &#9989;[&#128190;][20200902tests] |
-| 20201001 | [Day 10: Adapter Array][20201001]               | &#9989;[&#128190;][20201001solution] | &#9989;[&#128190;][20201001tests] |
-| 20201002 | [Day 10: Adapter Array - Part 2][20201002]      | &#9989;[&#128190;][20201002solution] | &#9989;[&#128190;][20201002tests] |
-| 20201101 | [Day 11: Seating System][20201101]              | &#9989;[&#128190;][20201101solution] | &#9989;[&#128190;][20201101tests] |
-| 20201102 | [Day 11: Seating System - Part 2][20201102]     | &#9989;[&#128190;][20201102solution] | &#9989;[&#128190;][20201102tests] |
-| 20201201 | [Day 12: Rain Risk][20201201]                   | &#9989;[&#128190;][20201201solution] | &#9989;[&#128190;][20201201tests] |
-| 20201202 | [Day 12: Rain Risk - Part 2][20201202]          | &#9989;[&#128190;][20201202solution] | &#9989;[&#128190;][20201202tests] |
-| 20201301 | [Day 13: Shuttle Search][20201301]              | &#9989;[&#128190;][20201301solution] | &#9989;[&#128190;][20201301tests] |
-| 20201302 | [Day 13: Shuttle Search - Part 2][20201302]     | &#9989;[&#128190;][20201302solution] | &#9989;[&#128190;][20201302tests] |
-| 20201401 | [Day 14: Docking Data][20201401]                | &#9989;[&#128190;][20201401solution] | &#9989;[&#128190;][20201401tests] |
-| 20201402 | [Day 14: Docking Data - Part 2][20201402]       | &#9989;[&#128190;][20201402solution] | &#9989;[&#128190;][20201402tests] |
+|        # | Name                                                 | Solution                             | Test                              |
+|---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 20200101 | [Day 1: Report Repair][20200101]                     | &#9989;[&#128190;][20200101solution] | &#9989;[&#128190;][20200101tests] |
+| 20200102 | [Day 1: Report Repair - Part 2][20200102]            | &#9989;[&#128190;][20200102solution] | &#9989;[&#128190;][20200102tests] |
+| 20200201 | [Day 2: Password Philosophy][20200201]               | &#9989;[&#128190;][20200201solution] | &#9989;[&#128190;][20200201tests] |
+| 20200202 | [Day 2: Password Philosophy - Part 2][20200202]      | &#9989;[&#128190;][20200202solution] | &#9989;[&#128190;][20200202tests] |
+| 20200301 | [Day 3: Toboggan Trajectory][20200301]               | &#9989;[&#128190;][20200301solution] | &#9989;[&#128190;][20200301tests] |
+| 20200302 | [Day 3: Toboggan Trajectory - Part 2][20200302]      | &#9989;[&#128190;][20200302solution] | &#9989;[&#128190;][20200302tests] |
+| 20200401 | [Day 4: Passport Processing][20200401]               | &#9989;[&#128190;][20200401solution] | &#9989;[&#128190;][20200401tests] |
+| 20200402 | [Day 4: Passport Processing - Part 2][20200402]      | &#9989;[&#128190;][20200402solution] | &#9989;[&#128190;][20200402tests] |
+| 20200501 | [Day 5: Binary Boarding][20200501]                   | &#9989;[&#128190;][20200501solution] | &#9989;[&#128190;][20200501tests] |
+| 20200502 | [Day 5: Binary Boarding - Part 2][20200502]          | &#9989;[&#128190;][20200502solution] | &#9989;[&#128190;][20200502tests] |
+| 20200601 | [Day 6: Custom Customs][20200601]                    | &#9989;[&#128190;][20200601solution] | &#9989;[&#128190;][20200601tests] |
+| 20200602 | [Day 6: Custom Customs - Part 2][20200602]           | &#9989;[&#128190;][20200602solution] | &#9989;[&#128190;][20200602tests] |
+| 20200701 | [Day 7: Handy Haversacks][20200701]                  | &#9989;[&#128190;][20200701solution] | &#9989;[&#128190;][20200701tests] |
+| 20200702 | [Day 7: Handy Haversacks - Part 2][20200702]         | &#9989;[&#128190;][20200702solution] | &#9989;[&#128190;][20200702tests] |
+| 20200801 | [Day 8: Handheld Halting][20200801]                  | &#9989;[&#128190;][20200801solution] | &#9989;[&#128190;][20200801tests] |
+| 20200802 | [Day 8: Handheld Halting - Part 2][20200802]         | &#9989;[&#128190;][20200802solution] | &#9989;[&#128190;][20200802tests] |
+| 20200901 | [Day 9: Encoding Error][20200901]                    | &#9989;[&#128190;][20200901solution] | &#9989;[&#128190;][20200901tests] |
+| 20200902 | [Day 9: Encoding Error - Part 2][20200902]           | &#9989;[&#128190;][20200902solution] | &#9989;[&#128190;][20200902tests] |
+| 20201001 | [Day 10: Adapter Array][20201001]                    | &#9989;[&#128190;][20201001solution] | &#9989;[&#128190;][20201001tests] |
+| 20201002 | [Day 10: Adapter Array - Part 2][20201002]           | &#9989;[&#128190;][20201002solution] | &#9989;[&#128190;][20201002tests] |
+| 20201101 | [Day 11: Seating System][20201101]                   | &#9989;[&#128190;][20201101solution] | &#9989;[&#128190;][20201101tests] |
+| 20201102 | [Day 11: Seating System - Part 2][20201102]          | &#9989;[&#128190;][20201102solution] | &#9989;[&#128190;][20201102tests] |
+| 20201201 | [Day 12: Rain Risk][20201201]                        | &#9989;[&#128190;][20201201solution] | &#9989;[&#128190;][20201201tests] |
+| 20201202 | [Day 12: Rain Risk - Part 2][20201202]               | &#9989;[&#128190;][20201202solution] | &#9989;[&#128190;][20201202tests] |
+| 20201301 | [Day 13: Shuttle Search][20201301]                   | &#9989;[&#128190;][20201301solution] | &#9989;[&#128190;][20201301tests] |
+| 20201302 | [Day 13: Shuttle Search - Part 2][20201302]          | &#9989;[&#128190;][20201302solution] | &#9989;[&#128190;][20201302tests] |
+| 20201401 | [Day 14: Docking Data][20201401]                     | &#9989;[&#128190;][20201401solution] | &#9989;[&#128190;][20201401tests] |
+| 20201402 | [Day 14: Docking Data - Part 2][20201402]            | &#9989;[&#128190;][20201402solution] | &#9989;[&#128190;][20201402tests] |
+| 20201501 | [Day 15: Rambunctious Recitation][20201501]          | &#9989;[&#128190;][20201501solution] | &#9989;[&#128190;][20201501tests] |
+| 20201502 | [Day 15: Rambunctious Recitation - Part 2][20201502] | &#9989;[&#128190;][20201502solution] | &#9989;[&#128190;][20201502tests] |
 
 [20200101]: https://adventofcode.com/2020/day/1
 [20200102]: https://adventofcode.com/2020/day/1#part2
@@ -179,6 +181,8 @@
 [20201302]: https://adventofcode.com/2020/day/13#part2
 [20201401]: https://adventofcode.com/2020/day/14
 [20201402]: https://adventofcode.com/2020/day/14#part2
+[20201501]: https://adventofcode.com/2020/day/15
+[20201502]: https://adventofcode.com/2020/day/15#part2
 
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part1.java
 [20200102solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part2.java
@@ -208,6 +212,8 @@
 [20201302solution]: src/main/java/org/ck/adventofcode/year2020/day13/Part2.java
 [20201401solution]: src/main/java/org/ck/adventofcode/year2020/day14/Part1.java
 [20201402solution]: src/main/java/org/ck/adventofcode/year2020/day14/Part2.java
+[20201501solution]: src/main/java/org/ck/adventofcode/year2020/day15/Part1.java
+[20201502solution]: src/main/java/org/ck/adventofcode/year2020/day15/Part2.java
 
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part1Test.java
 [20200102tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part2Test.java
@@ -237,4 +243,6 @@
 [20201302tests]: src/test/java/org/ck/adventofcode/year2020/day13/Part2Test.java
 [20201401tests]: src/test/java/org/ck/adventofcode/year2020/day14/Part1Test.java
 [20201402tests]: src/test/java/org/ck/adventofcode/year2020/day14/Part2Test.java
+[20201501tests]: src/test/java/org/ck/adventofcode/year2020/day15/Part1Test.java
+[20201502tests]: src/test/java/org/ck/adventofcode/year2020/day15/Part2Test.java
 

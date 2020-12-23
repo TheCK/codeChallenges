@@ -118,7 +118,7 @@
 [20191401tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part1Test.java
 [20191402tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part2Test.java
 
-# 2020 (37/37)
+# 2020 (38/38)
 
 |        # | Name                                                 | Solution                             | Test                              |
 |---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -159,6 +159,7 @@
 | 20201801 | [Day 18: Operation Order][20201801]                  | &#9989;[&#128190;][20201801solution] | &#9989;[&#128190;][20201801tests] |
 | 20201802 | [Day 18: Operation Order - Part 2][20201802]         | &#9989;[&#128190;][20201802solution] | &#9989;[&#128190;][20201802tests] |
 | 20201901 | [Day 19: Monster Messages][20201901]                 | &#9989;[&#128190;][20201901solution] | &#9989;[&#128190;][20201901tests] |
+| 20201902 | [Day 19: Monster Messages - Part 2][20201902]        | &#9989;[&#128190;][20201902solution] | &#9989;[&#128190;][20201902tests] |
 
 [20200101]: https://adventofcode.com/2020/day/1
 [20200102]: https://adventofcode.com/2020/day/1#part2
@@ -197,6 +198,7 @@
 [20201801]: https://adventofcode.com/2020/day/18
 [20201802]: https://adventofcode.com/2020/day/18
 [20201901]: https://adventofcode.com/2020/day/19
+[20201902]: https://adventofcode.com/2020/day/19
 
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part1.java
 [20200102solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part2.java
@@ -235,6 +237,7 @@
 [20201801solution]: src/main/java/org/ck/adventofcode/year2020/day18/Part1.java
 [20201802solution]: src/main/java/org/ck/adventofcode/year2020/day18/Part2.java
 [20201901solution]: src/main/java/org/ck/adventofcode/year2020/day19/Part1.java
+[20201902solution]: src/main/java/org/ck/adventofcode/year2020/day19/Part2.java
 
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part1Test.java
 [20200102tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part2Test.java
@@ -273,4 +276,5 @@
 [20201801tests]: src/test/java/org/ck/adventofcode/year2020/day18/Part1Test.java
 [20201802tests]: src/test/java/org/ck/adventofcode/year2020/day18/Part2Test.java
 [20201901tests]: src/test/java/org/ck/adventofcode/year2020/day19/Part1Test.java
+[20201902tests]: src/test/java/org/ck/adventofcode/year2020/day19/Part2Test.java
 

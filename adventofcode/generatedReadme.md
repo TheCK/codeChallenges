@@ -118,7 +118,7 @@
 [20191401tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part1Test.java
 [20191402tests]: src/test/java/org/ck/adventofcode/year2019/day14/Part2Test.java
 
-# 2020 (40/40)
+# 2020 (42/42)
 
 |        # | Name                                                 | Solution                             | Test                              |
 |---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -162,6 +162,8 @@
 | 20201902 | [Day 19: Monster Messages - Part 2][20201902]        | &#9989;[&#128190;][20201902solution] | &#9989;[&#128190;][20201902tests] |
 | 20202101 | [Day 21: Allergen Assessment][20202101]              | &#9989;[&#128190;][20202101solution] | &#9989;[&#128190;][20202101tests] |
 | 20202102 | [Day 21: Allergen Assessment - Part 2][20202102]     | &#9989;[&#128190;][20202102solution] | &#9989;[&#128190;][20202102tests] |
+| 20202201 | [Day 22: Crab Combat][20202201]                      | &#9989;[&#128190;][20202201solution] | &#9989;[&#128190;][20202201tests] |
+| 20202202 | [Day 22: Crab Combat - Part 2][20202202]             | &#9989;[&#128190;][20202202solution] | &#9989;[&#128190;][20202202tests] |
 
 [20200101]: https://adventofcode.com/2020/day/1
 [20200102]: https://adventofcode.com/2020/day/1#part2
@@ -203,6 +205,8 @@
 [20201902]: https://adventofcode.com/2020/day/19
 [20202101]: https://adventofcode.com/2020/day/21
 [20202102]: https://adventofcode.com/2020/day/21
+[20202201]: https://adventofcode.com/2020/day/22
+[20202202]: https://adventofcode.com/2020/day/22
 
 [20200101solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part1.java
 [20200102solution]: src/main/java/org/ck/adventofcode/year2020/day01/Part2.java
@@ -244,6 +248,8 @@
 [20201902solution]: src/main/java/org/ck/adventofcode/year2020/day19/Part2.java
 [20202101solution]: src/main/java/org/ck/adventofcode/year2020/day21/Part1.java
 [20202102solution]: src/main/java/org/ck/adventofcode/year2020/day21/Part2.java
+[20202201solution]: src/main/java/org/ck/adventofcode/year2020/day22/Part1.java
+[20202202solution]: src/main/java/org/ck/adventofcode/year2020/day22/Part2.java
 
 [20200101tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part1Test.java
 [20200102tests]: src/test/java/org/ck/adventofcode/year2020/day01/Part2Test.java
@@ -285,4 +291,6 @@
 [20201902tests]: src/test/java/org/ck/adventofcode/year2020/day19/Part2Test.java
 [20202101tests]: src/test/java/org/ck/adventofcode/year2020/day21/Part1Test.java
 [20202102tests]: src/test/java/org/ck/adventofcode/year2020/day21/Part2Test.java
+[20202201tests]: src/test/java/org/ck/adventofcode/year2020/day22/Part1Test.java
+[20202202tests]: src/test/java/org/ck/adventofcode/year2020/day22/Part2Test.java
 

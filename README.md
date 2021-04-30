@@ -10,6 +10,8 @@
 
 ## [Codility](codility/generatedReadme.md)
 
+## [Google's Coding Competitions](codingcompetitions/generatedReadme.md)
+
 ## [HackerRank](hackerRank/generatedReadme.md)
 
 ## [Project Euler](projectEuler/generatedReadme.md)

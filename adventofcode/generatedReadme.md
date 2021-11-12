@@ -1,3 +1,67 @@
+# 2015 (14/14)
+
+|        # | Name                                                               | Solution                             | Test                              |
+|---------:|--------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 20150101 | [Day 1: Not Quite Lisp][20150101]                                  | &#9989;[&#128190;][20150101solution] | &#9989;[&#128190;][20150101tests] |
+| 20150102 | [Day 1: Not Quite Lisp - Part 2][20150102]                         | &#9989;[&#128190;][20150102solution] | &#9989;[&#128190;][20150102tests] |
+| 20150201 | [Day 2: I Was Told There Would Be No Math][20150201]               | &#9989;[&#128190;][20150201solution] | &#9989;[&#128190;][20150201tests] |
+| 20150202 | [Day 2: I Was Told There Would Be No Math - Part 2][20150202]      | &#9989;[&#128190;][20150202solution] | &#9989;[&#128190;][20150202tests] |
+| 20150301 | [Day 3: Perfectly Spherical Houses in a Vacuum][20150301]          | &#9989;[&#128190;][20150301solution] | &#9989;[&#128190;][20150301tests] |
+| 20150302 | [Day 3: Perfectly Spherical Houses in a Vacuum - Part 2][20150302] | &#9989;[&#128190;][20150302solution] | &#9989;[&#128190;][20150302tests] |
+| 20150401 | [Day 4: The Ideal Stocking Stuffer][20150401]                      | &#9989;[&#128190;][20150401solution] | &#9989;[&#128190;][20150401tests] |
+| 20150402 | [Day 4: The Ideal Stocking Stuffer - Part 2][20150402]             | &#9989;[&#128190;][20150402solution] | &#9989;[&#128190;][20150402tests] |
+| 20150501 | [Day 5: Doesn't He Have Intern-Elves For This?][20150501]          | &#9989;[&#128190;][20150501solution] | &#9989;[&#128190;][20150501tests] |
+| 20150502 | [Day 5: Doesn't He Have Intern-Elves For This? - Part 2][20150502] | &#9989;[&#128190;][20150502solution] | &#9989;[&#128190;][20150502tests] |
+| 20150601 | [Day 6: Probably a Fire Hazard][20150601]                          | &#9989;[&#128190;][20150601solution] | &#9989;[&#128190;][20150601tests] |
+| 20150602 | [Day 6: Probably a Fire Hazard - Part 2][20150602]                 | &#9989;[&#128190;][20150602solution] | &#9989;[&#128190;][20150602tests] |
+| 20150701 | [Day 7: Some Assembly Required][20150701]                          | &#9989;[&#128190;][20150701solution] | &#9989;[&#128190;][20150701tests] |
+| 20150702 | [Day 7: Some Assembly Required - Part 2][20150702]                 | &#9989;[&#128190;][20150702solution] | &#9989;[&#128190;][20150702tests] |
+
+[20150101]: https://adventofcode.com/2015/day/1
+[20150102]: https://adventofcode.com/2015/day/1#part2
+[20150201]: https://adventofcode.com/2015/day/2
+[20150202]: https://adventofcode.com/2015/day/2#part2
+[20150301]: https://adventofcode.com/2015/day/3
+[20150302]: https://adventofcode.com/2015/day/3#part2
+[20150401]: https://adventofcode.com/2015/day/4
+[20150402]: https://adventofcode.com/2015/day/4#part2
+[20150501]: https://adventofcode.com/2015/day/5
+[20150502]: https://adventofcode.com/2015/day/5#part2
+[20150601]: https://adventofcode.com/2015/day/6
+[20150602]: https://adventofcode.com/2015/day/6#part2
+[20150701]: https://adventofcode.com/2015/day/7
+[20150702]: https://adventofcode.com/2015/day/7#part2
+
+[20150101solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part1.java
+[20150102solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part2.java
+[20150201solution]: src/main/java/org/ck/adventofcode/year2015/day02/Part1.java
+[20150202solution]: src/main/java/org/ck/adventofcode/year2015/day02/Part2.java
+[20150301solution]: src/main/java/org/ck/adventofcode/year2015/day03/Part1.java
+[20150302solution]: src/main/java/org/ck/adventofcode/year2015/day03/Part2.java
+[20150401solution]: src/main/java/org/ck/adventofcode/year2015/day04/Part1.java
+[20150402solution]: src/main/java/org/ck/adventofcode/year2015/day04/Part2.java
+[20150501solution]: src/main/java/org/ck/adventofcode/year2015/day05/Part1.java
+[20150502solution]: src/main/java/org/ck/adventofcode/year2015/day05/Part2.java
+[20150601solution]: src/main/java/org/ck/adventofcode/year2015/day06/Part1.java
+[20150602solution]: src/main/java/org/ck/adventofcode/year2015/day06/Part2.java
+[20150701solution]: src/main/java/org/ck/adventofcode/year2015/day07/Part1.java
+[20150702solution]: src/main/java/org/ck/adventofcode/year2015/day07/Part2.java
+
+[20150101tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part1Test.java
+[20150102tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part2Test.java
+[20150201tests]: src/test/java/org/ck/adventofcode/year2015/day02/Part1Test.java
+[20150202tests]: src/test/java/org/ck/adventofcode/year2015/day02/Part2Test.java
+[20150301tests]: src/test/java/org/ck/adventofcode/year2015/day03/Part1Test.java
+[20150302tests]: src/test/java/org/ck/adventofcode/year2015/day03/Part2Test.java
+[20150401tests]: src/test/java/org/ck/adventofcode/year2015/day04/Part1Test.java
+[20150402tests]: src/test/java/org/ck/adventofcode/year2015/day04/Part2Test.java
+[20150501tests]: src/test/java/org/ck/adventofcode/year2015/day05/Part1Test.java
+[20150502tests]: src/test/java/org/ck/adventofcode/year2015/day05/Part2Test.java
+[20150601tests]: src/test/java/org/ck/adventofcode/year2015/day06/Part1Test.java
+[20150602tests]: src/test/java/org/ck/adventofcode/year2015/day06/Part2Test.java
+[20150701tests]: src/test/java/org/ck/adventofcode/year2015/day07/Part1Test.java
+[20150702tests]: src/test/java/org/ck/adventofcode/year2015/day07/Part2Test.java
+
 # 2019 (28/28)
 
 |        # | Name                                                           | Solution                             | Test                              |

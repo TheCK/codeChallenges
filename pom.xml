@@ -24,6 +24,7 @@
         <module>codewars</module>
         <module>adventofcode</module>
         <module>codingcompetitions</module>
+        <module>tis100</module>
     </modules>
 
     <build>

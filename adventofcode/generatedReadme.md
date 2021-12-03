@@ -1,4 +1,4 @@
-# 2015 (24/24)
+# 2015 (28/28)
 
 |        # | Name                                                               | Solution                             | Test                              |
 |---------:|--------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -26,6 +26,10 @@
 | 20151102 | [Day 11: Corporate Policy - Part 2][20151102]                      | &#9989;[&#128190;][20151102solution] | &#9989;[&#128190;][20151102tests] |
 | 20151601 | [Day 16: Aunt Sue][20151601]                                       | &#9989;[&#128190;][20151601solution] | &#9989;[&#128190;][20151601tests] |
 | 20151602 | [Day 16: Aunt Sue - Part 2][20151602]                              | &#9989;[&#128190;][20151602solution] | &#9989;[&#128190;][20151602tests] |
+| 20151701 | [Day 17: No Such Thing as Too Much][20151701]                      | &#9989;[&#128190;][20151701solution] | &#9989;[&#128190;][20151701tests] |
+| 20151702 | [Day 17: No Such Thing as Too Much - Part 2][20151702]             | &#9989;[&#128190;][20151702solution] | &#9989;[&#128190;][20151702tests] |
+| 20151801 | [Day 18: Like a GIF For Your Yard][20151801]                       | &#9989;[&#128190;][20151801solution] | &#9989;[&#128190;][20151801tests] |
+| 20151802 | [Day 18: Like a GIF For Your Yard - Part 2][20151802]              | &#9989;[&#128190;][20151802solution] | &#9989;[&#128190;][20151802tests] |
 
 [20150101]: https://adventofcode.com/2015/day/1
 [20150102]: https://adventofcode.com/2015/day/1#part2
@@ -51,6 +55,10 @@
 [20151102]: https://adventofcode.com/2015/day/11#part2
 [20151601]: https://adventofcode.com/2015/day/16
 [20151602]: https://adventofcode.com/2015/day/16#part2
+[20151701]: https://adventofcode.com/2015/day/17
+[20151702]: https://adventofcode.com/2015/day/17#part2
+[20151801]: https://adventofcode.com/2015/day/18
+[20151802]: https://adventofcode.com/2015/day/18#part2
 
 [20150101solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part1.java
 [20150102solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part2.java
@@ -76,6 +84,10 @@
 [20151102solution]: src/main/java/org/ck/adventofcode/year2015/day11/Part2.java
 [20151601solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part1.java
 [20151602solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part2.java
+[20151701solution]: src/main/java/org/ck/adventofcode/year2015/day17/Part1.java
+[20151702solution]: src/main/java/org/ck/adventofcode/year2015/day17/Part2.java
+[20151801solution]: src/main/java/org/ck/adventofcode/year2015/day18/Part1.java
+[20151802solution]: src/main/java/org/ck/adventofcode/year2015/day18/Part2.java
 
 [20150101tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part1Test.java
 [20150102tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part2Test.java
@@ -101,6 +113,10 @@
 [20151102tests]: src/test/java/org/ck/adventofcode/year2015/day11/Part2Test.java
 [20151601tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part1Test.java
 [20151602tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part2Test.java
+[20151701tests]: src/test/java/org/ck/adventofcode/year2015/day17/Part1Test.java
+[20151702tests]: src/test/java/org/ck/adventofcode/year2015/day17/Part2Test.java
+[20151801tests]: src/test/java/org/ck/adventofcode/year2015/day18/Part1Test.java
+[20151802tests]: src/test/java/org/ck/adventofcode/year2015/day18/Part2Test.java
 
 # 2019 (28/28)
 

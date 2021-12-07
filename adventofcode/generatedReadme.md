@@ -450,22 +450,24 @@
 [20202402tests]: src/test/java/org/ck/adventofcode/year2020/day24/Part2Test.java
 [20202501tests]: src/test/java/org/ck/adventofcode/year2020/day25/Part1Test.java
 
-# 2021 (12/12)
+# 2021 (14/14)
 
-|        # | Name                                             | Solution                             | Test                              |
-|---------:|--------------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 20210101 | [Day 1: Sonar Sweep][20210101]                   | &#9989;[&#128190;][20210101solution] | &#9989;[&#128190;][20210101tests] |
-| 20210102 | [Day 1: Sonar Sweep - Part 2][20210102]          | &#9989;[&#128190;][20210102solution] | &#9989;[&#128190;][20210102tests] |
-| 20210201 | [Day 2: Dive!][20210201]                         | &#9989;[&#128190;][20210201solution] | &#9989;[&#128190;][20210201tests] |
-| 20210202 | [Day 2: Dive! - Part 2][20210202]                | &#9989;[&#128190;][20210202solution] | &#9989;[&#128190;][20210202tests] |
-| 20210301 | [Day 3: Binary Diagnostic][20210301]             | &#9989;[&#128190;][20210301solution] | &#9989;[&#128190;][20210301tests] |
-| 20210302 | [Day 3: Binary Diagnostic - Part 2][20210302]    | &#9989;[&#128190;][20210302solution] | &#9989;[&#128190;][20210302tests] |
-| 20210401 | [Day 4: Giant Squid][20210401]                   | &#9989;[&#128190;][20210401solution] | &#9989;[&#128190;][20210401tests] |
-| 20210402 | [Day 4: Giant Squid - Part 2][20210402]          | &#9989;[&#128190;][20210402solution] | &#9989;[&#128190;][20210402tests] |
-| 20210501 | [Day 5: Hydrothermal Venture][20210501]          | &#9989;[&#128190;][20210501solution] | &#9989;[&#128190;][20210501tests] |
-| 20210502 | [Day 5: Hydrothermal Venture - Part 2][20210502] | &#9989;[&#128190;][20210502solution] | &#9989;[&#128190;][20210502tests] |
-| 20210601 | [Day 6: Lanternfish][20210601]                   | &#9989;[&#128190;][20210601solution] | &#9989;[&#128190;][20210601tests] |
-| 20210602 | [Day 6: Lanternfish - Part 2][20210602]          | &#9989;[&#128190;][20210602solution] | &#9989;[&#128190;][20210602tests] |
+|        # | Name                                                | Solution                             | Test                              |
+|---------:|-----------------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 20210101 | [Day 1: Sonar Sweep][20210101]                      | &#9989;[&#128190;][20210101solution] | &#9989;[&#128190;][20210101tests] |
+| 20210102 | [Day 1: Sonar Sweep - Part 2][20210102]             | &#9989;[&#128190;][20210102solution] | &#9989;[&#128190;][20210102tests] |
+| 20210201 | [Day 2: Dive!][20210201]                            | &#9989;[&#128190;][20210201solution] | &#9989;[&#128190;][20210201tests] |
+| 20210202 | [Day 2: Dive! - Part 2][20210202]                   | &#9989;[&#128190;][20210202solution] | &#9989;[&#128190;][20210202tests] |
+| 20210301 | [Day 3: Binary Diagnostic][20210301]                | &#9989;[&#128190;][20210301solution] | &#9989;[&#128190;][20210301tests] |
+| 20210302 | [Day 3: Binary Diagnostic - Part 2][20210302]       | &#9989;[&#128190;][20210302solution] | &#9989;[&#128190;][20210302tests] |
+| 20210401 | [Day 4: Giant Squid][20210401]                      | &#9989;[&#128190;][20210401solution] | &#9989;[&#128190;][20210401tests] |
+| 20210402 | [Day 4: Giant Squid - Part 2][20210402]             | &#9989;[&#128190;][20210402solution] | &#9989;[&#128190;][20210402tests] |
+| 20210501 | [Day 5: Hydrothermal Venture][20210501]             | &#9989;[&#128190;][20210501solution] | &#9989;[&#128190;][20210501tests] |
+| 20210502 | [Day 5: Hydrothermal Venture - Part 2][20210502]    | &#9989;[&#128190;][20210502solution] | &#9989;[&#128190;][20210502tests] |
+| 20210601 | [Day 6: Lanternfish][20210601]                      | &#9989;[&#128190;][20210601solution] | &#9989;[&#128190;][20210601tests] |
+| 20210602 | [Day 6: Lanternfish - Part 2][20210602]             | &#9989;[&#128190;][20210602solution] | &#9989;[&#128190;][20210602tests] |
+| 20210701 | [Day 7: The Treachery of Whales][20210701]          | &#9989;[&#128190;][20210701solution] | &#9989;[&#128190;][20210701tests] |
+| 20210702 | [Day 7: The Treachery of Whales - Part 2][20210702] | &#9989;[&#128190;][20210702solution] | &#9989;[&#128190;][20210702tests] |
 
 [20210101]: https://adventofcode.com/2021/day/1
 [20210102]: https://adventofcode.com/2021/day/1#part2
@@ -479,6 +481,8 @@
 [20210502]: https://adventofcode.com/2021/day/5#part2
 [20210601]: https://adventofcode.com/2021/day/6
 [20210602]: https://adventofcode.com/2021/day/6#part2
+[20210701]: https://adventofcode.com/2021/day/7
+[20210702]: https://adventofcode.com/2021/day/7#part2
 
 [20210101solution]: src/main/java/org/ck/adventofcode/year2021/day01/Part1.java
 [20210102solution]: src/main/java/org/ck/adventofcode/year2021/day01/Part2.java
@@ -492,6 +496,8 @@
 [20210502solution]: src/main/java/org/ck/adventofcode/year2021/day05/Part2.java
 [20210601solution]: src/main/java/org/ck/adventofcode/year2021/day06/Part1.java
 [20210602solution]: src/main/java/org/ck/adventofcode/year2021/day06/Part2.java
+[20210701solution]: src/main/java/org/ck/adventofcode/year2021/day07/Part1.java
+[20210702solution]: src/main/java/org/ck/adventofcode/year2021/day07/Part2.java
 
 [20210101tests]: src/test/java/org/ck/adventofcode/year2021/day01/Part1Test.java
 [20210102tests]: src/test/java/org/ck/adventofcode/year2021/day01/Part2Test.java
@@ -505,4 +511,6 @@
 [20210502tests]: src/test/java/org/ck/adventofcode/year2021/day05/Part2Test.java
 [20210601tests]: src/test/java/org/ck/adventofcode/year2021/day06/Part1Test.java
 [20210602tests]: src/test/java/org/ck/adventofcode/year2021/day06/Part2Test.java
+[20210701tests]: src/test/java/org/ck/adventofcode/year2021/day07/Part1Test.java
+[20210702tests]: src/test/java/org/ck/adventofcode/year2021/day07/Part2Test.java
 

@@ -450,7 +450,7 @@
 [20202402tests]: src/test/java/org/ck/adventofcode/year2020/day24/Part2Test.java
 [20202501tests]: src/test/java/org/ck/adventofcode/year2020/day25/Part1Test.java
 
-# 2021 (14/14)
+# 2021 (16/16)
 
 |        # | Name                                                | Solution                             | Test                              |
 |---------:|-----------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -468,6 +468,8 @@
 | 20210602 | [Day 6: Lanternfish - Part 2][20210602]             | &#9989;[&#128190;][20210602solution] | &#9989;[&#128190;][20210602tests] |
 | 20210701 | [Day 7: The Treachery of Whales][20210701]          | &#9989;[&#128190;][20210701solution] | &#9989;[&#128190;][20210701tests] |
 | 20210702 | [Day 7: The Treachery of Whales - Part 2][20210702] | &#9989;[&#128190;][20210702solution] | &#9989;[&#128190;][20210702tests] |
+| 20210801 | [Day 8: Seven Segment Search][20210801]             | &#9989;[&#128190;][20210801solution] | &#9989;[&#128190;][20210801tests] |
+| 20210802 | [Day 8: Seven Segment Search - Part 2][20210802]    | &#9989;[&#128190;][20210802solution] | &#9989;[&#128190;][20210802tests] |
 
 [20210101]: https://adventofcode.com/2021/day/1
 [20210102]: https://adventofcode.com/2021/day/1#part2
@@ -483,6 +485,8 @@
 [20210602]: https://adventofcode.com/2021/day/6#part2
 [20210701]: https://adventofcode.com/2021/day/7
 [20210702]: https://adventofcode.com/2021/day/7#part2
+[20210801]: https://adventofcode.com/2021/day/8
+[20210802]: https://adventofcode.com/2021/day/8#part2
 
 [20210101solution]: src/main/java/org/ck/adventofcode/year2021/day01/Part1.java
 [20210102solution]: src/main/java/org/ck/adventofcode/year2021/day01/Part2.java
@@ -498,6 +502,8 @@
 [20210602solution]: src/main/java/org/ck/adventofcode/year2021/day06/Part2.java
 [20210701solution]: src/main/java/org/ck/adventofcode/year2021/day07/Part1.java
 [20210702solution]: src/main/java/org/ck/adventofcode/year2021/day07/Part2.java
+[20210801solution]: src/main/java/org/ck/adventofcode/year2021/day08/Part1.java
+[20210802solution]: src/main/java/org/ck/adventofcode/year2021/day08/Part2.java
 
 [20210101tests]: src/test/java/org/ck/adventofcode/year2021/day01/Part1Test.java
 [20210102tests]: src/test/java/org/ck/adventofcode/year2021/day01/Part2Test.java
@@ -513,4 +519,6 @@
 [20210602tests]: src/test/java/org/ck/adventofcode/year2021/day06/Part2Test.java
 [20210701tests]: src/test/java/org/ck/adventofcode/year2021/day07/Part1Test.java
 [20210702tests]: src/test/java/org/ck/adventofcode/year2021/day07/Part2Test.java
+[20210801tests]: src/test/java/org/ck/adventofcode/year2021/day08/Part1Test.java
+[20210802tests]: src/test/java/org/ck/adventofcode/year2021/day08/Part2Test.java
 

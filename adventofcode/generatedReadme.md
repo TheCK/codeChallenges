@@ -1,4 +1,4 @@
-# 2015 (30/30)
+# 2015 (33/33)
 
 |        # | Name                                                               | Solution                             | Test                              |
 |---------:|--------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -24,6 +24,7 @@
 | 20151002 | [Day 10: Elves Look, Elves Say - Part 2][20151002]                 | &#9989;[&#128190;][20151002solution] | &#9989;[&#128190;][20151002tests] |
 | 20151101 | [Day 11: Corporate Policy][20151101]                               | &#9989;[&#128190;][20151101solution] | &#9989;[&#128190;][20151101tests] |
 | 20151102 | [Day 11: Corporate Policy - Part 2][20151102]                      | &#9989;[&#128190;][20151102solution] | &#9989;[&#128190;][20151102tests] |
+| 20151201 | [Day 12: JSAbacusFramework.io][20151201]                           | &#9989;[&#128190;][20151201solution] | &#9989;[&#128190;][20151201tests] |
 | 20151601 | [Day 16: Aunt Sue][20151601]                                       | &#9989;[&#128190;][20151601solution] | &#9989;[&#128190;][20151601tests] |
 | 20151602 | [Day 16: Aunt Sue - Part 2][20151602]                              | &#9989;[&#128190;][20151602solution] | &#9989;[&#128190;][20151602tests] |
 | 20151701 | [Day 17: No Such Thing as Too Much][20151701]                      | &#9989;[&#128190;][20151701solution] | &#9989;[&#128190;][20151701tests] |
@@ -32,6 +33,8 @@
 | 20151802 | [Day 18: Like a GIF For Your Yard - Part 2][20151802]              | &#9989;[&#128190;][20151802solution] | &#9989;[&#128190;][20151802tests] |
 | 20152001 | [Day 20: Infinite Elves and Infinite Houses][20152001]             | &#9989;[&#128190;][20152001solution] | &#9989;[&#128190;][20152001tests] |
 | 20152002 | [Day 20: Infinite Elves and Infinite Houses - Part 2][20152002]    | &#9989;[&#128190;][20152002solution] | &#9989;[&#128190;][20152002tests] |
+| 20152101 | [Day 21: RPG Simulator 20XX][20152101]                             | &#9989;[&#128190;][20152101solution] | &#9989;[&#128190;][20152101tests] |
+| 20152102 | [Day 21: RPG Simulator 20XX - Part 2][20152102]                    | &#9989;[&#128190;][20152102solution] | &#9989;[&#128190;][20152102tests] |
 
 [20150101]: https://adventofcode.com/2015/day/1
 [20150102]: https://adventofcode.com/2015/day/1#part2
@@ -55,6 +58,7 @@
 [20151002]: https://adventofcode.com/2015/day/10#part2
 [20151101]: https://adventofcode.com/2015/day/11
 [20151102]: https://adventofcode.com/2015/day/11#part2
+[20151201]: https://adventofcode.com/2015/day/12
 [20151601]: https://adventofcode.com/2015/day/16
 [20151602]: https://adventofcode.com/2015/day/16#part2
 [20151701]: https://adventofcode.com/2015/day/17
@@ -63,6 +67,8 @@
 [20151802]: https://adventofcode.com/2015/day/18#part2
 [20152001]: https://adventofcode.com/2015/day/20
 [20152002]: https://adventofcode.com/2015/day/20#part2
+[20152101]: https://adventofcode.com/2015/day/21
+[20152102]: https://adventofcode.com/2015/day/21#part2
 
 [20150101solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part1.java
 [20150102solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part2.java
@@ -86,6 +92,7 @@
 [20151002solution]: src/main/java/org/ck/adventofcode/year2015/day10/Part2.java
 [20151101solution]: src/main/java/org/ck/adventofcode/year2015/day11/Part1.java
 [20151102solution]: src/main/java/org/ck/adventofcode/year2015/day11/Part2.java
+[20151201solution]: src/main/java/org/ck/adventofcode/year2015/day12/Part1.java
 [20151601solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part1.java
 [20151602solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part2.java
 [20151701solution]: src/main/java/org/ck/adventofcode/year2015/day17/Part1.java
@@ -94,6 +101,8 @@
 [20151802solution]: src/main/java/org/ck/adventofcode/year2015/day18/Part2.java
 [20152001solution]: src/main/java/org/ck/adventofcode/year2015/day20/Part1.java
 [20152002solution]: src/main/java/org/ck/adventofcode/year2015/day20/Part2.java
+[20152101solution]: src/main/java/org/ck/adventofcode/year2015/day21/Part1.java
+[20152102solution]: src/main/java/org/ck/adventofcode/year2015/day21/Part2.java
 
 [20150101tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part1Test.java
 [20150102tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part2Test.java
@@ -117,6 +126,7 @@
 [20151002tests]: src/test/java/org/ck/adventofcode/year2015/day10/Part2Test.java
 [20151101tests]: src/test/java/org/ck/adventofcode/year2015/day11/Part1Test.java
 [20151102tests]: src/test/java/org/ck/adventofcode/year2015/day11/Part2Test.java
+[20151201tests]: src/test/java/org/ck/adventofcode/year2015/day12/Part1Test.java
 [20151601tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part1Test.java
 [20151602tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part2Test.java
 [20151701tests]: src/test/java/org/ck/adventofcode/year2015/day17/Part1Test.java
@@ -125,6 +135,8 @@
 [20151802tests]: src/test/java/org/ck/adventofcode/year2015/day18/Part2Test.java
 [20152001tests]: src/test/java/org/ck/adventofcode/year2015/day20/Part1Test.java
 [20152002tests]: src/test/java/org/ck/adventofcode/year2015/day20/Part2Test.java
+[20152101tests]: src/test/java/org/ck/adventofcode/year2015/day21/Part1Test.java
+[20152102tests]: src/test/java/org/ck/adventofcode/year2015/day21/Part2Test.java
 
 # 2019 (28/28)
 

@@ -462,7 +462,7 @@
 [20202402tests]: src/test/java/org/ck/adventofcode/year2020/day24/Part2Test.java
 [20202501tests]: src/test/java/org/ck/adventofcode/year2020/day25/Part1Test.java
 
-# 2021 (26/26)
+# 2021 (28/28)
 
 |        # | Name                                                 | Solution                             | Test                              |
 |---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -484,6 +484,8 @@
 | 20210802 | [Day 8: Seven Segment Search - Part 2][20210802]     | &#9989;[&#128190;][20210802solution] | &#9989;[&#128190;][20210802tests] |
 | 20210901 | [Day 9: Smoke Basin][20210901]                       | &#9989;[&#128190;][20210901solution] | &#9989;[&#128190;][20210901tests] |
 | 20210902 | [Day 9: Smoke Basin - Part 2][20210902]              | &#9989;[&#128190;][20210902solution] | &#9989;[&#128190;][20210902tests] |
+| 20211001 | [Day 10: Syntax Scoring][20211001]                   | &#9989;[&#128190;][20211001solution] | &#9989;[&#128190;][20211001tests] |
+| 20211002 | [Day 10: Syntax Scoring - Part 2][20211002]          | &#9989;[&#128190;][20211002solution] | &#9989;[&#128190;][20211002tests] |
 | 20211101 | [Day 11: Dumbo Octopus][20211101]                    | &#9989;[&#128190;][20211101solution] | &#9989;[&#128190;][20211101tests] |
 | 20211102 | [Day 11: Dumbo Octopus - Part 2][20211102]           | &#9989;[&#128190;][20211102solution] | &#9989;[&#128190;][20211102tests] |
 | 20211201 | [Day 12: Passage Pathing][20211201]                  | &#9989;[&#128190;][20211201solution] | &#9989;[&#128190;][20211201tests] |
@@ -511,6 +513,8 @@
 [20210802]: https://adventofcode.com/2021/day/8#part2
 [20210901]: https://adventofcode.com/2021/day/9
 [20210902]: https://adventofcode.com/2021/day/9#part2
+[20211001]: https://adventofcode.com/2021/day/10
+[20211002]: https://adventofcode.com/2021/day/10#part2
 [20211101]: https://adventofcode.com/2021/day/11
 [20211102]: https://adventofcode.com/2021/day/11#part2
 [20211201]: https://adventofcode.com/2021/day/12
@@ -538,6 +542,8 @@
 [20210802solution]: src/main/java/org/ck/adventofcode/year2021/day08/Part2.java
 [20210901solution]: src/main/java/org/ck/adventofcode/year2021/day09/Part1.java
 [20210902solution]: src/main/java/org/ck/adventofcode/year2021/day09/Part2.java
+[20211001solution]: src/main/java/org/ck/adventofcode/year2021/day10/Part1.java
+[20211002solution]: src/main/java/org/ck/adventofcode/year2021/day10/Part2.java
 [20211101solution]: src/main/java/org/ck/adventofcode/year2021/day11/Part1.java
 [20211102solution]: src/main/java/org/ck/adventofcode/year2021/day11/Part2.java
 [20211201solution]: src/main/java/org/ck/adventofcode/year2021/day12/Part1.java
@@ -565,6 +571,8 @@
 [20210802tests]: src/test/java/org/ck/adventofcode/year2021/day08/Part2Test.java
 [20210901tests]: src/test/java/org/ck/adventofcode/year2021/day09/Part1Test.java
 [20210902tests]: src/test/java/org/ck/adventofcode/year2021/day09/Part2Test.java
+[20211001tests]: src/test/java/org/ck/adventofcode/year2021/day10/Part1Test.java
+[20211002tests]: src/test/java/org/ck/adventofcode/year2021/day10/Part2Test.java
 [20211101tests]: src/test/java/org/ck/adventofcode/year2021/day11/Part1Test.java
 [20211102tests]: src/test/java/org/ck/adventofcode/year2021/day11/Part2Test.java
 [20211201tests]: src/test/java/org/ck/adventofcode/year2021/day12/Part1Test.java

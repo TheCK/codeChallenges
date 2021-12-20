@@ -462,7 +462,7 @@
 [20202402tests]: src/test/java/org/ck/adventofcode/year2020/day24/Part2Test.java
 [20202501tests]: src/test/java/org/ck/adventofcode/year2020/day25/Part1Test.java
 
-# 2021 (36/37)
+# 2021 (38/39)
 
 |        # | Name                                                 | Solution                             | Test                              |
 |---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -500,6 +500,8 @@
 | 20211602 | [Day 16: Packet Decoder - Part 2][20211602]          | &#9989;[&#128190;][20211602solution] | &#9989;[&#128190;][20211602tests] |
 | 20211701 | [Day 17: Trick Shot][20211701]                       | &#9989;[&#128190;][20211701solution] | &#9989;[&#128190;][20211701tests] |
 | 20211702 | [Day 17: Trick Shot - Part 2][20211702]              | &#9989;[&#128190;][20211702solution] | &#9989;[&#128190;][20211702tests] |
+| 20211801 | [Day 18: Snailfish][20211801]                        | &#9989;[&#128190;][20211801solution] | &#9989;[&#128190;][20211801tests] |
+| 20211802 | [Day 18: Snailfish - Part 2][20211802]               | &#9989;[&#128190;][20211802solution] | &#9989;[&#128190;][20211802tests] |
 | 20211901 | [Day 19: Beacon Scanner][20211901]                   | [&#128190;][20211901solution]        | [&#128190;][20211901tests]        |
 | 20212001 | [Day 20: Trench Map][20212001]                       | &#9989;[&#128190;][20212001solution] | &#9989;[&#128190;][20212001tests] |
 | 20212002 | [Day 20: Trench Map - Part 2][20212002]              | &#9989;[&#128190;][20212002solution] | &#9989;[&#128190;][20212002tests] |
@@ -538,6 +540,8 @@
 [20211602]: https://adventofcode.com/2021/day/16#part2
 [20211701]: https://adventofcode.com/2021/day/17
 [20211702]: https://adventofcode.com/2021/day/17#part2
+[20211801]: https://adventofcode.com/2021/day/18
+[20211802]: https://adventofcode.com/2021/day/18#part2
 [20211901]: https://adventofcode.com/2021/day/19
 [20212001]: https://adventofcode.com/2021/day/20
 [20212002]: https://adventofcode.com/2021/day/20#part2
@@ -576,6 +580,8 @@
 [20211602solution]: src/main/java/org/ck/adventofcode/year2021/day16/Part2.java
 [20211701solution]: src/main/java/org/ck/adventofcode/year2021/day17/Part1.java
 [20211702solution]: src/main/java/org/ck/adventofcode/year2021/day17/Part2.java
+[20211801solution]: src/main/java/org/ck/adventofcode/year2021/day18/Part1.java
+[20211802solution]: src/main/java/org/ck/adventofcode/year2021/day18/Part2.java
 [20211901solution]: src/main/java/org/ck/adventofcode/year2021/day19/Part1.java
 [20212001solution]: src/main/java/org/ck/adventofcode/year2021/day20/Part1.java
 [20212002solution]: src/main/java/org/ck/adventofcode/year2021/day20/Part2.java
@@ -614,6 +620,8 @@
 [20211602tests]: src/test/java/org/ck/adventofcode/year2021/day16/Part2Test.java
 [20211701tests]: src/test/java/org/ck/adventofcode/year2021/day17/Part1Test.java
 [20211702tests]: src/test/java/org/ck/adventofcode/year2021/day17/Part2Test.java
+[20211801tests]: src/test/java/org/ck/adventofcode/year2021/day18/Part1Test.java
+[20211802tests]: src/test/java/org/ck/adventofcode/year2021/day18/Part2Test.java
 [20211901tests]: src/test/java/org/ck/adventofcode/year2021/day19/Part1Test.java
 [20212001tests]: src/test/java/org/ck/adventofcode/year2021/day20/Part1Test.java
 [20212002tests]: src/test/java/org/ck/adventofcode/year2021/day20/Part2Test.java

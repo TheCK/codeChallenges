@@ -634,3 +634,19 @@
 [20212101tests]: src/test/java/org/ck/adventofcode/year2021/day21/Part1Test.java
 [20212102tests]: src/test/java/org/ck/adventofcode/year2021/day21/Part2Test.java
 
+# 2022 (2/2)
+
+|        # | Name                                        | Solution                             | Test                              |
+|---------:|---------------------------------------------|:------------------------------------:|:---------------------------------:|
+| 20212201 | [Day 22: Reactor Reboot][20212201]          | &#9989;[&#128190;][20212201solution] | &#9989;[&#128190;][20212201tests] |
+| 20212202 | [Day 22: Reactor Reboot - Part 2][20212202] | &#9989;[&#128190;][20212202solution] | &#9989;[&#128190;][20212202tests] |
+
+[20212201]: https://adventofcode.com/2021/day/21
+[20212202]: https://adventofcode.com/2021/day/21#part2
+
+[20212201solution]: src/main/java/org/ck/adventofcode/year2021/day22/Part1.java
+[20212202solution]: src/main/java/org/ck/adventofcode/year2021/day22/Part2.java
+
+[20212201tests]: src/test/java/org/ck/adventofcode/year2021/day22/Part1Test.java
+[20212202tests]: src/test/java/org/ck/adventofcode/year2021/day22/Part2Test.java
+

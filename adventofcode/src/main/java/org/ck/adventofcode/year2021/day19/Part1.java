@@ -12,8 +12,7 @@ import java.util.stream.Collectors;
     id = 20211901,
     name = "Day 19: Beacon Scanner",
     url = "https://adventofcode.com/2021/day/19",
-    category = "2021",
-    solved = false)
+    category = "2021")
 public class Part1 {
   private static final Pattern scannerPattern = Pattern.compile("--- scanner (\\d+) ---");
 

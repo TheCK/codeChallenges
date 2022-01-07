@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
     id = 20212201,
     name = "Day 22: Reactor Reboot",
     url = "https://adventofcode.com/2021/day/21",
-    category = "2022")
+    category = "2021")
 public class Part1 {
   private static final Pattern pattern =
       Pattern.compile("(on|off) x=(-?\\d+)..(-?\\d+),y=(-?\\d+)..(-?\\d+),z=(-?\\d+)..(-?\\d+)");

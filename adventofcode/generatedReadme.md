@@ -462,7 +462,7 @@
 [20202402tests]: src/test/java/org/ck/adventofcode/year2020/day24/Part2Test.java
 [20202501tests]: src/test/java/org/ck/adventofcode/year2020/day25/Part1Test.java
 
-# 2021 (40/42)
+# 2021 (50/50)
 
 |        # | Name                                                 | Solution                             | Test                              |
 |---------:|------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -502,12 +502,20 @@
 | 20211702 | [Day 17: Trick Shot - Part 2][20211702]              | &#9989;[&#128190;][20211702solution] | &#9989;[&#128190;][20211702tests] |
 | 20211801 | [Day 18: Snailfish][20211801]                        | &#9989;[&#128190;][20211801solution] | &#9989;[&#128190;][20211801tests] |
 | 20211802 | [Day 18: Snailfish - Part 2][20211802]               | &#9989;[&#128190;][20211802solution] | &#9989;[&#128190;][20211802tests] |
-| 20211901 | [Day 19: Beacon Scanner][20211901]                   | [&#128190;][20211901solution]        | [&#128190;][20211901tests]        |
-| 20211902 | [Day 19: Beacon Scanner - Part 2][20211902]          | [&#128190;][20211902solution]        | [&#128190;][20211902tests]        |
+| 20211901 | [Day 19: Beacon Scanner][20211901]                   | &#9989;[&#128190;][20211901solution] | &#9989;[&#128190;][20211901tests] |
+| 20211902 | [Day 19: Beacon Scanner - Part 2][20211902]          | &#9989;[&#128190;][20211902solution] | &#9989;[&#128190;][20211902tests] |
 | 20212001 | [Day 20: Trench Map][20212001]                       | &#9989;[&#128190;][20212001solution] | &#9989;[&#128190;][20212001tests] |
 | 20212002 | [Day 20: Trench Map - Part 2][20212002]              | &#9989;[&#128190;][20212002solution] | &#9989;[&#128190;][20212002tests] |
 | 20212101 | [Day 21: Dirac Dice][20212101]                       | &#9989;[&#128190;][20212101solution] | &#9989;[&#128190;][20212101tests] |
 | 20212102 | [Day 21: Dirac Dice - Part 2][20212102]              | &#9989;[&#128190;][20212102solution] | &#9989;[&#128190;][20212102tests] |
+| 20212201 | [Day 22: Reactor Reboot][20212201]                   | &#9989;[&#128190;][20212201solution] | &#9989;[&#128190;][20212201tests] |
+| 20212202 | [Day 22: Reactor Reboot - Part 2][20212202]          | &#9989;[&#128190;][20212202solution] | &#9989;[&#128190;][20212202tests] |
+| 20212301 | [Day 23: Amphipod][20212301]                         | &#9989;[&#128190;][20212301solution] | &#9989;[&#128190;][20212301tests] |
+| 20212302 | [Day 23: Amphipod - Part 2][20212302]                | &#9989;[&#128190;][20212302solution] | &#9989;[&#128190;][20212302tests] |
+| 20212401 | [Day 24: Arithmetic Logic Unit][20212401]            | &#9989;[&#128190;][20212401solution] | &#9989;[&#128190;][20212401tests] |
+| 20212402 | [Day 24: Arithmetic Logic Unit - Part 2][20212402]   | &#9989;[&#128190;][20212402solution] | &#9989;[&#128190;][20212402tests] |
+| 20212501 | [Day 25: Sea Cucumber][20212501]                     | &#9989;[&#128190;][20212501solution] | &#9989;[&#128190;][20212501tests] |
+| 20212502 | [Day 25: Sea Cucumber - Part 2][20212502]            | &#9989;[&#128190;][20212502solution] | &#9989;[&#128190;][20212502tests] |
 
 [20210101]: https://adventofcode.com/2021/day/1
 [20210102]: https://adventofcode.com/2021/day/1#part2
@@ -551,6 +559,14 @@
 [20212002]: https://adventofcode.com/2021/day/20#part2
 [20212101]: https://adventofcode.com/2021/day/21
 [20212102]: https://adventofcode.com/2021/day/21#part2
+[20212201]: https://adventofcode.com/2021/day/21
+[20212202]: https://adventofcode.com/2021/day/21#part2
+[20212301]: https://adventofcode.com/2021/day/23
+[20212302]: https://adventofcode.com/2021/day/23#part2
+[20212401]: https://adventofcode.com/2021/day/24
+[20212402]: https://adventofcode.com/2021/day/24#part2
+[20212501]: https://adventofcode.com/2021/day/25
+[20212502]: https://adventofcode.com/2021/day/25#part2
 
 [20210101solution]: src/main/java/org/ck/adventofcode/year2021/day01/Part1.java
 [20210102solution]: src/main/java/org/ck/adventofcode/year2021/day01/Part2.java
@@ -594,6 +610,14 @@
 [20212002solution]: src/main/java/org/ck/adventofcode/year2021/day20/Part2.java
 [20212101solution]: src/main/java/org/ck/adventofcode/year2021/day21/Part1.java
 [20212102solution]: src/main/java/org/ck/adventofcode/year2021/day21/Part2.java
+[20212201solution]: src/main/java/org/ck/adventofcode/year2021/day22/Part1.java
+[20212202solution]: src/main/java/org/ck/adventofcode/year2021/day22/Part2.java
+[20212301solution]: src/main/java/org/ck/adventofcode/year2021/day23/Part1.java
+[20212302solution]: src/main/java/org/ck/adventofcode/year2021/day23/Part2.java
+[20212401solution]: src/main/java/org/ck/adventofcode/year2021/day24/Part1.java
+[20212402solution]: src/main/java/org/ck/adventofcode/year2021/day24/Part2.java
+[20212501solution]: src/main/java/org/ck/adventofcode/year2021/day25/Part1.java
+[20212502solution]: src/main/java/org/ck/adventofcode/year2021/day25/Part2.java
 
 [20210101tests]: src/test/java/org/ck/adventofcode/year2021/day01/Part1Test.java
 [20210102tests]: src/test/java/org/ck/adventofcode/year2021/day01/Part2Test.java
@@ -637,20 +661,12 @@
 [20212002tests]: src/test/java/org/ck/adventofcode/year2021/day20/Part2Test.java
 [20212101tests]: src/test/java/org/ck/adventofcode/year2021/day21/Part1Test.java
 [20212102tests]: src/test/java/org/ck/adventofcode/year2021/day21/Part2Test.java
-
-# 2022 (2/2)
-
-|        # | Name                                        | Solution                             | Test                              |
-|---------:|---------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 20212201 | [Day 22: Reactor Reboot][20212201]          | &#9989;[&#128190;][20212201solution] | &#9989;[&#128190;][20212201tests] |
-| 20212202 | [Day 22: Reactor Reboot - Part 2][20212202] | &#9989;[&#128190;][20212202solution] | &#9989;[&#128190;][20212202tests] |
-
-[20212201]: https://adventofcode.com/2021/day/21
-[20212202]: https://adventofcode.com/2021/day/21#part2
-
-[20212201solution]: src/main/java/org/ck/adventofcode/year2021/day22/Part1.java
-[20212202solution]: src/main/java/org/ck/adventofcode/year2021/day22/Part2.java
-
 [20212201tests]: src/test/java/org/ck/adventofcode/year2021/day22/Part1Test.java
 [20212202tests]: src/test/java/org/ck/adventofcode/year2021/day22/Part2Test.java
+[20212301tests]: src/test/java/org/ck/adventofcode/year2021/day23/Part1Test.java
+[20212302tests]: src/test/java/org/ck/adventofcode/year2021/day23/Part2Test.java
+[20212401tests]: src/test/java/org/ck/adventofcode/year2021/day24/Part1Test.java
+[20212402tests]: src/test/java/org/ck/adventofcode/year2021/day24/Part2Test.java
+[20212501tests]: src/test/java/org/ck/adventofcode/year2021/day25/Part1Test.java
+[20212502tests]: src/test/java/org/ck/adventofcode/year2021/day25/Part2Test.java
 

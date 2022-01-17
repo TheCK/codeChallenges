@@ -1,4 +1,4 @@
-# 2015 (38/38)
+# 2015 (44/44)
 
 |        # | Name                                                               | Solution                             | Test                              |
 |---------:|--------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -26,6 +26,12 @@
 | 20151102 | [Day 11: Corporate Policy - Part 2][20151102]                      | &#9989;[&#128190;][20151102solution] | &#9989;[&#128190;][20151102tests] |
 | 20151201 | [Day 12: JSAbacusFramework.io][20151201]                           | &#9989;[&#128190;][20151201solution] | &#9989;[&#128190;][20151201tests] |
 | 20151202 | [Day 12: JSAbacusFramework.io - Part 2][20151202]                  | &#9989;[&#128190;][20151202solution] | &#9989;[&#128190;][20151202tests] |
+| 20151301 | [Day 13: Knights of the Dinner Table][20151301]                    | &#9989;[&#128190;][20151301solution] | &#9989;[&#128190;][20151301tests] |
+| 20151302 | [Day 13: Knights of the Dinner Table - Part 2][20151302]           | &#9989;[&#128190;][20151302solution] | &#9989;[&#128190;][20151302tests] |
+| 20151401 | [Day 14: Reindeer Olympics][20151401]                              | &#9989;[&#128190;][20151401solution] | &#9989;[&#128190;][20151401tests] |
+| 20151402 | [Day 14: Reindeer Olympics - Part 2][20151402]                     | &#9989;[&#128190;][20151402solution] | &#9989;[&#128190;][20151402tests] |
+| 20151501 | [Day 15: Science for Hungry People][20151501]                      | &#9989;[&#128190;][20151501solution] | &#9989;[&#128190;][20151501tests] |
+| 20151502 | [Day 15: Science for Hungry People - Part 2][20151502]             | &#9989;[&#128190;][20151502solution] | &#9989;[&#128190;][20151502tests] |
 | 20151601 | [Day 16: Aunt Sue][20151601]                                       | &#9989;[&#128190;][20151601solution] | &#9989;[&#128190;][20151601tests] |
 | 20151602 | [Day 16: Aunt Sue - Part 2][20151602]                              | &#9989;[&#128190;][20151602solution] | &#9989;[&#128190;][20151602tests] |
 | 20151701 | [Day 17: No Such Thing as Too Much][20151701]                      | &#9989;[&#128190;][20151701solution] | &#9989;[&#128190;][20151701tests] |
@@ -65,6 +71,12 @@
 [20151102]: https://adventofcode.com/2015/day/11#part2
 [20151201]: https://adventofcode.com/2015/day/12
 [20151202]: https://adventofcode.com/2015/day/12#part2
+[20151301]: https://adventofcode.com/2015/day/13
+[20151302]: https://adventofcode.com/2015/day/13#part2
+[20151401]: https://adventofcode.com/2015/day/14
+[20151402]: https://adventofcode.com/2015/day/14#part2
+[20151501]: https://adventofcode.com/2015/day/15
+[20151502]: https://adventofcode.com/2015/day/15#part2
 [20151601]: https://adventofcode.com/2015/day/16
 [20151602]: https://adventofcode.com/2015/day/16#part2
 [20151701]: https://adventofcode.com/2015/day/17
@@ -104,6 +116,12 @@
 [20151102solution]: src/main/java/org/ck/adventofcode/year2015/day11/Part2.java
 [20151201solution]: src/main/java/org/ck/adventofcode/year2015/day12/Part1.java
 [20151202solution]: src/main/java/org/ck/adventofcode/year2015/day12/Part2.java
+[20151301solution]: src/main/java/org/ck/adventofcode/year2015/day13/Part1.java
+[20151302solution]: src/main/java/org/ck/adventofcode/year2015/day13/Part2.java
+[20151401solution]: src/main/java/org/ck/adventofcode/year2015/day14/Part1.java
+[20151402solution]: src/main/java/org/ck/adventofcode/year2015/day14/Part2.java
+[20151501solution]: src/main/java/org/ck/adventofcode/year2015/day15/Part1.java
+[20151502solution]: src/main/java/org/ck/adventofcode/year2015/day15/Part2.java
 [20151601solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part1.java
 [20151602solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part2.java
 [20151701solution]: src/main/java/org/ck/adventofcode/year2015/day17/Part1.java
@@ -143,6 +161,12 @@
 [20151102tests]: src/test/java/org/ck/adventofcode/year2015/day11/Part2Test.java
 [20151201tests]: src/test/java/org/ck/adventofcode/year2015/day12/Part1Test.java
 [20151202tests]: src/test/java/org/ck/adventofcode/year2015/day12/Part2Test.java
+[20151301tests]: src/test/java/org/ck/adventofcode/year2015/day13/Part1Test.java
+[20151302tests]: src/test/java/org/ck/adventofcode/year2015/day13/Part2Test.java
+[20151401tests]: src/test/java/org/ck/adventofcode/year2015/day14/Part1Test.java
+[20151402tests]: src/test/java/org/ck/adventofcode/year2015/day14/Part2Test.java
+[20151501tests]: src/test/java/org/ck/adventofcode/year2015/day15/Part1Test.java
+[20151502tests]: src/test/java/org/ck/adventofcode/year2015/day15/Part2Test.java
 [20151601tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part1Test.java
 [20151602tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part2Test.java
 [20151701tests]: src/test/java/org/ck/adventofcode/year2015/day17/Part1Test.java

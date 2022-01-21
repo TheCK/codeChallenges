@@ -1,4 +1,4 @@
-# 2015 (46/46)
+# 2015 (49/49)
 
 |        # | Name                                                               | Solution                             | Test                              |
 |---------:|--------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -48,6 +48,9 @@
 | 20152202 | [Day 22: Wizard Simulator 20XX - Part 2][20152202]                 | &#9989;[&#128190;][20152202solution] | &#9989;[&#128190;][20152202tests] |
 | 20152301 | [Day 23: Opening the Turing Lock][20152301]                        | &#9989;[&#128190;][20152301solution] | &#9989;[&#128190;][20152301tests] |
 | 20152302 | [Day 23: Opening the Turing Lock - Part 2][20152302]               | &#9989;[&#128190;][20152302solution] | &#9989;[&#128190;][20152302tests] |
+| 20152401 | [Day 24: It Hangs in the Balance][20152401]                        | &#9989;[&#128190;][20152401solution] | &#9989;[&#128190;][20152401tests] |
+| 20152402 | [Day 24: It Hangs in the Balance - Part 2][20152402]               | &#9989;[&#128190;][20152402solution] | &#9989;[&#128190;][20152402tests] |
+| 20152501 | [Day 25: Let It Snow][20152501]                                    | &#9989;[&#128190;][20152501solution] | &#9989;[&#128190;][20152501tests] |
 
 [20150101]: https://adventofcode.com/2015/day/1
 [20150102]: https://adventofcode.com/2015/day/1#part2
@@ -95,6 +98,9 @@
 [20152202]: https://adventofcode.com/2015/day/22#part2
 [20152301]: https://adventofcode.com/2015/day/23
 [20152302]: https://adventofcode.com/2015/day/23#part2
+[20152401]: https://adventofcode.com/2015/day/24
+[20152402]: https://adventofcode.com/2015/day/24#part2
+[20152501]: https://adventofcode.com/2015/day/25
 
 [20150101solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part1.java
 [20150102solution]: src/main/java/org/ck/adventofcode/year2015/day01/Part2.java
@@ -142,6 +148,9 @@
 [20152202solution]: src/main/java/org/ck/adventofcode/year2015/day22/Part2.java
 [20152301solution]: src/main/java/org/ck/adventofcode/year2015/day23/Part1.java
 [20152302solution]: src/main/java/org/ck/adventofcode/year2015/day23/Part2.java
+[20152401solution]: src/main/java/org/ck/adventofcode/year2015/day24/Part1.java
+[20152402solution]: src/main/java/org/ck/adventofcode/year2015/day24/Part2.java
+[20152501solution]: src/main/java/org/ck/adventofcode/year2015/day25/Part1.java
 
 [20150101tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part1Test.java
 [20150102tests]: src/test/java/org/ck/adventofcode/year2015/day01/Part2Test.java
@@ -189,6 +198,9 @@
 [20152202tests]: src/test/java/org/ck/adventofcode/year2015/day22/Part2Test.java
 [20152301tests]: src/test/java/org/ck/adventofcode/year2015/day23/Part1Test.java
 [20152302tests]: src/test/java/org/ck/adventofcode/year2015/day23/Part2Test.java
+[20152401tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part1Test.java
+[20152402tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part2Test.java
+[20152501tests]: src/test/java/org/ck/adventofcode/year2015/day25/Part1Test.java
 
 # 2019 (28/28)
 

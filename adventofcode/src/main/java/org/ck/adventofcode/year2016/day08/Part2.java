@@ -8,10 +8,68 @@ import java.util.Scanner;
     id = 20160802,
     name = "Day 8: Two-Factor Authentication - Part 2",
     url = "https://adventofcode.com/2016/day/8#part2",
-    category = "2016",
-    solved = false)
+    category = "2016")
 public class Part2 {
   public static void main(String[] args) {
-    try (Scanner in = new Scanner(System.in)) {}
+    char[][] grid = new char[6][50];
+
+    for (int x = 0; x < 50; ++x) {
+      for (int y = 0; y < 6; ++y) {
+        grid[y][x] = ' ';
+      }
+    }
+
+    try (Scanner in = new Scanner(System.in)) {
+      while (in.hasNextLine()) {
+        String[] line = in.nextLine().split(" ");
+
+        if ("rect".equals(line[0])) {
+          String[] rect = line[1].split("x");
+
+          for (int x = 0; x < Integer.parseInt(rect[0]); ++x) {
+            for (int y = 0; y < Integer.parseInt(rect[1]); ++y) {
+              grid[y][x] = '#';
+            }
+          }
+        } else {
+          char[][] newGrid = new char[6][50];
+
+          for (int x = 0; x < 50; ++x) {
+            for (int y = 0; y < 6; ++y) {
+              newGrid[y][x] = grid[y][x];
+            }
+          }
+
+          int xMin = "column".equals(line[1]) ? Integer.parseInt(line[2].split("=")[1]) : 0;
+          int xMax = "column".equals(line[1]) ? Integer.parseInt(line[2].split("=")[1]) : 49;
+
+          int yMin = "row".equals(line[1]) ? Integer.parseInt(line[2].split("=")[1]) : 0;
+          int yMax = "row".equals(line[1]) ? Integer.parseInt(line[2].split("=")[1]) : 5;
+
+          int distance = Integer.parseInt(line[4]);
+
+          for (int x = xMin; x <= xMax; ++x) {
+            for (int y = yMin; y <= yMax; ++y) {
+              newGrid["column".equals(line[1]) ? (y + distance) % 6 : y][
+                      "row".equals(line[1]) ? (x + distance) % 50 : x] =
+                  grid[y][x];
+            }
+          }
+
+          grid = newGrid;
+        }
+      }
+    }
+
+    StringBuilder builder = new StringBuilder();
+
+    for (int y = 0; y < 6; ++y) {
+      for (int x = 0; x < 50; ++x) {
+        builder.append(grid[y][x]);
+      }
+      builder.append(System.lineSeparator());
+    }
+
+    System.out.print(builder);
   }
 }

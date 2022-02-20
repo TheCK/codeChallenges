@@ -202,26 +202,26 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part2Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/day25/Part1Test.java
 
-# 2016 (0/49)
+# 2016 (14/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
-| 20160101 | [Day 1: No Time for a Taxicab][20160101]                            | [&#128190;][20160101solution]        | [&#128190;][20160101tests]        |
-| 20160102 | [Day 1: No Time for a Taxicab - Part 2][20160102]                   | [&#128190;][20160102solution]        | [&#128190;][20160102tests]        |
-| 20160201 | [Day 2: Bathroom Security][20160201]                                | [&#128190;][20160201solution]        | [&#128190;][20160201tests]        |
-| 20160202 | [Day 2: Bathroom Security - Part 2][20160202]                       | [&#128190;][20160202solution]        | [&#128190;][20160202tests]        |
-| 20160301 | [Day 3: Squares With Three Sides][20160301]                         | [&#128190;][20160301solution]        | [&#128190;][20160301tests]        |
-| 20160302 | [Day 3: Squares With Three Sides - Part 2][20160302]                | [&#128190;][20160302solution]        | [&#128190;][20160302tests]        |
-| 20160401 | [Day 4: Security Through Obscurity][20160401]                       | [&#128190;][20160401solution]        | [&#128190;][20160401tests]        |
-| 20160402 | [Day 4: Security Through Obscurity - Part 2][20160402]              | [&#128190;][20160402solution]        | [&#128190;][20160402tests]        |
-| 20160501 | [Day 5: How About a Nice Game of Chess?][20160501]                  | [&#128190;][20160501solution]        | [&#128190;][20160501tests]        |
-| 20160502 | [Day 5: How About a Nice Game of Chess? - Part 2][20160502]         | [&#128190;][20160502solution]        | [&#128190;][20160502tests]        |
-| 20160601 | [Day 6: Signals and Noise][20160601]                                | [&#128190;][20160601solution]        | [&#128190;][20160601tests]        |
-| 20160602 | [Day 6: Signals and Noise - Part 2][20160602]                       | [&#128190;][20160602solution]        | [&#128190;][20160602tests]        |
+| 20160101 | [Day 1: No Time for a Taxicab][20160101]                            | &#9989;[&#128190;][20160101solution] | &#9989;[&#128190;][20160101tests] |
+| 20160102 | [Day 1: No Time for a Taxicab - Part 2][20160102]                   | &#9989;[&#128190;][20160102solution] | &#9989;[&#128190;][20160102tests] |
+| 20160201 | [Day 2: Bathroom Security][20160201]                                | &#9989;[&#128190;][20160201solution] | &#9989;[&#128190;][20160201tests] |
+| 20160202 | [Day 2: Bathroom Security - Part 2][20160202]                       | &#9989;[&#128190;][20160202solution] | &#9989;[&#128190;][20160202tests] |
+| 20160301 | [Day 3: Squares With Three Sides][20160301]                         | &#9989;[&#128190;][20160301solution] | &#9989;[&#128190;][20160301tests] |
+| 20160302 | [Day 3: Squares With Three Sides - Part 2][20160302]                | &#9989;[&#128190;][20160302solution] | &#9989;[&#128190;][20160302tests] |
+| 20160401 | [Day 4: Security Through Obscurity][20160401]                       | &#9989;[&#128190;][20160401solution] | &#9989;[&#128190;][20160401tests] |
+| 20160402 | [Day 4: Security Through Obscurity - Part 2][20160402]              | &#9989;[&#128190;][20160402solution] | &#9989;[&#128190;][20160402tests] |
+| 20160501 | [Day 5: How About a Nice Game of Chess?][20160501]                  | &#9989;[&#128190;][20160501solution] | &#9989;[&#128190;][20160501tests] |
+| 20160502 | [Day 5: How About a Nice Game of Chess? - Part 2][20160502]         | &#9989;[&#128190;][20160502solution] | &#9989;[&#128190;][20160502tests] |
+| 20160601 | [Day 6: Signals and Noise][20160601]                                | &#9989;[&#128190;][20160601solution] | &#9989;[&#128190;][20160601tests] |
+| 20160602 | [Day 6: Signals and Noise - Part 2][20160602]                       | &#9989;[&#128190;][20160602solution] | &#9989;[&#128190;][20160602tests] |
 | 20160701 | [Day 7: Internet Protocol Version 7][20160701]                      | [&#128190;][20160701solution]        | [&#128190;][20160701tests]        |
 | 20160702 | [Day 7: Internet Protocol Version 7 - Part 2][20160702]             | [&#128190;][20160702solution]        | [&#128190;][20160702tests]        |
-| 20160801 | [Day 8: Two-Factor Authentication][20160801]                        | [&#128190;][20160801solution]        | [&#128190;][20160801tests]        |
-| 20160802 | [Day 8: Two-Factor Authentication - Part 2][20160802]               | [&#128190;][20160802solution]        | [&#128190;][20160802tests]        |
+| 20160801 | [Day 8: Two-Factor Authentication][20160801]                        | &#9989;[&#128190;][20160801solution] | &#9989;[&#128190;][20160801tests] |
+| 20160802 | [Day 8: Two-Factor Authentication - Part 2][20160802]               | &#9989;[&#128190;][20160802solution] | &#9989;[&#128190;][20160802tests] |
 | 20160901 | [Day 9: Explosives in Cyberspace][20160901]                         | [&#128190;][20160901solution]        | [&#128190;][20160901tests]        |
 | 20160902 | [Day 9: Explosives in Cyberspace - Part 2][20160902]                | [&#128190;][20160902solution]        | [&#128190;][20160902tests]        |
 | 20161001 | [Day 10: Balance Bots][20161001]                                    | [&#128190;][20161001solution]        | [&#128190;][20161001tests]        |

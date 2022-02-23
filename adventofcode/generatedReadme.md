@@ -202,7 +202,7 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part2Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/day25/Part1Test.java
 
-# 2016 (21/49)
+# 2016 (23/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -232,8 +232,8 @@
 | 20161202 | [Day 12: Leonardo's Monorail - Part 2][20161202]                    | &#9989;[&#128190;][20161202solution] | &#9989;[&#128190;][20161202tests] |
 | 20161301 | [Day 13: A Maze of Twisty Little Cubicles][20161301]                | [&#128190;][20161301solution]        | [&#128190;][20161301tests]        |
 | 20161302 | [Day 13: A Maze of Twisty Little Cubicles - Part 2][20161302]       | [&#128190;][20161302solution]        | [&#128190;][20161302tests]        |
-| 20161401 | [Day 14: One-Time Pad][20161401]                                    | [&#128190;][20161401solution]        | [&#128190;][20161401tests]        |
-| 20161402 | [Day 14: One-Time Pad - Part 2][20161402]                           | [&#128190;][20161402solution]        | [&#128190;][20161402tests]        |
+| 20161401 | [Day 14: One-Time Pad][20161401]                                    | &#9989;[&#128190;][20161401solution] | &#9989;[&#128190;][20161401tests] |
+| 20161402 | [Day 14: One-Time Pad - Part 2][20161402]                           | &#9989;[&#128190;][20161402solution] | &#9989;[&#128190;][20161402tests] |
 | 20161501 | [Day 15: Timing is Everything][20161501]                            | [&#128190;][20161501solution]        | [&#128190;][20161501tests]        |
 | 20161502 | [Day 15: Timing is Everything - Part 2][20161502]                   | [&#128190;][20161502solution]        | [&#128190;][20161502tests]        |
 | 20161601 | [Day 16: Dragon Checksum][20161601]                                 | [&#128190;][20161601solution]        | [&#128190;][20161601tests]        |

@@ -1,4 +1,4 @@
-fbgdceah
+gbhafcde
 rotate left 2 steps
 rotate right 0 steps
 rotate based on position of letter a

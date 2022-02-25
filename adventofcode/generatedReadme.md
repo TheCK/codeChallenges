@@ -202,7 +202,7 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part2Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/day25/Part1Test.java
 
-# 2016 (30/49)
+# 2016 (38/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -244,17 +244,17 @@
 | 20161802 | [Day 18: Like a Rogue - Part 2][20161802]                           | &#9989;[&#128190;][20161802solution] | &#9989;[&#128190;][20161802tests] |
 | 20161901 | [Day 19: An Elephant Named Joseph][20161901]                        | &#9989;[&#128190;][20161901solution] | &#9989;[&#128190;][20161901tests] |
 | 20161902 | [Day 19: An Elephant Named Joseph - Part 2][20161902]               | [&#128190;][20161902solution]        | [&#128190;][20161902tests]        |
-| 20162001 | [Day 20: Firewall Rules][20162001]                                  | [&#128190;][20162001solution]        | [&#128190;][20162001tests]        |
-| 20162002 | [Day 20: Firewall Rules - Part 2][20162002]                         | [&#128190;][20162002solution]        | [&#128190;][20162002tests]        |
-| 20162101 | [Day 21: Scrambled Letters and Hash][20162101]                      | [&#128190;][20162101solution]        | [&#128190;][20162101tests]        |
-| 20162102 | [Day 21: Scrambled Letters and Hash - Part 2][20162102]             | [&#128190;][20162102solution]        | [&#128190;][20162102tests]        |
-| 20162201 | [Day 22: Grid Computing][20162201]                                  | [&#128190;][20162201solution]        | [&#128190;][20162201tests]        |
+| 20162001 | [Day 20: Firewall Rules][20162001]                                  | &#9989;[&#128190;][20162001solution] | &#9989;[&#128190;][20162001tests] |
+| 20162002 | [Day 20: Firewall Rules - Part 2][20162002]                         | &#9989;[&#128190;][20162002solution] | &#9989;[&#128190;][20162002tests] |
+| 20162101 | [Day 21: Scrambled Letters and Hash][20162101]                      | &#9989;[&#128190;][20162101solution] | &#9989;[&#128190;][20162101tests] |
+| 20162102 | [Day 21: Scrambled Letters and Hash - Part 2][20162102]             | &#9989;[&#128190;][20162102solution] | &#9989;[&#128190;][20162102tests] |
+| 20162201 | [Day 22: Grid Computing][20162201]                                  | &#9989;[&#128190;][20162201solution] | &#9989;[&#128190;][20162201tests] |
 | 20162202 | [Day 22: Grid Computing - Part 2][20162202]                         | [&#128190;][20162202solution]        | [&#128190;][20162202tests]        |
-| 20162301 | [Day 23: Safe Cracking][20162301]                                   | [&#128190;][20162301solution]        | [&#128190;][20162301tests]        |
-| 20162302 | [Day 23: Safe Cracking - Part 2][20162302]                          | [&#128190;][20162302solution]        | [&#128190;][20162302tests]        |
+| 20162301 | [Day 23: Safe Cracking][20162301]                                   | &#9989;[&#128190;][20162301solution] | &#9989;[&#128190;][20162301tests] |
+| 20162302 | [Day 23: Safe Cracking - Part 2][20162302]                          | &#9989;[&#128190;][20162302solution] | &#9989;[&#128190;][20162302tests] |
 | 20162401 | [Day 24: Air Duct Spelunking][20162401]                             | [&#128190;][20162401solution]        | [&#128190;][20162401tests]        |
 | 20162402 | [Day 24: Air Duct Spelunking - Part 2][20162402]                    | [&#128190;][20162402solution]        | [&#128190;][20162402tests]        |
-| 20162501 | [Day 25: Clock Signal][20162501]                                    | [&#128190;][20162501solution]        | [&#128190;][20162501tests]        |
+| 20162501 | [Day 25: Clock Signal][20162501]                                    | &#9989;[&#128190;][20162501solution] | &#9989;[&#128190;][20162501tests] |
 
 [20160101]: https://adventofcode.com/2016/day/1
 [20160102]: https://adventofcode.com/2016/day/1#part2

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-@Disabled
+@Disabled(value = "Takes about 30 seconds.")
 public class Part2Test extends BaseTest {
   @ParameterizedTest
   @ValueSource(strings = {"02"})

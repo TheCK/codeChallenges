@@ -10,9 +10,9 @@ import java.util.Scanner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public abstract class BaseTest {
-  protected ByteArrayOutputStream output = null;
+  protected OutputStream output = null;
 
-  private InputStream input = null;
+  protected InputStream input = null;
 
   private Long start = null;
 
@@ -86,10 +86,10 @@ public abstract class BaseTest {
     return builder.toString();
   }
 
-  protected static String getResult(String... restults) {
+  protected static String getResult(String... results) {
     StringBuilder builder = new StringBuilder();
 
-    for (String result : restults) {
+    for (String result : results) {
       builder.append(result).append(System.lineSeparator());
     }
 

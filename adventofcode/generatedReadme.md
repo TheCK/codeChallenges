@@ -202,7 +202,7 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part2Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/day25/Part1Test.java
 
-# 2016 (38/49)
+# 2016 (43/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -230,20 +230,20 @@
 | 20161102 | [Day 11: Radioisotope Thermoelectric Generators - Part 2][20161102] | [&#128190;][20161102solution]        | [&#128190;][20161102tests]        |
 | 20161201 | [Day 12: Leonardo's Monorail][20161201]                             | &#9989;[&#128190;][20161201solution] | &#9989;[&#128190;][20161201tests] |
 | 20161202 | [Day 12: Leonardo's Monorail - Part 2][20161202]                    | &#9989;[&#128190;][20161202solution] | &#9989;[&#128190;][20161202tests] |
-| 20161301 | [Day 13: A Maze of Twisty Little Cubicles][20161301]                | [&#128190;][20161301solution]        | [&#128190;][20161301tests]        |
-| 20161302 | [Day 13: A Maze of Twisty Little Cubicles - Part 2][20161302]       | [&#128190;][20161302solution]        | [&#128190;][20161302tests]        |
+| 20161301 | [Day 13: A Maze of Twisty Little Cubicles][20161301]                | &#9989;[&#128190;][20161301solution] | &#9989;[&#128190;][20161301tests] |
+| 20161302 | [Day 13: A Maze of Twisty Little Cubicles - Part 2][20161302]       | &#9989;[&#128190;][20161302solution] | &#9989;[&#128190;][20161302tests] |
 | 20161401 | [Day 14: One-Time Pad][20161401]                                    | &#9989;[&#128190;][20161401solution] | &#9989;[&#128190;][20161401tests] |
 | 20161402 | [Day 14: One-Time Pad - Part 2][20161402]                           | &#9989;[&#128190;][20161402solution] | &#9989;[&#128190;][20161402tests] |
 | 20161501 | [Day 15: Timing is Everything][20161501]                            | &#9989;[&#128190;][20161501solution] | &#9989;[&#128190;][20161501tests] |
 | 20161502 | [Day 15: Timing is Everything - Part 2][20161502]                   | &#9989;[&#128190;][20161502solution] | &#9989;[&#128190;][20161502tests] |
 | 20161601 | [Day 16: Dragon Checksum][20161601]                                 | &#9989;[&#128190;][20161601solution] | &#9989;[&#128190;][20161601tests] |
 | 20161602 | [Day 16: Dragon Checksum - Part 2][20161602]                        | &#9989;[&#128190;][20161602solution] | &#9989;[&#128190;][20161602tests] |
-| 20161701 | [Day 17: Two Steps Forward][20161701]                               | [&#128190;][20161701solution]        | [&#128190;][20161701tests]        |
-| 20161702 | [Day 17: Two Steps Forward][20161702]                               | [&#128190;][20161702solution]        | [&#128190;][20161702tests]        |
+| 20161701 | [Day 17: Two Steps Forward][20161701]                               | &#9989;[&#128190;][20161701solution] | &#9989;[&#128190;][20161701tests] |
+| 20161702 | [Day 17: Two Steps Forward][20161702]                               | &#9989;[&#128190;][20161702solution] | &#9989;[&#128190;][20161702tests] |
 | 20161801 | [Day 18: Like a Rogue][20161801]                                    | &#9989;[&#128190;][20161801solution] | &#9989;[&#128190;][20161801tests] |
 | 20161802 | [Day 18: Like a Rogue - Part 2][20161802]                           | &#9989;[&#128190;][20161802solution] | &#9989;[&#128190;][20161802tests] |
 | 20161901 | [Day 19: An Elephant Named Joseph][20161901]                        | &#9989;[&#128190;][20161901solution] | &#9989;[&#128190;][20161901tests] |
-| 20161902 | [Day 19: An Elephant Named Joseph - Part 2][20161902]               | [&#128190;][20161902solution]        | [&#128190;][20161902tests]        |
+| 20161902 | [Day 19: An Elephant Named Joseph - Part 2][20161902]               | &#9989;[&#128190;][20161902solution] | &#9989;[&#128190;][20161902tests] |
 | 20162001 | [Day 20: Firewall Rules][20162001]                                  | &#9989;[&#128190;][20162001solution] | &#9989;[&#128190;][20162001tests] |
 | 20162002 | [Day 20: Firewall Rules - Part 2][20162002]                         | &#9989;[&#128190;][20162002solution] | &#9989;[&#128190;][20162002tests] |
 | 20162101 | [Day 21: Scrambled Letters and Hash][20162101]                      | &#9989;[&#128190;][20162101solution] | &#9989;[&#128190;][20162101tests] |

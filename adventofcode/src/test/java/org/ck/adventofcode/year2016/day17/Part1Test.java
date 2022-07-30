@@ -1,14 +1,12 @@
 package org.ck.adventofcode.year2016.day17;
 
 import org.ck.codeChallengeLib.testhelper.BaseTest;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-@Disabled
 public class Part1Test extends BaseTest {
   @ParameterizedTest
-  @ValueSource(strings = {"01"})
+  @ValueSource(strings = {"01a", "01b", "01b", "01"})
   public void test(String name) throws Exception {
     runFileAsStdIn(Part1.class, name);
   }

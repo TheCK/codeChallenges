@@ -1,4 +1,4 @@
-# Code Jam (6/6)
+# Code Jam (7/7)
 
 ## 2018 (1/1)
 
@@ -13,7 +13,7 @@
 [220180001tests]: src/test/java/org/ck/codingcompetitions/codejam/year2018/practice/problem1/SolutionTest.java
 
 
-## 2022 (5/5)
+## 2022 (6/6)
 
 |         # | Name                                                          | Solution                              | Test                               |
 |----------:|---------------------------------------------------------------|:-------------------------------------:|:----------------------------------:|
@@ -22,24 +22,28 @@
 | 220220003 | [Qualification Round - 3 - d1000000][220220003]               | &#9989;[&#128190;][220220003solution] | &#9989;[&#128190;][220220003tests] |
 | 220220004 | [Qualification Round - 4 - Chain Reactions][220220004]        | &#9989;[&#128190;][220220004solution] | &#9989;[&#128190;][220220004tests] |
 | 220220005 | [Qualification Round - 5 - Twisty Little Passages][220220005] | &#9989;[&#128190;][220220005solution] | &#9989;[&#128190;][220220005tests] |
+| 220220101 | [Round A1 - 1 - Double or One Thing][220220101]               | &#9989;[&#128190;][220220101solution] | &#9989;[&#128190;][220220101tests] |
 
 [220220001]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a4621b
 [220220002]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a4672b
 [220220003]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a46471
 [220220004]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a45ef7
 [220220005]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a45fc0
+[220220101]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000877ba5/0000000000aa8e9c
 
 [220220001solution]: src/main/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem1/Solution.java
 [220220002solution]: src/main/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem2/Solution.java
 [220220003solution]: src/main/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem3/Solution.java
 [220220004solution]: src/main/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem4/Solution.java
 [220220005solution]: src/main/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem5/Solution.java
+[220220101solution]: src/main/java/org/ck/codingcompetitions/codejam/year2022/round1a/problem1/Solution.java
 
 [220220001tests]: src/test/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem1/SolutionTest.java
 [220220002tests]: src/test/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem2/SolutionTest.java
 [220220003tests]: src/test/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem3/SolutionTest.java
 [220220004tests]: src/test/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem4/SolutionTest.java
 [220220005tests]: src/test/java/org/ck/codingcompetitions/codejam/year2022/qualification/problem5/SolutionTest.java
+[220220101tests]: src/test/java/org/ck/codingcompetitions/codejam/year2022/round1a/problem1/SolutionTest.java
 
 # Kick Start (1/2)
 

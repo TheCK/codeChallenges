@@ -3,7 +3,7 @@ package org.ck.hackerRank.languages.java.introduction.stdinandstdouti;
 import java.util.Scanner;
 
 @org.ck.codeChallengeLib.annotation.Solution(
-    id = 40201004,
+    id = 40201002,
     name = "Java Stdin and Stdout I",
     url = "https://www.hackerrank.com/challenges/java-stdin-and-stdout-1",
     category = "Java",

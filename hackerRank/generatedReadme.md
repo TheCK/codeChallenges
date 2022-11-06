@@ -642,9 +642,9 @@
 |        # | Name                                      | Solution                             | Test                              |
 |---------:|-------------------------------------------|:------------------------------------:|:---------------------------------:|
 | 40201001 | [Welcome to Java!][40201001]              | &#9989;[&#128190;][40201001solution] | &#9989;[&#128190;][40201001tests] |
+| 40201002 | [Java Stdin and Stdout I][40201002]       | &#9989;[&#128190;][40201002solution] | &#9989;[&#128190;][40201002tests] |
 | 40201003 | [Java If-Else][40201003]                  | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
-| 40201003 | [Java Stdin and Stdout II][40201003]      | &#9989;[&#128190;][40201003solution] | &#9989;[&#128190;][40201003tests] |
-| 40201004 | [Java Stdin and Stdout I][40201004]       | &#9989;[&#128190;][40201004solution] | &#9989;[&#128190;][40201004tests] |
+| 40201004 | [Java Stdin and Stdout II][40201004]      | &#9989;[&#128190;][40201004solution] | &#9989;[&#128190;][40201004tests] |
 | 40201005 | [Java Output Formatting][40201005]        | &#9989;[&#128190;][40201005solution] | &#9989;[&#128190;][40201005tests] |
 | 40201006 | [Java Loops I][40201006]                  | &#9989;[&#128190;][40201006solution] | &#9989;[&#128190;][40201006tests] |
 | 40201007 | [Java Loops II][40201007]                 | &#9989;[&#128190;][40201007solution] | &#9989;[&#128190;][40201007tests] |
@@ -656,9 +656,9 @@
 | 40201013 | [Java Currency Formatter][40201013]       | &#9989;[&#128190;][40201013solution] | &#9989;[&#128190;][40201013tests] |
 
 [40201001]: https://www.hackerrank.com/challenges/welcome-to-java
+[40201002]: https://www.hackerrank.com/challenges/java-stdin-and-stdout-1
 [40201003]: https://www.hackerrank.com/challenges/java-if-else
-[40201003]: https://www.hackerrank.com/challenges/java-stdin-stdout
-[40201004]: https://www.hackerrank.com/challenges/java-stdin-and-stdout-1
+[40201004]: https://www.hackerrank.com/challenges/java-stdin-stdout
 [40201005]: https://www.hackerrank.com/challenges/java-output-formatting
 [40201006]: https://www.hackerrank.com/challenges/java-loops-i
 [40201007]: https://www.hackerrank.com/challenges/java-loops
@@ -670,9 +670,9 @@
 [40201013]: https://www.hackerrank.com/challenges/java-currency-formatter
 
 [40201001solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/welcometojava/Solution.java
+[40201002solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/Solution.java
 [40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/ifelse/Solution.java
-[40201003solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/Solution.java
-[40201004solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/Solution.java
+[40201004solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/Solution.java
 [40201005solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/outputformatting/Solution.java
 [40201006solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/loopsi/Solution.java
 [40201007solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/loopsii/Solution.java
@@ -684,9 +684,9 @@
 [40201013solution]: src/main/java/org/ck/hackerRank/languages/java/introduction/currencyformatter/Solution.java
 
 [40201001tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/welcometojava/SolutionTest.java
+[40201002tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/SolutionTest.java
 [40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/ifelse/SolutionTest.java
-[40201003tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/SolutionTest.java
-[40201004tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdouti/SolutionTest.java
+[40201004tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/stdinandstdoutii/SolutionTest.java
 [40201005tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/outputformatting/SolutionTest.java
 [40201006tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/loopsi/SolutionTest.java
 [40201007tests]: src/test/java/org/ck/hackerRank/languages/java/introduction/loopsii/SolutionTest.java

@@ -1,4 +1,4 @@
-# Code Jam (7/7)
+# Code Jam (6/7)
 
 ## 2018 (1/1)
 
@@ -13,7 +13,7 @@
 [220180001tests]: src/test/java/org/ck/codingcompetitions/codejam/year2018/practice/problem1/SolutionTest.java
 
 
-## 2022 (6/6)
+## 2022 (5/6)
 
 |         # | Name                                                          | Solution                              | Test                               |
 |----------:|---------------------------------------------------------------|:-------------------------------------:|:----------------------------------:|
@@ -21,7 +21,7 @@
 | 220220002 | [Qualification Round - 2 - 3D Printing][220220002]            | &#9989;[&#128190;][220220002solution] | &#9989;[&#128190;][220220002tests] |
 | 220220003 | [Qualification Round - 3 - d1000000][220220003]               | &#9989;[&#128190;][220220003solution] | &#9989;[&#128190;][220220003tests] |
 | 220220004 | [Qualification Round - 4 - Chain Reactions][220220004]        | &#9989;[&#128190;][220220004solution] | &#9989;[&#128190;][220220004tests] |
-| 220220005 | [Qualification Round - 5 - Twisty Little Passages][220220005] | &#9989;[&#128190;][220220005solution] | &#9989;[&#128190;][220220005tests] |
+| 220220005 | [Qualification Round - 5 - Twisty Little Passages][220220005] | [&#128190;][220220005solution]        | [&#128190;][220220005tests]        |
 | 220220101 | [Round A1 - 1 - Double or One Thing][220220101]               | &#9989;[&#128190;][220220101solution] | &#9989;[&#128190;][220220101tests] |
 
 [220220001]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a4621b

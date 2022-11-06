@@ -1,7 +1,7 @@
 package org.ck.codingcompetitions.codejam.year2018.practice.problem1;
 
+import org.ck.codeChallengeLib.testhelper.BaseInteractiveRunner;
 import org.ck.codeChallengeLib.testhelper.BaseInteractiveTest;
-import org.ck.codeChallengeLib.testhelper.InteractiveRunner;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
@@ -12,16 +12,17 @@ public class SolutionTest extends BaseInteractiveTest {
     runAgainstJudge(Solution.class, new NumberGuessingRunner());
   }
 
-  private static class NumberGuessingRunner implements InteractiveRunner {
-    public static final int MAX_NUMBER = 1_000_000_000;
-    public static final int MAX_TESTS = 20;
+  private static class NumberGuessingRunner extends BaseInteractiveRunner {
+    private static final int MAX_NUMBER = 1_000_000_000;
+    private static final int MAX_TESTS = 20;
 
-    private final int tests;
+    private static final int TIMEOUT = 10;
+
     private int number;
     private int guesses;
 
     public NumberGuessingRunner() {
-      tests = new Random().nextInt(MAX_TESTS) + 1;
+      super(MAX_TESTS, TIMEOUT);
     }
 
     @Override
@@ -46,26 +47,11 @@ public class SolutionTest extends BaseInteractiveTest {
     }
 
     @Override
-    public String[] setUpTests() {
-      return new String[] {String.valueOf(tests)};
-    }
-
-    @Override
     public String[] setUpTest() {
       number = new Random().nextInt(MAX_NUMBER + 1);
       guesses = 0;
 
       return new String[] {"0 " + MAX_NUMBER, "30"};
-    }
-
-    @Override
-    public int testCases() {
-      return tests;
-    }
-
-    @Override
-    public int timeLimit() {
-      return 10;
     }
   }
 }

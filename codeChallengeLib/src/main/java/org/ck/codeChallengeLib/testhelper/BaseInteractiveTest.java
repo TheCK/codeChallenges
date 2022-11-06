@@ -51,9 +51,11 @@ public class BaseInteractiveTest extends BaseTest {
             throw new RuntimeException("Input into runner was not valid");
           }
 
-          testToUnitStream.write(
-              String.format("%s%n", runnerResult.getAnswer()).getBytes(StandardCharsets.UTF_8));
-          testToUnitStream.flush();
+          if (runnerResult.getAnswer() != null) {
+            testToUnitStream.write(
+                String.format("%s%n", runnerResult.getAnswer()).getBytes(StandardCharsets.UTF_8));
+            testToUnitStream.flush();
+          }
 
           if (runnerResult.isTestFinished()) {
             break;

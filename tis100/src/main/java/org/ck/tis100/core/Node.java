@@ -4,20 +4,15 @@ import java.util.*;
 import java.util.function.Predicate;
 
 public class Node {
-  private static List<String> PORT_ORDER = Arrays.asList("LEFT", "RIGHT", "UP", "DOWN");
-
-  int acc = 0;
-  int bak = 0;
-
-  String lastPort = null;
-
-  int ip = 0;
-  int step = 0;
-
+  private static final List<String> PORT_ORDER = Arrays.asList("LEFT", "RIGHT", "UP", "DOWN");
   final List<String> instructions = new ArrayList<>();
   final Map<String, Port> ports;
-
   final Map<String, Integer> labels = new HashMap<>();
+  int acc = 0;
+  int bak = 0;
+  String lastPort = null;
+  int ip = 0;
+  int step = 0;
 
   public Node(List<String> instructions, Map<String, Port> ports) {
     for (int i = 0; i < instructions.size(); ++i) {
@@ -89,6 +84,10 @@ public class Node {
 
     if (continueStep) {
       ++ip;
+
+      if (ip == instructions.size()) {
+        ip = 0;
+      }
     }
   }
 

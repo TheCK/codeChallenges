@@ -19,6 +19,7 @@
         <module>hackerRank</module>
         <module>projectEuler</module>
         <module>codeforces</module>
+        <module>leetcode</module>
         <module>spoj</module>
         <module>codility</module>
         <module>codewars</module>

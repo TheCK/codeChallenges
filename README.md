@@ -14,6 +14,8 @@
 
 ## [HackerRank](hackerRank/generatedReadme.md)
 
+## [Leetcode](leetcode/generatedReadme.md)
+
 ## [Project Euler](projectEuler/generatedReadme.md)
 
 ## [Sphere Judge Online](spoj/generatedReadme.md)

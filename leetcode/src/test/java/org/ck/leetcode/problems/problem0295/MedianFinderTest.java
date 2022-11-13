@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SolutionTest {
+public class MedianFinderTest {
   public static Stream<Arguments> generator() {
     return Stream.of(
         Arguments.of(

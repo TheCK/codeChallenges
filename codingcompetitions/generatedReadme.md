@@ -1,4 +1,17 @@
-# Code Jam (6/7)
+# Code Jam (7/8)
+
+## 2008 (1/1)
+
+|         # | Name                                                       | Solution                              | Test                               |
+|----------:|------------------------------------------------------------|:-------------------------------------:|:----------------------------------:|
+| 220080002 | [Qualification Round - 2 - Saving the Universe][220080002] | &#9989;[&#128190;][220080002solution] | &#9989;[&#128190;][220080002tests] |
+
+[220080002]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000432b79/000000000043290d
+
+[220080002solution]: src/main/java/org/ck/codingcompetitions/codejam/year2008/qualification/problem2/Solution.java
+
+[220080002tests]: src/test/java/org/ck/codingcompetitions/codejam/year2008/qualification/problem2/SolutionTest.java
+
 
 ## 2018 (1/1)
 

@@ -942,3 +942,207 @@
 [20212402tests]: src/test/java/org/ck/adventofcode/year2021/day24/Part2Test.java
 [20212501tests]: src/test/java/org/ck/adventofcode/year2021/day25/Part1Test.java
 
+# 2022 (0/49)
+
+|        # | Name                             | Solution                             | Test                              |
+|---------:|----------------------------------|:------------------------------------:|:---------------------------------:|
+| 20220101 | [Day 2: ???][20220101]           | [&#128190;][20220101solution]        | [&#128190;][20220101tests]        |
+| 20220102 | [Day 1: ??? - Part 2][20220102]  | [&#128190;][20220102solution]        | [&#128190;][20220102tests]        |
+| 20220201 | [Day 2: ???][20220201]           | [&#128190;][20220201solution]        | [&#128190;][20220201tests]        |
+| 20220202 | [Day 2: ??? - Part 2][20220202]  | [&#128190;][20220202solution]        | [&#128190;][20220202tests]        |
+| 20220301 | [Day 3: ???][20220301]           | [&#128190;][20220301solution]        | [&#128190;][20220301tests]        |
+| 20220302 | [Day 3: ??? - Part 2][20220302]  | [&#128190;][20220302solution]        | [&#128190;][20220302tests]        |
+| 20220401 | [Day 4: ???][20220401]           | [&#128190;][20220401solution]        | [&#128190;][20220401tests]        |
+| 20220402 | [Day 4: ??? - Part 2][20220402]  | [&#128190;][20220402solution]        | [&#128190;][20220402tests]        |
+| 20220501 | [Day 5: ???][20220501]           | [&#128190;][20220501solution]        | [&#128190;][20220501tests]        |
+| 20220502 | [Day 5: ??? - Part 2][20220502]  | [&#128190;][20220502solution]        | [&#128190;][20220502tests]        |
+| 20220601 | [Day 6: ???][20220601]           | [&#128190;][20220601solution]        | [&#128190;][20220601tests]        |
+| 20220602 | [Day 6: ??? - Part 2][20220602]  | [&#128190;][20220602solution]        | [&#128190;][20220602tests]        |
+| 20220701 | [Day 7: ???][20220701]           | [&#128190;][20220701solution]        | [&#128190;][20220701tests]        |
+| 20220702 | [Day 7: ??? - Part 2][20220702]  | [&#128190;][20220702solution]        | [&#128190;][20220702tests]        |
+| 20220801 | [Day 8: ???][20220801]           | [&#128190;][20220801solution]        | [&#128190;][20220801tests]        |
+| 20220802 | [Day 8: ??? - Part 2][20220802]  | [&#128190;][20220802solution]        | [&#128190;][20220802tests]        |
+| 20220901 | [Day 9: ???][20220901]           | [&#128190;][20220901solution]        | [&#128190;][20220901tests]        |
+| 20220902 | [Day 9: ??? - Part 2][20220902]  | [&#128190;][20220902solution]        | [&#128190;][20220902tests]        |
+| 20221001 | [Day 10: ???][20221001]          | [&#128190;][20221001solution]        | [&#128190;][20221001tests]        |
+| 20221002 | [Day 10: ??? - Part 2][20221002] | [&#128190;][20221002solution]        | [&#128190;][20221002tests]        |
+| 20221101 | [Day 11: ???][20221101]          | [&#128190;][20221101solution]        | [&#128190;][20221101tests]        |
+| 20221102 | [Day 11: ??? - Part 2][20221102] | [&#128190;][20221102solution]        | [&#128190;][20221102tests]        |
+| 20221201 | [Day 12: ???][20221201]          | [&#128190;][20221201solution]        | [&#128190;][20221201tests]        |
+| 20221202 | [Day 12: ??? - Part 2][20221202] | [&#128190;][20221202solution]        | [&#128190;][20221202tests]        |
+| 20221301 | [Day 13: ???][20221301]          | [&#128190;][20221301solution]        | [&#128190;][20221301tests]        |
+| 20221302 | [Day 13: ??? - Part 2][20221302] | [&#128190;][20221302solution]        | [&#128190;][20221302tests]        |
+| 20221401 | [Day 14: ???][20221401]          | [&#128190;][20221401solution]        | [&#128190;][20221401tests]        |
+| 20221402 | [Day 14: ??? - Part 2][20221402] | [&#128190;][20221402solution]        | [&#128190;][20221402tests]        |
+| 20221501 | [Day 15: ???][20221501]          | [&#128190;][20221501solution]        | [&#128190;][20221501tests]        |
+| 20221502 | [Day 15: ??? - Part 2][20221502] | [&#128190;][20221502solution]        | [&#128190;][20221502tests]        |
+| 20221601 | [Day 16: ???][20221601]          | [&#128190;][20221601solution]        | [&#128190;][20221601tests]        |
+| 20221602 | [Day 16: ??? - Part 2][20221602] | [&#128190;][20221602solution]        | [&#128190;][20221602tests]        |
+| 20221701 | [Day 17: ???][20221701]          | [&#128190;][20221701solution]        | [&#128190;][20221701tests]        |
+| 20221702 | [Day 17: ??? - Part 2][20221702] | [&#128190;][20221702solution]        | [&#128190;][20221702tests]        |
+| 20221801 | [Day 18: ???][20221801]          | [&#128190;][20221801solution]        | [&#128190;][20221801tests]        |
+| 20221802 | [Day 18: ??? - Part 2][20221802] | [&#128190;][20221802solution]        | [&#128190;][20221802tests]        |
+| 20221901 | [Day 19: ???][20221901]          | [&#128190;][20221901solution]        | [&#128190;][20221901tests]        |
+| 20221902 | [Day 19: ??? - Part 2][20221902] | [&#128190;][20221902solution]        | [&#128190;][20221902tests]        |
+| 20222001 | [Day 20: ???][20222001]          | [&#128190;][20222001solution]        | [&#128190;][20222001tests]        |
+| 20222002 | [Day 20: ??? - Part 2][20222002] | [&#128190;][20222002solution]        | [&#128190;][20222002tests]        |
+| 20222101 | [Day 22: ???][20222101]          | [&#128190;][20222101solution]        | [&#128190;][20222101tests]        |
+| 20222102 | [Day 21: ??? - Part 2][20222102] | [&#128190;][20222102solution]        | [&#128190;][20222102tests]        |
+| 20222201 | [Day 22: ???][20222201]          | [&#128190;][20222201solution]        | [&#128190;][20222201tests]        |
+| 20222202 | [Day 22: ??? - Part 2][20222202] | [&#128190;][20222202solution]        | [&#128190;][20222202tests]        |
+| 20222301 | [Day 23: ???][20222301]          | [&#128190;][20222301solution]        | [&#128190;][20222301tests]        |
+| 20222302 | [Day 23: ??? - Part 2][20222302] | [&#128190;][20222302solution]        | [&#128190;][20222302tests]        |
+| 20222401 | [Day 24: ???][20222401]          | [&#128190;][20222401solution]        | [&#128190;][20222401tests]        |
+| 20222402 | [Day 24: ??? - Part 2][20222402] | [&#128190;][20222402solution]        | [&#128190;][20222402tests]        |
+| 20222501 | [Day 25: ???][20222501]          | [&#128190;][20222501solution]        | [&#128190;][20222501tests]        |
+
+[20220101]: https://adventofcode.com/2022/day/1
+[20220102]: https://adventofcode.com/2022/day/1#part2
+[20220201]: https://adventofcode.com/2022/day/2
+[20220202]: https://adventofcode.com/2022/day/2#part2
+[20220301]: https://adventofcode.com/2022/day/3
+[20220302]: https://adventofcode.com/2022/day/3#part2
+[20220401]: https://adventofcode.com/2022/day/4
+[20220402]: https://adventofcode.com/2022/day/4#part2
+[20220501]: https://adventofcode.com/2022/day/5
+[20220502]: https://adventofcode.com/2022/day/5#part2
+[20220601]: https://adventofcode.com/2022/day/6
+[20220602]: https://adventofcode.com/2022/day/6#part2
+[20220701]: https://adventofcode.com/2022/day/7
+[20220702]: https://adventofcode.com/2022/day/7#part2
+[20220801]: https://adventofcode.com/2022/day/8
+[20220802]: https://adventofcode.com/2022/day/8#part2
+[20220901]: https://adventofcode.com/2022/day/9
+[20220902]: https://adventofcode.com/2022/day/9#part2
+[20221001]: https://adventofcode.com/2022/day/10
+[20221002]: https://adventofcode.com/2022/day/10#part2
+[20221101]: https://adventofcode.com/2022/day/11
+[20221102]: https://adventofcode.com/2022/day/11#part2
+[20221201]: https://adventofcode.com/2022/day/12
+[20221202]: https://adventofcode.com/2022/day/12#part2
+[20221301]: https://adventofcode.com/2022/day/13
+[20221302]: https://adventofcode.com/2022/day/13#part2
+[20221401]: https://adventofcode.com/2022/day/14
+[20221402]: https://adventofcode.com/2022/day/14#part2
+[20221501]: https://adventofcode.com/2022/day/15
+[20221502]: https://adventofcode.com/2022/day/15#part2
+[20221601]: https://adventofcode.com/2022/day/16
+[20221602]: https://adventofcode.com/2022/day/16#part2
+[20221701]: https://adventofcode.com/2022/day/17
+[20221702]: https://adventofcode.com/2022/day/17#part2
+[20221801]: https://adventofcode.com/2022/day/18
+[20221802]: https://adventofcode.com/2022/day/18#part2
+[20221901]: https://adventofcode.com/2022/day/19
+[20221902]: https://adventofcode.com/2022/day/19#part2
+[20222001]: https://adventofcode.com/2022/day/20
+[20222002]: https://adventofcode.com/2022/day/20#part2
+[20222101]: https://adventofcode.com/2022/day/21
+[20222102]: https://adventofcode.com/2022/day/21#part2
+[20222201]: https://adventofcode.com/2022/day/21
+[20222202]: https://adventofcode.com/2022/day/21#part2
+[20222301]: https://adventofcode.com/2022/day/23
+[20222302]: https://adventofcode.com/2022/day/23#part2
+[20222401]: https://adventofcode.com/2022/day/24
+[20222402]: https://adventofcode.com/2022/day/24#part2
+[20222501]: https://adventofcode.com/2022/day/25
+
+[20220101solution]: src/main/java/org/ck/adventofcode/year2022/day01/Part1.java
+[20220102solution]: src/main/java/org/ck/adventofcode/year2022/day01/Part2.java
+[20220201solution]: src/main/java/org/ck/adventofcode/year2022/day02/Part1.java
+[20220202solution]: src/main/java/org/ck/adventofcode/year2022/day02/Part2.java
+[20220301solution]: src/main/java/org/ck/adventofcode/year2022/day03/Part1.java
+[20220302solution]: src/main/java/org/ck/adventofcode/year2022/day03/Part2.java
+[20220401solution]: src/main/java/org/ck/adventofcode/year2022/day04/Part1.java
+[20220402solution]: src/main/java/org/ck/adventofcode/year2022/day04/Part2.java
+[20220501solution]: src/main/java/org/ck/adventofcode/year2022/day05/Part1.java
+[20220502solution]: src/main/java/org/ck/adventofcode/year2022/day05/Part2.java
+[20220601solution]: src/main/java/org/ck/adventofcode/year2022/day06/Part1.java
+[20220602solution]: src/main/java/org/ck/adventofcode/year2022/day06/Part2.java
+[20220701solution]: src/main/java/org/ck/adventofcode/year2022/day07/Part1.java
+[20220702solution]: src/main/java/org/ck/adventofcode/year2022/day07/Part2.java
+[20220801solution]: src/main/java/org/ck/adventofcode/year2022/day08/Part1.java
+[20220802solution]: src/main/java/org/ck/adventofcode/year2022/day08/Part2.java
+[20220901solution]: src/main/java/org/ck/adventofcode/year2022/day09/Part1.java
+[20220902solution]: src/main/java/org/ck/adventofcode/year2022/day09/Part2.java
+[20221001solution]: src/main/java/org/ck/adventofcode/year2022/day10/Part1.java
+[20221002solution]: src/main/java/org/ck/adventofcode/year2022/day10/Part2.java
+[20221101solution]: src/main/java/org/ck/adventofcode/year2022/day11/Part1.java
+[20221102solution]: src/main/java/org/ck/adventofcode/year2022/day11/Part2.java
+[20221201solution]: src/main/java/org/ck/adventofcode/year2022/day12/Part1.java
+[20221202solution]: src/main/java/org/ck/adventofcode/year2022/day12/Part2.java
+[20221301solution]: src/main/java/org/ck/adventofcode/year2022/day13/Part1.java
+[20221302solution]: src/main/java/org/ck/adventofcode/year2022/day13/Part2.java
+[20221401solution]: src/main/java/org/ck/adventofcode/year2022/day14/Part1.java
+[20221402solution]: src/main/java/org/ck/adventofcode/year2022/day14/Part2.java
+[20221501solution]: src/main/java/org/ck/adventofcode/year2022/day15/Part1.java
+[20221502solution]: src/main/java/org/ck/adventofcode/year2022/day15/Part2.java
+[20221601solution]: src/main/java/org/ck/adventofcode/year2022/day16/Part1.java
+[20221602solution]: src/main/java/org/ck/adventofcode/year2022/day16/Part2.java
+[20221701solution]: src/main/java/org/ck/adventofcode/year2022/day17/Part1.java
+[20221702solution]: src/main/java/org/ck/adventofcode/year2022/day17/Part2.java
+[20221801solution]: src/main/java/org/ck/adventofcode/year2022/day18/Part1.java
+[20221802solution]: src/main/java/org/ck/adventofcode/year2022/day18/Part2.java
+[20221901solution]: src/main/java/org/ck/adventofcode/year2022/day19/Part1.java
+[20221902solution]: src/main/java/org/ck/adventofcode/year2022/day19/Part2.java
+[20222001solution]: src/main/java/org/ck/adventofcode/year2022/day20/Part1.java
+[20222002solution]: src/main/java/org/ck/adventofcode/year2022/day20/Part2.java
+[20222101solution]: src/main/java/org/ck/adventofcode/year2022/day21/Part1.java
+[20222102solution]: src/main/java/org/ck/adventofcode/year2022/day21/Part2.java
+[20222201solution]: src/main/java/org/ck/adventofcode/year2022/day22/Part1.java
+[20222202solution]: src/main/java/org/ck/adventofcode/year2022/day22/Part2.java
+[20222301solution]: src/main/java/org/ck/adventofcode/year2022/day23/Part1.java
+[20222302solution]: src/main/java/org/ck/adventofcode/year2022/day23/Part2.java
+[20222401solution]: src/main/java/org/ck/adventofcode/year2022/day24/Part1.java
+[20222402solution]: src/main/java/org/ck/adventofcode/year2022/day24/Part2.java
+[20222501solution]: src/main/java/org/ck/adventofcode/year2022/day25/Part1.java
+
+[20220101tests]: src/test/java/org/ck/adventofcode/year2022/day01/Part1Test.java
+[20220102tests]: src/test/java/org/ck/adventofcode/year2022/day01/Part2Test.java
+[20220201tests]: src/test/java/org/ck/adventofcode/year2022/day02/Part1Test.java
+[20220202tests]: src/test/java/org/ck/adventofcode/year2022/day02/Part2Test.java
+[20220301tests]: src/test/java/org/ck/adventofcode/year2022/day03/Part1Test.java
+[20220302tests]: src/test/java/org/ck/adventofcode/year2022/day03/Part2Test.java
+[20220401tests]: src/test/java/org/ck/adventofcode/year2022/day04/Part1Test.java
+[20220402tests]: src/test/java/org/ck/adventofcode/year2022/day04/Part2Test.java
+[20220501tests]: src/test/java/org/ck/adventofcode/year2022/day05/Part1Test.java
+[20220502tests]: src/test/java/org/ck/adventofcode/year2022/day05/Part2Test.java
+[20220601tests]: src/test/java/org/ck/adventofcode/year2022/day06/Part1Test.java
+[20220602tests]: src/test/java/org/ck/adventofcode/year2022/day06/Part2Test.java
+[20220701tests]: src/test/java/org/ck/adventofcode/year2022/day07/Part1Test.java
+[20220702tests]: src/test/java/org/ck/adventofcode/year2022/day07/Part2Test.java
+[20220801tests]: src/test/java/org/ck/adventofcode/year2022/day08/Part1Test.java
+[20220802tests]: src/test/java/org/ck/adventofcode/year2022/day08/Part2Test.java
+[20220901tests]: src/test/java/org/ck/adventofcode/year2022/day09/Part1Test.java
+[20220902tests]: src/test/java/org/ck/adventofcode/year2022/day09/Part2Test.java
+[20221001tests]: src/test/java/org/ck/adventofcode/year2022/day10/Part1Test.java
+[20221002tests]: src/test/java/org/ck/adventofcode/year2022/day10/Part2Test.java
+[20221101tests]: src/test/java/org/ck/adventofcode/year2022/day11/Part1Test.java
+[20221102tests]: src/test/java/org/ck/adventofcode/year2022/day11/Part2Test.java
+[20221201tests]: src/test/java/org/ck/adventofcode/year2022/day12/Part1Test.java
+[20221202tests]: src/test/java/org/ck/adventofcode/year2022/day12/Part2Test.java
+[20221301tests]: src/test/java/org/ck/adventofcode/year2022/day13/Part1Test.java
+[20221302tests]: src/test/java/org/ck/adventofcode/year2022/day13/Part2Test.java
+[20221401tests]: src/test/java/org/ck/adventofcode/year2022/day14/Part1Test.java
+[20221402tests]: src/test/java/org/ck/adventofcode/year2022/day14/Part2Test.java
+[20221501tests]: src/test/java/org/ck/adventofcode/year2022/day15/Part1Test.java
+[20221502tests]: src/test/java/org/ck/adventofcode/year2022/day15/Part2Test.java
+[20221601tests]: src/test/java/org/ck/adventofcode/year2022/day16/Part1Test.java
+[20221602tests]: src/test/java/org/ck/adventofcode/year2022/day16/Part2Test.java
+[20221701tests]: src/test/java/org/ck/adventofcode/year2022/day17/Part1Test.java
+[20221702tests]: src/test/java/org/ck/adventofcode/year2022/day17/Part2Test.java
+[20221801tests]: src/test/java/org/ck/adventofcode/year2022/day18/Part1Test.java
+[20221802tests]: src/test/java/org/ck/adventofcode/year2022/day18/Part2Test.java
+[20221901tests]: src/test/java/org/ck/adventofcode/year2022/day19/Part1Test.java
+[20221902tests]: src/test/java/org/ck/adventofcode/year2022/day19/Part2Test.java
+[20222001tests]: src/test/java/org/ck/adventofcode/year2022/day20/Part1Test.java
+[20222002tests]: src/test/java/org/ck/adventofcode/year2022/day20/Part2Test.java
+[20222101tests]: src/test/java/org/ck/adventofcode/year2022/day21/Part1Test.java
+[20222102tests]: src/test/java/org/ck/adventofcode/year2022/day21/Part2Test.java
+[20222201tests]: src/test/java/org/ck/adventofcode/year2022/day22/Part1Test.java
+[20222202tests]: src/test/java/org/ck/adventofcode/year2022/day22/Part2Test.java
+[20222301tests]: src/test/java/org/ck/adventofcode/year2022/day23/Part1Test.java
+[20222302tests]: src/test/java/org/ck/adventofcode/year2022/day23/Part2Test.java
+[20222401tests]: src/test/java/org/ck/adventofcode/year2022/day24/Part1Test.java
+[20222402tests]: src/test/java/org/ck/adventofcode/year2022/day24/Part2Test.java
+[20222501tests]: src/test/java/org/ck/adventofcode/year2022/day25/Part1Test.java
+

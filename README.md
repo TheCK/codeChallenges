@@ -1,24 +1,24 @@
 # codeChallenges
 
-## [adventOfCode](adventofcode/generatedReadme.md)
+## [adventOfCode](adventofcode/README.md)
 
-## [codeEval](codeEval/generatedReadme.md)
+## [codeEval](codeEval/README.md)
 
-## [codeforces](codeforces/generatedReadme.md)
+## [codeforces](codeforces/README.md)
 
-## [codewars](codewars/generatedReadme.md)
+## [codewars](codewars/README.md)
 
-## [Codility](codility/generatedReadme.md)
+## [Codility](codility/README.md)
 
-## [Google's Coding Competitions](codingcompetitions/generatedReadme.md)
+## [Google's Coding Competitions](codingcompetitions/README.md)
 
-## [HackerRank](hackerRank/generatedReadme.md)
+## [HackerRank](hackerRank/README.md)
 
-## [Leetcode](leetcode/generatedReadme.md)
+## [Leetcode](leetcode/README.md)
 
-## [Project Euler](projectEuler/generatedReadme.md)
+## [Project Euler](projectEuler/README.md)
 
-## [Sphere Judge Online](spoj/generatedReadme.md)
+## [Sphere Online Judge](spoj/README.md)
 
 
 

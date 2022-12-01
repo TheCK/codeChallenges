@@ -66,6 +66,8 @@ public class ReadmeGenerator extends AbstractProcessor {
         maxDescriptionLength = Math.max(maxDescriptionLength, info.getDescription().length());
       }
 
+      maxIdlength = Math.max(maxIdlength, 2);
+
       String formatString = getTableFormatString(maxIdlength, maxNameLength, maxDescriptionLength);
 
       write(writer, messager, "");
@@ -194,7 +196,7 @@ public class ReadmeGenerator extends AbstractProcessor {
   @Override
   public boolean process(Set<? extends TypeElement> typeElements, RoundEnvironment environment) {
     if (!environment.processingOver()) {
-      File file = new File("generatedReadme.md");
+      File file = new File("README.md");
 
       try {
         if (file.exists()) {
@@ -272,7 +274,11 @@ public class ReadmeGenerator extends AbstractProcessor {
       this.id = id;
 
       this.name = name;
-      this.description = description.replaceAll("\\|", "\\\\|");
+      this.description =
+          description
+              .replaceAll("\\|", "&#124;")
+              .replaceAll("\\[", "&#91;")
+              .replaceAll("]", "&#93;");
       this.url = url;
 
       this.category = category;

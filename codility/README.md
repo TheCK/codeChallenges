@@ -2,9 +2,9 @@
 
 ## Greeks (1/1)
 
-|    # | Name                   | Description                                                                                                                             | Solution                         | Test                          |
-|-----:|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------:|:-----------------------------:|
-| 1001 | Alpha 2010 (PrefixSet) | [Given a table A of N integers from 0 to N-1 calculate the smallest such index P, that that {A[0],...,A[N-1]} = {A[0],...,A[P]}.][1001] | &#9989;[&#128190;][1001solution] | &#9989;[&#128190;][1001tests] |
+|    # | Name                   | Description                                                                                                                                                             | Solution                         | Test                          |
+|-----:|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------:|:-----------------------------:|
+| 1001 | Alpha 2010 (PrefixSet) | [Given a table A of N integers from 0 to N-1 calculate the smallest such index P, that that {A&#91;0&#93;,...,A&#91;N-1&#93;} = {A&#91;0&#93;,...,A&#91;P&#93;}.][1001] | &#9989;[&#128190;][1001solution] | &#9989;[&#128190;][1001tests] |
 
 [1001]: https://codility.com/programmers/challenges/alpha2010
 
@@ -16,11 +16,11 @@
 
 ## 1. Time Complexity (3/3)
 
-| # | Name            | Description                                                                | Solution                      | Test                       |
-|--:|-----------------|----------------------------------------------------------------------------|:-----------------------------:|:--------------------------:|
-| 1 | TapeEquilibrium | [Minimize the value \|(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])\|.][1] | &#9989;[&#128190;][1solution] | &#9989;[&#128190;][1tests] |
-| 2 | PermMissingElem | [Find the missing element in a given permutation.][2]                      | &#9989;[&#128190;][2solution] | &#9989;[&#128190;][2tests] |
-| 3 | FrogJmp         | [Count minimal number of jumps from position X to Y.][3]                   | &#9989;[&#128190;][3solution] | &#9989;[&#128190;][3tests] |
+|  # | Name            | Description                                                                                                         | Solution                       | Test                        |
+|---:|-----------------|---------------------------------------------------------------------------------------------------------------------|:------------------------------:|:---------------------------:|
+|  1 | TapeEquilibrium | [Minimize the value &#124;(A&#91;0&#93; + ... + A&#91;P-1&#93;) - (A&#91;P&#93; + ... + A&#91;N-1&#93;)&#124;.][1]  | &#9989;[&#128190;][1solution]  | &#9989;[&#128190;][1tests]  |
+|  2 | PermMissingElem | [Find the missing element in a given permutation.][2]                                                               | &#9989;[&#128190;][2solution]  | &#9989;[&#128190;][2tests]  |
+|  3 | FrogJmp         | [Count minimal number of jumps from position X to Y.][3]                                                            | &#9989;[&#128190;][3solution]  | &#9989;[&#128190;][3tests]  |
 
 [1]: https://codility.com/programmers/lessons/1
 [2]: https://codility.com/programmers/lessons/1
@@ -64,7 +64,7 @@
 
 |  # | Name           | Description                                                                   | Solution                       | Test                        |
 |---:|----------------|-------------------------------------------------------------------------------|:------------------------------:|:---------------------------:|
-| 21 | CountDiv       | [Compute number of integers divisible by k in range [a..b].][21]              | [&#128190;][21solution]        | [&#128190;][21tests]        |
+| 21 | CountDiv       | [Compute number of integers divisible by k in range &#91;a..b&#93;.][21]      | [&#128190;][21solution]        | [&#128190;][21tests]        |
 | 22 | PassingCars    | [Count the number of passing cars on the road.][22]                           | &#9989;[&#128190;][22solution] | &#9989;[&#128190;][22tests] |
 | 23 | MinAvgTwoSlice | [Find the minimal average of any slice containing at least two elements.][23] | [&#128190;][23solution]        | [&#128190;][23tests]        |
 

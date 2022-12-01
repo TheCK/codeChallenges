@@ -26,6 +26,7 @@
         <module>adventofcode</module>
         <module>codingcompetitions</module>
         <module>tis100</module>
+        <module>codingame</module>
     </modules>
 
     <build>

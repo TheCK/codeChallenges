@@ -109,4 +109,16 @@ public abstract class BaseTest {
 
     assertEquals(getFileAsResult(name), this.output.toString());
   }
+
+  protected void runFileAsStdInIgnoreExceptions(Class<?> clazz, String name) throws Exception {
+    pipeResource(name);
+
+    try {
+      clazz.getMethod("main", String[].class).invoke(null, new Object[] {new String[] {}});
+    } catch (Exception e) {
+      // ignore
+    }
+
+    assertEquals(getFileAsResult(name), this.output.toString());
+  }
 }

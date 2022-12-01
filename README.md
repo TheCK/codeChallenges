@@ -10,6 +10,8 @@
 
 ## [Codility](codility/README.md)
 
+## [codingame](codingame/README.md)
+
 ## [Google's Coding Competitions](codingcompetitions/README.md)
 
 ## [HackerRank](hackerRank/README.md)

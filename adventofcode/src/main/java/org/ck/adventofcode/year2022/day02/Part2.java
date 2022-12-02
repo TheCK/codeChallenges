@@ -26,17 +26,13 @@ public class Part2 {
 
   private static int getSymbolPoints(final char theirs, final char strat) {
     return switch (strat) {
-      case 'X' -> (((theirs - 'B') < 0) ? 2 : (theirs - 'B')) + 1;
+      case 'X' -> ((theirs - '?') % 3) + 1;
       case 'Y' -> theirs - '@';
       default -> ((theirs - '@') % 3) + 1;
     };
   }
 
   private static int getRoundPoints(final char strat) {
-    return switch (strat) {
-      case 'X' -> 0;
-      case 'Y' -> 3;
-      default -> 6;
-    };
+    return (strat - 'X') * 3;
   }
 }

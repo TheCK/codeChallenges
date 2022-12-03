@@ -13,21 +13,22 @@ import java.util.Scanner;
 public class Player {
 
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
+    try (Scanner in = new Scanner(System.in)) {
 
-    while (true) {
-      int maxHeight = 0;
-      int maxIndex = 0;
-      for (int i = 0; i < 8; i++) {
-        int mountainHeight = in.nextInt();
+      while (true) {
+        int maxHeight = 0;
+        int maxIndex = 0;
+        for (int i = 0; i < 8; i++) {
+          int mountainHeight = in.nextInt();
 
-        if (mountainHeight > maxHeight) {
-          maxHeight = mountainHeight;
-          maxIndex = i;
+          if (mountainHeight > maxHeight) {
+            maxHeight = mountainHeight;
+            maxIndex = i;
+          }
         }
-      }
 
-      System.out.println(maxIndex);
+        System.out.println(maxIndex);
+      }
     }
   }
 }

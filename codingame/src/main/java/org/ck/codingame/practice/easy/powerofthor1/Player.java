@@ -13,37 +13,38 @@ import java.util.Scanner;
 public class Player {
 
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    int lightX = in.nextInt();
-    int lightY = in.nextInt();
-    int initialTx = in.nextInt();
-    int initialTy = in.nextInt();
+    try (Scanner in = new Scanner(System.in)) {
+      int lightX = in.nextInt();
+      int lightY = in.nextInt();
+      int initialTx = in.nextInt();
+      int initialTy = in.nextInt();
 
-    int diffX = lightX - initialTx;
-    int diffY = lightY - initialTy;
+      int diffX = lightX - initialTx;
+      int diffY = lightY - initialTy;
 
-    while (true) {
-      int remainingTurns = in.nextInt();
+      while (true) {
+        int remainingTurns = in.nextInt();
 
-      StringBuilder direction = new StringBuilder();
-      if (diffY < 0) {
-        direction.append("N");
-        ++diffY;
-      } else if (diffY > 0) {
-        direction.append("S");
-        --diffY;
-      }
+        StringBuilder direction = new StringBuilder();
+        if (diffY < 0) {
+          direction.append("N");
+          ++diffY;
+        } else if (diffY > 0) {
+          direction.append("S");
+          --diffY;
+        }
 
-      if (diffX < 0) {
-        direction.append("W");
-        ++diffX;
-      } else if (diffX > 0) {
-        direction.append("E");
-        --diffX;
-      }
+        if (diffX < 0) {
+          direction.append("W");
+          ++diffX;
+        } else if (diffX > 0) {
+          direction.append("E");
+          --diffX;
+        }
 
-      if (direction.length() > 0) {
-        System.out.println(direction);
+        if (direction.length() > 0) {
+          System.out.println(direction);
+        }
       }
     }
   }

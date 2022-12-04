@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 @Solution(
     id = 20220302,
-    name = "Day 3: ??? - Part 2",
+    name = "Day 3: Rucksack Reorganization - Part 2",
     url = "https://adventofcode.com/2022/day/3#part2",
     category = "2022")
 public class Part2 {

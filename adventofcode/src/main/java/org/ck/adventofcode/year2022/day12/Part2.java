@@ -65,22 +65,26 @@ public class Part2 {
 
           if (current.x() > 0
               && grid.get(current.y()).get(current.x() - 1)
-                  <= (grid.get(current.y()).get(current.x()) + 1)) {
+                  <= (grid.get(current.y()).get(current.x()) + 1)
+              && distances[current.y()][current.x() - 1] > current.steps() + 1) {
             queue.add(new Point(current.x() - 1, current.y(), current.steps() + 1));
           }
           if (current.x() < grid.get(current.y()).size() - 1
               && grid.get(current.y()).get(current.x() + 1)
-                  <= (grid.get(current.y()).get(current.x()) + 1)) {
+                  <= (grid.get(current.y()).get(current.x()) + 1)
+              && distances[current.y()][current.x() + 1] > current.steps() + 1) {
             queue.add(new Point(current.x() + 1, current.y(), current.steps() + 1));
           }
           if (current.y() > 0
               && grid.get(current.y() - 1).get(current.x())
-                  <= (grid.get(current.y()).get(current.x()) + 1)) {
+                  <= (grid.get(current.y()).get(current.x()) + 1)
+              && distances[current.y() - 1][current.x()] > current.steps() + 1) {
             queue.add(new Point(current.x(), current.y() - 1, current.steps() + 1));
           }
           if (current.y() < grid.size() - 1
               && grid.get(current.y() + 1).get(current.x())
-                  <= (grid.get(current.y()).get(current.x()) + 1)) {
+                  <= (grid.get(current.y()).get(current.x()) + 1)
+              && distances[current.y() + 1][current.x()] > current.steps() + 1) {
             queue.add(new Point(current.x(), current.y() + 1, current.steps() + 1));
           }
         }

@@ -5,6 +5,7 @@ import org.ck.codeChallengeLib.annotation.Solution;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.IntStream;
 
 @Solution(
     id = 20221902,
@@ -13,7 +14,6 @@ import java.util.regex.Pattern;
     category = "2022",
     solved = false)
 public class Part2 {
-
   private static final Pattern PATTERN =
       Pattern.compile(
           "Blueprint (\\d+): Each ore robot costs (\\d+) ore. Each clay robot costs (\\d+) ore. Each obsidian robot costs (\\d+) ore and (\\d+) clay. Each geode robot costs (\\d+) ore and (\\d+) obsidian.");
@@ -44,7 +44,7 @@ public class Part2 {
     for (Blueprint blueprint : blueprints) {
       cache = new HashMap<>();
 
-      int maxGeode = getMaxGeode(blueprint, new State(32, 0, 0, 0, 1, 0, 0, 0));
+      int maxGeode = getMaxGeode(blueprint, new State(32, 0, 0, 0, 0, 1, 0, 0, 0));
 
       qualityLevel *= maxGeode;
     }
@@ -67,83 +67,127 @@ public class Part2 {
           Math.max(
               maxGeode,
               switch (possibility) {
-                case ORE_BOT -> blueprint.oreBotOreCost() <= state.ore()
-                    ? getMaxGeode(
-                        blueprint,
-                        new State(
-                            state.timeLeft() - 1,
-                            state.ore() + state.oreBots() - blueprint.oreBotOreCost(),
-                            state.clay() + state.clayBots(),
-                            state.obsidian() + state.obsidianBots(),
-                            state.oreBots() + 1,
-                            state.clayBots(),
-                            state.obsidianBots(),
-                            state.geodeBots()))
-                    : buildNone(blueprint, state);
-                case CLAY_BOT -> blueprint.clayBotOreCost() <= state.ore()
-                    ? getMaxGeode(
-                        blueprint,
-                        new State(
-                            state.timeLeft() - 1,
-                            state.ore() + state.oreBots() - blueprint.clayBotOreCost(),
-                            state.clay() + state.clayBots(),
-                            state.obsidian() + state.obsidianBots(),
-                            state.oreBots(),
-                            state.clayBots() + 1,
-                            state.obsidianBots(),
-                            state.geodeBots()))
-                    : buildNone(blueprint, state);
-                case OBSIDIAN_BOT -> blueprint.obsidianBotOreCost() <= state.ore()
-                        && blueprint.obsidianBotClayCost() <= state.clay()
-                    ? getMaxGeode(
-                        blueprint,
-                        new State(
-                            state.timeLeft() - 1,
-                            state.ore() + state.oreBots() - blueprint.obsidianBotOreCost(),
-                            state.clay() + state.clayBots() - blueprint.obsidianBotClayCost(),
-                            state.obsidian() + state.obsidianBots(),
-                            state.oreBots(),
-                            state.clayBots(),
-                            state.obsidianBots() + 1,
-                            state.geodeBots()))
-                    : buildNone(blueprint, state);
-                case GEODE_BOT -> blueprint.geodeBotOreCost() <= state.ore()
-                        && blueprint.geodeBotObsidianCost() <= state.obsidian()
-                    ? getMaxGeode(
-                        blueprint,
-                        new State(
-                            state.timeLeft() - 1,
-                            state.ore() + state.oreBots() - blueprint.geodeBotOreCost(),
-                            state.clay() + state.clayBots(),
-                            state.obsidian()
-                                + state.obsidianBots()
-                                - blueprint.geodeBotObsidianCost(),
-                            state.oreBots(),
-                            state.clayBots(),
-                            state.obsidianBots(),
-                            state.geodeBots() + 1))
-                    : buildNone(blueprint, state);
+                case ORE_BOT -> buildOreBot(blueprint, state);
+                case CLAY_BOT -> buildClayBot(blueprint, state);
+                case OBSIDIAN_BOT -> buildObsidianBot(blueprint, state);
+                case GEODE_BOT -> buildGeodeBot(blueprint, state);
               });
     }
 
-    int geodes = maxGeode + state.geodeBots();
+    int geodes = maxGeode;
     cache.put(state, geodes);
 
     return geodes;
   }
 
-  private static int buildNone(final Blueprint blueprint, final State state) {
-    return getMaxGeode(
-        blueprint,
-        new State(
-            state.timeLeft() - 1,
-            state.ore() + state.oreBots(),
-            state.clay() + state.clayBots(),
-            state.obsidian() + state.obsidianBots(),
-            state.oreBots(),
-            state.clayBots(),
-            state.obsidianBots(),
-            state.geodeBots()));
+  private static int getWaitTime(
+      final State state, final int oreCost, final int clayCost, final int obsidianCost) {
+    int waitForOre = oreCost > 0 ? getWaitTime(oreCost, state.ore(), state.oreBots()) : 0;
+    int waitForClay = clayCost > 0 ? getWaitTime(clayCost, state.clay(), state.clayBots()) : 0;
+    int waitForObsidian =
+        obsidianCost > 0 ? getWaitTime(obsidianCost, state.obsidian(), state.obsidianBots()) : 0;
+
+    return IntStream.of(waitForOre, waitForClay, waitForObsidian).max().getAsInt();
+  }
+
+  private static int getWaitTime(final int cost, final int resources, final int bots) {
+    return bots > 0
+        ? Math.max(0, (int) Math.ceil(((double) (cost - resources)) / bots))
+        : Integer.MAX_VALUE;
+  }
+
+  private static int buildGeodeBot(final Blueprint blueprint, final State state) {
+    int waitTime =
+        getWaitTime(state, blueprint.geodeBotOreCost(), 0, blueprint.geodeBotObsidianCost());
+
+    if (waitTime < state.timeLeft()) {
+      return getMaxGeode(
+              blueprint,
+              new State(
+                  state.timeLeft() - (1 + waitTime),
+                  state.ore() + (state.oreBots() * (1 + waitTime)) - blueprint.geodeBotOreCost(),
+                  state.clay() + (state.clayBots() * (1 + waitTime)),
+                  state.obsidian()
+                      + (state.obsidianBots() * (1 + waitTime))
+                      - blueprint.geodeBotObsidianCost(),
+                  state.geode() + (state.geodeBots() * (1 + waitTime)),
+                  state.oreBots(),
+                  state.clayBots(),
+                  state.obsidianBots(),
+                  state.geodeBots() + 1))
+          + state.geodeBots() * (1 + waitTime);
+    }
+
+    return state.geodeBots() * state.timeLeft();
+  }
+
+  private static int buildObsidianBot(final Blueprint blueprint, final State state) {
+    int waitTime =
+        getWaitTime(state, blueprint.obsidianBotOreCost(), blueprint.obsidianBotClayCost(), 0);
+
+    if (waitTime < state.timeLeft()) {
+      return getMaxGeode(
+              blueprint,
+              new State(
+                  state.timeLeft() - (1 + waitTime),
+                  state.ore() + (state.oreBots() * (1 + waitTime)) - blueprint.obsidianBotOreCost(),
+                  state.clay()
+                      + (state.clayBots() * (1 + waitTime))
+                      - blueprint.obsidianBotClayCost(),
+                  state.obsidian() + (state.obsidianBots() * (1 + waitTime)),
+                  state.geode() + (state.geodeBots() * (1 + waitTime)),
+                  state.oreBots(),
+                  state.clayBots(),
+                  state.obsidianBots() + 1,
+                  state.geodeBots()))
+          + state.geodeBots() * (1 + waitTime);
+    }
+
+    return state.geodeBots() * state.timeLeft();
+  }
+
+  private static int buildClayBot(final Blueprint blueprint, final State state) {
+    int waitTime = getWaitTime(state, blueprint.clayBotOreCost(), 0, 0);
+
+    if (waitTime < state.timeLeft()) {
+      return getMaxGeode(
+              blueprint,
+              new State(
+                  state.timeLeft() - (1 + waitTime),
+                  state.ore() + (state.oreBots() * (1 + waitTime)) - blueprint.clayBotOreCost(),
+                  state.clay() + (state.clayBots() * (1 + waitTime)),
+                  state.obsidian() + (state.obsidianBots() * (1 + waitTime)),
+                  state.geode() + (state.geodeBots() * (1 + waitTime)),
+                  state.oreBots(),
+                  state.clayBots() + 1,
+                  state.obsidianBots(),
+                  state.geodeBots()))
+          + state.geodeBots() * (1 + waitTime);
+    }
+
+    return state.geodeBots() * state.timeLeft();
+  }
+
+  private static int buildOreBot(final Blueprint blueprint, final State state) {
+    int waitTime = getWaitTime(state, blueprint.oreBotOreCost(), 0, 0);
+
+    if (waitTime < state.timeLeft()) {
+      return getMaxGeode(
+              blueprint,
+              new State(
+                  state.timeLeft() - (1 + waitTime),
+                  state.ore() + (state.oreBots() * (1 + waitTime)) - blueprint.oreBotOreCost(),
+                  state.clay() + (state.clayBots() * (1 + waitTime)),
+                  state.obsidian() + (state.obsidianBots() * (1 + waitTime)),
+                  state.geode() + (state.geodeBots() * (1 + waitTime)),
+                  state.oreBots() + 1,
+                  state.clayBots(),
+                  state.obsidianBots(),
+                  state.geodeBots()))
+          + state.geodeBots() * (1 + waitTime);
+    }
+
+    return state.geodeBots() * state.timeLeft();
   }
 
   enum Possibility {
@@ -167,6 +211,7 @@ public class Part2 {
       int ore,
       int clay,
       int obsidian,
+      int geode,
       int oreBots,
       int clayBots,
       int obsidianBots,

@@ -23,11 +23,9 @@ public class Part2 {
 
       int patternPosition = 0;
       for (int i = 0; i < 2022; ++i) {
-        if (i != 0 && i % 5 == 0 && i % pattern.length() == 0) {
-          if (checkForLoop(heightDiffs, patternDiffs)) {
-            System.err.println("i:" + i);
-            System.err.println("h:" + maxHeight);
-          }
+        if (checkForLoop(heightDiffs, patternDiffs)) {
+          System.err.println("i:" + i);
+          System.err.println("h:" + maxHeight);
         }
 
         Rock rock = getRock(i, maxHeight);
@@ -62,19 +60,35 @@ public class Part2 {
 
   private static boolean checkForLoop(
       final List<Integer> heightDiffs, final List<Integer> patternDiffs) {
-    for (int i = 0; i < heightDiffs.size() / 2; ++i) {
-      if (!heightDiffs.get(i).equals(heightDiffs.get(heightDiffs.size() / 2 + i))) {
-        return false;
+    int start = 0;
+    if (heightDiffs.size() % 2 != 0) {
+      start = 1;
+    }
+
+    for (int currentStart = start; currentStart < heightDiffs.size(); currentStart += 2) {
+      boolean hasLoop = true;
+
+      int half = (heightDiffs.size() - currentStart) / 2;
+      for (int i = start; i < half; ++i) {
+        if (!heightDiffs.get(currentStart + i).equals(heightDiffs.get(currentStart + half + i))) {
+          hasLoop = false;
+          break;
+        }
+      }
+
+      for (int i = 0; i < half; ++i) {
+        if (!patternDiffs.get(currentStart + i).equals(patternDiffs.get(currentStart + half + i))) {
+          hasLoop = false;
+          break;
+        }
+      }
+
+      if (hasLoop) {
+        return true;
       }
     }
 
-    for (int i = 0; i < patternDiffs.size() / 2; ++i) {
-      if (!patternDiffs.get(i).equals(patternDiffs.get(patternDiffs.size() / 2 + i))) {
-        return false;
-      }
-    }
-
-    return true;
+    return false;
   }
 
   private static void print(final Set<Point> solid, final int maxHeight, final Set<Point> rock) {

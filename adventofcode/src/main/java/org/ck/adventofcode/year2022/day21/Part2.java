@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 @Solution(
     id = 20222102,
-    name = "Day 21: ??? - Part 2",
+    name = "Day 21: Monkey Math - Part 2",
     url = "https://adventofcode.com/2022/day/21#part2",
     category = "2022",
     solved = false)

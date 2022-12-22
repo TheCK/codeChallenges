@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 @Solution(
     id = 20222002,
-    name = "Day 20: ??? - Part 2",
+    name = "Day 20: Grove Positioning System - Part 2",
     url = "https://adventofcode.com/2022/day/20#part2",
     category = "2022",
     solved = false)

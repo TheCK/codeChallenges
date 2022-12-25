@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 @Disabled("OOM but probably correct")
 public class Part2Test extends BaseTest {
   @ParameterizedTest
-  @ValueSource(strings = {"02", "02a"})
+  @ValueSource(strings = {"02a"})
   public void test(String name) throws Exception {
     runFileAsStdIn(Part2.class, name);
   }

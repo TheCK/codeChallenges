@@ -37,13 +37,77 @@ public class Part2 {
       }
     }
 
-    Status status = new Status("AA", "AA");
-    int pressure = calculateMax(status, valves);
+    Map<String, Map<String, Integer>> distances = new HashMap<>();
+    for (String start : valves.keySet()) {
+      if (valves.get(start).capacity() > 0 || "AA".equals(start))
+        for (String end : valves.keySet()) {
+          if (valves.get(end).capacity() > 0) {
+            if (start.equals(end)) {
+              continue;
+            }
 
-    System.out.println(pressure);
+            if (!distances.containsKey(start) || !distances.get(start).containsKey(end)) {
+              Queue<SearchNode> queue = new ArrayDeque<>();
+              queue.add(new SearchNode(start, 0));
+
+              while (!queue.isEmpty()) {
+                SearchNode next = queue.poll();
+
+                if (next.valve().equals(end)) {
+                  distances.computeIfAbsent(start, x -> new HashMap<>());
+                  distances.computeIfAbsent(end, x -> new HashMap<>());
+
+                  distances.get(start).put(end, next.distance());
+                  distances.get(end).put(start, next.distance());
+                  break;
+                }
+
+                for (String neighbours : valves.get(next.valve()).tunnels()) {
+                  queue.add(new SearchNode(neighbours, next.distance() + 1));
+                }
+              }
+            }
+          }
+        }
+    }
+
+    List<String> valvesWithCapacity =
+        valves.entrySet().stream()
+            .filter(valve -> valve.getValue().capacity() > 0)
+            .map(Map.Entry::getKey)
+            .toList();
+
+    int maxPressure = 0;
+    for (int i = 0; i < Math.pow(2, valvesWithCapacity.size()); ++i) {
+      if (i % 100 == 0) {
+        System.err.println(i);
+      }
+      Set<String> myValves = new HashSet<>();
+      Set<String> elephantValves = new HashSet<>();
+
+      for (int pos = 0; pos < valvesWithCapacity.size(); ++pos) {
+        if ((1 << pos & i) != 0) {
+          myValves.add(valvesWithCapacity.get(pos));
+        } else {
+          elephantValves.add(valvesWithCapacity.get(pos));
+        }
+      }
+
+      Status myStatus = new Status("AA", myValves);
+      int myPressure = calculateMax(myStatus, valves, distances);
+      Status elephantStatus = new Status("AA", elephantValves);
+      int elephantPressure = calculateMax(elephantStatus, valves, distances);
+
+      maxPressure = Math.max(maxPressure, myPressure + elephantPressure);
+    }
+
+    System.out.println(maxPressure);
   }
 
-  private static int calculateMax(final Status status, final Map<String, Valve> valves) {
+  private static int calculateMax(
+      final Status status,
+      final Map<String, Valve> valves,
+      final Map<String, Map<String, Integer>> distances) {
     if (cache.containsKey(status)) {
       return cache.get(status);
     }
@@ -55,50 +119,50 @@ public class Part2 {
     int pressure = 0;
     int ticPressure = calculateTic(valves, status.getActiveValves());
 
-    if (status.getPositionOne().equals(status.getPositionTwo())
-        && valves.get(status.getPositionOne()).capacity() > 0
-        && !status.getActiveValves().contains(status.getPositionOne())) {
-      for (String neighbour : valves.get(status.getPositionTwo()).tunnels) {
-        pressure =
-            Math.max(pressure, calculateMax(Status.openOneAndMoveTwo(status, neighbour), valves));
+    if (valves.get(status.getPosition()).capacity() > 0
+        && !status.activeValves.contains(status.getPosition())) {
+      pressure = calculateMax(Status.open(status), valves, distances) + ticPressure;
+    }
+
+    for (String neighbour : status.possibleValves) {
+      if (!status.position.equals(neighbour) && !status.getActiveValves().contains(neighbour)) {
+        if (distances.get(status.getPosition()).get(neighbour) <= status.getTimeLeft()) {
+          pressure =
+              Math.max(
+                      pressure,
+                      calculateMax(
+                          Status.move(
+                              status,
+                              neighbour,
+                              distances.get(status.getPosition()).get(neighbour)),
+                          valves,
+                          distances))
+                  + (distances.get(status.getPosition()).get(neighbour) * ticPressure);
+        } else {
+          pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
+        }
+      } else {
+        pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
       }
     }
-
-    if (!status.getPositionOne().equals(status.getPositionTwo())
-        && valves.get(status.getPositionOne()).capacity() > 0
-        && valves.get(status.getPositionTwo()).capacity() > 0
-        && !status.activeValves.contains(status.getPositionOne())
-        && !status.activeValves.contains(status.getPositionTwo())) {
-      pressure = Math.max(pressure, calculateMax(Status.openBoth(status), valves));
-    }
-
-    if (valves.get(status.getPositionOne()).capacity() > 0
-        && !status.getActiveValves().contains(status.getPositionOne())) {
-      for (String neighbour : valves.get(status.getPositionTwo()).tunnels) {
-        pressure =
-            Math.max(pressure, calculateMax(Status.openOneAndMoveTwo(status, neighbour), valves));
-      }
-    }
-
-    if (valves.get(status.getPositionTwo()).capacity() > 0
-        && !status.getActiveValves().contains(status.getPositionTwo())) {
-      for (String neighbour : valves.get(status.getPositionOne()).tunnels) {
-        pressure =
-            Math.max(pressure, calculateMax(Status.openTwoAndMoveOne(status, neighbour), valves));
-      }
-    }
-
-    for (String neighbourOne : valves.get(status.getPositionOne()).tunnels) {
-      for (String neighbourTwo : valves.get(status.getPositionTwo()).tunnels) {
-        pressure =
-            Math.max(
-                pressure,
-                calculateMax(Status.moveBoth(status, neighbourOne, neighbourTwo), valves));
-      }
-    }
-
-    cache.put(status, pressure + ticPressure);
-    return pressure + ticPressure;
+    /*
+        for (Map.Entry<String, Integer> neighbour : distances.get(status.getPosition()).entrySet()) {
+          if (status.possibleValves.contains(neighbour.getKey())
+              && !status.getActiveValves().contains(neighbour.getKey())) {
+            if (neighbour.getValue() <= status.getTimeLeft()) {
+              pressure =
+                  Math.max(pressure, calculateMax(Status.move(status, neighbour), valves, distances))
+                      + (neighbour.getValue() * ticPressure);
+            } else {
+              pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
+            }
+          } else {
+            pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
+          }
+        }
+    */
+    cache.put(status, pressure);
+    return pressure;
   }
 
   private static int calculateTic(final Map<String, Valve> valves, final Set<String> activeValves) {
@@ -112,58 +176,35 @@ public class Part2 {
   }
 
   private static class Status {
-    private final String positionOne;
-    private final String positionTwo;
-    private int timeLeft = 26;
-    private Set<String> activeValves = new HashSet<>();
+    private String position;
+    private int timeLeft = 30;
+    private Set<String> activeValves = new LinkedHashSet<>();
+    private final Set<String> possibleValves;
 
-    public Status(final String positionOne, final String positionTwo) {
-      this.positionOne = positionOne;
-      this.positionTwo = positionTwo;
+    public Status(final String position, Set<String> possibleValves) {
+      this.position = position;
+      this.possibleValves = possibleValves;
     }
 
-    public static Status openBoth(Status status) {
-      Status newState = new Status(status.getPositionOne(), status.getPositionTwo());
+    public static Status open(Status status) {
+      Status newState = new Status(status.getPosition(), status.possibleValves);
       newState.timeLeft = status.timeLeft - 1;
-      newState.activeValves = new HashSet<>(status.getActiveValves());
-      newState.activeValves.add(status.getPositionOne());
-      newState.activeValves.add(status.getPositionTwo());
+      newState.activeValves = new LinkedHashSet<>(status.getActiveValves());
+      newState.activeValves.add(status.getPosition());
 
       return newState;
     }
 
-    public static Status openOneAndMoveTwo(Status status, String newPosition) {
-      Status newState = new Status(status.getPositionOne(), newPosition);
-      newState.timeLeft = status.timeLeft - 1;
-      newState.activeValves = new HashSet<>(status.getActiveValves());
-      newState.activeValves.add(status.getPositionOne());
+    public static Status move(Status status, String next, int distance) {
+      Status newState = new Status(next, status.possibleValves);
+      newState.timeLeft = status.timeLeft - distance;
+      newState.activeValves = new LinkedHashSet<>(status.getActiveValves());
 
       return newState;
     }
 
-    public static Status openTwoAndMoveOne(Status status, String newPosition) {
-      Status newState = new Status(newPosition, status.getPositionTwo());
-      newState.timeLeft = status.timeLeft - 1;
-      newState.activeValves = new HashSet<>(status.getActiveValves());
-      newState.activeValves.add(status.getPositionTwo());
-
-      return newState;
-    }
-
-    public static Status moveBoth(Status status, String newPositionOne, String newPositionTwo) {
-      Status newState = new Status(newPositionOne, newPositionTwo);
-      newState.timeLeft = status.timeLeft - 1;
-      newState.activeValves = new HashSet<>(status.getActiveValves());
-
-      return newState;
-    }
-
-    public String getPositionOne() {
-      return positionOne;
-    }
-
-    public String getPositionTwo() {
-      return positionTwo;
+    public String getPosition() {
+      return position;
     }
 
     public int getTimeLeft() {
@@ -180,20 +221,18 @@ public class Part2 {
       if (o == null || getClass() != o.getClass()) return false;
       final Status status = (Status) o;
       return timeLeft == status.timeLeft
-          && (positionOne.equals(positionTwo)
-              || Set.of(positionOne, positionTwo)
-                  .equals(Set.of(status.positionOne, status.positionTwo)))
-          && activeValves.equals(status.activeValves);
+          && position.equals(status.position)
+          && activeValves.equals(status.activeValves)
+          && possibleValves.equals(status.possibleValves);
     }
 
     @Override
     public int hashCode() {
-      return Objects.hash(
-          positionOne.equals(positionTwo) ? positionOne : Set.of(positionOne, positionTwo),
-          timeLeft,
-          activeValves);
+      return Objects.hash(position, timeLeft, activeValves, possibleValves);
     }
   }
 
   record Valve(int capacity, List<String> tunnels) {}
+
+  record SearchNode(String valve, int distance) {}
 }

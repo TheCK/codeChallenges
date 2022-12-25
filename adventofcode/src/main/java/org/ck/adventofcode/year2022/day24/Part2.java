@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 @Solution(
     id = 20222402,
-    name = "Day 24: ??? - Part 2",
+    name = "Day 24: Blizzard Basin - Part 2",
     url = "https://adventofcode.com/2022/day/24#part2",
     category = "2022",
     solved = false)

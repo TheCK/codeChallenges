@@ -942,7 +942,7 @@
 [20212402tests]: src/test/java/org/ck/adventofcode/year2021/day24/Part2Test.java
 [20212501tests]: src/test/java/org/ck/adventofcode/year2021/day25/Part1Test.java
 
-# 2022 (38/49)
+# 2022 (39/49)
 
 |        # | Name                                                  | Solution                             | Test                              |
 |---------:|-------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -983,7 +983,7 @@
 | 20221801 | [Day 18: Boiling Boulders][20221801]                  | &#9989;[&#128190;][20221801solution] | &#9989;[&#128190;][20221801tests] |
 | 20221802 | [Day 18: Boiling Boulders - Part 2][20221802]         | &#9989;[&#128190;][20221802solution] | &#9989;[&#128190;][20221802tests] |
 | 20221901 | [Day 19: Not Enough Minerals][20221901]               | &#9989;[&#128190;][20221901solution] | &#9989;[&#128190;][20221901tests] |
-| 20221902 | [Day 19: Not Enough Minerals - Part 2][20221902]      | [&#128190;][20221902solution]        | [&#128190;][20221902tests]        |
+| 20221902 | [Day 19: Not Enough Minerals - Part 2][20221902]      | &#9989;[&#128190;][20221902solution] | &#9989;[&#128190;][20221902tests] |
 | 20222001 | [Day 20: Grove Positioning System][20222001]          | [&#128190;][20222001solution]        | [&#128190;][20222001tests]        |
 | 20222002 | [Day 20: Grove Positioning System - Part 2][20222002] | [&#128190;][20222002solution]        | [&#128190;][20222002tests]        |
 | 20222101 | [Day 22: Monkey Math][20222101]                       | &#9989;[&#128190;][20222101solution] | &#9989;[&#128190;][20222101tests] |

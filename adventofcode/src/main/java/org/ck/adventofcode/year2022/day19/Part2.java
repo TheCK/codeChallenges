@@ -11,8 +11,7 @@ import java.util.stream.IntStream;
     id = 20221902,
     name = "Day 19: Not Enough Minerals - Part 2",
     url = "https://adventofcode.com/2022/day/19#part2",
-    category = "2022",
-    solved = false)
+    category = "2022")
 public class Part2 {
   private static final Pattern PATTERN =
       Pattern.compile(
@@ -44,7 +43,7 @@ public class Part2 {
     for (Blueprint blueprint : blueprints) {
       cache = new HashMap<>();
 
-      int maxGeode = getMaxGeode(blueprint, new State(32, 0, 0, 0, 0, 1, 0, 0, 0));
+      int maxGeode = getMaxGeode(blueprint, new State(32, 0, 0, 0, 1, 0, 0, 0));
 
       qualityLevel *= maxGeode;
     }
@@ -62,22 +61,22 @@ public class Part2 {
     }
 
     int maxGeode = 0;
-    for (Possibility possibility : Possibility.values()) {
-      maxGeode =
-          Math.max(
-              maxGeode,
-              switch (possibility) {
-                case ORE_BOT -> buildOreBot(blueprint, state);
-                case CLAY_BOT -> buildClayBot(blueprint, state);
-                case OBSIDIAN_BOT -> buildObsidianBot(blueprint, state);
-                case GEODE_BOT -> buildGeodeBot(blueprint, state);
-              });
+    if (state.oreBots()
+        < Math.max(
+            blueprint.geodeBotOreCost(),
+            Math.max(blueprint.clayBotOreCost(), blueprint.obsidianBotOreCost()))) {
+      maxGeode = buildOreBot(blueprint, state);
     }
+    if (state.clayBots() < blueprint.obsidianBotClayCost()) {
+      maxGeode = Math.max(maxGeode, buildClayBot(blueprint, state));
+    }
+    if (state.obsidianBots() < blueprint.geodeBotObsidianCost()) {
+      maxGeode = Math.max(maxGeode, buildObsidianBot(blueprint, state));
+    }
+    maxGeode = Math.max(maxGeode, buildGeodeBot(blueprint, state));
 
-    int geodes = maxGeode;
-    cache.put(state, geodes);
-
-    return geodes;
+    cache.put(state, maxGeode);
+    return maxGeode;
   }
 
   private static int getWaitTime(
@@ -110,7 +109,6 @@ public class Part2 {
                   state.obsidian()
                       + (state.obsidianBots() * (1 + waitTime))
                       - blueprint.geodeBotObsidianCost(),
-                  state.geode() + (state.geodeBots() * (1 + waitTime)),
                   state.oreBots(),
                   state.clayBots(),
                   state.obsidianBots(),
@@ -135,7 +133,6 @@ public class Part2 {
                       + (state.clayBots() * (1 + waitTime))
                       - blueprint.obsidianBotClayCost(),
                   state.obsidian() + (state.obsidianBots() * (1 + waitTime)),
-                  state.geode() + (state.geodeBots() * (1 + waitTime)),
                   state.oreBots(),
                   state.clayBots(),
                   state.obsidianBots() + 1,
@@ -157,7 +154,6 @@ public class Part2 {
                   state.ore() + (state.oreBots() * (1 + waitTime)) - blueprint.clayBotOreCost(),
                   state.clay() + (state.clayBots() * (1 + waitTime)),
                   state.obsidian() + (state.obsidianBots() * (1 + waitTime)),
-                  state.geode() + (state.geodeBots() * (1 + waitTime)),
                   state.oreBots(),
                   state.clayBots() + 1,
                   state.obsidianBots(),
@@ -179,7 +175,6 @@ public class Part2 {
                   state.ore() + (state.oreBots() * (1 + waitTime)) - blueprint.oreBotOreCost(),
                   state.clay() + (state.clayBots() * (1 + waitTime)),
                   state.obsidian() + (state.obsidianBots() * (1 + waitTime)),
-                  state.geode() + (state.geodeBots() * (1 + waitTime)),
                   state.oreBots() + 1,
                   state.clayBots(),
                   state.obsidianBots(),
@@ -188,13 +183,6 @@ public class Part2 {
     }
 
     return state.geodeBots() * state.timeLeft();
-  }
-
-  enum Possibility {
-    ORE_BOT,
-    CLAY_BOT,
-    OBSIDIAN_BOT,
-    GEODE_BOT;
   }
 
   record Blueprint(
@@ -211,7 +199,6 @@ public class Part2 {
       int ore,
       int clay,
       int obsidian,
-      int geode,
       int oreBots,
       int clayBots,
       int obsidianBots,

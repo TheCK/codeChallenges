@@ -942,7 +942,7 @@
 [20212402tests]: src/test/java/org/ck/adventofcode/year2021/day24/Part2Test.java
 [20212501tests]: src/test/java/org/ck/adventofcode/year2021/day25/Part1Test.java
 
-# 2022 (37/49)
+# 2022 (38/49)
 
 |        # | Name                                                  | Solution                             | Test                              |
 |---------:|-------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -977,7 +977,7 @@
 | 20221501 | [Day 15: Beacon Exclusion Zone][20221501]             | &#9989;[&#128190;][20221501solution] | &#9989;[&#128190;][20221501tests] |
 | 20221502 | [Day 15: Beacon Exclusion Zone - Part 2][20221502]    | &#9989;[&#128190;][20221502solution] | &#9989;[&#128190;][20221502tests] |
 | 20221601 | [Day 16: Proboscidea Volcanium][20221601]             | &#9989;[&#128190;][20221601solution] | &#9989;[&#128190;][20221601tests] |
-| 20221602 | [Day 16: Proboscidea Volcanium - Part 2][20221602]    | [&#128190;][20221602solution]        | [&#128190;][20221602tests]        |
+| 20221602 | [Day 16: Proboscidea Volcanium - Part 2][20221602]    | &#9989;[&#128190;][20221602solution] | &#9989;[&#128190;][20221602tests] |
 | 20221701 | [Day 17: Pyroclastic Flow][20221701]                  | &#9989;[&#128190;][20221701solution] | &#9989;[&#128190;][20221701tests] |
 | 20221702 | [Day 17: Pyroclastic Flow - Part 2][20221702]         | [&#128190;][20221702solution]        | [&#128190;][20221702tests]        |
 | 20221801 | [Day 18: Boiling Boulders][20221801]                  | &#9989;[&#128190;][20221801solution] | &#9989;[&#128190;][20221801tests] |

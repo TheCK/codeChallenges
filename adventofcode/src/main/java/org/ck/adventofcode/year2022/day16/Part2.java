@@ -10,17 +10,12 @@ import java.util.regex.Pattern;
     id = 20221602,
     name = "Day 16: Proboscidea Volcanium - Part 2",
     url = "https://adventofcode.com/2022/day/16#part2",
-    category = "2022",
-    solved = false)
+    category = "2022")
 public class Part2 {
   private static final Pattern PATTERN =
       Pattern.compile("Valve ([A-Z]+) has flow rate=(\\d+); tunnels? leads? to valves? (.*)");
 
-  private static Map<Status, Integer> cache;
-
   public static void main(String[] args) {
-    cache = new HashMap<>();
-
     Map<String, Valve> valves;
     try (Scanner in = new Scanner(System.in)) {
       valves = new HashMap<>();
@@ -38,27 +33,28 @@ public class Part2 {
     }
 
     Map<String, Map<String, Integer>> distances = new HashMap<>();
-    for (String start : valves.keySet()) {
-      if (valves.get(start).capacity() > 0 || "AA".equals(start))
-        for (String end : valves.keySet()) {
-          if (valves.get(end).capacity() > 0) {
-            if (start.equals(end)) {
+    for (Map.Entry<String, Valve> start : valves.entrySet()) {
+      if (start.getValue().capacity() > 0 || "AA".equals(start.getKey()))
+        for (Map.Entry<String, Valve> end : valves.entrySet()) {
+          if (end.getValue().capacity() > 0) {
+            if (start.getKey().equals(end.getKey())) {
               continue;
             }
 
-            if (!distances.containsKey(start) || !distances.get(start).containsKey(end)) {
+            if (!distances.containsKey(start.getKey())
+                || !distances.get(start.getKey()).containsKey(end.getKey())) {
               Queue<SearchNode> queue = new ArrayDeque<>();
-              queue.add(new SearchNode(start, 0));
+              queue.add(new SearchNode(start.getKey(), 0));
 
               while (!queue.isEmpty()) {
                 SearchNode next = queue.poll();
 
-                if (next.valve().equals(end)) {
-                  distances.computeIfAbsent(start, x -> new HashMap<>());
-                  distances.computeIfAbsent(end, x -> new HashMap<>());
+                if (next.valve().equals(end.getKey())) {
+                  distances.computeIfAbsent(start.getKey(), x -> new HashMap<>());
+                  distances.computeIfAbsent(end.getKey(), x -> new HashMap<>());
 
-                  distances.get(start).put(end, next.distance());
-                  distances.get(end).put(start, next.distance());
+                  distances.get(start.getKey()).put(end.getKey(), next.distance());
+                  distances.get(end.getKey()).put(start.getKey(), next.distance());
                   break;
                 }
 
@@ -79,9 +75,6 @@ public class Part2 {
 
     int maxPressure = 0;
     for (int i = 0; i < Math.pow(2, valvesWithCapacity.size()); ++i) {
-      if (i % 100 == 0) {
-        System.err.println(i);
-      }
       Set<String> myValves = new HashSet<>();
       Set<String> elephantValves = new HashSet<>();
 
@@ -108,10 +101,6 @@ public class Part2 {
       final Status status,
       final Map<String, Valve> valves,
       final Map<String, Map<String, Integer>> distances) {
-    if (cache.containsKey(status)) {
-      return cache.get(status);
-    }
-
     if (status.getTimeLeft() == 0) {
       return 0;
     }
@@ -119,25 +108,22 @@ public class Part2 {
     int pressure = 0;
     int ticPressure = calculateTic(valves, status.getActiveValves());
 
-    if (valves.get(status.getPosition()).capacity() > 0
-        && !status.activeValves.contains(status.getPosition())) {
-      pressure = calculateMax(Status.open(status), valves, distances) + ticPressure;
-    }
-
-    for (String neighbour : status.possibleValves) {
-      if (!status.position.equals(neighbour) && !status.getActiveValves().contains(neighbour)) {
-        if (distances.get(status.getPosition()).get(neighbour) <= status.getTimeLeft()) {
+    for (String neighbour : status.getPossibleValves()) {
+      if (!status.getPosition().equals(neighbour)
+          && !status.getActiveValves().contains(neighbour)) {
+        if (distances.get(status.getPosition()).get(neighbour) < status.getTimeLeft()) {
           pressure =
               Math.max(
-                      pressure,
-                      calculateMax(
-                          Status.move(
-                              status,
-                              neighbour,
-                              distances.get(status.getPosition()).get(neighbour)),
+                  pressure,
+                  calculateMax(
+                          Status.open(
+                              Status.move(
+                                  status,
+                                  neighbour,
+                                  distances.get(status.getPosition()).get(neighbour))),
                           valves,
-                          distances))
-                  + (distances.get(status.getPosition()).get(neighbour) * ticPressure);
+                          distances)
+                      + ((distances.get(status.getPosition()).get(neighbour) + 1) * ticPressure));
         } else {
           pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
         }
@@ -145,23 +131,7 @@ public class Part2 {
         pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
       }
     }
-    /*
-        for (Map.Entry<String, Integer> neighbour : distances.get(status.getPosition()).entrySet()) {
-          if (status.possibleValves.contains(neighbour.getKey())
-              && !status.getActiveValves().contains(neighbour.getKey())) {
-            if (neighbour.getValue() <= status.getTimeLeft()) {
-              pressure =
-                  Math.max(pressure, calculateMax(Status.move(status, neighbour), valves, distances))
-                      + (neighbour.getValue() * ticPressure);
-            } else {
-              pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
-            }
-          } else {
-            pressure = Math.max(pressure, ticPressure * status.getTimeLeft());
-          }
-        }
-    */
-    cache.put(status, pressure);
+
     return pressure;
   }
 
@@ -176,9 +146,9 @@ public class Part2 {
   }
 
   private static class Status {
-    private String position;
-    private int timeLeft = 30;
-    private Set<String> activeValves = new LinkedHashSet<>();
+    private final String position;
+    private int timeLeft = 26;
+    private final Set<String> activeValves = new LinkedHashSet<>();
     private final Set<String> possibleValves;
 
     public Status(final String position, Set<String> possibleValves) {
@@ -189,7 +159,7 @@ public class Part2 {
     public static Status open(Status status) {
       Status newState = new Status(status.getPosition(), status.possibleValves);
       newState.timeLeft = status.timeLeft - 1;
-      newState.activeValves = new LinkedHashSet<>(status.getActiveValves());
+      newState.activeValves.addAll(status.getActiveValves());
       newState.activeValves.add(status.getPosition());
 
       return newState;
@@ -198,7 +168,7 @@ public class Part2 {
     public static Status move(Status status, String next, int distance) {
       Status newState = new Status(next, status.possibleValves);
       newState.timeLeft = status.timeLeft - distance;
-      newState.activeValves = new LinkedHashSet<>(status.getActiveValves());
+      newState.activeValves.addAll(status.getActiveValves());
 
       return newState;
     }
@@ -213,6 +183,10 @@ public class Part2 {
 
     public Set<String> getActiveValves() {
       return activeValves;
+    }
+
+    public Set<String> getPossibleValves() {
+      return possibleValves;
     }
 
     @Override

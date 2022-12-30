@@ -3,116 +3,105 @@ package org.ck.adventofcode.year2022.day17;
 import org.ck.codeChallengeLib.annotation.Solution;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Solution(
     id = 20221702,
     name = "Day 17: Pyroclastic Flow - Part 2",
     url = "https://adventofcode.com/2022/day/17#part2",
-    category = "2022",
-    solved = false)
+    category = "2022")
 public class Part2 {
   public static void main(String[] args) {
+    Map<State, Context> cache = new HashMap<>();
+    Set<Rock> lastRocks =
+        new LinkedHashSet<>() {
+          @Override
+          public boolean add(final Rock rock) {
+            boolean added = super.add(rock);
+
+            if (size() > 10) {
+              Iterator<Rock> iterator = iterator();
+              iterator.next();
+              iterator.remove();
+            }
+
+            return added;
+          }
+        };
+
     try (Scanner in = new Scanner(System.in)) {
       String pattern = in.nextLine();
 
-      int maxHeight = 0;
+      long maxHeight = 0;
       Set<Point> solid = new HashSet<>();
 
-      List<Integer> heightDiffs = new ArrayList<>();
-      List<Integer> patternDiffs = new ArrayList<>();
-
       int patternPosition = 0;
-      for (int i = 0; i < 2022; ++i) {
-        if (checkForLoop(heightDiffs, patternDiffs)) {
-          System.err.println("i:" + i);
-          System.err.println("h:" + maxHeight);
+      boolean cycleFound = false;
+      for (long i = 0; i < 1_000_000_000_000L; ++i) {
+        Rock rock = getRock(i, maxHeight);
+
+        if (!cycleFound) {
+          long finalHeight = maxHeight;
+          Set<Point> lastPoints =
+              solid.stream()
+                  .filter(p -> p.y() > finalHeight - 10)
+                  .map(p -> new Point(p.x(), p.y() - finalHeight))
+                  .collect(Collectors.toSet());
+          State state = new State(rock.getClass(), patternPosition, lastPoints);
+
+          if (cache.containsKey(state)) {
+            cycleFound = true;
+            Context context = cache.get(state);
+
+            long cycleHeight = maxHeight - context.height();
+            long cycleRocks = i - context.rockNumber();
+
+            long cycles = (1_000_000_000_000L - i) / cycleRocks;
+            long heightDiff = cycleHeight * cycles;
+
+            maxHeight = maxHeight + heightDiff;
+            i = i + cycleRocks * cycles;
+
+            solid.clear();
+            context
+                .lastRocks()
+                .forEach(
+                    oldRock -> {
+                      oldRock.moveUp(heightDiff + cycleHeight);
+                      solid.addAll(oldRock.settle());
+                    });
+            rock = getRock(i, maxHeight);
+          } else {
+            cache.put(state, new Context(i, maxHeight, new HashSet<>(lastRocks)));
+          }
         }
 
-        Rock rock = getRock(i, maxHeight);
-        int oldPatternPosition = patternPosition;
-        int oldMaxHeight = maxHeight;
-
         while (true) {
-          if (pattern.charAt(patternPosition % pattern.length()) == '<') {
+          if (pattern.charAt(patternPosition) == '<') {
             rock.moveLeft(solid);
           } else {
             rock.moveRight(solid);
           }
-          ++patternPosition;
+          patternPosition = (patternPosition + 1) % pattern.length();
 
           if (!rock.moveDown(solid)) {
+            lastRocks.add(rock);
             Set<Point> newRock = rock.settle();
 
-            maxHeight = Math.max(maxHeight, newRock.stream().mapToInt(Point::y).max().orElse(0));
+            maxHeight = Math.max(maxHeight, newRock.stream().mapToLong(Point::y).max().orElse(0));
 
             solid.addAll(newRock);
             break;
           }
         }
-
-        heightDiffs.add(maxHeight - oldMaxHeight);
-        patternDiffs.add(patternPosition - oldPatternPosition);
       }
 
       System.out.println(maxHeight);
     }
   }
 
-  private static boolean checkForLoop(
-      final List<Integer> heightDiffs, final List<Integer> patternDiffs) {
-    int start = 0;
-    if (heightDiffs.size() % 2 != 0) {
-      start = 1;
-    }
-
-    for (int currentStart = start; currentStart < heightDiffs.size(); currentStart += 2) {
-      boolean hasLoop = true;
-
-      int half = (heightDiffs.size() - currentStart) / 2;
-      for (int i = start; i < half; ++i) {
-        if (!heightDiffs.get(currentStart + i).equals(heightDiffs.get(currentStart + half + i))) {
-          hasLoop = false;
-          break;
-        }
-      }
-
-      for (int i = 0; i < half; ++i) {
-        if (!patternDiffs.get(currentStart + i).equals(patternDiffs.get(currentStart + half + i))) {
-          hasLoop = false;
-          break;
-        }
-      }
-
-      if (hasLoop) {
-        return true;
-      }
-    }
-
-    return false;
-  }
-
-  private static void print(final Set<Point> solid, final int maxHeight, final Set<Point> rock) {
-    System.err.println("");
-    for (int y = maxHeight; y > 0; --y) {
-      StringBuilder line = new StringBuilder();
-
-      for (int x = 0; x < 7; ++x) {
-        if (solid.contains(new Point(x, y))) {
-          line.append('#');
-        } else if (rock.contains(new Point(x, y))) {
-          line.append('@');
-        } else {
-          line.append('.');
-        }
-      }
-
-      System.err.println(line);
-      System.err.flush();
-    }
-  }
-
-  private static Rock getRock(final int i, final int maxHeight) {
-    return switch (i % 5) {
+  private static Rock getRock(final long i, final long maxHeight) {
+    return switch ((int) (i % 5)) {
       case 0 -> new Dash(maxHeight);
       case 1 -> new Plus(maxHeight);
       case 2 -> new L(maxHeight);
@@ -122,17 +111,17 @@ public class Part2 {
     };
   }
 
-  record Point(int x, int y) {}
+  record Point(long x, long y) {}
 
   abstract static class Rock {
-    int x;
-    int y;
+    long x;
+    long y;
 
-    private final int xMin;
-    private final int xMax;
-    private final int yOffset;
+    private final long xMin;
+    private final long xMax;
+    private final long yOffset;
 
-    private Rock(int x, int y, int xMin, int xMax, int yOffset) {
+    private Rock(long x, long y, long xMin, long xMax, long yOffset) {
       this.x = x;
       this.y = y;
 
@@ -162,6 +151,10 @@ public class Part2 {
       return false;
     }
 
+    public void moveUp(final long distance) {
+      y += distance;
+    }
+
     public Set<Point> settle() {
       return getPositions(0, 0);
     }
@@ -170,7 +163,7 @@ public class Part2 {
   }
 
   private static class Dash extends Rock {
-    public Dash(final int y) {
+    public Dash(final long y) {
       super(2, y + 4, 0, 3, 0);
     }
 
@@ -185,7 +178,7 @@ public class Part2 {
   }
 
   private static class Plus extends Rock {
-    public Plus(final int y) {
+    public Plus(final long y) {
       super(3, y + 5, 1, 5, 1);
     }
 
@@ -200,7 +193,7 @@ public class Part2 {
   }
 
   private static class L extends Rock {
-    public L(final int y) {
+    public L(final long y) {
       super(4, y + 4, 2, 6, 0);
     }
 
@@ -216,7 +209,7 @@ public class Part2 {
   }
 
   private static class I extends Rock {
-    public I(final int y) {
+    public I(final long y) {
       super(2, y + 4, 0, 6, 0);
     }
 
@@ -231,7 +224,7 @@ public class Part2 {
   }
 
   private static class Block extends Rock {
-    public Block(final int y) {
+    public Block(final long y) {
       super(2, y + 4, 0, 5, 0);
     }
 
@@ -244,4 +237,8 @@ public class Part2 {
           new Point(x + xOffset + 1, y + yOffset + 1));
     }
   }
+
+  record State(Class<? extends Rock> rockType, int patternPosition, Set<Point> lastPoints) {}
+
+  record Context(long rockNumber, long height, Set<Rock> lastRocks) {}
 }

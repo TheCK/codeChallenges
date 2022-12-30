@@ -571,43 +571,43 @@ This project contains all the tests for problems on https://www.hackerrank.com.
 [alWa21]: https://www.hackerrank.com/challenges/angry-professor
 [alWa22]: https://www.hackerrank.com/challenges/is-fibo
 
-[alWa01s]: src/main/java/org/ck/hackerRank/corecs/algorithms/warmup/solvemefirst/Solution.java
-[alWa02s]: src/main/java/org/ck/hackerRank/corecs/algorithms/bitmanipulation/lonelyinteger/Solution.java
-[alWa03s]: src/main/java/org/ck/hackerRank/corecs/algorithms/decommissioned/solvemesecond/Solution.java
-[alWa04s]: src/main/java/org/ck/hackerRank/corecs/algorithms/bitmanipulation/flippingbits/Solution.java
-[alWa05s]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/utopiantree/Solution.java
-[alWa06s]: src/main/java/org/ck/hackerRank/corecs/algorithms/bitmanipulation/maximisingxor/Solution.java
-[alWa07s]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/alternatingcharacters/Solution.java
-[alWa08s]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/thelovelettermystery/Solution.java
-[alWa10s]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/gameofthronesi/Solution.java
-[alWa11s]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/acmicpcteam/Solution.java
-[alWa12s]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/fillingjars/Solution.java
-[alWa13s]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/chocolatefeast/Solution.java
-[alWa14s]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/sherlockandsquares/Solution.java
-[alWa15s]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/halloweenparty/Solution.java
-[alWa16s]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/manasaandstones/Solution.java
-[alWa19s]: src/main/java/org/ck/hackerRank/corecs/algorithms/strings/twostrings/Solution.java
-[alWa20s]: src/main/java/org/ck/hackerRank/corecs/algorithms/implementation/finddigits/Solution.java
-[alWa22s]: src/main/java/org/ck/hackerRank/corecs/mathematics/fundamentals/isfibo/Solution.java
+[alWa01s]: src/main/java/org/ck/hackerrank/corecs/algorithms/warmup/solvemefirst/Solution.java
+[alWa02s]: src/main/java/org/ck/hackerrank/corecs/algorithms/bitmanipulation/lonelyinteger/Solution.java
+[alWa03s]: src/main/java/org/ck/hackerrank/corecs/algorithms/decommissioned/solvemesecond/Solution.java
+[alWa04s]: src/main/java/org/ck/hackerrank/corecs/algorithms/bitmanipulation/flippingbits/Solution.java
+[alWa05s]: src/main/java/org/ck/hackerrank/corecs/algorithms/implementation/utopiantree/Solution.java
+[alWa06s]: src/main/java/org/ck/hackerrank/corecs/algorithms/bitmanipulation/maximisingxor/Solution.java
+[alWa07s]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/alternatingcharacters/Solution.java
+[alWa08s]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/thelovelettermystery/Solution.java
+[alWa10s]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/gameofthronesi/Solution.java
+[alWa11s]: src/main/java/org/ck/hackerrank/corecs/algorithms/implementation/acmicpcteam/Solution.java
+[alWa12s]: src/main/java/org/ck/hackerrank/corecs/mathematics/fundamentals/fillingjars/Solution.java
+[alWa13s]: src/main/java/org/ck/hackerrank/corecs/algorithms/implementation/chocolatefeast/Solution.java
+[alWa14s]: src/main/java/org/ck/hackerrank/corecs/algorithms/implementation/sherlockandsquares/Solution.java
+[alWa15s]: src/main/java/org/ck/hackerrank/corecs/mathematics/fundamentals/halloweenparty/Solution.java
+[alWa16s]: src/main/java/org/ck/hackerrank/corecs/algorithms/implementation/manasaandstones/Solution.java
+[alWa19s]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/twostrings/Solution.java
+[alWa20s]: src/main/java/org/ck/hackerrank/corecs/algorithms/implementation/finddigits/Solution.java
+[alWa22s]: src/main/java/org/ck/hackerrank/corecs/mathematics/fundamentals/isfibo/Solution.java
 
-[alWa01t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/solveMeFirst/SolutionTest.java
-[alWa02t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/lonelyInteger/SolutionTest.java
-[alWa03t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/solveMeSecond/SolutionTest.java
-[alWa04t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/flippingBits/SolutionTest.java
-[alWa05t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/utopianTree/SolutionTest.java
-[alWa06t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/maximisingXOR/SolutionTest.java
-[alWa07t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/alternatingCharacters/SolutionTest.java
-[alWa08t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/theLoveLetterMystery/SolutionTest.java
-[alWa10t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/gameOfThrones/SolutionTest.java
-[alWa11t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/acmIcpcTeam/SolutionTest.java
-[alWa12t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/fillingJars/SolutionTest.java
-[alWa13t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/chocolateFeast/SolutionTest.java
-[alWa14t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/sherlockAndSquares/SolutionTest.java
-[alWa15t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/halloweenParty/SolutionTest.java
-[alWa16t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/manasaAndStones/SolutionTest.java
-[alWa19t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/twoStrings/SolutionTest.java
-[alWa20t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/findDigits/SolutionTest.java
-[alWa22t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/warmup/isFibo/SolutionTest.java
+[alWa01t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/solveMeFirst/SolutionTest.java
+[alWa02t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/lonelyInteger/SolutionTest.java
+[alWa03t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/solveMeSecond/SolutionTest.java
+[alWa04t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/flippingBits/SolutionTest.java
+[alWa05t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/utopianTree/SolutionTest.java
+[alWa06t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/maximisingXOR/SolutionTest.java
+[alWa07t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/alternatingCharacters/SolutionTest.java
+[alWa08t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/theLoveLetterMystery/SolutionTest.java
+[alWa10t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/gameOfThrones/SolutionTest.java
+[alWa11t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/acmIcpcTeam/SolutionTest.java
+[alWa12t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/fillingJars/SolutionTest.java
+[alWa13t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/chocolateFeast/SolutionTest.java
+[alWa14t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/sherlockAndSquares/SolutionTest.java
+[alWa15t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/halloweenParty/SolutionTest.java
+[alWa16t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/manasaAndStones/SolutionTest.java
+[alWa19t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/twoStrings/SolutionTest.java
+[alWa20t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/findDigits/SolutionTest.java
+[alWa22t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/warmup/isFibo/SolutionTest.java
 
 <!-- algorithms - implementation links -->
 [alIm01]: https://www.hackerrank.com/challenges/cavity-map
@@ -638,11 +638,11 @@ This project contains all the tests for problems on https://www.hackerrank.com.
 [alAr18]: https://www.hackerrank.com/challenges/sherlock-and-pairs
 [alAr19]: https://www.hackerrank.com/challenges/almost-sorted
 
-[alAr01s]: src/main/java/org/ck/hackerRank/corecs/algorithms/sorting/intrototutorialchallenges/Solution.java
-[alAr02s]: src/main/java/org/ck/hackerRank/corecs/algorithms/sorting/insertionsortpart1/Solution.java
+[alAr01s]: src/main/java/org/ck/hackerrank/corecs/algorithms/sorting/intrototutorialchallenges/Solution.java
+[alAr02s]: src/main/java/org/ck/hackerrank/corecs/algorithms/sorting/insertionsortpart1/Solution.java
 
-[alAr01t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/arraysAndSorting/introToTutorialChallenges/SolutionTest.java
-[alAr02t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/arraysAndSorting/insertionSortPart1/SolutionTest.java
+[alAr01t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/arraysAndSorting/introToTutorialChallenges/SolutionTest.java
+[alAr02t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/arraysAndSorting/insertionSortPart1/SolutionTest.java
 
 <!-- algorithms - search links -->
 
@@ -719,9 +719,9 @@ This project contains all the tests for problems on https://www.hackerrank.com.
 [alDy48]: https://www.hackerrank.com/challenges/dortmund-dilemma
 [alDy49]: https://www.hackerrank.com/challenges/separate-the-chocolate
 
-[alDy01s]: src/main/java/org/ck/hackerRank/corecs/algorithms/dynamicprogramming/maxsubarray/Solution.java
+[alDy01s]: src/main/java/org/ck/hackerrank/corecs/algorithms/dynamicprogramming/maxsubarray/Solution.java
 
-[alDy01t]: ../hackerRank/src/test/java/org/ck/hackerRank/algorithms/dynamicProgramming/maxSubarray/SolutionTest.java
+[alDy01t]: ../hackerRank/src/test/java/org/ck/hackerrank/algorithms/dynamicProgramming/maxSubarray/SolutionTest.java
 
 <!-- algorithms - strings links -->
 

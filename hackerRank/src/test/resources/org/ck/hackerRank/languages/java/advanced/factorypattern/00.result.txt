@@ -1,2 +1,0 @@
-The factory returned class org.ck.hackerRank.languages.java.advanced.factorypattern.Cake
-Someone ordered a Dessert!

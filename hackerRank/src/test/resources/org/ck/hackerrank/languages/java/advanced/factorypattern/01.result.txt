@@ -1,0 +1,2 @@
+The factory returned class org.ck.hackerrank.languages.java.advanced.factorypattern.Pizza
+Someone ordered a Fast Food!

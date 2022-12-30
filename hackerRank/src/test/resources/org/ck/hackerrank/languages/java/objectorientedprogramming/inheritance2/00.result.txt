@@ -1,0 +1,2 @@
+My superclass is: org.ck.hackerrank.languages.java.objectorientedprogramming.inheritance2.Solution$Arithmetic
+42 13 20

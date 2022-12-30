@@ -1,0 +1,2 @@
+I implemented: org.ck.hackerrank.languages.java.objectorientedprogramming.javainterface.Solution$AdvancedArithmetic
+12

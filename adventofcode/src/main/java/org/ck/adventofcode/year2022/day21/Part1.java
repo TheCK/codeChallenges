@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 
 @Solution(
     id = 20222101,
@@ -36,12 +36,12 @@ public class Part1 {
         String monkey = iterator.next();
         Operation operation = operations.get(monkey);
 
-        if (values.containsKey(operation.getOperandOne())
-            && values.containsKey(operation.getOperandTwo())) {
+        if (values.containsKey(operation.operandOne())
+            && values.containsKey(operation.operandTwo())) {
           values.put(
               monkey,
               operation.calculate(
-                  values.get(operation.getOperandOne()), values.get(operation.getOperandTwo())));
+                  values.get(operation.operandOne()), values.get(operation.operandTwo())));
           iterator.remove();
         }
       }
@@ -50,7 +50,7 @@ public class Part1 {
     System.out.println(values.get("root"));
   }
 
-  private static BiFunction<Long, Long, Long> getOperation(final String symbol) {
+  private static BinaryOperator<Long> getOperation(final String symbol) {
     return switch (symbol) {
       case "+" -> Long::sum;
       case "-" -> (one, two) -> one - two;
@@ -60,29 +60,7 @@ public class Part1 {
     };
   }
 
-  private static class Operation {
-    private final String operandOne;
-    private final String operandTwo;
-
-    private final BiFunction<Long, Long, Long> operation;
-
-    public Operation(
-        final String operandOne,
-        final String operandTwo,
-        final BiFunction<Long, Long, Long> operation) {
-      this.operandOne = operandOne;
-      this.operandTwo = operandTwo;
-      this.operation = operation;
-    }
-
-    public String getOperandOne() {
-      return operandOne;
-    }
-
-    public String getOperandTwo() {
-      return operandTwo;
-    }
-
+  private record Operation(String operandOne, String operandTwo, BinaryOperator<Long> operation) {
     public long calculate(long valueOne, long valueTwo) {
       return operation.apply(valueOne, valueTwo);
     }

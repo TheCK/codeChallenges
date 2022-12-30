@@ -10,8 +10,7 @@ import java.util.function.UnaryOperator;
     id = 20222301,
     name = "Day 23: Unstable Diffusion",
     url = "https://adventofcode.com/2022/day/23",
-    category = "2022",
-    solved = false)
+    category = "2022")
 public class Part1 {
   public static void main(String[] args) {
     Set<Point> elves = new HashSet<>();

@@ -13,8 +13,7 @@ import java.util.function.UnaryOperator;
     id = 20222201,
     name = "Day 22: Monkey Map",
     url = "https://adventofcode.com/2022/day/21",
-    category = "2022",
-    solved = false)
+    category = "2022")
 public class Part1 {
   public static void main(String[] args) {
     List<char[]> grid = new ArrayList<>();

@@ -1,6 +1,6 @@
 package org.ck.adventofcode.year2015.day12;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

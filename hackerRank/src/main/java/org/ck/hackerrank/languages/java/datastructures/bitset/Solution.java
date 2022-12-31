@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.datastructures.bitset;
 import java.util.BitSet;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204014,
     name = "Java Dequeue",
     url = "https://www.hackerrank.com/challenges/java-dequeue",

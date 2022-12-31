@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.beautifultriplets;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10241,
 		name = "Beautiful Triplets",
 		url = "https://www.hackerrank.com/challenges/beautiful-triplets",

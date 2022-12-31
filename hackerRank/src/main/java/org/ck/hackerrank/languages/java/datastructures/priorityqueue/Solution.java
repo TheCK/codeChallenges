@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204015,
     name = "Java Priority Queue",
     url = "https://www.hackerrank.com/challenges/java-priority-queue",

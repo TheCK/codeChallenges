@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.datastructures.sort;
 
 import java.util.*;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204012,
     name = "Java Sort",
     url = "https://www.hackerrank.com/challenges/java-sort",

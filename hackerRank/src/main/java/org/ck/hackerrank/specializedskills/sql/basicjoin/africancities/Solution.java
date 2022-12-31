@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicjoin.africancities;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30204002,
 		name = "African Cities",
 		url = "https://www.hackerrank.com/challenges/african-cities",

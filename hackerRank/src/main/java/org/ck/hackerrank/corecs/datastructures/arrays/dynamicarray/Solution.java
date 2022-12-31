@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20103,
 		name = "Dynamic Array",
 		url = "https://www.hackerrank.com/challenges/dynamic-array",

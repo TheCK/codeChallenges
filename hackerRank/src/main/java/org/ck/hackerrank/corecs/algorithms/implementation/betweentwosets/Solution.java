@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.betweentwosets;
 
 import java.util.*;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10204,
 		name = "Between Two Sets",
 		url = "https://www.hackerrank.com/challenges/between-two-sets",

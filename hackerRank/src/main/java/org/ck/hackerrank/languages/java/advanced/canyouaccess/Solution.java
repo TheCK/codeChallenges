@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.advanced.canyouaccess;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207003,
     name = "Can You Access?",
     url = "https://www.hackerrank.com/challenges/can-you-access",

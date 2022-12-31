@@ -2,7 +2,7 @@ package org.ck.codingcompetitions.kickstart.year2020.rounda.problem2;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 120200102,
     name = "Round A - 2 - Plates",
     url =

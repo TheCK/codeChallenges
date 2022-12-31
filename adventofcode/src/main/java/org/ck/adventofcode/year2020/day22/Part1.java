@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
 import java.util.stream.IntStream;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20202201,

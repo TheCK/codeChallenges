@@ -1,6 +1,6 @@
 package org.ck.hackerrank.languages.java.objectorientedprogramming.inheritance1;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40205001,
     name = "Java Inheritance I",
     url = "https://www.hackerrank.com/challenges/java-inheritance-1",

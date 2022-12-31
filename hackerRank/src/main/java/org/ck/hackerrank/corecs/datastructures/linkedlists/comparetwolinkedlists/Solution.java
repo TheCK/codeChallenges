@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.comparetwolinkedlists;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20208,
 		name = "Compare two linked lists",
 		url = "https://www.hackerrank.com/challenges/compare-two-linked-lists",

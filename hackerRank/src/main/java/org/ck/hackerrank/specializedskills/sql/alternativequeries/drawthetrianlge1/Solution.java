@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.alternativequeries.drawthetrianlge1;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30206001,
 		name = "Draw The Triangle 1",
 		url = "https://www.hackerrank.com/challenges/draw-the-triangle-1",

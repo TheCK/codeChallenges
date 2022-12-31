@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990010,
     name = "Project Euler #10: Summation of primes",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler010",

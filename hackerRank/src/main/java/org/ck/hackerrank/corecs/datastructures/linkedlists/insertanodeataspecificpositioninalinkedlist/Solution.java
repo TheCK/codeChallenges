@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.insertanodeataspecificpositioninalinkedlist;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20204,
 		name = "Insert a node at a specific position in a linked list",
 		url = "https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list",

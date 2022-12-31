@@ -3,7 +3,7 @@ package org.ck.codingcompetitions.codejam.year2022.qualification.problem5;
 import java.util.Random;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 220220005,
     name = "Qualification Round - 5 - Twisty Little Passages",
     url =

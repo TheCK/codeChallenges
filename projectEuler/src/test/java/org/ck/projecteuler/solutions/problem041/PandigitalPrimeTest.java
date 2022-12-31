@@ -1,6 +1,6 @@
 package org.ck.projecteuler.solutions.problem041;
 
-import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

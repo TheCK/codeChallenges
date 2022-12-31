@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.prefixSums.minAvgTwoSlice;
 
-import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;

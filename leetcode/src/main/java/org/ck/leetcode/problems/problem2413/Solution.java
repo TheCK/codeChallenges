@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem2413;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 102413,
     name = "2413. Smallest Even Multiple",
     url = "https://leetcode.com/problems/smallest-even-multiple/",

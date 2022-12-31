@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicjoin.thereport;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30204004,
 		name = "The Report",
 		url = "https://www.hackerrank.com/challenges/the-report",

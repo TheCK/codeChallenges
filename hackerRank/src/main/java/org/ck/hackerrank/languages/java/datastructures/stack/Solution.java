@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.datastructures.stack;
 import java.util.Scanner;
 import java.util.Stack;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204008,
     name = "Java Stack",
     url = "https://www.hackerrank.com/challenges/java-stack",

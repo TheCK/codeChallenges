@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 import java.util.function.LongConsumer;
 import java.util.stream.StreamSupport;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990002,
     name = "Project Euler #2: Even Fibonacci numbers",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler002",

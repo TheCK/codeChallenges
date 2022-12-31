@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10240,
 		name = "Modified Kaprekar Numbers",
 		url = "https://www.hackerrank.com/challenges/kaprekar-numbers",

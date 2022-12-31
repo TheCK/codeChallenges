@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20191302,

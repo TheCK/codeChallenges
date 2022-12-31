@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.algorithms.warmup.plusminus;
 import java.util.Locale;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10106,
 		name = "Plus Minus",
 		url = "https://www.hackerrank.com/challenges/plus-minus",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.mathematics.fundamentals.maximumdraws;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30102,
 		name = "Maximum Draws",
 		url = "https://www.hackerrank.com/challenges/maximum-draws",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.decommissioned.solvemesecond;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 19901,
 		name = "Solve me second",
 		url = "https://www.hackerrank.com/challenges/solve-me-second",

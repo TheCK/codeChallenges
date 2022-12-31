@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.algorithms.strings.caesarcipher;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10304,
 		name = "Caesar Cipher",
 		url = "https://www.hackerrank.com/challenges/caesar-cipher-1",

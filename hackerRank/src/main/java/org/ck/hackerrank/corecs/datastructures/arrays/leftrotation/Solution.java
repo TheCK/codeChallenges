@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20104,
 		name = "Left Rotation",
 		url = "https://www.hackerrank.com/challenges/array-left-rotation",

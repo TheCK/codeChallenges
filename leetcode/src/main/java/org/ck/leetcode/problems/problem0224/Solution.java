@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem0224;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100224,
     name = "224. Basic Calculator",
     url = "https://leetcode.com/problems/basic-calculator/",

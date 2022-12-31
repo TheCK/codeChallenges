@@ -7,7 +7,7 @@ import java.util.Scanner;
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingBy;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10209,
 		name = "Sock Merchant",
 		url = "https://www.hackerrank.com/challenges/sock-merchant",

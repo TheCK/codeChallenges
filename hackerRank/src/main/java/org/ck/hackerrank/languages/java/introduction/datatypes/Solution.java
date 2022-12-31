@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.introduction.datatypes;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201008,
 		name = "Java Datatypes",
 		url = "https://www.hackerrank.com/challenges/java-datatypes",

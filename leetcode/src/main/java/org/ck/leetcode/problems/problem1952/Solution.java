@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1952;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101952,
     name = "1952. Three Divisors",
     url = "https://leetcode.com/problems/three-divisors/",

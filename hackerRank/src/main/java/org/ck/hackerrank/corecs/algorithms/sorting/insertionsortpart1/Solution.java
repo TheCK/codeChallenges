@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.sorting.insertionsortpart1;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10402,
 		name = "Insertion Sort - Part 1",
 		url = "https://www.hackerrank.com/challenges/insertionsort1",

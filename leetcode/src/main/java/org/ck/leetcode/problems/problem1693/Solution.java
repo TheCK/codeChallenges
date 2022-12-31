@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1693;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101693,
     name = "1693. Daily Leads and Partners",
     url = "https://leetcode.com/problems/daily-leads-and-partners/",

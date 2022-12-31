@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.javaregex;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202008,
     name = "Java Regex",
     url = "https://www.hackerrank.com/challenges/java-regex",

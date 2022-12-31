@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.datastructures.java2darray;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204002,
     name = "Java 2D Array",
     url = "https://www.hackerrank.com/challenges/java-2d-array",

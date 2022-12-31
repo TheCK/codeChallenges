@@ -136,7 +136,7 @@ class FancyVisitor extends TreeVis {
   }
 }
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207007,
     name = "Java Visitor Pattern  ",
     url = "https://www.hackerrank.com/challenges/java-vistor-pattern",

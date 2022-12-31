@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem0876;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100876,
     name = "876. Middle of the Linked List",
     url = "https://leetcode.com/problems/middle-of-the-linked-list/",

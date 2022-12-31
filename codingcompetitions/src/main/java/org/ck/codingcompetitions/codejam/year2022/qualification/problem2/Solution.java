@@ -2,7 +2,7 @@ package org.ck.codingcompetitions.codejam.year2022.qualification.problem2;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 220220002,
     name = "Qualification Round - 2 - 3D Printing",
     url =

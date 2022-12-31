@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicjoin.averagepopulationofeachcontinent;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30204003,
 		name = "Average Population of Each Continent",
 		url = "https://www.hackerrank.com/challenges/average-population-of-each-continent",

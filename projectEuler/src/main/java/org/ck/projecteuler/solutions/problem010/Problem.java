@@ -1,7 +1,7 @@
 package org.ck.projecteuler.solutions.problem010;
 
 import java.util.stream.StreamSupport;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 import org.ck.projecteuler.lib.iterators.PrimesSpliterator;
 
 @Solution(

@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.introduction.staticinitializerblock;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201010,
 		name = "Java Static Initializer Block",
 		url = "https://www.hackerrank.com/challenges/java-static-initializer-block",

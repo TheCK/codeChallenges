@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.warmup.birthdaycakecandles;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 10110,
     name = "Birthday Cake Candles",
     url = "https://www.hackerrank.com/challenges/birthday-cake-candles",

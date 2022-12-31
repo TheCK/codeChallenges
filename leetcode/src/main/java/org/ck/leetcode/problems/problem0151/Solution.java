@@ -3,7 +3,7 @@ package org.ck.leetcode.problems.problem0151;
 import java.util.ArrayList;
 import java.util.List;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100151,
     name = "151. Reverse Words in a String",
     url = "https://leetcode.com/problems/reverse-words-in-a-string/",

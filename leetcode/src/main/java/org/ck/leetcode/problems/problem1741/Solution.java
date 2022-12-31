@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1741;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101741,
     name = "1741. Find Total Time Spent by Each Employee",
     url = "https://leetcode.com/problems/find-total-time-spent-by-each-employee/",

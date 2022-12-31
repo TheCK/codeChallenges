@@ -2,7 +2,7 @@ package org.ck.codingame.practice.easy.temperatures;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101004,
     name = "Temperatures",
     url = "https://www.codingame.com/ide/puzzle/temperatures",

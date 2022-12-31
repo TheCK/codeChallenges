@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.aggregation.revisingaggregationsthecountfunction;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30203001,
 		name = "Revising Aggregations - The Count Function",
 		url = "https://www.hackerrank.com/challenges/revising-aggregations-the-count-function",

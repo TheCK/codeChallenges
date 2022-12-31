@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.selectbyid;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201004,
 		name = "Select By ID",
 		url = "https://www.hackerrank.com/challenges/select-by-id",

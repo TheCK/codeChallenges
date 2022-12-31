@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.thetimeinwords;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10243,
 		name = "The Time in Words",
 		url = "https://www.hackerrank.com/challenges/the-time-in-words",

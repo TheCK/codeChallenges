@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.strings.pangrams;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10307,
 		name = "Pangrams",
 		url = "https://www.hackerrank.com/challenges/pangrams",

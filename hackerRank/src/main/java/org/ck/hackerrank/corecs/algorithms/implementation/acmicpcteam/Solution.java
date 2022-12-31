@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.acmicpcteam;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10235,
 		name = "ACM ICPC Team",
 		url = "https://www.hackerrank.com/challenges/acm-icpc-team",

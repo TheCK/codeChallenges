@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.lisasworkbook;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10246,
 		name = "Lisa's Workbook",
 		url = "https://www.hackerrank.com/challenges/lisa-workbook",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.bitmanipulation.maximisingxor;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 11002,
 		name = "Maximizing XOR",
 		url = "https://www.hackerrank.com/challenges/maximizing-xor",

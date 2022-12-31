@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.sorting.intrototutorialchallenges;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10401,
 		name = "Intro to Tutorial Challenges",
 		url = "https://www.hackerrank.com/challenges/tutorial-intro",

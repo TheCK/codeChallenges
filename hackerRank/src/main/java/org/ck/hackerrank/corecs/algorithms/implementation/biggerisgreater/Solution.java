@@ -5,7 +5,7 @@ import java.util.OptionalInt;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10239,
 		name = "Bigger is Greater",
 		url = "https://www.hackerrank.com/challenges/bigger-is-greater",

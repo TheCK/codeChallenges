@@ -1,6 +1,6 @@
 package org.ck.hackerrank.languages.java.introduction.welcometojava;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40201001,
     name = "Welcome to Java!",
     url = "https://www.hackerrank.com/challenges/welcome-to-java",

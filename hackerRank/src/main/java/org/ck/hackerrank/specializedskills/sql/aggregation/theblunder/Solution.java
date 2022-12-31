@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.aggregation.theblunder;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30203007,
 		name = "The Blunder",
 		url = "https://www.hackerrank.com/challenges/the-blunder",

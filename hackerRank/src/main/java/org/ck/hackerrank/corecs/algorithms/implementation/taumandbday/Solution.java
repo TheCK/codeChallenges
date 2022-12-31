@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.taumandbday;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10236,
 		name = "Taum and B'day",
 		url = "https://www.hackerrank.com/challenges/taum-and-bday",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.appendanddelete;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10226,
 		name = "Append and Delete",
 		url = "https://www.hackerrank.com/challenges/append-and-delete",

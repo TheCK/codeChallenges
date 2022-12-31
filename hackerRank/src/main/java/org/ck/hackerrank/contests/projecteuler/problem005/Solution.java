@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990005,
     name = "Project Euler #5: Smallest multiple",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler005",

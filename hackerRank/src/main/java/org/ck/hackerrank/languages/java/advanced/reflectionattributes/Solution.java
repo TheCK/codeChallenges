@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207002,
     name = "Java Reflection - Attributes",
     url = "https://www.hackerrank.com/challenges/java-reflection-attributes",

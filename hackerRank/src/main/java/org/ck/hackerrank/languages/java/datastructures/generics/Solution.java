@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.datastructures.generics;
 
 import java.lang.reflect.Method;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204010,
     name = "Java Generics",
     url = "https://www.hackerrank.com/challenges/java-generics",

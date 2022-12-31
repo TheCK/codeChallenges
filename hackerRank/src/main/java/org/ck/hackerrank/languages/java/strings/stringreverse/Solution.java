@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.stringreverse;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202004,
     name = "Java String Reverse",
     url = "https://www.hackerrank.com/challenges/java-string-reverse",

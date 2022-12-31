@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.extralongfactorials;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10225,
 		name = "Extra Long Factorials",
 		url = "https://www.hackerrank.com/challenges/extra-long-factorials",

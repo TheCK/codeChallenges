@@ -1,6 +1,6 @@
 package org.ck.projecteuler.solutions.problem104;
 
-import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

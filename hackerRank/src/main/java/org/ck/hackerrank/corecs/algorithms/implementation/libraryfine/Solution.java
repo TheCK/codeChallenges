@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.libraryfine;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10228,
 		name = "Library Fine",
 		url = "https://www.hackerrank.com/challenges/library-fine",

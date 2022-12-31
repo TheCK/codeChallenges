@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.stringcompare;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40202003,
 		name = "Java String Compare",
 		url = "https://www.hackerrank.com/challenges/java-string-compare",

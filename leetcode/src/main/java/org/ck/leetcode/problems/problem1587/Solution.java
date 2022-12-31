@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1587;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101587,
     name = "1587. Bank Account Summary II",
     url = "https://leetcode.com/problems/bank-account-summary-ii/",

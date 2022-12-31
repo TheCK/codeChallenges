@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.weatherobservationstation7;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201012,
 		name = "Weather Observation Station 7",
 		url = "https://www.hackerrank.com/challenges/weather-observation-station-7",

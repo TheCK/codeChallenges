@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.higherthan75marks;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201018,
 		name = "Higher Than 75 Marks",
 		url = "https://www.hackerrank.com/challenges/more-than-75-marks",

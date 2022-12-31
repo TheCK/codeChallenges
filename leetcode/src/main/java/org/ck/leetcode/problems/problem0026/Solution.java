@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem0026;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100026,
     name = "26. Remove Duplicates from Sorted Array",
     url = "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 11001,
 		name = "Lonely Integer",
 		url = "https://www.hackerrank.com/challenges/lonely-integer",

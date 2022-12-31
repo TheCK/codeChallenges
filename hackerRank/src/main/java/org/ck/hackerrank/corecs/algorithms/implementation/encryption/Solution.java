@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.encryption;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10238,
 		name = "Encryption",
 		url = "https://www.hackerrank.com/challenges/encryption",

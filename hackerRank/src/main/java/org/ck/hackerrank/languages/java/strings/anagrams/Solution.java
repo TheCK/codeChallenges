@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.anagrams;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202005,
     name = "Java Anagrams",
     url = "https://www.hackerrank.com/challenges/java-anagrams",

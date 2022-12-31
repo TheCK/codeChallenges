@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202009,
     name = "Java Regex 2 - Duplicate Words",
     url = "https://www.hackerrank.com/challenges/duplicate-word",

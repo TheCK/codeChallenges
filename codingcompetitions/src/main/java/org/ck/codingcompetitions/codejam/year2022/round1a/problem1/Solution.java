@@ -2,7 +2,7 @@ package org.ck.codingcompetitions.codejam.year2022.round1a.problem1;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 220220101,
     name = "Round A1 - 1 - Double or One Thing",
     url =

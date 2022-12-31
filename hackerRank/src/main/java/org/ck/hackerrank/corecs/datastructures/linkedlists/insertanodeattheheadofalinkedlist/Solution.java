@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.insertanodeattheheadofalinkedlist;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20203,
 		name = "Insert a node at the head of a linked list",
 		url = "https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list",

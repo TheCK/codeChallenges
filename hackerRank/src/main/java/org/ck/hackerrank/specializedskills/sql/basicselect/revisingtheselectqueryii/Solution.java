@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.revisingtheselectqueryii;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201002,
 		name = "Revising the Select Query II",
 		url = "https://www.hackerrank.com/challenges/revising-the-select-query-2",

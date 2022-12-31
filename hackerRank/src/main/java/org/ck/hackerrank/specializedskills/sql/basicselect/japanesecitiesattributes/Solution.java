@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.japanesecitiesattributes;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201005,
 		name = "Japanese Cities' Attributes",
 		url = "https://www.hackerrank.com/challenges/japanese-cities-attributes",

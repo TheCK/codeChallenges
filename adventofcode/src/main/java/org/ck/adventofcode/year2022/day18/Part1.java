@@ -1,6 +1,6 @@
 package org.ck.adventofcode.year2022.day18;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.HashSet;
 import java.util.Scanner;

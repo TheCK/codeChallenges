@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.datastructures.java1darray;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204001,
     name = "Java 1D Array",
     url = "https://www.hackerrank.com/challenges/java-1d-array-introduction",

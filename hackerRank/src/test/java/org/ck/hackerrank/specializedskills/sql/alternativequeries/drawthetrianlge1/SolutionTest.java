@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.alternativequeries.drawthetrianlge1;
 
-import org.ck.codeChallengeLib.testhelper.BaseMySqlTest;
+import org.ck.codechallengelib.testhelper.BaseMySqlTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

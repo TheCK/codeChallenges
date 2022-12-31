@@ -1,6 +1,6 @@
 package org.ck.projecteuler.solutions.problem027;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 import org.ck.projecteuler.lib.MyMath;
 
 @Solution(

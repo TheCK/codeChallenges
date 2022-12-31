@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.strings.camelcase;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10302,
 		name = "CamelCase",
 		url = "https://www.hackerrank.com/challenges/camelcase",

@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1929;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101929,
     name = "1929. Concatenation of Array",
     url = "https://leetcode.com/problems/concatenation-of-array/",

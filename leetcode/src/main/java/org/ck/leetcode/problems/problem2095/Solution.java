@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem2095;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 102095,
     name = "2095. Delete the Middle Node of a Linked List",
     url = "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",

@@ -1,7 +1,7 @@
 package org.ck.adventofcode.year2019.day08;
 
 import java.util.Scanner;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20190801,

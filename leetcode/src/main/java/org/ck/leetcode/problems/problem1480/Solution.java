@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1480;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101480,
     name = "1480. Running Sum of 1d Array",
     url = "https://leetcode.com/problems/running-sum-of-1d-array/",

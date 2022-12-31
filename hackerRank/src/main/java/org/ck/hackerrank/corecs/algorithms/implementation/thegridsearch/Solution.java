@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.thegridsearch;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10251,
 		name = "The Grid Search",
 		url = "https://www.hackerrank.com/challenges/the-grid-search",

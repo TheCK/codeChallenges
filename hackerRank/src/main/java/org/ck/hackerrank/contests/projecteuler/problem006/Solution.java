@@ -2,7 +2,7 @@ package org.ck.hackerrank.contests.projecteuler.problem006;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990006,
     name = "Project Euler #6: Sum square difference",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler006",

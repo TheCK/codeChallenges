@@ -3,7 +3,7 @@ package org.ck.leetcode.problems.problem0295;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100295,
     name = "295. Find Median from Data Stream",
     url = "https://leetcode.com/problems/find-median-from-data-stream/",

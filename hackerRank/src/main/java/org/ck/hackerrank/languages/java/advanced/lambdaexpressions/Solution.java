@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207010,
     name = "Java Lambda Expressions",
     url = "https://www.hackerrank.com/challenges/java-lambda-expressions",

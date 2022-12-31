@@ -2,7 +2,7 @@ package org.ck.hackerrank.contests.projecteuler.problem008;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990008,
     name = "Project Euler #8: Largest product in a series",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler008",

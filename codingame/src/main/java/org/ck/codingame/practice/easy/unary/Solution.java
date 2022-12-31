@@ -2,7 +2,7 @@ package org.ck.codingame.practice.easy.unary;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101007,
     name = "Unary",
     url = "https://www.codingame.com/ide/puzzle/unary",

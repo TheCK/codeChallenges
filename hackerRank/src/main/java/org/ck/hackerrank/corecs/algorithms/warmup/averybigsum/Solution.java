@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.warmup.averybigsum;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10104,
 		name = "A Very Big Sum",
 		url = "https://www.hackerrank.com/challenges/a-very-big-sum",

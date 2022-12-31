@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.advancedselect.typeoftriangle;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30202001,
 		name = "Type of Triangle",
 		url = "https://www.hackerrank.com/challenges/what-type-of-triangle",

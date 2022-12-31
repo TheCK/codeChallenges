@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.warmup.diagonaldifference;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10105,
 		name = "Diagonal Difference",
 		url = "https://www.hackerrank.com/challenges/diagonal-difference",

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 10258,
     name = "Almost Sorted",
     url = "https://www.hackerrank.com/challenges/almost-sorted",

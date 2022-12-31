@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.deleteanode;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20205,
 		name = "Delete a Node",
 		url = "https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list",

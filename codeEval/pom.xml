@@ -23,8 +23,8 @@
 					<forceJavacCompilerUse>true</forceJavacCompilerUse>
 					<annotationProcessors>
 						<annotationProcessor>
-							org.ck.codeChallengeLib.annotation.ReadmeGenerator
-						</annotationProcessor>
+                            org.ck.codechallengelib.annotation.ReadmeGenerator
+                        </annotationProcessor>
 					</annotationProcessors>
 					<source>${java.version}</source>
 					<target>${java.version}</target>

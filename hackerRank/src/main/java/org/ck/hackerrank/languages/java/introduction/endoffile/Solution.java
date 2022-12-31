@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.introduction.endoffile;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201009,
 		name = "Java End-of-file",
 		url = "https://www.hackerrank.com/challenges/java-end-of-file",

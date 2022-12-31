@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.bitmanipulation.flippingbits;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 11006,
 		name = "Flipping bits",
 		url = "https://www.hackerrank.com/challenges/flipping-bits",

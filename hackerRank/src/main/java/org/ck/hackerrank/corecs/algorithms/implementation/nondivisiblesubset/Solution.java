@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.nondivisiblesubset;
 import java.util.Arrays;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10230,
 		name = "Non-Divisible Subset",
 		url = "https://www.hackerrank.com/challenges/non-divisible-subset",

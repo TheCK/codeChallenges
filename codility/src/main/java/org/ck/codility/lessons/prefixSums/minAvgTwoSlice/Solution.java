@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.prefixSums.minAvgTwoSlice;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 23, name = "MinAvgTwoSlice",
 		description = "Find the minimal average of any slice containing at least two elements.",
 		url = "https://codility.com/programmers/lessons/3",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.appleandorange;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10202,
 		name = "Apple and Orange",
 		url = "https://www.hackerrank.com/challenges/apple-and-orange",

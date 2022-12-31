@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.savetheprisoner;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10220,
 		name = "Save the Prisoner!",
 		url = "https://www.hackerrank.com/challenges/save-the-prisoner",

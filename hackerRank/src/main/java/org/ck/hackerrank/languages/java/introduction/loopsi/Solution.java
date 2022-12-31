@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.introduction.loopsi;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201006,
 		name = "Java Loops I",
 		url = "https://www.hackerrank.com/challenges/java-loops-i",

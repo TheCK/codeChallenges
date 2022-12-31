@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.sherlockandsquares;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10227,
 		name = "Sherlock and Squares",
 		url = "https://www.hackerrank.com/challenges/sherlock-and-squares",

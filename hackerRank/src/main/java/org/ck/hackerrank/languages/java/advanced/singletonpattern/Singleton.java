@@ -1,6 +1,6 @@
 package org.ck.hackerrank.languages.java.advanced.singletonpattern;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207005,
     name = "Java Singleton Pattern",
     url = "https://www.hackerrank.com/challenges/java-singleton",

@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.prefixSums.countDiv;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 21, name = "CountDiv",
 		description = "Compute number of integers divisible by k in range [a..b].",
 		url = "https://codility.com/programmers/lessons/3",

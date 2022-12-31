@@ -1,6 +1,6 @@
 package org.ck.hackerrank.languages.java.advanced.factorypattern;
 
-import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 

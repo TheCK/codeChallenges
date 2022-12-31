@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.kangaroo;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10203,
 		name = "Kangaroo",
 		url = "https://www.hackerrank.com/challenges/kangaroo",

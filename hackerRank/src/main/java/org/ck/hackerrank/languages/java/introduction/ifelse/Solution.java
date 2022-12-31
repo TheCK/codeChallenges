@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.introduction.ifelse;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40201003,
     name = "Java If-Else",
     url = "https://www.hackerrank.com/challenges/java-if-else",

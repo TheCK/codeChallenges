@@ -3,7 +3,7 @@ package org.ck.codingcompetitions.codejam.year2022.qualification.problem3;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 220220003,
     name = "Qualification Round - 3 - d1000000",
     url =

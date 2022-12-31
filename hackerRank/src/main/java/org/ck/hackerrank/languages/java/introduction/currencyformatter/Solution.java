@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201013,
 		name = "Java Currency Formatter",
 		url = "https://www.hackerrank.com/challenges/java-currency-formatter",

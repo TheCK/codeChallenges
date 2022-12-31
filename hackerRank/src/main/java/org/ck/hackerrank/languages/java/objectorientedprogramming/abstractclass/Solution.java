@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.objectorientedprogramming.abstractclass
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40205003,
     name = "Java Abstract Class",
     url = "https://www.hackerrank.com/challenges/java-abstract-class",

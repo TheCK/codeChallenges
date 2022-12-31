@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem0027;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100027,
     name = "27. Remove Element",
     url = "https://leetcode.com/problems/remove-element/",

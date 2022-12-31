@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.mathematics.fundamentals.connectingtowns;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30105,
 		name = "Connecting Towns",
 		url = "https://www.hackerrank.com/challenges/connecting-towns",

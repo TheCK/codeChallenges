@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101010,
     name = "Horse-racing Duals",
     url = "https://www.codingame.com/ide/puzzle/horse-racing-duals",

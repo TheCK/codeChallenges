@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40205007,
     name = "Java Instanceof keyword",
     url = "https://www.hackerrank.com/challenges/java-instanceof-keyword",

@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.introduction.dateandtime;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201012,
 		name = "Java Date and Time",
 		url = "https://www.hackerrank.com/challenges/java-date-and-time",

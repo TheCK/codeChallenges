@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem2469;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 102469,
     name = "2469. Convert the Temperature",
     url = "https://leetcode.com/problems/convert-the-temperature/",

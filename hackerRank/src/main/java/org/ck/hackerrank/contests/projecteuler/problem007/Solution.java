@@ -2,7 +2,7 @@ package org.ck.hackerrank.contests.projecteuler.problem007;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990007,
     name = "Project Euler #7: 10001st prime",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler007",

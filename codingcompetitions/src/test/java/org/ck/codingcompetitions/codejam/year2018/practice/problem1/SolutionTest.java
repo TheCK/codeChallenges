@@ -1,7 +1,7 @@
 package org.ck.codingcompetitions.codejam.year2018.practice.problem1;
 
-import org.ck.codeChallengeLib.testhelper.BaseInteractiveRunner;
-import org.ck.codeChallengeLib.testhelper.BaseInteractiveTest;
+import org.ck.codechallengelib.testhelper.BaseInteractiveRunner;
+import org.ck.codechallengelib.testhelper.BaseInteractiveTest;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;

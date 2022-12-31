@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10254,
 		name = "Absolute Permutation",
 		url = "https://www.hackerrank.com/challenges/absolute-permutation",

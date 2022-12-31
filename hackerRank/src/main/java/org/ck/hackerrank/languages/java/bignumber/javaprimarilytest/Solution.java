@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.bignumber.javaprimarilytest;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40203002,
     name = "Java Primality Test",
     url = "https://www.hackerrank.com/challenges/java-primality-test",

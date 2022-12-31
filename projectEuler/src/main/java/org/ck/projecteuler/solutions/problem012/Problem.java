@@ -2,7 +2,7 @@ package org.ck.projecteuler.solutions.problem012;
 
 import java.util.OptionalInt;
 import java.util.stream.StreamSupport;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 import org.ck.projecteuler.lib.MyMath;
 import org.ck.projecteuler.lib.iterators.TriangleSpliterator;
 

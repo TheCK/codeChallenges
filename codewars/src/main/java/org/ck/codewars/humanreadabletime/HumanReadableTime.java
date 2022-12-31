@@ -1,6 +1,6 @@
 package org.ck.codewars.humanreadabletime;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 487760219,

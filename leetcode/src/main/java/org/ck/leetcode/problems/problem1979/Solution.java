@@ -2,7 +2,7 @@ package org.ck.leetcode.problems.problem1979;
 
 import java.util.Arrays;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101979,
     name = "1979. Find Greatest Common Divisor of Array",
     url = "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",

@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40203001,
     name = "Java BigDecimal",
     url = "https://www.hackerrank.com/challenges/java-bigdecimal",

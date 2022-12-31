@@ -3,7 +3,7 @@ package org.ck.projecteuler.solutions.problem029;
 import java.math.BigInteger;
 import java.util.HashSet;
 import java.util.Set;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 29,

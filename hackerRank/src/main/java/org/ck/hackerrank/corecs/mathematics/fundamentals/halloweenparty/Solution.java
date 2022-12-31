@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.mathematics.fundamentals.halloweenparty;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30118,
 		name = "Halloween party",
 		url = "https://www.hackerrank.com/challenges/halloween-party",

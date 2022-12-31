@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207001,
     name = "Java Varargs - Simple Addition",
     url = "https://www.hackerrank.com/challenges/simple-addition-varargs",

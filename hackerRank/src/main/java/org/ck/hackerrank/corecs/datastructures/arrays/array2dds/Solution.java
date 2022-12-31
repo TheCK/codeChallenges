@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.datastructures.arrays.array2dds;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20102,
 		name = "2D Array - DS",
 		url = "https://www.hackerrank.com/challenges/2d-array",

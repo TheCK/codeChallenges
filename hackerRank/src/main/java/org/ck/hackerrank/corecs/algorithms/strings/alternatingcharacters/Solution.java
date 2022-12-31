@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.strings.alternatingcharacters;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10312,
 		name = "Alternating Characters",
 		url = "https://www.hackerrank.com/challenges/alternating-characters",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.introduction.outputformatting;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40201005,
 		name = "Java Output Formatting",
 		url = "https://www.hackerrank.com/challenges/java-output-formatting",

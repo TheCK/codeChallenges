@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1581;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101581,
     name = "1581. Customer Who Visited but Did Not Make Any Transactions",
     url = "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/",

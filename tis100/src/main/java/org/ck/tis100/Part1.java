@@ -1,6 +1,6 @@
 package org.ck.tis100;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 import org.ck.tis100.core.Node;
 import org.ck.tis100.core.Port;
 

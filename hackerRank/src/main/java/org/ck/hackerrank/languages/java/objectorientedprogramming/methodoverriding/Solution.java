@@ -1,6 +1,6 @@
 package org.ck.hackerrank.languages.java.objectorientedprogramming.methodoverriding;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40205005,
     name = "Java Method Overriding",
     url = "https://www.hackerrank.com/challenges/java-method-overriding",

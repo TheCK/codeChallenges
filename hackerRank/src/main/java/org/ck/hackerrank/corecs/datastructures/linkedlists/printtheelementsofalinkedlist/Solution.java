@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.printtheelementsofalinkedlist;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20201,
 		name = "Print the Elements of a Linked List",
 		url = "https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list",

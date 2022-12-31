@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.datastructures.arraylist;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204004,
     name = "Java Arraylist",
     url = "https://www.hackerrank.com/challenges/java-arraylist",

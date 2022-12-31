@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.cavitymap;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10249,
 		name = "Cavity Map",
 		url = "https://www.hackerrank.com/challenges/cavity-map",

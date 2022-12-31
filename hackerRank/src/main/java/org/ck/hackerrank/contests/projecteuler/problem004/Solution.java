@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 import java.util.stream.StreamSupport;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990004,
     name = "Project Euler #4: Largest palindrome product",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler004",

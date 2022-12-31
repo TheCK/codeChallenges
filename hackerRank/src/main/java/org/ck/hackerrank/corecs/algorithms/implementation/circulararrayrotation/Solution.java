@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10221,
 		name = "Circular Array Rotation",
 		url = "https://www.hackerrank.com/challenges/circular-array-rotation",

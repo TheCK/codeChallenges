@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.fairrations;
 import java.util.Arrays;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10248,
 		name = "Fair Rations",
 		url = "https://www.hackerrank.com/challenges/fair-rations",

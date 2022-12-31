@@ -2,7 +2,7 @@ package org.ck.codingcompetitions.codejam.year2018.practice.problem1;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 220180001,
     name = "Practice Session 2018 - 1 - Number Guessing",
     url =

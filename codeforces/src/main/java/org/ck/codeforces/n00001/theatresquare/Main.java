@@ -1,6 +1,6 @@
 package org.ck.codeforces.n00001.theatresquare;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.io.IOException;
 import java.util.Scanner;

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.mathematics.fundamentals.fillingjars;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30119,
 		name = "Filling Jars",
 		url = "https://www.hackerrank.com/challenges/filling-jars",

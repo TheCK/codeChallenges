@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.divisiblesumpairs;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10205,
 		name = "Divisible Sum Pairs",
 		url = "https://www.hackerrank.com/challenges/divisible-sum-pairs",

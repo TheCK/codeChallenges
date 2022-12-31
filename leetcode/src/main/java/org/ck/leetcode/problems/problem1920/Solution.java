@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1920;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101920,
     name = "1920. Build Array from Permutation",
     url = "https://leetcode.com/problems/build-array-from-permutation/",

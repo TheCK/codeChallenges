@@ -1,6 +1,6 @@
 package org.ck.codingame.practice.easy.thedescent;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.Scanner;
 

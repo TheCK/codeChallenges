@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem2011;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 102011,
     name = "2011. Final Value of Variable After Performing Operations",
     url = "https://leetcode.com/problems/final-value-of-variable-after-performing-operations/",

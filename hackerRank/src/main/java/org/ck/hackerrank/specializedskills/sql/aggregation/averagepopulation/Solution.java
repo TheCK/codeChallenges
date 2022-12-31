@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.aggregation.averagepopulation;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30203004,
 		name = "Average Population",
 		url = "https://www.hackerrank.com/challenges/average-population",

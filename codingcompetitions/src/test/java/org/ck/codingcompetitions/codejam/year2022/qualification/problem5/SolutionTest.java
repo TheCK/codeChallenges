@@ -1,8 +1,8 @@
 package org.ck.codingcompetitions.codejam.year2022.qualification.problem5;
 
-import org.ck.codeChallengeLib.testhelper.BaseInteractiveRunner;
-import org.ck.codeChallengeLib.testhelper.BaseInteractiveTest;
-import org.ck.codeChallengeLib.testhelper.InteractiveRunner;
+import org.ck.codechallengelib.testhelper.BaseInteractiveRunner;
+import org.ck.codechallengelib.testhelper.BaseInteractiveTest;
+import org.ck.codechallengelib.testhelper.InteractiveRunner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

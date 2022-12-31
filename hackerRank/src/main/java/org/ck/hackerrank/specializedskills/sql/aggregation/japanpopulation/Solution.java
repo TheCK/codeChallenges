@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.aggregation.japanpopulation;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30203005,
 		name = "Japan Population",
 		url = "https://www.hackerrank.com/challenges/japan-population",

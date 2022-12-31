@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.jumpingontheclouds;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10232,
 		name = "Jumping on the Clouds",
 		url = "https://www.hackerrank.com/challenges/jumping-on-the-clouds",

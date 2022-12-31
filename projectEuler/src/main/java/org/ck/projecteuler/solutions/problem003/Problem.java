@@ -1,7 +1,7 @@
 package org.ck.projecteuler.solutions.problem003;
 
 import java.util.OptionalLong;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 import org.ck.projecteuler.lib.MyMath;
 
 @Solution(

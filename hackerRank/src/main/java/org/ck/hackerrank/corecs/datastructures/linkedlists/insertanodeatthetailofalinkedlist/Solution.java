@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.insertanodeatthetailofalinkedlist;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20202,
 		name = "Insert a Node at the Tail of a Linked List",
 		url = "https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list",

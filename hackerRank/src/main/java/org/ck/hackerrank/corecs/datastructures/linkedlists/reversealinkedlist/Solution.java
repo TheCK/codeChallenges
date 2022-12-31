@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.reversealinkedlist;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20207,
 		name = "Reverse a linked list",
 		url = "https://www.hackerrank.com/challenges/reverse-a-linked-list",

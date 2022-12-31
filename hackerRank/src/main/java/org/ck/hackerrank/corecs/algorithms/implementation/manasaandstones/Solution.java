@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.manasaandstones;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10250,
 		name = "Manasa and Stones",
 		url = "https://www.hackerrank.com/challenges/manasa-and-stones",

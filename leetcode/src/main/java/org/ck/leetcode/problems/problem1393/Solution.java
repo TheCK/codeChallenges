@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1393;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101393,
     name = "1393. Capital Gain/Loss",
     url = "https://leetcode.com/problems/capital-gainloss/",

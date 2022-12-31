@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 54,

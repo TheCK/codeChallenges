@@ -2,7 +2,7 @@ package org.ck.codewars.simplepiglatin;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = -470429594,

@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.advancedselect.thepads;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30202002,
 		name = "The PADS",
 		url = "https://www.hackerrank.com/challenges/the-pads",

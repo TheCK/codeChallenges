@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.countingElements.maxCounters;
 
-@org.ck.codeChallengeLib.annotation.Solution(id = 14, name = "MaxCounters", description = "Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.", url = "https://codility.com/programmers/lessons/2", category = "Lessons", subCategory = "2. Counting Elements")
+@org.ck.codechallengelib.annotation.Solution(id = 14, name = "MaxCounters", description = "Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.", url = "https://codility.com/programmers/lessons/2", category = "Lessons", subCategory = "2. Counting Elements")
 public class Solution
 {
 	public int[] solution(int N, int[] A)

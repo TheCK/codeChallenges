@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.datastructures.subarray;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40204003,
     name = "Java Subarray",
     url = "https://www.hackerrank.com/challenges/java-negative-subarray",

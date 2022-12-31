@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.utopiantree;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10216,
 		name = "Utopian Tree",
 		url = "https://www.hackerrank.com/challenges/utopian-tree",

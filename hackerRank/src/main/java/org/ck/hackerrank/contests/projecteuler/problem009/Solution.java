@@ -2,7 +2,7 @@ package org.ck.hackerrank.contests.projecteuler.problem009;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990009,
     name = "Project Euler #9: Special Pythagorean triplet",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler009",

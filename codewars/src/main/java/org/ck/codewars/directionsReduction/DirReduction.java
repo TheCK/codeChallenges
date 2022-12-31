@@ -3,7 +3,7 @@ package org.ck.codewars.directionsReduction;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = -866502891,

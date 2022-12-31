@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.strings.marsexploration;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10305,
 		name = "Mars Exploration",
 		url = "https://www.hackerrank.com/challenges/mars-exploration",

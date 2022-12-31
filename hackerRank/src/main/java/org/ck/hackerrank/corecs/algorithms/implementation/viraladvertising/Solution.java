@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.viraladvertising;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10219,
 		name = "Viral Advertising",
 		url = "https://www.hackerrank.com/challenges/strange-advertising",

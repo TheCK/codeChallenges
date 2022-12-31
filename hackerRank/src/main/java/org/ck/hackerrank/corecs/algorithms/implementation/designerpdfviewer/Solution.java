@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.designerpdfviewer;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10215,
 		name = "Designer PDF Viewer",
 		url = "https://www.hackerrank.com/challenges/designer-pdf-viewer",

@@ -3,7 +3,7 @@ package org.ck.adventofcode.year2020.day09;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20200901,

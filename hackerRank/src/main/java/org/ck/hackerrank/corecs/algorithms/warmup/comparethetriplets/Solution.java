@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10103,
 		name = "Compare the Triplets",
 		url = "https://www.hackerrank.com/challenges/compare-the-triplets",

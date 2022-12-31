@@ -3,7 +3,7 @@ package org.ck.hackerrank.corecs.datastructures.arrays.arraymanipulation;
 import java.util.Arrays;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20106,
 		name = "Array Manipulation",
 		url = "https://www.hackerrank.com/challenges/crush",

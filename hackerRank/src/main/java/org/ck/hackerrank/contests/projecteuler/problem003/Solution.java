@@ -5,7 +5,7 @@ import java.util.OptionalLong;
 import java.util.Scanner;
 import java.util.Set;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990003,
     name = "Project Euler #3: Largest prime factor",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler003",

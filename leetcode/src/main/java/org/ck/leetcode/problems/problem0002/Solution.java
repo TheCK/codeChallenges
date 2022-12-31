@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem0002;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100002,
     name = "2. Add Two Numbers",
     url = "https://leetcode.com/problems/add-two-numbers/",

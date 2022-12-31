@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40206001,
     name = "Java Exception Handling (Try-catch)",
     url = "https://www.hackerrank.com/challenges/java-exception-handling-try-catch",

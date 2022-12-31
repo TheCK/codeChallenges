@@ -2,7 +2,7 @@ package org.ck.hackerrank.contests.projecteuler.problem011;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990011,
     name = "Project Euler #11: Largest product in a grid",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler011",

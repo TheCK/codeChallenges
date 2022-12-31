@@ -2,7 +2,7 @@ package org.ck.hackerrank.contests.projecteuler.problem001;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 99990001,
     name = "Project Euler #1: Multiples of 3 and 5",
     url = "https://www.hackerrank.com/contests/projecteuler/challenges/euler001",

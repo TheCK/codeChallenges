@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202007,
     name = "Pattern Syntax Checker",
     url = "https://www.hackerrank.com/challenges/pattern-syntax-checker",

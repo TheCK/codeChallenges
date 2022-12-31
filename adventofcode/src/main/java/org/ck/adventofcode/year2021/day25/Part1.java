@@ -1,6 +1,6 @@
 package org.ck.adventofcode.year2021.day25;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.employeename;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201019,
 		name = "Employee Names",
 		url = "https://www.hackerrank.com/challenges/name-of-employees",

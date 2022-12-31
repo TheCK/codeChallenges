@@ -6,7 +6,7 @@ import java.util.OptionalInt;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10229,
 		name = "Cut the sticks",
 		url = "https://www.hackerrank.com/challenges/cut-the-sticks",

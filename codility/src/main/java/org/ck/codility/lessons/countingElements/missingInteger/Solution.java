@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(id = 13, name = "MissingInteger", description = "Find the minimal positive integer not occurring in a given sequence.", url = "https://codility.com/programmers/lessons/2", category = "Lessons", subCategory = "2. Counting Elements")
+@org.ck.codechallengelib.annotation.Solution(id = 13, name = "MissingInteger", description = "Find the minimal positive integer not occurring in a given sequence.", url = "https://codility.com/programmers/lessons/2", category = "Lessons", subCategory = "2. Counting Elements")
 public class Solution
 {
 	public int solution(int[] A)

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.bonappetit;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10208,
 		name = "Bon Appétit",
 		url = "https://www.hackerrank.com/challenges/bon-appetit",

@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.stringtokens;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202006,
     name = "Java String Tokens",
     url = "https://www.hackerrank.com/challenges/java-string-tokens",

@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.bignumber.biginteger;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40203003,
     name = "Java BigInteger",
     url = "https://www.hackerrank.com/challenges/java-biginteger",

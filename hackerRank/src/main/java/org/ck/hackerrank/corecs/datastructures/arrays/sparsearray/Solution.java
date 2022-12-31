@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 20105,
 		name = "Sparse Array",
 		url = "https://www.hackerrank.com/challenges/sparse-arrays",

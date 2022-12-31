@@ -1,6 +1,6 @@
 package org.ck.adventofcode.year2016.day09;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.Iterator;
 import java.util.LinkedList;

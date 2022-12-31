@@ -1,6 +1,6 @@
 package org.ck.projecteuler.solutions.problem009;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 9,

@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.mathematics.fundamentals.handshake;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30103,
 		name = "Handshake",
 		url = "https://www.hackerrank.com/challenges/handshake",

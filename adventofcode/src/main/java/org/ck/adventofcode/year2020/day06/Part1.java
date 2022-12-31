@@ -1,6 +1,6 @@
 package org.ck.adventofcode.year2020.day06;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.Arrays;
 import java.util.Scanner;

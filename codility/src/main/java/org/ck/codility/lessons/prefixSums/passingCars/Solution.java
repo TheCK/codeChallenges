@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.prefixSums.passingCars;
 
-@org.ck.codeChallengeLib.annotation.Solution(id = 22, name = "PassingCars", description = "Count the number of passing cars on the road.", url = "https://codility.com/programmers/lessons/3", category = "Lessons", subCategory = "3. Prefix Sums")
+@org.ck.codechallengelib.annotation.Solution(id = 22, name = "PassingCars", description = "Count the number of passing cars on the road.", url = "https://codility.com/programmers/lessons/3", category = "Lessons", subCategory = "3. Prefix Sums")
 class Solution
 {
 	public int solution(int[] A)

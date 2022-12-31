@@ -1,6 +1,6 @@
 package org.ck.spoj.classical.fctrl;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.io.IOException;
 import java.math.BigInteger;

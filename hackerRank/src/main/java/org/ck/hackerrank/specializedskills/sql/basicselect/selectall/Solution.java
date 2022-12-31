@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.basicselect.selectall;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30201003,
 		name = "Select All",
 		url = "https://www.hackerrank.com/challenges/select-all-sql",

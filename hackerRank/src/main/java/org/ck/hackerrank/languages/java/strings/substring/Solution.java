@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.substring;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40202002,
 		name = "Java Substring",
 		url = "https://www.hackerrank.com/challenges/java-substring",

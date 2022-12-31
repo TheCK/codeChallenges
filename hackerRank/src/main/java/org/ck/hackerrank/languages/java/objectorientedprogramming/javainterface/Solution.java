@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.objectorientedprogramming.javainterface
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40205004,
     name = "Java Interface",
     url = "https://www.hackerrank.com/challenges/java-interface",

@@ -3,7 +3,7 @@ package org.ck.leetcode.problems.problem0001;
 import java.util.HashMap;
 import java.util.Map;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 100001,
     name = "1. Two Sum",
     url = "https://leetcode.com/problems/two-sum",

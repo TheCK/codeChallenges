@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10252,
 		name = "Flatland Space Stations",
 		url = "https://www.hackerrank.com/challenges/flatland-space-stations",

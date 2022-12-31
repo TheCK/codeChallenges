@@ -1,6 +1,6 @@
 package org.ck.codingame.practice.easy.powerofthor1;
 
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.Scanner;
 

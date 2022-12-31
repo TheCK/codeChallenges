@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.advanced.factorypattern;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40207006,
     name = "Java Factory Pattern",
     url = "https://www.hackerrank.com/challenges/java-factory",

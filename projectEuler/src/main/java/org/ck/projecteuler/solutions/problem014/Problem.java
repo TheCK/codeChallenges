@@ -3,7 +3,7 @@ package org.ck.projecteuler.solutions.problem014;
 import java.util.Comparator;
 import java.util.Optional;
 import java.util.stream.StreamSupport;
-import org.ck.codeChallengeLib.annotation.Solution;
+import org.ck.codechallengelib.annotation.Solution;
 import org.ck.projecteuler.lib.iterators.IntSpliterator;
 
 @Solution(

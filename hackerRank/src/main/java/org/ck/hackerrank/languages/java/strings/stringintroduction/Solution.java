@@ -2,7 +2,7 @@ package org.ck.hackerrank.languages.java.strings.stringintroduction;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 40202001,
 		name = "Java Strings Introduction",
 		url = "https://www.hackerrank.com/challenges/java-strings-introduction",

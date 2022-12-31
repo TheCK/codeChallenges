@@ -1,6 +1,6 @@
 package org.ck.hackerrank.corecs.algorithms.implementation.thegridsearch;
 
-import org.ck.codeChallengeLib.testhelper.BaseTest;
+import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

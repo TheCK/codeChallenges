@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1544;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101544,
     name = "1544. Make The String Great",
     url = "https://leetcode.com/problems/make-the-string-great/",

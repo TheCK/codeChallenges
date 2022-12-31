@@ -2,7 +2,7 @@ package org.ck.codingcompetitions.codejam.year2022.qualification.problem1;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 220220001,
     name = "Qualification Round - 1 - Punched Cards",
     url =

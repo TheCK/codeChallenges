@@ -1,6 +1,6 @@
 package org.ck.leetcode.problems.problem1581;
 
-import org.ck.codeChallengeLib.testhelper.BaseMySqlTest;
+import org.ck.codechallengelib.testhelper.BaseMySqlTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -2,7 +2,7 @@ package org.ck.codingame.practice.easy.defibrillators;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 101009,
     name = "Defibrillators",
     url = "https://www.codingame.com/ide/puzzle/defibrillators",

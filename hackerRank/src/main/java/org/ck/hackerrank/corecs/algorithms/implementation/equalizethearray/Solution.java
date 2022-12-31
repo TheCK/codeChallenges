@@ -5,7 +5,7 @@ import java.util.*;
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingBy;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10233,
 		name = "Equalize the Array",
 		url = "https://www.hackerrank.com/challenges/equality-in-a-array",

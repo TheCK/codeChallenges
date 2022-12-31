@@ -1,6 +1,6 @@
 package org.ck.codility.lessons.timeComplexity.tapeEquilibrium;
 
-@org.ck.codeChallengeLib.annotation.Solution(id = 1, name = "TapeEquilibrium", description = "Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.", url = "https://codility.com/programmers/lessons/1", category = "Lessons", subCategory = "1. Time Complexity")
+@org.ck.codechallengelib.annotation.Solution(id = 1, name = "TapeEquilibrium", description = "Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.", url = "https://codility.com/programmers/lessons/1", category = "Lessons", subCategory = "1. Time Complexity")
 class Solution
 {
 	public int solution(int[] A)

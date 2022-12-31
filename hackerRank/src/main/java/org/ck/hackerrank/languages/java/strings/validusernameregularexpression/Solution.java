@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.strings.validusernameregularexpression;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40202010,
     name = "Valid Username Regular Expression",
     url = "https://www.hackerrank.com/challenges/valid-username-checker",

@@ -3,7 +3,7 @@ package org.ck.hackerrank.languages.java.exceptionhandling.exceptionhandling;
 import java.util.Locale;
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
     id = 40206002,
     name = "Java Exception Handling",
     url = "https://www.hackerrank.com/challenges/java-exception-handling",

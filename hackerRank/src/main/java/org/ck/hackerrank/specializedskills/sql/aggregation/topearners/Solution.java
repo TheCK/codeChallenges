@@ -1,6 +1,6 @@
 package org.ck.hackerrank.specializedskills.sql.aggregation.topearners;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 30203008,
 		name = "Top Earners",
 		url = "https://www.hackerrank.com/challenges/earnings-of-employees",

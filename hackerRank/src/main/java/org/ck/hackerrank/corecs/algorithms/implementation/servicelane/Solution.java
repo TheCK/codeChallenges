@@ -2,7 +2,7 @@ package org.ck.hackerrank.corecs.algorithms.implementation.servicelane;
 
 import java.util.Scanner;
 
-@org.ck.codeChallengeLib.annotation.Solution(
+@org.ck.codechallengelib.annotation.Solution(
 		id = 10245,
 		name = "Service Lane",
 		url = "https://www.hackerrank.com/challenges/service-lane",

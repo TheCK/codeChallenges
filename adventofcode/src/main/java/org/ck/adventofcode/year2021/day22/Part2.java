@@ -1,13 +1,12 @@
 package org.ck.adventofcode.year2021.day22;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20212202,
@@ -53,20 +52,22 @@ public class Part2 {
     }
   }
 
-  private record Cube(boolean on, long startX, long endX, long startY, long endY, long startZ, long endZ) {
+  private record Cube(
+      boolean on, long startX, long endX, long startY, long endY, long startZ, long endZ) {
     public Optional<Cube> intersect(Cube other) {
-      Cube intersection = new Cube(
+      Cube intersection =
+          new Cube(
               !on,
-              Math.max(startX,other.startX),
-              Math.min(endX,other.endX),
-              Math.max(startY,other.startY),
-              Math.min(endY,other.endY),
-              Math.max(startZ,other.startZ),
-              Math.min(endZ,other.endZ));
+              Math.max(startX, other.startX),
+              Math.min(endX, other.endX),
+              Math.max(startY, other.startY),
+              Math.min(endY, other.endY),
+              Math.max(startZ, other.startZ),
+              Math.min(endZ, other.endZ));
 
-      if((intersection.startX <= intersection.endX)
-              && (intersection.startY <= intersection.endY)
-              && (intersection.startZ <= intersection.endZ)) {
+      if ((intersection.startX <= intersection.endX)
+          && (intersection.startY <= intersection.endY)
+          && (intersection.startZ <= intersection.endZ)) {
         return Optional.of(intersection);
       }
 

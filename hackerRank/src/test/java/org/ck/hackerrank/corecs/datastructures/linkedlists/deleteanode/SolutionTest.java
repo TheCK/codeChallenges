@@ -1,9 +1,9 @@
 package org.ck.hackerrank.corecs.datastructures.linkedlists.deleteanode;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class SolutionTest extends BaseTest {
   @Test

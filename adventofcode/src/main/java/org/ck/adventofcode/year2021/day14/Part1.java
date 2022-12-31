@@ -1,10 +1,9 @@
 package org.ck.adventofcode.year2021.day14;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20211401,

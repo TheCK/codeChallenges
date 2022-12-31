@@ -5,74 +5,63 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 @org.ck.codechallengelib.annotation.Solution(
-		id = 10303,
-		name = "Two Characters",
-		url = "https://www.hackerrank.com/challenges/two-characters",
-		category = "Algorithms",
-		subCategory = "Strings"
-)
-public class Solution
-{
-	public static void main(String[] args)
-	{
-		try (Scanner in = new Scanner(System.in))
-		{
-			in.nextInt();
-			String string = in.next();
+    id = 10303,
+    name = "Two Characters",
+    url = "https://www.hackerrank.com/challenges/two-characters",
+    category = "Algorithms",
+    subCategory = "Strings")
+public class Solution {
+  public static void main(String[] args) {
+    try (Scanner in = new Scanner(System.in)) {
+      in.nextInt();
+      String string = in.next();
 
-			List<Character> collect = string.chars()
-					.distinct()
-					.mapToObj(ascii -> new Character((char) ascii))
-					.collect(Collectors.toList());
+      List<Character> collect =
+          string
+              .chars()
+              .distinct()
+              .mapToObj(ascii -> new Character((char) ascii))
+              .collect(Collectors.toList());
 
-			String longestT = "";
+      String longestT = "";
 
-			for (char remainder1 : collect)
-			{
-				for (char remainder2 : collect)
-				{
-					if (remainder1 == remainder2)
-					{
-						continue;
-					}
+      for (char remainder1 : collect) {
+        for (char remainder2 : collect) {
+          if (remainder1 == remainder2) {
+            continue;
+          }
 
-					String candidate = string;
+          String candidate = string;
 
-					for (char toBeRemoved : collect)
-					{
-						if (toBeRemoved == remainder1 || toBeRemoved == remainder2)
-						{
-							continue;
-						}
+          for (char toBeRemoved : collect) {
+            if (toBeRemoved == remainder1 || toBeRemoved == remainder2) {
+              continue;
+            }
 
-						candidate = candidate.replaceAll(String.valueOf(toBeRemoved), "");
-					}
+            candidate = candidate.replaceAll(String.valueOf(toBeRemoved), "");
+          }
 
-					if (isT(candidate) && candidate.length() > longestT.length())
-					{
-						longestT = candidate;
-					}
-				}
-			}
+          if (isT(candidate) && candidate.length() > longestT.length()) {
+            longestT = candidate;
+          }
+        }
+      }
 
-			System.out.println(longestT.length());
-		}
-	}
+      System.out.println(longestT.length());
+    }
+  }
 
-	private static boolean isT(String candidate)
-	{
-		char previous = '\0';
+  private static boolean isT(String candidate) {
+    char previous = '\0';
 
-		for (char character : candidate.toCharArray())
-		{
-			if (character == previous)
-			{
-				return false;
-			}
+    for (char character : candidate.toCharArray()) {
+      if (character == previous) {
+        return false;
+      }
 
-			previous = character;
-		}
+      previous = character;
+    }
 
-		return true;
-	}
+    return true;
+  }
 }

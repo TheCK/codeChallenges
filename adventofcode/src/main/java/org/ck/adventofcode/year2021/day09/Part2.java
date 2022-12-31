@@ -1,11 +1,10 @@
 package org.ck.adventofcode.year2021.day09;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20210902,
@@ -35,7 +34,11 @@ public class Part2 {
       }
     }
 
-    System.out.println(bassins.stream().sorted((x1, x2) -> Integer.compare(x2, x1)).limit(3).reduce(1, (x1, x2) -> x1 * x2));
+    System.out.println(
+        bassins.stream()
+            .sorted((x1, x2) -> Integer.compare(x2, x1))
+            .limit(3)
+            .reduce(1, (x1, x2) -> x1 * x2));
   }
 
   private static int findSize(final List<int[]> grid, int y, int x) {

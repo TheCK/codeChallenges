@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2022.day08;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.function.IntFunction;
 import java.util.function.IntPredicate;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20220802,

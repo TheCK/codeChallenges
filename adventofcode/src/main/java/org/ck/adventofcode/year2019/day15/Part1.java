@@ -1,7 +1,5 @@
 package org.ck.adventofcode.year2019.day15;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
@@ -10,6 +8,7 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20191501,

@@ -1,9 +1,8 @@
 package org.ck.adventofcode.year2016.day14;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.security.MessageDigest;
 import java.util.*;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20161402,

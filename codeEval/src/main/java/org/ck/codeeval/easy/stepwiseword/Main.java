@@ -1,58 +1,53 @@
 package org.ck.codeeval.easy.stepwiseword;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import org.ck.codechallengelib.annotation.Solution;
 
-@Solution(id=202, name="Stepwise word", description="Print the longest word in a stepwise manner", url="https://www.codeeval.com/open_challenges/202/", category="Easy challenges")
-public class Main
-{
-	public static void main(String[] args) throws IOException
-	{
-		File file = new File(args[0]);
-		try (BufferedReader buffer = new BufferedReader(new FileReader(file)))
-		{
-			String line;
-			while ((line = buffer.readLine()) != null)
-			{
-				line = line.trim();
-				String words[] = line.split(" ");
+@Solution(
+    id = 202,
+    name = "Stepwise word",
+    description = "Print the longest word in a stepwise manner",
+    url = "https://www.codeeval.com/open_challenges/202/",
+    category = "Easy challenges")
+public class Main {
+  public static void main(String[] args) throws IOException {
+    File file = new File(args[0]);
+    try (BufferedReader buffer = new BufferedReader(new FileReader(file))) {
+      String line;
+      while ((line = buffer.readLine()) != null) {
+        line = line.trim();
+        String words[] = line.split(" ");
 
-				String longestWord = "";
-				for (String word : words)
-				{
-					if (word.length() > longestWord.length())
-					{
-						longestWord = word;
-					}
-				}
+        String longestWord = "";
+        for (String word : words) {
+          if (word.length() > longestWord.length()) {
+            longestWord = word;
+          }
+        }
 
-				StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
-				int count = 0;
-				for (char letter : longestWord.toCharArray())
-				{
-					for (int i = 0; i < count; ++i)
-					{
-						builder.append("*");
-					}
+        int count = 0;
+        for (char letter : longestWord.toCharArray()) {
+          for (int i = 0; i < count; ++i) {
+            builder.append("*");
+          }
 
-					builder.append(letter);
-					builder.append(" ");
+          builder.append(letter);
+          builder.append(" ");
 
-					++count;
-				}
+          ++count;
+        }
 
-				if (builder.length() > 0)
-				{
-					builder.deleteCharAt(builder.length() - 1);
-				}
+        if (builder.length() > 0) {
+          builder.deleteCharAt(builder.length() - 1);
+        }
 
-				System.out.println(builder);
-			}
-		}
-	}
+        System.out.println(builder);
+      }
+    }
+  }
 }

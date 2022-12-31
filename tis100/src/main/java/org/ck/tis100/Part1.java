@@ -1,13 +1,12 @@
 package org.ck.tis100;
 
-import org.ck.codechallengelib.annotation.Solution;
-import org.ck.tis100.core.Node;
-import org.ck.tis100.core.Port;
-
 import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Queue;
+import org.ck.codechallengelib.annotation.Solution;
+import org.ck.tis100.core.Node;
+import org.ck.tis100.core.Port;
 
 @Solution(
     id = 150,

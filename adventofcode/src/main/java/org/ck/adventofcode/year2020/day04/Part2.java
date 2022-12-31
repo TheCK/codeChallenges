@@ -1,11 +1,10 @@
 package org.ck.adventofcode.year2020.day04;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20200402,

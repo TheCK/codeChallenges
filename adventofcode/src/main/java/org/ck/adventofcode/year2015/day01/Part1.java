@@ -1,8 +1,7 @@
 package org.ck.adventofcode.year2015.day01;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20150101,
@@ -16,7 +15,7 @@ public class Part1 {
     try (Scanner in = new Scanner(System.in)) {
       String path = in.nextLine();
 
-      for(char command : path.toCharArray()) {
+      for (char command : path.toCharArray()) {
         floor += command == '(' ? 1 : -1;
       }
     }

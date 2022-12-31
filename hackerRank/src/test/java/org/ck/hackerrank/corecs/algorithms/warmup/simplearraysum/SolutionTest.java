@@ -1,9 +1,9 @@
 package org.ck.hackerrank.corecs.algorithms.warmup.simplearraysum;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest extends BaseTest {
   @Test

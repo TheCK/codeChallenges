@@ -1,10 +1,9 @@
 package org.ck.adventofcode.year2019.day15;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20191502,

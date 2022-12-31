@@ -1,7 +1,5 @@
 package org.ck.adventofcode.year2020.day16;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,6 +7,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20201601,

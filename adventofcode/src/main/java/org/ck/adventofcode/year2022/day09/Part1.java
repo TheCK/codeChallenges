@@ -1,10 +1,9 @@
 package org.ck.adventofcode.year2022.day09;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20220901,

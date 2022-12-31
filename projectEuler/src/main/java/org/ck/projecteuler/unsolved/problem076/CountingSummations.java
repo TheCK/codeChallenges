@@ -3,70 +3,59 @@ package org.ck.projecteuler.unsolved.problem076;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CountingSummations
-{
-	private static Set<String> versions = new HashSet<>();
-	private static Set<String> finalVersions = new HashSet<>();
+public class CountingSummations {
+  private static Set<String> versions = new HashSet<>();
+  private static Set<String> finalVersions = new HashSet<>();
 
-	public static void main(String[] args)
-	{
-		calcCominations("", 5, 0);
-		
-		for (String version : versions)
-		{
-			boolean isAddable = true;
-			
-			for (int i = 0; i < version.length() - 1; ++i)
-			{
-				if (Integer.parseInt(version.substring(i, i + 1)) < Integer.parseInt(version.substring(i + 1, i + 2)))
-				{
-					isAddable = false;
-					break;
-				}
-			}
-			
-			if (isAddable)
-			{
-				finalVersions.add(version);
-			}
-		}
+  public static void main(String[] args) {
+    calcCominations("", 5, 0);
 
-		printResult();
-	}
+    for (String version : versions) {
+      boolean isAddable = true;
 
-	private static void calcCominations(String version, int rest, int before)
-	{
-		if(rest == before)
-		{
-			versions.add(version + String.valueOf(before));
-			return;
-		}
+      for (int i = 0; i < version.length() - 1; ++i) {
+        if (Integer.parseInt(version.substring(i, i + 1))
+            < Integer.parseInt(version.substring(i + 1, i + 2))) {
+          isAddable = false;
+          break;
+        }
+      }
 
-		if (rest == 0)
-		{
-			versions.add(version);
-			return;
-		}
+      if (isAddable) {
+        finalVersions.add(version);
+      }
+    }
 
-		if (rest == 1)
-		{
-			versions.add(version + "1");
-			return;
-		}
+    printResult();
+  }
 
-		for (int i = rest - 1; i >= 0; --i)
-		{
-			if (before == 0)
-				System.out.println(i);
-			
-			if (version.length() == 0 || Integer.parseInt(version.substring(version.length() - 1)) >= rest - i)
-				calcCominations(version + String.valueOf(i), rest - i, rest);
-		}
-		return;
-	}
+  private static void calcCominations(String version, int rest, int before) {
+    if (rest == before) {
+      versions.add(version + String.valueOf(before));
+      return;
+    }
 
-	private static void printResult()
-	{
-		System.out.println(finalVersions.size());
-	}
+    if (rest == 0) {
+      versions.add(version);
+      return;
+    }
+
+    if (rest == 1) {
+      versions.add(version + "1");
+      return;
+    }
+
+    for (int i = rest - 1; i >= 0; --i) {
+      if (before == 0) System.out.println(i);
+
+      if (version.length() == 0
+          || Integer.parseInt(version.substring(version.length() - 1)) >= rest - i)
+        calcCominations(version + String.valueOf(i), rest - i, rest);
+    }
+    return;
+  }
+
+  private static void printResult() {
+    System.out.println(finalVersions.size());
+  }
 }

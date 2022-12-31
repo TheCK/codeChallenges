@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2016.day09;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20160902,

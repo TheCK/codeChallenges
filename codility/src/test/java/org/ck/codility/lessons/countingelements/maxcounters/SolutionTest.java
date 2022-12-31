@@ -1,10 +1,10 @@
 package org.ck.codility.lessons.countingelements.maxcounters;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SolutionTest extends BaseTest {
   @Test

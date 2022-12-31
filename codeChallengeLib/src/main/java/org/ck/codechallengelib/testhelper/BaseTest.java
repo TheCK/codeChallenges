@@ -1,13 +1,12 @@
 package org.ck.codechallengelib.testhelper;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.TestInfo;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.*;
 import java.util.Scanner;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInfo;
 
 public abstract class BaseTest {
   protected OutputStream output = null;

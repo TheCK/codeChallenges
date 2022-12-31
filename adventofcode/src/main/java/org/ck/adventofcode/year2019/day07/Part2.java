@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2019.day07;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20190702,

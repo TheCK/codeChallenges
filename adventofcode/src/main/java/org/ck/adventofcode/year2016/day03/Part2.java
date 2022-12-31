@@ -1,11 +1,10 @@
 package org.ck.adventofcode.year2016.day03;
 
-import org.ck.codechallengelib.annotation.Solution;
-
-import java.util.Scanner;
-
 import static java.lang.Math.max;
 import static java.lang.Math.min;
+
+import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20160302,

@@ -1,9 +1,8 @@
 package org.ck.adventofcode.year2022.day17;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.stream.Collectors;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20221702,

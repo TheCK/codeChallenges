@@ -1,8 +1,7 @@
 package org.ck.adventofcode.year2015.day22;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20152201,
@@ -60,7 +59,13 @@ public class Part1 {
           mana += effect.mana();
           bossHp -= effect.damage();
           if (effect.turns > 1) {
-            newEffects.add(new Effect(effect.name(), effect.armor(), effect.damage(), effect.mana(), effect.turns() - 1));
+            newEffects.add(
+                new Effect(
+                    effect.name(),
+                    effect.armor(),
+                    effect.damage(),
+                    effect.mana(),
+                    effect.turns() - 1));
           }
         }
 
@@ -85,7 +90,13 @@ public class Part1 {
           mana += effect.mana();
           bossHp -= effect.damage();
           if (effect.turns > 1) {
-            newerEffects.add(new Effect(effect.name(), effect.armor(), effect.damage(), effect.mana(), effect.turns() - 1));
+            newerEffects.add(
+                new Effect(
+                    effect.name(),
+                    effect.armor(),
+                    effect.damage(),
+                    effect.mana(),
+                    effect.turns() - 1));
           }
         }
 

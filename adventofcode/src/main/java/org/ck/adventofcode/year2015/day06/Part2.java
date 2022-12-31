@@ -1,11 +1,10 @@
 package org.ck.adventofcode.year2015.day06;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20150602,
@@ -15,7 +14,7 @@ import java.util.regex.Pattern;
 public class Part2 {
   public static final int[][] grid = new int[1000][1000];
   public static final Pattern pattern =
-          Pattern.compile("(turn on|turn off|toggle) (\\d+),(\\d+) through (\\d+),(\\d+)");
+      Pattern.compile("(turn on|turn off|toggle) (\\d+),(\\d+) through (\\d+),(\\d+)");
 
   public static void main(String[] args) throws Exception {
     try (Scanner in = new Scanner(System.in)) {

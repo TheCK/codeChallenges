@@ -1,10 +1,10 @@
 package org.ck.projecteuler.solutions.problem206;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ConcealedSquareTest extends BaseTest {
   @Test

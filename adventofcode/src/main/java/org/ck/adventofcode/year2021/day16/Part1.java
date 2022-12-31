@@ -1,9 +1,8 @@
 package org.ck.adventofcode.year2021.day16;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.math.BigInteger;
 import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20211601,

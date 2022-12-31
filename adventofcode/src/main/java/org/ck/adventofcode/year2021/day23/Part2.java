@@ -1,8 +1,7 @@
 package org.ck.adventofcode.year2021.day23;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20212302,
@@ -11,24 +10,24 @@ import java.util.*;
     category = "2021")
 public class Part2 {
   private static final Map<String, Integer> costs =
-          new HashMap<>() {
-            {
-              put("A", 1);
-              put("B", 10);
-              put("C", 100);
-              put("D", 1000);
-            }
-          };
+      new HashMap<>() {
+        {
+          put("A", 1);
+          put("B", 10);
+          put("C", 100);
+          put("D", 1000);
+        }
+      };
 
   private static Map<Character, Integer> offsets =
-          new HashMap<>() {
-            {
-              put('a', 3);
-              put('b', 5);
-              put('c', 7);
-              put('d', 9);
-            }
-          };
+      new HashMap<>() {
+        {
+          put('a', 3);
+          put('b', 5);
+          put('c', 7);
+          put('d', 9);
+        }
+      };
 
   public static void main(String[] args) {
     Map<String, String> net = new HashMap<>();
@@ -83,16 +82,18 @@ public class Part2 {
               newNet.put(source.getKey(), "");
 
               State newState =
-                      new State(
-                              newNet,
-                              current.cost
-                                      + (long) getSteps(source.getKey(), target.getKey()) * costs.get(pod), current);
+                  new State(
+                      newNet,
+                      current.cost
+                          + (long) getSteps(source.getKey(), target.getKey()) * costs.get(pod),
+                      current);
 
               if (newState.isFinished()) {
                 best = Math.min(best, newState.cost);
               } else {
                 String state = newState.toString();
-                if (newState.cost < cache.getOrDefault(state, Long.MAX_VALUE) && newState.cost < best) {
+                if (newState.cost < cache.getOrDefault(state, Long.MAX_VALUE)
+                    && newState.cost < best) {
                   cache.put(state, newState.cost);
                   queue.add(newState);
                 }
@@ -107,21 +108,21 @@ public class Part2 {
 
   private static int getSteps(String source, String target) {
     int hallwayFrom =
-            source.charAt(0) == 'h'
-                    ? Integer.parseInt(source.substring(1))
-                    : offsets.get(source.charAt(0));
+        source.charAt(0) == 'h'
+            ? Integer.parseInt(source.substring(1))
+            : offsets.get(source.charAt(0));
     int hallwayTo =
-            target.charAt(0) == 'h'
-                    ? Integer.parseInt(target.substring(1))
-                    : offsets.get(target.charAt(0));
+        target.charAt(0) == 'h'
+            ? Integer.parseInt(target.substring(1))
+            : offsets.get(target.charAt(0));
 
     return Math.abs(hallwayFrom - hallwayTo)
-            + (source.charAt(0) == 'h' ? 0 : source.charAt(1) - '0')
-            + (target.charAt(0) == 'h' ? 0 : target.charAt(1) - '0');
+        + (source.charAt(0) == 'h' ? 0 : source.charAt(1) - '0')
+        + (target.charAt(0) == 'h' ? 0 : target.charAt(1) - '0');
   }
 
   private static boolean canMoveFrom(
-          final Map<String, String> net, final Map.Entry<String, String> source) {
+      final Map<String, String> net, final Map.Entry<String, String> source) {
     if (source.getKey().charAt(0) == 'h') {
       return true;
     }
@@ -133,7 +134,8 @@ public class Part2 {
     int level = source.getKey().charAt(1) - '0';
 
     while (net.containsKey("" + source.getKey().charAt(0) + level)) {
-      if (!net.get("" + source.getKey().charAt(0) + level).startsWith(source.getValue().toLowerCase(Locale.ROOT))) {
+      if (!net.get("" + source.getKey().charAt(0) + level)
+          .startsWith(source.getValue().toLowerCase(Locale.ROOT))) {
         return true;
       }
 
@@ -144,40 +146,44 @@ public class Part2 {
   }
 
   private static boolean canMoveTo(
-          final Map<String, String> net,
-          final Map.Entry<String, String> source,
-          final Map.Entry<String, String> target) {
+      final Map<String, String> net,
+      final Map.Entry<String, String> source,
+      final Map.Entry<String, String> target) {
     if (source.getKey().charAt(0) == target.getKey().charAt(0)) {
       return false;
     }
 
     if (!target.getKey().substring(0, 1).equals(source.getValue().toLowerCase(Locale.ROOT))
-            && !target.getKey().contains("h")) {
+        && !target.getKey().contains("h")) {
       return false;
     }
 
     if ((source.getKey().charAt(0) == 'h' || canMoveUp(net, source.getKey()))
-            && (target.getKey().charAt(0) == 'h' || canMoveUp(net, target.getKey()))) {
+        && (target.getKey().charAt(0) == 'h' || canMoveUp(net, target.getKey()))) {
       int hallwayFrom =
-              source.getKey().charAt(0) == 'h'
-                      ? Integer.parseInt(source.getKey().substring(1))
-                      : offsets.get(source.getKey().charAt(0));
+          source.getKey().charAt(0) == 'h'
+              ? Integer.parseInt(source.getKey().substring(1))
+              : offsets.get(source.getKey().charAt(0));
       int hallwayTo =
-              target.getKey().charAt(0) == 'h'
-                      ? Integer.parseInt(target.getKey().substring(1))
-                      : offsets.get(target.getKey().charAt(0));
+          target.getKey().charAt(0) == 'h'
+              ? Integer.parseInt(target.getKey().substring(1))
+              : offsets.get(target.getKey().charAt(0));
 
       for (int i = Math.min(hallwayFrom, hallwayTo) + 1;
-           i < Math.max(hallwayFrom, hallwayTo);
-           ++i) {
+          i < Math.max(hallwayFrom, hallwayTo);
+          ++i) {
         if (net.containsKey("h" + i) && !net.get("h" + i).equals("")) {
           return false;
         }
       }
 
       if (!target.getKey().contains("h")) {
-        for (int i = target.getKey().charAt(1) - '0' + 1; net.containsKey("" + target.getKey().charAt(0) + i); ++i) {
-          if (!net.get("" + target.getKey().charAt(0) + i).toLowerCase(Locale.ROOT).equals("" + target.getKey().charAt(0))) {
+        for (int i = target.getKey().charAt(1) - '0' + 1;
+            net.containsKey("" + target.getKey().charAt(0) + i);
+            ++i) {
+          if (!net.get("" + target.getKey().charAt(0) + i)
+              .toLowerCase(Locale.ROOT)
+              .equals("" + target.getKey().charAt(0))) {
             return false;
           }
         }
@@ -205,12 +211,11 @@ public class Part2 {
 
   private record State(Map<String, String> net, long cost, State old) {
     public boolean isFinished() {
-      for (Map.Entry<String, String> entry: net.entrySet()) {
-        if (!entry.getValue().equals("") && !entry.getKey().startsWith(entry.getValue().toLowerCase(Locale.ROOT))) {
+      for (Map.Entry<String, String> entry : net.entrySet()) {
+        if (!entry.getValue().equals("")
+            && !entry.getKey().startsWith(entry.getValue().toLowerCase(Locale.ROOT))) {
           return false;
         }
-
-
       }
 
       return true;
@@ -223,7 +228,7 @@ public class Part2 {
       List<String> keys = new ArrayList<>(net.keySet());
       Collections.sort(keys);
 
-      for (String key: keys) {
+      for (String key : keys) {
         builder.append(net.get(key).equals("") ? "." : net.get(key));
       }
 

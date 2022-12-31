@@ -1,10 +1,9 @@
 package org.ck.adventofcode.year2015.day07;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20150702,

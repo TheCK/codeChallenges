@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2021.day17;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20211702,

@@ -1,8 +1,8 @@
 package org.ck.codewars.directionsreduction;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class DirReductionTest {
   @Test

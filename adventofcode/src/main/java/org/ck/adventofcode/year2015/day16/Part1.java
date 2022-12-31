@@ -1,7 +1,5 @@
 package org.ck.adventofcode.year2015.day16;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -9,6 +7,7 @@ import java.util.Scanner;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20151601,

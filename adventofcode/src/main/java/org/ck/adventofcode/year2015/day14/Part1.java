@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2015.day14;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20151401,
@@ -39,11 +38,15 @@ public class Part1 {
 
       int max = 0;
 
-      for (Reindeer deer: reindeer) {
+      for (Reindeer deer : reindeer) {
         int cycles = time / deer.cycleTime();
         int remainders = time % deer.cycleTime();
 
-        max = Math.max(max, (cycles *  deer.speed() * deer.runTime()) + (Math.min(remainders, deer.runTime) * deer.speed()));
+        max =
+            Math.max(
+                max,
+                (cycles * deer.speed() * deer.runTime())
+                    + (Math.min(remainders, deer.runTime) * deer.speed()));
       }
 
       System.out.println(max);

@@ -1,11 +1,11 @@
 package org.ck.codility.lessons.prefixsums.minavgtwoslice;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest extends BaseTest {
   @Disabled

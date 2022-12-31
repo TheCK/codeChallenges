@@ -1,5 +1,8 @@
 package org.ck.codingcompetitions.codejam.year2022.qualification.problem5;
 
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Stream;
 import org.ck.codechallengelib.testhelper.BaseInteractiveRunner;
 import org.ck.codechallengelib.testhelper.BaseInteractiveTest;
 import org.ck.codechallengelib.testhelper.InteractiveRunner;
@@ -7,10 +10,6 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Stream;
 
 @Disabled
 public class SolutionTest extends BaseInteractiveTest {

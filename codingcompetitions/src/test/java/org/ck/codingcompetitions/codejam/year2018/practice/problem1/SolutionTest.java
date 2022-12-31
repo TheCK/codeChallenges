@@ -1,10 +1,9 @@
 package org.ck.codingcompetitions.codejam.year2018.practice.problem1;
 
+import java.util.Random;
 import org.ck.codechallengelib.testhelper.BaseInteractiveRunner;
 import org.ck.codechallengelib.testhelper.BaseInteractiveTest;
 import org.junit.jupiter.api.Test;
-
-import java.util.Random;
 
 public class SolutionTest extends BaseInteractiveTest {
   @Test

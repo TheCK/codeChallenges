@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2022.day21;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.function.BinaryOperator;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20222102,

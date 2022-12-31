@@ -1,9 +1,9 @@
 package org.ck.hackerrank.specializedskills.sql.aggregation.populationdensitydifference;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.ck.codechallengelib.testhelper.BaseMySqlTest;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest extends BaseMySqlTest {
   @Test

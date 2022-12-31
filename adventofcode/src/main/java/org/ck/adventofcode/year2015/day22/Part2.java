@@ -1,8 +1,7 @@
 package org.ck.adventofcode.year2015.day22;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20152202,
@@ -11,12 +10,12 @@ import java.util.*;
     category = "2015")
 public class Part2 {
   private static final List<Spell> spells =
-          Arrays.asList(
-                  new Spell(53, 4, 0, null),
-                  new Spell(73, 2, 2, null),
-                  new Spell(113, 0, 0, new Effect("shield", 7, 0, 0, 6)),
-                  new Spell(173, 0, 0, new Effect("poison", 0, 3, 0, 6)),
-                  new Spell(229, 0, 0, new Effect("recharge", 0, 0, 101, 5)));
+      Arrays.asList(
+          new Spell(53, 4, 0, null),
+          new Spell(73, 2, 2, null),
+          new Spell(113, 0, 0, new Effect("shield", 7, 0, 0, 6)),
+          new Spell(173, 0, 0, new Effect("poison", 0, 3, 0, 6)),
+          new Spell(229, 0, 0, new Effect("recharge", 0, 0, 101, 5)));
 
   public static void main(String[] args) throws Exception {
     int enemyHitPoints = 0;
@@ -30,7 +29,7 @@ public class Part2 {
     int min = Integer.MAX_VALUE;
 
     PriorityQueue<State> queue =
-            new PriorityQueue<>((s1, s2) -> Integer.compare(s2.manaSpent(), s1.manaSpent()));
+        new PriorityQueue<>((s1, s2) -> Integer.compare(s2.manaSpent(), s1.manaSpent()));
     queue.add(new State(50, 500, enemyHitPoints, new HashSet<>(), 0));
 
     while (!queue.isEmpty()) {
@@ -65,7 +64,13 @@ public class Part2 {
           mana += effect.mana();
           bossHp -= effect.damage();
           if (effect.turns > 1) {
-            newEffects.add(new Effect(effect.name(), effect.armor(), effect.damage(), effect.mana(), effect.turns() - 1));
+            newEffects.add(
+                new Effect(
+                    effect.name(),
+                    effect.armor(),
+                    effect.damage(),
+                    effect.mana(),
+                    effect.turns() - 1));
           }
         }
 
@@ -90,7 +95,13 @@ public class Part2 {
           mana += effect.mana();
           bossHp -= effect.damage();
           if (effect.turns > 1) {
-            newerEffects.add(new Effect(effect.name(), effect.armor(), effect.damage(), effect.mana(), effect.turns() - 1));
+            newerEffects.add(
+                new Effect(
+                    effect.name(),
+                    effect.armor(),
+                    effect.damage(),
+                    effect.mana(),
+                    effect.turns() - 1));
           }
         }
 

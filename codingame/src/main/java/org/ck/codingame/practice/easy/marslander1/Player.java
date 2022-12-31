@@ -1,8 +1,7 @@
 package org.ck.codingame.practice.easy.marslander1;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 101005,

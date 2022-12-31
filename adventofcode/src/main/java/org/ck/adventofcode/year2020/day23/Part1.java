@@ -1,13 +1,12 @@
 package org.ck.adventofcode.year2020.day23;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20202301,

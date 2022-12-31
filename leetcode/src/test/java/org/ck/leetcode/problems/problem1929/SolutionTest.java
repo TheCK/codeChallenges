@@ -1,13 +1,11 @@
 package org.ck.leetcode.problems.problem1929;
 
-import org.ck.leetcode.problems.problem1929.Solution;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SolutionTest {
   public static Stream<Arguments> generator() {

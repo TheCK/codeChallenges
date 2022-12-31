@@ -1,11 +1,10 @@
 package org.ck.codeeval.medium.carrace;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.*;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 138,

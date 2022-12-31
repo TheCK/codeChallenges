@@ -1,9 +1,8 @@
 package org.ck.adventofcode.year2020.day06;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.Arrays;
 import java.util.Scanner;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20200601,

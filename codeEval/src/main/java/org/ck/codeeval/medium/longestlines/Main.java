@@ -1,12 +1,11 @@
 package org.ck.codeeval.medium.longestlines;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.Set;
 import java.util.TreeSet;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 2,

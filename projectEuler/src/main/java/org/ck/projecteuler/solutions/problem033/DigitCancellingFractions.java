@@ -3,62 +3,61 @@ package org.ck.projecteuler.solutions.problem033;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class DigitCancellingFractions
-{
-	public static void main(String[] args)
-	{
-		int nomVal = 1;
-		int denVal = 1;
-				
-				for (int i = 10; i < 100; ++i){
-					for (int j = 10; j < 100; ++j){
-						Set<Integer> iDigits = getDigits(i);
-						Set<Integer> jDigits = getDigits(j);
+public class DigitCancellingFractions {
+  public static void main(String[] args) {
+    int nomVal = 1;
+    int denVal = 1;
 
-						Set<Integer> common = new LinkedHashSet<>(iDigits);
-						common.retainAll(jDigits);
-						
-						if (common.size() == 0 || common.contains(0)){
-							continue;
-						}
+    for (int i = 10; i < 100; ++i) {
+      for (int j = 10; j < 100; ++j) {
+        Set<Integer> iDigits = getDigits(i);
+        Set<Integer> jDigits = getDigits(j);
 
-						Set<Integer> newNom = new LinkedHashSet<>(iDigits);
-						newNom.removeAll(jDigits);
-						
-						if (newNom.size() == 0)
-						{
-							newNom = new LinkedHashSet<>(common);
-						}
+        Set<Integer> common = new LinkedHashSet<>(iDigits);
+        common.retainAll(jDigits);
 
-						Set<Integer> newDen = new LinkedHashSet<>(jDigits);
-						newDen.removeAll(common);
+        if (common.size() == 0 || common.contains(0)) {
+          continue;
+        }
 
-						if (newDen.size() == 0){
-							newDen = new LinkedHashSet<>(common);
-						}
+        Set<Integer> newNom = new LinkedHashSet<>(iDigits);
+        newNom.removeAll(jDigits);
 
-						if (!newDen.contains(0) && ((float) i / (float) j) == ((float) ((Integer) newNom.toArray()[0]).intValue() / (float) ((Integer) newDen.toArray()[0]).intValue())){
-							if (i != j && i < j){
-								nomVal = nomVal * i;
-								denVal = denVal * j;
-							}
-						}
-				}}
+        if (newNom.size() == 0) {
+          newNom = new LinkedHashSet<>(common);
+        }
 
-				System.out.println(denVal / nomVal);
-	}
+        Set<Integer> newDen = new LinkedHashSet<>(jDigits);
+        newDen.removeAll(common);
 
-	private static Set<Integer> getDigits(int number)
-	{
-		String string = String.valueOf(number);
+        if (newDen.size() == 0) {
+          newDen = new LinkedHashSet<>(common);
+        }
 
-		Set<Integer> digits = new LinkedHashSet<>();
+        if (!newDen.contains(0)
+            && ((float) i / (float) j)
+                == ((float) ((Integer) newNom.toArray()[0]).intValue()
+                    / (float) ((Integer) newDen.toArray()[0]).intValue())) {
+          if (i != j && i < j) {
+            nomVal = nomVal * i;
+            denVal = denVal * j;
+          }
+        }
+      }
+    }
 
-		for (int i = 0; i < string.length(); ++i)
-		{
-			digits.add(Integer.valueOf(string.substring(i, i + 1)));
-		}
+    System.out.println(denVal / nomVal);
+  }
 
-		return digits;
-	}
+  private static Set<Integer> getDigits(int number) {
+    String string = String.valueOf(number);
+
+    Set<Integer> digits = new LinkedHashSet<>();
+
+    for (int i = 0; i < string.length(); ++i) {
+      digits.add(Integer.valueOf(string.substring(i, i + 1)));
+    }
+
+    return digits;
+  }
 }

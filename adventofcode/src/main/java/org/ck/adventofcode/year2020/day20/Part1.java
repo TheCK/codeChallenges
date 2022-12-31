@@ -1,14 +1,13 @@
 package org.ck.adventofcode.year2020.day20;
 
-import org.apache.commons.lang3.ArrayUtils;
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.apache.commons.lang3.ArrayUtils;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20202001,

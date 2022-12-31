@@ -1,12 +1,11 @@
 package org.ck.adventofcode.year2021.day19;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.function.UnaryOperator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20211901,
@@ -16,37 +15,32 @@ import java.util.stream.Collectors;
 public class Part1 {
   private static final Pattern scannerPattern = Pattern.compile("--- scanner (\\d+) ---");
 
-  private static final List<UnaryOperator<Position>> rotators = List.of(
+  private static final List<UnaryOperator<Position>> rotators =
+      List.of(
           position -> new Position(position.x(), position.y(), position.z()),
           position -> new Position(position.y(), -position.x(), position.z()),
           position -> new Position(-position.x(), -position.y(), position.z()),
           position -> new Position(-position.y(), position.x(), position.z()),
-
           position -> new Position(position.y(), position.z(), position.x()),
           position -> new Position(-position.x(), position.z(), position.y()),
           position -> new Position(-position.y(), position.z(), -position.x()),
           position -> new Position(position.x(), position.z(), -position.y()),
-
           position -> new Position(position.z(), position.x(), position.y()),
           position -> new Position(position.z(), position.y(), -position.x()),
           position -> new Position(position.z(), -position.x(), -position.y()),
           position -> new Position(position.z(), -position.y(), position.x()),
-
           position -> new Position(position.y(), position.x(), -position.z()),
           position -> new Position(-position.x(), position.y(), -position.z()),
           position -> new Position(-position.y(), -position.x(), -position.z()),
           position -> new Position(position.x(), -position.y(), -position.z()),
-
           position -> new Position(position.x(), -position.z(), position.y()),
           position -> new Position(position.y(), -position.z(), -position.x()),
           position -> new Position(-position.x(), -position.z(), -position.y()),
           position -> new Position(-position.y(), -position.z(), position.x()),
-
           position -> new Position(-position.z(), position.y(), position.x()),
           position -> new Position(-position.z(), -position.x(), position.y()),
           position -> new Position(-position.z(), -position.y(), -position.x()),
-          position -> new Position(-position.z(), position.x(), -position.y())
-  );
+          position -> new Position(-position.z(), position.x(), -position.y()));
 
   public static void main(String[] args) {
     Set<Sensor> sensors = new HashSet<>();
@@ -81,10 +75,14 @@ public class Part1 {
 
     Queue<Sensor> alreadyCorrected = new ArrayDeque<>();
 
-    sensors.stream().filter(sensor -> sensor.number == 0).findFirst().ifPresent(first -> {
-      alreadyCorrected.add(first);
-      uncorrected.remove(first);
-    });
+    sensors.stream()
+        .filter(sensor -> sensor.number == 0)
+        .findFirst()
+        .ifPresent(
+            first -> {
+              alreadyCorrected.add(first);
+              uncorrected.remove(first);
+            });
 
     while (!alreadyCorrected.isEmpty()) {
       Sensor corrected = alreadyCorrected.remove();
@@ -112,13 +110,15 @@ public class Part1 {
 
   private record Sensor(int number, Position position, Set<Position> beacons) {
     private Optional<Sensor> correctPosition(Sensor other) {
-      for(UnaryOperator<Position> rotator : rotators) {
+      for (UnaryOperator<Position> rotator : rotators) {
         Sensor rotated = other.rotate(rotator);
-        for(Position beacon : beacons) {
-          for(Position otherBeacon : rotated.beacons) {
-            Position offset = new Position(beacon.x - otherBeacon.x, beacon.y - otherBeacon.y, beacon.z - otherBeacon.z);
+        for (Position beacon : beacons) {
+          for (Position otherBeacon : rotated.beacons) {
+            Position offset =
+                new Position(
+                    beacon.x - otherBeacon.x, beacon.y - otherBeacon.y, beacon.z - otherBeacon.z);
             Sensor candidate = rotated.move(offset);
-            if(enoughBeaconsMatch(candidate)) {
+            if (enoughBeaconsMatch(candidate)) {
               return Optional.of(candidate);
             }
           }
@@ -129,11 +129,24 @@ public class Part1 {
     }
 
     private Sensor move(final Position offset) {
-      return new Sensor(number, offset, beacons.stream().map(beacon -> new Position(beacon.x() + offset.x(), beacon.y() + offset.y(), beacon.z() + offset.z())).collect(Collectors.toSet()));
+      return new Sensor(
+          number,
+          offset,
+          beacons.stream()
+              .map(
+                  beacon ->
+                      new Position(
+                          beacon.x() + offset.x(),
+                          beacon.y() + offset.y(),
+                          beacon.z() + offset.z()))
+              .collect(Collectors.toSet()));
     }
 
     private Sensor rotate(UnaryOperator<Position> rotator) {
-      return new Sensor(number, rotator.apply(position), beacons.stream().map(rotator).collect(Collectors.toSet()));
+      return new Sensor(
+          number,
+          rotator.apply(position),
+          beacons.stream().map(rotator).collect(Collectors.toSet()));
     }
 
     private boolean enoughBeaconsMatch(final Sensor other) {

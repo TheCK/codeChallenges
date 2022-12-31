@@ -1,10 +1,10 @@
 package org.ck.codility.challenges.alpha2010;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest extends BaseTest {
   @Test

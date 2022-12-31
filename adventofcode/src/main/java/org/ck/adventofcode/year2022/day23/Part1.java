@@ -1,10 +1,9 @@
 package org.ck.adventofcode.year2022.day23;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20222301,

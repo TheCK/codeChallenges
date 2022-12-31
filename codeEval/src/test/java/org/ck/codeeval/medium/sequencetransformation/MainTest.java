@@ -1,10 +1,10 @@
 package org.ck.codeeval.medium.sequencetransformation;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.ck.codechallengelib.testhelper.BaseTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainTest extends BaseTest {
   @Test

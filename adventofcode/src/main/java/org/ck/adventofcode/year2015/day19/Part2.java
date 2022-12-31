@@ -1,8 +1,7 @@
 package org.ck.adventofcode.year2015.day19;
 
-import org.ck.codechallengelib.annotation.Solution;
-
 import java.util.*;
+import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20151902,
@@ -29,7 +28,8 @@ public class Part2 {
 
       String wanted = in.nextLine();
 
-      PriorityQueue<Result> queue = new PriorityQueue<>((r1, r2) -> Integer.compare(r2.steps(), r1.steps()));
+      PriorityQueue<Result> queue =
+          new PriorityQueue<>((r1, r2) -> Integer.compare(r2.steps(), r1.steps()));
       queue.add(new Result(wanted, 0));
 
       Map<String, Integer> cache = new HashMap<>();
@@ -53,13 +53,15 @@ public class Part2 {
               if (start >= 0) {
                 index = start + replace.length();
 
-                final Result newResult = new Result(
+                final Result newResult =
+                    new Result(
                         current.current().substring(0, start)
-                                + key
-                                + current.current().substring(index),
+                            + key
+                            + current.current().substring(index),
                         current.steps() + 1);
 
-                if (!cache.containsKey(newResult.current()) || newResult.steps() < cache.get(newResult.current())) {
+                if (!cache.containsKey(newResult.current())
+                    || newResult.steps() < cache.get(newResult.current())) {
                   queue.add(newResult);
                   cache.put(newResult.current(), newResult.steps());
                 }

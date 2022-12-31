@@ -8,7 +8,7 @@ public class Part2Test extends BaseTest {
   @ParameterizedTest
   @ValueSource(
       strings = {
-          /*"02" too slow ,*/
+        /*"02" too slow ,*/
         "02a"
       })
   public void test(String name) throws Exception {

@@ -34,6 +34,26 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>2.28.0</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>apply</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <java>
+                        <importOrder/>
+                        <removeUnusedImports/>
+                        <googleJavaFormat/>
+                    </java>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <dependencies>

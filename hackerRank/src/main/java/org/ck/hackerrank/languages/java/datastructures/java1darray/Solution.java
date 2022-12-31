@@ -16,7 +16,7 @@ public class Solution {
 
       int a[] = new int[n];
       for (int i = 0; i < n; ++i) {
-        a[i] = scan .nextInt();
+        a[i] = scan.nextInt();
       }
 
       // Prints each sequential element in array a

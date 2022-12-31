@@ -4,4 +4,4 @@ engines:
       - "**.sql"
   pmd:
     exclude_paths:
-      - "**/tests/**"
+      - "**/test/**"

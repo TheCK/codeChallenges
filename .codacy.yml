@@ -5,3 +5,6 @@ engines:
   pmd:
     exclude_paths:
       - "**/test/**"
+  markdownlint:
+    exclude_paths:
+      - "**.md"

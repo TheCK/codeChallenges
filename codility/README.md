@@ -26,13 +26,13 @@
 [2]: https://codility.com/programmers/lessons/1
 [3]: https://codility.com/programmers/lessons/1
 
-[1solution]: src/main/java/org/ck/codility/lessons/timeComplexity/tapeEquilibrium/Solution.java
-[2solution]: src/main/java/org/ck/codility/lessons/timeComplexity/permMissingElem/Solution.java
-[3solution]: src/main/java/org/ck/codility/lessons/timeComplexity/frogJmp/Solution.java
+[1solution]: src/main/java/org/ck/codility/lessons/timecomplexity/tapeequilibrium/Solution.java
+[2solution]: src/main/java/org/ck/codility/lessons/timecomplexity/permmissingelem/Solution.java
+[3solution]: src/main/java/org/ck/codility/lessons/timecomplexity/frogjmp/Solution.java
 
-[1tests]: src/test/java/org/ck/codility/lessons/timeComplexity/tapeEquilibrium/SolutionTest.java
-[2tests]: src/test/java/org/ck/codility/lessons/timeComplexity/permMissingElem/SolutionTest.java
-[3tests]: src/test/java/org/ck/codility/lessons/timeComplexity/frogJmp/SolutionTest.java
+[1tests]: src/test/java/org/ck/codility/lessons/timecomplexity/tapeequilibrium/SolutionTest.java
+[2tests]: src/test/java/org/ck/codility/lessons/timecomplexity/permmissingelem/SolutionTest.java
+[3tests]: src/test/java/org/ck/codility/lessons/timecomplexity/frogjmp/SolutionTest.java
 
 
 ## 2. Counting Elements (4/4)
@@ -49,15 +49,15 @@
 [13]: https://codility.com/programmers/lessons/2
 [14]: https://codility.com/programmers/lessons/2
 
-[11solution]: src/main/java/org/ck/codility/lessons/countingElements/frogRiverOne/Solution.java
-[12solution]: src/main/java/org/ck/codility/lessons/countingElements/permCheck/Solution.java
-[13solution]: src/main/java/org/ck/codility/lessons/countingElements/missingInteger/Solution.java
-[14solution]: src/main/java/org/ck/codility/lessons/countingElements/maxCounters/Solution.java
+[11solution]: src/main/java/org/ck/codility/lessons/countingelements/frogeiverone/Solution.java
+[12solution]: src/main/java/org/ck/codility/lessons/countingelements/permcheck/Solution.java
+[13solution]: src/main/java/org/ck/codility/lessons/countingelements/missinginteger/Solution.java
+[14solution]: src/main/java/org/ck/codility/lessons/countingelements/maxcounters/Solution.java
 
-[11tests]: src/test/java/org/ck/codility/lessons/countingElements/frogRiverOne/SolutionTest.java
-[12tests]: src/test/java/org/ck/codility/lessons/countingElements/permCheck/SolutionTest.java
-[13tests]: src/test/java/org/ck/codility/lessons/countingElements/missingInteger/SolutionTest.java
-[14tests]: src/test/java/org/ck/codility/lessons/countingElements/maxCounters/SolutionTest.java
+[11tests]: src/test/java/org/ck/codility/lessons/countingelements/frogeiverone/SolutionTest.java
+[12tests]: src/test/java/org/ck/codility/lessons/countingelements/permcheck/SolutionTest.java
+[13tests]: src/test/java/org/ck/codility/lessons/countingelements/missinginteger/SolutionTest.java
+[14tests]: src/test/java/org/ck/codility/lessons/countingelements/maxcounters/SolutionTest.java
 
 
 ## 3. Prefix Sums (1/3)
@@ -72,11 +72,11 @@
 [22]: https://codility.com/programmers/lessons/3
 [23]: https://codility.com/programmers/lessons/3
 
-[21solution]: src/main/java/org/ck/codility/lessons/prefixSums/countDiv/Solution.java
-[22solution]: src/main/java/org/ck/codility/lessons/prefixSums/passingCars/Solution.java
-[23solution]: src/main/java/org/ck/codility/lessons/prefixSums/minAvgTwoSlice/Solution.java
+[21solution]: src/main/java/org/ck/codility/lessons/prefixsums/countdiv/Solution.java
+[22solution]: src/main/java/org/ck/codility/lessons/prefixsums/passingcars/Solution.java
+[23solution]: src/main/java/org/ck/codility/lessons/prefixsums/minavgtwoslice/Solution.java
 
-[21tests]: src/test/java/org/ck/codility/lessons/prefixSums/countDiv/SolutionTest.java
-[22tests]: src/test/java/org/ck/codility/lessons/prefixSums/passingCars/SolutionTest.java
-[23tests]: src/test/java/org/ck/codility/lessons/prefixSums/minAvgTwoSlice/SolutionTest.java
+[21tests]: src/test/java/org/ck/codility/lessons/prefixsums/countdiv/SolutionTest.java
+[22tests]: src/test/java/org/ck/codility/lessons/prefixsums/passingcars/SolutionTest.java
+[23tests]: src/test/java/org/ck/codility/lessons/prefixsums/minavgtwoslice/SolutionTest.java
 

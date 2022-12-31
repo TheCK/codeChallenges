@@ -13,7 +13,7 @@ public class Part1 {
 
   public static void main(String[] args) throws Exception {
     try (Scanner in = new Scanner(System.in)) {
-      int presents = in.nextInt();
+      long presents = in.nextInt();
 
       long house = 1;
       while (true) {
@@ -27,10 +27,10 @@ public class Part1 {
     }
   }
 
-  private static int calculatePresents(final long house) {
-    int presents = 0;
+  private static long calculatePresents(final long house) {
+    long presents = 0;
 
-    for (int i = 1; i <= Math.sqrt(house); ++i) {
+    for (long i = 1; i <= Math.sqrt(house); ++i) {
       if (house % i == 0) {
         presents += 10 * (i + (house / i));
       }

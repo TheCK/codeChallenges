@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Part2 {
   public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {
-      int count = 0;
-      int[] answered = initArray();
+      long count = 0;
+      long[] answered = initArray();
 
       while (in.hasNextLine()) {
         String line = in.nextLine();
@@ -37,8 +37,8 @@ public class Part2 {
     }
   }
 
-  private static int[] initArray() {
-    int[] array = new int[26];
+  private static long[] initArray() {
+    long[] array = new long[26];
 
     for (int i = 0; i < 26; ++i) {
       array[i] = 1;

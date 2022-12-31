@@ -16,7 +16,7 @@ public class Part1 {
   public static Set<Integer> unique = new HashSet<>(Arrays.asList(2, 3, 4, 7));
 
   public static void main(String[] args) {
-    int sum = 0;
+    long sum = 0;
 
     try (Scanner in = new Scanner(System.in)) {
       while (in.hasNextLine()) {

@@ -13,7 +13,7 @@ public class Part2 {
 
   public static void main(String[] args) throws Exception {
     try (Scanner in = new Scanner(System.in)) {
-      int presents = in.nextInt();
+      long presents = in.nextInt();
 
       long house = 1;
       while (true) {
@@ -27,9 +27,9 @@ public class Part2 {
     }
   }
 
-  private static int calculatePresents(final long house) {
-    int presents = 0;
-    for (int i = 1; i <= 50; ++i) {
+  private static long calculatePresents(final long house) {
+    long presents = 0;
+    for (long i = 1; i <= 50; ++i) {
       if (house % i == 0) {
         presents += 11 * (house / i);
       }

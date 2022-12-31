@@ -43,9 +43,9 @@ public class Part1 {
     long pow = 0;
     for (int i = line.length() - 1; i >= 0; --i) {
       if (Character.isDigit(line.charAt(i))) {
-        number += Math.pow(5, pow) * (line.charAt(i) - '0');
+        number += (long) (Math.pow(5, pow) * (line.charAt(i) - '0'));
       } else {
-        number -= Math.pow(5, pow) * (line.charAt(i) == '=' ? 2 : 1);
+        number -= (long) (Math.pow(5, pow) * (line.charAt(i) == '=' ? 2 : 1));
       }
 
       ++pow;

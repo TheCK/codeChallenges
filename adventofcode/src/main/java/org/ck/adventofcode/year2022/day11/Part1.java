@@ -14,15 +14,15 @@ import java.util.regex.Pattern;
     category = "2022")
 public class Part1 {
   private static final Pattern STARTING_ITEMS_PATTERN =
-      Pattern.compile("  Starting items: (([0-9]+(, )?)+)");
+      Pattern.compile("  Starting items: ((\\d+(, )?)+)");
 
   private static final Pattern SQUARE_PATTERN = Pattern.compile("  Operation: new = old \\* old");
   private static final Pattern MULTIPLICATION_PATTERN =
-      Pattern.compile("  Operation: new = old \\* ([0-9]+)");
+      Pattern.compile("  Operation: new = old \\* (\\d+)");
   private static final Pattern ADDITION_PATTERN =
-      Pattern.compile("  Operation: new = old \\+ ([0-9]+)");
+      Pattern.compile("  Operation: new = old \\+ (\\d+)");
 
-  private static final Pattern DIVISIBLE_PATTERN = Pattern.compile("  Test: divisible by ([0-9]+)");
+  private static final Pattern DIVISIBLE_PATTERN = Pattern.compile("  Test: divisible by (\\d+)");
   private static final Pattern TRUE_PATTERN =
       Pattern.compile("    If true: throw to monkey ([0-9]+)");
   private static final Pattern FALSE_PATTERN =

@@ -14,7 +14,7 @@ public class Part1 {
   public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {
       StringBuilder builder = new StringBuilder();
-      int count = 0;
+      long count = 0;
 
       while (in.hasNextLine()) {
         String line = in.nextLine();
@@ -27,7 +27,7 @@ public class Part1 {
           }
         }
 
-        int[] answered = new int[26];
+        long[] answered = new long[26];
         String allAnswers = builder.toString();
         for (char q = 'a'; q <= 'z'; ++q) {
           answered[q - 'a'] = allAnswers.indexOf(q);

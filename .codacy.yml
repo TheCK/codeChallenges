@@ -2,3 +2,6 @@ engines:
   tsqllint:
     exclude_paths:
       - "**.sql"
+  pmd:
+    exclude_paths:
+      - "**/tests/**"

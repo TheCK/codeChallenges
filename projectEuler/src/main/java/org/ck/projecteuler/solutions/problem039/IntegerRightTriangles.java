@@ -1,7 +1,7 @@
 package org.ck.projecteuler.solutions.problem039;
 
 public class IntegerRightTriangles {
-  private static int MAX = 1000;
+  private static final int MAX = 1000;
 
   private static int result = 0;
   private static int pForResult = 0;
@@ -36,8 +36,7 @@ public class IntegerRightTriangles {
   }
 
   private static boolean isRightAngleTriangle(int a, int b, int c) {
-    if (a * a + b * b == c * c) return true;
-    return false;
+    return a * a + b * b == c * c;
   }
 
   private static void printResult() {

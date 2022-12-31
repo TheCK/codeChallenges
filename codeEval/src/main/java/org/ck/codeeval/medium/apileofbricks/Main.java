@@ -52,7 +52,7 @@ public class Main {
 
         StringBuilder builder = new StringBuilder();
         for (Integer designation : fitting) {
-          builder.append(designation + ",");
+          builder.append(designation).append(",");
         }
 
         if (builder.length() > 0) {
@@ -67,8 +67,8 @@ public class Main {
   }
 
   private static class Dimension {
-    private int dX;
-    private int dY;
+    private final int dX;
+    private final int dY;
 
     public Dimension(String x1, String y1, String x2, String y2) {
       this.dX = Math.abs(getInt(x1) - getInt(x2));
@@ -76,12 +76,8 @@ public class Main {
     }
 
     public boolean manages(Dimension otherDimension) {
-      if ((this.dX >= otherDimension.dX && this.dY >= otherDimension.dY)
-          || (this.dX >= otherDimension.dY && this.dY >= otherDimension.dX)) {
-        return true;
-      }
-
-      return false;
+      return (this.dX >= otherDimension.dX && this.dY >= otherDimension.dY)
+          || (this.dX >= otherDimension.dY && this.dY >= otherDimension.dX);
     }
 
     private static int getInt(String string) {

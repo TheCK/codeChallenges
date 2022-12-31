@@ -13,8 +13,7 @@ public class PandigitalProducts {
       for (int j = 1; j < 2000; ++j) {
         int mul = i * j;
 
-        if (!multiples.contains(mul)
-            && isPandigital(String.valueOf(mul) + iString + String.valueOf(j))) {
+        if (!multiples.contains(mul) && isPandigital(mul + iString + j)) {
           multiples.add(mul);
         }
       }
@@ -29,18 +28,14 @@ public class PandigitalProducts {
     if (string.length() != 9) {
       return false;
     }
-    if (!string.contains("1")
-        || !string.contains("2")
-        || !string.contains("3")
-        || !string.contains("4")
-        || !string.contains("5")
-        || !string.contains("6")
-        || !string.contains("7")
-        || !string.contains("8")
-        || !string.contains("9")) {
-      return false;
-    }
-
-    return true;
+    return string.contains("1")
+        && string.contains("2")
+        && string.contains("3")
+        && string.contains("4")
+        && string.contains("5")
+        && string.contains("6")
+        && string.contains("7")
+        && string.contains("8")
+        && string.contains("9");
   }
 }

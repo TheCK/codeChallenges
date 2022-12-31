@@ -5,12 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -39,7 +34,7 @@ public class Main {
   }
 
   private static Double calculate(Queue<String> postfix) {
-    Stack<Double> stack = new Stack<>();
+    Deque<Double> stack = new ArrayDeque<>();
 
     while (!postfix.isEmpty()) {
       String token = postfix.remove();
@@ -76,7 +71,7 @@ public class Main {
 
   private static Queue<String> shuntingYard(String infix) {
     Queue<String> postfix = new LinkedList<>();
-    Stack<String> stack = new Stack<>();
+    Deque<String> stack = new ArrayDeque<>();
 
     List<String> tokens = tokenise(infix);
     for (String token : tokens) {
@@ -85,14 +80,13 @@ public class Main {
       }
       if (isOperator(token)) {
         while (!stack.isEmpty() && isOperator(stack.peek())) {
-          if ((isLeftAssociative(token) && getPrecedence(token) <= getPrecedence(stack.peek()))
-              || (!isLeftAssociative(token)
-                  && getPrecedence(token) < getPrecedence(stack.peek()))) {
+          if ((!isLeftAssociative(token) || getPrecedence(token) > getPrecedence(stack.peek()))
+              && (isLeftAssociative(token)
+                  || getPrecedence(token) >= getPrecedence(stack.peek()))) {
+            break;
+          } else {
             postfix.add(stack.pop());
-            continue;
           }
-
-          break;
         }
 
         stack.push(token);
@@ -131,24 +125,16 @@ public class Main {
   }
 
   private static boolean isLeftAssociative(String token) {
-    if (token.equals("-") || token.equals("*") || token.equals("+") || token.equals("/")) {
-      return true;
-    }
-
-    return false;
+    return token.equals("-") || token.equals("*") || token.equals("+") || token.equals("/");
   }
 
   private static boolean isOperator(String token) {
-    if (token.equals("-")
+    return token.equals("-")
         || token.equals("^")
         || token.equals("*")
         || token.equals("/")
         || token.equals("+")
-        || token.equals("#")) {
-      return true;
-    }
-
-    return false;
+        || token.equals("#");
   }
 
   private static boolean isNumerical(String token) {
@@ -191,11 +177,9 @@ public class Main {
           if (character == '-' && !token.equals(")")) {
             tokens.add(token);
             token = "#";
-            currentType = charType;
           } else {
             tokens.add(token);
             token = "" + character;
-            currentType = charType;
           }
         } else if (character == '-' && currentType == TokenType.UNDEFINED) {
           token = "#";
@@ -215,7 +199,7 @@ public class Main {
     return tokens;
   }
 
-  private static enum TokenType {
+  private enum TokenType {
     UNDEFINED,
     OPERATOR,
     VALUE;

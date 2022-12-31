@@ -14,6 +14,11 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://www.codeeval.com/open_challenges/216/",
     category = "Hard challenges")
 public class Main {
+  private static final String GRANT = "grant";
+  private static final String FILE_1 = "file_1";
+  private static final String FILE_2 = "file_2";
+  private static final String FILE_3 = "file_3";
+  private static final String WRITE = "write";
   private static Map<String, Map<String, Permission>> permissions;
 
   public static void main(String[] args) throws Exception {
@@ -40,7 +45,7 @@ public class Main {
             break;
           }
 
-          if ("grant".equals(action)) {
+          if (GRANT.equals(action)) {
             String right = arguments[3];
             String userToBeGranted = arguments[4];
 
@@ -56,34 +61,34 @@ public class Main {
 
   private static void initPermissions() {
     Map<String, Permission> user1Permissions = new HashMap<>();
-    user1Permissions.put("file_1", Permission.FULL); /* 7 - full access (read, write, grant); */
-    user1Permissions.put("file_2", Permission.WRITE_GRANT); /* 3 - write, grant; */
-    user1Permissions.put("file_3", Permission.BAN); /* 0 - total ban; */
+    user1Permissions.put(FILE_1, Permission.FULL);
+    user1Permissions.put(FILE_2, Permission.WRITE_GRANT);
+    user1Permissions.put(FILE_3, Permission.BAN);
 
     Map<String, Permission> user2Permissions = new HashMap<>();
-    user2Permissions.put("file_1", Permission.READ_WRITE); /* 6 - read, write; */
-    user2Permissions.put("file_2", Permission.WRITE); /* 2 - write; */
-    user2Permissions.put("file_3", Permission.READ); /* 4 - read; */
+    user2Permissions.put(FILE_1, Permission.READ_WRITE);
+    user2Permissions.put(FILE_2, Permission.WRITE);
+    user2Permissions.put(FILE_3, Permission.READ);
 
     Map<String, Permission> user3Permissions = new HashMap<>();
-    user3Permissions.put("file_1", Permission.READ_GRANT); /* 5 - read, grant; */
-    user3Permissions.put("file_2", Permission.GRANT); /* 1 - grant; */
-    user3Permissions.put("file_3", Permission.READ_GRANT); /* 5 - read, grant; */
+    user3Permissions.put(FILE_1, Permission.READ_GRANT);
+    user3Permissions.put(FILE_2, Permission.GRANT);
+    user3Permissions.put(FILE_3, Permission.READ_GRANT);
 
     Map<String, Permission> user4Permissions = new HashMap<>();
-    user4Permissions.put("file_1", Permission.WRITE_GRANT); /* 3 - write, grant; */
-    user4Permissions.put("file_2", Permission.FULL); /* 7 - full access (read, write, grant); */
-    user4Permissions.put("file_3", Permission.GRANT); /* 1 - grant; */
+    user4Permissions.put(FILE_1, Permission.WRITE_GRANT);
+    user4Permissions.put(FILE_2, Permission.FULL);
+    user4Permissions.put(FILE_3, Permission.GRANT);
 
     Map<String, Permission> user5Permissions = new HashMap<>();
-    user5Permissions.put("file_1", Permission.READ_WRITE); /* 6 - read, write; */
-    user5Permissions.put("file_2", Permission.BAN); /* 0 - total ban; */
-    user5Permissions.put("file_3", Permission.WRITE); /* 2 - write; */
+    user5Permissions.put(FILE_1, Permission.READ_WRITE);
+    user5Permissions.put(FILE_2, Permission.BAN);
+    user5Permissions.put(FILE_3, Permission.WRITE);
 
     Map<String, Permission> user6Permissions = new HashMap<>();
-    user6Permissions.put("file_1", Permission.READ); /* 4 - read; */
-    user6Permissions.put("file_2", Permission.WRITE); /* 2 - write; */
-    user6Permissions.put("file_3", Permission.READ_WRITE); /* 6 - read, write; */
+    user6Permissions.put(FILE_1, Permission.READ);
+    user6Permissions.put(FILE_2, Permission.WRITE);
+    user6Permissions.put(FILE_3, Permission.READ_WRITE);
 
     permissions = new HashMap<>();
     permissions.put("user_1", user1Permissions);
@@ -98,16 +103,12 @@ public class Main {
     BAN {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "grant":
-            return GRANT;
-          case "read":
-            return READ;
-          case "write":
-            return WRITE;
-        }
-
-        return BAN;
+        return switch (permission) {
+          case Main.GRANT -> GRANT;
+          case "read" -> READ;
+          case Main.WRITE -> WRITE;
+          default -> BAN;
+        };
       }
 
       @Override
@@ -118,53 +119,38 @@ public class Main {
     GRANT {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "read":
-            return READ_GRANT;
-          case "write":
-            return WRITE_GRANT;
-        }
-
-        return GRANT;
+        return switch (permission) {
+          case "read" -> READ_GRANT;
+          case Main.WRITE -> WRITE_GRANT;
+          default -> GRANT;
+        };
       }
 
       @Override
       public boolean isAllowed(String action) {
-        if (action.equals("grant")) {
-          return true;
-        }
-
-        return false;
+        return action.equals(Main.GRANT);
       }
     },
     WRITE {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "grant":
-            return WRITE_GRANT;
-          case "read":
-            return READ_WRITE;
-        }
-
-        return WRITE;
+        return switch (permission) {
+          case Main.GRANT -> WRITE_GRANT;
+          case "read" -> READ_WRITE;
+          default -> WRITE;
+        };
       }
 
       @Override
       public boolean isAllowed(String action) {
-        if (action.equals("write")) {
-          return true;
-        }
-
-        return false;
+        return action.equals(Main.WRITE);
       }
     },
     WRITE_GRANT {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "read":
-            return FULL;
+        if ("read".equals(permission)) {
+          return FULL;
         }
 
         return WRITE_GRANT;
@@ -172,41 +158,29 @@ public class Main {
 
       @Override
       public boolean isAllowed(String action) {
-        if (action.equals("read")) {
-          return false;
-        }
-
-        return true;
+        return !action.equals("read");
       }
     },
     READ {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "grant":
-            return READ_GRANT;
-          case "write":
-            return READ_WRITE;
-        }
-
-        return READ;
+        return switch (permission) {
+          case Main.GRANT -> READ_GRANT;
+          case Main.WRITE -> READ_WRITE;
+          default -> READ;
+        };
       }
 
       @Override
       public boolean isAllowed(String action) {
-        if (action.equals("read")) {
-          return true;
-        }
-
-        return false;
+        return action.equals("read");
       }
     },
     READ_GRANT {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "write":
-            return FULL;
+        if (Main.WRITE.equals(permission)) {
+          return FULL;
         }
 
         return READ_GRANT;
@@ -214,19 +188,14 @@ public class Main {
 
       @Override
       public boolean isAllowed(String action) {
-        if (action.equals("write")) {
-          return false;
-        }
-
-        return true;
+        return !action.equals(Main.WRITE);
       }
     },
     READ_WRITE {
       @Override
       public Permission grant(String permission) {
-        switch (permission) {
-          case "grant":
-            return FULL;
+        if (Main.GRANT.equals(permission)) {
+          return FULL;
         }
 
         return READ_WRITE;
@@ -234,11 +203,7 @@ public class Main {
 
       @Override
       public boolean isAllowed(String action) {
-        if (action.equals("grant")) {
-          return false;
-        }
-
-        return true;
+        return !action.equals(Main.GRANT);
       }
     },
     FULL {

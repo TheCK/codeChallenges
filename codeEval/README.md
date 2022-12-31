@@ -182,7 +182,7 @@
 [25solution]: src/main/java/org/ck/codeeval/easy/oddnumbers/Main.java
 [26solution]: src/main/java/org/ck/codeeval/easy/filesize/Main.java
 [29solution]: src/main/java/org/ck/codeeval/easy/uniqueelements/Main.java
-[30solution]: src/main/java/org/ck/codeeval/easy/setIntersection/Main.java
+[30solution]: src/main/java/org/ck/codeeval/easy/setintersection/Main.java
 [31solution]: src/main/java/org/ck/codeeval/easy/rightmostchar/Main.java
 [39solution]: src/main/java/org/ck/codeeval/easy/happynumbers/Main.java
 [40solution]: src/main/java/org/ck/codeeval/easy/selfdescribingnumbers/Main.java
@@ -265,7 +265,7 @@
 [25tests]: src/test/java/org/ck/codeeval/easy/oddnumbers/MainTest.java
 [26tests]: src/test/java/org/ck/codeeval/easy/filesize/MainTest.java
 [29tests]: src/test/java/org/ck/codeeval/easy/uniqueelements/MainTest.java
-[30tests]: src/test/java/org/ck/codeeval/easy/setIntersection/MainTest.java
+[30tests]: src/test/java/org/ck/codeeval/easy/setintersection/MainTest.java
 [31tests]: src/test/java/org/ck/codeeval/easy/rightmostchar/MainTest.java
 [39tests]: src/test/java/org/ck/codeeval/easy/happynumbers/MainTest.java
 [40tests]: src/test/java/org/ck/codeeval/easy/selfdescribingnumbers/MainTest.java

@@ -43,6 +43,8 @@ public class Solution {
       this.email = email;
     }
 
-    public void anothermethod() {}
+    public void anothermethod() {
+      // do nothing
+    }
   }
 }

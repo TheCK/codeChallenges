@@ -1,4 +1,4 @@
-package org.ck.codeeval.easy.setIntersection;
+package org.ck.codeeval.easy.setintersection;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

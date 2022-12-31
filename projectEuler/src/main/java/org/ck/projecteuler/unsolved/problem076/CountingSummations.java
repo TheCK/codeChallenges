@@ -4,11 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class CountingSummations {
-  private static Set<String> versions = new HashSet<>();
-  private static Set<String> finalVersions = new HashSet<>();
+  private static final Set<String> versions = new HashSet<>();
+  private static final Set<String> finalVersions = new HashSet<>();
 
   public static void main(String[] args) {
-    calcCominations("", 5, 0);
+    calcCombinations("", 5, 0);
 
     for (String version : versions) {
       boolean isAddable = true;
@@ -29,9 +29,9 @@ public class CountingSummations {
     printResult();
   }
 
-  private static void calcCominations(String version, int rest, int before) {
+  private static void calcCombinations(String version, int rest, int before) {
     if (rest == before) {
-      versions.add(version + String.valueOf(before));
+      versions.add(version + before);
       return;
     }
 
@@ -50,9 +50,8 @@ public class CountingSummations {
 
       if (version.length() == 0
           || Integer.parseInt(version.substring(version.length() - 1)) >= rest - i)
-        calcCominations(version + String.valueOf(i), rest - i, rest);
+        calcCombinations(version + i, rest - i, rest);
     }
-    return;
   }
 
   private static void printResult() {

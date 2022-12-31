@@ -1,7 +1,8 @@
 package org.ck.adventofcode.year2015.day17;
 
-import java.util.*;
 import org.ck.codechallengelib.annotation.Solution;
+
+import java.util.*;
 
 @Solution(
     id = 20151702,
@@ -48,7 +49,5 @@ public class Part2 {
 
       count(amount - buckets.get(i), buckets, i + 1, container + 1, cominationsPerAmount);
     }
-
-    return;
   }
 }

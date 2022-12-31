@@ -1,9 +1,8 @@
 package org.ck.adventofcode.year2021.day06;
 
-import static java.util.stream.Collectors.toList;
+import org.ck.codechallengelib.annotation.Solution;
 
 import java.util.*;
-import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20210602,
@@ -11,11 +10,13 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2021/day/6#part2",
     category = "2021")
 public class Part2 {
+  private static final Map<String, Long> cache = new HashMap<>();
+
   public static void main(String[] args) {
-    List<Integer> fish = new ArrayList<>();
+    List<Integer> fish;
 
     try (Scanner in = new Scanner(System.in)) {
-      fish = Arrays.stream(in.nextLine().split(",")).map(Integer::valueOf).collect(toList());
+      fish = Arrays.stream(in.nextLine().split(",")).map(Integer::valueOf).toList();
     }
 
     long numberOfFish = 0;
@@ -25,8 +26,6 @@ public class Part2 {
 
     System.out.println(numberOfFish);
   }
-
-  private static final Map<String, Long> cache = new HashMap<>();
 
   private static long calculate(final int number, int days) {
     if (days < 0) {

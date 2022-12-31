@@ -1,10 +1,6 @@
 package org.ck.hackerrank.languages.java.advanced.visitorpattern;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 enum Color {
   RED,
@@ -13,9 +9,9 @@ enum Color {
 
 abstract class Tree {
 
-  private int value;
-  private Color color;
-  private int depth;
+  private final int value;
+  private final Color color;
+  private final int depth;
 
   public Tree(int value, Color color, int depth) {
     this.value = value;
@@ -85,7 +81,9 @@ class SumInLeavesVisitor extends TreeVis {
     return sum;
   }
 
-  public void visitNode(TreeNode node) {}
+  public void visitNode(TreeNode node) {
+    // do nothing
+  }
 
   public void visitLeaf(TreeLeaf leaf) {
     sum += leaf.getValue();
@@ -199,6 +197,7 @@ public class Solution {
         for (int child : edges[i]) {
           if (depth[child] > depth[i]) {
             hasChild = true;
+            break;
           }
         }
 

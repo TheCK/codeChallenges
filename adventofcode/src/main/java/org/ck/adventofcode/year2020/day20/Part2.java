@@ -1,11 +1,12 @@
 package org.ck.adventofcode.year2020.day20;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.ck.codechallengelib.annotation.Solution;
+
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.apache.commons.lang3.ArrayUtils;
-import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20202002,
@@ -47,7 +48,8 @@ public class Part2 {
       }
     }
 
-    Tile topLeft = tiles.stream().filter(tile -> tile.getNeighbours().size() == 2).findAny().get();
+    Tile topLeft =
+        tiles.stream().filter(tile -> tile.getNeighbours().size() == 2).findAny().orElseThrow();
 
     while (topLeft.getNeighbour(Tile.Edge.TOP) != null
         || topLeft.getNeighbour(Tile.Edge.LEFT) != null) {
@@ -193,7 +195,9 @@ public class Part2 {
       return pixels;
     }
 
-    private void nothing() {}
+    private void nothing() {
+      // do nothing
+    }
 
     private void flipBoth() {
       flipY();

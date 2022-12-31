@@ -46,11 +46,11 @@ public class Main {
   }
 
   private static void print() {
-    for (int y = 0; y < matrix.length; ++y) {
+    for (final char[] chars : matrix) {
       StringBuilder builder = new StringBuilder();
 
       for (int x = 0; x < matrix[0].length; ++x) {
-        builder.append(matrix[y][x]);
+        builder.append(chars[x]);
       }
 
       System.out.println(builder);
@@ -74,15 +74,13 @@ public class Main {
           for (int height = 0; height + y < matrix.length; ++height) {
             int size = (width + 1) * (height + 1);
 
-            if (size >= maxSize) {
-              if (isUnique(x, y, width, height)) {
-                if (size > maxSize) {
-                  maxSize = size;
-                  subMatrices = new LinkedList<>();
-                }
-
-                subMatrices.add(new Matrix(x, y, width, height));
+            if (size >= maxSize && isUnique(x, y, width, height)) {
+              if (size > maxSize) {
+                maxSize = size;
+                subMatrices = new LinkedList<>();
               }
+
+              subMatrices.add(new Matrix(x, y, width, height));
             }
           }
         }

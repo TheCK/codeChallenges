@@ -31,10 +31,9 @@ public class PrimePermutations {
               && digits2.size() == digits3.size()
               && digits3.size() == all.size()
               && prime1.toString().length() == prime2.toString().length()
-              && prime2.toString().length() == testPrime.toString().length()) {
-            if (!prime1.equals(1487)) {
-              System.out.println(prime1 + "" + prime2 + "" + testPrime);
-            }
+              && prime2.toString().length() == testPrime.toString().length()
+              && !prime1.equals(1487)) {
+            System.out.println(prime1 + "" + prime2 + "" + testPrime);
           }
         }
       }

@@ -60,10 +60,8 @@ public class Part1 {
 
     int step = 0;
     while (true) {
-      if (!inX.isEmpty()) {
-        if (inX_00.write(inX.peek(), step)) {
-          inX.remove();
-        }
+      if (!inX.isEmpty() && inX_00.write(inX.peek(), step)) {
+        inX.remove();
       }
 
       n00.step();

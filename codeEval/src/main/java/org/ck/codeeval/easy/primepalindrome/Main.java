@@ -13,10 +13,8 @@ public class Main {
     int result = 2;
 
     for (int i = 3; i < 1000; ++i) {
-      if (isPrime(i)) {
-        if (isPalindrome(i)) {
-          result = i;
-        }
+      if (isPrime(i) && isPalindrome(i)) {
+        result = i;
       }
     }
 

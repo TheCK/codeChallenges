@@ -34,11 +34,11 @@ public class Main {
           String[] start = borders[0].trim().split(" ");
           String[] end = borders[1].trim().split(" ");
 
-          Integer startMonth = getMonth(start[0]);
-          Integer startYear = getYear(start[1]);
+          int startMonth = getMonth(start[0]);
+          int startYear = getYear(start[1]);
 
-          Integer endMonth = getMonth(end[0]);
-          Integer endYear = getYear(end[1]);
+          int endMonth = getMonth(end[0]);
+          int endYear = getYear(end[1]);
 
           while (true) {
             months[startYear][startMonth] = true;
@@ -53,18 +53,16 @@ public class Main {
             if (startYear > endYear) {
               break;
             }
-            if (startYear == endYear) {
-              if (startMonth > endMonth) {
-                break;
-              }
+            if (startYear == endYear && startMonth > endMonth) {
+              break;
             }
           }
         }
 
-        Integer monthSum = 0;
+        int monthSum = 0;
 
-        for (Integer year = 0; year < YEARS; ++year) {
-          for (Integer month = 0; month < MONTHS; ++month) {
+        for (int year = 0; year < YEARS; ++year) {
+          for (int month = 0; month < MONTHS; ++month) {
             if (months[year][month]) {
               monthSum++;
             }
@@ -76,11 +74,11 @@ public class Main {
     }
   }
 
-  private static Integer getYear(String year) {
-    return Integer.valueOf(year) - 1990;
+  private static int getYear(String year) {
+    return Integer.parseInt(year) - 1990;
   }
 
-  private static Integer getMonth(String month) {
+  private static int getMonth(String month) {
     if ("Jan".equals(month)) {
       return 0;
     } else if ("Feb".equals(month)) {

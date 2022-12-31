@@ -7,10 +7,10 @@ import java.util.Set;
 public class PandigitalFibonacciEnds {
 
   private static int resultLine = 1;
-  private static BigInteger mod = BigInteger.valueOf(1000000000L);
+  private static final BigInteger mod = BigInteger.valueOf(1000000000L);
 
   public static void main(String[] args) {
-    BigInteger last2 = BigInteger.ZERO;
+    BigInteger last2;
     BigInteger last = BigInteger.ONE;
 
     for (BigInteger current = BigInteger.ONE; ; current = last.add(last2)) {
@@ -19,10 +19,8 @@ public class PandigitalFibonacciEnds {
 
       resultLine++;
 
-      if (resultLine > 300000) {
-        if (isSpecial(current)) {
-          break;
-        }
+      if (resultLine > 300000 && isSpecial(current)) {
+        break;
       }
     }
 
@@ -34,9 +32,7 @@ public class PandigitalFibonacciEnds {
     if (isPandigital(endInt.toString())) {
       String beginning = current.toString().substring(0, 9);
 
-      if (isPandigital(beginning)) {
-        return true;
-      }
+      return isPandigital(beginning);
     }
 
     return false;
@@ -49,11 +45,7 @@ public class PandigitalFibonacciEnds {
       digits.add(string.substring(i, i + 1));
     }
 
-    if (digits.size() == 9 && !digits.contains("0")) {
-      return true;
-    }
-
-    return false;
+    return digits.size() == 9 && !digits.contains("0");
   }
 
   private static void printResult() {

@@ -18,22 +18,22 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://www.codeeval.com/open_challenges/137/",
     category = "Moderate challenges")
 public class Main {
-  private static Pattern normalIpPattern =
-      Pattern.compile("([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})");
+  private static final Pattern normalIpPattern =
+      Pattern.compile("(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})");
 
-  private static Pattern dottedHexIpPattern =
+  private static final Pattern dottedHexIpPattern =
       Pattern.compile(
           "(0x[0-9a-fA-F]{2})\\.(0x[0-9a-fA-F]{2})\\.(0x[0-9a-fA-F]{2})\\.(0x[0-9a-fA-F]{2})");
-  private static Pattern dottedOctalIpPattern =
+  private static final Pattern dottedOctalIpPattern =
       Pattern.compile("([0-7]{4})\\.([0-7]{4})\\.([0-7]{4})\\.([0-7]{4})");
-  private static Pattern dottedBinaryIpPattern =
+  private static final Pattern dottedBinaryIpPattern =
       Pattern.compile("([0-1]{8})\\.([0-1]{8})\\.([0-1]{8})\\.([0-1]{8})");
 
-  private static Pattern binaryIpPattern = Pattern.compile("[0-1]{32}");
-  private static Pattern octalIpPattern = Pattern.compile("[0-7]{12}");
-  private static Pattern hexIpPattern = Pattern.compile("0x[0-9a-fA-F]{8}");
+  private static final Pattern binaryIpPattern = Pattern.compile("[0-1]{32}");
+  private static final Pattern octalIpPattern = Pattern.compile("[0-7]{12}");
+  private static final Pattern hexIpPattern = Pattern.compile("0x[0-9a-fA-F]{8}");
 
-  private static Pattern intIpPattern = Pattern.compile("[0-9]{8,10}");
+  private static final Pattern intIpPattern = Pattern.compile("\\d{8,10}");
 
   public static void main(String[] args) throws Exception {
     File file = new File(args[0]);
@@ -236,22 +236,21 @@ public class Main {
         && third >= 0
         && third <= 255
         && fourth >= 0
-        && fourth <= 255) {
-      if ((first == 255 && second == 255 && third == 255 && fourth < 255)
-          || first != 255
-          || second != 255
-          || third != 255) {
-        Long ip =
-            (((long) first) * (256 * 256 * 256))
-                + (((long) second) * (256 * 256))
-                + (((long) third) * (256))
-                + (fourth);
+        && fourth <= 255
+        && ((first == 255 && second == 255 && third == 255 && fourth < 255)
+            || first != 255
+            || second != 255
+            || third != 255)) {
+      Long ip =
+          (((long) first) * (256 * 256 * 256))
+              + (((long) second) * (256 * 256))
+              + (((long) third) * (256))
+              + (fourth);
 
-        if (ipCounts.containsKey(ip)) {
-          ipCounts.put(ip, ipCounts.get(ip) + 1);
-        } else {
-          ipCounts.put(ip, 1);
-        }
+      if (ipCounts.containsKey(ip)) {
+        ipCounts.put(ip, ipCounts.get(ip) + 1);
+      } else {
+        ipCounts.put(ip, 1);
       }
     }
   }

@@ -15,10 +15,8 @@ public class Solution {
     int number = scan.nextInt();
     boolean isWeird = true;
 
-    if (number % 2 == 0) {
-      if (number == 4 || number > 20) {
-        isWeird = false;
-      }
+    if (number % 2 == 0 && (number == 4 || number > 20)) {
+      isWeird = false;
     }
 
     System.out.println(isWeird ? "Weird" : "Not Weird");

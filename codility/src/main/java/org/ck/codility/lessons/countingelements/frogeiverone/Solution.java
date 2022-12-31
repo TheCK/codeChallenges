@@ -11,20 +11,18 @@ import java.util.Set;
     category = "Lessons",
     subCategory = "2. Counting Elements")
 public class Solution {
-  public int solution(int X, int[] A) {
-    Set<Integer> leaves = new HashSet<>(X, 1);
+  public int solution(int x, int[] a) {
+    Set<Integer> leaves = new HashSet<>(x, 1);
 
     int when = -1;
 
-    for (int i = 0; i < A.length; ++i) {
-      if (A[i] <= X) {
-        if (!leaves.contains(A[i])) {
-          leaves.add(A[i]);
+    for (int i = 0; i < a.length; ++i) {
+      if (a[i] <= x && !leaves.contains(a[i])) {
+        leaves.add(a[i]);
 
-          if (leaves.size() == X) {
-            when = i;
-            break;
-          }
+        if (leaves.size() == x) {
+          when = i;
+          break;
         }
       }
     }

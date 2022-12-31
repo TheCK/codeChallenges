@@ -24,16 +24,16 @@ public class Part2 {
         MessageDigest md = MessageDigest.getInstance("MD5");
         md.update((door + index).getBytes());
         byte[] digest = md.digest();
-        if (digest[0] == 0 && digest[1] == 0 && digest[2] >= 0 && digest[2] < 0x10) {
-          if ((digest[2] & 0x0F) < 8) {
-            if (!password.containsKey((digest[2] & 0x0F))) {
-              password.put(
-                  (digest[2] & 0x0F),
-                  (char)
-                      (((digest[3] & 0xF0) / 16)
-                          + (((digest[3] & 0xF0) / 16) > 9 ? 'a' - 10 : '0')));
-            }
-          }
+        if (digest[0] == 0
+            && digest[1] == 0
+            && digest[2] >= 0
+            && digest[2] < 0x10
+            && (digest[2] & 0x0F) < 8
+            && !password.containsKey((digest[2] & 0x0F))) {
+          password.put(
+              (digest[2] & 0x0F),
+              (char)
+                  (((digest[3] & 0xF0) / 16) + (((digest[3] & 0xF0) / 16) > 9 ? 'a' - 10 : '0')));
         }
 
         ++index;

@@ -16,32 +16,30 @@ public class DigitCancellingFractions {
         Set<Integer> common = new LinkedHashSet<>(iDigits);
         common.retainAll(jDigits);
 
-        if (common.size() == 0 || common.contains(0)) {
+        if (common.isEmpty() || common.contains(0)) {
           continue;
         }
 
         Set<Integer> newNom = new LinkedHashSet<>(iDigits);
         newNom.removeAll(jDigits);
 
-        if (newNom.size() == 0) {
+        if (newNom.isEmpty()) {
           newNom = new LinkedHashSet<>(common);
         }
 
         Set<Integer> newDen = new LinkedHashSet<>(jDigits);
         newDen.removeAll(common);
 
-        if (newDen.size() == 0) {
+        if (newDen.isEmpty()) {
           newDen = new LinkedHashSet<>(common);
         }
 
         if (!newDen.contains(0)
             && ((float) i / (float) j)
-                == ((float) ((Integer) newNom.toArray()[0]).intValue()
-                    / (float) ((Integer) newDen.toArray()[0]).intValue())) {
-          if (i != j && i < j) {
-            nomVal = nomVal * i;
-            denVal = denVal * j;
-          }
+                == ((float) (Integer) newNom.toArray()[0] / (float) (Integer) newDen.toArray()[0])
+            && i < j) {
+          nomVal = nomVal * i;
+          denVal = denVal * j;
         }
       }
     }

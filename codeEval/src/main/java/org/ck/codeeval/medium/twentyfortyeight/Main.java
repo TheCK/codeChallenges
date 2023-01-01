@@ -14,11 +14,11 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://www.codeeval.com/open_challenges/194/",
     category = "Moderate challenges")
 public class Main {
-  private static enum Direction {
+  private enum Direction {
     UP,
     DOWN,
     LEFT,
-    RIGHT;
+    RIGHT
   }
 
   public static void main(String[] args) throws Exception {
@@ -38,8 +38,8 @@ public class Main {
           String[] matrixValues = matrixLine.trim().split(" ");
           List<Field> row = new ArrayList<>();
 
-          for (int i = 0; i < matrixValues.length; ++i) {
-            row.add(new Field(Integer.valueOf(matrixValues[i])));
+          for (final String matrixValue : matrixValues) {
+            row.add(new Field(Integer.parseInt(matrixValue)));
           }
 
           rows.add(row);
@@ -92,30 +92,30 @@ public class Main {
           break;
         case LEFT:
           for (int column = 1; column < rows.size(); ++column) {
-            for (int row = 0; row < rows.size(); ++row) {
-              if (rows.get(row).get(column - 1).getValue() == 0) {
-                rows.get(row).get(column - 1).set(rows.get(row).get(column));
-                rows.get(row).get(column).reset();
-              } else if (rows.get(row).get(column - 1).equals(rows.get(row).get(column))
-                  && !rows.get(row).get(column - 1).isMerged()
-                  && !rows.get(row).get(column).isMerged()) {
-                rows.get(row).get(column - 1).merge();
-                rows.get(row).get(column).reset();
+            for (List<Field> fields : rows) {
+              if (fields.get(column - 1).getValue() == 0) {
+                fields.get(column - 1).set(fields.get(column));
+                fields.get(column).reset();
+              } else if (fields.get(column - 1).equals(fields.get(column))
+                  && !fields.get(column - 1).isMerged()
+                  && !fields.get(column).isMerged()) {
+                fields.get(column - 1).merge();
+                fields.get(column).reset();
               }
             }
           }
           break;
         case RIGHT:
           for (int column = rows.size() - 2; column >= 0; --column) {
-            for (int row = 0; row < rows.size(); ++row) {
-              if (rows.get(row).get(column + 1).getValue() == 0) {
-                rows.get(row).get(column + 1).set(rows.get(row).get(column));
-                rows.get(row).get(column).reset();
-              } else if (rows.get(row).get(column + 1).equals(rows.get(row).get(column))
-                  && !rows.get(row).get(column + 1).isMerged()
-                  && !rows.get(row).get(column).isMerged()) {
-                rows.get(row).get(column + 1).merge();
-                rows.get(row).get(column).reset();
+            for (List<Field> fields : rows) {
+              if (fields.get(column + 1).getValue() == 0) {
+                fields.get(column + 1).set(fields.get(column));
+                fields.get(column).reset();
+              } else if (fields.get(column + 1).equals(fields.get(column))
+                  && !fields.get(column + 1).isMerged()
+                  && !fields.get(column).isMerged()) {
+                fields.get(column + 1).merge();
+                fields.get(column).reset();
               }
             }
           }
@@ -127,9 +127,9 @@ public class Main {
   private static void print(List<List<Field>> rows) {
     StringBuilder builder = new StringBuilder();
 
-    for (int i = 0; i < rows.size(); ++i) {
-      for (int j = 0; j < rows.get(i).size(); ++j) {
-        builder.append(rows.get(i).get(j).toString());
+    for (List<Field> row : rows) {
+      for (Field field : row) {
+        builder.append(field.toString());
         builder.append(" ");
       }
 
@@ -146,7 +146,7 @@ public class Main {
   }
 
   private static class Field {
-    private int value = 0;
+    private int value;
     private boolean merged = false;
 
     public Field(int value) {
@@ -183,9 +183,7 @@ public class Main {
 
     @Override
     public boolean equals(Object other) {
-      if (other instanceof Field) {
-        Field otherField = (Field) other;
-
+      if (other instanceof Field otherField) {
         return value == otherField.value;
       }
 

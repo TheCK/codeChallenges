@@ -13,7 +13,7 @@ import org.ck.codechallengelib.annotation.Solution;
     category = "2015")
 public class Part1 {
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {
       int cycles = in.nextInt();
       in.nextLine();
@@ -64,9 +64,9 @@ public class Part1 {
       }
 
       int alive = 0;
-      for (int x = 0; x < grid.size(); ++x) {
-        for (int y = 0; y < grid.get(x).size(); ++y) {
-          if (grid.get(x).get(y).equals("#")) {
+      for (List<String> strings : grid) {
+        for (String string : strings) {
+          if (string.equals("#")) {
             ++alive;
           }
         }

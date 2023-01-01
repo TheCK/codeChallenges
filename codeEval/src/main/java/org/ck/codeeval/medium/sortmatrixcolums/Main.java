@@ -3,7 +3,9 @@ package org.ck.codeeval.medium.sortmatrixcolums;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -45,8 +47,8 @@ public class Main {
     StringBuilder builder = new StringBuilder();
 
     for (int i = 0; i < matrix.get(0).size(); ++i) {
-      for (int j = 0; j < matrix.size(); ++j) {
-        builder.append(matrix.get(j).get(i));
+      for (Vector integers : matrix) {
+        builder.append(integers.get(i));
         builder.append(" ");
       }
 

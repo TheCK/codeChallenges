@@ -1,14 +1,8 @@
 package org.ck.adventofcode.year2019.day12;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -17,7 +11,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2019/day/12#part2",
     category = "2019")
 public class Part2 {
-  public static Pattern pattern = Pattern.compile("x=([0-9-]+), y=([0-9-]+), z=([0-9-]+)");
+  private static final Pattern PATTERN = Pattern.compile("x=([0-9-]+), y=([0-9-]+), z=([0-9-]+)");
 
   public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {
@@ -26,7 +20,7 @@ public class Part2 {
       List<Integer> zs = new ArrayList<>();
       while (in.hasNextLine()) {
         String line = in.nextLine();
-        Matcher matcher = pattern.matcher(line);
+        Matcher matcher = PATTERN.matcher(line);
 
         if (matcher.find()) {
           xs.add(Integer.valueOf(matcher.group(1)));
@@ -54,12 +48,12 @@ public class Part2 {
 
   private static int getCycle(List<Integer> coords) {
     Set<List<State>> visited = new HashSet<>();
-    List<State> state = coords.stream().map(State::new).collect(Collectors.toList());
+    List<State> state = coords.stream().map(State::new).toList();
 
     int cycle = 0;
 
     while (!visited.contains(state)) {
-      visited.add(state.stream().map(s -> (State) s.clone()).collect(Collectors.toList()));
+      visited.add(state.stream().map(s -> (State) s.clone()).toList());
 
       for (int i = 0; i < state.size(); ++i) {
         for (int j = i + 1; j < state.size(); ++j) {

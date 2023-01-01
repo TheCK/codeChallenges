@@ -13,7 +13,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2020/day/20",
     category = "2020")
 public class Part2 {
-  private static final Pattern tileNamePattern = Pattern.compile("Tile ([0-9]+):");
+  private static final Pattern tileNamePattern = Pattern.compile("Tile (\\d+):");
 
   public static void main(String[] args) {
     List<Tile> tiles = new ArrayList<>();
@@ -118,73 +118,73 @@ public class Part2 {
   }
 
   private static class Tile {
-    private static final String format = "%s-%s";
+    private static final String FORMAT = "%s-%s";
 
     private static final Map<String, Consumer<Tile>> actions =
         new HashMap<>() {
           {
-            put(String.format(format, Edge.TOP, Edge.TOP), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.TOP_REVERSE), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.BOTTOM), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.BOTTOM_REVERSE), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.LEFT), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.LEFT_REVERSE), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.RIGHT), Tile::nothing);
-            put(String.format(format, Edge.TOP, Edge.RIGHT_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.TOP), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.TOP_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.BOTTOM), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.BOTTOM_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.LEFT), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.LEFT_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.RIGHT), Tile::nothing);
+            put(String.format(FORMAT, Edge.TOP, Edge.RIGHT_REVERSE), Tile::nothing);
 
-            put(String.format(format, Edge.LEFT, Edge.TOP), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.TOP_REVERSE), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.BOTTOM), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.BOTTOM_REVERSE), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.LEFT), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.LEFT_REVERSE), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.RIGHT), Tile::nothing);
-            put(String.format(format, Edge.LEFT, Edge.RIGHT_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.TOP), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.TOP_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.BOTTOM), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.BOTTOM_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.LEFT), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.LEFT_REVERSE), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.RIGHT), Tile::nothing);
+            put(String.format(FORMAT, Edge.LEFT, Edge.RIGHT_REVERSE), Tile::nothing);
 
             put(
-                String.format(format, Edge.RIGHT, Edge.TOP),
+                String.format(FORMAT, Edge.RIGHT, Edge.TOP),
                 tile -> {
                   tile.rotateCCW();
                   tile.flipX();
                 });
-            put(String.format(format, Edge.RIGHT, Edge.TOP_REVERSE), Tile::rotateCCW);
-            put(String.format(format, Edge.RIGHT, Edge.BOTTOM), Tile::rotateCW);
+            put(String.format(FORMAT, Edge.RIGHT, Edge.TOP_REVERSE), Tile::rotateCCW);
+            put(String.format(FORMAT, Edge.RIGHT, Edge.BOTTOM), Tile::rotateCW);
             put(
-                String.format(format, Edge.RIGHT, Edge.BOTTOM_REVERSE),
+                String.format(FORMAT, Edge.RIGHT, Edge.BOTTOM_REVERSE),
                 tile -> {
                   tile.rotateCW();
                   tile.flipX();
                 });
 
-            put(String.format(format, Edge.RIGHT, Edge.LEFT), Tile::nothing);
-            put(String.format(format, Edge.RIGHT, Edge.LEFT_REVERSE), Tile::flipX);
-            put(String.format(format, Edge.RIGHT, Edge.RIGHT), Tile::flipY);
-            put(String.format(format, Edge.RIGHT, Edge.RIGHT_REVERSE), Tile::flipBoth);
+            put(String.format(FORMAT, Edge.RIGHT, Edge.LEFT), Tile::nothing);
+            put(String.format(FORMAT, Edge.RIGHT, Edge.LEFT_REVERSE), Tile::flipX);
+            put(String.format(FORMAT, Edge.RIGHT, Edge.RIGHT), Tile::flipY);
+            put(String.format(FORMAT, Edge.RIGHT, Edge.RIGHT_REVERSE), Tile::flipBoth);
 
-            put(String.format(format, Edge.BOTTOM, Edge.TOP), Tile::nothing);
-            put(String.format(format, Edge.BOTTOM, Edge.TOP_REVERSE), Tile::flipY);
-            put(String.format(format, Edge.BOTTOM, Edge.BOTTOM), Tile::flipX);
-            put(String.format(format, Edge.BOTTOM, Edge.BOTTOM_REVERSE), Tile::flipBoth);
+            put(String.format(FORMAT, Edge.BOTTOM, Edge.TOP), Tile::nothing);
+            put(String.format(FORMAT, Edge.BOTTOM, Edge.TOP_REVERSE), Tile::flipY);
+            put(String.format(FORMAT, Edge.BOTTOM, Edge.BOTTOM), Tile::flipX);
+            put(String.format(FORMAT, Edge.BOTTOM, Edge.BOTTOM_REVERSE), Tile::flipBoth);
 
             put(
-                String.format(format, Edge.BOTTOM, Edge.LEFT),
+                String.format(FORMAT, Edge.BOTTOM, Edge.LEFT),
                 tile -> {
                   tile.rotateCW();
                   tile.flipY();
                 });
-            put(String.format(format, Edge.BOTTOM, Edge.LEFT_REVERSE), Tile::rotateCW);
-            put(String.format(format, Edge.BOTTOM, Edge.RIGHT), Tile::rotateCCW);
+            put(String.format(FORMAT, Edge.BOTTOM, Edge.LEFT_REVERSE), Tile::rotateCW);
+            put(String.format(FORMAT, Edge.BOTTOM, Edge.RIGHT), Tile::rotateCCW);
             put(
-                String.format(format, Edge.BOTTOM, Edge.RIGHT_REVERSE),
+                String.format(FORMAT, Edge.BOTTOM, Edge.RIGHT_REVERSE),
                 tile -> {
                   tile.rotateCCW();
                   tile.flipY();
                 });
           }
         };
-    private long id;
+    private final long id;
     private List<char[]> pixels = new ArrayList<>();
-    private List<Tile> neighbours = new ArrayList<>();
+    private final List<Tile> neighbours = new ArrayList<>();
 
     public Tile(long id) {
       this.id = id;
@@ -305,7 +305,7 @@ public class Part2 {
     }
 
     public void arrange(Edge other, Edge own) {
-      actions.get(String.format(format, other, own)).accept(this);
+      actions.get(String.format(FORMAT, other, own)).accept(this);
     }
 
     private char[] getEdge(Edge edge) {
@@ -382,9 +382,9 @@ public class Part2 {
     public int countRoughness(final int monsters) {
       int roughness = 0;
 
-      for (int y = 0; y < pixels.size(); ++y) {
-        for (int x = 0; x < pixels.get(y).length; ++x) {
-          if (pixels.get(y)[x] == '#') {
+      for (char[] pixel : pixels) {
+        for (final char c : pixel) {
+          if (c == '#') {
             ++roughness;
           }
         }
@@ -401,7 +401,7 @@ public class Part2 {
       TOP_REVERSE,
       BOTTOM_REVERSE,
       LEFT_REVERSE,
-      RIGHT_REVERSE;
+      RIGHT_REVERSE
     }
   }
 }

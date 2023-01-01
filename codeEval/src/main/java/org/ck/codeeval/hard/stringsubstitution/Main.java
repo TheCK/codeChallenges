@@ -32,13 +32,13 @@ public class Main {
           string.replace(replacements[i], replacements[i + 1]);
         }
 
-        System.out.println(string.toString());
+        System.out.println(string);
       }
     }
   }
 
   private static class SemiReplaceableString {
-    private List<SemiReplaceableStringItem> items = new ArrayList<>();
+    private final List<SemiReplaceableStringItem> items = new ArrayList<>();
 
     public SemiReplaceableString(String string) {
       for (char character : string.toCharArray()) {
@@ -67,10 +67,10 @@ public class Main {
         boolean matches = true;
 
         for (int j = 0; j < oldSubstring.length(); ++j) {
-          if (!(items.get(i + j).getCharacter() == oldSubstring.charAt(j))
+          if (items.get(i + j).getCharacter() != oldSubstring.charAt(j)
               || items.get(i + j).isReplaced()) {
             matches = false;
-            continue;
+            break;
           }
         }
 
@@ -93,9 +93,9 @@ public class Main {
           .collect(Collectors.joining());
     }
 
-    private class SemiReplaceableStringItem {
-      private char character;
-      private boolean replaced;
+    private static class SemiReplaceableStringItem {
+      private final char character;
+      private final boolean replaced;
 
       public SemiReplaceableStringItem(char character, boolean replaced) {
         this.character = character;

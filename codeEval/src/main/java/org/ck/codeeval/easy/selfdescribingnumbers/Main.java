@@ -23,7 +23,7 @@ public class Main {
         line = line.trim();
 
         Map<String, Integer> counts = new HashMap<>();
-        for (Integer i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) {
           String digit = line.substring(i, i + 1);
 
           if (counts.containsKey(digit)) {
@@ -33,15 +33,15 @@ public class Main {
           }
         }
 
-        for (Integer i = 0; i < 10; ++i) {
-          if (!counts.containsKey(i.toString())) {
-            counts.put(i.toString(), 0);
+        for (int i = 0; i < 10; ++i) {
+          if (!counts.containsKey(Integer.toString(i))) {
+            counts.put(Integer.toString(i), 0);
           }
         }
 
-        Boolean isSelfDescribing = true;
+        boolean isSelfDescribing = true;
         for (String digit : counts.keySet()) {
-          Integer position = Integer.valueOf(digit);
+          int position = Integer.parseInt(digit);
 
           if (counts.get(digit) > 0) {
             if (position >= line.length()) {
@@ -49,7 +49,9 @@ public class Main {
               break;
             }
 
-            if (counts.get(digit) != Integer.valueOf(line.substring(position, position + 1))) {
+            if (!counts
+                .get(digit)
+                .equals(Integer.valueOf(line.substring(position, position + 1)))) {
               isSelfDescribing = false;
               break;
             }

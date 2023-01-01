@@ -24,27 +24,25 @@ public class Main {
         track.add(line.trim());
       }
 
-      Integer lastPosition = null;
-      for (Integer i = 0; i < (track.size()); ++i) {
-        String current = track.get(i);
+      int lastPosition = -1;
+      for (String current : track) {
+        int possiblePosition = getNextPosition(current);
 
-        Integer possiblePosition = getNextPosition(current);
-
-        if (lastPosition == null || lastPosition == possiblePosition) {
+        if (lastPosition == -1 || lastPosition == possiblePosition) {
           System.out.println(
               current.substring(0, possiblePosition)
                   + "|"
-                  + current.substring(possiblePosition + 1, current.length()));
+                  + current.substring(possiblePosition + 1));
         } else if (lastPosition > possiblePosition) {
           System.out.println(
               current.substring(0, possiblePosition)
                   + "/"
-                  + current.substring(possiblePosition + 1, current.length()));
-        } else if (lastPosition < possiblePosition) {
+                  + current.substring(possiblePosition + 1));
+        } else {
           System.out.println(
               current.substring(0, possiblePosition)
                   + "\\"
-                  + current.substring(possiblePosition + 1, current.length()));
+                  + current.substring(possiblePosition + 1));
         }
 
         lastPosition = possiblePosition;
@@ -52,8 +50,8 @@ public class Main {
     }
   }
 
-  private static Integer getNextPosition(String current) {
-    Integer possiblePosition = current.indexOf("C", 0);
+  private static int getNextPosition(String current) {
+    int possiblePosition = current.indexOf("C", 0);
 
     if (possiblePosition < 0) {
       possiblePosition = current.indexOf("_", 0);

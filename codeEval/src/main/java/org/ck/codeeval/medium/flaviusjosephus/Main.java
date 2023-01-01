@@ -20,12 +20,12 @@ public class Main {
         line = line.trim();
         String[] arguments = line.split(",");
 
-        Integer size = Integer.valueOf(arguments[0]);
-        Integer n = Integer.valueOf(arguments[1]);
+        int size = Integer.parseInt(arguments[0]);
+        int n = Integer.parseInt(arguments[1]);
 
-        Integer index = 0;
-        Integer value = 0;
-        Integer count = 0;
+        int index = 0;
+        int value = 0;
+        int count = 0;
 
         Integer[] array = new Integer[size];
         while (value < size) {
@@ -47,10 +47,10 @@ public class Main {
         }
 
         StringBuilder builder = new StringBuilder();
-        for (Integer i = 0; i < size; ++i) {
-          for (Integer j = 0; j < size; ++j) {
+        for (int i = 0; i < size; ++i) {
+          for (int j = 0; j < size; ++j) {
             if (array[j] == i) {
-              builder.append(j + " ");
+              builder.append(j).append(" ");
               break;
             }
           }

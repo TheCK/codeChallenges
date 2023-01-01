@@ -1,7 +1,6 @@
 package org.ck.hackerrank.languages.java.strings.validusernameregularexpression;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 @org.ck.codechallengelib.annotation.Solution(
     id = 40202010,
@@ -12,9 +11,6 @@ import java.util.regex.Pattern;
 public class Solution {
 
   public static void main(String[] args) {
-    String regex = "\\b(\\w+)(\\s+(?i:\\1)\\b)+";
-    Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
-
     try (Scanner in = new Scanner(System.in)) {
       int n = Integer.parseInt(in.nextLine());
       while (n-- != 0) {

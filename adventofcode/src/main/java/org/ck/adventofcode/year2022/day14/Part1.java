@@ -64,12 +64,11 @@ public class Part1 {
           }
 
           newPoint = new Point(sand.x() + 1, sand.y() + 1);
-          if (!blocked.contains(newPoint)) {
-            sand = newPoint;
-            continue;
+          if (blocked.contains(newPoint)) {
+            break;
           }
 
-          break;
+          sand = newPoint;
         }
 
         if (sand.y() == maxY) {

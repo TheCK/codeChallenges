@@ -1,9 +1,9 @@
 package org.ck.adventofcode.year2020.day18;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Queue;
 import java.util.Scanner;
-import java.util.Stack;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -20,20 +20,19 @@ public class Part2 {
         String line = in.nextLine();
 
         Queue<Object> rpn = new ArrayDeque<>();
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new ArrayDeque<>();
 
         for (char character : line.trim().toCharArray()) {
           switch (character) {
             case ' ':
               break;
-            case '+':
-            case '*':
+            case '+', '*':
               while (!stack.isEmpty() && stack.peek() != '(') {
-                if (character <= stack.peek()) {
-                  rpn.add(stack.pop());
-                  continue;
+                if (character > stack.peek()) {
+                  break;
                 }
-                break;
+
+                rpn.add(stack.pop());
               }
               stack.push(character);
               break;
@@ -52,16 +51,16 @@ public class Part2 {
           }
         }
 
-        while (!stack.empty()) {
+        while (!stack.isEmpty()) {
           rpn.add(stack.pop());
         }
 
-        Stack<Object> rpnStack = new Stack<>();
+        Deque<Object> rpnStack = new ArrayDeque<>();
         for (Object token : rpn) {
           if (token instanceof Long) {
             rpnStack.push(token);
-          } else if (token instanceof Character) {
-            if ((Character) token == '+') {
+          } else if (token instanceof Character character) {
+            if (character == '+') {
               rpnStack.push((Long) rpnStack.pop() + (Long) rpnStack.pop());
             } else {
               rpnStack.push((Long) rpnStack.pop() * (Long) rpnStack.pop());

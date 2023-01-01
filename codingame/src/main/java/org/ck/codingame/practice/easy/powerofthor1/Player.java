@@ -22,7 +22,7 @@ public class Player {
       int diffY = lightY - initialTy;
 
       while (true) {
-        int remainingTurns = in.nextInt();
+        in.nextInt();
 
         StringBuilder direction = new StringBuilder();
         if (diffY < 0) {

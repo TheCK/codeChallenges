@@ -3,9 +3,10 @@ package org.ck.codeeval.medium.sequencetransformation;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.Stack;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -20,7 +21,6 @@ public class Main {
     try (BufferedReader buffer = new BufferedReader(new FileReader(file))) {
       String line;
       while ((line = buffer.readLine()) != null) {
-        long start = System.currentTimeMillis();
         line = line.trim();
         String[] array = line.split(" ");
 
@@ -29,7 +29,7 @@ public class Main {
 
         boolean matches = false;
 
-        Stack<Position> queue = new Stack<>();
+        Deque<Position> queue = new ArrayDeque<>();
         queue.push(new Position(0, 0, 'x'));
 
         Set<Position> cache = new HashSet<>();
@@ -106,10 +106,10 @@ public class Main {
   }
 
   private static class Position {
-    private int patternPosition;
-    private int resultPosition;
+    private final int patternPosition;
+    private final int resultPosition;
 
-    private char lastChoice;
+    private final char lastChoice;
 
     public Position(int patternPosition, int resultPosition, char lastChoice) {
       this.patternPosition = patternPosition;
@@ -132,9 +132,7 @@ public class Main {
 
     @Override
     public boolean equals(Object object) {
-      if (object instanceof Position) {
-        Position position = (Position) object;
-
+      if (object instanceof Position position) {
         return this.getPatternPosition() == position.getPatternPosition()
             && this.getResultPosition() == position.getResultPosition()
             && this.getLastChoice() == position.getLastChoice();
@@ -147,7 +145,7 @@ public class Main {
     public int hashCode() {
       int result = patternPosition;
       result = 31 * result + resultPosition;
-      result = 31 * result + (int) lastChoice;
+      result = 31 * result + lastChoice;
 
       return result;
     }

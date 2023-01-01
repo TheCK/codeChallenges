@@ -9,7 +9,7 @@ package org.ck.hackerrank.languages.java.objectorientedprogramming.methodoverrid
 public class Solution {
 
   public static void main(String[] args) {
-    MotorCycle M = new MotorCycle();
+    new MotorCycle();
   }
 
   private static class BiCycle {
@@ -19,6 +19,7 @@ public class Solution {
   }
 
   private static class MotorCycle extends BiCycle {
+    @Override
     String define_me() {
       return "a cycle with an engine.";
     }

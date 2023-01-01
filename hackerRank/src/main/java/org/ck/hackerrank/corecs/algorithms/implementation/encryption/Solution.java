@@ -18,11 +18,11 @@ public class Solution {
       int rows = minLength;
       int columns = minLength;
 
-      if (!(rows * columns >= text.length())) {
+      if (rows * columns < text.length()) {
         ++columns;
       }
 
-      if (!(rows * columns >= text.length())) {
+      if (rows * columns < text.length()) {
         ++rows;
       }
 
@@ -50,7 +50,7 @@ public class Solution {
         }
       }
 
-      System.out.println(encrypted.toString());
+      System.out.println(encrypted);
     }
   }
 }

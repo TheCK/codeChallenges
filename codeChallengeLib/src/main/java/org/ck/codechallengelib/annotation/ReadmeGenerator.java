@@ -14,7 +14,7 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic.Kind;
 
-@SupportedAnnotationTypes("org.ck.codeChallengeLib.annotation.Solution")
+@SupportedAnnotationTypes("org.ck.codechallengelib.annotation.Solution")
 public class ReadmeGenerator extends AbstractProcessor {
   private static void processCategories(
       FileWriter writer, Messager messager, Map<String, List<SolutionInfo>> byCategory)

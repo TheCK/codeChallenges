@@ -158,7 +158,7 @@ public class Main {
 
       @Override
       public boolean isAllowed(String action) {
-        return !action.equals("read");
+        return !"read".equals(action);
       }
     },
     READ {
@@ -173,7 +173,7 @@ public class Main {
 
       @Override
       public boolean isAllowed(String action) {
-        return action.equals("read");
+        return "read".equals(action);
       }
     },
     READ_GRANT {

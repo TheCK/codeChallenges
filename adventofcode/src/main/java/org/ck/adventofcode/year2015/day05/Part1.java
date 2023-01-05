@@ -10,9 +10,9 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2015/day/5",
     category = "2015")
 public class Part1 {
-  public static List<Character> vowels = List.of('a', 'e', 'i', 'o', 'u');
+  private static final List<Character> vowels = List.of('a', 'e', 'i', 'o', 'u');
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
     int nice = 0;
 
     try (Scanner in = new Scanner(System.in)) {

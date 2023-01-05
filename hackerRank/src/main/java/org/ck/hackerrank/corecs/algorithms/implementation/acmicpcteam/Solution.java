@@ -11,28 +11,28 @@ import java.util.Scanner;
 public class Solution {
   public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {
-      Integer persons = in.nextInt();
-      Integer topics = in.nextInt();
+      int persons = in.nextInt();
+      int topics = in.nextInt();
       in.nextLine();
 
-      Boolean[][] personCapabilities = new Boolean[persons][topics];
+      boolean[][] personCapabilities = new boolean[persons][topics];
 
-      for (Integer i = 0; i < persons; ++i) {
+      for (int i = 0; i < persons; ++i) {
         String person = in.nextLine();
 
-        for (Integer j = 0; j < person.length(); ++j) {
-          personCapabilities[i][j] = person.substring(j, j + 1).equals("1");
+        for (int j = 0; j < person.length(); ++j) {
+          personCapabilities[i][j] = person.charAt(j) == '1';
         }
       }
 
-      Integer groupsThatCoverMax = 0;
-      Integer maxTopicCount = 0;
+      int groupsThatCoverMax = 0;
+      int maxTopicCount = 0;
 
-      for (Integer i = 0; i < persons - 1; ++i) {
-        for (Integer j = i + 1; j < persons; ++j) {
+      for (int i = 0; i < persons - 1; ++i) {
+        for (int j = i + 1; j < persons; ++j) {
           Integer currentTopicCount = 0;
 
-          for (Integer k = 0; k < topics; ++k) {
+          for (int k = 0; k < topics; ++k) {
             if (personCapabilities[i][k] || personCapabilities[j][k]) {
               ++currentTopicCount;
             }

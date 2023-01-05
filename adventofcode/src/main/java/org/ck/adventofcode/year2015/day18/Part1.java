@@ -38,13 +38,13 @@ public class Part1 {
                   continue;
                 }
 
-                if (grid.get(dx).get(dy).equals("#")) {
+                if ("#".equals(grid.get(dx).get(dy))) {
                   ++alive;
                 }
               }
             }
 
-            if (grid.get(x).get(y).equals("#")) {
+            if ("#".equals(grid.get(x).get(y))) {
               if (alive >= 2 && alive <= 3) {
                 copy.get(x).add("#");
               } else {
@@ -66,7 +66,7 @@ public class Part1 {
       int alive = 0;
       for (List<String> strings : grid) {
         for (String string : strings) {
-          if (string.equals("#")) {
+          if ("#".equals(string)) {
             ++alive;
           }
         }

@@ -27,7 +27,7 @@ public class Main {
         int count = 0;
         for (int row = 0; row < field.length; ++row) {
           for (int column = 0; column < field[0].length; ++column) {
-            field[row][column] = arguments[1].substring(count, count + 1).equals("*");
+            field[row][column] = arguments[1].charAt(count) == '*';
             ++count;
           }
         }

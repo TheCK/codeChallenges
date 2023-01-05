@@ -16,7 +16,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2019/day/9",
     category = "2019")
 public class Part1 {
-  public static int CORES = 1;
+  private static final int CORES = 1;
 
   public static void main(String[] args) throws Exception {
     List<Long> memory = new ArrayList<>();
@@ -43,7 +43,7 @@ public class Part1 {
     ExecutorService es = Executors.newCachedThreadPool();
     for (int i = 0; i < CORES; ++i) {
       Queue<Long> input = pipes.get(i);
-      Queue<Long> output = pipes.get((i + 1) % CORES);
+      Queue<Long> output = pipes.get(0);
 
       es.execute(() -> new Computer(memory).run(input, output));
     }
@@ -59,7 +59,7 @@ public class Part1 {
   }
 
   private static class Computer {
-    private List<Long> memory = new ArrayList<>();
+    private final List<Long> memory = new ArrayList<>();
     private int memPointer = 0;
     private int relativeBase = 0;
 
@@ -69,11 +69,11 @@ public class Part1 {
 
     public void run(Queue<Long> inputs, Queue<Long> outputs) {
       while (get(memPointer) != 99) {
-        int opCode = (int) (long) get(memPointer);
-        Operation operation = Operation.of((int) (opCode % 100));
+        int opCode = (int) get(memPointer);
+        Operation operation = Operation.of((opCode % 100));
 
         int[] modes = getModes(operation, opCode);
-        long[] params = getParams(memory, operation, modes);
+        long[] params = getParams(operation, modes);
 
         boolean jumped = false;
         switch (operation) {
@@ -152,35 +152,24 @@ public class Part1 {
       return modes;
     }
 
-    private long[] getParams(List<Long> memory, Operation operation, int[] modes) {
+    private long[] getParams(Operation operation, int[] modes) {
       long[] params = new long[operation.getParams()];
 
       for (int i = 0; i < operation.getReadParams(); ++i) {
         switch (modes[i]) {
-          case 0:
-            params[i] = get((int) get(memPointer + i + 1));
-            break;
-          case 1:
-            params[i] = get(memPointer + i + 1);
-            break;
-          case 2:
-            params[i] = get(relativeBase + (int) get(memPointer + i + 1));
-            break;
-          default:
-            throw new RuntimeException("This should not happen: Invalid read param mode!");
+          case 0 -> params[i] = get((int) get(memPointer + i + 1));
+          case 1 -> params[i] = get(memPointer + i + 1);
+          case 2 -> params[i] = get(relativeBase + (int) get(memPointer + i + 1));
+          default -> throw new RuntimeException("This should not happen: Invalid read param mode!");
         }
       }
 
       for (int i = operation.getReadParams(); i < operation.getParams(); ++i) {
         switch (modes[i]) {
-          case 0:
-            params[i] = get(memPointer + i + 1);
-            break;
-          case 2:
-            params[i] = relativeBase + get(memPointer + i + 1);
-            break;
-          default:
-            throw new RuntimeException("This should not happen: Invalid write param mode!");
+          case 0 -> params[i] = get(memPointer + i + 1);
+          case 2 -> params[i] = relativeBase + get(memPointer + i + 1);
+          default -> throw new RuntimeException(
+              "This should not happen: Invalid write param mode!");
         }
       }
 
@@ -198,9 +187,8 @@ public class Part1 {
       EQ(2, 1),
       SET_RB(1, 0);
 
-      private int opCode;
-      private int readParams;
-      private int writeParams;
+      private final int readParams;
+      private final int writeParams;
 
       Operation(int readParams, int writeParams) {
         this.readParams = readParams;

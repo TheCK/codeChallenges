@@ -51,15 +51,13 @@ public class Main {
 
     String fromBefore = getFor(position / 2, depth - 1);
 
-    String fromHere = "";
-
-    if (fromBefore.equals("0")) {
-      fromHere = "01";
-    } else if (fromBefore.equals("1")) {
-      fromHere = "12";
-    } else if (fromBefore.equals("2")) {
-      fromHere = "20";
-    }
+    String fromHere =
+        switch (fromBefore) {
+          case "0" -> "01";
+          case "1" -> "12";
+          case "2" -> "20";
+          default -> "";
+        };
 
     if (position % 2 == 0) {
       return fromHere.substring(0, 1);

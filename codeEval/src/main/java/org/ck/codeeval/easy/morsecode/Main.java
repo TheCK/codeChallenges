@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -15,11 +14,46 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://www.codeeval.com/open_challenges/116/",
     category = "Easy challenges")
 public class Main {
-  private static Map<String, String> morseCode = new HashMap<>();
+  private static final Map<String, String> MORSE_CODE =
+      Map.ofEntries(
+          Map.entry(".-", "A"),
+          Map.entry("-...", "B"),
+          Map.entry("-.-.", "C"),
+          Map.entry("-..", "D"),
+          Map.entry(".", "E"),
+          Map.entry("..-.", "F"),
+          Map.entry("--.", "G"),
+          Map.entry("....", "H"),
+          Map.entry("..", "I"),
+          Map.entry(".---", "J"),
+          Map.entry("-.-", "K"),
+          Map.entry(".-..", "L"),
+          Map.entry("--", "M"),
+          Map.entry("-.", "N"),
+          Map.entry("---", "O"),
+          Map.entry(".--.", "P"),
+          Map.entry("--.-", "Q"),
+          Map.entry(".-.", "R"),
+          Map.entry("...", "S"),
+          Map.entry("-", "T"),
+          Map.entry("..-", "U"),
+          Map.entry("...-", "V"),
+          Map.entry(".--", "W"),
+          Map.entry("-..-", "X"),
+          Map.entry("-.--", "Y"),
+          Map.entry("--..", "Z"),
+          Map.entry("-----", "0"),
+          Map.entry(".----", "1"),
+          Map.entry("..---", "2"),
+          Map.entry("...--", "3"),
+          Map.entry("....-", "4"),
+          Map.entry(".....", "5"),
+          Map.entry("-....", "6"),
+          Map.entry("--...", "7"),
+          Map.entry("---..", "8"),
+          Map.entry("----.", "9"));
 
   public static void main(String[] args) throws IOException {
-    setUpTable();
-
     File file = new File(args[0]);
     try (BufferedReader buffer = new BufferedReader(new FileReader(file))) {
       String line;
@@ -29,54 +63,15 @@ public class Main {
 
         StringBuilder builder = new StringBuilder();
         for (String letter : letters) {
-          if (letter.equals("")) {
+          if ("".equals(letter)) {
             builder.append(" ");
           } else {
-            builder.append(morseCode.get(letter));
+            builder.append(MORSE_CODE.get(letter));
           }
         }
 
         System.out.println(builder);
       }
     }
-  }
-
-  private static void setUpTable() {
-    morseCode.put(".-", "A");
-    morseCode.put("-...", "B");
-    morseCode.put("-.-.", "C");
-    morseCode.put("-..", "D");
-    morseCode.put(".", "E");
-    morseCode.put("..-.", "F");
-    morseCode.put("--.", "G");
-    morseCode.put("....", "H");
-    morseCode.put("..", "I");
-    morseCode.put(".---", "J");
-    morseCode.put("-.-", "K");
-    morseCode.put(".-..", "L");
-    morseCode.put("--", "M");
-    morseCode.put("-.", "N");
-    morseCode.put("---", "O");
-    morseCode.put(".--.", "P");
-    morseCode.put("--.-", "Q");
-    morseCode.put(".-.", "R");
-    morseCode.put("...", "S");
-    morseCode.put("-", "T");
-    morseCode.put("..-", "U");
-    morseCode.put("...-", "V");
-    morseCode.put(".--", "W");
-    morseCode.put("-..-", "X");
-    morseCode.put("-.--", "Y");
-    morseCode.put("--..", "Z");
-    morseCode.put("-----", "0");
-    morseCode.put(".----", "1");
-    morseCode.put("..---", "2");
-    morseCode.put("...--", "3");
-    morseCode.put("....-", "4");
-    morseCode.put(".....", "5");
-    morseCode.put("-....", "6");
-    morseCode.put("--...", "7");
-    morseCode.put("---..", "8");
-    morseCode.put("----.", "9");
   }
 }

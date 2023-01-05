@@ -43,25 +43,25 @@ public class Main {
         stack.push(Double.parseDouble(token));
       }
 
-      if (token.equals("+")) {
+      if ("+".equals(token)) {
         stack.push(stack.pop() + stack.pop());
       }
-      if (token.equals("-")) {
+      if ("-".equals(token)) {
         Double right = stack.pop();
         stack.push(stack.pop() - right);
       }
-      if (token.equals("*")) {
+      if ("*".equals(token)) {
         stack.push(stack.pop() * stack.pop());
       }
-      if (token.equals("/")) {
+      if ("/".equals(token)) {
         Double right = stack.pop();
         stack.push(stack.pop() / right);
       }
-      if (token.equals("^")) {
+      if ("^".equals(token)) {
         Double right = stack.pop();
         stack.push(Math.pow(stack.pop(), right));
       }
-      if (token.equals("#")) {
+      if ("#".equals(token)) {
         stack.push(stack.pop() * -1);
       }
     }
@@ -91,11 +91,11 @@ public class Main {
 
         stack.push(token);
       }
-      if (token.equals("(")) {
+      if ("(".equals(token)) {
         stack.push(token);
       }
-      if (token.equals(")")) {
-        while (!stack.isEmpty() && !stack.peek().equals("(")) {
+      if (")".equals(token)) {
+        while (!stack.isEmpty() && !"(".equals(stack.peek())) {
           postfix.add(stack.pop());
         }
         stack.pop();
@@ -109,32 +109,32 @@ public class Main {
   }
 
   private static int getPrecedence(String token) {
-    if (token.equals("^")) {
+    if ("^".equals(token)) {
       return 3;
     }
-    if (token.equals("#")) {
+    if ("#".equals(token)) {
       return 3;
     }
-    if (token.equals("*") || token.equals("/")) {
+    if ("*".equals(token) || "/".equals(token)) {
       return 1;
     }
-    if (token.equals("+") || token.equals("-")) {
+    if ("+".equals(token) || "-".equals(token)) {
       return 0;
     }
     return 0;
   }
 
   private static boolean isLeftAssociative(String token) {
-    return token.equals("-") || token.equals("*") || token.equals("+") || token.equals("/");
+    return "-".equals(token) || "*".equals(token) || "+".equals(token) || "/".equals(token);
   }
 
   private static boolean isOperator(String token) {
-    return token.equals("-")
-        || token.equals("^")
-        || token.equals("*")
-        || token.equals("/")
-        || token.equals("+")
-        || token.equals("#");
+    return "-".equals(token)
+        || "^".equals(token)
+        || "*".equals(token)
+        || "/".equals(token)
+        || "+".equals(token)
+        || "#".equals(token);
   }
 
   private static boolean isNumerical(String token) {
@@ -174,7 +174,7 @@ public class Main {
 
       if (charType == currentType || currentType == TokenType.UNDEFINED) {
         if (currentType == TokenType.OPERATOR) {
-          if (character == '-' && !token.equals(")")) {
+          if (character == '-' && !")".equals(token)) {
             tokens.add(token);
             token = "#";
           } else {

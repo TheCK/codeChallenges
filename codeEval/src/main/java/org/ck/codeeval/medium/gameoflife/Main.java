@@ -27,7 +27,7 @@ public class Main {
         }
 
         for (int column = 0; column < line.length(); ++column) {
-          field[row][column] = line.substring(column, column + 1).equals("*");
+          field[row][column] = line.charAt(column) == '*';
         }
 
         ++row;
@@ -37,14 +37,12 @@ public class Main {
         field = live(field);
       }
 
-      if (field != null) {
-        for (row = 0; row < field.length; ++row) {
-          for (int column = 0; column < field[row].length; ++column) {
-            System.out.print(field[row][column] ? "*" : ".");
-          }
-
-          System.out.println("");
+      for (row = 0; row < field.length; ++row) {
+        for (int column = 0; column < field[row].length; ++column) {
+          System.out.print(field[row][column] ? "*" : ".");
         }
+
+        System.out.println("");
       }
     }
   }
@@ -58,11 +56,7 @@ public class Main {
 
         if (count == 3 && !field[row][column]) {
           newField[row][column] = true;
-        } else if (field[row][column] && (count == 2 || count == 3)) {
-          newField[row][column] = true;
-        } else {
-          newField[row][column] = false;
-        }
+        } else newField[row][column] = field[row][column] && (count == 2 || count == 3);
       }
     }
 

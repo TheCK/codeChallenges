@@ -13,7 +13,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2019/day/12",
     category = "2019")
 public class Part1 {
-  public static Pattern pattern = Pattern.compile("x=([0-9-]+), y=([0-9-]+), z=([0-9-]+)");
+  private static final Pattern pattern = Pattern.compile("x=([0-9-]+), y=([0-9-]+), z=([0-9-]+)");
 
   public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {

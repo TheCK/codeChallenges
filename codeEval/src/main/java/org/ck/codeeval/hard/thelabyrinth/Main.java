@@ -37,14 +37,14 @@ public class Main {
     for (int i = 0; i < lines.size(); ++i) {
       for (int j = 0; j < lines.get(i).length(); ++j) {
         field[i][j] = lines.get(i).substring(j, j + 1);
-        bField[i][j] = lines.get(i).substring(j, j + 1).equals(" ");
+        bField[i][j] = lines.get(i).charAt(j) == ' ';
       }
     }
 
     List<Point> path =
         go(
             bField,
-            new ArrayList<Point>(),
+            new ArrayList<>(),
             lines.size() - 1,
             lines.get(0).length() - 1,
             0,

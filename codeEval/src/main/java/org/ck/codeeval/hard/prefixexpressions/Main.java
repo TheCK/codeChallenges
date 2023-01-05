@@ -3,8 +3,9 @@ package org.ck.codeeval.hard.prefixexpressions;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Stack;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -22,13 +23,11 @@ public class Main {
         line = line.trim();
         String[] arguments = line.split(" ");
 
-        Stack<String> operators = new Stack<>();
+        Deque<String> operators = new ArrayDeque<>();
         LinkedList<Double> operands = new LinkedList<>();
 
-        for (int i = 0; i < arguments.length; ++i) {
-          String argument = arguments[i];
-
-          if (argument.equals("+") || argument.equals("*") || argument.equals("/")) {
+        for (String argument : arguments) {
+          if ("+".equals(argument) || "*".equals(argument) || "/".equals(argument)) {
             operators.push(argument);
           } else {
             operands.add(Double.valueOf(argument));
@@ -39,19 +38,13 @@ public class Main {
           Double operand1 = operands.removeFirst();
           Double operand2 = operands.removeFirst();
 
-          Double result = 0D;
-
-          switch (operators.pop()) {
-            case "+":
-              result = operand1 + operand2;
-              break;
-            case "*":
-              result = operand1 * operand2;
-              break;
-            case "/":
-              result = operand1 / operand2;
-              break;
-          }
+          double result =
+              switch (operators.pop()) {
+                case "+" -> operand1 + operand2;
+                case "*" -> operand1 * operand2;
+                case "/" -> operand1 / operand2;
+                default -> 0D;
+              };
 
           operands.push(result);
         }

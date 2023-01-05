@@ -14,7 +14,7 @@ import org.ck.codechallengelib.annotation.Solution;
     category = "Hard challenges",
     solved = false)
 public class Main {
-  private static Map<String, Integer> cache = new HashMap<>();
+  private static final Map<String, Integer> CACHE = new HashMap<>();
 
   public static void main(String[] args) throws Exception {
     File file = new File(args[0]);
@@ -33,7 +33,7 @@ public class Main {
           String candidate = input.substring(i, i + wanted.length());
           Integer distance = levenshtein(candidate, wanted);
 
-          if (distance.intValue() <= mismatch) {
+          if (distance <= mismatch) {
             if (!matches.containsKey(distance)) {
               matches.put(distance, new ArrayList<>());
             }
@@ -48,10 +48,10 @@ public class Main {
         }
 
         StringBuilder builder = new StringBuilder();
-        for (Integer distance : matches.keySet()) {
-          Collections.sort(matches.get(distance));
-          for (String match : matches.get(distance)) {
-            builder.append(match + " ");
+        for (Map.Entry<Integer, List<String>> distance : matches.entrySet()) {
+          Collections.sort(distance.getValue());
+          for (String match : distance.getValue()) {
+            builder.append(match).append(" ");
           }
         }
 
@@ -66,11 +66,11 @@ public class Main {
       return 0;
     }
 
-    if (a.equals("")) {
+    if ("".equals(a)) {
       return b.length();
     }
 
-    if (b.equals("")) {
+    if ("".equals(b)) {
       return a.length();
     }
 
@@ -79,8 +79,8 @@ public class Main {
     }
 
     String key = a + " " + b;
-    if (cache.containsKey(key)) {
-      return cache.get(key);
+    if (CACHE.containsKey(key)) {
+      return CACHE.get(key);
     }
 
     int lefSub = levenshtein(a.substring(1), b.substring(1));
@@ -88,7 +88,7 @@ public class Main {
     int lefDelB = levenshtein(a, b.substring(1));
 
     int distance = 1 + Math.min(Math.min(lefDelA, lefDelB), lefSub);
-    cache.put(key, distance);
+    CACHE.put(key, distance);
 
     return distance;
   }

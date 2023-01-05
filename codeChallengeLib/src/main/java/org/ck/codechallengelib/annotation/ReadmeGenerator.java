@@ -82,35 +82,35 @@ public class ReadmeGenerator extends AbstractProcessor {
       write(writer, messager, "");
 
       for (SolutionInfo info : infosInThisSubCategory) {
-        write(writer, messager, getLinkLine("[%s]: %s", info));
+        write(writer, messager, getLinkLine(info));
       }
 
       write(writer, messager, "");
 
       for (SolutionInfo info : infosInThisSubCategory) {
-        write(writer, messager, getSolutionLinkLine("[%ssolution]: %s", info));
+        write(writer, messager, getSolutionLinkLine(info));
       }
 
       write(writer, messager, "");
 
       for (SolutionInfo info : infosInThisSubCategory) {
-        write(writer, messager, getTestsLinkLine("[%stests]: %s", info));
+        write(writer, messager, getTestsLinkLine(info));
       }
 
       write(writer, messager, "");
     }
   }
 
-  private static String getTestsLinkLine(String formatString, SolutionInfo info) {
-    return String.format(formatString, info.getId(), info.getTestPath());
+  private static String getTestsLinkLine(SolutionInfo info) {
+    return String.format("[%stests]: %s", info.getId(), info.getTestPath());
   }
 
-  private static String getSolutionLinkLine(String formatString, SolutionInfo info) {
-    return String.format(formatString, info.getId(), info.getSolutionPath());
+  private static String getSolutionLinkLine(SolutionInfo info) {
+    return String.format("[%ssolution]: %s", info.getId(), info.getSolutionPath());
   }
 
-  private static String getLinkLine(String linkFormat, SolutionInfo info) {
-    return String.format(linkFormat, info.getId(), info.getUrl());
+  private static String getLinkLine(SolutionInfo info) {
+    return String.format("[%s]: %s", info.getId(), info.getUrl());
   }
 
   private static String getTableRow(String formatString, SolutionInfo info) {
@@ -122,7 +122,7 @@ public class ReadmeGenerator extends AbstractProcessor {
       solution = "&#9989;" + solution;
       tests = "&#9989;" + tests;
     }
-    if (info.getDescription().equals("")) {
+    if ("".equals(info.getDescription())) {
       name = String.format("[%s][%s]", info.getName(), info.getId());
     }
 
@@ -135,7 +135,7 @@ public class ReadmeGenerator extends AbstractProcessor {
     int solutionLength = idlength + 28;
     int testsLength = idlength + 25;
 
-    String formatString = null;
+    String formatString;
 
     if (actualDescriptionLength != 0) {
       actualDescriptionLength += idlength + 4;
@@ -164,7 +164,7 @@ public class ReadmeGenerator extends AbstractProcessor {
     int solutionLength = idlength + 28;
     int testsLength = idlength + 25;
 
-    String formatString = null;
+    String formatString;
 
     if (actualDescriptionLength != 0) {
       actualDescriptionLength += idlength + 4;
@@ -184,7 +184,7 @@ public class ReadmeGenerator extends AbstractProcessor {
   }
 
   private static String getSubHeading(String subCategory, int solved, int all) {
-    return String.format("\n## %s (%d/%d)", subCategory, solved, all);
+    return String.format("%n## %s (%d/%d)", subCategory, solved, all);
   }
 
   private static void write(FileWriter writer, Messager messager, String message)
@@ -238,7 +238,7 @@ public class ReadmeGenerator extends AbstractProcessor {
               solution.category(),
               solution.subCategory(),
               solution.solved(),
-              TypeElement.class.cast(element).getQualifiedName().toString()));
+              ((TypeElement) element).getQualifiedName().toString()));
     }
     return infos;
   }
@@ -248,7 +248,7 @@ public class ReadmeGenerator extends AbstractProcessor {
     return SourceVersion.latestSupported();
   }
 
-  private class SolutionInfo implements Comparable<SolutionInfo> {
+  private static class SolutionInfo implements Comparable<SolutionInfo> {
     Integer id;
 
     String name;
@@ -275,10 +275,7 @@ public class ReadmeGenerator extends AbstractProcessor {
 
       this.name = name;
       this.description =
-          description
-              .replaceAll("\\|", "&#124;")
-              .replaceAll("\\[", "&#91;")
-              .replaceAll("]", "&#93;");
+          description.replace("|", "&#124;").replace("[", "&#91;").replace("]", "&#93;");
       this.url = url;
 
       this.category = category;
@@ -330,7 +327,7 @@ public class ReadmeGenerator extends AbstractProcessor {
     }
 
     private String getNameAsPath() {
-      return this.fullyQualifiedName.replaceAll("\\.", "/");
+      return this.fullyQualifiedName.replace(".", "/");
     }
 
     @Override

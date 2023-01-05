@@ -76,7 +76,7 @@ public class Part1 {
     for (String item : toCheck) {
       String[] split = item.split("");
 
-      if (split[1].equals("G")) {
+      if ("G".equals(split[1])) {
         containsGenerator = true;
         break;
       }
@@ -86,7 +86,7 @@ public class Part1 {
       for (String item : toCheck) {
         String[] split = item.split("");
 
-        if (split[1].equals("M") && !toCheck.contains(split[0] + "G")) {
+        if ("M".equals(split[1]) && !toCheck.contains(split[0] + "G")) {
           return false;
         }
       }

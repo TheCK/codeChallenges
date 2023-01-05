@@ -27,9 +27,7 @@ public class Main {
         for (int i = 0; i < rows.length; ++i) {
           String[] currentColum = rows[i].trim().split(" ");
 
-          for (int j = 0; j < currentColum.length; ++j) {
-            map[i][j] = currentColum[j];
-          }
+          System.arraycopy(currentColum, 0, map[i], 0, currentColum.length);
         }
 
         int lakes = 0;
@@ -38,7 +36,7 @@ public class Main {
           String[] currentColum = rows[i].trim().split(" ");
 
           for (int j = 0; j < currentColum.length; ++j) {
-            if (map[i][j].equals("o")) {
+            if ("o".equals(map[i][j])) {
               map = markLake(map, i, j, ++lakes);
             }
           }
@@ -52,28 +50,28 @@ public class Main {
   private static String[][] markLake(String[][] map, int i, int j, int lakes) {
     map[i][j] = String.valueOf(lakes);
 
-    if (i > 0 && j > 0 && map[i - 1][j - 1].equals("o")) {
+    if (i > 0 && j > 0 && "o".equals(map[i - 1][j - 1])) {
       map = markLake(map, i - 1, j - 1, lakes);
     }
-    if (i > 0 && map[i - 1][j].equals("o")) {
+    if (i > 0 && "o".equals(map[i - 1][j])) {
       map = markLake(map, i - 1, j, lakes);
     }
-    if (i > 0 && j < map[i].length - 1 && map[i - 1][j + 1].equals("o")) {
+    if (i > 0 && j < map[i].length - 1 && "o".equals(map[i - 1][j + 1])) {
       map = markLake(map, i - 1, j + 1, lakes);
     }
-    if (j > 0 && map[i][j - 1].equals("o")) {
+    if (j > 0 && "o".equals(map[i][j - 1])) {
       map = markLake(map, i, j - 1, lakes);
     }
-    if (j < map[i].length - 1 && map[i][j + 1].equals("o")) {
+    if (j < map[i].length - 1 && "o".equals(map[i][j + 1])) {
       map = markLake(map, i, j + 1, lakes);
     }
-    if (i < map.length - 1 && j > 0 && map[i + 1][j - 1].equals("o")) {
+    if (i < map.length - 1 && j > 0 && "o".equals(map[i + 1][j - 1])) {
       map = markLake(map, i + 1, j - 1, lakes);
     }
-    if (i < map.length - 1 && map[i + 1][j].equals("o")) {
+    if (i < map.length - 1 && "o".equals(map[i + 1][j])) {
       map = markLake(map, i + 1, j, lakes);
     }
-    if (i < map.length - 1 && j < map[i].length - 1 && map[i + 1][j + 1].equals("o")) {
+    if (i < map.length - 1 && j < map[i].length - 1 && "o".equals(map[i + 1][j + 1])) {
       map = markLake(map, i + 1, j + 1, lakes);
     }
 

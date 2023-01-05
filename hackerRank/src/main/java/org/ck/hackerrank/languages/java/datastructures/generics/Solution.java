@@ -21,10 +21,12 @@ public class Solution {
     for (Method method : Printer.class.getDeclaredMethods()) {
       String name = method.getName();
 
-      if (name.equals("printArray")) count++;
+      if ("printArray".equals(name)) count++;
     }
 
-    if (count > 1) System.out.println("Method overloading is not allowed!");
+    if (count > 1) {
+      System.out.println("Method overloading is not allowed!");
+    }
   }
 
   private static class Printer {

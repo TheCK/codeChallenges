@@ -17,7 +17,7 @@ public class Part2 {
       long s = Integer.parseInt(line[0]);
       long p = 0;
       for (int pn = 1; pn < line.length; ++pn) {
-        if (line[pn].equals("x")) {
+        if ("x".equals(line[pn])) {
           continue;
         }
 

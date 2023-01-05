@@ -25,44 +25,36 @@ public class Main {
 
         byte[] status = new byte[12];
 
-        for (Integer i = 0; i < 12; ++i) {
+        for (int i = 0; i < 12; ++i) {
           status[i] = (byte) Integer.parseInt(display[i], 2);
         }
 
-        Integer digits = number.length();
+        int digits = number.length();
 
         if (number.contains(".")) {
           digits--;
         }
 
         boolean displayable = false;
-        for (Integer i = 0; i < 13 - digits; ++i) {
-          // System.out.println("Starting at: " + i);
+        for (int i = 0; i < 13 - digits; ++i) {
 
           boolean displayableFromI = true;
 
-          Integer j = 0;
-          for (Integer k = 0; k < number.length(); ++k) {
+          int j = 0;
+          for (int k = 0; k < number.length(); ++k) {
             String digit = number.substring(k, k + 1);
             boolean withPoint = false;
 
-            if (digit.equals(".")) {
+            if (".".equals(digit)) {
               continue;
             }
 
             if (k + 1 < number.length()) {
-              withPoint = number.substring(k + 1, k + 2).equals(".");
+              withPoint = number.charAt(k + 1) == '.';
             }
 
-            // System.out.println("Can " + digit + " ( " +
-            // Integer.toBinaryString(getDigitCode(digit, withPoint)) + " ) display on " +
-            // Integer.toBinaryString(status[i + j]));
-
             displayableFromI =
-                displayableFromI
-                    && (getDigitCode(digit, withPoint)
-                        == (status[i + j] & getDigitCode(digit, withPoint)));
-            // System.out.println(displayableFromI);
+                getDigitCode(digit, withPoint) == (status[i + j] & getDigitCode(digit, withPoint));
 
             if (!displayableFromI) {
               break;
@@ -75,8 +67,6 @@ public class Main {
             displayable = true;
             break;
           }
-
-          // System.out.println("");
         }
 
         System.out.println(displayable ? 1 : 0);
@@ -85,29 +75,20 @@ public class Main {
   }
 
   private static byte getDigitCode(String digit, boolean withPoint) {
-    byte code = 0;
-
-    if (digit.equals("0")) {
-      code = (byte) Integer.parseInt("11111100", 2);
-    } else if (digit.equals("1")) {
-      code = (byte) Integer.parseInt("01100000", 2);
-    } else if (digit.equals("2")) {
-      code = (byte) Integer.parseInt("11011010", 2);
-    } else if (digit.equals("3")) {
-      code = (byte) Integer.parseInt("11110010", 2);
-    } else if (digit.equals("4")) {
-      code = (byte) Integer.parseInt("01100110", 2);
-    } else if (digit.equals("5")) {
-      code = (byte) Integer.parseInt("10110110", 2);
-    } else if (digit.equals("6")) {
-      code = (byte) Integer.parseInt("10111110", 2);
-    } else if (digit.equals("7")) {
-      code = (byte) Integer.parseInt("11100000", 2);
-    } else if (digit.equals("8")) {
-      code = (byte) Integer.parseInt("11111110", 2);
-    } else if (digit.equals("9")) {
-      code = (byte) Integer.parseInt("11110110", 2);
-    }
+    byte code =
+        switch (digit) {
+          case "0" -> (byte) Integer.parseInt("11111100", 2);
+          case "1" -> (byte) Integer.parseInt("01100000", 2);
+          case "2" -> (byte) Integer.parseInt("11011010", 2);
+          case "3" -> (byte) Integer.parseInt("11110010", 2);
+          case "4" -> (byte) Integer.parseInt("01100110", 2);
+          case "5" -> (byte) Integer.parseInt("10110110", 2);
+          case "6" -> (byte) Integer.parseInt("10111110", 2);
+          case "7" -> (byte) Integer.parseInt("11100000", 2);
+          case "8" -> (byte) Integer.parseInt("11111110", 2);
+          case "9" -> (byte) Integer.parseInt("11110110", 2);
+          default -> 0;
+        };
 
     if (withPoint) {
       code = (byte) (code | ((byte) 1));

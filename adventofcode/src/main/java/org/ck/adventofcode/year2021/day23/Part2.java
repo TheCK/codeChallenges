@@ -9,25 +9,9 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2021/day/23#part2",
     category = "2021")
 public class Part2 {
-  private static final Map<String, Integer> costs =
-      new HashMap<>() {
-        {
-          put("A", 1);
-          put("B", 10);
-          put("C", 100);
-          put("D", 1000);
-        }
-      };
+  private static final Map<String, Integer> COSTS = Map.of("A", 1, "B", 10, "C", 100, "D", 1000);
 
-  private static Map<Character, Integer> offsets =
-      new HashMap<>() {
-        {
-          put('a', 3);
-          put('b', 5);
-          put('c', 7);
-          put('d', 9);
-        }
-      };
+  private static final Map<Character, Integer> OFFSETS = Map.of('a', 3, 'b', 5, 'c', 7, 'd', 9);
 
   public static void main(String[] args) {
     Map<String, String> net = new HashMap<>();
@@ -72,9 +56,9 @@ public class Part2 {
       }
 
       for (Map.Entry<String, String> source : current.net.entrySet()) {
-        if (!source.getValue().equals("") && canMoveFrom(current.net, source)) {
+        if (!"".equals(source.getValue()) && canMoveFrom(current.net, source)) {
           for (Map.Entry<String, String> target : current.net.entrySet()) {
-            if (target.getValue().equals("") && canMoveTo(current.net, source, target)) {
+            if ("".equals(target.getValue()) && canMoveTo(current.net, source, target)) {
               String pod = source.getValue();
 
               Map<String, String> newNet = new HashMap<>(current.net);
@@ -85,7 +69,7 @@ public class Part2 {
                   new State(
                       newNet,
                       current.cost
-                          + (long) getSteps(source.getKey(), target.getKey()) * costs.get(pod),
+                          + (long) getSteps(source.getKey(), target.getKey()) * COSTS.get(pod),
                       current);
 
               if (newState.isFinished()) {
@@ -110,11 +94,11 @@ public class Part2 {
     int hallwayFrom =
         source.charAt(0) == 'h'
             ? Integer.parseInt(source.substring(1))
-            : offsets.get(source.charAt(0));
+            : OFFSETS.get(source.charAt(0));
     int hallwayTo =
         target.charAt(0) == 'h'
             ? Integer.parseInt(target.substring(1))
-            : offsets.get(target.charAt(0));
+            : OFFSETS.get(target.charAt(0));
 
     return Math.abs(hallwayFrom - hallwayTo)
         + (source.charAt(0) == 'h' ? 0 : source.charAt(1) - '0')
@@ -163,16 +147,16 @@ public class Part2 {
       int hallwayFrom =
           source.getKey().charAt(0) == 'h'
               ? Integer.parseInt(source.getKey().substring(1))
-              : offsets.get(source.getKey().charAt(0));
+              : OFFSETS.get(source.getKey().charAt(0));
       int hallwayTo =
           target.getKey().charAt(0) == 'h'
               ? Integer.parseInt(target.getKey().substring(1))
-              : offsets.get(target.getKey().charAt(0));
+              : OFFSETS.get(target.getKey().charAt(0));
 
       for (int i = Math.min(hallwayFrom, hallwayTo) + 1;
           i < Math.max(hallwayFrom, hallwayTo);
           ++i) {
-        if (net.containsKey("h" + i) && !net.get("h" + i).equals("")) {
+        if (net.containsKey("h" + i) && !"".equals(net.get("h" + i))) {
           return false;
         }
       }
@@ -199,7 +183,7 @@ public class Part2 {
     int level = field.charAt(1) - '0' - 1;
 
     while (level != 0) {
-      if (!net.get("" + field.charAt(0) + level).equals("")) {
+      if (!"".equals(net.get("" + field.charAt(0) + level))) {
         return false;
       }
 
@@ -212,7 +196,7 @@ public class Part2 {
   private record State(Map<String, String> net, long cost, State old) {
     public boolean isFinished() {
       for (Map.Entry<String, String> entry : net.entrySet()) {
-        if (!entry.getValue().equals("")
+        if (!"".equals(entry.getValue())
             && !entry.getKey().startsWith(entry.getValue().toLowerCase(Locale.ROOT))) {
           return false;
         }
@@ -229,7 +213,7 @@ public class Part2 {
       Collections.sort(keys);
 
       for (String key : keys) {
-        builder.append(net.get(key).equals("") ? "." : net.get(key));
+        builder.append("".equals(net.get(key)) ? "." : net.get(key));
       }
 
       return builder.toString();

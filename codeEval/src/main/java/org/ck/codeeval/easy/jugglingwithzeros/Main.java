@@ -24,11 +24,11 @@ public class Main {
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < numbers.length; i += 2) {
-          if (numbers[i].equals("0")) {
+          if ("0".equals(numbers[i])) {
             builder.append(numbers[i + 1]);
           }
-          if (numbers[i].equals("00")) {
-            builder.append(numbers[i + 1].replaceAll("0", "1"));
+          if ("00".equals(numbers[i])) {
+            builder.append(numbers[i + 1].replace("0", "1"));
           }
         }
 

@@ -30,10 +30,10 @@ public class Main {
           values.put(nodes[0], nodes[1]);
         }
 
-        Integer count = 0;
+        int count = 0;
         String current = "BEGIN";
 
-        while (!current.equals("END")) {
+        while (!"END".equals(current)) {
           current = values.get(current);
           ++count;
 

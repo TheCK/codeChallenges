@@ -22,9 +22,9 @@ public class Main {
       while ((line = buffer.readLine()) != null) {
         line = line.trim();
         Set<String> numbers = new HashSet<>();
-        Boolean happy = true;
+        boolean happy = true;
 
-        while (!line.equals("1")) {
+        while (!"1".equals(line)) {
           line = happy(line);
 
           if (numbers.contains(line)) {
@@ -41,13 +41,14 @@ public class Main {
   }
 
   private static String happy(String line) {
-    Integer sum = 0;
+    int sum = 0;
 
     for (int i = 0; i < line.length(); ++i) {
       Integer num = Integer.parseInt(line.substring(i, i + 1));
 
       sum += num * num;
     }
-    return sum.toString();
+
+    return Integer.toString(sum);
   }
 }

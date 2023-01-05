@@ -19,7 +19,7 @@ public class Main {
       while ((line = buffer.readLine()) != null) {
         line = line.trim();
 
-        if (line.equals("0")) {
+        if ("0".equals(line)) {
           System.out.println("ZeroDollars");
         } else {
           boolean weird = false;
@@ -90,83 +90,50 @@ public class Main {
   }
 
   private static String getTens(int digit) {
-    switch (digit) {
-      case 0:
-        return "";
-      case 1:
-        return null;
-      case 2:
-        return "Twenty";
-      case 3:
-        return "Thirty";
-      case 4:
-        return "Forty";
-      case 5:
-        return "Fifty";
-      case 6:
-        return "Sixty";
-      case 7:
-        return "Seventy";
-      case 8:
-        return "Eighty";
-      case 9:
-        return "Ninety";
-      default:
-        throw new RuntimeException();
-    }
+    return switch (digit) {
+      case 0 -> "";
+      case 1 -> null;
+      case 2 -> "Twenty";
+      case 3 -> "Thirty";
+      case 4 -> "Forty";
+      case 5 -> "Fifty";
+      case 6 -> "Sixty";
+      case 7 -> "Seventy";
+      case 8 -> "Eighty";
+      case 9 -> "Ninety";
+      default -> throw new RuntimeException();
+    };
   }
 
   private static String getOnes(int digit, boolean weird) {
     if (weird) {
-      switch (digit) {
-        case 0:
-          return "Ten";
-        case 1:
-          return "Eleven";
-        case 2:
-          return "Twelve";
-        case 3:
-          return "Thirteen";
-        case 4:
-          return "Fourteen";
-        case 5:
-          return "Fifteen";
-        case 6:
-          return "Sixteen";
-        case 7:
-          return "Seventeen";
-        case 8:
-          return "Eighteen";
-        case 9:
-          return "Nineteen";
-        default:
-          throw new RuntimeException();
-      }
+      return switch (digit) {
+        case 0 -> "Ten";
+        case 1 -> "Eleven";
+        case 2 -> "Twelve";
+        case 3 -> "Thirteen";
+        case 4 -> "Fourteen";
+        case 5 -> "Fifteen";
+        case 6 -> "Sixteen";
+        case 7 -> "Seventeen";
+        case 8 -> "Eighteen";
+        case 9 -> "Nineteen";
+        default -> throw new RuntimeException();
+      };
     }
 
-    switch (digit) {
-      case 0:
-        return "";
-      case 1:
-        return "One";
-      case 2:
-        return "Two";
-      case 3:
-        return "Three";
-      case 4:
-        return "Four";
-      case 5:
-        return "Five";
-      case 6:
-        return "Six";
-      case 7:
-        return "Seven";
-      case 8:
-        return "Eight";
-      case 9:
-        return "Nine";
-      default:
-        throw new RuntimeException();
-    }
+    return switch (digit) {
+      case 0 -> "";
+      case 1 -> "One";
+      case 2 -> "Two";
+      case 3 -> "Three";
+      case 4 -> "Four";
+      case 5 -> "Five";
+      case 6 -> "Six";
+      case 7 -> "Seven";
+      case 8 -> "Eight";
+      case 9 -> "Nine";
+      default -> throw new RuntimeException();
+    };
   }
 }

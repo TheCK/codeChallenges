@@ -25,7 +25,7 @@ public class Main {
 
         for (int i = 1; i < arguments.length; ++i) {
           int numberOfNumbers = upperBoundary - lowerBoundary;
-          int guess = -1;
+          int guess;
 
           if (numberOfNumbers % 2 == 0) {
             guess = (numberOfNumbers / 2) + lowerBoundary;
@@ -33,11 +33,11 @@ public class Main {
             guess = (numberOfNumbers / 2) + lowerBoundary + 1;
           }
 
-          if (arguments[i].equals("Lower")) {
+          if ("Lower".equals(arguments[i])) {
             upperBoundary = guess - 1;
-          } else if (arguments[i].equals("Higher")) {
+          } else if ("Higher".equals(arguments[i])) {
             lowerBoundary = guess + 1;
-          } else if (arguments[i].equals("Yay!")) {
+          } else if ("Yay!".equals(arguments[i])) {
             System.out.println(guess);
           }
         }

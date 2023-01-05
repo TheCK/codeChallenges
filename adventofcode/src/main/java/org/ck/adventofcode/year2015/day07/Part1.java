@@ -11,14 +11,14 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2015/day/7",
     category = "2015")
 public class Part1 {
-  public static final Map<String, String> commands = new HashMap<>();
+  private static final Map<String, String> COMMANDS = new HashMap<>();
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
 
     try (Scanner in = new Scanner(System.in)) {
       while (in.hasNextLine()) {
         String[] split = in.nextLine().split(" -> ");
-        commands.put(split[1], split[0]);
+        COMMANDS.put(split[1], split[0]);
       }
     }
 
@@ -32,36 +32,36 @@ public class Part1 {
       // TODO ignore
     }
 
-    String command = commands.get(wire);
+    String command = COMMANDS.get(wire);
     String[] split = command.split(" ");
 
     if (command.contains("OR")) {
       int a = calculate(split[0]);
-      commands.put(split[0], String.valueOf(a));
+      COMMANDS.put(split[0], String.valueOf(a));
       int b = calculate(split[2]);
-      commands.put(split[2], String.valueOf(b));
+      COMMANDS.put(split[2], String.valueOf(b));
 
       return a | b;
     } else if (command.contains("AND")) {
       int a = calculate(split[0]);
-      commands.put(split[0], String.valueOf(a));
+      COMMANDS.put(split[0], String.valueOf(a));
       int b = calculate(split[2]);
-      commands.put(split[2], String.valueOf(b));
+      COMMANDS.put(split[2], String.valueOf(b));
 
       return a & b;
     } else if (command.contains("NOT")) {
       int a = calculate(split[1]);
-      commands.put(split[1], String.valueOf(a));
+      COMMANDS.put(split[1], String.valueOf(a));
 
       return (~a) & 0xFFFF;
     } else if (command.contains("LSHIFT")) {
       int a = calculate(split[0]);
-      commands.put(split[0], String.valueOf(a));
+      COMMANDS.put(split[0], String.valueOf(a));
 
       return (a << Integer.parseInt(split[2])) & 0xFFFF;
     } else if (command.contains("RSHIFT")) {
       int a = calculate(split[0]);
-      commands.put(split[0], String.valueOf(a));
+      COMMANDS.put(split[0], String.valueOf(a));
 
       return (a >> Integer.parseInt(split[2])) & 0xFFFF;
     }

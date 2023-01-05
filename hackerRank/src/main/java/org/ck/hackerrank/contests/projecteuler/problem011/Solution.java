@@ -9,8 +9,7 @@ import java.util.Scanner;
     category = "Contests",
     subCategory = "ProjectEuler+")
 public class Solution {
-
-  public static int[][] array = new int[20][20];
+  private static final int[][] array = new int[20][20];
 
   public static void main(String[] args) {
     try (Scanner in = new Scanner(System.in)) {

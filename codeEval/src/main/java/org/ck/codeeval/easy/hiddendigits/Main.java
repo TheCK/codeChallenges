@@ -22,28 +22,28 @@ public class Main {
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < line.length(); ++i) {
-          if (line.substring(i, i + 1).equals("a")) {
+          if (line.charAt(i) == 'a') {
             builder.append("0");
-          } else if (line.substring(i, i + 1).equals("b")) {
+          } else if (line.charAt(i) == 'b') {
             builder.append("1");
-          } else if (line.substring(i, i + 1).equals("c")) {
+          } else if (line.charAt(i) == 'c') {
             builder.append("2");
-          } else if (line.substring(i, i + 1).equals("d")) {
+          } else if (line.charAt(i) == 'd') {
             builder.append("3");
-          } else if (line.substring(i, i + 1).equals("e")) {
+          } else if (line.charAt(i) == 'e') {
             builder.append("4");
-          } else if (line.substring(i, i + 1).equals("f")) {
+          } else if (line.charAt(i) == 'f') {
             builder.append("5");
-          } else if (line.substring(i, i + 1).equals("g")) {
+          } else if (line.charAt(i) == 'g') {
             builder.append("6");
-          } else if (line.substring(i, i + 1).equals("h")) {
+          } else if (line.charAt(i) == 'h') {
             builder.append("7");
-          } else if (line.substring(i, i + 1).equals("i")) {
+          } else if (line.charAt(i) == 'i') {
             builder.append("8");
-          } else if (line.substring(i, i + 1).equals("j")) {
+          } else if (line.charAt(i) == 'j') {
             builder.append("9");
-          } else if (line.substring(i, i + 1).matches("[0-9]")) {
-            builder.append(line.substring(i, i + 1));
+          } else if (line.substring(i, i + 1).matches("\\d")) {
+            builder.append(line.charAt(i));
           }
         }
 

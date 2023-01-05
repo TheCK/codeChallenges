@@ -12,7 +12,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2021/day/8",
     category = "2021")
 public class Part1 {
-  public static Set<Integer> unique = new HashSet<>(Arrays.asList(2, 3, 4, 7));
+  private static final Set<Integer> unique = new HashSet<>(Arrays.asList(2, 3, 4, 7));
 
   public static void main(String[] args) {
     long sum = 0;

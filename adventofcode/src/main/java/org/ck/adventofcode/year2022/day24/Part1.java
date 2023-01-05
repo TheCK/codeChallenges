@@ -12,7 +12,7 @@ import org.ck.codechallengelib.annotation.Solution;
 public class Part1 {
 
   public static void main(String[] args) {
-    Set<CylcleState> previouslyVisited = new HashSet<>();
+    Set<CycleState> previouslyVisited = new HashSet<>();
 
     Set<Cyclone> cyclones = new HashSet<>();
     Set<Point> walls = new HashSet<>();
@@ -54,7 +54,7 @@ public class Part1 {
     queue.add(new State(start, 0));
     while (!queue.isEmpty()) {
       State state = queue.poll();
-      CylcleState cacheCheck = CylcleState.of(state, loopLength);
+      CycleState cacheCheck = CycleState.of(state, loopLength);
 
       if (previouslyVisited.contains(cacheCheck)) {
         continue;
@@ -152,9 +152,9 @@ public class Part1 {
     };
   }
 
-  record CylcleState(Point point, int cycle) {
-    static CylcleState of(State state, int cycleLength) {
-      return new CylcleState(state.point(), state.steps() % cycleLength);
+  record CycleState(Point point, int cycle) {
+    static CycleState of(State state, int cycleLength) {
+      return new CycleState(state.point(), state.steps() % cycleLength);
     }
   }
 

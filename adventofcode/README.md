@@ -942,7 +942,7 @@
 [20212402tests]: src/test/java/org/ck/adventofcode/year2021/day24/Part2Test.java
 [20212501tests]: src/test/java/org/ck/adventofcode/year2021/day25/Part1Test.java
 
-# 2022 (47/49)
+# 2022 (48/49)
 
 |        # | Name                                                  | Solution                             | Test                              |
 |---------:|-------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -993,7 +993,7 @@
 | 20222301 | [Day 23: Unstable Diffusion][20222301]                | &#9989;[&#128190;][20222301solution] | &#9989;[&#128190;][20222301tests] |
 | 20222302 | [Day 23: Unstable Diffusion - Part 2][20222302]       | &#9989;[&#128190;][20222302solution] | &#9989;[&#128190;][20222302tests] |
 | 20222401 | [Day 24: Blizzard Basin][20222401]                    | &#9989;[&#128190;][20222401solution] | &#9989;[&#128190;][20222401tests] |
-| 20222402 | [Day 24: Blizzard Basin - Part 2][20222402]           | [&#128190;][20222402solution]        | [&#128190;][20222402tests]        |
+| 20222402 | [Day 24: Blizzard Basin - Part 2][20222402]           | &#9989;[&#128190;][20222402solution] | &#9989;[&#128190;][20222402tests] |
 | 20222501 | [Day 25: Full of Hot Air][20222501]                   | &#9989;[&#128190;][20222501solution] | &#9989;[&#128190;][20222501tests] |
 
 [20220101]: https://adventofcode.com/2022/day/1

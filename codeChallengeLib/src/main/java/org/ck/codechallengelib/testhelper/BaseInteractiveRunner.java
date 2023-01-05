@@ -1,6 +1,6 @@
 package org.ck.codechallengelib.testhelper;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public abstract class BaseInteractiveRunner implements InteractiveRunner {
   private final int tests;
@@ -8,7 +8,7 @@ public abstract class BaseInteractiveRunner implements InteractiveRunner {
   private final int timeout;
 
   public BaseInteractiveRunner(final int maxTests, final int timeout) {
-    tests = new Random().nextInt(maxTests) + 1;
+    tests = new SecureRandom().nextInt(maxTests) + 1;
     this.timeout = timeout;
   }
 

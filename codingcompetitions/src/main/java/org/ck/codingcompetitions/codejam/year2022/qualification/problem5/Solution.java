@@ -1,6 +1,6 @@
 package org.ck.codingcompetitions.codejam.year2022.qualification.problem5;
 
-import java.util.Random;
+import java.security.SecureRandom;
 import java.util.Scanner;
 
 @org.ck.codechallengelib.annotation.Solution(
@@ -32,7 +32,7 @@ public class Solution {
 
           if (trie + 1 != tries) {
             if (trie % 2 == 0) {
-              System.out.printf("T %d%n", new Random().nextInt(rooms) + 1);
+              System.out.printf("T %d%n", new SecureRandom().nextInt(rooms) + 1);
             } else {
               System.out.printf("W%n");
             }

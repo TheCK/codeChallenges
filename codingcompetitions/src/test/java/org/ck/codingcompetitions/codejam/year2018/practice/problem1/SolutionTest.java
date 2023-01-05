@@ -1,9 +1,10 @@
 package org.ck.codingcompetitions.codejam.year2018.practice.problem1;
 
-import java.util.Random;
 import org.ck.codechallengelib.testhelper.BaseInteractiveRunner;
 import org.ck.codechallengelib.testhelper.BaseInteractiveTest;
 import org.junit.jupiter.api.Test;
+
+import java.security.SecureRandom;
 
 public class SolutionTest extends BaseInteractiveTest {
   @Test
@@ -47,7 +48,7 @@ public class SolutionTest extends BaseInteractiveTest {
 
     @Override
     public String[] setUpTest() {
-      number = new Random().nextInt(MAX_NUMBER + 1);
+      number = new SecureRandom().nextInt(MAX_NUMBER + 1);
       guesses = 0;
 
       return new String[] {"0 " + MAX_NUMBER, "30"};

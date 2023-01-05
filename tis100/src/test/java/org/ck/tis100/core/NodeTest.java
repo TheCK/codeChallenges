@@ -1,16 +1,18 @@
 package org.ck.tis100.core;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.params.provider.Arguments.arguments;
-
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
+
+import java.security.SecureRandom;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class NodeTest {
 
@@ -39,9 +41,9 @@ public class NodeTest {
 
   public static Stream<Arguments> complexSampleProvider() {
     List<Integer> numbers =
-        IntStream.generate(() -> new Random().nextInt(100))
+        IntStream.generate(() -> new SecureRandom().nextInt(100))
             .limit(500)
-            .map(n -> new Random().nextBoolean() ? n : n * -1)
+            .map(n -> new SecureRandom().nextBoolean() ? n : n * -1)
             .boxed()
             .collect(Collectors.toList());
 

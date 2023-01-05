@@ -1,8 +1,5 @@
 package org.ck.codingcompetitions.codejam.year2022.qualification.problem5;
 
-import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Stream;
 import org.ck.codechallengelib.testhelper.BaseInteractiveRunner;
 import org.ck.codechallengelib.testhelper.BaseInteractiveTest;
 import org.ck.codechallengelib.testhelper.InteractiveRunner;
@@ -10,6 +7,11 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import java.security.SecureRandom;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 @Disabled
 public class SolutionTest extends BaseInteractiveTest {
@@ -22,36 +24,36 @@ public class SolutionTest extends BaseInteractiveTest {
   private static Stream<Arguments> generator() {
     return Stream.of(
         Arguments.of(
-            "random", new TwistyLittlePassagesRunner(room -> new Random().nextInt(100) < 1)),
+            "random", new TwistyLittlePassagesRunner(room -> new SecureRandom().nextInt(100) < 1)),
         Arguments.of(
             "one with many connections",
             new TwistyLittlePassagesRunner(
                 room -> {
                   if (room == 1) {
-                    return new Random().nextInt(100) < 1;
+                    return new SecureRandom().nextInt(100) < 1;
                   }
 
-                  return new Random().nextInt(10000) < 1;
+                  return new SecureRandom().nextInt(10000) < 1;
                 })),
         Arguments.of(
             "few with many connections",
             new TwistyLittlePassagesRunner(
                 room -> {
                   if (room < 10) {
-                    return new Random().nextInt(100) < 1;
+                    return new SecureRandom().nextInt(100) < 1;
                   }
 
-                  return new Random().nextInt(10000) < 1;
+                  return new SecureRandom().nextInt(10000) < 1;
                 })),
         Arguments.of(
             "few with few connections",
             new TwistyLittlePassagesRunner(
                 room -> {
                   if (room < 10) {
-                    return new Random().nextInt(10000) < 1;
+                    return new SecureRandom().nextInt(10000) < 1;
                   }
 
-                  return new Random().nextInt(100) < 1;
+                  return new SecureRandom().nextInt(100) < 1;
                 })));
   }
 
@@ -96,7 +98,7 @@ public class SolutionTest extends BaseInteractiveTest {
           int connections = countConnections(currentRoom);
 
           if (connections > 0) {
-            int connection = new Random().nextInt(connections);
+            int connection = new SecureRandom().nextInt(connections);
 
             currentRoom = new ArrayList<>(connectionMatrix[currentRoom]).get(connection);
 
@@ -128,7 +130,7 @@ public class SolutionTest extends BaseInteractiveTest {
 
     @Override
     public String[] setUpTest() {
-      int rooms = new Random().nextInt(MAX_ROOMS - 2) + 2;
+      int rooms = new SecureRandom().nextInt(MAX_ROOMS - 2) + 2;
       connectionMatrix = new Set[rooms + 1];
 
       for (int i = 1; i <= rooms; ++i) {
@@ -149,7 +151,7 @@ public class SolutionTest extends BaseInteractiveTest {
 
       guesses = 0;
 
-      currentRoom = new Random().nextInt(rooms);
+      currentRoom = new SecureRandom().nextInt(rooms);
 
       return new String[] {rooms + " " + TRIES, currentRoom + " " + countConnections(currentRoom)};
     }

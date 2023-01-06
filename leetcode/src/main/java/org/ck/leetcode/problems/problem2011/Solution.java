@@ -13,6 +13,7 @@ public class Solution {
       switch (operation) {
         case "X++", "++X" -> ++x;
         case "X--", "--X" -> --x;
+        default -> throw new IllegalStateException("Unexpected value: " + operation);
       }
     }
 

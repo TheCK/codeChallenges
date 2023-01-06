@@ -27,18 +27,17 @@ public class Part1 {
     int i = 0;
     while (memory.get(i) != 99) {
       switch (memory.get(i)) {
-        case 1:
+        case 1 -> {
           memory.set(
               memory.get(i + 3), memory.get(memory.get(i + 1)) + memory.get(memory.get(i + 2)));
           i += 4;
-          break;
-        case 2:
+        }
+        case 2 -> {
           memory.set(
               memory.get(i + 3), memory.get(memory.get(i + 1)) * memory.get(memory.get(i + 2)));
           i += 4;
-          break;
-        default:
-          throw new RuntimeException("This should not happen");
+        }
+        default -> throw new IllegalStateException("This should not happen");
       }
     }
 

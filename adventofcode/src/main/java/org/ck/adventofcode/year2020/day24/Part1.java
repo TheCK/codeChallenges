@@ -29,28 +29,25 @@ public class Part1 {
         int start = 0;
         while (matcher.find(start)) {
           switch (matcher.group(1)) {
-            case "w":
-              --x;
-              break;
-            case "e":
-              ++x;
-              break;
-            case "ne":
+            case "w" -> --x;
+            case "e" -> ++x;
+            case "ne" -> {
               x += y % 2 == 0 ? 0 : 1;
               --y;
-              break;
-            case "se":
+            }
+            case "se" -> {
               x += y % 2 == 0 ? 0 : 1;
               ++y;
-              break;
-            case "nw":
+            }
+            case "nw" -> {
               x -= y % 2 == 0 ? 1 : 0;
               --y;
-              break;
-            case "sw":
+            }
+            case "sw" -> {
               x -= y % 2 == 0 ? 1 : 0;
               ++y;
-              break;
+            }
+            default -> throw new IllegalStateException("Unexpected value: " + matcher.group(1));
           }
 
           start = matcher.end();

@@ -1,10 +1,6 @@
 package org.ck.adventofcode.year2019.day03;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -29,30 +25,31 @@ public class Part2 {
         int length = Integer.parseInt(step.substring(1));
 
         switch (step.charAt(0)) {
-          case 'R':
-            horizontalSegements.computeIfAbsent(y, (value) -> new ArrayList<>());
+          case 'R' -> {
+            horizontalSegements.computeIfAbsent(y, value -> new ArrayList<>());
             horizontalSegements.get(y).add(new Segment('R', x, x + length, cableDistance));
             x += length;
             cableDistance += length;
-            break;
-          case 'L':
-            horizontalSegements.computeIfAbsent(y, (value) -> new ArrayList<>());
+          }
+          case 'L' -> {
+            horizontalSegements.computeIfAbsent(y, value -> new ArrayList<>());
             horizontalSegements.get(y).add(new Segment('L', x - length, x, cableDistance));
             x -= length;
             cableDistance += length;
-            break;
-          case 'U':
-            vertivalSegements.computeIfAbsent(x, (value) -> new ArrayList<>());
+          }
+          case 'U' -> {
+            vertivalSegements.computeIfAbsent(x, value -> new ArrayList<>());
             vertivalSegements.get(x).add(new Segment('U', y, y + length, cableDistance));
             y += length;
             cableDistance += length;
-            break;
-          case 'D':
-            vertivalSegements.computeIfAbsent(x, (value) -> new ArrayList<>());
+          }
+          case 'D' -> {
+            vertivalSegements.computeIfAbsent(x, value -> new ArrayList<>());
             vertivalSegements.get(x).add(new Segment('D', y - length, y, cableDistance));
             y -= length;
             cableDistance += length;
-            break;
+          }
+          default -> throw new IllegalStateException("Unexpected value: " + step.charAt(0));
         }
       }
 
@@ -66,7 +63,7 @@ public class Part2 {
         int length = Integer.parseInt(step.substring(1));
 
         switch (step.charAt(0)) {
-          case 'R':
+          case 'R' -> {
             for (int i = x; i < x + length; ++i) {
               if (vertivalSegements.get(i) != null) {
                 for (Segment segment : vertivalSegements.get(i)) {
@@ -84,8 +81,8 @@ public class Part2 {
             }
             x += length;
             cableDistance += length;
-            break;
-          case 'L':
+          }
+          case 'L' -> {
             for (int i = x - length; i < x; ++i) {
               if (vertivalSegements.get(i) != null) {
                 for (Segment segment : vertivalSegements.get(i)) {
@@ -103,8 +100,8 @@ public class Part2 {
             }
             x -= length;
             cableDistance += length;
-            break;
-          case 'U':
+          }
+          case 'U' -> {
             for (int i = y; i < y + length; ++i) {
               if (horizontalSegements.get(i) != null) {
                 for (Segment segment : horizontalSegements.get(i)) {
@@ -122,8 +119,8 @@ public class Part2 {
             }
             y += length;
             cableDistance += length;
-            break;
-          case 'D':
+          }
+          case 'D' -> {
             for (int i = y - length; i < y; ++i) {
               if (horizontalSegements.get(i) != null) {
                 for (Segment segment : horizontalSegements.get(i)) {
@@ -141,7 +138,8 @@ public class Part2 {
             }
             y -= length;
             cableDistance += length;
-            break;
+          }
+          default -> throw new IllegalStateException("Unexpected value: " + step.charAt(0));
         }
       }
 
@@ -150,11 +148,11 @@ public class Part2 {
   }
 
   private static class Segment {
-    private char direction;
+    private final char direction;
 
-    private int start;
-    private int end;
-    private int distanceAtBegining;
+    private final int start;
+    private final int end;
+    private final int distanceAtBegining;
 
     public Segment(char direction, int start, int end, int distanceAtBegining) {
       this.direction = direction;

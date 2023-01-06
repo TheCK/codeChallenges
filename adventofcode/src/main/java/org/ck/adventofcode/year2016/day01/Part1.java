@@ -27,18 +27,11 @@ public class Part1 {
         }
 
         switch (direction) {
-          case 0:
-            y -= Integer.parseInt(instruction.substring(1));
-            break;
-          case 2:
-            y += Integer.parseInt(instruction.substring(1));
-            break;
-          case 1:
-            x += Integer.parseInt(instruction.substring(1));
-            break;
-          case 3:
-            x -= Integer.parseInt(instruction.substring(1));
-            break;
+          case 0 -> y -= Integer.parseInt(instruction.substring(1));
+          case 2 -> y += Integer.parseInt(instruction.substring(1));
+          case 1 -> x += Integer.parseInt(instruction.substring(1));
+          case 3 -> x -= Integer.parseInt(instruction.substring(1));
+          default -> throw new IllegalStateException("Unexpected value: " + direction);
         }
       }
 

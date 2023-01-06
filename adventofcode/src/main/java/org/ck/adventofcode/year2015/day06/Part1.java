@@ -12,14 +12,14 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2015/day/6",
     category = "2015")
 public class Part1 {
-  public static final int[][] grid = new int[1000][1000];
-  public static final Pattern pattern =
+  private static final int[][] GRID = new int[1000][1000];
+  private static final Pattern PATTERN =
       Pattern.compile("(turn on|turn off|toggle) (\\d+),(\\d+) through (\\d+),(\\d+)");
 
   public static void main(String[] args) throws Exception {
     try (Scanner in = new Scanner(System.in)) {
       while (in.hasNextLine()) {
-        Matcher matcher = pattern.matcher(in.nextLine());
+        Matcher matcher = PATTERN.matcher(in.nextLine());
 
         if (matcher.find()) {
           String command = matcher.group(1);
@@ -31,9 +31,10 @@ public class Part1 {
           for (int x = startX; x <= endX; ++x) {
             for (int y = startY; y <= endY; ++y) {
               switch (command) {
-                case "turn on" -> grid[x][y] = 1;
-                case "turn off" -> grid[x][y] = 0;
-                case "toggle" -> grid[x][y] = grid[x][y] == 1 ? 0 : 1;
+                case "turn on" -> GRID[x][y] = 1;
+                case "turn off" -> GRID[x][y] = 0;
+                case "toggle" -> GRID[x][y] = GRID[x][y] == 1 ? 0 : 1;
+                default -> throw new IllegalStateException("Unexpected value: " + command);
               }
             }
           }
@@ -41,6 +42,6 @@ public class Part1 {
       }
     }
 
-    System.out.println(Arrays.stream(grid).flatMapToInt(Arrays::stream).sum());
+    System.out.println(Arrays.stream(GRID).flatMapToInt(Arrays::stream).sum());
   }
 }

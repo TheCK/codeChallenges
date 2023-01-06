@@ -26,21 +26,12 @@ public class Solution {
         int param2 = in.nextInt();
 
         switch (command) {
-          case "AND":
-            bitSets[set].and(bitSets[param2 - 1]);
-            break;
-          case "OR":
-            bitSets[set].or(bitSets[param2 - 1]);
-            break;
-          case "XOR":
-            bitSets[set].xor(bitSets[param2 - 1]);
-            break;
-          case "FLIP":
-            bitSets[set].flip(param2);
-            break;
-          case "SET":
-            bitSets[set].set(param2);
-            break;
+          case "AND" -> bitSets[set].and(bitSets[param2 - 1]);
+          case "OR" -> bitSets[set].or(bitSets[param2 - 1]);
+          case "XOR" -> bitSets[set].xor(bitSets[param2 - 1]);
+          case "FLIP" -> bitSets[set].flip(param2);
+          case "SET" -> bitSets[set].set(param2);
+          default -> throw new IllegalStateException("Unexpected value: " + command);
         }
 
         System.out.printf("%d %d%n", bitSets[0].cardinality(), bitSets[1].cardinality());

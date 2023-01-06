@@ -35,18 +35,11 @@ public class Part2 {
 
         for (int i = 0; i < distance; ++i) {
           switch (direction) {
-            case 0:
-              y -= 1;
-              break;
-            case 2:
-              y += 1;
-              break;
-            case 1:
-              x += 1;
-              break;
-            case 3:
-              x -= 1;
-              break;
+            case 0 -> y -= 1;
+            case 2 -> y += 1;
+            case 1 -> x += 1;
+            case 3 -> x -= 1;
+            default -> throw new IllegalStateException("Unexpected value: " + direction);
           }
 
           Point current = new Point(x, y);

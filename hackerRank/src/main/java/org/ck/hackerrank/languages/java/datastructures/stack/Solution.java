@@ -1,7 +1,8 @@
 package org.ck.hackerrank.languages.java.datastructures.stack;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
-import java.util.Stack;
 
 @org.ck.codechallengelib.annotation.Solution(
     id = 40204008,
@@ -17,17 +18,11 @@ public class Solution {
         String line = in.nextLine();
 
         boolean balanced = true;
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new ArrayDeque<>();
         for (char character : line.toCharArray()) {
           switch (character) {
-            case '{':
-            case '(':
-            case '[':
-              stack.push(character);
-              break;
-            case '}':
-            case ')':
-            case ']':
+            case '{', '(', '[' -> stack.push(character);
+            case '}', ')', ']' -> {
               if (!stack.isEmpty()) {
                 char match = stack.pop();
                 if (match == '(' && character == ')' || character == match + 2) {
@@ -35,7 +30,8 @@ public class Solution {
                 }
               }
               balanced = false;
-              break;
+            }
+            default -> throw new IllegalStateException("Unexpected value: " + character);
           }
 
           if (!balanced) {

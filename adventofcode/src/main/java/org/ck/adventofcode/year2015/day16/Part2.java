@@ -19,20 +19,17 @@ public class Part2 {
       Pattern.compile("Sue (\\d+): ([a-z]+): (\\d+), ([a-z]+): (\\d+), ([a-z]+): (\\d+)");
 
   private static final Map<String, Function<Integer, Boolean>> objects =
-      new HashMap<>() {
-        {
-          put("children", (number) -> number == 3);
-          put("cats", (number) -> number > 7);
-          put("samoyeds", (number) -> number == 2);
-          put("pomeranians", (number) -> number < 3);
-          put("akitas", (number) -> number == 0);
-          put("vizslas", (number) -> number == 0);
-          put("goldfish", (number) -> number < 5);
-          put("trees", (number) -> number > 3);
-          put("cars", (number) -> number == 2);
-          put("perfumes", (number) -> number == 1);
-        }
-      };
+      Map.of(
+          "children", number -> number == 3,
+          "cats", number -> number > 7,
+          "samoyeds", number -> number == 2,
+          "pomeranians", number -> number < 3,
+          "akitas", number -> number == 0,
+          "vizslas", number -> number == 0,
+          "goldfish", number -> number < 5,
+          "trees", number -> number > 3,
+          "cars", number -> number == 2,
+          "perfumes", number -> number == 1);
 
   public static void main(String[] args) throws Exception {
     Map<String, Map<String, Integer>> aunts = new HashMap<>();
@@ -58,9 +55,10 @@ public class Part2 {
                 entry -> {
                   boolean matches = true;
 
-                  for (String object : objects.keySet()) {
-                    if (entry.getValue().containsKey(object)
-                        && !objects.get(object).apply(entry.getValue().get(object))) {
+                  for (Map.Entry<String, Function<Integer, Boolean>> object : objects.entrySet()) {
+                    if (entry.getValue().containsKey(object.getKey())
+                        && Boolean.TRUE.equals(
+                            !object.getValue().apply(entry.getValue().get(object.getKey())))) {
                       matches = false;
                       break;
                     }

@@ -17,7 +17,7 @@ public class Main {
     INSERT
   }
 
-  private static char[][] screen = new char[10][10];
+  private static final char[][] screen = new char[10][10];
   private static int x = 0;
   private static int y = 0;
 
@@ -54,48 +54,37 @@ public class Main {
               continue;
             } else {
               switch (character) {
-                case 'c':
-                  clearScreen();
-                  break;
-                case 'h':
+                case 'c' -> clearScreen();
+                case 'h' -> {
                   x = 0;
                   y = 0;
-                  break;
-                case 'b':
-                  y = 0;
-                  break;
-                case 'd':
+                }
+                case 'b' -> y = 0;
+                case 'd' -> {
                   if (x < 9) {
                     ++x;
                   }
-                  break;
-                case 'u':
+                }
+                case 'u' -> {
                   if (x > 0) {
                     --x;
                   }
-                  break;
-                case 'l':
+                }
+                case 'l' -> {
                   if (y > 0) {
                     --y;
                   }
-                  break;
-                case 'r':
+                }
+                case 'r' -> {
                   if (y < 9) {
                     ++y;
                   }
-                  break;
-                case 'e':
-                  eraseEndOfLine();
-                  break;
-                case 'i':
-                  mode = Mode.INSERT;
-                  break;
-                case 'o':
-                  mode = Mode.OVERRIDE;
-                  break;
-                case '^':
-                  printChar('^');
-                  break;
+                }
+                case 'e' -> eraseEndOfLine();
+                case 'i' -> mode = Mode.INSERT;
+                case 'o' -> mode = Mode.OVERRIDE;
+                case '^' -> printChar('^');
+                default -> throw new IllegalStateException("Unexpected value: " + character);
               }
             }
           } else {

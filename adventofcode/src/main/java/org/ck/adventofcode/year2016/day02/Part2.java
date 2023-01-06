@@ -9,7 +9,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2016/day/2#part2",
     category = "2016")
 public class Part2 {
-  private static char[][] pad =
+  private static final char[][] pad =
       new char[][] {
         {' ', ' ', ' ', ' ', ' ', ' ', ' '},
         {' ', ' ', ' ', '1', ' ', ' ', ' '},
@@ -33,18 +33,11 @@ public class Part2 {
           int nextY = y;
 
           switch (direction) {
-            case 'U':
-              nextY -= 1;
-              break;
-            case 'D':
-              nextY += 1;
-              break;
-            case 'L':
-              nextX -= 1;
-              break;
-            case 'R':
-              nextX += 1;
-              break;
+            case 'U' -> nextY -= 1;
+            case 'D' -> nextY += 1;
+            case 'L' -> nextX -= 1;
+            case 'R' -> nextX += 1;
+            default -> throw new IllegalStateException("Unexpected value: " + direction);
           }
 
           if (pad[nextY][nextX] != ' ') {

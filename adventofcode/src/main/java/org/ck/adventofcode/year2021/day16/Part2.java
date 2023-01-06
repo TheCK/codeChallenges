@@ -39,7 +39,7 @@ public class Part2 {
       StringBuilder builder = new StringBuilder();
 
       do {
-        builder.append(binary.substring(index + 1, index + 5));
+        builder.append(binary, index + 1, index + 5);
         index += 5;
       } while (binary.charAt(index - 5) == '1');
 
@@ -71,33 +71,21 @@ public class Part2 {
         }
       }
 
-      switch (id) {
-        case 0:
-          calc = arguments.stream().mapToLong(x -> x).sum();
-          break;
-        case 1:
-          calc = arguments.stream().mapToLong(x -> x).reduce(1, (x, y) -> x * y);
-          break;
-        case 2:
-          calc = arguments.stream().mapToLong(x -> x).min().getAsLong();
-          break;
-        case 3:
-          calc = arguments.stream().mapToLong(x -> x).max().getAsLong();
-          break;
-        case 5:
-          calc = arguments.get(0) > arguments.get(1) ? 1 : 0;
-          break;
-        case 6:
-          calc = arguments.get(0) < arguments.get(1) ? 1 : 0;
-          break;
-        case 7:
-          calc = arguments.get(0).equals(arguments.get(1)) ? 1 : 0;
-          break;
-      }
+      calc =
+          switch (id) {
+            case 0 -> arguments.stream().mapToLong(x -> x).sum();
+            case 1 -> arguments.stream().mapToLong(x -> x).reduce(1, (x, y) -> x * y);
+            case 2 -> arguments.stream().mapToLong(x -> x).min().orElseThrow();
+            case 3 -> arguments.stream().mapToLong(x -> x).max().orElseThrow();
+            case 5 -> arguments.get(0) > arguments.get(1) ? 1 : 0;
+            case 6 -> arguments.get(0) < arguments.get(1) ? 1 : 0;
+            case 7 -> arguments.get(0).equals(arguments.get(1)) ? 1 : 0;
+            default -> calc;
+          };
     }
 
     return new ParsingResult(index, calc);
   }
 
-  private static final record ParsingResult(int index, long result) {}
+  private record ParsingResult(int index, long result) {}
 }

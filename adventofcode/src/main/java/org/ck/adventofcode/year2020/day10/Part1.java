@@ -26,12 +26,11 @@ public class Part1 {
       int threes = 0;
       for (int i = 1; i < jolts.size(); ++i) {
         switch (jolts.get(i) - jolts.get(i - 1)) {
-          case 1:
-            ++ones;
-            break;
-          case 3:
-            ++threes;
-            break;
+          case 1 -> ++ones;
+          case 3 -> ++threes;
+          default -> {
+            /* do nothing*/
+          }
         }
       }
 

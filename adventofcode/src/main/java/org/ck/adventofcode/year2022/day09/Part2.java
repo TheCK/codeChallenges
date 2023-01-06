@@ -57,18 +57,11 @@ public class Part2 {
 
   private static Position moveHead(Position head, final char direction) {
     switch (direction) {
-      case 'U':
-        head = new Position(head.x(), head.y() - 1);
-        break;
-      case 'D':
-        head = new Position(head.x(), head.y() + 1);
-        break;
-      case 'L':
-        head = new Position(head.x() - 1, head.y());
-        break;
-      case 'R':
-        head = new Position(head.x() + 1, head.y());
-        break;
+      case 'U' -> head = new Position(head.x(), head.y() - 1);
+      case 'D' -> head = new Position(head.x(), head.y() + 1);
+      case 'L' -> head = new Position(head.x() - 1, head.y());
+      case 'R' -> head = new Position(head.x() + 1, head.y());
+      default -> throw new IllegalStateException("Unexpected value: " + direction);
     }
     return head;
   }

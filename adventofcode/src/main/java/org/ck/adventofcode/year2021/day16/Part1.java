@@ -64,5 +64,5 @@ public class Part1 {
     return new ParsingResult(index, version);
   }
 
-  private static final record ParsingResult(int index, int version) {}
+  private record ParsingResult(int index, int version) {}
 }

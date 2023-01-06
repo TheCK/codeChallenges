@@ -24,10 +24,7 @@ public class Part2 {
 
       for (int noun = 0; noun < 100; ++noun) {
         for (int verb = 0; verb < 100; ++verb) {
-          List<Integer> memory = new ArrayList<>();
-          for (int value : initialMemory) {
-            memory.add(value);
-          }
+          List<Integer> memory = new ArrayList<>(initialMemory);
 
           memory.set(1, noun);
           memory.set(2, verb);
@@ -35,20 +32,19 @@ public class Part2 {
           int i = 0;
           while (memory.get(i) != 99) {
             switch (memory.get(i)) {
-              case 1:
+              case 1 -> {
                 memory.set(
                     memory.get(i + 3),
                     memory.get(memory.get(i + 1)) + memory.get(memory.get(i + 2)));
                 i += 4;
-                break;
-              case 2:
+              }
+              case 2 -> {
                 memory.set(
                     memory.get(i + 3),
                     memory.get(memory.get(i + 1)) * memory.get(memory.get(i + 2)));
                 i += 4;
-                break;
-              default:
-                throw new RuntimeException("This should not happen");
+              }
+              default -> throw new IllegalStateException("This should not happen");
             }
           }
 

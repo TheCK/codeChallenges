@@ -16,7 +16,7 @@ public class Part2 {
     Set<Cyclone> cyclones = new HashSet<>();
     Set<Point> walls = new HashSet<>();
     int width = 0;
-    int height = 0;
+    int height;
 
     try (Scanner in = new Scanner(System.in)) {
       int y = 0;
@@ -29,6 +29,7 @@ public class Part2 {
             case '<' -> cyclones.add(new Cyclone(new Point(x, y), Direction.LEFT));
             case '>' -> cyclones.add(new Cyclone(new Point(x, y), Direction.RIGHT));
             case '#' -> walls.add(new Point(x, y));
+            default -> throw new IllegalStateException("Unexpected value: " + line[x]);
           }
         }
 
@@ -196,6 +197,6 @@ public class Part2 {
     UP,
     DOWN,
     LEFT,
-    RIGHT;
+    RIGHT
   }
 }

@@ -1,10 +1,6 @@
 package org.ck.adventofcode.year2019.day03;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -28,26 +24,27 @@ public class Part1 {
         int length = Integer.parseInt(step.substring(1));
 
         switch (step.charAt(0)) {
-          case 'R':
+          case 'R' -> {
             horizontalSegements.computeIfAbsent(y, (value) -> new ArrayList<>());
             horizontalSegements.get(y).add(new Segment(x, x + length));
             x += length;
-            break;
-          case 'L':
+          }
+          case 'L' -> {
             horizontalSegements.computeIfAbsent(y, (value) -> new ArrayList<>());
             horizontalSegements.get(y).add(new Segment(x - length, x));
             x -= length;
-            break;
-          case 'U':
+          }
+          case 'U' -> {
             vertivalSegements.computeIfAbsent(x, (value) -> new ArrayList<>());
             vertivalSegements.get(x).add(new Segment(y, y + length));
             y += length;
-            break;
-          case 'D':
+          }
+          case 'D' -> {
             vertivalSegements.computeIfAbsent(x, (value) -> new ArrayList<>());
             vertivalSegements.get(x).add(new Segment(y - length, y));
             y -= length;
-            break;
+          }
+          default -> throw new IllegalStateException("Unexpected value: " + step.charAt(0));
         }
       }
 
@@ -58,7 +55,7 @@ public class Part1 {
         int length = Integer.parseInt(step.substring(1));
 
         switch (step.charAt(0)) {
-          case 'R':
+          case 'R' -> {
             for (int i = x; i < x + length; ++i) {
               if (vertivalSegements.get(i) != null) {
                 for (Segment segment : vertivalSegements.get(i)) {
@@ -69,8 +66,8 @@ public class Part1 {
               }
             }
             x += length;
-            break;
-          case 'L':
+          }
+          case 'L' -> {
             for (int i = x - length; i < x; ++i) {
               if (vertivalSegements.get(i) != null) {
                 for (Segment segment : vertivalSegements.get(i)) {
@@ -81,8 +78,8 @@ public class Part1 {
               }
             }
             x -= length;
-            break;
-          case 'U':
+          }
+          case 'U' -> {
             for (int i = y; i < y + length; ++i) {
               if (horizontalSegements.get(i) != null) {
                 for (Segment segment : horizontalSegements.get(i)) {
@@ -93,8 +90,8 @@ public class Part1 {
               }
             }
             y += length;
-            break;
-          case 'D':
+          }
+          case 'D' -> {
             for (int i = y - length; i < y; ++i) {
               if (horizontalSegements.get(i) != null) {
                 for (Segment segment : horizontalSegements.get(i)) {
@@ -105,7 +102,8 @@ public class Part1 {
               }
             }
             y -= length;
-            break;
+          }
+          default -> throw new IllegalStateException("Unexpected value: " + step.charAt(0));
         }
       }
 

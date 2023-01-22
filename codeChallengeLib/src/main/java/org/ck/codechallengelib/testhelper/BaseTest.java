@@ -54,15 +54,12 @@ public abstract class BaseTest {
   }
 
   protected String getFileAsResult(String name) {
-    File resultFile = new File(getClass().getResource(name + ".result.txt").getFile());
-
     StringBuilder builder = new StringBuilder();
-    try (Scanner resultScanner = new Scanner(resultFile)) {
+    try (Scanner resultScanner =
+        new Scanner(getClass().getResourceAsStream(name + ".result.txt"))) {
       while (resultScanner.hasNextLine()) {
         builder.append(resultScanner.nextLine()).append(System.lineSeparator());
       }
-    } catch (FileNotFoundException e) {
-      // We don't care
     }
 
     return builder.toString();

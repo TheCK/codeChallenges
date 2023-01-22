@@ -27,6 +27,7 @@
         <module>codingcompetitions</module>
         <module>tis100</module>
         <module>codingame</module>
+        <module>cses</module>
     </modules>
 
     <build>

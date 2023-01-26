@@ -130,13 +130,13 @@ public class Main {
     for (List<Field> row : rows) {
       for (Field field : row) {
         builder.append(field.toString());
-        builder.append(" ");
+        builder.append(' ');
       }
 
       if (builder.length() > 0) {
         builder.deleteCharAt(builder.length() - 1);
       }
-      builder.append("|");
+      builder.append('|');
     }
 
     if (builder.length() >= 1) {

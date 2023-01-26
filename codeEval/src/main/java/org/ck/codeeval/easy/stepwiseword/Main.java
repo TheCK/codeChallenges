@@ -33,11 +33,11 @@ public class Main {
         int count = 0;
         for (char letter : longestWord.toCharArray()) {
           for (int i = 0; i < count; ++i) {
-            builder.append("*");
+            builder.append('*');
           }
 
           builder.append(letter);
-          builder.append(" ");
+          builder.append(' ');
 
           ++count;
         }

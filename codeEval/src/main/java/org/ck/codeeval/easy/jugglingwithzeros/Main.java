@@ -28,7 +28,7 @@ public class Main {
             builder.append(numbers[i + 1]);
           }
           if ("00".equals(numbers[i])) {
-            builder.append(numbers[i + 1].replace("0", "1"));
+            builder.append(numbers[i + 1].replace('0', '1'));
           }
         }
 

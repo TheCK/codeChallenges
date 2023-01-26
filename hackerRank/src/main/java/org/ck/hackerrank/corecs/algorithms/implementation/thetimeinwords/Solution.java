@@ -27,7 +27,7 @@ public class Solution {
           builder.append(" minute");
 
           if (minutes > 1) {
-            builder.append("s");
+            builder.append('s');
           }
         }
 
@@ -44,7 +44,7 @@ public class Solution {
           builder.append(" minute");
 
           if (minutes < 59) {
-            builder.append("s");
+            builder.append('s');
           }
         }
 

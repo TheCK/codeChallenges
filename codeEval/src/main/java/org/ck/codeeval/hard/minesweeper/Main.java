@@ -84,7 +84,7 @@ public class Main {
         if (box != 9) {
           System.out.print(box);
         } else {
-          System.out.print("*");
+          System.out.print('*');
         }
       }
     }

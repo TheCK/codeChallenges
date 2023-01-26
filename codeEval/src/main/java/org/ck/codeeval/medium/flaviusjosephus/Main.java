@@ -50,7 +50,7 @@ public class Main {
         for (int i = 0; i < size; ++i) {
           for (int j = 0; j < size; ++j) {
             if (array[j] == i) {
-              builder.append(j).append(" ");
+              builder.append(j).append(' ');
               break;
             }
           }

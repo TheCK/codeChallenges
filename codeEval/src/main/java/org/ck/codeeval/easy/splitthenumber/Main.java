@@ -27,12 +27,12 @@ public class Main {
         Integer result = 0;
         if (pattern.contains("+")) {
           result =
-              Integer.valueOf(number.substring(0, pattern.indexOf("+")))
-                  + Integer.valueOf(number.substring(pattern.indexOf("+")));
+              Integer.valueOf(number.substring(0, pattern.indexOf('+')))
+                  + Integer.valueOf(number.substring(pattern.indexOf('+')));
         } else if (pattern.contains("-")) {
           result =
-              Integer.valueOf(number.substring(0, pattern.indexOf("-")))
-                  - Integer.valueOf(number.substring(pattern.indexOf("-")));
+              Integer.valueOf(number.substring(0, pattern.indexOf('-')))
+                  - Integer.valueOf(number.substring(pattern.indexOf('-')));
         }
 
         System.out.println(result);

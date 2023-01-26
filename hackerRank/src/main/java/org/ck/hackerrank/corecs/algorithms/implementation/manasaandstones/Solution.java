@@ -30,14 +30,14 @@ public class Solution {
             System.out.print(j);
 
             if (j != upperBoundary) {
-              System.out.print(" ");
+              System.out.print(' ');
             }
           }
         } else {
           System.out.print(lowerBoundary);
         }
 
-        System.out.println("");
+        System.out.println();
       }
     }
   }

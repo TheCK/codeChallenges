@@ -52,7 +52,7 @@ public class Solution {
 
       for (int num : nums) {
         if (isPrime(num)) {
-          builder.append(num).append(" ");
+          builder.append(num).append(' ');
         }
       }
 

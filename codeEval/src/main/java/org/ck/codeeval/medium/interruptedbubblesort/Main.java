@@ -51,7 +51,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (int element : array) {
           if (builder.length() > 0) {
-            builder.append(" ");
+            builder.append(' ');
           }
 
           builder.append(element);

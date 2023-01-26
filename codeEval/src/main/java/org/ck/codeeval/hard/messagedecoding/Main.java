@@ -27,7 +27,7 @@ public class Main {
       while ((line = buffer.readLine()) != null) {
         line = line.trim();
 
-        int messageBegin = Math.min(line.indexOf("1"), line.indexOf("0"));
+        int messageBegin = Math.min(line.indexOf('1'), line.indexOf('0'));
         String alphabet = line.substring(0, messageBegin);
         String message = line.substring(messageBegin);
 

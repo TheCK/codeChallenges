@@ -38,7 +38,7 @@ public class Main {
         }
 
         if (builder.length() == 0) {
-          builder.append("-");
+          builder.append('-');
         } else {
           builder.deleteCharAt(builder.length() - 1);
         }

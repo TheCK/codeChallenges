@@ -35,7 +35,7 @@ public class Main {
           } else {
             builder.append(words.get(index));
           }
-          builder.append(" ");
+          builder.append(' ');
         }
         builder.deleteCharAt(builder.length() - 1);
 

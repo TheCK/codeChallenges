@@ -40,7 +40,7 @@ public class Solution {
         String filename = in.nextLine();
         String extension = "";
         if (filename.contains(".")) {
-          extension = filename.substring(filename.lastIndexOf(".") + 1);
+          extension = filename.substring(filename.lastIndexOf('.') + 1);
         }
 
         System.out.println(mimeTypes.getOrDefault(extension.toLowerCase(), "UNKNOWN"));

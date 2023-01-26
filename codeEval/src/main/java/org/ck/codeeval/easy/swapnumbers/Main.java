@@ -24,9 +24,9 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (String word : words) {
           builder.append(word.substring(word.length() - 1));
-          builder.append(word.substring(1, word.length() - 1));
-          builder.append(word.substring(0, 1));
-          builder.append(" ");
+          builder.append(word, 1, word.length() - 1);
+          builder.append(word.charAt(0));
+          builder.append(' ');
         }
 
         if (builder.length() > 0) {

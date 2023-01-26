@@ -51,10 +51,10 @@ public class Main {
   }
 
   private static int getNextPosition(String current) {
-    int possiblePosition = current.indexOf("C", 0);
+    int possiblePosition = current.indexOf('C');
 
     if (possiblePosition < 0) {
-      possiblePosition = current.indexOf("_", 0);
+      possiblePosition = current.indexOf('_');
     }
 
     return possiblePosition;

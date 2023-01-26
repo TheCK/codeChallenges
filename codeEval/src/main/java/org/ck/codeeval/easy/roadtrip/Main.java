@@ -35,7 +35,7 @@ public class Main {
         Integer lastDistance = 0;
         for (Integer distance : distances) {
           builder.append(distance - lastDistance);
-          builder.append(",");
+          builder.append(',');
 
           lastDistance = distance;
         }

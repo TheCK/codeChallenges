@@ -327,7 +327,7 @@ public class ReadmeGenerator extends AbstractProcessor {
     }
 
     private String getNameAsPath() {
-      return this.fullyQualifiedName.replace(".", "/");
+      return this.fullyQualifiedName.replace('.', '/');
     }
 
     @Override

@@ -25,7 +25,7 @@ public class Main {
 
         for (String row : rows) {
           if (row.contains(".")) {
-            int dots = row.indexOf("Y") - row.lastIndexOf("X") - 1;
+            int dots = row.indexOf('Y') - row.lastIndexOf('X') - 1;
 
             if (dots < minimumDots) {
               minimumDots = dots;

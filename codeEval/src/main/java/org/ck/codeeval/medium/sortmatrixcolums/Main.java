@@ -49,7 +49,7 @@ public class Main {
     for (int i = 0; i < matrix.get(0).size(); ++i) {
       for (Vector integers : matrix) {
         builder.append(integers.get(i));
-        builder.append(" ");
+        builder.append(' ');
       }
 
       builder.append("| ");

@@ -47,19 +47,19 @@ public class Main {
 
         List<String> availableTeams =
             teamsPerCountry.keySet().stream()
-                .mapToInt(x -> Integer.parseInt(x))
+                .mapToInt(Integer::parseInt)
                 .sorted()
-                .mapToObj(x -> String.valueOf(x))
-                .collect(Collectors.toList());
+                .mapToObj(String::valueOf)
+                .toList();
 
         for (String team : availableTeams) {
           builder
               .append(team)
-              .append(":")
+              .append(':')
               .append(
                   teamsPerCountry.get(team).stream()
                       .sorted()
-                      .map(x -> x.toString())
+                      .map(Object::toString)
                       .collect(Collectors.joining(",")))
               .append("; ");
         }

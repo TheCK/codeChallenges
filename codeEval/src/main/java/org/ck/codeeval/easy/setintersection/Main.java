@@ -32,7 +32,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (Integer number : set1) {
           builder.append(number);
-          builder.append(",");
+          builder.append(',');
         }
         if (builder.length() > 1) {
           builder.deleteCharAt(builder.length() - 1);

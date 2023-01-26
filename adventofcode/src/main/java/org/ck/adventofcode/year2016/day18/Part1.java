@@ -36,9 +36,9 @@ public class Part1 {
             || (grid.get(i - 1).charAt(j - 1) == '.'
                 && grid.get(i - 1).charAt(j) == '.'
                 && grid.get(i - 1).charAt(j + 1) == '^')) {
-          builder.append("^");
+          builder.append('^');
         } else {
-          builder.append(".");
+          builder.append('.');
         }
       }
 

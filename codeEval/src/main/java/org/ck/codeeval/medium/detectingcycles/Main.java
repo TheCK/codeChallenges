@@ -46,7 +46,7 @@ public class Main {
 
           if (started) {
             builder.append(number);
-            builder.append(" ");
+            builder.append(' ');
           }
         }
 

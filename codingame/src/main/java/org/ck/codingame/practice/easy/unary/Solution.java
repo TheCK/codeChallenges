@@ -29,7 +29,7 @@ public class Solution {
         }
 
         if (count > 0) {
-          output.append(last == '1' ? "0 " : "00 ").append("0".repeat(count)).append(" ");
+          output.append(last == '1' ? "0 " : "00 ").append("0".repeat(count)).append(' ');
         }
 
         count = 1;

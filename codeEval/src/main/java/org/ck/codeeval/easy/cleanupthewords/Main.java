@@ -27,7 +27,7 @@ public class Main {
 
         Matcher matcher = pattern.matcher(line);
         while (matcher.find()) {
-          builder.append(matcher.group().toLowerCase()).append(" ");
+          builder.append(matcher.group().toLowerCase()).append(' ');
         }
 
         if (builder.length() > 0) {

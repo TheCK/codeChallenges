@@ -19,9 +19,9 @@ public class Part2 {
 
         for (int i = data.length() - 1; i >= 0; --i) {
           if (data.charAt(i) == '1') {
-            b.append("0");
+            b.append('0');
           } else {
-            b.append("1");
+            b.append('1');
           }
         }
 
@@ -33,9 +33,9 @@ public class Part2 {
 
         for (int i = 0; i < Math.min(space, data.length()); i += 2) {
           if (data.startsWith("00", i) || data.startsWith("11", i)) {
-            check.append("1");
+            check.append('1');
           } else {
-            check.append("0");
+            check.append('0');
           }
         }
 

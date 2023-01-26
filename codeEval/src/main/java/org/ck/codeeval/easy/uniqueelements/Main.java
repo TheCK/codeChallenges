@@ -31,7 +31,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (Integer number : set) {
           builder.append(number);
-          builder.append(",");
+          builder.append(',');
         }
         builder.deleteCharAt(builder.length() - 1);
 

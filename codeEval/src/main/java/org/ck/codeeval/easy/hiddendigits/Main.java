@@ -23,25 +23,25 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < line.length(); ++i) {
           if (line.charAt(i) == 'a') {
-            builder.append("0");
+            builder.append('0');
           } else if (line.charAt(i) == 'b') {
-            builder.append("1");
+            builder.append('1');
           } else if (line.charAt(i) == 'c') {
-            builder.append("2");
+            builder.append('2');
           } else if (line.charAt(i) == 'd') {
-            builder.append("3");
+            builder.append('3');
           } else if (line.charAt(i) == 'e') {
-            builder.append("4");
+            builder.append('4');
           } else if (line.charAt(i) == 'f') {
-            builder.append("5");
+            builder.append('5');
           } else if (line.charAt(i) == 'g') {
-            builder.append("6");
+            builder.append('6');
           } else if (line.charAt(i) == 'h') {
-            builder.append("7");
+            builder.append('7');
           } else if (line.charAt(i) == 'i') {
-            builder.append("8");
+            builder.append('8');
           } else if (line.charAt(i) == 'j') {
-            builder.append("9");
+            builder.append('9');
           } else if (line.substring(i, i + 1).matches("\\d")) {
             builder.append(line.charAt(i));
           }

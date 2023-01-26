@@ -26,18 +26,18 @@ public class Player {
 
         StringBuilder direction = new StringBuilder();
         if (diffY < 0) {
-          direction.append("N");
+          direction.append('N');
           ++diffY;
         } else if (diffY > 0) {
-          direction.append("S");
+          direction.append('S');
           --diffY;
         }
 
         if (diffX < 0) {
-          direction.append("W");
+          direction.append('W');
           ++diffX;
         } else if (diffX > 0) {
-          direction.append("E");
+          direction.append('E');
           --diffX;
         }
 

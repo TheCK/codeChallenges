@@ -52,13 +52,13 @@ public class Main {
 
         StringBuilder builder = new StringBuilder();
         for (Integer designation : fitting) {
-          builder.append(designation).append(",");
+          builder.append(designation).append(',');
         }
 
         if (builder.length() > 0) {
           builder.deleteCharAt(builder.length() - 1);
         } else {
-          builder.append("-");
+          builder.append('-');
         }
 
         System.out.println(builder);

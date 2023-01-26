@@ -51,7 +51,7 @@ public class Main {
         for (Map.Entry<Integer, List<String>> distance : matches.entrySet()) {
           Collections.sort(distance.getValue());
           for (String match : distance.getValue()) {
-            builder.append(match).append(" ");
+            builder.append(match).append(' ');
           }
         }
 

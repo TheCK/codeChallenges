@@ -72,7 +72,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (String match : matchedWines) {
           builder.append(match);
-          builder.append(" ");
+          builder.append(' ');
         }
 
         if (builder.length() > 0) {

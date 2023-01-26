@@ -33,7 +33,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (Float number : set) {
           builder.append(String.format(Locale.ENGLISH, "%.3f", number));
-          builder.append(" ");
+          builder.append(' ');
         }
         builder.deleteCharAt(builder.length() - 1);
 

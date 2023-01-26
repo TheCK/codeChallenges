@@ -46,7 +46,7 @@ public class Main {
           }
 
           builder.append(mul);
-          builder.append(" ");
+          builder.append(' ');
         }
         builder.deleteCharAt(builder.length() - 1);
 

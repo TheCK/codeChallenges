@@ -31,7 +31,7 @@ public class Solution {
               && array[i][j] > array[i + 1][j]
               && array[i][j] > array[i][j - 1]
               && array[i][j] > array[i][j + 1]) {
-            System.out.print("X");
+            System.out.print('X');
           } else {
             System.out.print(array[i][j]);
           }

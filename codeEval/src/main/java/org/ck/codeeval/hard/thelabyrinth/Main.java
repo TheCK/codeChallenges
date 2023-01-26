@@ -48,7 +48,7 @@ public class Main {
             lines.size() - 1,
             lines.get(0).length() - 1,
             0,
-            lines.get(0).indexOf(" "));
+            lines.get(0).indexOf(' '));
 
     for (Point point : path) {
       field[point.x][point.y] = "+";

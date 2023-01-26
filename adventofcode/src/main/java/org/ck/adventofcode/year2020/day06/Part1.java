@@ -19,7 +19,7 @@ public class Part1 {
         String line = in.nextLine();
 
         if (!line.isBlank()) {
-          builder.append(" ").append(line.trim());
+          builder.append(' ').append(line.trim());
 
           if (in.hasNextLine()) {
             continue;

@@ -24,7 +24,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (String word : words) {
           builder.append(capWord(word));
-          builder.append(" ");
+          builder.append(' ');
         }
 
         builder.deleteCharAt(builder.length() - 1);

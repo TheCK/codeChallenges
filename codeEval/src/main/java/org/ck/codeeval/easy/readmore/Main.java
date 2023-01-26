@@ -23,7 +23,7 @@ public class Main {
         if (line.length() > 55) {
           line = line.substring(0, 40);
           if (line.contains(" ")) {
-            line = line.substring(0, line.lastIndexOf(" ")).trim();
+            line = line.substring(0, line.lastIndexOf(' ')).trim();
           }
 
           line += "... <Read More>";

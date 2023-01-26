@@ -28,16 +28,16 @@ public class Main {
         StringBuilder outputLine = new StringBuilder();
         for (int i = 1; i <= maxCount; ++i) {
           if (i % firstDivider == 0) {
-            outputLine.append("F");
+            outputLine.append('F');
           }
           if (i % secondDivider == 0) {
-            outputLine.append("B");
+            outputLine.append('B');
           }
           if (i % firstDivider != 0 && i % secondDivider != 0) {
             outputLine.append(i);
           }
 
-          outputLine.append(" ");
+          outputLine.append(' ');
         }
 
         outputLine.deleteCharAt(outputLine.length() - 1);

@@ -64,7 +64,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (String letter : letters) {
           if ("".equals(letter)) {
-            builder.append(" ");
+            builder.append(' ');
           } else {
             builder.append(MORSE_CODE.get(letter));
           }

@@ -110,7 +110,7 @@ public class Main {
         builder.deleteCharAt(builder.length() - 1);
         builder.deleteCharAt(builder.length() - 1);
 
-        builder.append("]");
+        builder.append(']');
       }
 
       return builder.toString();

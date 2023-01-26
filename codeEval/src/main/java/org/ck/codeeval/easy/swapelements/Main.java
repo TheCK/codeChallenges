@@ -39,7 +39,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (String number : numbers) {
           builder.append(number);
-          builder.append(" ");
+          builder.append(' ');
         }
         builder.deleteCharAt(builder.length() - 1);
 

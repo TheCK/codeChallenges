@@ -43,7 +43,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (Integer highScore : highScores) {
           builder.append(highScore);
-          builder.append(" ");
+          builder.append(' ');
         }
 
         if (builder.length() > 0) {

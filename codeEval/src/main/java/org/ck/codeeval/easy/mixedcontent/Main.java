@@ -36,21 +36,21 @@ public class Main {
         }
 
         StringBuilder result = new StringBuilder();
-        if (words.size() > 0) {
+        if (!words.isEmpty()) {
           for (String word : words) {
             result.append(word);
-            result.append(",");
+            result.append(',');
           }
 
           result.deleteCharAt(result.length() - 1);
         }
-        if (words.size() > 0 && numbers.size() > 0) {
-          result.append("|");
+        if (!words.isEmpty() && !numbers.isEmpty()) {
+          result.append('|');
         }
-        if (numbers.size() > 0) {
+        if (!numbers.isEmpty()) {
           for (String number : numbers) {
             result.append(number);
-            result.append(",");
+            result.append(',');
           }
 
           result.deleteCharAt(result.length() - 1);

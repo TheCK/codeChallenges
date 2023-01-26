@@ -37,9 +37,9 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < nums.size(); ++i) {
           builder.append(counts.get(i));
-          builder.append(" ");
+          builder.append(' ');
           builder.append(nums.get(i));
-          builder.append(" ");
+          builder.append(' ');
         }
         builder.deleteCharAt(builder.length() - 1);
 

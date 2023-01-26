@@ -45,15 +45,15 @@ public class Solution {
     int needed = COLOUR_NEEDED;
 
     int usedCyan = Math.min(c, needed);
-    builder.append(usedCyan).append(" ");
+    builder.append(usedCyan).append(' ');
     needed -= usedCyan;
 
     int usedMagenta = Math.min(m, needed);
-    builder.append(usedMagenta).append(" ");
+    builder.append(usedMagenta).append(' ');
     needed -= usedMagenta;
 
     int usedYellow = Math.min(y, needed);
-    builder.append(usedYellow).append(" ");
+    builder.append(usedYellow).append(' ');
     needed -= usedYellow;
 
     int usedBlack = Math.min(k, needed);

@@ -61,7 +61,7 @@ public class Main {
           } else {
             builder.append(sentence);
           }
-          builder.append(" ");
+          builder.append(' ');
         }
         builder.deleteCharAt(builder.length() - 1);
 

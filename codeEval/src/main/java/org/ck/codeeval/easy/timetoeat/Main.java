@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -27,7 +29,7 @@ public class Main {
         StringBuilder builder = new StringBuilder();
         for (String time : times) {
           builder.append(time);
-          builder.append(" ");
+          builder.append(' ');
         }
 
         if (builder.length() > 0) {

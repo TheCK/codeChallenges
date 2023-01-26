@@ -68,7 +68,7 @@ public class Main {
     StringBuilder builder = new StringBuilder();
 
     for (int i = 0; i < length; ++i) {
-      builder.append("_");
+      builder.append('_');
     }
 
     return builder.toString();

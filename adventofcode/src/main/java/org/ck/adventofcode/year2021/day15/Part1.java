@@ -25,8 +25,6 @@ public class Part1 {
     final Map<Point, Integer> distance = new HashMap<>();
     distance.put(new Point(0, 0), 0);
 
-    final Map<Point, Point> before = new HashMap<>();
-
     Queue<Point> queue = new PriorityQueue<>(Comparator.comparingInt(distance::get));
 
     for (int i = 0; i < grid.size(); ++i) {
@@ -46,7 +44,6 @@ public class Part1 {
         int danger = distance.get(candidate) + grid.get(neighbour.y())[neighbour.x()];
         if (danger < distance.get(neighbour)) {
           distance.put(neighbour, danger);
-          before.put(neighbour, candidate);
           queue.remove(neighbour);
           queue.add(neighbour);
         }

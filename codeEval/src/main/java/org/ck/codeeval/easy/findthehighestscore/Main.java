@@ -28,7 +28,7 @@ public class Main {
           String[] numbers = row.trim().split(" ");
 
           for (int i = 0; i < numbers.length; ++i) {
-            Integer number = Integer.parseInt(numbers[i]);
+            Integer number = Integer.valueOf(numbers[i]);
 
             if (i == highScores.size()) {
               highScores.add(number);

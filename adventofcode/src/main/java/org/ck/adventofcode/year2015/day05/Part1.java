@@ -1,7 +1,7 @@
 package org.ck.adventofcode.year2015.day05;
 
-import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -10,7 +10,7 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2015/day/5",
     category = "2015")
 public class Part1 {
-  private static final List<Character> vowels = List.of('a', 'e', 'i', 'o', 'u');
+  private static final Set<Character> vowels = Set.of('a', 'e', 'i', 'o', 'u');
 
   public static void main(String[] args) {
     int nice = 0;

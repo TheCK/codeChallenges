@@ -21,9 +21,9 @@ public class Main {
         line = line.trim();
         String[] numbers = line.split(",");
 
-        Integer number = Integer.parseInt(numbers[0]);
-        Integer bit1 = Integer.parseInt(numbers[1]);
-        Integer bit2 = Integer.parseInt(numbers[2]);
+        int number = Integer.parseInt(numbers[0]);
+        int bit1 = Integer.parseInt(numbers[1]);
+        int bit2 = Integer.parseInt(numbers[2]);
 
         String bits = Integer.toBinaryString(number);
 

@@ -44,7 +44,7 @@ public class Main {
     int sum = 0;
 
     for (int i = 0; i < line.length(); ++i) {
-      Integer num = Integer.parseInt(line.substring(i, i + 1));
+      int num = Integer.parseInt(line.substring(i, i + 1));
 
       sum += num * num;
     }

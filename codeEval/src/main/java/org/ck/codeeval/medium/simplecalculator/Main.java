@@ -40,7 +40,7 @@ public class Main {
       String token = postfix.remove();
 
       if (isNumerical(token)) {
-        stack.push(Double.parseDouble(token));
+        stack.push(Double.valueOf(token));
       }
 
       if ("+".equals(token)) {

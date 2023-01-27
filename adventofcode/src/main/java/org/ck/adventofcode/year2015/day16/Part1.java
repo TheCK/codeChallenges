@@ -42,9 +42,9 @@ public class Part1 {
           String aunt = matcher.group(1);
 
           aunts.put(aunt, new HashMap<>());
-          aunts.get(aunt).put(matcher.group(2), Integer.parseInt(matcher.group(3)));
-          aunts.get(aunt).put(matcher.group(4), Integer.parseInt(matcher.group(5)));
-          aunts.get(aunt).put(matcher.group(6), Integer.parseInt(matcher.group(7)));
+          aunts.get(aunt).put(matcher.group(2), Integer.valueOf(matcher.group(3)));
+          aunts.get(aunt).put(matcher.group(4), Integer.valueOf(matcher.group(5)));
+          aunts.get(aunt).put(matcher.group(6), Integer.valueOf(matcher.group(7)));
         }
       }
     }

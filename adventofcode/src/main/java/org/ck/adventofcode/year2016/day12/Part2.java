@@ -73,7 +73,7 @@ public class Part2 {
 
     public Copy(Matcher matcher) {
       try {
-        value = Integer.parseInt(matcher.group(2));
+        value = Integer.valueOf(matcher.group(2));
       } catch (NumberFormatException e) {
         copyFrom = matcher.group(2);
       }
@@ -126,12 +126,12 @@ public class Part2 {
 
     public Jump(Matcher matcher) {
       try {
-        value = Integer.parseInt(matcher.group(2));
+        value = Integer.valueOf(matcher.group(2));
       } catch (NumberFormatException e) {
         register = matcher.group(2);
       }
 
-      distance = Integer.parseInt(matcher.group(4));
+      distance = Integer.valueOf(matcher.group(4));
     }
 
     @Override

@@ -75,16 +75,16 @@ public class Main {
       }
     }
 
-    List<Integer> candidats = new ArrayList<>();
+    List<Integer> candidates = new ArrayList<>();
 
     for (String groupString : groupCounts.keySet()) {
       if (groupCounts.get(groupString).equals(2)) {
         String[] elements = groupString.split(" ");
 
-        candidats.add(Integer.parseInt(elements[length - 1]));
+        candidates.add(Integer.valueOf(elements[length - 1]));
       }
     }
 
-    return candidats;
+    return candidates;
   }
 }

@@ -21,8 +21,8 @@ public class Main {
         line = line.trim();
         String[] numbers = line.split(",");
 
-        Integer n = Integer.parseInt(numbers[0]);
-        Integer m = Integer.parseInt(numbers[1]);
+        int n = Integer.parseInt(numbers[0]);
+        int m = Integer.parseInt(numbers[1]);
 
         System.out.println(n - ((n / m) * m));
       }

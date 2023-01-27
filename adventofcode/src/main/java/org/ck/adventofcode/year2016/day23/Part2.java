@@ -13,7 +13,7 @@ import org.ck.codechallengelib.annotation.Solution;
 public class Part2 {
   public static void main(String[] args) {
     List<Command> commands = new ArrayList<>();
-    int a = 0;
+    int a;
 
     try (Scanner in = new Scanner(System.in)) {
       a = in.nextInt();
@@ -53,18 +53,14 @@ public class Part2 {
       if (matcher.find()) {
         String command = matcher.group(1);
 
-        switch (command) {
-          case "cpy":
-            return new Copy(matcher);
-          case "inc":
-            return new Increment(matcher);
-          case "dec":
-            return new Decrement(matcher);
-          case "jnz":
-            return new Jump(matcher);
-          case "tgl":
-            return new Toggle(matcher);
-        }
+        return switch (command) {
+          case "cpy" -> new Copy(matcher);
+          case "inc" -> new Increment(matcher);
+          case "dec" -> new Decrement(matcher);
+          case "jnz" -> new Jump(matcher);
+          case "tgl" -> new Toggle(matcher);
+          default -> null;
+        };
       }
 
       return null;
@@ -157,7 +153,7 @@ public class Part2 {
     public Copy(Matcher matcher) {
       try {
         firstRegister = null;
-        firstIntermediate = Integer.parseInt(matcher.group(2));
+        firstIntermediate = Integer.valueOf(matcher.group(2));
       } catch (NumberFormatException e) {
         firstRegister = matcher.group(2);
         firstIntermediate = null;
@@ -206,7 +202,7 @@ public class Part2 {
     public Jump(Matcher matcher) {
       try {
         firstRegister = null;
-        firstIntermediate = Integer.parseInt(matcher.group(2));
+        firstIntermediate = Integer.valueOf(matcher.group(2));
       } catch (NumberFormatException e) {
         firstRegister = matcher.group(2);
         firstIntermediate = null;
@@ -214,7 +210,7 @@ public class Part2 {
 
       try {
         secondRegister = null;
-        secondIntermediate = Integer.parseInt(matcher.group(4));
+        secondIntermediate = Integer.valueOf(matcher.group(4));
       } catch (NumberFormatException e) {
         secondRegister = matcher.group(4);
         secondIntermediate = null;

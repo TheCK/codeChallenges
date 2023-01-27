@@ -1,6 +1,9 @@
 package org.ck.adventofcode.year2020.day04;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,26 +15,25 @@ import org.ck.codechallengelib.annotation.Solution;
     url = "https://adventofcode.com/2020/day/4#part2",
     category = "2020")
 public class Part2 {
-  private static Map<Pattern, Function<String, Boolean>> validators = new HashMap<>();
+  private static final Map<Pattern, Function<String, Boolean>> VALIDATORS = new HashMap<>();
 
-  private static List<String> eyeColours =
-      Arrays.asList("amb", "blu", "brn", "gry", "grn", "hzl", "oth");
-  private static Pattern idPattern = Pattern.compile("[0-9]{9}");
-  private static Pattern hairPattern = Pattern.compile("#[0-9a-f]{6}");
-  private static Pattern heightPattern = Pattern.compile("([0-9]+)(in|cm)");
-  private static Pattern expiryPattern = Pattern.compile("20(2[0-9]|30)");
-  private static Pattern issuePattern = Pattern.compile("20(1[0-9]|20)");
-  private static Pattern birthPattern = Pattern.compile("(19[2-9][0-9]|200[0-3])");
+  private static final Set<String> EYE_COLOURS =
+      Set.of("amb", "blu", "brn", "gry", "grn", "hzl", "oth");
+  private static final Pattern ID_PATTERN = Pattern.compile("\\d{9}");
+  private static final Pattern HAIR_PATTERN = Pattern.compile("#[0-9a-f]{6}");
+  private static final Pattern HEIGHT_PATTERN = Pattern.compile("(\\d+)(in|cm)");
+  private static final Pattern EXPIRY_PATTERN = Pattern.compile("20(2\\d|30)");
+  private static final Pattern ISSUE_PATTERN = Pattern.compile("20(1\\d|20)");
+  private static final Pattern BIRTH_PATTERN = Pattern.compile("(19[2-9]\\d|200[0-3])");
 
   static {
-    validators.put(Pattern.compile("byr:(\\S+)"), (value) -> birthPattern.matcher(value).matches());
-    validators.put(Pattern.compile("iyr:(\\S+)"), (value) -> issuePattern.matcher(value).matches());
-    validators.put(
-        Pattern.compile("eyr:(\\S+)"), (value) -> expiryPattern.matcher(value).matches());
-    validators.put(
+    VALIDATORS.put(Pattern.compile("byr:(\\S+)"), value -> BIRTH_PATTERN.matcher(value).matches());
+    VALIDATORS.put(Pattern.compile("iyr:(\\S+)"), value -> ISSUE_PATTERN.matcher(value).matches());
+    VALIDATORS.put(Pattern.compile("eyr:(\\S+)"), value -> EXPIRY_PATTERN.matcher(value).matches());
+    VALIDATORS.put(
         Pattern.compile("hgt:(\\S+)"),
-        (value) -> {
-          Matcher matcher = heightPattern.matcher(value);
+        value -> {
+          Matcher matcher = HEIGHT_PATTERN.matcher(value);
 
           if (matcher.find()) {
             int height = Integer.parseInt(matcher.group(1));
@@ -45,9 +47,9 @@ public class Part2 {
 
           return false;
         });
-    validators.put(Pattern.compile("hcl:(\\S+)"), (value) -> hairPattern.matcher(value).matches());
-    validators.put(Pattern.compile("ecl:(\\S+)"), (value) -> eyeColours.contains(value));
-    validators.put(Pattern.compile("pid:(\\S+)"), (value) -> idPattern.matcher(value).matches());
+    VALIDATORS.put(Pattern.compile("hcl:(\\S+)"), value -> HAIR_PATTERN.matcher(value).matches());
+    VALIDATORS.put(Pattern.compile("ecl:(\\S+)"), EYE_COLOURS::contains);
+    VALIDATORS.put(Pattern.compile("pid:(\\S+)"), value -> ID_PATTERN.matcher(value).matches());
   }
 
   public static void main(String[] args) {
@@ -68,10 +70,11 @@ public class Part2 {
 
         String data = builder.toString();
         boolean valid = true;
-        for (Map.Entry<Pattern, Function<String, Boolean>> validator : validators.entrySet()) {
+        for (Map.Entry<Pattern, Function<String, Boolean>> validator : VALIDATORS.entrySet()) {
           Matcher matcher = validator.getKey().matcher(data);
 
-          if (!matcher.find() || !validator.getValue().apply(matcher.group(1))) {
+          if (!matcher.find()
+              || Boolean.FALSE.equals(validator.getValue().apply(matcher.group(1)))) {
             valid = false;
             break;
           }

@@ -218,7 +218,7 @@ public class Part1 {
     public Copy(Matcher matcher) {
       try {
         firstRegister = null;
-        firstIntermediate = Integer.parseInt(matcher.group(2));
+        firstIntermediate = Integer.valueOf(matcher.group(2));
       } catch (NumberFormatException e) {
         firstRegister = matcher.group(2);
         firstIntermediate = null;
@@ -271,7 +271,7 @@ public class Part1 {
     public Jump(Matcher matcher) {
       try {
         firstRegister = null;
-        firstIntermediate = Integer.parseInt(matcher.group(2));
+        firstIntermediate = Integer.valueOf(matcher.group(2));
       } catch (NumberFormatException e) {
         firstRegister = matcher.group(2);
         firstIntermediate = null;
@@ -279,7 +279,7 @@ public class Part1 {
 
       try {
         secondRegister = null;
-        secondIntermediate = Integer.parseInt(matcher.group(4));
+        secondIntermediate = Integer.valueOf(matcher.group(4));
       } catch (NumberFormatException e) {
         secondRegister = matcher.group(4);
         secondIntermediate = null;

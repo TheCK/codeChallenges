@@ -3,6 +3,7 @@ package org.ck.codechallengelib.annotation;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.*;
 import java.util.stream.Collectors;
 import javax.annotation.processing.AbstractProcessor;
@@ -200,7 +201,7 @@ public class ReadmeGenerator extends AbstractProcessor {
 
       try {
         if (file.exists()) {
-          file.delete();
+          Files.delete(file.toPath());
         }
 
         try (FileWriter writer = new FileWriter(file, true)) {

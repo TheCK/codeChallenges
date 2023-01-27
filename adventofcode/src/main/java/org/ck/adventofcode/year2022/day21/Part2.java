@@ -21,7 +21,7 @@ public class Part2 {
         String[] line = in.nextLine().split(" ");
 
         if (line.length == 2) {
-          values.put(line[0].substring(0, 4), Long.parseLong(line[1]));
+          values.put(line[0].substring(0, 4), Long.valueOf(line[1]));
         } else {
           operations.put(
               line[0].substring(0, 4),

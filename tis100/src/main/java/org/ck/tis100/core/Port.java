@@ -1,5 +1,6 @@
 package org.ck.tis100.core;
 
+import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.function.Consumer;
 
@@ -28,5 +29,21 @@ public class Port {
     }
 
     return OptionalInt.empty();
+  }
+
+  public OptionalInt peek() {
+    if (value != null) {
+      return OptionalInt.of(value);
+    }
+
+    return OptionalInt.empty();
+  }
+
+  public Optional<Readable> getReadable(int step) {
+    if (step > stepOfValue && value != null) {
+      return Optional.of(new Readable(value, () -> value = null));
+    }
+
+    return Optional.empty();
   }
 }

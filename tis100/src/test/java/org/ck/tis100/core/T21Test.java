@@ -8,12 +8,13 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class NodeTest {
+public class T21Test {
 
   @ParameterizedTest
   @ValueSource(ints = {-42, -0, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55})
@@ -21,16 +22,13 @@ public class NodeTest {
     Port left = new Port();
     Port right = new Port();
 
-    Map<String, Port> ports = new HashMap();
-    ports.put("LEFT", left);
-    ports.put("RIGHT", right);
-
+    Map<String, Port> ports = Map.of("LEFT", left, "RIGHT", right);
     left.write(number, 0);
 
-    Node node = new Node(Arrays.asList("MOV LEFT, ACC", "ADD ACC", "MOV ACC, RIGHT"), ports);
-    node.step();
-    node.step();
-    node.step();
+    T21 node = new T21(List.of("MOV LEFT, ACC", "ADD ACC", "MOV ACC, RIGHT"), ports);
+    node.step(1);
+    node.step(2);
+    node.step(3);
 
     OptionalInt read = right.read(Integer.MAX_VALUE);
 
@@ -64,20 +62,20 @@ public class NodeTest {
 
   @ParameterizedTest
   @MethodSource("complexSampleProvider")
-  public void shouldRunComplexSampleProgram(
+  void shouldRunComplexSampleProgram(
       List<Integer> ups, List<Integer> expectedLefts, List<Integer> expectedRights, int maxSteps) {
     Port up = new Port();
     Port left = new Port();
     Port right = new Port();
 
-    HashMap<String, Port> ports = new HashMap();
+    HashMap<String, Port> ports = new HashMap<>();
     ports.put("UP", up);
     ports.put("LEFT", left);
     ports.put("RIGHT", right);
 
-    Node node =
-        new Node(
-            Arrays.asList(
+    T21 node =
+        new T21(
+            List.of(
                 "START:",
                 "MOV UP, ACC",
                 "JGZ POSITIVE",
@@ -102,7 +100,7 @@ public class NodeTest {
         ++upCount;
       }
 
-      node.step();
+      node.step(step + 1);
 
       OptionalInt maybeRight = right.read(Integer.MAX_VALUE);
       if (maybeRight.isPresent()) {
@@ -199,7 +197,7 @@ public class NodeTest {
     ports.put("UP", up);
     ports.put("DOWN", down);
 
-    Node node = new Node(instructions, ports);
+    T21 node = new T21(instructions, ports);
 
     List<Integer> receivedLefts = new ArrayList<>();
     List<Integer> receivedRights = new ArrayList<>();
@@ -234,7 +232,7 @@ public class NodeTest {
         ++downCount;
       }
 
-      node.step();
+      node.step(step);
 
       if (expectedLefts.size() > 0) {
         OptionalInt maybeLeft = left.read(Integer.MAX_VALUE);
@@ -270,5 +268,30 @@ public class NodeTest {
     if (step >= maxSteps) {
       fail();
     }
+  }
+
+  @Test
+  public void doesNotReadValueWhenWriteIsBlocked() {
+    Port up = new Port();
+    Port down = new Port();
+
+    Map<String, Port> ports = Map.of("UP", up, "DOWN", down);
+    up.write(5, 0);
+    down.write(10, 0);
+
+    T21 node = new T21(List.of("MOV UP, DOWN"), ports);
+    node.step(1);
+
+    assertTrue(up.peek().isPresent());
+    assertEquals(5, up.peek().getAsInt());
+    assertTrue(down.peek().isPresent());
+    assertEquals(10, down.peek().getAsInt());
+
+    down.read(1);
+    node.step(2);
+
+    assertTrue(up.peek().isEmpty());
+    assertTrue(down.peek().isPresent());
+    assertEquals(5, down.peek().getAsInt());
   }
 }

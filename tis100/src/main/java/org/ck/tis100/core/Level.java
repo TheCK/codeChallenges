@@ -13,7 +13,7 @@ public class Level {
 
   private final int nodes;
   private final int loc;
-  private int cycle = 1;
+  private int cycle;
 
   public Level(
       final NodeDefinition[][] definitions,
@@ -101,9 +101,10 @@ public class Level {
     this.outputs = outputs;
   }
 
-  public RunResult run(int limit) {
+  public RunResult run(List<Integer> expectedNumberOfOutputs) {
     boolean didSomething = true;
-    while (cycle < limit && didSomething) {
+    while (didSomething
+        && !outputs.stream().map(List::size).toList().equals(expectedNumberOfOutputs)) {
       didSomething = false;
 
       writeInputs();
@@ -116,7 +117,7 @@ public class Level {
         }
       }
 
-      readOutputs();
+      readOutputs(cycle);
       ++cycle;
     }
 
@@ -132,10 +133,10 @@ public class Level {
     }
   }
 
-  private void readOutputs() {
+  private void readOutputs(int cycle) {
     for (int i = 0; i < outputs.size(); ++i) {
       List<Integer> output = outputs.get(i);
-      verticalPorts[i][verticalPorts[i].length - 1].read(Integer.MAX_VALUE).ifPresent(output::add);
+      verticalPorts[i][verticalPorts[i].length - 1].read(cycle).ifPresent(output::add);
     }
   }
 

@@ -13,22 +13,30 @@ import org.junit.jupiter.api.Test;
 
 public abstract class BaseTest {
 
-  private final Segment segment;
-  private final List<List<Integer>> inputs;
-  private final List<List<Integer>> expectedOutputs;
+  public static final List<Integer> NO_VALUES = List.of();
 
-  private final RunResult expectedResultForOptimalCycles;
-  private final RunResult expectedResultForOptimalNodes;
-  private final RunResult expectedResultForOptimalLines;
+  private final Segment segment;
+  private final List<List<List<Integer>>> inputs;
+  private final List<List<List<Integer>>> expectedOutputs;
+
+  private final List<RunResult> expectedResultForOptimalCycles;
+  private final List<RunResult> expectedResultForOptimalNodes;
+  private final List<RunResult> expectedResultForOptimalLines;
 
   public BaseTest(
       final Class<? extends Segment> testClass,
-      final List<List<Integer>> inputs,
-      final List<List<Integer>> expectedOutputs,
-      final RunResult expectedResultForOptimalCycles,
-      final RunResult expectedResultForOptimalNodes,
-      final RunResult expectedResultForOptimalLines)
+      final List<List<List<Integer>>> inputs,
+      final List<List<List<Integer>>> expectedOutputs,
+      final List<RunResult> expectedResultForOptimalCycles,
+      final List<RunResult> expectedResultForOptimalNodes,
+      final List<RunResult> expectedResultForOptimalLines)
       throws Exception {
+    if (inputs.size() != expectedOutputs.size()
+        || inputs.size() != expectedResultForOptimalCycles.size()
+        || inputs.size() != expectedResultForOptimalNodes.size()
+        || inputs.size() != expectedResultForOptimalLines.size()) {
+      throw new IllegalArgumentException();
+    }
     segment = testClass.getDeclaredConstructor().newInstance();
 
     this.inputs = inputs;
@@ -39,47 +47,68 @@ public abstract class BaseTest {
   }
 
   @Test
-  public void runTestForOptimalCycles() {
-    List<List<Integer>> outputs =
-        List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+  public void runTestsForOptimalCycles() {
+    for (int i = 0; i < inputs.size(); ++i) {
+      final List<List<Integer>> currentInputs = inputs.get(i);
+      final List<List<Integer>> currentExpectedOutputs = expectedOutputs.get(i);
+      final RunResult currentExpectedRunResult = expectedResultForOptimalCycles.get(i);
 
-    final Level level =
-        segment.getSolutionForOptimalCycles(
-            inputs.stream().map(ArrayDeque::new).map(x -> (Queue<Integer>) x).toList(), outputs);
+      final List<List<Integer>> outputs =
+          List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
 
-    final RunResult result = level.run(500);
+      final Level level =
+          segment.getSolutionForOptimalCycles(
+              currentInputs.stream().map(ArrayDeque::new).map(x -> (Queue<Integer>) x).toList(),
+              outputs);
 
-    assertEquals(expectedResultForOptimalCycles, result);
-    assertEquals(expectedOutputs, outputs);
+      final RunResult result = level.run(currentExpectedOutputs.stream().map(List::size).toList());
+
+      assertEquals(currentExpectedRunResult, result);
+      assertEquals(currentExpectedOutputs, outputs);
+    }
   }
 
   @Test
-  public void runTestForOptimalNodes() {
-    List<List<Integer>> outputs =
-        List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+  public void runTestsForOptimalNodes() {
+    for (int i = 0; i < inputs.size(); ++i) {
+      final List<List<Integer>> currentInputs = inputs.get(i);
+      final List<List<Integer>> currentExpectedOutputs = expectedOutputs.get(i);
+      final RunResult currentExpectedRunResult = expectedResultForOptimalNodes.get(i);
 
-    final Level level =
-        segment.getSolutionForOptimalNodes(
-            inputs.stream().map(ArrayDeque::new).map(x -> (Queue<Integer>) x).toList(), outputs);
+      final List<List<Integer>> outputs =
+          List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
 
-    final RunResult result = level.run(500);
+      final Level level =
+          segment.getSolutionForOptimalNodes(
+              currentInputs.stream().map(ArrayDeque::new).map(x -> (Queue<Integer>) x).toList(),
+              outputs);
 
-    assertEquals(expectedResultForOptimalNodes, result);
-    assertEquals(expectedOutputs, outputs);
+      final RunResult result = level.run(currentExpectedOutputs.stream().map(List::size).toList());
+
+      assertEquals(currentExpectedRunResult, result);
+      assertEquals(currentExpectedOutputs, outputs);
+    }
   }
 
   @Test
-  public void runTestForOptimalLines() {
-    List<List<Integer>> outputs =
-        List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+  public void runTestsForOptimalLines() {
+    for (int i = 0; i < inputs.size(); ++i) {
+      final List<List<Integer>> currentInputs = inputs.get(i);
+      final List<List<Integer>> currentExpectedOutputs = expectedOutputs.get(i);
+      final RunResult currentExpectedRunResult = expectedResultForOptimalLines.get(i);
 
-    final Level level =
-        segment.getSolutionForOptimalLinesOfCode(
-            inputs.stream().map(ArrayDeque::new).map(x -> (Queue<Integer>) x).toList(), outputs);
+      final List<List<Integer>> outputs =
+          List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
 
-    final RunResult result = level.run(500);
+      final Level level =
+          segment.getSolutionForOptimalLinesOfCode(
+              currentInputs.stream().map(ArrayDeque::new).map(x -> (Queue<Integer>) x).toList(),
+              outputs);
 
-    assertEquals(expectedResultForOptimalLines, result);
-    assertEquals(expectedOutputs, outputs);
+      final RunResult result = level.run(currentExpectedOutputs.stream().map(List::size).toList());
+
+      assertEquals(currentExpectedRunResult, result);
+      assertEquals(currentExpectedOutputs, outputs);
+    }
   }
 }

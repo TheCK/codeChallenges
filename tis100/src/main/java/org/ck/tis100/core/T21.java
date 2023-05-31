@@ -43,6 +43,11 @@ public class T21 extends Node {
       return false;
     }
 
+    if (ip == instructions.size()) {
+      ip = 0;
+      return true;
+    }
+
     while (instructions.get(ip).startsWith("#")) {
       ++ip;
     }
@@ -92,10 +97,6 @@ public class T21 extends Node {
     if (continueStep) {
       lastStep = currentStep;
       ++ip;
-
-      if (ip == instructions.size()) {
-        ip = 0;
-      }
     }
 
     return continueStep;

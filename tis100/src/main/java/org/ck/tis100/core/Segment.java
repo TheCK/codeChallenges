@@ -11,11 +11,11 @@ import org.ck.codechallengelib.annotation.Solution;
     category = "")
 public abstract class Segment {
   public abstract Level getSolutionForOptimalCycles(
-      List<Queue<Integer>> inputs, List<List<Integer>> outputs);
+      final List<Queue<Integer>> inputs, final List<List<Integer>> outputs);
 
   public abstract Level getSolutionForOptimalNodes(
-      List<Queue<Integer>> inputs, List<List<Integer>> outputs);
+      final List<Queue<Integer>> inputs, final List<List<Integer>> outputs);
 
   public abstract Level getSolutionForOptimalLinesOfCode(
-      List<Queue<Integer>> inputs, List<List<Integer>> outputs);
+      final List<Queue<Integer>> inputs, final List<List<Integer>> outputs);
 }

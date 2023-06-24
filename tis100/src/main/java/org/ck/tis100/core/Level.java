@@ -45,12 +45,19 @@ public class Level {
                 .filter(nodeDefinition -> !nodeDefinition.instructions().isEmpty())
                 .count();
     loc =
-        Arrays.stream(definitions)
-            .flatMap(Arrays::stream)
-            .filter(nodeDefinition -> nodeDefinition.type() == NodeType.T21)
-            .map(NodeDefinition::instructions)
-            .mapToInt(List::size)
-            .sum();
+        (int)
+            Arrays.stream(definitions)
+                .flatMap(Arrays::stream)
+                .filter(nodeDefinition -> nodeDefinition.type() == NodeType.T21)
+                .map(NodeDefinition::instructions)
+                .flatMap(List::stream)
+                .filter(line -> !line.isBlank())
+                .filter(line -> !line.startsWith("#"))
+                .filter(
+                    line ->
+                        !line.contains(":")
+                            || (line.split(":").length > 1 && !line.split(":")[1].isBlank()))
+                .count();
 
     grid = new Node[definitions.length][definitions[0].length];
     for (int column = 0; column < definitions.length; ++column) {
@@ -127,7 +134,7 @@ public class Level {
   private void writeInputs() {
     for (int i = 0; i < inputs.size(); ++i) {
       Queue<Integer> input = inputs.get(i);
-      if (!input.isEmpty() && verticalPorts[i][0].write(input.peek(), 0)) {
+      if (!input.isEmpty() && verticalPorts[i][0].write(input.peek(), 0, () -> {})) {
         input.remove();
       }
     }

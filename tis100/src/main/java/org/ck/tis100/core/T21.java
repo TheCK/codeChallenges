@@ -13,6 +13,7 @@ public class T21 extends Node {
   private String lastPort = null;
   private int ip = 0;
   private int lastStep = 0;
+  private boolean waitingForRead;
 
   public T21(final List<String> instructions, final Map<String, Port> ports) {
     for (int i = 0; i < instructions.size(); ++i) {
@@ -43,9 +44,12 @@ public class T21 extends Node {
       return false;
     }
 
+    if (waitingForRead) {
+      return false;
+    }
+
     if (ip == instructions.size()) {
       ip = 0;
-      return true;
     }
 
     while (instructions.get(ip).startsWith("#")) {
@@ -125,7 +129,7 @@ public class T21 extends Node {
     final Optional<Readable> value = readValue(from, currentStep);
 
     if (value.isPresent()) {
-      acc += value.get().value();
+      acc -= value.get().value();
       value.get().confirmRead().run();
       return true;
     }
@@ -178,14 +182,18 @@ public class T21 extends Node {
       case "LEFT":
       case "RIGHT":
         if (ports.containsKey(name)) {
-          return ports.get(name).write(value, currentStep);
+          if (ports.get(name).write(value, currentStep, this::resetWaitingForRead)) {
+            waitingForRead = true;
+            return true;
+          }
         }
         return false;
       case "ANY":
         // TODO: this is broken
         for (Map.Entry<String, Port> port : ports.entrySet()) {
-          if (port.getValue().write(value, currentStep)) {
+          if (port.getValue().write(value, currentStep, this::resetWaitingForRead)) {
             lastPort = port.getKey();
+            waitingForRead = true;
             return true;
           }
         }
@@ -194,10 +202,18 @@ public class T21 extends Node {
         if (lastPort == null) {
           throw new IllegalStateException();
         }
-        return ports.get(lastPort).write(value, currentStep);
+        if (ports.get(lastPort).write(value, currentStep, this::resetWaitingForRead)) {
+          waitingForRead = true;
+          return true;
+        }
+        return false;
       default:
         throw new IllegalArgumentException();
     }
+  }
+
+  private void resetWaitingForRead() {
+    waitingForRead = false;
   }
 
   private Optional<Readable> readValue(final String name, final int currentStep) {

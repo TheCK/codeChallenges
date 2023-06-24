@@ -16,42 +16,22 @@ public abstract class BaseTest {
   public static final List<Integer> NO_VALUES = List.of();
 
   private final Segment segment;
-  private final List<List<List<Integer>>> inputs;
-  private final List<List<List<Integer>>> expectedOutputs;
 
-  private final List<RunResult> expectedResultForOptimalCycles;
-  private final List<RunResult> expectedResultForOptimalNodes;
-  private final List<RunResult> expectedResultForOptimalLines;
+  private final List<TestSetup> testSetups;
 
-  public BaseTest(
-      final Class<? extends Segment> testClass,
-      final List<List<List<Integer>>> inputs,
-      final List<List<List<Integer>>> expectedOutputs,
-      final List<RunResult> expectedResultForOptimalCycles,
-      final List<RunResult> expectedResultForOptimalNodes,
-      final List<RunResult> expectedResultForOptimalLines)
+  public BaseTest(final Class<? extends Segment> testClass, final List<TestSetup> testSetups)
       throws Exception {
-    if (inputs.size() != expectedOutputs.size()
-        || inputs.size() != expectedResultForOptimalCycles.size()
-        || inputs.size() != expectedResultForOptimalNodes.size()
-        || inputs.size() != expectedResultForOptimalLines.size()) {
-      throw new IllegalArgumentException();
-    }
-    segment = testClass.getDeclaredConstructor().newInstance();
+    this.segment = testClass.getDeclaredConstructor().newInstance();
 
-    this.inputs = inputs;
-    this.expectedOutputs = expectedOutputs;
-    this.expectedResultForOptimalCycles = expectedResultForOptimalCycles;
-    this.expectedResultForOptimalNodes = expectedResultForOptimalNodes;
-    this.expectedResultForOptimalLines = expectedResultForOptimalLines;
+    this.testSetups = testSetups;
   }
 
   @Test
   public void runTestsForOptimalCycles() {
-    for (int i = 0; i < inputs.size(); ++i) {
-      final List<List<Integer>> currentInputs = inputs.get(i);
-      final List<List<Integer>> currentExpectedOutputs = expectedOutputs.get(i);
-      final RunResult currentExpectedRunResult = expectedResultForOptimalCycles.get(i);
+    for (TestSetup testSetup : testSetups) {
+      final List<List<Integer>> currentInputs = testSetup.inputs();
+      final List<List<Integer>> currentExpectedOutputs = testSetup.expectedOutputs();
+      final RunResult currentExpectedRunResult = testSetup.expectedResultForOptimalCycles();
 
       final List<List<Integer>> outputs =
           List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
@@ -70,10 +50,10 @@ public abstract class BaseTest {
 
   @Test
   public void runTestsForOptimalNodes() {
-    for (int i = 0; i < inputs.size(); ++i) {
-      final List<List<Integer>> currentInputs = inputs.get(i);
-      final List<List<Integer>> currentExpectedOutputs = expectedOutputs.get(i);
-      final RunResult currentExpectedRunResult = expectedResultForOptimalNodes.get(i);
+    for (TestSetup testSetup : testSetups) {
+      final List<List<Integer>> currentInputs = testSetup.inputs();
+      final List<List<Integer>> currentExpectedOutputs = testSetup.expectedOutputs();
+      final RunResult currentExpectedRunResult = testSetup.expectedResultForOptimalNodes();
 
       final List<List<Integer>> outputs =
           List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
@@ -92,10 +72,10 @@ public abstract class BaseTest {
 
   @Test
   public void runTestsForOptimalLines() {
-    for (int i = 0; i < inputs.size(); ++i) {
-      final List<List<Integer>> currentInputs = inputs.get(i);
-      final List<List<Integer>> currentExpectedOutputs = expectedOutputs.get(i);
-      final RunResult currentExpectedRunResult = expectedResultForOptimalLines.get(i);
+    for (TestSetup testSetup : testSetups) {
+      final List<List<Integer>> currentInputs = testSetup.inputs();
+      final List<List<Integer>> currentExpectedOutputs = testSetup.expectedOutputs();
+      final RunResult currentExpectedRunResult = testSetup.expectedResultForOptimalLines();
 
       final List<List<Integer>> outputs =
           List.of(new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());

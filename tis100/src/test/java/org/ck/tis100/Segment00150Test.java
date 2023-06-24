@@ -3,6 +3,7 @@ package org.ck.tis100;
 import java.util.List;
 import org.ck.tis100.core.RunResult;
 import org.ck.tis100.test.BaseTest;
+import org.ck.tis100.test.TestSetup;
 
 class Segment00150Test extends BaseTest {
 
@@ -45,15 +46,23 @@ class Segment00150Test extends BaseTest {
     super(
         Segment00150.class,
         List.of(
-            List.of(TEST_1_INPUT_1, NO_VALUES, NO_VALUES, TEST_1_INPUT_4),
-            List.of(TEST_2_INPUT_1, NO_VALUES, NO_VALUES, TEST_2_INPUT_4),
-            List.of(TEST_3_INPUT_1, NO_VALUES, NO_VALUES, TEST_3_INPUT_4)),
-        List.of(
-            List.of(TEST_1_EXPECTED_1, NO_VALUES, NO_VALUES, TEST_1_EXPECTED_4),
-            List.of(TEST_2_EXPECTED_1, NO_VALUES, NO_VALUES, TEST_2_EXPECTED_4),
-            List.of(TEST_3_EXPECTED_1, NO_VALUES, NO_VALUES, TEST_3_EXPECTED_4)),
-        List.of(EXPECTED_RESULT, EXPECTED_RESULT, EXPECTED_RESULT),
-        List.of(EXPECTED_RESULT, EXPECTED_RESULT, EXPECTED_RESULT),
-        List.of(EXPECTED_RESULT, EXPECTED_RESULT, EXPECTED_RESULT));
+            new TestSetup(
+                List.of(TEST_1_INPUT_1, NO_VALUES, NO_VALUES, TEST_1_INPUT_4),
+                List.of(TEST_1_EXPECTED_1, NO_VALUES, NO_VALUES, TEST_1_EXPECTED_4),
+                EXPECTED_RESULT,
+                EXPECTED_RESULT,
+                EXPECTED_RESULT),
+            new TestSetup(
+                List.of(TEST_2_INPUT_1, NO_VALUES, NO_VALUES, TEST_2_INPUT_4),
+                List.of(TEST_2_EXPECTED_1, NO_VALUES, NO_VALUES, TEST_2_EXPECTED_4),
+                EXPECTED_RESULT,
+                EXPECTED_RESULT,
+                EXPECTED_RESULT),
+            new TestSetup(
+                List.of(TEST_3_INPUT_1, NO_VALUES, NO_VALUES, TEST_3_INPUT_4),
+                List.of(TEST_3_EXPECTED_1, NO_VALUES, NO_VALUES, TEST_3_EXPECTED_4),
+                EXPECTED_RESULT,
+                EXPECTED_RESULT,
+                EXPECTED_RESULT)));
   }
 }

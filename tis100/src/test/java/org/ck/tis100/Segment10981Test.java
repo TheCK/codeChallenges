@@ -3,6 +3,7 @@ package org.ck.tis100;
 import java.util.List;
 import org.ck.tis100.core.RunResult;
 import org.ck.tis100.test.BaseTest;
+import org.ck.tis100.test.TestSetup;
 
 class Segment10981Test extends BaseTest {
 
@@ -36,15 +37,23 @@ class Segment10981Test extends BaseTest {
     super(
         Segment10981.class,
         List.of(
-            List.of(NO_VALUES, TEST_1_INPUT_2, NO_VALUES, NO_VALUES),
-            List.of(NO_VALUES, TEST_2_INPUT_2, NO_VALUES, NO_VALUES),
-            List.of(NO_VALUES, TEST_3_INPUT_2, NO_VALUES, NO_VALUES)),
-        List.of(
-            List.of(NO_VALUES, NO_VALUES, TEST_1_EXPECTED_3, NO_VALUES),
-            List.of(NO_VALUES, NO_VALUES, TEST_2_EXPECTED_3, NO_VALUES),
-            List.of(NO_VALUES, NO_VALUES, TEST_3_EXPECTED_3, NO_VALUES)),
-        List.of(EXPECTED_RESULT_MIN_CYCLES, EXPECTED_RESULT_MIN_CYCLES, EXPECTED_RESULT_MIN_CYCLES),
-        List.of(EXPECTED_RESULT_MIN_NODES, EXPECTED_RESULT_MIN_NODES, EXPECTED_RESULT_MIN_NODES),
-        List.of(EXPECTED_RESULT_MIN_LINES, EXPECTED_RESULT_MIN_LINES, EXPECTED_RESULT_MIN_LINES));
+            new TestSetup(
+                List.of(NO_VALUES, TEST_1_INPUT_2, NO_VALUES, NO_VALUES),
+                List.of(NO_VALUES, NO_VALUES, TEST_1_EXPECTED_3, NO_VALUES),
+                EXPECTED_RESULT_MIN_CYCLES,
+                EXPECTED_RESULT_MIN_NODES,
+                EXPECTED_RESULT_MIN_LINES),
+            new TestSetup(
+                List.of(NO_VALUES, TEST_2_INPUT_2, NO_VALUES, NO_VALUES),
+                List.of(NO_VALUES, NO_VALUES, TEST_2_EXPECTED_3, NO_VALUES),
+                EXPECTED_RESULT_MIN_CYCLES,
+                EXPECTED_RESULT_MIN_NODES,
+                EXPECTED_RESULT_MIN_LINES),
+            new TestSetup(
+                List.of(NO_VALUES, TEST_3_INPUT_2, NO_VALUES, NO_VALUES),
+                List.of(NO_VALUES, NO_VALUES, TEST_3_EXPECTED_3, NO_VALUES),
+                EXPECTED_RESULT_MIN_CYCLES,
+                EXPECTED_RESULT_MIN_NODES,
+                EXPECTED_RESULT_MIN_LINES)));
   }
 }

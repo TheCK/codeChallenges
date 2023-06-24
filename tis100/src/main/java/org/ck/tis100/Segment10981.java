@@ -13,7 +13,7 @@ import org.ck.tis100.core.Segment;
 public class Segment10981 extends Segment {
   @Override
   public Level getSolutionForOptimalCycles(
-      List<Queue<Integer>> inputs, List<List<Integer>> outputs) {
+      final List<Queue<Integer>> inputs, final List<List<Integer>> outputs) {
     return new Level(
         new Level.NodeDefinition[][] {
           new Level.NodeDefinition[] {
@@ -49,17 +49,17 @@ public class Segment10981 extends Segment {
 
   @Override
   public Level getSolutionForOptimalNodes(
-      List<Queue<Integer>> inputs, List<List<Integer>> outputs) {
+      final List<Queue<Integer>> inputs, final List<List<Integer>> outputs) {
     return getSolution(inputs, outputs);
   }
 
   @Override
   public Level getSolutionForOptimalLinesOfCode(
-      List<Queue<Integer>> inputs, List<List<Integer>> outputs) {
+      final List<Queue<Integer>> inputs, final List<List<Integer>> outputs) {
     return getSolution(inputs, outputs);
   }
 
-  private Level getSolution(List<Queue<Integer>> inputs, List<List<Integer>> outputs) {
+  private Level getSolution(final List<Queue<Integer>> inputs, final List<List<Integer>> outputs) {
     return new Level(
         new Level.NodeDefinition[][] {
           new Level.NodeDefinition[] {

@@ -23,7 +23,7 @@ public class T21Test {
     Port right = new Port();
 
     Map<String, Port> ports = Map.of("LEFT", left, "RIGHT", right);
-    left.write(number, 0);
+    left.write(number, 0, () -> {});
 
     T21 node = new T21(List.of("MOV LEFT, ACC", "ADD ACC", "MOV ACC, RIGHT"), ports);
     node.step(1);
@@ -96,7 +96,7 @@ public class T21Test {
     int upCount = 0;
     while ((!rights.equals(expectedRights) || !lefts.equals(expectedLefts)) && step < maxSteps) {
 
-      if (upCount < ups.size() && up.write(ups.get(upCount), step)) {
+      if (upCount < ups.size() && up.write(ups.get(upCount), step, () -> {})) {
         ++upCount;
       }
 
@@ -216,19 +216,19 @@ public class T21Test {
             || !receivedDowns.equals(expectedDowns))
         && step < maxSteps) {
 
-      if (leftCount < lefts.size() && left.write(lefts.get(leftCount), step)) {
+      if (leftCount < lefts.size() && left.write(lefts.get(leftCount), step, () -> {})) {
         ++leftCount;
       }
 
-      if (rightCount < rights.size() && right.write(rights.get(rightCount), step)) {
+      if (rightCount < rights.size() && right.write(rights.get(rightCount), step, () -> {})) {
         ++rightCount;
       }
 
-      if (upCount < ups.size() && up.write(ups.get(upCount), step)) {
+      if (upCount < ups.size() && up.write(ups.get(upCount), step, () -> {})) {
         ++upCount;
       }
 
-      if (downCount < downs.size() && down.write(downs.get(downCount), step)) {
+      if (downCount < downs.size() && down.write(downs.get(downCount), step, () -> {})) {
         ++downCount;
       }
 
@@ -276,8 +276,8 @@ public class T21Test {
     Port down = new Port();
 
     Map<String, Port> ports = Map.of("UP", up, "DOWN", down);
-    up.write(5, 0);
-    down.write(10, 0);
+    up.write(5, 0, () -> {});
+    down.write(10, 0, () -> {});
 
     T21 node = new T21(List.of("MOV UP, DOWN"), ports);
     node.step(1);

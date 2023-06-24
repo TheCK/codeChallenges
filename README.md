@@ -1,23 +1,18 @@
-# codeChallenges
+# Contests (2/2)
 
-## [adventOfCode](adventofcode/README.md)
+## Datatähti 2023 alku (2/2)
 
-## [codeEval](codeEval/README.md)
+|      # | Name                | Solution                           | Test                            |
+|-------:|---------------------|:----------------------------------:|:-------------------------------:|
+| 104301 | [A - Cards][104301] | &#9989;[&#128190;][104301solution] | &#9989;[&#128190;][104301tests] |
+| 104302 | [B - Cows][104302]  | &#9989;[&#128190;][104302solution] | &#9989;[&#128190;][104302tests] |
 
-## [codeforces](codeforces/README.md)
+[104301]: https://cses.fi/430/task/A
+[104302]: https://cses.fi/430/task/B
 
-## [codewars](codewars/README.md)
+[104301solution]: src/main/java/org/ck/cses/contests/datatähti2023alku/ACards.java
+[104302solution]: src/main/java/org/ck/cses/contests/datatähti2023alku/BCows.java
 
-## [Codility](codility/README.md)
+[104301tests]: src/test/java/org/ck/cses/contests/datatähti2023alku/ACardsTest.java
+[104302tests]: src/test/java/org/ck/cses/contests/datatähti2023alku/BCowsTest.java
 
-## [codingame](codingame/README.md)
-
-## [Google's Coding Competitions](codingcompetitions/README.md)
-
-## [HackerRank](hackerRank/README.md)
-
-## [Leetcode](leetcode/README.md)
-
-## [Project Euler](projectEuler/README.md)
-
-## [Sphere Online Judge](spoj/README.md)

@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <modules>
@@ -26,6 +26,7 @@
         <module>adventofcode</module>
         <module>codingcompetitions</module>
         <module>tis100</module>
+        <module>molekSyntez</module>
         <module>codingame</module>
         <module>cses</module>
     </modules>

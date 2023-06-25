@@ -1,170 +1,329 @@
 package org.ck.molek;
 
 import static org.ck.molek.Emitter.Instruction.NONE;
-import static org.ck.molek.Emitter.Instruction.SLIDE_EMITTER_RIGHT;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class ReadmeGenerator {
-  public static void main(String[] args) throws Exception {
+  public static void main(final String[] args) throws Exception {
     File solutionsDir = new File("%s/solutions".formatted(args[0]));
 
     if (!solutionsDir.isDirectory()) {
       throw new IllegalArgumentException("%s is not a valid directory".formatted(args[0]));
     }
 
-    File readmeFile = new File("%s/README.md".formatted(args[0]));
+    Map<String, List<Level>> levels = new HashMap<>();
+    for (File levelDir : solutionsDir.listFiles()) {
+      levels.put(levelDir.getName(), new ArrayList<>());
+
+      for (File solution : levelDir.listFiles()) {
+        try (FileInputStream inputStream = new FileInputStream(solution)) {
+          byte[] fileContent = new byte[(int) solution.length()];
+          inputStream.read(fileContent);
+
+          levels.get(levelDir.getName()).add(Level.parse(fileContent));
+        }
+      }
+    }
+
+    writeGlobalReadme(args[0], levels);
+    writeLevelReadmes(args[0], levels);
+  }
+
+  private static void writeLevelReadmes(
+      final String directory, final Map<String, List<Level>> levels) throws IOException {
+    final List<String> ids = levels.keySet().stream().sorted().toList();
+
+    for (String id : ids) {
+      File levelReadme = new File("%s/readmes/%s.md".formatted(directory, id));
+      if (levelReadme.exists()) {
+        Files.delete(levelReadme.toPath());
+      }
+
+      try (FileWriter writer = new FileWriter(levelReadme, true)) {
+        writeLine(writer, "# %s".formatted(getLevelName(id)));
+        writeLine(writer, "");
+
+        for (Level level :
+            levels.get(id).stream().sorted(Comparator.comparing(Level::getName)).toList()) {
+          writeLevel(writer, id, level);
+        }
+      }
+    }
+  }
+
+  private static void writeLevel(final FileWriter writer, final String id, final Level level)
+      throws IOException {
+    final Map<Integer, Emitter> emitters =
+        level.getParts().stream()
+            .filter(Emitter.class::isInstance)
+            .map(Emitter.class::cast)
+            .filter(
+                emitter ->
+                    emitter.getInstructions().stream().anyMatch(instruction -> instruction != NONE))
+            .collect(Collectors.toMap(Emitter::getId, Function.identity()));
+
+    final List<Integer> usedEmitters = emitters.keySet().stream().sorted().toList();
+
+    writeLine(writer, "## %s".formatted(level.getName()));
+    writeLine(writer, "");
+
+    writeAnimation(id, writer, level);
+    writeEmitterPositions(writer, emitters, usedEmitters);
+    writeEmitterSymbols(writer, emitters, usedEmitters);
+  }
+
+  private static void writeEmitterSymbols(
+      final FileWriter writer,
+      final Map<Integer, Emitter> emitters,
+      final List<Integer> usedEmitters)
+      throws IOException {
+    final List<String> usedEmitterNames =
+        usedEmitters.stream().map(emitter -> emitter + 1).map(String::valueOf).toList();
+
+    final List<String> header = new ArrayList<>();
+    header.add("#");
+    header.addAll(usedEmitterNames);
+
+    final List<HeaderDefinition> headerDefinitions = new ArrayList<>();
+    headerDefinitions.add(HeaderDefinition.RIGHT);
+    usedEmitterNames.forEach(name -> headerDefinitions.add(HeaderDefinition.CENTER));
+
+    final List<List<String>> commands =
+        usedEmitters.stream()
+            .map(emitters::get)
+            .map(
+                emitter ->
+                    emitter.getInstructions().stream()
+                        .map(
+                            instruction ->
+                                "![%s](./../instructions/%s.png)"
+                                    .formatted(instruction, instruction))
+                        .toList())
+            .toList();
+
+    final List<String> commandNumbers =
+        IntStream.range(0, 24)
+            .filter(
+                n ->
+                    usedEmitters.stream()
+                        .map(emitters::get)
+                        .map(Emitter::getInstructions)
+                        .map(instructions -> instructions.get(n))
+                        .anyMatch(instruction -> instruction != NONE))
+            .map(n -> n + 1)
+            .mapToObj("%02d"::formatted)
+            .toList();
+
+    final List<List<String>> tableRows = new ArrayList<>();
+    tableRows.add(commandNumbers);
+    tableRows.addAll(commands);
+
+    writeLine(writer, "### Emitter Commands");
+    writeLine(writer, "");
+
+    writeTable(writer, header, headerDefinitions, tableRows);
+  }
+
+  private static void writeEmitterPositions(
+      final FileWriter writer,
+      final Map<Integer, Emitter> emitters,
+      final List<Integer> usedEmitters)
+      throws IOException {
+    writeLine(writer, "### Emitter Positions");
+    writeLine(writer, "");
+
+    for (int emitterNumber : usedEmitters) {
+      Emitter emitter = emitters.get(emitterNumber);
+
+      writeLine(
+          writer,
+          "- Emitter %d at position %d hexes to the right and %d hexes up-right with rotation of %d."
+              .formatted(
+                  emitterNumber + 1,
+                  emitter.getPosition().getHexesRight(),
+                  emitter.getPosition().getHexesUpRight(),
+                  emitter.getRotation()));
+    }
+    writeLine(writer, "");
+  }
+
+  private static void writeAnimation(final String id, final FileWriter writer, final Level level)
+      throws IOException {
+    writeLine(writer, "### Animation");
+    writeLine(writer, "");
+    writeLine(
+        writer,
+        "![Solution](./../gifs/%s/%s.gif)".formatted(id, level.getName().replace(" ", "_")));
+    writeLine(writer, "");
+  }
+
+  private static void writeGlobalReadme(
+      final String directory, final Map<String, List<Level>> levels) throws IOException {
+    final List<String> ids = levels.keySet().stream().sorted().toList();
+    final List<String> names =
+        ids.stream().map(id -> "[%s][readme%s]".formatted(getLevelName(id), id)).toList();
+    final List<String> minCycles =
+        ids.stream()
+            .map(levels::get)
+            .map(dirLevels -> dirLevels.stream().mapToInt(Level::getCycles).min().orElse(-1))
+            .map(String::valueOf)
+            .toList();
+    final List<String> minModules =
+        ids.stream()
+            .map(levels::get)
+            .map(dirLevels -> dirLevels.stream().mapToInt(Level::getModules).min().orElse(-1))
+            .map(String::valueOf)
+            .toList();
+    final List<String> minSymbols =
+        ids.stream()
+            .map(levels::get)
+            .map(dirLevels -> dirLevels.stream().mapToInt(Level::getSymbols).min().orElse(-1))
+            .map(String::valueOf)
+            .toList();
+
+    final File readmeFile = new File("%s/README.md".formatted(directory));
 
     if (readmeFile.exists()) {
       Files.delete(readmeFile.toPath());
     }
 
-    try (FileWriter readmeWriter = new FileWriter(readmeFile, true)) {
-      readmeWriter.write("# Levels (%s/36)\n\n".formatted(solutionsDir.listFiles().length));
+    try (final FileWriter writer = new FileWriter(readmeFile, true)) {
+      writeLine(writer, "# Levels (%s/36)".formatted(levels.size()));
+      writeLine(writer, "");
 
-      List<String> links = new ArrayList<>();
+      writeTable(
+          writer,
+          List.of("#", "Name", "#Cycles", "#Modules", "#Symbols"),
+          List.of(
+              HeaderDefinition.RIGHT,
+              HeaderDefinition.LEFT,
+              HeaderDefinition.RIGHT,
+              HeaderDefinition.RIGHT,
+              HeaderDefinition.RIGHT),
+          List.of(ids, names, minCycles, minModules, minSymbols));
 
-      readmeWriter.write(
-          "|  # | Name                                       | #Cycles | #Modules | #Symbols |\n");
-      readmeWriter.write(
-          "|---:|--------------------------------------------|--------:|---------:|---------:|\n");
-
-      for (File levelDir : solutionsDir.listFiles()) {
-        String levelNumber = levelDir.getName();
-
-        File levelReadme = new File(args[0] + "/readmes/" + levelNumber + ".md");
-        if (levelReadme.exists()) {
-          Files.delete(levelReadme.toPath());
-        }
-
-        try (FileWriter levelWriter = new FileWriter(levelReadme, true)) {
-          levelWriter.write("# %s\n\n".formatted(getLevelName(levelNumber)));
-
-          List<Level> levels = new ArrayList<>();
-          for (File solution : levelDir.listFiles()) {
-            try (FileInputStream inputStream = new FileInputStream(solution)) {
-              byte[] fileContent = new byte[(int) solution.length()];
-              inputStream.read(fileContent);
-
-              levels.add(Level.parse(fileContent));
-            }
-          }
-
-          levels.sort(Comparator.comparing(Level::getName));
-
-          int minCycles = levels.stream().mapToInt(Level::getCycles).min().getAsInt();
-          int minModules = levels.stream().mapToInt(Level::getModules).min().getAsInt();
-          int minSymbols = levels.stream().mapToInt(Level::getSymbols).min().getAsInt();
-
-          readmeWriter.write(
-              "| %s | [%s][readme%s]%s | %s%d | %s%d | %s%d |\n"
-                  .formatted(
-                      levelNumber,
-                      getLevelName(levelNumber),
-                      levelNumber,
-                      " ".repeat(30 - getLevelName(levelNumber).length()),
-                      " ".repeat(7 - String.valueOf(minCycles).length()),
-                      minCycles,
-                      " ".repeat(8 - String.valueOf(minModules).length()),
-                      minModules,
-                      " ".repeat(8 - String.valueOf(minSymbols).length()),
-                      minSymbols));
-
-          links.add("[readme%s]: ./readmes/%s.md".formatted(levelNumber, levelNumber));
-
-          for (Level level : levels) {
-            levelWriter.write("## %s\n\n".formatted(level.getName()));
-            levelWriter.write("### Animation\n\n");
-            levelWriter.write(
-                "![Solution](./../gifs/%s/%s.gif)\n\n"
-                    .formatted(levelNumber, level.getName().replace(" ", "_")));
-
-            final Map<Integer, Emitter> emitters =
-                level.getParts().stream()
-                    .filter(Emitter.class::isInstance)
-                    .map(Emitter.class::cast)
-                    .filter(
-                        emitter ->
-                            emitter.getInstructions().stream()
-                                .anyMatch(instruction -> instruction != NONE))
-                    .collect(Collectors.toMap(Emitter::getId, Function.identity()));
-
-            List<Integer> usedEmitters = emitters.keySet().stream().sorted().toList();
-
-            levelWriter.write("### Emitter Positions\n\n");
-            for (int emitterNumber : usedEmitters) {
-              Emitter emitter = emitters.get(emitterNumber);
-
-              levelWriter.write(
-                  "- Emitter %d at position %d hexes to the right and %d hexes up-right with rotation of %d.\n"
-                      .formatted(
-                          emitterNumber + 1,
-                          emitter.getPosition().getHexesRight(),
-                          emitter.getPosition().getHexesUpRight(),
-                          emitter.getRotation()));
-            }
-            levelWriter.write("\n");
-
-            levelWriter.write("### Emitter Commands\n\n");
-            levelWriter.write(
-                "|  # |                                                                 "
-                    + usedEmitters.stream()
-                        .map(emitter -> emitter + 1)
-                        .map(String::valueOf)
-                        .collect(
-                            Collectors.joining(
-                                " |                                                                 "))
-                    + " |\n");
-            levelWriter.write(
-                "|---:|" + (":" + "-".repeat(66) + "|").repeat(usedEmitters.size()) + "\n");
-            for (int i = 0; i < 24; ++i) {
-              StringBuilder builder = new StringBuilder("| %02d |".formatted(i + 1));
-
-              boolean noopLine = true;
-              for (int emitter : usedEmitters) {
-                Emitter.Instruction instruction = emitters.get(emitter).getInstructions().get(i);
-
-                noopLine &= instruction == NONE;
-                builder.append(
-                    " ![%s](./../instructions/%s.png)%s |"
-                        .formatted(
-                            instruction,
-                            instruction,
-                            " "
-                                .repeat(
-                                    2
-                                        * (SLIDE_EMITTER_RIGHT.name().length()
-                                            - instruction.name().length()))));
-              }
-
-              if (!noopLine) {
-                levelWriter.write("%s\n".formatted(builder));
-              }
-            }
-
-            levelWriter.write("\n");
-          }
-
-          levelWriter.flush();
-        }
+      for (String id : ids) {
+        writeLine(writer, "[readme%s]: ./readmes/%s.md".formatted(id, id));
       }
 
-      readmeWriter.write("\n");
-      for (String link : links) {
-        readmeWriter.write(link + "\n");
-      }
-
-      readmeWriter.flush();
+      writer.flush();
     }
   }
 
-  private static String getLevelName(String levelNumber) {
+  private static void writeTable(
+      final FileWriter writer,
+      final List<String> header,
+      final List<HeaderDefinition> headerDefinitions,
+      final List<List<String>> columns)
+      throws IOException {
+    if (header.size() != headerDefinitions.size() || header.size() != columns.size()) {
+      throw new IllegalArgumentException("Invalid table definition");
+    }
+
+    final Map<Integer, Integer> columnWidths =
+        IntStream.range(0, header.size())
+            .boxed()
+            .collect(
+                Collectors.toMap(
+                    column -> column,
+                    column ->
+                        Math.max(
+                            header.get(column).length(),
+                            columns.get(column).stream()
+                                .mapToInt(String::length)
+                                .max()
+                                .orElse(0))));
+
+    writeLine(
+        writer,
+        "| %s |"
+            .formatted(
+                IntStream.range(0, header.size())
+                    .boxed()
+                    .map(
+                        column ->
+                            "%s%s%s"
+                                .formatted(
+                                    headerDefinitions.get(column) == HeaderDefinition.RIGHT
+                                        ? " "
+                                            .repeat(
+                                                columnWidths.get(column)
+                                                    - header.get(column).length())
+                                        : "",
+                                    header.get(column),
+                                    headerDefinitions.get(column) != HeaderDefinition.RIGHT
+                                        ? " "
+                                            .repeat(
+                                                columnWidths.get(column)
+                                                    - header.get(column).length())
+                                        : ""))
+                    .collect(Collectors.joining(" | "))));
+    writeLine(
+        writer,
+        "|%s|"
+            .formatted(
+                IntStream.range(0, header.size())
+                    .boxed()
+                    .map(
+                        column ->
+                            "%s%s%s"
+                                .formatted(
+                                    headerDefinitions.get(column) == HeaderDefinition.RIGHT
+                                        ? "-"
+                                        : ":",
+                                    "-".repeat(columnWidths.get(column)),
+                                    headerDefinitions.get(column) == HeaderDefinition.LEFT
+                                        ? "-"
+                                        : ":"))
+                    .collect(Collectors.joining("|"))));
+
+    for (int i = 0; i < columns.get(0).size(); ++i) {
+      final int finalI = i;
+
+      writeLine(
+          writer,
+          "| %s |"
+              .formatted(
+                  IntStream.range(0, header.size())
+                      .boxed()
+                      .map(
+                          column ->
+                              "%s%s%s"
+                                  .formatted(
+                                      headerDefinitions.get(column) == HeaderDefinition.RIGHT
+                                          ? " "
+                                              .repeat(
+                                                  columnWidths.get(column)
+                                                      - columns.get(column).get(finalI).length())
+                                          : "",
+                                      columns.get(column).get(finalI),
+                                      headerDefinitions.get(column) != HeaderDefinition.RIGHT
+                                          ? " "
+                                              .repeat(
+                                                  columnWidths.get(column)
+                                                      - columns.get(column).get(finalI).length())
+                                          : ""))
+                      .collect(Collectors.joining(" | "))));
+    }
+
+    writeLine(writer, "");
+  }
+
+  private static void writeLine(final FileWriter writer, final String line) throws IOException {
+    writer.write(line);
+    writer.write("\n");
+  }
+
+  private static String getLevelName(final String levelNumber) {
     return switch (levelNumber) {
       case "01" -> "Hydrogen Peroxide";
       case "02" -> "Ethanol";
@@ -173,5 +332,11 @@ public class ReadmeGenerator {
       case "05" -> "γ-Hydroxybutyric Acid";
       default -> throw new IllegalArgumentException("Unknown level " + levelNumber);
     };
+  }
+
+  private enum HeaderDefinition {
+    LEFT,
+    CENTER,
+    RIGHT
   }
 }

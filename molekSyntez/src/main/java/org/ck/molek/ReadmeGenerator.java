@@ -330,6 +330,13 @@ public class ReadmeGenerator {
       case "03" -> "Nitrous Oxide";
       case "04" -> "Amphetamine";
       case "05" -> "γ-Hydroxybutyric Acid";
+      case "06" -> "Diethyl Ether";
+      case "07" -> "Chloroform";
+      case "08" -> "Dimethyl Sulfoxide";
+      case "09" -> "Tranylcypromine";
+      case "10" -> "Aspirin";
+      case "11" -> "Dapsone";
+      case "12" -> "Propofol";
       default -> throw new IllegalArgumentException("Unknown level " + levelNumber);
     };
   }

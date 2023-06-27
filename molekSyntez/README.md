@@ -13,7 +13,7 @@
 | 09 | [Tranylcypromine][readme09]       |     600 |        9 |       12 |
 | 10 | [Aspirin][readme10]               |     480 |        8 |       10 |
 | 11 | [Dapsone][readme11]               |     480 |       11 |       19 |
-| 12 | [Propofol][readme12]              |     240 |        6 |        7 |
+| 12 | [Propofol][readme12]              |     240 |        5 |        7 |
 
 [readme01]: ./readmes/01.md
 [readme02]: ./readmes/02.md

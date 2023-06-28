@@ -337,6 +337,25 @@ public class ReadmeGenerator {
       case "10" -> "Aspirin";
       case "11" -> "Dapsone";
       case "12" -> "Propofol";
+      case "13" -> "Methylhexanamine";
+      case "14" -> "Mescaline";
+      case "15" -> "Ketamine";
+      case "16" -> "Kojic Acid";
+      case "17" -> "Metformin";
+      case "18" -> "Valnoctamide";
+      case "19" -> "Epinephrine";
+      case "20" -> "Benzylpiperazine";
+      case "21" -> "Piracetam";
+      case "22" -> "Pyrazinamide";
+      case "23" -> "Dimercaprol";
+      case "24" -> "Phencyclidine";
+
+      case "35" -> "Ethchlorvynol";
+      case "36" -> "Chloral Hydrate";
+      case "37" -> "Mustard Gas";
+      case "38" -> "Sulfur Hexafluoride";
+      case "39" -> "Sarin";
+      case "40" -> "Lysine";
       default -> throw new IllegalArgumentException("Unknown level " + levelNumber);
     };
   }

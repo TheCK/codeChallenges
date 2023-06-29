@@ -47,37 +47,25 @@ public class Precursor extends Part {
     PROPENE,
     ACETIC_ACID,
     BENZENE,
-    CARBAMIDE;
+    CARBAMIDE,
+    UNKNOWN; // TODO add extra level precursors
 
-    public static Type fromInt(int number) {
-      switch (number) {
-        case 1:
-          return WATER;
-        case 2:
-          return AMMONIA;
-        case 3:
-          return HYDROCHLORIC_ACID;
-        case 4:
-          return SULFURIC_ACID;
-        case 5:
-          return ACETONE;
-        case 6:
-          return CYCLOHEXANE;
-        case 7:
-          return METHANOL;
-        case 8:
-          return ETHYLENE_GLYCOL;
-        case 9:
-          return PROPENE;
-        case 10:
-          return ACETIC_ACID;
-        case 11:
-          return BENZENE;
-        case 12:
-          return CARBAMIDE;
-        default:
-          throw new IllegalArgumentException("Unknown precursor type " + number);
-      }
+    public static Type fromInt(final int number) {
+      return switch (number) {
+        case 1 -> WATER;
+        case 2 -> AMMONIA;
+        case 3 -> HYDROCHLORIC_ACID;
+        case 4 -> SULFURIC_ACID;
+        case 5 -> ACETONE;
+        case 6 -> CYCLOHEXANE;
+        case 7 -> METHANOL;
+        case 8 -> ETHYLENE_GLYCOL;
+        case 9 -> PROPENE;
+        case 10 -> ACETIC_ACID;
+        case 11 -> BENZENE;
+        case 12 -> CARBAMIDE;
+        default -> UNKNOWN;
+      };
     }
   }
 }

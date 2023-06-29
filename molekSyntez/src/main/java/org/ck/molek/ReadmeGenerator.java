@@ -349,6 +349,12 @@ public class ReadmeGenerator {
       case "22" -> "Pyrazinamide";
       case "23" -> "Dimercaprol";
       case "24" -> "Phencyclidine";
+      case "25" -> "Dimethyltryptamine";
+      case "26" -> "Barbital";
+      case "27" -> "MDMA";
+      case "28" -> "Mebicar";
+      case "29" -> "Lidocaine";
+      case "30" -> "Modafinil";
 
       case "35" -> "Ethchlorvynol";
       case "36" -> "Chloral Hydrate";

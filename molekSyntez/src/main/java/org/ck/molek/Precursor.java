@@ -48,7 +48,17 @@ public class Precursor extends Part {
     ACETIC_ACID,
     BENZENE,
     CARBAMIDE,
-    UNKNOWN; // TODO add extra level precursors
+    PHOSPHORIC_ACID,
+    HYDROFLUORIC_ACID,
+    HYDRAZINE,
+    BUTANONE,
+    THIONYL_CHLORIDE,
+    DIOXANE,
+    TOLUENE,
+    FORMIC_ACID,
+    BUTYLENE,
+    ISOBUTANE,
+    S_TRIAZINE;
 
     public static Type fromInt(final int number) {
       return switch (number) {
@@ -64,7 +74,18 @@ public class Precursor extends Part {
         case 10 -> ACETIC_ACID;
         case 11 -> BENZENE;
         case 12 -> CARBAMIDE;
-        default -> UNKNOWN;
+        case 13 -> PHOSPHORIC_ACID;
+        case 14 -> HYDROFLUORIC_ACID;
+        case 15 -> HYDRAZINE;
+        case 16 -> BUTANONE;
+        case 17 -> THIONYL_CHLORIDE;
+        case 18 -> DIOXANE;
+        case 19 -> TOLUENE;
+        case 20 -> FORMIC_ACID;
+        case 21 -> BUTYLENE;
+        case 22 -> ISOBUTANE;
+        case 23 -> S_TRIAZINE;
+        default -> throw new IllegalArgumentException("Unknown precursor type " + number);
       };
     }
   }

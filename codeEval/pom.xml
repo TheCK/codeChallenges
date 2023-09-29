@@ -3,15 +3,18 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.ck</groupId>
-		<artifactId>codeChallenges</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-
+	<groupId>org.ck</groupId>
 	<artifactId>codeEval</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>21</java.version>
+		<compiler.version>3.11.0</compiler.version>
+		<surefire.version>3.1.2</surefire.version>
+		<spottless.version>2.40.0</spottless.version>
+	</properties>
 
 	<build>
 		<plugins>

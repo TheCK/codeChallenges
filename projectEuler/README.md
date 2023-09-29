@@ -1,4 +1,4 @@
-# Problems 1 - 50 (14/14)
+# Problems 1 - 50 (15/15)
 
 |  # | Name                                     | Solution                       | Test                        |
 |---:|------------------------------------------|:------------------------------:|:---------------------------:|
@@ -12,6 +12,7 @@
 |  8 | [Largest product in a series][8]         | &#9989;[&#128190;][8solution]  | &#9989;[&#128190;][8tests]  |
 |  9 | [Special Pythagorean triplet][9]         | &#9989;[&#128190;][9solution]  | &#9989;[&#128190;][9tests]  |
 | 10 | [Summation of primes][10]                | &#9989;[&#128190;][10solution] | &#9989;[&#128190;][10tests] |
+| 11 | [Largest Product in a Grid][11]          | &#9989;[&#128190;][11solution] | &#9989;[&#128190;][11tests] |
 | 12 | [Highly divisible triangular number][12] | &#9989;[&#128190;][12solution] | &#9989;[&#128190;][12tests] |
 | 14 | [Longest Collatz sequence][14]           | &#9989;[&#128190;][14solution] | &#9989;[&#128190;][14tests] |
 | 27 | [Quadratic primes][27]                   | &#9989;[&#128190;][27solution] | &#9989;[&#128190;][27tests] |
@@ -27,6 +28,7 @@
 [8]: https://projecteuler.net/problem=8
 [9]: https://projecteuler.net/problem=9
 [10]: https://projecteuler.net/problem=10
+[11]: https://projecteuler.net/problem=11
 [12]: https://projecteuler.net/problem=12
 [14]: https://projecteuler.net/problem=14
 [27]: https://projecteuler.net/problem=27
@@ -42,6 +44,7 @@
 [8solution]: src/main/java/org/ck/projecteuler/solutions/problem008/Problem.java
 [9solution]: src/main/java/org/ck/projecteuler/solutions/problem009/Problem.java
 [10solution]: src/main/java/org/ck/projecteuler/solutions/problem010/Problem.java
+[11solution]: src/main/java/org/ck/projecteuler/solutions/problem011/Problem.java
 [12solution]: src/main/java/org/ck/projecteuler/solutions/problem012/Problem.java
 [14solution]: src/main/java/org/ck/projecteuler/solutions/problem014/Problem.java
 [27solution]: src/main/java/org/ck/projecteuler/solutions/problem027/Problem.java
@@ -57,6 +60,7 @@
 [8tests]: src/test/java/org/ck/projecteuler/solutions/problem008/ProblemTest.java
 [9tests]: src/test/java/org/ck/projecteuler/solutions/problem009/ProblemTest.java
 [10tests]: src/test/java/org/ck/projecteuler/solutions/problem010/ProblemTest.java
+[11tests]: src/test/java/org/ck/projecteuler/solutions/problem011/ProblemTest.java
 [12tests]: src/test/java/org/ck/projecteuler/solutions/problem012/ProblemTest.java
 [14tests]: src/test/java/org/ck/projecteuler/solutions/problem014/ProblemTest.java
 [27tests]: src/test/java/org/ck/projecteuler/solutions/problem027/ProblemTest.java

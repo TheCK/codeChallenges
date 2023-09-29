@@ -3,13 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.ck</groupId>
+    <parent>
+        <groupId>org.ck</groupId>
+        <artifactId>codeChallenges</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <artifactId>codeChallengeLib</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
     </properties>
 
@@ -18,7 +22,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>${compiler.version}</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -28,7 +32,7 @@
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
-                <version>2.39.0</version>
+                <version>${spottless.version}</version>
                 <executions>
                     <execution>
                         <phase>compile</phase>
@@ -51,13 +55,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.9.0</version>
+            <version>5.10.0</version>
         </dependency>
 
         <dependency>
             <groupId>ch.vorburger.mariaDB4j</groupId>
             <artifactId>mariaDB4j</artifactId>
-            <version>2.6.0</version>
+            <version>3.0.1</version>
         </dependency>
 
         <dependency>
@@ -69,7 +73,7 @@
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>3.0.8</version>
+            <version>3.2.0</version>
         </dependency>
     </dependencies>
 </project>

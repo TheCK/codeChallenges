@@ -11,6 +11,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>21</java.version>
+        <compiler.version>3.11.0</compiler.version>
+        <surefire.version>3.1.2</surefire.version>
+        <spottless.version>2.40.0</spottless.version>
     </properties>
 
     <modules>
@@ -36,7 +39,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>${compiler.version}</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -46,9 +49,18 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-                <version>2.8.1</version>
+                <version>2.16.1</version>
                 <configuration>
-                    <rulesUri>file:///${project.basedir}/maven-version-rules.xml</rulesUri>
+                    <ruleSet>
+                        <ignoreVersions>
+                            <ignoreVersion>
+                                <type>regex</type>
+                                <version>
+                                    .*[-_\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|rc|RC|M|EA|ce|CE|ccs|CCS|jboss|SP)[-_\.]?[0-9]*
+                                </version>
+                            </ignoreVersion>
+                        </ignoreVersions>
+                    </ruleSet>
                 </configuration>
                 <executions>
                     <execution>

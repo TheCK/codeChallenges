@@ -1,4 +1,4 @@
-# Problems 1 - 50 (15/15)
+# Problems 1 - 50 (17/17)
 
 |  # | Name                                     | Solution                       | Test                        |
 |---:|------------------------------------------|:------------------------------:|:---------------------------:|
@@ -14,7 +14,9 @@
 | 10 | [Summation of primes][10]                | &#9989;[&#128190;][10solution] | &#9989;[&#128190;][10tests] |
 | 11 | [Largest Product in a Grid][11]          | &#9989;[&#128190;][11solution] | &#9989;[&#128190;][11tests] |
 | 12 | [Highly divisible triangular number][12] | &#9989;[&#128190;][12solution] | &#9989;[&#128190;][12tests] |
+| 13 | [Large Sum][13]                          | &#9989;[&#128190;][13solution] | &#9989;[&#128190;][13tests] |
 | 14 | [Longest Collatz sequence][14]           | &#9989;[&#128190;][14solution] | &#9989;[&#128190;][14tests] |
+| 16 | [Power Digit Sum][16]                    | &#9989;[&#128190;][16solution] | &#9989;[&#128190;][16tests] |
 | 27 | [Quadratic primes][27]                   | &#9989;[&#128190;][27solution] | &#9989;[&#128190;][27tests] |
 | 29 | [Distinct powers][29]                    | &#9989;[&#128190;][29solution] | &#9989;[&#128190;][29tests] |
 
@@ -30,7 +32,9 @@
 [10]: https://projecteuler.net/problem=10
 [11]: https://projecteuler.net/problem=11
 [12]: https://projecteuler.net/problem=12
+[13]: https://projecteuler.net/problem=13
 [14]: https://projecteuler.net/problem=14
+[16]: https://projecteuler.net/problem=16
 [27]: https://projecteuler.net/problem=27
 [29]: https://projecteuler.net/problem=29
 
@@ -46,7 +50,9 @@
 [10solution]: src/main/java/org/ck/projecteuler/solutions/problem010/Problem.java
 [11solution]: src/main/java/org/ck/projecteuler/solutions/problem011/Problem.java
 [12solution]: src/main/java/org/ck/projecteuler/solutions/problem012/Problem.java
+[13solution]: src/main/java/org/ck/projecteuler/solutions/problem013/Problem.java
 [14solution]: src/main/java/org/ck/projecteuler/solutions/problem014/Problem.java
+[16solution]: src/main/java/org/ck/projecteuler/solutions/problem016/Problem.java
 [27solution]: src/main/java/org/ck/projecteuler/solutions/problem027/Problem.java
 [29solution]: src/main/java/org/ck/projecteuler/solutions/problem029/Problem.java
 
@@ -62,7 +68,9 @@
 [10tests]: src/test/java/org/ck/projecteuler/solutions/problem010/ProblemTest.java
 [11tests]: src/test/java/org/ck/projecteuler/solutions/problem011/ProblemTest.java
 [12tests]: src/test/java/org/ck/projecteuler/solutions/problem012/ProblemTest.java
+[13tests]: src/test/java/org/ck/projecteuler/solutions/problem013/ProblemTest.java
 [14tests]: src/test/java/org/ck/projecteuler/solutions/problem014/ProblemTest.java
+[16tests]: src/test/java/org/ck/projecteuler/solutions/problem016/ProblemTest.java
 [27tests]: src/test/java/org/ck/projecteuler/solutions/problem027/ProblemTest.java
 [29tests]: src/test/java/org/ck/projecteuler/solutions/problem029/ProblemTest.java
 

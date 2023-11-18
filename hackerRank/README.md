@@ -1,4 +1,4 @@
-# Algorithms (70/70)
+# Algorithms (71/71)
 
 ## Bit Manipulation (3/3)
 
@@ -245,7 +245,7 @@
 [10402tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/sorting/insertionsortpart1/SolutionTest.java
 
 
-## Strings (9/9)
+## Strings (10/10)
 
 |     # | Name                             | Solution                          | Test                           |
 |------:|----------------------------------|:---------------------------------:|:------------------------------:|
@@ -254,6 +254,7 @@
 | 10304 | [Caesar Cipher][10304]           | &#9989;[&#128190;][10304solution] | &#9989;[&#128190;][10304tests] |
 | 10305 | [Mars Exploration][10305]        | &#9989;[&#128190;][10305solution] | &#9989;[&#128190;][10305tests] |
 | 10307 | [Pangrams][10307]                | &#9989;[&#128190;][10307solution] | &#9989;[&#128190;][10307tests] |
+| 10310 | [Strong Password][10310]         | &#9989;[&#128190;][10310solution] | &#9989;[&#128190;][10310tests] |
 | 10312 | [Alternating Characters][10312]  | &#9989;[&#128190;][10312solution] | &#9989;[&#128190;][10312tests] |
 | 10314 | [The Love-Letter Mystery][10314] | &#9989;[&#128190;][10314solution] | &#9989;[&#128190;][10314tests] |
 | 10319 | [Game of Thrones - I][10319]     | &#9989;[&#128190;][10319solution] | &#9989;[&#128190;][10319tests] |
@@ -264,6 +265,7 @@
 [10304]: https://www.hackerrank.com/challenges/caesar-cipher-1
 [10305]: https://www.hackerrank.com/challenges/mars-exploration
 [10307]: https://www.hackerrank.com/challenges/pangrams
+[10310]: https://www.hackerrank.com/challenges/strong-password
 [10312]: https://www.hackerrank.com/challenges/alternating-characters
 [10314]: https://www.hackerrank.com/challenges/the-love-letter-mystery
 [10319]: https://www.hackerrank.com/challenges/game-of-thrones
@@ -274,6 +276,7 @@
 [10304solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/caesarcipher/Solution.java
 [10305solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/marsexploration/Solution.java
 [10307solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/pangrams/Solution.java
+[10310solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/strongpassword/Solution.java
 [10312solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/alternatingcharacters/Solution.java
 [10314solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/thelovelettermystery/Solution.java
 [10319solution]: src/main/java/org/ck/hackerrank/corecs/algorithms/strings/gameofthronesi/Solution.java
@@ -284,6 +287,7 @@
 [10304tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/caesarcipher/SolutionTest.java
 [10305tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/marsexploration/SolutionTest.java
 [10307tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/pangrams/SolutionTest.java
+[10310tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/strongpassword/SolutionTest.java
 [10312tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/alternatingcharacters/SolutionTest.java
 [10314tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/thelovelettermystery/SolutionTest.java
 [10319tests]: src/test/java/org/ck/hackerrank/corecs/algorithms/strings/gameofthronesi/SolutionTest.java

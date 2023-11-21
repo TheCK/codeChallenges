@@ -406,7 +406,7 @@
 [20162402tests]: src/test/java/org/ck/adventofcode/year2016/day24/Part2Test.java
 [20162501tests]: src/test/java/org/ck/adventofcode/year2016/day25/Part1Test.java
 
-# 2017 (11/11)
+# 2017 (15/15)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -414,6 +414,8 @@
 | 20170102 | [Day 1: Inverse Captcha - Part 2][20170102]                         | &#9989;[&#128190;][20170102solution] | &#9989;[&#128190;][20170102tests] |
 | 20170201 | [Day 2: Corruption Checksum][20170201]                              | &#9989;[&#128190;][20170201solution] | &#9989;[&#128190;][20170201tests] |
 | 20170202 | [Day 2: Corruption Checksum - Part 2][20170202]                     | &#9989;[&#128190;][20170202solution] | &#9989;[&#128190;][20170202tests] |
+| 20170301 | [Day 3: Spiral Memory][20170301]                                    | &#9989;[&#128190;][20170301solution] | &#9989;[&#128190;][20170301tests] |
+| 20170302 | [Day 3: Spiral Memory - Part 2][20170302]                           | &#9989;[&#128190;][20170302solution] | &#9989;[&#128190;][20170302tests] |
 | 20170401 | [Day 4: High-Entropy Passphrases][20170401]                         | &#9989;[&#128190;][20170401solution] | &#9989;[&#128190;][20170401tests] |
 | 20170402 | [Day 4: High-Entropy Passphrases - Part 2][20170402]                | &#9989;[&#128190;][20170402solution] | &#9989;[&#128190;][20170402tests] |
 | 20170501 | [Day 5: A Maze of Twisty Trampolines, All Alike][20170501]          | &#9989;[&#128190;][20170501solution] | &#9989;[&#128190;][20170501tests] |
@@ -421,11 +423,15 @@
 | 20170601 | [Day 6: Memory Reallocation][20170601]                              | &#9989;[&#128190;][20170601solution] | &#9989;[&#128190;][20170601tests] |
 | 20170602 | [Day 6: Memory Reallocation - Part 2][20170602]                     | &#9989;[&#128190;][20170602solution] | &#9989;[&#128190;][20170602tests] |
 | 20170701 | [Day 7: Recursive Circus][20170701]                                 | &#9989;[&#128190;][20170701solution] | &#9989;[&#128190;][20170701tests] |
+| 20170801 | [Day 8: I Heard You Like Registers][20170801]                       | &#9989;[&#128190;][20170801solution] | &#9989;[&#128190;][20170801tests] |
+| 20170802 | [Day 8: I Heard You Like Registers - Part 2][20170802]              | &#9989;[&#128190;][20170802solution] | &#9989;[&#128190;][20170802tests] |
 
 [20170101]: https://adventofcode.com/2017/day/1
 [20170102]: https://adventofcode.com/2017/day/1#part2
 [20170201]: https://adventofcode.com/2017/day/2
 [20170202]: https://adventofcode.com/2017/day/2#part2
+[20170301]: https://adventofcode.com/2017/day/3
+[20170302]: https://adventofcode.com/2017/day/3#part2
 [20170401]: https://adventofcode.com/2017/day/4
 [20170402]: https://adventofcode.com/2017/day/4#part2
 [20170501]: https://adventofcode.com/2017/day/5
@@ -433,11 +439,15 @@
 [20170601]: https://adventofcode.com/2017/day/6
 [20170602]: https://adventofcode.com/2017/day/6#part2
 [20170701]: https://adventofcode.com/2017/day/7
+[20170801]: https://adventofcode.com/2017/day/8
+[20170802]: https://adventofcode.com/2017/day/8#part2
 
 [20170101solution]: src/main/java/org/ck/adventofcode/year2017/day01/Part1.java
 [20170102solution]: src/main/java/org/ck/adventofcode/year2017/day01/Part2.java
 [20170201solution]: src/main/java/org/ck/adventofcode/year2017/day02/Part1.java
 [20170202solution]: src/main/java/org/ck/adventofcode/year2017/day02/Part2.java
+[20170301solution]: src/main/java/org/ck/adventofcode/year2017/day03/Part1.java
+[20170302solution]: src/main/java/org/ck/adventofcode/year2017/day03/Part2.java
 [20170401solution]: src/main/java/org/ck/adventofcode/year2017/day04/Part1.java
 [20170402solution]: src/main/java/org/ck/adventofcode/year2017/day04/Part2.java
 [20170501solution]: src/main/java/org/ck/adventofcode/year2017/day05/Part1.java
@@ -445,11 +455,15 @@
 [20170601solution]: src/main/java/org/ck/adventofcode/year2017/day06/Part1.java
 [20170602solution]: src/main/java/org/ck/adventofcode/year2017/day06/Part2.java
 [20170701solution]: src/main/java/org/ck/adventofcode/year2017/day07/Part1.java
+[20170801solution]: src/main/java/org/ck/adventofcode/year2017/day08/Part1.java
+[20170802solution]: src/main/java/org/ck/adventofcode/year2017/day08/Part2.java
 
 [20170101tests]: src/test/java/org/ck/adventofcode/year2017/day01/Part1Test.java
 [20170102tests]: src/test/java/org/ck/adventofcode/year2017/day01/Part2Test.java
 [20170201tests]: src/test/java/org/ck/adventofcode/year2017/day02/Part1Test.java
 [20170202tests]: src/test/java/org/ck/adventofcode/year2017/day02/Part2Test.java
+[20170301tests]: src/test/java/org/ck/adventofcode/year2017/day03/Part1Test.java
+[20170302tests]: src/test/java/org/ck/adventofcode/year2017/day03/Part2Test.java
 [20170401tests]: src/test/java/org/ck/adventofcode/year2017/day04/Part1Test.java
 [20170402tests]: src/test/java/org/ck/adventofcode/year2017/day04/Part2Test.java
 [20170501tests]: src/test/java/org/ck/adventofcode/year2017/day05/Part1Test.java
@@ -457,6 +471,8 @@
 [20170601tests]: src/test/java/org/ck/adventofcode/year2017/day06/Part1Test.java
 [20170602tests]: src/test/java/org/ck/adventofcode/year2017/day06/Part2Test.java
 [20170701tests]: src/test/java/org/ck/adventofcode/year2017/day07/Part1Test.java
+[20170801tests]: src/test/java/org/ck/adventofcode/year2017/day08/Part1Test.java
+[20170802tests]: src/test/java/org/ck/adventofcode/year2017/day08/Part2Test.java
 
 # 2019 (29/30)
 

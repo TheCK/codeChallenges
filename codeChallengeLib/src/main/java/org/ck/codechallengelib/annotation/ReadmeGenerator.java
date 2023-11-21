@@ -17,6 +17,7 @@ import javax.tools.Diagnostic.Kind;
 
 @SupportedAnnotationTypes("org.ck.codechallengelib.annotation.Solution")
 public class ReadmeGenerator extends AbstractProcessor {
+
   private static void processCategories(
       FileWriter writer, Messager messager, Map<String, List<SolutionInfo>> byCategory)
       throws IOException {
@@ -241,6 +242,24 @@ public class ReadmeGenerator extends AbstractProcessor {
               solution.solved(),
               ((TypeElement) element).getQualifiedName().toString()));
     }
+
+    for (Element element : environment.getElementsAnnotatedWith(Solutions.class)) {
+      Solutions solutions = element.getAnnotation(Solutions.class);
+
+      for (Solution solution : solutions.value()) {
+        infos.add(
+            new SolutionInfo(
+                solution.id(),
+                solution.name(),
+                solution.description(),
+                solution.url(),
+                solution.category(),
+                solution.subCategory(),
+                solution.solved(),
+                ((TypeElement) element).getQualifiedName().toString()));
+      }
+    }
+
     return infos;
   }
 

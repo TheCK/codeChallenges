@@ -406,7 +406,7 @@
 [20162402tests]: src/test/java/org/ck/adventofcode/year2016/day24/Part2Test.java
 [20162501tests]: src/test/java/org/ck/adventofcode/year2016/day25/Part1Test.java
 
-# 2017 (15/15)
+# 2017 (15/16)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -423,6 +423,7 @@
 | 20170601 | [Day 6: Memory Reallocation][20170601]                              | &#9989;[&#128190;][20170601solution] | &#9989;[&#128190;][20170601tests] |
 | 20170602 | [Day 6: Memory Reallocation - Part 2][20170602]                     | &#9989;[&#128190;][20170602solution] | &#9989;[&#128190;][20170602tests] |
 | 20170701 | [Day 7: Recursive Circus][20170701]                                 | &#9989;[&#128190;][20170701solution] | &#9989;[&#128190;][20170701tests] |
+| 20170702 | [Day 7: Recursive Circus - Part 2][20170702]                        | [&#128190;][20170702solution]        | [&#128190;][20170702tests]        |
 | 20170801 | [Day 8: I Heard You Like Registers][20170801]                       | &#9989;[&#128190;][20170801solution] | &#9989;[&#128190;][20170801tests] |
 | 20170802 | [Day 8: I Heard You Like Registers - Part 2][20170802]              | &#9989;[&#128190;][20170802solution] | &#9989;[&#128190;][20170802tests] |
 
@@ -439,6 +440,7 @@
 [20170601]: https://adventofcode.com/2017/day/6
 [20170602]: https://adventofcode.com/2017/day/6#part2
 [20170701]: https://adventofcode.com/2017/day/7
+[20170702]: https://adventofcode.com/2017/day/7#part2
 [20170801]: https://adventofcode.com/2017/day/8
 [20170802]: https://adventofcode.com/2017/day/8#part2
 
@@ -452,11 +454,12 @@
 [20170402solution]: src/main/java/org/ck/adventofcode/year2017/Day04.java
 [20170501solution]: src/main/java/org/ck/adventofcode/year2017/Day05.java
 [20170502solution]: src/main/java/org/ck/adventofcode/year2017/Day05.java
-[20170601solution]: src/main/java/org/ck/adventofcode/year2017/day06/Part1.java
-[20170602solution]: src/main/java/org/ck/adventofcode/year2017/day06/Part2.java
-[20170701solution]: src/main/java/org/ck/adventofcode/year2017/day07/Part1.java
-[20170801solution]: src/main/java/org/ck/adventofcode/year2017/day08/Part1.java
-[20170802solution]: src/main/java/org/ck/adventofcode/year2017/day08/Part2.java
+[20170601solution]: src/main/java/org/ck/adventofcode/year2017/Day06.java
+[20170602solution]: src/main/java/org/ck/adventofcode/year2017/Day06.java
+[20170701solution]: src/main/java/org/ck/adventofcode/year2017/Day07.java
+[20170702solution]: src/main/java/org/ck/adventofcode/year2017/Day07.java
+[20170801solution]: src/main/java/org/ck/adventofcode/year2017/Day08.java
+[20170802solution]: src/main/java/org/ck/adventofcode/year2017/Day08.java
 
 [20170101tests]: src/test/java/org/ck/adventofcode/year2017/Day01Test.java
 [20170102tests]: src/test/java/org/ck/adventofcode/year2017/Day01Test.java
@@ -468,11 +471,12 @@
 [20170402tests]: src/test/java/org/ck/adventofcode/year2017/Day04Test.java
 [20170501tests]: src/test/java/org/ck/adventofcode/year2017/Day05Test.java
 [20170502tests]: src/test/java/org/ck/adventofcode/year2017/Day05Test.java
-[20170601tests]: src/test/java/org/ck/adventofcode/year2017/day06/Part1Test.java
-[20170602tests]: src/test/java/org/ck/adventofcode/year2017/day06/Part2Test.java
-[20170701tests]: src/test/java/org/ck/adventofcode/year2017/day07/Part1Test.java
-[20170801tests]: src/test/java/org/ck/adventofcode/year2017/day08/Part1Test.java
-[20170802tests]: src/test/java/org/ck/adventofcode/year2017/day08/Part2Test.java
+[20170601tests]: src/test/java/org/ck/adventofcode/year2017/Day06Test.java
+[20170602tests]: src/test/java/org/ck/adventofcode/year2017/Day06Test.java
+[20170701tests]: src/test/java/org/ck/adventofcode/year2017/Day07Test.java
+[20170702tests]: src/test/java/org/ck/adventofcode/year2017/Day07Test.java
+[20170801tests]: src/test/java/org/ck/adventofcode/year2017/Day08Test.java
+[20170802tests]: src/test/java/org/ck/adventofcode/year2017/Day08Test.java
 
 # 2019 (29/30)
 

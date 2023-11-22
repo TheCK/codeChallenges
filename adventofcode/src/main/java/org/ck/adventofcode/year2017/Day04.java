@@ -34,7 +34,7 @@ public class Day04 extends AOCSolution {
     long validPassphrases = 0;
 
     while (in.hasNextLine()) {
-      String[] line = in.nextLine().split("\\s");
+      final String[] line = in.nextLine().split("\\s");
 
       if (!isInvalid(line, invalidator)) {
         ++validPassphrases;

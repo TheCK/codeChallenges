@@ -1,6 +1,7 @@
 package org.ck.adventofcode.year2017;
 
 import java.util.Scanner;
+import java.util.function.IntBinaryOperator;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -17,27 +18,21 @@ import org.ck.codechallengelib.annotation.Solution;
 public class Day01 extends AOCSolution {
   @Override
   protected void runPartOne(final Scanner in) {
-    String captcha = in.nextLine();
-
-    long sum = 0;
-
-    for (int i = 0; i < captcha.length(); ++i) {
-      if (captcha.charAt(i) == captcha.charAt((i + 1) % captcha.length())) {
-        sum += captcha.charAt(i) - '0';
-      }
-    }
-
-    print(sum);
+    run(in, (i, length) -> (i + 1) % length);
   }
 
   @Override
   protected void runPartTwo(final Scanner in) {
-    String captcha = in.nextLine();
+    run(in, (i, length) -> (i + (length / 2)) % length);
+  }
+
+  private void run(final Scanner in, final IntBinaryOperator getIndexToCheck) {
+    final String captcha = in.nextLine();
 
     long sum = 0;
 
     for (int i = 0; i < captcha.length(); ++i) {
-      if (captcha.charAt(i) == captcha.charAt((i + (captcha.length() / 2)) % captcha.length())) {
+      if (captcha.charAt(i) == captcha.charAt(getIndexToCheck.applyAsInt(i, captcha.length()))) {
         sum += captcha.charAt(i) - '0';
       }
     }

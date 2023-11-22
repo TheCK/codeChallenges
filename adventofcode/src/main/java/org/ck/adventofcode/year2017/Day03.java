@@ -19,50 +19,50 @@ import org.ck.codechallengelib.annotation.Solution;
 public class Day03 extends AOCSolution {
   @Override
   protected void runPartOne(final Scanner in) {
-    final Map<Coordinates, Long> memory = new HashMap<>();
-
-    final long maxCell = in.nextInt();
-
-    int x = 0;
-    int y = 0;
-    Direction direction = Direction.RIGHT;
-
-    memory.put(new Coordinates(x, y), 1L);
-    for (long cell = 2; cell <= maxCell; ++cell) {
-      x += direction.getdX();
-      y += direction.getdY();
-
-      memory.put(new Coordinates(x, y), cell);
-
-      if (!memory.containsKey(
-          new Coordinates(x + direction.getNext().getdX(), y + direction.getNext().getdY()))) {
-        direction = direction.getNext();
-      }
-    }
-
-    print(Math.abs(x) + Math.abs(y));
+    run(
+        in,
+        (cell, x, y, memory) -> cell,
+        (maxCell, cell, newValue) -> cell > maxCell,
+        (x, y, memory) -> Math.abs(x) + Math.abs(y));
   }
 
   @Override
   protected void runPartTwo(final Scanner in) {
+    run(
+        in,
+        (cell, x, y, memory) -> getValue(memory, x, y),
+        (maxCell, cell, newValue) -> newValue > maxCell,
+        (x, y, memory) -> memory.get(new Coordinates(x, y)));
+  }
+
+  private void run(
+      final Scanner in,
+      final GetCellValue getCellValue,
+      final GetBreakCondition getBreakCondition,
+      final GetOutput getOutput) {
     final Map<Coordinates, Long> memory = new HashMap<>();
 
-    final long maxCell = in.nextInt();
+    final long maxCell = in.nextLong();
 
     int x = 0;
     int y = 0;
 
     Direction direction = Direction.RIGHT;
 
+    int cell = 2;
     memory.put(new Coordinates(x, y), 1L);
     while (true) {
+      if (getBreakCondition.get(maxCell, cell, 0)) {
+        break;
+      }
+
       x += direction.getdX();
       y += direction.getdY();
 
-      Long newValue = getValue(memory, x, y);
+      final long newValue = getCellValue.get(cell, x, y, memory);
       memory.put(new Coordinates(x, y), newValue);
 
-      if (newValue > maxCell) {
+      if (getBreakCondition.get(maxCell, cell, newValue)) {
         break;
       }
 
@@ -70,9 +70,11 @@ public class Day03 extends AOCSolution {
           new Coordinates(x + direction.getNext().getdX(), y + direction.getNext().getdY()))) {
         direction = direction.getNext();
       }
+
+      ++cell;
     }
 
-    System.out.println(memory.get(new Coordinates(x, y)));
+    print(getOutput.get(x, y, memory));
   }
 
   private static Long getValue(final Map<Coordinates, Long> memory, final int x, final int y) {
@@ -118,5 +120,17 @@ public class Day03 extends AOCSolution {
         case LEFT -> DOWN;
       };
     }
+  }
+
+  private interface GetCellValue {
+    long get(final long cell, final int x, final int y, final Map<Coordinates, Long> memory);
+  }
+
+  private interface GetBreakCondition {
+    boolean get(final long maxCell, final long cell, final long newValue);
+  }
+
+  private interface GetOutput {
+    long get(final int x, final int y, final Map<Coordinates, Long> memory);
   }
 }

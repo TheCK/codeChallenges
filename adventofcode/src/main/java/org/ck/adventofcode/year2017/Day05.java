@@ -3,6 +3,7 @@ package org.ck.adventofcode.year2017;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.function.IntUnaryOperator;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -19,28 +20,16 @@ import org.ck.codechallengelib.annotation.Solution;
 public class Day05 extends AOCSolution {
   @Override
   protected void runPartOne(final Scanner in) {
-    List<Integer> jumps = new ArrayList<>();
-
-    while (in.hasNextInt()) {
-      jumps.add(in.nextInt());
-    }
-
-    int pointer = 0;
-    int counter = 0;
-
-    while (pointer < jumps.size()) {
-      jumps.set(pointer, jumps.get(pointer) + 1);
-      pointer = pointer + jumps.get(pointer) - 1;
-
-      ++counter;
-    }
-
-    print(counter);
+    run(in, jump -> 1);
   }
 
   @Override
   protected void runPartTwo(final Scanner in) {
-    List<Integer> jumps = new ArrayList<>();
+    run(in, jump -> jump >= 3 ? -1 : 1);
+  }
+
+  private void run(final Scanner in, final IntUnaryOperator getJumpChange) {
+    final List<Integer> jumps = new ArrayList<>();
 
     while (in.hasNextInt()) {
       jumps.add(in.nextInt());
@@ -50,9 +39,9 @@ public class Day05 extends AOCSolution {
     int counter = 0;
 
     while (pointer < jumps.size()) {
-      int jump = jumps.get(pointer);
+      final int jump = jumps.get(pointer);
 
-      jumps.set(pointer, jumps.get(pointer) + (jump >= 3 ? -1 : 1));
+      jumps.set(pointer, jumps.get(pointer) + getJumpChange.applyAsInt(jump));
       pointer = pointer + jump;
 
       ++counter;

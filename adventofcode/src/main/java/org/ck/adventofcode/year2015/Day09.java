@@ -37,12 +37,12 @@ public class Day09 extends AOCSolution {
     final Map<String, Integer> distances = new HashMap<>();
 
     while (in.hasNextLine()) {
-      Matcher matcher = PATTERN.matcher(in.nextLine());
+      final Matcher matcher = PATTERN.matcher(in.nextLine());
 
       if (matcher.find()) {
-        String from = matcher.group("from");
-        String to = matcher.group("to");
-        int distance = Integer.parseInt(matcher.group("distance"));
+        final String from = matcher.group("from");
+        final String to = matcher.group("to");
+        final int distance = Integer.parseInt(matcher.group("distance"));
 
         cities.add(from);
         cities.add(to);
@@ -67,10 +67,10 @@ public class Day09 extends AOCSolution {
 
     int best = initialValue;
     for (String city : cities) {
-      Set<String> copy = new HashSet<>(cities);
+      final Set<String> copy = new HashSet<>(cities);
       copy.remove(city);
 
-      int distance =
+      final int distance =
           getDistance(copy, distances, city, initialValue, getBestDistance)
               + distances.getOrDefault(city + previous, 0);
       best = getBestDistance.applyAsInt(distance, best);

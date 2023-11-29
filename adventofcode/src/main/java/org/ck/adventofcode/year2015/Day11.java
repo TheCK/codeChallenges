@@ -1,31 +1,45 @@
-package org.ck.adventofcode.year2015.day11;
+package org.ck.adventofcode.year2015;
 
 import java.util.Scanner;
+import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
+@Solution(
+    id = 20151101,
+    name = "Day 11: Corporate Policy",
+    url = "https://adventofcode.com/2015/day/11",
+    category = "2015")
 @Solution(
     id = 20151102,
     name = "Day 11: Corporate Policy - Part 2",
     url = "https://adventofcode.com/2015/day/11#part2",
     category = "2015")
-public class Part2 {
-  public static void main(String[] args) throws Exception {
-    try (Scanner in = new Scanner(System.in)) {
-      char[] password = in.nextLine().toCharArray();
+public class Day11 extends AOCSolution {
+  @Override
+  protected void runPartOne(final Scanner in) {
+    run(in);
+  }
 
-      while (true) {
-        increment(password);
+  @Override
+  protected void runPartTwo(final Scanner in) {
+    run(in);
+  }
 
-        String candidate = String.copyValueOf(password);
-        if (isValid(candidate)) {
-          System.out.println(candidate);
-          return;
-        }
+  private void run(final Scanner in) {
+    final char[] password = in.nextLine().toCharArray();
+
+    while (true) {
+      increment(password);
+
+      final String candidate = String.copyValueOf(password);
+      if (isValid(candidate)) {
+        print(candidate);
+        return;
       }
     }
   }
 
-  private static void increment(char[] password) {
+  private static void increment(final char[] password) {
     int pos = password.length - 1;
 
     boolean cont = true;

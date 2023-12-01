@@ -28,7 +28,7 @@ public class Day04 extends AOCSolution {
     run(in, bytes -> bytes[0] == 0 && bytes[1] == 0 && bytes[2] == 0);
   }
 
-  private void run(final Scanner in, Predicate<byte[]> isValid) {
+  private void run(final Scanner in, final Predicate<byte[]> isValid) {
     final MessageDigest md5;
 
     try {

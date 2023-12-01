@@ -126,14 +126,14 @@
 [20151102solution]: src/main/java/org/ck/adventofcode/year2015/Day11.java
 [20151201solution]: src/main/java/org/ck/adventofcode/year2015/Day12.java
 [20151202solution]: src/main/java/org/ck/adventofcode/year2015/Day12.java
-[20151301solution]: src/main/java/org/ck/adventofcode/year2015/day13/Part1.java
-[20151302solution]: src/main/java/org/ck/adventofcode/year2015/day13/Part2.java
-[20151401solution]: src/main/java/org/ck/adventofcode/year2015/day14/Part1.java
-[20151402solution]: src/main/java/org/ck/adventofcode/year2015/day14/Part2.java
-[20151501solution]: src/main/java/org/ck/adventofcode/year2015/day15/Part1.java
-[20151502solution]: src/main/java/org/ck/adventofcode/year2015/day15/Part2.java
-[20151601solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part1.java
-[20151602solution]: src/main/java/org/ck/adventofcode/year2015/day16/Part2.java
+[20151301solution]: src/main/java/org/ck/adventofcode/year2015/Day13.java
+[20151302solution]: src/main/java/org/ck/adventofcode/year2015/Day13.java
+[20151401solution]: src/main/java/org/ck/adventofcode/year2015/Day14.java
+[20151402solution]: src/main/java/org/ck/adventofcode/year2015/Day14.java
+[20151501solution]: src/main/java/org/ck/adventofcode/year2015/Day15.java
+[20151502solution]: src/main/java/org/ck/adventofcode/year2015/Day15.java
+[20151601solution]: src/main/java/org/ck/adventofcode/year2015/Day16.java
+[20151602solution]: src/main/java/org/ck/adventofcode/year2015/Day16.java
 [20151701solution]: src/main/java/org/ck/adventofcode/year2015/day17/Part1.java
 [20151702solution]: src/main/java/org/ck/adventofcode/year2015/day17/Part2.java
 [20151801solution]: src/main/java/org/ck/adventofcode/year2015/day18/Part1.java
@@ -176,14 +176,14 @@
 [20151102tests]: src/test/java/org/ck/adventofcode/year2015/Day11Test.java
 [20151201tests]: src/test/java/org/ck/adventofcode/year2015/Day12Test.java
 [20151202tests]: src/test/java/org/ck/adventofcode/year2015/Day12Test.java
-[20151301tests]: src/test/java/org/ck/adventofcode/year2015/day13/Part1Test.java
-[20151302tests]: src/test/java/org/ck/adventofcode/year2015/day13/Part2Test.java
-[20151401tests]: src/test/java/org/ck/adventofcode/year2015/day14/Part1Test.java
-[20151402tests]: src/test/java/org/ck/adventofcode/year2015/day14/Part2Test.java
-[20151501tests]: src/test/java/org/ck/adventofcode/year2015/day15/Part1Test.java
-[20151502tests]: src/test/java/org/ck/adventofcode/year2015/day15/Part2Test.java
-[20151601tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part1Test.java
-[20151602tests]: src/test/java/org/ck/adventofcode/year2015/day16/Part2Test.java
+[20151301tests]: src/test/java/org/ck/adventofcode/year2015/Day13Test.java
+[20151302tests]: src/test/java/org/ck/adventofcode/year2015/Day13Test.java
+[20151401tests]: src/test/java/org/ck/adventofcode/year2015/Day14Test.java
+[20151402tests]: src/test/java/org/ck/adventofcode/year2015/Day14Test.java
+[20151501tests]: src/test/java/org/ck/adventofcode/year2015/Day15Test.java
+[20151502tests]: src/test/java/org/ck/adventofcode/year2015/Day15Test.java
+[20151601tests]: src/test/java/org/ck/adventofcode/year2015/Day16Test.java
+[20151602tests]: src/test/java/org/ck/adventofcode/year2015/Day16Test.java
 [20151701tests]: src/test/java/org/ck/adventofcode/year2015/day17/Part1Test.java
 [20151702tests]: src/test/java/org/ck/adventofcode/year2015/day17/Part2Test.java
 [20151801tests]: src/test/java/org/ck/adventofcode/year2015/day18/Part1Test.java
@@ -1217,4 +1217,208 @@
 [20222401tests]: src/test/java/org/ck/adventofcode/year2022/day24/Part1Test.java
 [20222402tests]: src/test/java/org/ck/adventofcode/year2022/day24/Part2Test.java
 [20222501tests]: src/test/java/org/ck/adventofcode/year2022/day25/Part1Test.java
+
+# 2023 (2/49)
+
+|        # | Name                                    | Solution                             | Test                              |
+|---------:|-----------------------------------------|:------------------------------------:|:---------------------------------:|
+| 20230101 | [Day 1: Trebuchet?!][20230101]          | &#9989;[&#128190;][20230101solution] | &#9989;[&#128190;][20230101tests] |
+| 20230102 | [Day 1: Trebuchet?! - Part 2][20230102] | &#9989;[&#128190;][20230102solution] | &#9989;[&#128190;][20230102tests] |
+| 20230201 | [Day 2: ][20230201]                     | [&#128190;][20230201solution]        | [&#128190;][20230201tests]        |
+| 20230202 | [Day 2:  - Part 2][20230202]            | [&#128190;][20230202solution]        | [&#128190;][20230202tests]        |
+| 20230301 | [Day 3: ][20230301]                     | [&#128190;][20230301solution]        | [&#128190;][20230301tests]        |
+| 20230302 | [Day 3:  - Part 2][20230302]            | [&#128190;][20230302solution]        | [&#128190;][20230302tests]        |
+| 20230401 | [Day 4: ][20230401]                     | [&#128190;][20230401solution]        | [&#128190;][20230401tests]        |
+| 20230402 | [Day 4:  - Part 2][20230402]            | [&#128190;][20230402solution]        | [&#128190;][20230402tests]        |
+| 20230501 | [Day 5: ][20230501]                     | [&#128190;][20230501solution]        | [&#128190;][20230501tests]        |
+| 20230502 | [Day 5:  - Part 2][20230502]            | [&#128190;][20230502solution]        | [&#128190;][20230502tests]        |
+| 20230601 | [Day 6: ][20230601]                     | [&#128190;][20230601solution]        | [&#128190;][20230601tests]        |
+| 20230602 | [Day 6:  - Part 2][20230602]            | [&#128190;][20230602solution]        | [&#128190;][20230602tests]        |
+| 20230701 | [Day 7: ][20230701]                     | [&#128190;][20230701solution]        | [&#128190;][20230701tests]        |
+| 20230702 | [Day 7:  - Part 2][20230702]            | [&#128190;][20230702solution]        | [&#128190;][20230702tests]        |
+| 20230801 | [Day 8: ][20230801]                     | [&#128190;][20230801solution]        | [&#128190;][20230801tests]        |
+| 20230802 | [Day 8:  - Part 2][20230802]            | [&#128190;][20230802solution]        | [&#128190;][20230802tests]        |
+| 20230901 | [Day 9: ][20230901]                     | [&#128190;][20230901solution]        | [&#128190;][20230901tests]        |
+| 20230902 | [Day 9:  - Part 2][20230902]            | [&#128190;][20230902solution]        | [&#128190;][20230902tests]        |
+| 20231001 | [Day 10: ][20231001]                    | [&#128190;][20231001solution]        | [&#128190;][20231001tests]        |
+| 20231002 | [Day 10:  - Part 2][20231002]           | [&#128190;][20231002solution]        | [&#128190;][20231002tests]        |
+| 20231101 | [Day 11: ][20231101]                    | [&#128190;][20231101solution]        | [&#128190;][20231101tests]        |
+| 20231102 | [Day 11:  - Part 2][20231102]           | [&#128190;][20231102solution]        | [&#128190;][20231102tests]        |
+| 20231201 | [Day 12: ][20231201]                    | [&#128190;][20231201solution]        | [&#128190;][20231201tests]        |
+| 20231202 | [Day 12:  - Part 2][20231202]           | [&#128190;][20231202solution]        | [&#128190;][20231202tests]        |
+| 20231301 | [Day 13: ][20231301]                    | [&#128190;][20231301solution]        | [&#128190;][20231301tests]        |
+| 20231302 | [Day 13:  - Part 2][20231302]           | [&#128190;][20231302solution]        | [&#128190;][20231302tests]        |
+| 20231401 | [Day 14: ][20231401]                    | [&#128190;][20231401solution]        | [&#128190;][20231401tests]        |
+| 20231402 | [Day 14:  - Part 2][20231402]           | [&#128190;][20231402solution]        | [&#128190;][20231402tests]        |
+| 20231501 | [Day 15: ][20231501]                    | [&#128190;][20231501solution]        | [&#128190;][20231501tests]        |
+| 20231502 | [Day 15:  - Part 2][20231502]           | [&#128190;][20231502solution]        | [&#128190;][20231502tests]        |
+| 20231601 | [Day 16: ][20231601]                    | [&#128190;][20231601solution]        | [&#128190;][20231601tests]        |
+| 20231602 | [Day 16:  - Part 2][20231602]           | [&#128190;][20231602solution]        | [&#128190;][20231602tests]        |
+| 20231701 | [Day 17: ][20231701]                    | [&#128190;][20231701solution]        | [&#128190;][20231701tests]        |
+| 20231702 | [Day 17:  - Part 2][20231702]           | [&#128190;][20231702solution]        | [&#128190;][20231702tests]        |
+| 20231801 | [Day 18: ][20231801]                    | [&#128190;][20231801solution]        | [&#128190;][20231801tests]        |
+| 20231802 | [Day 18:  - Part 2][20231802]           | [&#128190;][20231802solution]        | [&#128190;][20231802tests]        |
+| 20231901 | [Day 19: ][20231901]                    | [&#128190;][20231901solution]        | [&#128190;][20231901tests]        |
+| 20231902 | [Day 19:  - Part 2][20231902]           | [&#128190;][20231902solution]        | [&#128190;][20231902tests]        |
+| 20232001 | [Day 20: ][20232001]                    | [&#128190;][20232001solution]        | [&#128190;][20232001tests]        |
+| 20232002 | [Day 20:  - Part 2][20232002]           | [&#128190;][20232002solution]        | [&#128190;][20232002tests]        |
+| 20232101 | [Day 21: ][20232101]                    | [&#128190;][20232101solution]        | [&#128190;][20232101tests]        |
+| 20232102 | [Day 21:  - Part 2][20232102]           | [&#128190;][20232102solution]        | [&#128190;][20232102tests]        |
+| 20232201 | [Day 22: ][20232201]                    | [&#128190;][20232201solution]        | [&#128190;][20232201tests]        |
+| 20232202 | [Day 22:  - Part 2][20232202]           | [&#128190;][20232202solution]        | [&#128190;][20232202tests]        |
+| 20232301 | [Day 23: ][20232301]                    | [&#128190;][20232301solution]        | [&#128190;][20232301tests]        |
+| 20232302 | [Day 23:  - Part 2][20232302]           | [&#128190;][20232302solution]        | [&#128190;][20232302tests]        |
+| 20232401 | [Day 24: ][20232401]                    | [&#128190;][20232401solution]        | [&#128190;][20232401tests]        |
+| 20232402 | [Day 24:  - Part 2][20232402]           | [&#128190;][20232402solution]        | [&#128190;][20232402tests]        |
+| 20232501 | [Day 25: ][20232501]                    | [&#128190;][20232501solution]        | [&#128190;][20232501tests]        |
+
+[20230101]: https://adventofcode.com/2023/day/1
+[20230102]: https://adventofcode.com/2023/day/1#part2
+[20230201]: https://adventofcode.com/2023/day/2
+[20230202]: https://adventofcode.com/2023/day/2#part2
+[20230301]: https://adventofcode.com/2023/day/3
+[20230302]: https://adventofcode.com/2023/day/3#part2
+[20230401]: https://adventofcode.com/2023/day/4
+[20230402]: https://adventofcode.com/2023/day/4#part2
+[20230501]: https://adventofcode.com/2023/day/5
+[20230502]: https://adventofcode.com/2023/day/5#part2
+[20230601]: https://adventofcode.com/2023/day/6
+[20230602]: https://adventofcode.com/2023/day/6#part2
+[20230701]: https://adventofcode.com/2023/day/7
+[20230702]: https://adventofcode.com/2023/day/7#part2
+[20230801]: https://adventofcode.com/2023/day/8
+[20230802]: https://adventofcode.com/2023/day/8#part2
+[20230901]: https://adventofcode.com/2023/day/9
+[20230902]: https://adventofcode.com/2023/day/9#part2
+[20231001]: https://adventofcode.com/2023/day/10
+[20231002]: https://adventofcode.com/2023/day/10#part2
+[20231101]: https://adventofcode.com/2023/day/11
+[20231102]: https://adventofcode.com/2023/day/11#part2
+[20231201]: https://adventofcode.com/2023/day/12
+[20231202]: https://adventofcode.com/2023/day/12#part2
+[20231301]: https://adventofcode.com/2023/day/13
+[20231302]: https://adventofcode.com/2023/day/13#part2
+[20231401]: https://adventofcode.com/2023/day/14
+[20231402]: https://adventofcode.com/2023/day/14#part2
+[20231501]: https://adventofcode.com/2023/day/15
+[20231502]: https://adventofcode.com/2023/day/15#part2
+[20231601]: https://adventofcode.com/2023/day/16
+[20231602]: https://adventofcode.com/2023/day/16#part2
+[20231701]: https://adventofcode.com/2023/day/17
+[20231702]: https://adventofcode.com/2023/day/17#part2
+[20231801]: https://adventofcode.com/2023/day/18
+[20231802]: https://adventofcode.com/2023/day/18#part2
+[20231901]: https://adventofcode.com/2023/day/19
+[20231902]: https://adventofcode.com/2023/day/19#part2
+[20232001]: https://adventofcode.com/2023/day/20
+[20232002]: https://adventofcode.com/2023/day/20#part2
+[20232101]: https://adventofcode.com/2023/day/21
+[20232102]: https://adventofcode.com/2023/day/21#part2
+[20232201]: https://adventofcode.com/2023/day/22
+[20232202]: https://adventofcode.com/2023/day/22#part2
+[20232301]: https://adventofcode.com/2023/day/23
+[20232302]: https://adventofcode.com/2023/day/23#part2
+[20232401]: https://adventofcode.com/2023/day/24
+[20232402]: https://adventofcode.com/2023/day/24#part2
+[20232501]: https://adventofcode.com/2023/day/25
+
+[20230101solution]: src/main/java/org/ck/adventofcode/year2023/Day01.java
+[20230102solution]: src/main/java/org/ck/adventofcode/year2023/Day01.java
+[20230201solution]: src/main/java/org/ck/adventofcode/year2023/Day02.java
+[20230202solution]: src/main/java/org/ck/adventofcode/year2023/Day02.java
+[20230301solution]: src/main/java/org/ck/adventofcode/year2023/Day03.java
+[20230302solution]: src/main/java/org/ck/adventofcode/year2023/Day03.java
+[20230401solution]: src/main/java/org/ck/adventofcode/year2023/Day04.java
+[20230402solution]: src/main/java/org/ck/adventofcode/year2023/Day04.java
+[20230501solution]: src/main/java/org/ck/adventofcode/year2023/Day05.java
+[20230502solution]: src/main/java/org/ck/adventofcode/year2023/Day05.java
+[20230601solution]: src/main/java/org/ck/adventofcode/year2023/Day06.java
+[20230602solution]: src/main/java/org/ck/adventofcode/year2023/Day06.java
+[20230701solution]: src/main/java/org/ck/adventofcode/year2023/Day07.java
+[20230702solution]: src/main/java/org/ck/adventofcode/year2023/Day07.java
+[20230801solution]: src/main/java/org/ck/adventofcode/year2023/Day08.java
+[20230802solution]: src/main/java/org/ck/adventofcode/year2023/Day08.java
+[20230901solution]: src/main/java/org/ck/adventofcode/year2023/Day09.java
+[20230902solution]: src/main/java/org/ck/adventofcode/year2023/Day09.java
+[20231001solution]: src/main/java/org/ck/adventofcode/year2023/Day10.java
+[20231002solution]: src/main/java/org/ck/adventofcode/year2023/Day10.java
+[20231101solution]: src/main/java/org/ck/adventofcode/year2023/Day11.java
+[20231102solution]: src/main/java/org/ck/adventofcode/year2023/Day11.java
+[20231201solution]: src/main/java/org/ck/adventofcode/year2023/Day12.java
+[20231202solution]: src/main/java/org/ck/adventofcode/year2023/Day12.java
+[20231301solution]: src/main/java/org/ck/adventofcode/year2023/Day13.java
+[20231302solution]: src/main/java/org/ck/adventofcode/year2023/Day13.java
+[20231401solution]: src/main/java/org/ck/adventofcode/year2023/Day14.java
+[20231402solution]: src/main/java/org/ck/adventofcode/year2023/Day14.java
+[20231501solution]: src/main/java/org/ck/adventofcode/year2023/Day15.java
+[20231502solution]: src/main/java/org/ck/adventofcode/year2023/Day15.java
+[20231601solution]: src/main/java/org/ck/adventofcode/year2023/Day16.java
+[20231602solution]: src/main/java/org/ck/adventofcode/year2023/Day16.java
+[20231701solution]: src/main/java/org/ck/adventofcode/year2023/Day17.java
+[20231702solution]: src/main/java/org/ck/adventofcode/year2023/Day17.java
+[20231801solution]: src/main/java/org/ck/adventofcode/year2023/Day18.java
+[20231802solution]: src/main/java/org/ck/adventofcode/year2023/Day18.java
+[20231901solution]: src/main/java/org/ck/adventofcode/year2023/Day19.java
+[20231902solution]: src/main/java/org/ck/adventofcode/year2023/Day19.java
+[20232001solution]: src/main/java/org/ck/adventofcode/year2023/Day20.java
+[20232002solution]: src/main/java/org/ck/adventofcode/year2023/Day20.java
+[20232101solution]: src/main/java/org/ck/adventofcode/year2023/Day21.java
+[20232102solution]: src/main/java/org/ck/adventofcode/year2023/Day21.java
+[20232201solution]: src/main/java/org/ck/adventofcode/year2023/Day22.java
+[20232202solution]: src/main/java/org/ck/adventofcode/year2023/Day22.java
+[20232301solution]: src/main/java/org/ck/adventofcode/year2023/Day23.java
+[20232302solution]: src/main/java/org/ck/adventofcode/year2023/Day23.java
+[20232401solution]: src/main/java/org/ck/adventofcode/year2023/Day24.java
+[20232402solution]: src/main/java/org/ck/adventofcode/year2023/Day24.java
+[20232501solution]: src/main/java/org/ck/adventofcode/year2023/Day25.java
+
+[20230101tests]: src/test/java/org/ck/adventofcode/year2023/Day01Test.java
+[20230102tests]: src/test/java/org/ck/adventofcode/year2023/Day01Test.java
+[20230201tests]: src/test/java/org/ck/adventofcode/year2023/Day02Test.java
+[20230202tests]: src/test/java/org/ck/adventofcode/year2023/Day02Test.java
+[20230301tests]: src/test/java/org/ck/adventofcode/year2023/Day03Test.java
+[20230302tests]: src/test/java/org/ck/adventofcode/year2023/Day03Test.java
+[20230401tests]: src/test/java/org/ck/adventofcode/year2023/Day04Test.java
+[20230402tests]: src/test/java/org/ck/adventofcode/year2023/Day04Test.java
+[20230501tests]: src/test/java/org/ck/adventofcode/year2023/Day05Test.java
+[20230502tests]: src/test/java/org/ck/adventofcode/year2023/Day05Test.java
+[20230601tests]: src/test/java/org/ck/adventofcode/year2023/Day06Test.java
+[20230602tests]: src/test/java/org/ck/adventofcode/year2023/Day06Test.java
+[20230701tests]: src/test/java/org/ck/adventofcode/year2023/Day07Test.java
+[20230702tests]: src/test/java/org/ck/adventofcode/year2023/Day07Test.java
+[20230801tests]: src/test/java/org/ck/adventofcode/year2023/Day08Test.java
+[20230802tests]: src/test/java/org/ck/adventofcode/year2023/Day08Test.java
+[20230901tests]: src/test/java/org/ck/adventofcode/year2023/Day09Test.java
+[20230902tests]: src/test/java/org/ck/adventofcode/year2023/Day09Test.java
+[20231001tests]: src/test/java/org/ck/adventofcode/year2023/Day10Test.java
+[20231002tests]: src/test/java/org/ck/adventofcode/year2023/Day10Test.java
+[20231101tests]: src/test/java/org/ck/adventofcode/year2023/Day11Test.java
+[20231102tests]: src/test/java/org/ck/adventofcode/year2023/Day11Test.java
+[20231201tests]: src/test/java/org/ck/adventofcode/year2023/Day12Test.java
+[20231202tests]: src/test/java/org/ck/adventofcode/year2023/Day12Test.java
+[20231301tests]: src/test/java/org/ck/adventofcode/year2023/Day13Test.java
+[20231302tests]: src/test/java/org/ck/adventofcode/year2023/Day13Test.java
+[20231401tests]: src/test/java/org/ck/adventofcode/year2023/Day14Test.java
+[20231402tests]: src/test/java/org/ck/adventofcode/year2023/Day14Test.java
+[20231501tests]: src/test/java/org/ck/adventofcode/year2023/Day15Test.java
+[20231502tests]: src/test/java/org/ck/adventofcode/year2023/Day15Test.java
+[20231601tests]: src/test/java/org/ck/adventofcode/year2023/Day16Test.java
+[20231602tests]: src/test/java/org/ck/adventofcode/year2023/Day16Test.java
+[20231701tests]: src/test/java/org/ck/adventofcode/year2023/Day17Test.java
+[20231702tests]: src/test/java/org/ck/adventofcode/year2023/Day17Test.java
+[20231801tests]: src/test/java/org/ck/adventofcode/year2023/Day18Test.java
+[20231802tests]: src/test/java/org/ck/adventofcode/year2023/Day18Test.java
+[20231901tests]: src/test/java/org/ck/adventofcode/year2023/Day19Test.java
+[20231902tests]: src/test/java/org/ck/adventofcode/year2023/Day19Test.java
+[20232001tests]: src/test/java/org/ck/adventofcode/year2023/Day20Test.java
+[20232002tests]: src/test/java/org/ck/adventofcode/year2023/Day20Test.java
+[20232101tests]: src/test/java/org/ck/adventofcode/year2023/Day21Test.java
+[20232102tests]: src/test/java/org/ck/adventofcode/year2023/Day21Test.java
+[20232201tests]: src/test/java/org/ck/adventofcode/year2023/Day22Test.java
+[20232202tests]: src/test/java/org/ck/adventofcode/year2023/Day22Test.java
+[20232301tests]: src/test/java/org/ck/adventofcode/year2023/Day23Test.java
+[20232302tests]: src/test/java/org/ck/adventofcode/year2023/Day23Test.java
+[20232401tests]: src/test/java/org/ck/adventofcode/year2023/Day24Test.java
+[20232402tests]: src/test/java/org/ck/adventofcode/year2023/Day24Test.java
+[20232501tests]: src/test/java/org/ck/adventofcode/year2023/Day25Test.java
 

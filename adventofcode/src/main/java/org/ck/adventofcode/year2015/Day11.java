@@ -54,7 +54,7 @@ public class Day11 extends AOCSolution {
     }
   }
 
-  private static boolean isValid(String candidate) {
+  private static boolean isValid(final String candidate) {
     if (candidate.contains("i") || candidate.contains("0") || candidate.contains("l")) {
       return false;
     }

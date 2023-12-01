@@ -25,7 +25,7 @@ public class Day03 extends AOCSolution {
   protected void runPartTwo(final Scanner in) {
     run(
         in,
-        (line) -> {
+        line -> {
           final List<String> commands = new ArrayList<>();
 
           final StringBuilder santa = new StringBuilder();

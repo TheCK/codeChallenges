@@ -70,9 +70,9 @@ public class Day05 extends AOCSolution {
             last = letter;
           }
 
-          Map<String, List<Integer>> pairs = new HashMap<>();
+          final Map<String, List<Integer>> pairs = new HashMap<>();
           for (int i = 0; i < string.length() - 1; ++i) {
-            String sub = string.substring(i, i + 2);
+            final String sub = string.substring(i, i + 2);
 
             if (pairs.containsKey(sub)) {
               for (int otherIndex : pairs.get(sub)) {
@@ -91,7 +91,7 @@ public class Day05 extends AOCSolution {
         });
   }
 
-  private void run(final Scanner in, Predicate<String> isNice) {
+  private void run(final Scanner in, final Predicate<String> isNice) {
     int nice = 0;
 
     while (in.hasNextLine()) {

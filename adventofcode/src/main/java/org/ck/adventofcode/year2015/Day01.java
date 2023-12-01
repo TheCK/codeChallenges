@@ -27,7 +27,8 @@ public class Day01 extends AOCSolution {
     run(in, (floor) -> floor < 0, (floor, position) -> position);
   }
 
-  private void run(final Scanner in, IntPredicate getBreakCondition, IntBinaryOperator getResult) {
+  private void run(
+      final Scanner in, final IntPredicate getBreakCondition, final IntBinaryOperator getResult) {
     int floor = 0;
     int position = 1;
 

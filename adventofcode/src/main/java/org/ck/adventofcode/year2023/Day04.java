@@ -52,8 +52,10 @@ public class Day04 extends AOCSolution {
     while (in.hasNextLine()) {
       final String[] line = in.nextLine().split("(:| \\|) +");
 
-      Set<String> winningNumbers = Arrays.stream(line[1].split(" +")).collect(Collectors.toSet());
-      Set<String> cardNumbers = Arrays.stream(line[2].split(" +")).collect(Collectors.toSet());
+      final Set<String> winningNumbers =
+          Arrays.stream(line[1].split(" +")).collect(Collectors.toSet());
+      final Set<String> cardNumbers =
+          Arrays.stream(line[2].split(" +")).collect(Collectors.toSet());
 
       cardNumbers.retainAll(winningNumbers);
 

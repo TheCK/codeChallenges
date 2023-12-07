@@ -138,8 +138,8 @@
 [20151702solution]: src/main/java/org/ck/adventofcode/year2015/Day17.java
 [20151801solution]: src/main/java/org/ck/adventofcode/year2015/Day18.java
 [20151802solution]: src/main/java/org/ck/adventofcode/year2015/Day18.java
-[20151901solution]: src/main/java/org/ck/adventofcode/year2015/day19/Part1.java
-[20151902solution]: src/main/java/org/ck/adventofcode/year2015/day19/Part2.java
+[20151901solution]: src/main/java/org/ck/adventofcode/year2015/Day19.java
+[20151902solution]: src/main/java/org/ck/adventofcode/year2015/Day19.java
 [20152001solution]: src/main/java/org/ck/adventofcode/year2015/day20/Part1.java
 [20152002solution]: src/main/java/org/ck/adventofcode/year2015/day20/Part2.java
 [20152101solution]: src/main/java/org/ck/adventofcode/year2015/day21/Part1.java
@@ -188,8 +188,8 @@
 [20151702tests]: src/test/java/org/ck/adventofcode/year2015/Day17Test.java
 [20151801tests]: src/test/java/org/ck/adventofcode/year2015/Day18Test.java
 [20151802tests]: src/test/java/org/ck/adventofcode/year2015/Day18Test.java
-[20151901tests]: src/test/java/org/ck/adventofcode/year2015/day19/Part1Test.java
-[20151902tests]: src/test/java/org/ck/adventofcode/year2015/day19/Part2Test.java
+[20151901tests]: src/test/java/org/ck/adventofcode/year2015/Day19Test.java
+[20151902tests]: src/test/java/org/ck/adventofcode/year2015/Day19Test.java
 [20152001tests]: src/test/java/org/ck/adventofcode/year2015/day20/Part1Test.java
 [20152002tests]: src/test/java/org/ck/adventofcode/year2015/day20/Part2Test.java
 [20152101tests]: src/test/java/org/ck/adventofcode/year2015/day21/Part1Test.java

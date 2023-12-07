@@ -1,6 +1,7 @@
-package org.ck.adventofcode.year2015.day22;
+package org.ck.adventofcode.year2015;
 
 import java.util.*;
+import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
@@ -8,7 +9,12 @@ import org.ck.codechallengelib.annotation.Solution;
     name = "Day 22: Wizard Simulator 20XX",
     url = "https://adventofcode.com/2015/day/22",
     category = "2015")
-public class Part1 {
+@Solution(
+    id = 20152202,
+    name = "Day 22: Wizard Simulator 20XX - Part 2",
+    url = "https://adventofcode.com/2015/day/22#part2",
+    category = "2015")
+public class Day22 extends AOCSolution {
   private static final List<Spell> spells =
       Arrays.asList(
           new Spell(53, 4, 0, null),
@@ -17,30 +23,35 @@ public class Part1 {
           new Spell(173, 0, 0, new Effect("poison", 0, 3, 0, 6)),
           new Spell(229, 0, 0, new Effect("recharge", 0, 0, 101, 5)));
 
-  public static void main(String[] args) throws Exception {
-    int enemyHitPoints = 0;
-    int enemyDamage = 0;
+  @Override
+  protected void runPartOne(final Scanner in) {
+    run(in, false);
+  }
 
-    try (Scanner in = new Scanner(System.in)) {
-      enemyHitPoints = Integer.parseInt(in.nextLine().split(": ")[1]);
-      enemyDamage = Integer.parseInt(in.nextLine().split(": ")[1]);
-    }
+  @Override
+  protected void runPartTwo(final Scanner in) {
+    run(in, true);
+  }
+
+  private void run(final Scanner in, final boolean reduceHpEachRound) {
+    final int enemyHitPoints = Integer.parseInt(in.nextLine().split(": ")[1]);
+    final int enemyDamage = Integer.parseInt(in.nextLine().split(": ")[1]);
 
     int min = Integer.MAX_VALUE;
 
-    PriorityQueue<State> queue =
+    final PriorityQueue<State> queue =
         new PriorityQueue<>((s1, s2) -> Integer.compare(s2.manaSpent(), s1.manaSpent()));
     queue.add(new State(50, 500, enemyHitPoints, new HashSet<>(), 0));
 
     while (!queue.isEmpty()) {
-      State current = queue.poll();
+      final State current = queue.poll();
 
       if (current.manaSpent() > min) {
         continue;
       }
 
       if (current.bossHp() <= 0) {
-        min = Math.min(current.manaSpent(), min);
+        min = current.manaSpent();
         continue;
       }
 
@@ -54,7 +65,14 @@ public class Part1 {
         int bossHp = current.bossHp();
         int manaSpent = current.manaSpent();
 
-        Set<Effect> newEffects = new HashSet<>();
+        if (reduceHpEachRound) {
+          hp -= 1;
+          if (hp <= 0) {
+            continue;
+          }
+        }
+
+        final Set<Effect> newEffects = new HashSet<>();
         for (Effect effect : current.effects()) {
           mana += effect.mana();
           bossHp -= effect.damage();
@@ -85,7 +103,7 @@ public class Part1 {
           newEffects.add(spell.effect());
         }
 
-        Set<Effect> newerEffects = new HashSet<>();
+        final Set<Effect> newerEffects = new HashSet<>();
         for (Effect effect : newEffects) {
           mana += effect.mana();
           bossHp -= effect.damage();
@@ -105,7 +123,7 @@ public class Part1 {
       }
     }
 
-    System.out.println(min);
+    print(min);
   }
 
   private record Spell(int price, int damage, int heal, Effect effect) {}
@@ -113,8 +131,14 @@ public class Part1 {
   private record Effect(String name, int armor, int damage, int mana, int turns) {
     @Override
     public boolean equals(final Object o) {
-      if (this == o) return true;
-      if (o == null || getClass() != o.getClass()) return false;
+      if (this == o) {
+        return true;
+      }
+
+      if (o == null || getClass() != o.getClass()) {
+        return false;
+      }
+
       final Effect effect = (Effect) o;
       return name.equals(effect.name);
     }

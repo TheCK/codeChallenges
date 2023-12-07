@@ -146,11 +146,11 @@
 [20152102solution]: src/main/java/org/ck/adventofcode/year2015/Day21.java
 [20152201solution]: src/main/java/org/ck/adventofcode/year2015/Day22.java
 [20152202solution]: src/main/java/org/ck/adventofcode/year2015/Day22.java
-[20152301solution]: src/main/java/org/ck/adventofcode/year2015/day23/Part1.java
-[20152302solution]: src/main/java/org/ck/adventofcode/year2015/day23/Part2.java
-[20152401solution]: src/main/java/org/ck/adventofcode/year2015/day24/Part1.java
-[20152402solution]: src/main/java/org/ck/adventofcode/year2015/day24/Part2.java
-[20152501solution]: src/main/java/org/ck/adventofcode/year2015/day25/Part1.java
+[20152301solution]: src/main/java/org/ck/adventofcode/year2015/Day23.java
+[20152302solution]: src/main/java/org/ck/adventofcode/year2015/Day23.java
+[20152401solution]: src/main/java/org/ck/adventofcode/year2015/Day24.java
+[20152402solution]: src/main/java/org/ck/adventofcode/year2015/Day24.java
+[20152501solution]: src/main/java/org/ck/adventofcode/year2015/Day25.java
 
 [20150101tests]: src/test/java/org/ck/adventofcode/year2015/Day01Test.java
 [20150102tests]: src/test/java/org/ck/adventofcode/year2015/Day01Test.java
@@ -196,11 +196,11 @@
 [20152102tests]: src/test/java/org/ck/adventofcode/year2015/Day21Test.java
 [20152201tests]: src/test/java/org/ck/adventofcode/year2015/Day22Test.java
 [20152202tests]: src/test/java/org/ck/adventofcode/year2015/Day22Test.java
-[20152301tests]: src/test/java/org/ck/adventofcode/year2015/day23/Part1Test.java
-[20152302tests]: src/test/java/org/ck/adventofcode/year2015/day23/Part2Test.java
-[20152401tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part1Test.java
-[20152402tests]: src/test/java/org/ck/adventofcode/year2015/day24/Part2Test.java
-[20152501tests]: src/test/java/org/ck/adventofcode/year2015/day25/Part1Test.java
+[20152301tests]: src/test/java/org/ck/adventofcode/year2015/Day23Test.java
+[20152302tests]: src/test/java/org/ck/adventofcode/year2015/Day23Test.java
+[20152401tests]: src/test/java/org/ck/adventofcode/year2015/Day24Test.java
+[20152402tests]: src/test/java/org/ck/adventofcode/year2015/Day24Test.java
+[20152501tests]: src/test/java/org/ck/adventofcode/year2015/Day25Test.java
 
 # 2016 (43/49)
 

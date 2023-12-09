@@ -306,12 +306,12 @@
 [20162402]: https://adventofcode.com/2016/day/24
 [20162501]: https://adventofcode.com/2016/day/25
 
-[20160101solution]: src/main/java/org/ck/adventofcode/year2016/day01/Part1.java
-[20160102solution]: src/main/java/org/ck/adventofcode/year2016/day01/Part2.java
-[20160201solution]: src/main/java/org/ck/adventofcode/year2016/day02/Part1.java
-[20160202solution]: src/main/java/org/ck/adventofcode/year2016/day02/Part2.java
-[20160301solution]: src/main/java/org/ck/adventofcode/year2016/day03/Part1.java
-[20160302solution]: src/main/java/org/ck/adventofcode/year2016/day03/Part2.java
+[20160101solution]: src/main/java/org/ck/adventofcode/year2016/Day01.java
+[20160102solution]: src/main/java/org/ck/adventofcode/year2016/Day01.java
+[20160201solution]: src/main/java/org/ck/adventofcode/year2016/Day02.java
+[20160202solution]: src/main/java/org/ck/adventofcode/year2016/Day02.java
+[20160301solution]: src/main/java/org/ck/adventofcode/year2016/Day03.java
+[20160302solution]: src/main/java/org/ck/adventofcode/year2016/Day03.java
 [20160401solution]: src/main/java/org/ck/adventofcode/year2016/day04/Part1.java
 [20160402solution]: src/main/java/org/ck/adventofcode/year2016/day04/Part2.java
 [20160501solution]: src/main/java/org/ck/adventofcode/year2016/day05/Part1.java
@@ -356,12 +356,12 @@
 [20162402solution]: src/main/java/org/ck/adventofcode/year2016/day24/Part2.java
 [20162501solution]: src/main/java/org/ck/adventofcode/year2016/day25/Part1.java
 
-[20160101tests]: src/test/java/org/ck/adventofcode/year2016/day01/Part1Test.java
-[20160102tests]: src/test/java/org/ck/adventofcode/year2016/day01/Part2Test.java
-[20160201tests]: src/test/java/org/ck/adventofcode/year2016/day02/Part1Test.java
-[20160202tests]: src/test/java/org/ck/adventofcode/year2016/day02/Part2Test.java
-[20160301tests]: src/test/java/org/ck/adventofcode/year2016/day03/Part1Test.java
-[20160302tests]: src/test/java/org/ck/adventofcode/year2016/day03/Part2Test.java
+[20160101tests]: src/test/java/org/ck/adventofcode/year2016/Day01Test.java
+[20160102tests]: src/test/java/org/ck/adventofcode/year2016/Day01Test.java
+[20160201tests]: src/test/java/org/ck/adventofcode/year2016/Day02Test.java
+[20160202tests]: src/test/java/org/ck/adventofcode/year2016/Day02Test.java
+[20160301tests]: src/test/java/org/ck/adventofcode/year2016/Day03Test.java
+[20160302tests]: src/test/java/org/ck/adventofcode/year2016/Day03Test.java
 [20160401tests]: src/test/java/org/ck/adventofcode/year2016/day04/Part1Test.java
 [20160402tests]: src/test/java/org/ck/adventofcode/year2016/day04/Part2Test.java
 [20160501tests]: src/test/java/org/ck/adventofcode/year2016/day05/Part1Test.java

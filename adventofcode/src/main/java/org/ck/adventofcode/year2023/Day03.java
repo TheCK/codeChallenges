@@ -47,7 +47,7 @@ public class Day03 extends AOCSolution {
               .filter(numberWithSymbols -> numberWithSymbols.size() == 2)
               .mapToLong(
                   numberWithSymbols ->
-                      numberWithSymbols.get(0).number() * numberWithSymbols.get(1).number())
+                      numberWithSymbols.getFirst().number() * numberWithSymbols.get(1).number())
               .sum();
         });
   }

@@ -1,7 +1,7 @@
 package org.ck.adventofcode.year2023;
 
 import java.util.*;
-import java.util.function.BiFunction;
+import java.util.function.*;
 import java.util.stream.Collectors;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
@@ -91,84 +91,84 @@ public class Day14 extends AOCSolution {
     return load;
   }
 
-  private void tiltNorth(final List<char[]> dish) {
-    for (int rowIndex = 0; rowIndex < dish.size(); ++rowIndex) {
-      final char[] row = dish.get(rowIndex);
+  private void tilt(
+      final List<char[]> dish,
+      final LoopDefinition outerDef,
+      final LoopDefinition innerDef,
+      final Mapper rowMapper,
+      final Mapper columnMapper,
+      final BiPredicate<Integer, Integer> condition) {
+    for (int outer = outerDef.start();
+        outerDef.continueLoop().test(outer);
+        outer = outerDef.step().applyAsInt(outer)) {
+      for (int inner = innerDef.start();
+          innerDef.continueLoop().test(inner);
+          inner = innerDef.step().applyAsInt(inner)) {
+        final int row = rowMapper.get().applyAsInt(outer, inner);
+        final int column = columnMapper.get().applyAsInt(outer, inner);
 
-      for (int columnIndex = 0; columnIndex < row.length; ++columnIndex) {
-        if (row[columnIndex] == 'O') {
-          int rowAbove = rowIndex;
+        if (dish.get(row)[column] == 'O') {
+          int otherRow = row;
+          int otherColumn = column;
 
-          while (rowAbove > 0 && dish.get(rowAbove - 1)[columnIndex] == '.') {
-            --rowAbove;
+          while (condition.test(otherRow, otherColumn)
+              && dish.get(rowMapper.getPeek().applyAsInt(otherRow))[
+                      columnMapper.getPeek().applyAsInt(otherColumn)]
+                  == '.') {
+            otherRow = rowMapper.getPeek().applyAsInt(otherRow);
+            otherColumn = columnMapper.getPeek().applyAsInt(otherColumn);
           }
 
-          if (rowIndex != rowAbove) {
-            dish.get(rowAbove)[columnIndex] = 'O';
-            row[columnIndex] = '.';
+          if (row != otherRow || column != otherColumn) {
+            dish.get(otherRow)[otherColumn] = 'O';
+            dish.get(row)[column] = '.';
           }
         }
       }
     }
+  }
+
+  private void tiltNorth(final List<char[]> dish) {
+    tilt(
+        dish,
+        new LoopDefinition(0, outer -> outer < dish.size(), step -> step + 1),
+        new LoopDefinition(0, inner -> inner < dish.getFirst().length, step -> step + 1),
+        new Mapper((outer, inner) -> outer, row -> row - 1),
+        new Mapper((outer, inner) -> inner, column -> column),
+        (row, column) -> row > 0);
   }
 
   private void tiltSouth(final List<char[]> dish) {
-    for (int rowIndex = dish.size() - 1; rowIndex >= 0; --rowIndex) {
-      final char[] row = dish.get(rowIndex);
-
-      for (int columnIndex = 0; columnIndex < row.length; ++columnIndex) {
-        if (row[columnIndex] == 'O') {
-          int rowBelow = rowIndex;
-
-          while (rowBelow < dish.size() - 1 && dish.get(rowBelow + 1)[columnIndex] == '.') {
-            ++rowBelow;
-          }
-
-          if (rowIndex != rowBelow) {
-            dish.get(rowBelow)[columnIndex] = 'O';
-            row[columnIndex] = '.';
-          }
-        }
-      }
-    }
+    tilt(
+        dish,
+        new LoopDefinition(dish.size() - 1, outer -> outer >= 0, step -> step - 1),
+        new LoopDefinition(0, inner -> inner < dish.getFirst().length, step -> step + 1),
+        new Mapper((outer, inner) -> outer, row -> row + 1),
+        new Mapper((outer, inner) -> inner, column -> column),
+        (row, column) -> row < dish.size() - 1);
   }
 
   private void tiltWest(final List<char[]> dish) {
-    for (int columnIndex = 0; columnIndex < dish.getFirst().length; ++columnIndex) {
-      for (int rowIndex = 0; rowIndex < dish.size(); ++rowIndex) {
-        if (dish.get(rowIndex)[columnIndex] == 'O') {
-          int columnToLeft = columnIndex;
-
-          while (columnToLeft > 0 && dish.get(rowIndex)[columnToLeft - 1] == '.') {
-            --columnToLeft;
-          }
-
-          if (columnIndex != columnToLeft) {
-            dish.get(rowIndex)[columnToLeft] = 'O';
-            dish.get(rowIndex)[columnIndex] = '.';
-          }
-        }
-      }
-    }
+    tilt(
+        dish,
+        new LoopDefinition(0, outer -> outer < dish.getFirst().length, step -> step + 1),
+        new LoopDefinition(0, inner -> inner < dish.size(), step -> step + 1),
+        new Mapper((outer, inner) -> inner, row -> row),
+        new Mapper((outer, inner) -> outer, column -> column - 1),
+        (row, column) -> column > 0);
   }
 
   private void tiltEast(final List<char[]> dish) {
-    for (int columnIndex = dish.getFirst().length - 1; columnIndex >= 0; --columnIndex) {
-      for (int rowIndex = 0; rowIndex < dish.size(); ++rowIndex) {
-        if (dish.get(rowIndex)[columnIndex] == 'O') {
-          int columnToRight = columnIndex;
-
-          while (columnToRight < dish.getFirst().length - 1
-              && dish.get(rowIndex)[columnToRight + 1] == '.') {
-            ++columnToRight;
-          }
-
-          if (columnIndex != columnToRight) {
-            dish.get(rowIndex)[columnToRight] = 'O';
-            dish.get(rowIndex)[columnIndex] = '.';
-          }
-        }
-      }
-    }
+    tilt(
+        dish,
+        new LoopDefinition(dish.getFirst().length - 1, outer -> outer >= 0, step -> step - 1),
+        new LoopDefinition(0, inner -> inner < dish.size(), step -> step + 1),
+        new Mapper((outer, inner) -> inner, row -> row),
+        new Mapper((outer, inner) -> outer, column -> column + 1),
+        (row, column) -> column < dish.getFirst().length - 1);
   }
+
+  private record LoopDefinition(int start, IntPredicate continueLoop, IntUnaryOperator step) {}
+
+  private record Mapper(IntBinaryOperator get, IntUnaryOperator getPeek) {}
 }

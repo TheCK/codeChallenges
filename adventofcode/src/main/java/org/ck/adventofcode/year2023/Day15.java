@@ -87,25 +87,4 @@ public class Day15 extends AOCSolution {
     }
     return hash;
   }
-
-  private record Lens(String name, int focalLength) {
-    @Override
-    public boolean equals(final Object o) {
-      if (this == o) {
-        return true;
-      }
-
-      if (o == null || getClass() != o.getClass()) {
-        return false;
-      }
-
-      final Lens lens = (Lens) o;
-      return Objects.equals(name, lens.name);
-    }
-
-    @Override
-    public int hashCode() {
-      return Objects.hash(name);
-    }
-  }
 }

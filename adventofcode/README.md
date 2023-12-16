@@ -202,7 +202,7 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/Day24Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/Day25Test.java
 
-# 2016 (43/49)
+# 2016 (44/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -223,7 +223,7 @@
 | 20160801 | [Day 8: Two-Factor Authentication][20160801]                        | &#9989;[&#128190;][20160801solution] | &#9989;[&#128190;][20160801tests] |
 | 20160802 | [Day 8: Two-Factor Authentication - Part 2][20160802]               | &#9989;[&#128190;][20160802solution] | &#9989;[&#128190;][20160802tests] |
 | 20160901 | [Day 9: Explosives in Cyberspace][20160901]                         | &#9989;[&#128190;][20160901solution] | &#9989;[&#128190;][20160901tests] |
-| 20160902 | [Day 9: Explosives in Cyberspace - Part 2][20160902]                | [&#128190;][20160902solution]        | [&#128190;][20160902tests]        |
+| 20160902 | [Day 9: Explosives in Cyberspace - Part 2][20160902]                | &#9989;[&#128190;][20160902solution] | &#9989;[&#128190;][20160902tests] |
 | 20161001 | [Day 10: Balance Bots][20161001]                                    | &#9989;[&#128190;][20161001solution] | &#9989;[&#128190;][20161001tests] |
 | 20161002 | [Day 10: Balance Bots - Part 2][20161002]                           | &#9989;[&#128190;][20161002solution] | &#9989;[&#128190;][20161002tests] |
 | 20161101 | [Day 11: Radioisotope Thermoelectric Generators][20161101]          | [&#128190;][20161101solution]        | [&#128190;][20161101tests]        |
@@ -322,8 +322,8 @@
 [20160702solution]: src/main/java/org/ck/adventofcode/year2016/Day07.java
 [20160801solution]: src/main/java/org/ck/adventofcode/year2016/Day08.java
 [20160802solution]: src/main/java/org/ck/adventofcode/year2016/Day08.java
-[20160901solution]: src/main/java/org/ck/adventofcode/year2016/day09/Part1.java
-[20160902solution]: src/main/java/org/ck/adventofcode/year2016/day09/Part2.java
+[20160901solution]: src/main/java/org/ck/adventofcode/year2016/Day09.java
+[20160902solution]: src/main/java/org/ck/adventofcode/year2016/Day09.java
 [20161001solution]: src/main/java/org/ck/adventofcode/year2016/day10/Part1.java
 [20161002solution]: src/main/java/org/ck/adventofcode/year2016/day10/Part2.java
 [20161101solution]: src/main/java/org/ck/adventofcode/year2016/day11/Part1.java
@@ -372,8 +372,8 @@
 [20160702tests]: src/test/java/org/ck/adventofcode/year2016/Day07Test.java
 [20160801tests]: src/test/java/org/ck/adventofcode/year2016/Day08Test.java
 [20160802tests]: src/test/java/org/ck/adventofcode/year2016/Day08Test.java
-[20160901tests]: src/test/java/org/ck/adventofcode/year2016/day09/Part1Test.java
-[20160902tests]: src/test/java/org/ck/adventofcode/year2016/day09/Part2Test.java
+[20160901tests]: src/test/java/org/ck/adventofcode/year2016/Day09Test.java
+[20160902tests]: src/test/java/org/ck/adventofcode/year2016/Day09Test.java
 [20161001tests]: src/test/java/org/ck/adventofcode/year2016/day10/Part1Test.java
 [20161002tests]: src/test/java/org/ck/adventofcode/year2016/day10/Part2Test.java
 [20161101tests]: src/test/java/org/ck/adventofcode/year2016/day11/Part1Test.java

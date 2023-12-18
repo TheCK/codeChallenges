@@ -14,8 +14,7 @@ import org.ck.codechallengelib.annotation.Solution;
     id = 20231802,
     name = "Day 18: Lavaduct Lagoon - Part 2",
     url = "https://adventofcode.com/2023/day/18#part2",
-    category = "2023",
-    solved = false)
+    category = "2023")
 public class Day18 extends AOCSolution {
   @Override
   protected void runPartOne(final Scanner in) {
@@ -50,63 +49,134 @@ public class Day18 extends AOCSolution {
   }
 
   private void run(final Scanner in, final Function<String[], Command> getCommand) {
-    final Set<Dig> digs = new HashSet<>();
-    digs.add(new Dig(0, 0));
-    int row = 0;
-    int column = 0;
+    final Set<Corner> corners = getCorners(in, getCommand);
+
+    final List<Long> rowsWithCorners =
+        corners.stream().mapToLong(Corner::row).distinct().sorted().boxed().toList();
+    final Set<Range> ranges = new HashSet<>();
+
+    long filled = 0;
+
+    for (int rowIndex = 0; rowIndex < rowsWithCorners.size() - 1; ++rowIndex) {
+      final long row = rowsWithCorners.get(rowIndex);
+      final List<Long> columnsWithCorners =
+          corners.stream()
+              .filter(corner -> corner.row() == row)
+              .mapToLong(Corner::column)
+              .sorted()
+              .boxed()
+              .toList();
+
+      for (int i = 0; i < columnsWithCorners.size(); i += 2) {
+        final long start = columnsWithCorners.get(i);
+        final long end = columnsWithCorners.get(i + 1);
+
+        final Optional<Range> maybeRangeWithStartInside =
+            ranges.stream().filter(range -> range.isWithin(start)).findAny();
+
+        final Optional<Range> maybeRangeWithEndInside =
+            ranges.stream().filter(range -> range.isWithin(end)).findAny();
+
+        if (maybeRangeWithStartInside.isEmpty() && maybeRangeWithEndInside.isEmpty()) {
+          ranges.add(new Range(start, end));
+        } else if (maybeRangeWithStartInside.isPresent() && maybeRangeWithEndInside.isPresent()) {
+          filled +=
+              handleOverlappingRanges(
+                  maybeRangeWithStartInside.get(),
+                  maybeRangeWithEndInside.get(),
+                  ranges,
+                  start,
+                  end);
+        } else if (maybeRangeWithStartInside.isPresent()) {
+          final Range rangeWithStartInside = maybeRangeWithStartInside.get();
+          ranges.remove(rangeWithStartInside);
+          ranges.add(new Range(rangeWithStartInside.start(), end));
+        } else {
+          final Range rangeWithEndInside = maybeRangeWithEndInside.get();
+          ranges.remove(rangeWithEndInside);
+          ranges.add(new Range(start, rangeWithEndInside.end()));
+        }
+      }
+
+      filled +=
+          (rowsWithCorners.get(rowIndex + 1) - row)
+              * ranges.stream().mapToLong(Range::length).sum();
+    }
+    filled += ranges.stream().mapToLong(Range::length).sum();
+
+    print(filled);
+  }
+
+  private static long handleOverlappingRanges(
+      final Range rangeWithStartInside,
+      final Range rangeWithEndInside,
+      final Set<Range> ranges,
+      final long start,
+      final long end) {
+    long extraFilled = 0;
+
+    ranges.remove(rangeWithStartInside);
+
+    if (rangeWithStartInside == rangeWithEndInside) {
+      if (rangeWithStartInside.start() != start && rangeWithEndInside.end() != end) {
+        extraFilled += end - start - 1;
+      } else if (rangeWithStartInside.start() == start && rangeWithEndInside.end() == end) {
+        extraFilled += end - start + 1;
+      } else {
+        extraFilled += end - start;
+      }
+
+      if (rangeWithStartInside.start() != start) {
+        ranges.add(new Range(rangeWithStartInside.start(), start));
+      }
+      if (rangeWithEndInside.end() != end) {
+        ranges.add(new Range(end, rangeWithEndInside.end()));
+      }
+    } else {
+      ranges.remove(rangeWithEndInside);
+      ranges.add(new Range(rangeWithStartInside.start(), rangeWithEndInside.end()));
+    }
+
+    return extraFilled;
+  }
+
+  private static Set<Corner> getCorners(
+      final Scanner in, final Function<String[], Command> getCommand) {
+    final Set<Corner> corners = new HashSet<>();
+    corners.add(new Corner(0, 0));
+
+    long row = 0;
+    long column = 0;
 
     while (in.hasNextLine()) {
       final Command command = getCommand.apply(in.nextLine().split(" "));
-      for (long i = 0; i < command.length(); ++i) {
-        switch (command.direction()) {
-          case RIGHT -> ++column;
-          case LEFT -> --column;
-          case UP -> --row;
-          case DOWN -> ++row;
-        }
 
-        digs.add(new Dig(row, column));
+      switch (command.direction()) {
+        case RIGHT -> column += command.length();
+        case LEFT -> column -= command.length();
+        case UP -> row -= command.length();
+        case DOWN -> row += command.length();
       }
+
+      corners.add(new Corner(row, column));
     }
 
-    final int minRow = digs.stream().mapToInt(Dig::row).min().orElseThrow();
-    final int minColumnOnSecondRow =
-        digs.stream()
-            .filter(dig -> dig.row() == minRow + 1)
-            .mapToInt(Dig::column)
-            .min()
-            .orElseThrow();
+    return corners;
+  }
 
-    final Queue<Dig> queue = new ArrayDeque<>();
-    queue.add(new Dig(minRow + 1, minColumnOnSecondRow + 1));
-
-    while (!queue.isEmpty()) {
-      final Dig current = queue.poll();
-      if (digs.contains(current)) {
-        continue;
-      }
-
-      digs.add(current);
-
-      for (int dx = -1; dx <= 1; ++dx) {
-        for (int dy = -1; dy <= 1; ++dy) {
-          if ((dx + dy) % 2 != 0) {
-            final Dig newDig = new Dig(current.row + dy, current.column + dx);
-
-            if (!digs.contains(newDig)) {
-              queue.add(newDig);
-            }
-          }
-        }
-      }
+  private record Range(long start, long end) {
+    public boolean isWithin(long value) {
+      return start <= value && value <= end;
     }
 
-    print(digs.size());
+    public long length() {
+      return end - start + 1;
+    }
   }
 
   private record Command(Direction direction, long length) {}
 
-  private record Dig(int row, int column) {}
+  private record Corner(long row, long column) {}
 
   private enum Direction {
     UP,

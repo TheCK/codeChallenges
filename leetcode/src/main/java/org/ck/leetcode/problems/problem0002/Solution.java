@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem0002;
     id = 100002,
     name = "2. Add Two Numbers",
     url = "https://leetcode.com/problems/add-two-numbers/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Medium",
+    tags = {"Linked List", "Math", "Recursion"})
 public class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode root = new ListNode(0);

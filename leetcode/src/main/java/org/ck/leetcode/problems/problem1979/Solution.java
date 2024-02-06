@@ -6,7 +6,9 @@ import java.util.Arrays;
     id = 101979,
     name = "1979. Find Greatest Common Divisor of Array",
     url = "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Array", "Math", "Number Theory"})
 public class Solution {
   public int findGCD(final int[] nums) {
     final var stats = Arrays.stream(nums).summaryStatistics();

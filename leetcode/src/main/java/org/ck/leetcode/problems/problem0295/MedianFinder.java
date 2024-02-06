@@ -7,7 +7,9 @@ import java.util.PriorityQueue;
     id = 100295,
     name = "295. Find Median from Data Stream",
     url = "https://leetcode.com/problems/find-median-from-data-stream/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Hard",
+    tags = {"Two Pointers", "Design", "Sorting", "Heap (Priority Queue)", "Data Stream"})
 class MedianFinder {
   private final PriorityQueue<Integer> top = new PriorityQueue<>();
   private final PriorityQueue<Integer> bottom = new PriorityQueue<>(Collections.reverseOrder());

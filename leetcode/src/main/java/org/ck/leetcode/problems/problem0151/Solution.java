@@ -7,7 +7,9 @@ import java.util.List;
     id = 100151,
     name = "151. Reverse Words in a String",
     url = "https://leetcode.com/problems/reverse-words-in-a-string/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Medium",
+    tags = {"Two Pointers", "String"})
 public class Solution {
   public String reverseWords(String s) {
     String[] split = s.split(" ");

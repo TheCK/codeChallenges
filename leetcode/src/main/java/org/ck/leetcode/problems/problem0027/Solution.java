@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem0027;
     id = 100027,
     name = "27. Remove Element",
     url = "https://leetcode.com/problems/remove-element/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Array", "Two Pointers"})
 public class Solution {
   public int removeElement(int[] nums, int val) {
     int write = 0;

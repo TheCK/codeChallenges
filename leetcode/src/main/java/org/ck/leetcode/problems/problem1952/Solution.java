@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem1952;
     id = 101952,
     name = "1952. Three Divisors",
     url = "https://leetcode.com/problems/three-divisors/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Math", "Enumeration", "Number Theory"})
 public class Solution {
   public boolean isThree(int n) {
     int divisors = 0;

@@ -7,7 +7,9 @@ import java.util.Map;
     id = 100001,
     name = "1. Two Sum",
     url = "https://leetcode.com/problems/two-sum",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Array", "Hash Table"})
 public class Solution {
   private final Map<Integer, Integer> numberCache = new HashMap<>();
 

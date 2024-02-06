@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem1480;
     id = 101480,
     name = "1480. Running Sum of 1d Array",
     url = "https://leetcode.com/problems/running-sum-of-1d-array/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Array", "Prefix Sum"})
 public class Solution {
   public int[] runningSum(int[] nums) {
     int[] out = new int[nums.length];

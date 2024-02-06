@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem0876;
     id = 100876,
     name = "876. Middle of the Linked List",
     url = "https://leetcode.com/problems/middle-of-the-linked-list/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Linked List", "Two Pointers"})
 public class Solution {
   public ListNode middleNode(ListNode head) {
     if (head == null) {

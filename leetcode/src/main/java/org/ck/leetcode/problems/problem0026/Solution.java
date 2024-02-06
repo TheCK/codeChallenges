@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem0026;
     id = 100026,
     name = "26. Remove Duplicates from Sorted Array",
     url = "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Array", "Two Pointers"})
 public class Solution {
   public int removeDuplicates(int[] nums) {
     int read = 0;

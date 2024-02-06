@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem2011;
     id = 102011,
     name = "2011. Final Value of Variable After Performing Operations",
     url = "https://leetcode.com/problems/final-value-of-variable-after-performing-operations/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"Array", "String", "Simulation"})
 public class Solution {
   public int finalValueAfterOperations(String[] operations) {
     int x = 0;

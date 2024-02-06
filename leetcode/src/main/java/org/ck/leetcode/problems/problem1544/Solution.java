@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem1544;
     id = 101544,
     name = "1544. Make The String Great",
     url = "https://leetcode.com/problems/make-the-string-great/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Easy",
+    tags = {"String", "Stack"})
 public class Solution {
   public String makeGood(String s) {
     boolean isGood;

@@ -18,5 +18,7 @@ public @interface Solution {
 
   String subCategory() default "";
 
+  String[] tags() default {};
+
   boolean solved() default true;
 }

@@ -4,7 +4,9 @@ package org.ck.leetcode.problems.problem2095;
     id = 102095,
     name = "2095. Delete the Middle Node of a Linked List",
     url = "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
-    category = "Problems")
+    category = "Problems",
+    subCategory = "Medium",
+    tags = {"Linked List", "Two Pointers"})
 public class Solution {
   public ListNode deleteMiddle(ListNode head) {
     if (head == null || head.next == null) {

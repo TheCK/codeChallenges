@@ -61,21 +61,27 @@ public class ReadmeGenerator extends AbstractProcessor {
       int maxIdlength = 0;
       int maxNameLength = 0;
       int maxDescriptionLength = 0;
+      int maxTagLength = 0;
 
       for (SolutionInfo info : infosInThisSubCategory) {
         maxIdlength = Math.max(maxIdlength, info.getId().toString().length());
         maxNameLength = Math.max(maxNameLength, info.getName().length());
         maxDescriptionLength = Math.max(maxDescriptionLength, info.getDescription().length());
+        maxTagLength = Math.max(maxTagLength, String.join(" <br> ", info.getTags()).length());
       }
 
       maxIdlength = Math.max(maxIdlength, 2);
 
-      String formatString = getTableFormatString(maxIdlength, maxNameLength, maxDescriptionLength);
+      String formatString =
+          getTableFormatString(maxIdlength, maxNameLength, maxDescriptionLength, maxTagLength);
 
       write(writer, messager, "");
       write(writer, messager, getTableHeadline(formatString));
 
-      write(writer, messager, getTableFormatLine(maxIdlength, maxNameLength, maxDescriptionLength));
+      write(
+          writer,
+          messager,
+          getTableFormatLine(maxIdlength, maxNameLength, maxDescriptionLength, maxTagLength));
 
       for (SolutionInfo info : infosInThisSubCategory) {
         write(writer, messager, getTableRow(formatString, info));
@@ -128,39 +134,65 @@ public class ReadmeGenerator extends AbstractProcessor {
       name = String.format("[%s][%s]", info.getName(), info.getId());
     }
 
-    return String.format(formatString, info.getId(), name, description, solution, tests);
+    return String.format(
+        formatString,
+        info.getId(),
+        name,
+        description,
+        String.join(" <br> ", info.getTags()),
+        solution,
+        tests);
   }
 
-  private static String getTableFormatLine(int idlength, int nameLength, int descriptionLength) {
+  private static String getTableFormatLine(
+      int idLength, int nameLength, int descriptionLength, int tagLength) {
     int actualDescriptionLength = descriptionLength;
     int actualNameLength = nameLength;
-    int solutionLength = idlength + 28;
-    int testsLength = idlength + 25;
+    int solutionLength = idLength + 28;
+    int testsLength = idLength + 25;
 
     String formatString;
 
-    if (actualDescriptionLength != 0) {
-      actualDescriptionLength += idlength + 4;
+    if (actualDescriptionLength != 0 && tagLength != 0) {
+      actualDescriptionLength += idLength + 4;
       formatString =
           String.format(
-              "| %%1$%ds:| %%2$-%ds | %%3$-%ds |:%%4$-%ds:|:%%5$-%ds:|",
-              idlength, actualNameLength, actualDescriptionLength, solutionLength, testsLength);
+              "| %%1$%ds:| %%2$-%ds | %%3$-%ds | %%4$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
+              idLength,
+              actualNameLength,
+              actualDescriptionLength,
+              tagLength,
+              solutionLength,
+              testsLength);
+    } else if (actualDescriptionLength != 0) {
+      actualDescriptionLength += idLength + 4;
+      formatString =
+          String.format(
+              "| %%1$%ds:| %%2$-%ds | %%3$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
+              idLength, actualNameLength, actualDescriptionLength, solutionLength, testsLength);
+    } else if (tagLength != 0) {
+      actualNameLength += idLength + 4;
+      formatString =
+          String.format(
+              "| %%1$%ds:| %%2$-%ds | %%4$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
+              idLength, actualNameLength, tagLength, solutionLength, testsLength);
     } else {
-      actualNameLength += idlength + 4;
+      actualNameLength += idLength + 4;
       formatString =
           String.format(
-              "| %%1$%ds:| %%2$-%ds |:%%4$-%ds:|:%%5$-%ds:|",
-              idlength, actualNameLength, solutionLength, testsLength);
+              "| %%1$%ds:| %%2$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
+              idLength, actualNameLength, solutionLength, testsLength);
     }
 
-    return String.format(formatString, "", "", "", "", "").replace(' ', '-');
+    return String.format(formatString, "", "", "", "", "", "").replace(' ', '-');
   }
 
   private static String getTableHeadline(String formatString) {
-    return String.format(formatString, "#", "Name", "Description", "Solution", "Test");
+    return String.format(formatString, "#", "Name", "Description", "Tags", "Solution", "Test");
   }
 
-  private static String getTableFormatString(int idlength, int nameLength, int descriptionLength) {
+  private static String getTableFormatString(
+      int idlength, int nameLength, int descriptionLength, int tagLength) {
     int actualDescriptionLength = descriptionLength;
     int actualNameLength = nameLength;
     int solutionLength = idlength + 28;
@@ -168,17 +200,36 @@ public class ReadmeGenerator extends AbstractProcessor {
 
     String formatString;
 
-    if (actualDescriptionLength != 0) {
+    if (actualDescriptionLength != 0 && tagLength != 0) {
       actualDescriptionLength += idlength + 4;
       formatString =
           String.format(
-              "| %%1$%ds | %%2$-%ds | %%3$-%ds | %%4$-%ds | %%5$-%ds |",
+              "| %%1$%ds | %%2$-%ds | %%3$-%ds | %%4$-%ds | %%5$-%ds | %%6$-%ds |",
+              idlength,
+              actualNameLength,
+              actualDescriptionLength,
+              tagLength,
+              solutionLength,
+              testsLength);
+    } else if (actualDescriptionLength != 0) {
+      actualDescriptionLength += idlength + 4;
+      formatString =
+          String.format(
+              "| %%1$%ds | %%2$-%ds | %%3$-%ds | %%5$-%ds | %%6$-%ds |",
               idlength, actualNameLength, actualDescriptionLength, solutionLength, testsLength);
+
+    } else if (tagLength != 0) {
+      actualNameLength += idlength + 4;
+      formatString =
+          String.format(
+              "| %%1$%ds | %%2$-%ds | %%4$-%ds | %%5$-%ds | %%6$-%ds |",
+              idlength, actualNameLength, tagLength, solutionLength, testsLength);
+
     } else {
       actualNameLength += idlength + 4;
       formatString =
           String.format(
-              "| %%1$%ds | %%2$-%ds | %%4$-%ds | %%5$-%ds |",
+              "| %%1$%ds | %%2$-%ds | %%5$-%ds | %%6$-%ds |",
               idlength, actualNameLength, solutionLength, testsLength);
     }
 
@@ -239,6 +290,7 @@ public class ReadmeGenerator extends AbstractProcessor {
               solution.url(),
               solution.category(),
               solution.subCategory(),
+              solution.tags(),
               solution.solved(),
               ((TypeElement) element).getQualifiedName().toString()));
     }
@@ -255,6 +307,7 @@ public class ReadmeGenerator extends AbstractProcessor {
                 solution.url(),
                 solution.category(),
                 solution.subCategory(),
+                solution.tags(),
                 solution.solved(),
                 ((TypeElement) element).getQualifiedName().toString()));
       }
@@ -278,6 +331,8 @@ public class ReadmeGenerator extends AbstractProcessor {
     String category;
     String subCategory;
 
+    String[] tags;
+
     boolean solved;
 
     String fullyQualifiedName;
@@ -289,6 +344,7 @@ public class ReadmeGenerator extends AbstractProcessor {
         String url,
         String category,
         String subCategory,
+        String[] tags,
         boolean solved,
         String fullyQualifiedName) {
       this.id = id;
@@ -300,6 +356,8 @@ public class ReadmeGenerator extends AbstractProcessor {
 
       this.category = category;
       this.subCategory = subCategory;
+
+      this.tags = tags;
 
       this.solved = solved;
 
@@ -328,6 +386,10 @@ public class ReadmeGenerator extends AbstractProcessor {
 
     public String getSubCategory() {
       return this.subCategory;
+    }
+
+    public String[] getTags() {
+      return this.tags;
     }
 
     public boolean isSolved() {

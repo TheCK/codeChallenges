@@ -19,7 +19,7 @@ public class SolutionTest {
 
   @ParameterizedTest()
   @MethodSource("generator")
-  public void test(String input, int expected) throws Exception {
+  void test(final String input, final int expected) throws Exception {
     final int out = new Solution().calculate(input);
 
     assertEquals(expected, out);

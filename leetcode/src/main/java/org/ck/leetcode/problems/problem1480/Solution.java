@@ -8,8 +8,8 @@ package org.ck.leetcode.problems.problem1480;
     subCategory = "Easy",
     tags = {"Array", "Prefix Sum"})
 public class Solution {
-  public int[] runningSum(int[] nums) {
-    int[] out = new int[nums.length];
+  public int[] runningSum(final int[] nums) {
+    final int[] out = new int[nums.length];
     int sum = 0;
 
     for (int i = 0; i < nums.length; ++i) {

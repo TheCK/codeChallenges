@@ -8,8 +8,8 @@ package org.ck.leetcode.problems.problem1929;
     subCategory = "Easy",
     tags = {"Array", "Simulation"})
 public class Solution {
-  public int[] getConcatenation(int[] nums) {
-    int[] result = new int[nums.length * 2];
+  public int[] getConcatenation(final int[] nums) {
+    final int[] result = new int[nums.length * 2];
 
     for (int i = 0; i < nums.length; ++i) {
       result[i] = nums[i];

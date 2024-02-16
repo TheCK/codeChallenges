@@ -11,9 +11,9 @@ import java.util.List;
     subCategory = "Medium",
     tags = {"Two Pointers", "String"})
 public class Solution {
-  public String reverseWords(String s) {
-    String[] split = s.split(" ");
-    List<String> reverse = new ArrayList<>();
+  public String reverseWords(final String s) {
+    final String[] split = s.split(" ");
+    final List<String> reverse = new ArrayList<>();
 
     for (int i = split.length - 1; i >= 0; --i) {
       if (!split[i].isEmpty()) {

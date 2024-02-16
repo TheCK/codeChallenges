@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
   @Test
-  public void testOdd() throws Exception {
-    Solution.ListNode head =
+  void testOdd() throws Exception {
+    final Solution.ListNode head =
         new Solution.ListNode(
             1,
             new Solution.ListNode(
@@ -19,8 +19,8 @@ public class SolutionTest {
   }
 
   @Test
-  public void testEven() throws Exception {
-    Solution.ListNode head =
+  void testEven() throws Exception {
+    final Solution.ListNode head =
         new Solution.ListNode(
             1,
             new Solution.ListNode(

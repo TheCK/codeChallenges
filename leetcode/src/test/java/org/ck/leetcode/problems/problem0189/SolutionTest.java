@@ -21,7 +21,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  void test(int[] nums, int distance, int[] expected) throws Exception {
+  void test(final int[] nums, final int distance, final int[] expected) throws Exception {
     new Solution().rotate(nums, distance);
 
     assertArrayEquals(expected, nums);

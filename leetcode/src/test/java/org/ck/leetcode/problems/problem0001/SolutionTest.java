@@ -17,7 +17,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(int[] nums, int target, int[] expected) throws Exception {
+  void test(final int[] nums, final int target, final int[] expected) throws Exception {
     final int[] result = new Solution().twoSum(nums, target);
 
     assertArrayEquals(expected, result);

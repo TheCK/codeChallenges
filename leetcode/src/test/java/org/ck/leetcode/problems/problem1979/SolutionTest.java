@@ -17,7 +17,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(int[] in, int expected) throws Exception {
+  void test(final int[] in, final int expected) throws Exception {
     final int out = new Solution().findGCD(in);
 
     assertEquals(expected, out);

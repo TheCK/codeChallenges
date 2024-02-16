@@ -16,7 +16,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(double in, double[] expected) throws Exception {
+  void test(final double in, final double[] expected) throws Exception {
     final double[] out = new Solution().convertTemperature(in);
 
     assertArrayEquals(expected, out);

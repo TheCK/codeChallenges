@@ -1,4 +1,4 @@
-package org.ck.leetcode.problems.problem1544;
+package org.ck.leetcode.problems.problem0771;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,18 +9,14 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 public class SolutionTest {
   public static Stream<Arguments> generator() {
-    return Stream.of(
-        Arguments.of("leEeetcode", "leetcode"),
-        Arguments.of("abBAcC", ""),
-        Arguments.of("s", "s"),
-        Arguments.of("Pp", ""));
+    return Stream.of(Arguments.of("aA", "aAAbbbb", 3), Arguments.of("z", "ZZ", 0));
   }
 
   @ParameterizedTest
   @MethodSource("generator")
-  void test(final String in, final String expected) throws Exception {
-    final String out = new Solution().makeGood(in);
+  void test(final String jewels, final String stones, final int expected) throws Exception {
+    final int result = new Solution().numJewelsInStones(jewels, stones);
 
-    assertEquals(expected, out);
+    assertEquals(expected, result);
   }
 }

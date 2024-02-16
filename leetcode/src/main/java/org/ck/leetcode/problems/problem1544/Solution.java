@@ -8,9 +8,9 @@ package org.ck.leetcode.problems.problem1544;
     subCategory = "Easy",
     tags = {"String", "Stack"})
 public class Solution {
-  public String makeGood(String s) {
+  public String makeGood(final String s) {
     boolean isGood;
-    StringBuilder builder = new StringBuilder(s);
+    final StringBuilder builder = new StringBuilder(s);
 
     do {
       isGood = true;

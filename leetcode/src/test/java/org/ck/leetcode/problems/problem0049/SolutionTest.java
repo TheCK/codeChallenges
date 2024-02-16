@@ -23,8 +23,8 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  void test(String[] nums, Set<Set<String>> expected) throws Exception {
-    List<List<String>> result = new Solution().groupAnagrams(nums);
+  void test(final String[] nums, final Set<Set<String>> expected) throws Exception {
+    final List<List<String>> result = new Solution().groupAnagrams(nums);
 
     assertEquals(
         expected,

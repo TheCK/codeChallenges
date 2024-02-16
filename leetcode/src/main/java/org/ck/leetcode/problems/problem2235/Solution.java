@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem2235;
     subCategory = "Easy",
     tags = {"Math"})
 public class Solution {
-  public int sum(int num1, int num2) {
+  public int sum(final int num1, final int num2) {
     return num1 + num2;
   }
 }

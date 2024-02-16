@@ -1,4 +1,4 @@
-package org.ck.leetcode.problems.problem1544;
+package org.ck.leetcode.problems.problem0009;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,17 +10,18 @@ import org.junit.jupiter.params.provider.MethodSource;
 public class SolutionTest {
   public static Stream<Arguments> generator() {
     return Stream.of(
-        Arguments.of("leEeetcode", "leetcode"),
-        Arguments.of("abBAcC", ""),
-        Arguments.of("s", "s"),
-        Arguments.of("Pp", ""));
+        Arguments.of(121, true),
+        Arguments.of(-121, false),
+        Arguments.of(10, false),
+        Arguments.of(-1, false),
+        Arguments.of(0, true));
   }
 
   @ParameterizedTest
   @MethodSource("generator")
-  void test(final String in, final String expected) throws Exception {
-    final String out = new Solution().makeGood(in);
+  void test(final int number, final boolean expected) throws Exception {
+    final boolean result = new Solution().isPalindrome(number);
 
-    assertEquals(expected, out);
+    assertEquals(expected, result);
   }
 }

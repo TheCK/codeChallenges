@@ -14,7 +14,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(int in, boolean expected) throws Exception {
+  void test(final int in, final boolean expected) throws Exception {
     final boolean out = new Solution().isThree(in);
 
     assertEquals(expected, out);

@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem2469;
     subCategory = "Easy",
     tags = {"Math"})
 public class Solution {
-  public double[] convertTemperature(double celsius) {
+  public double[] convertTemperature(final double celsius) {
     return new double[] {celsius + 273.15D, celsius * 1.8D + 32};
   }
 }

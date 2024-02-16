@@ -81,7 +81,7 @@ public class MedianFinderTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(Command[] commands, int[] nums, double[] expected) throws Exception {
+  void test(final Command[] commands, final int[] nums, final double[] expected) throws Exception {
     final MedianFinder finder = new MedianFinder();
     int add = 0;
     int read = 0;

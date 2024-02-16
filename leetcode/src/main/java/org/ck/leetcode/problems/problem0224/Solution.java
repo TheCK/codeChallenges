@@ -9,7 +9,7 @@ package org.ck.leetcode.problems.problem0224;
     tags = {"Math", "String", "Stack", "Recursion"},
     solved = false)
 public class Solution {
-  public int calculate(String s) {
+  public int calculate(final String s) {
     return 0;
   }
 }

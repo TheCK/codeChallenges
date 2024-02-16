@@ -14,7 +14,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(int num1, int num2, int expected) throws Exception {
+  void test(final int num1, final int num2, final int expected) throws Exception {
     final int out = new Solution().sum(num1, num2);
 
     assertEquals(expected, out);

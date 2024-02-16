@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem0027;
     subCategory = "Easy",
     tags = {"Array", "Two Pointers"})
 public class Solution {
-  public int removeElement(int[] nums, int val) {
+  public int removeElement(final int[] nums, final int val) {
     int write = 0;
     int read = nums.length - 1;
 

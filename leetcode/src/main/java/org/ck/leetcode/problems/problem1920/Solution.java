@@ -8,8 +8,8 @@ package org.ck.leetcode.problems.problem1920;
     subCategory = "Easy",
     tags = {"Array", "Simulation"})
 public class Solution {
-  public int[] buildArray(int[] nums) {
-    int[] result = new int[nums.length];
+  public int[] buildArray(final int[] nums) {
+    final int[] result = new int[nums.length];
 
     for (int i = 0; i < nums.length; ++i) {
       result[i] = nums[nums[i]];

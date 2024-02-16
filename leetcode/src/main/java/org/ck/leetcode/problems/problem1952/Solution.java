@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem1952;
     subCategory = "Easy",
     tags = {"Math", "Enumeration", "Number Theory"})
 public class Solution {
-  public boolean isThree(int n) {
+  public boolean isThree(final int n) {
     int divisors = 0;
 
     for (int i = 1; i < Math.sqrt(n); ++i) {

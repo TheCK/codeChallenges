@@ -9,13 +9,13 @@ package org.ck.leetcode.problems.problem0002;
     tags = {"Linked List", "Math", "Recursion"})
 public class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    ListNode root = new ListNode(0);
+    final ListNode root = new ListNode(0);
     ListNode current = root;
 
     int carry = 0;
 
     while (l1 != null || l2 != null || carry != 0) {
-      int sum = getCurrentSum(l1, l2, carry);
+      final int sum = getCurrentSum(l1, l2, carry);
 
       current.val = sum % 10;
       carry = sum / 10;
@@ -57,11 +57,11 @@ public class Solution {
 
     ListNode() {}
 
-    ListNode(int val) {
+    ListNode(final int val) {
       this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListNode(final int val, final ListNode next) {
       this.val = val;
       this.next = next;
     }

@@ -8,10 +8,10 @@ package org.ck.leetcode.problems.problem2011;
     subCategory = "Easy",
     tags = {"Array", "String", "Simulation"})
 public class Solution {
-  public int finalValueAfterOperations(String[] operations) {
+  public int finalValueAfterOperations(final String[] operations) {
     int x = 0;
 
-    for (String operation : operations) {
+    for (final String operation : operations) {
       switch (operation) {
         case "X++", "++X" -> ++x;
         case "X--", "--X" -> --x;

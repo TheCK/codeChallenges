@@ -17,7 +17,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(int[] nums, int val, int[] expected) throws Exception {
+  void test(final int[] nums, final int val, final int[] expected) throws Exception {
     final int out = new Solution().removeElement(nums, val);
 
     assertEquals(expected.length, out);

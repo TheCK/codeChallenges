@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem2413;
     subCategory = "Easy",
     tags = {"Math", "Number Theory"})
 public class Solution {
-  public int smallestEvenMultiple(int n) {
+  public int smallestEvenMultiple(final int n) {
     return n % 2 == 0 ? n : 2 * n;
   }
 }

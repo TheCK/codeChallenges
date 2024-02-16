@@ -14,8 +14,8 @@ class MedianFinder {
   private final PriorityQueue<Integer> top = new PriorityQueue<>();
   private final PriorityQueue<Integer> bottom = new PriorityQueue<>(Collections.reverseOrder());
 
-  public void addNum(int num) {
-    if (top.size() == 0 || num >= top.peek()) {
+  public void addNum(final int num) {
+    if (top.isEmpty() || num >= top.peek()) {
       top.add(num);
     } else {
       bottom.add(num);

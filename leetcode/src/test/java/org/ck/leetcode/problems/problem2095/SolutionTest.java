@@ -21,8 +21,8 @@ public class SolutionTest {
 
   @ParameterizedTest()
   @MethodSource("generator")
-  public void test1(int[] input, int[] output) throws Exception {
-    Solution.ListNode newHead = new Solution().deleteMiddle(toList(input));
+  void test1(final int[] input, final int[] output) throws Exception {
+    final Solution.ListNode newHead = new Solution().deleteMiddle(toList(input));
 
     assertArrayEquals(output, toArray(newHead));
   }
@@ -32,7 +32,7 @@ public class SolutionTest {
       return null;
     }
 
-    Solution.ListNode head = new Solution.ListNode(values[0]);
+    final Solution.ListNode head = new Solution.ListNode(values[0]);
     Solution.ListNode tail = head;
 
     for (int i = 1; i < values.length; ++i) {
@@ -48,7 +48,7 @@ public class SolutionTest {
       return new int[0];
     }
 
-    List<Integer> values = new ArrayList<>();
+    final List<Integer> values = new ArrayList<>();
 
     while (head != null) {
       values.add(head.val);

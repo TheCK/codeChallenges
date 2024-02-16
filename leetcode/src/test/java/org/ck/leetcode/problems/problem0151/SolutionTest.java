@@ -17,7 +17,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(String in, String expected) throws Exception {
+  void test(final String in, final String expected) throws Exception {
     final String out = new Solution().reverseWords(in);
 
     assertEquals(expected, out);

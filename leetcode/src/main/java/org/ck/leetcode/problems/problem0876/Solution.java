@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem0876;
     subCategory = "Easy",
     tags = {"Linked List", "Two Pointers"})
 public class Solution {
-  public ListNode middleNode(ListNode head) {
+  public ListNode middleNode(final ListNode head) {
     if (head == null) {
       return null;
     }
@@ -40,11 +40,11 @@ public class Solution {
 
     ListNode() {}
 
-    ListNode(int val) {
+    ListNode(final int val) {
       this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListNode(final int val, final ListNode next) {
       this.val = val;
       this.next = next;
     }

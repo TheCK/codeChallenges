@@ -30,7 +30,7 @@ public class Solution {
     }
   }
 
-  private int gcd(int one, int two) {
+  private int gcd(final int one, final int two) {
     if (two == 0) {
       return one;
     }

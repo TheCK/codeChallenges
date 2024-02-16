@@ -16,7 +16,7 @@ public class SolutionTest {
 
   @ParameterizedTest()
   @MethodSource("generator")
-  public void test(String input, String expected) throws Exception {
+  void test(final String input, final String expected) throws Exception {
     final String out = new Solution().defangIPaddr(input);
 
     assertEquals(expected, out);

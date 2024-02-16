@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem1108;
     subCategory = "Easy",
     tags = {"String"})
 public class Solution {
-  public String defangIPaddr(String address) {
+  public String defangIPaddr(final String address) {
     return address.replace(".", "[.]");
   }
 }

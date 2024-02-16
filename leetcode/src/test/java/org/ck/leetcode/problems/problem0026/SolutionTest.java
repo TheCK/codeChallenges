@@ -16,7 +16,7 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("generator")
-  public void test(int[] nums, int[] expected) throws Exception {
+  void test(final int[] nums, final int[] expected) throws Exception {
     final int out = new Solution().removeDuplicates(nums);
 
     assertEquals(expected.length, out);

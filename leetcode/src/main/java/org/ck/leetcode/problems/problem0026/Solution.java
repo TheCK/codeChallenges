@@ -8,7 +8,7 @@ package org.ck.leetcode.problems.problem0026;
     subCategory = "Easy",
     tags = {"Array", "Two Pointers"})
 public class Solution {
-  public int removeDuplicates(int[] nums) {
+  public int removeDuplicates(final int[] nums) {
     int read = 0;
     int write = 0;
     int last = Integer.MIN_VALUE;

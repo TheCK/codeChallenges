@@ -11,14 +11,14 @@ import java.util.Map;
     subCategory = "Easy",
     tags = {"Array", "Hash Table"})
 public class Solution {
-  private final Map<Integer, Integer> numberCache = new HashMap<>();
 
-  public int[] twoSum(int[] nums, int target) {
+  public int[] twoSum(final int[] nums, final int target) {
+    final Map<Integer, Integer> numberCache = new HashMap<>();
     int i = 0;
 
     while (i < nums.length) {
-      int currentIndex = i;
-      int currentValue = nums[currentIndex];
+      final int currentIndex = i;
+      final int currentValue = nums[currentIndex];
 
       if (numberCache.containsKey(target - currentValue)) {
         return new int[] {numberCache.get(target - currentValue), currentIndex};

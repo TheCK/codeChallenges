@@ -1,37 +1,39 @@
-# Problems (31/32)
+# Problems (32/34)
 
-## Easy (23/23)
+## Easy (24/24)
 
-|      # | Name                                                                   | Tags                                          | Solution                           | Test                            |
-|-------:|------------------------------------------------------------------------|-----------------------------------------------|:----------------------------------:|:-------------------------------:|
-| 100001 | [1. Two Sum][100001]                                                   | Array <br> Hash Table                         | &#9989;[&#128190;][100001solution] | &#9989;[&#128190;][100001tests] |
-| 100009 | [9. Palindrome Number][100009]                                         | Math                                          | &#9989;[&#128190;][100009solution] | &#9989;[&#128190;][100009tests] |
-| 100026 | [26. Remove Duplicates from Sorted Array][100026]                      | Array <br> Two Pointers                       | &#9989;[&#128190;][100026solution] | &#9989;[&#128190;][100026tests] |
-| 100027 | [27. Remove Element][100027]                                           | Array <br> Two Pointers                       | &#9989;[&#128190;][100027solution] | &#9989;[&#128190;][100027tests] |
-| 100771 | [771. Jewels and Stones][100771]                                       | Hash Table <br> String                        | &#9989;[&#128190;][100771solution] | &#9989;[&#128190;][100771tests] |
-| 100876 | [876. Middle of the Linked List][100876]                               | Linked List <br> Two Pointers                 | &#9989;[&#128190;][100876solution] | &#9989;[&#128190;][100876tests] |
-| 101108 | [1108. Defanging an IP Address][101108]                                | String                                        | &#9989;[&#128190;][101108solution] | &#9989;[&#128190;][101108tests] |
-| 101480 | [1480. Running Sum of 1d Array][101480]                                | Array <br> Prefix Sum                         | &#9989;[&#128190;][101480solution] | &#9989;[&#128190;][101480tests] |
-| 101512 | [1512. Number of Good Pairs][101512]                                   | Array <br> Hash Table <br> Math <br> Counting | &#9989;[&#128190;][101512solution] | &#9989;[&#128190;][101512tests] |
-| 101544 | [1544. Make The String Great][101544]                                  | String <br> Stack                             | &#9989;[&#128190;][101544solution] | &#9989;[&#128190;][101544tests] |
-| 101581 | [1581. Customer Who Visited but Did Not Make Any Transactions][101581] | Database                                      | &#9989;[&#128190;][101581solution] | &#9989;[&#128190;][101581tests] |
-| 101587 | [1587. Bank Account Summary II][101587]                                | Database                                      | &#9989;[&#128190;][101587solution] | &#9989;[&#128190;][101587tests] |
-| 101693 | [1693. Daily Leads and Partners][101693]                               | Database                                      | &#9989;[&#128190;][101693solution] | &#9989;[&#128190;][101693tests] |
-| 101741 | [1741. Find Total Time Spent by Each Employee][101741]                 | Database                                      | &#9989;[&#128190;][101741solution] | &#9989;[&#128190;][101741tests] |
-| 101757 | [1757. Recyclable and Low Fat Products][101757]                        | Database                                      | &#9989;[&#128190;][101757solution] | &#9989;[&#128190;][101757tests] |
-| 101920 | [1920. Build Array from Permutation][101920]                           | Array <br> Simulation                         | &#9989;[&#128190;][101920solution] | &#9989;[&#128190;][101920tests] |
-| 101929 | [1929. Concatenation of Array][101929]                                 | Array <br> Simulation                         | &#9989;[&#128190;][101929solution] | &#9989;[&#128190;][101929tests] |
-| 101952 | [1952. Three Divisors][101952]                                         | Math <br> Enumeration <br> Number Theory      | &#9989;[&#128190;][101952solution] | &#9989;[&#128190;][101952tests] |
-| 101979 | [1979. Find Greatest Common Divisor of Array][101979]                  | Array <br> Math <br> Number Theory            | &#9989;[&#128190;][101979solution] | &#9989;[&#128190;][101979tests] |
-| 102011 | [2011. Final Value of Variable After Performing Operations][102011]    | Array <br> String <br> Simulation             | &#9989;[&#128190;][102011solution] | &#9989;[&#128190;][102011tests] |
-| 102235 | [2235. Add Two Integers][102235]                                       | Math                                          | &#9989;[&#128190;][102235solution] | &#9989;[&#128190;][102235tests] |
-| 102413 | [2413. Smallest Even Multiple][102413]                                 | Math <br> Number Theory                       | &#9989;[&#128190;][102413solution] | &#9989;[&#128190;][102413tests] |
-| 102469 | [2469. Convert the Temperature][102469]                                | Math                                          | &#9989;[&#128190;][102469solution] | &#9989;[&#128190;][102469tests] |
+|      # | Name                                                                   | Tags                                                                | Solution                           | Test                            |
+|-------:|------------------------------------------------------------------------|---------------------------------------------------------------------|:----------------------------------:|:-------------------------------:|
+| 100001 | [1. Two Sum][100001]                                                   | Array <br> Hash Table                                               | &#9989;[&#128190;][100001solution] | &#9989;[&#128190;][100001tests] |
+| 100009 | [9. Palindrome Number][100009]                                         | Math                                                                | &#9989;[&#128190;][100009solution] | &#9989;[&#128190;][100009tests] |
+| 100026 | [26. Remove Duplicates from Sorted Array][100026]                      | Array <br> Two Pointers                                             | &#9989;[&#128190;][100026solution] | &#9989;[&#128190;][100026tests] |
+| 100027 | [27. Remove Element][100027]                                           | Array <br> Two Pointers                                             | &#9989;[&#128190;][100027solution] | &#9989;[&#128190;][100027tests] |
+| 100463 | [463. Island Perimeter][100463]                                        | Array <br> Depth-First Search <br> Breadth-First Search <br> Matrix | &#9989;[&#128190;][100463solution] | &#9989;[&#128190;][100463tests] |
+| 100771 | [771. Jewels and Stones][100771]                                       | Hash Table <br> String                                              | &#9989;[&#128190;][100771solution] | &#9989;[&#128190;][100771tests] |
+| 100876 | [876. Middle of the Linked List][100876]                               | Linked List <br> Two Pointers                                       | &#9989;[&#128190;][100876solution] | &#9989;[&#128190;][100876tests] |
+| 101108 | [1108. Defanging an IP Address][101108]                                | String                                                              | &#9989;[&#128190;][101108solution] | &#9989;[&#128190;][101108tests] |
+| 101480 | [1480. Running Sum of 1d Array][101480]                                | Array <br> Prefix Sum                                               | &#9989;[&#128190;][101480solution] | &#9989;[&#128190;][101480tests] |
+| 101512 | [1512. Number of Good Pairs][101512]                                   | Array <br> Hash Table <br> Math <br> Counting                       | &#9989;[&#128190;][101512solution] | &#9989;[&#128190;][101512tests] |
+| 101544 | [1544. Make The String Great][101544]                                  | String <br> Stack                                                   | &#9989;[&#128190;][101544solution] | &#9989;[&#128190;][101544tests] |
+| 101581 | [1581. Customer Who Visited but Did Not Make Any Transactions][101581] | Database                                                            | &#9989;[&#128190;][101581solution] | &#9989;[&#128190;][101581tests] |
+| 101587 | [1587. Bank Account Summary II][101587]                                | Database                                                            | &#9989;[&#128190;][101587solution] | &#9989;[&#128190;][101587tests] |
+| 101693 | [1693. Daily Leads and Partners][101693]                               | Database                                                            | &#9989;[&#128190;][101693solution] | &#9989;[&#128190;][101693tests] |
+| 101741 | [1741. Find Total Time Spent by Each Employee][101741]                 | Database                                                            | &#9989;[&#128190;][101741solution] | &#9989;[&#128190;][101741tests] |
+| 101757 | [1757. Recyclable and Low Fat Products][101757]                        | Database                                                            | &#9989;[&#128190;][101757solution] | &#9989;[&#128190;][101757tests] |
+| 101920 | [1920. Build Array from Permutation][101920]                           | Array <br> Simulation                                               | &#9989;[&#128190;][101920solution] | &#9989;[&#128190;][101920tests] |
+| 101929 | [1929. Concatenation of Array][101929]                                 | Array <br> Simulation                                               | &#9989;[&#128190;][101929solution] | &#9989;[&#128190;][101929tests] |
+| 101952 | [1952. Three Divisors][101952]                                         | Math <br> Enumeration <br> Number Theory                            | &#9989;[&#128190;][101952solution] | &#9989;[&#128190;][101952tests] |
+| 101979 | [1979. Find Greatest Common Divisor of Array][101979]                  | Array <br> Math <br> Number Theory                                  | &#9989;[&#128190;][101979solution] | &#9989;[&#128190;][101979tests] |
+| 102011 | [2011. Final Value of Variable After Performing Operations][102011]    | Array <br> String <br> Simulation                                   | &#9989;[&#128190;][102011solution] | &#9989;[&#128190;][102011tests] |
+| 102235 | [2235. Add Two Integers][102235]                                       | Math                                                                | &#9989;[&#128190;][102235solution] | &#9989;[&#128190;][102235tests] |
+| 102413 | [2413. Smallest Even Multiple][102413]                                 | Math <br> Number Theory                                             | &#9989;[&#128190;][102413solution] | &#9989;[&#128190;][102413tests] |
+| 102469 | [2469. Convert the Temperature][102469]                                | Math                                                                | &#9989;[&#128190;][102469solution] | &#9989;[&#128190;][102469tests] |
 
 [100001]: https://leetcode.com/problems/two-sum
 [100009]: https://leetcode.com/problems/palindrome-number
 [100026]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 [100027]: https://leetcode.com/problems/remove-element/
+[100463]: https://leetcode.com/problems/island-perimeter
 [100771]: https://leetcode.com/problems/jewels-and-stones
 [100876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [101108]: https://leetcode.com/problems/defanging-an-ip-address/
@@ -56,6 +58,7 @@
 [100009solution]: src/main/java/org/ck/leetcode/problems/problem0009/Solution.java
 [100026solution]: src/main/java/org/ck/leetcode/problems/problem0026/Solution.java
 [100027solution]: src/main/java/org/ck/leetcode/problems/problem0027/Solution.java
+[100463solution]: src/main/java/org/ck/leetcode/problems/problem0463/Solution.java
 [100771solution]: src/main/java/org/ck/leetcode/problems/problem0771/Solution.java
 [100876solution]: src/main/java/org/ck/leetcode/problems/problem0876/Solution.java
 [101108solution]: src/main/java/org/ck/leetcode/problems/problem1108/Solution.java
@@ -80,6 +83,7 @@
 [100009tests]: src/test/java/org/ck/leetcode/problems/problem0009/SolutionTest.java
 [100026tests]: src/test/java/org/ck/leetcode/problems/problem0026/SolutionTest.java
 [100027tests]: src/test/java/org/ck/leetcode/problems/problem0027/SolutionTest.java
+[100463tests]: src/test/java/org/ck/leetcode/problems/problem0463/SolutionTest.java
 [100771tests]: src/test/java/org/ck/leetcode/problems/problem0771/SolutionTest.java
 [100876tests]: src/test/java/org/ck/leetcode/problems/problem0876/SolutionTest.java
 [101108tests]: src/test/java/org/ck/leetcode/problems/problem1108/SolutionTest.java
@@ -118,22 +122,24 @@
 [100295tests]: src/test/java/org/ck/leetcode/problems/problem0295/MedianFinderTest.java
 
 
-## Medium (7/7)
+## Medium (7/8)
 
-|      # | Name                                                                    | Tags                                           | Solution                           | Test                            |
-|-------:|-------------------------------------------------------------------------|------------------------------------------------|:----------------------------------:|:-------------------------------:|
-| 100002 | [2. Add Two Numbers][100002]                                            | Linked List <br> Math <br> Recursion           | &#9989;[&#128190;][100002solution] | &#9989;[&#128190;][100002tests] |
-| 100049 | [49. Group Anagrams][100049]                                            | Array <br> Hash Table <br> String <br> Sorting | &#9989;[&#128190;][100049solution] | &#9989;[&#128190;][100049tests] |
-| 100151 | [151. Reverse Words in a String][100151]                                | Two Pointers <br> String                       | &#9989;[&#128190;][100151solution] | &#9989;[&#128190;][100151tests] |
-| 100189 | [189. Rotate Array][100189]                                             | Array <br> Math <br> Two Pointers              | &#9989;[&#128190;][100189solution] | &#9989;[&#128190;][100189tests] |
-| 101393 | [1393. Capital Gain/Loss][101393]                                       | Database                                       | &#9989;[&#128190;][101393solution] | &#9989;[&#128190;][101393tests] |
-| 101689 | [1689. Partitioning Into Minimum Number Of Deci-Binary Numbers][101689] | String <br> Greedy                             | &#9989;[&#128190;][101689solution] | &#9989;[&#128190;][101689tests] |
-| 102095 | [2095. Delete the Middle Node of a Linked List][102095]                 | Linked List <br> Two Pointers                  | &#9989;[&#128190;][102095solution] | &#9989;[&#128190;][102095tests] |
+|      # | Name                                                                    | Tags                                                                               | Solution                           | Test                            |
+|-------:|-------------------------------------------------------------------------|------------------------------------------------------------------------------------|:----------------------------------:|:-------------------------------:|
+| 100002 | [2. Add Two Numbers][100002]                                            | Linked List <br> Math <br> Recursion                                               | &#9989;[&#128190;][100002solution] | &#9989;[&#128190;][100002tests] |
+| 100049 | [49. Group Anagrams][100049]                                            | Array <br> Hash Table <br> String <br> Sorting                                     | &#9989;[&#128190;][100049solution] | &#9989;[&#128190;][100049tests] |
+| 100151 | [151. Reverse Words in a String][100151]                                | Two Pointers <br> String                                                           | &#9989;[&#128190;][100151solution] | &#9989;[&#128190;][100151tests] |
+| 100189 | [189. Rotate Array][100189]                                             | Array <br> Math <br> Two Pointers                                                  | &#9989;[&#128190;][100189solution] | &#9989;[&#128190;][100189tests] |
+| 100786 | [786. K-th Smallest Prime Fraction][100786]                             | Array <br> Two Pointers <br> Binary Search <br> Sorting <br> Heap (Priority Queue) | [&#128190;][100786solution]        | [&#128190;][100786tests]        |
+| 101393 | [1393. Capital Gain/Loss][101393]                                       | Database                                                                           | &#9989;[&#128190;][101393solution] | &#9989;[&#128190;][101393tests] |
+| 101689 | [1689. Partitioning Into Minimum Number Of Deci-Binary Numbers][101689] | String <br> Greedy                                                                 | &#9989;[&#128190;][101689solution] | &#9989;[&#128190;][101689tests] |
+| 102095 | [2095. Delete the Middle Node of a Linked List][102095]                 | Linked List <br> Two Pointers                                                      | &#9989;[&#128190;][102095solution] | &#9989;[&#128190;][102095tests] |
 
 [100002]: https://leetcode.com/problems/add-two-numbers/
 [100049]: https://leetcode.com/problems/group-anagrams
 [100151]: https://leetcode.com/problems/reverse-words-in-a-string/
 [100189]: https://leetcode.com/problems/rotate-array
+[100786]: https://leetcode.com/problems/k-th-smallest-prime-fraction
 [101393]: https://leetcode.com/problems/capital-gainloss/
 [101689]: https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/
 [102095]: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
@@ -142,6 +148,7 @@
 [100049solution]: src/main/java/org/ck/leetcode/problems/problem0049/Solution.java
 [100151solution]: src/main/java/org/ck/leetcode/problems/problem0151/Solution.java
 [100189solution]: src/main/java/org/ck/leetcode/problems/problem0189/Solution.java
+[100786solution]: src/main/java/org/ck/leetcode/problems/problem0786/Solution.java
 [101393solution]: src/main/java/org/ck/leetcode/problems/problem1393/Solution.java
 [101689solution]: src/main/java/org/ck/leetcode/problems/problem1689/Solution.java
 [102095solution]: src/main/java/org/ck/leetcode/problems/problem2095/Solution.java
@@ -150,6 +157,7 @@
 [100049tests]: src/test/java/org/ck/leetcode/problems/problem0049/SolutionTest.java
 [100151tests]: src/test/java/org/ck/leetcode/problems/problem0151/SolutionTest.java
 [100189tests]: src/test/java/org/ck/leetcode/problems/problem0189/SolutionTest.java
+[100786tests]: src/test/java/org/ck/leetcode/problems/problem0786/SolutionTest.java
 [101393tests]: src/test/java/org/ck/leetcode/problems/problem1393/SolutionTest.java
 [101689tests]: src/test/java/org/ck/leetcode/problems/problem1689/SolutionTest.java
 [102095tests]: src/test/java/org/ck/leetcode/problems/problem2095/SolutionTest.java

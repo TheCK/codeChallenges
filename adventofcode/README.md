@@ -324,8 +324,8 @@
 [20160802solution]: src/main/java/org/ck/adventofcode/year2016/Day08.java
 [20160901solution]: src/main/java/org/ck/adventofcode/year2016/Day09.java
 [20160902solution]: src/main/java/org/ck/adventofcode/year2016/Day09.java
-[20161001solution]: src/main/java/org/ck/adventofcode/year2016/day10/Part1.java
-[20161002solution]: src/main/java/org/ck/adventofcode/year2016/day10/Part2.java
+[20161001solution]: src/main/java/org/ck/adventofcode/year2016/Day10.java
+[20161002solution]: src/main/java/org/ck/adventofcode/year2016/Day10.java
 [20161101solution]: src/main/java/org/ck/adventofcode/year2016/day11/Part1.java
 [20161102solution]: src/main/java/org/ck/adventofcode/year2016/day11/Part2.java
 [20161201solution]: src/main/java/org/ck/adventofcode/year2016/day12/Part1.java
@@ -374,8 +374,8 @@
 [20160802tests]: src/test/java/org/ck/adventofcode/year2016/Day08Test.java
 [20160901tests]: src/test/java/org/ck/adventofcode/year2016/Day09Test.java
 [20160902tests]: src/test/java/org/ck/adventofcode/year2016/Day09Test.java
-[20161001tests]: src/test/java/org/ck/adventofcode/year2016/day10/Part1Test.java
-[20161002tests]: src/test/java/org/ck/adventofcode/year2016/day10/Part2Test.java
+[20161001tests]: src/test/java/org/ck/adventofcode/year2016/Day10Test.java
+[20161002tests]: src/test/java/org/ck/adventofcode/year2016/Day10Test.java
 [20161101tests]: src/test/java/org/ck/adventofcode/year2016/day11/Part1Test.java
 [20161102tests]: src/test/java/org/ck/adventofcode/year2016/day11/Part2Test.java
 [20161201tests]: src/test/java/org/ck/adventofcode/year2016/day12/Part1Test.java

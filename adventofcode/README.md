@@ -202,7 +202,7 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/Day24Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/Day25Test.java
 
-# 2016 (44/49)
+# 2016 (46/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -226,8 +226,8 @@
 | 20160902 | [Day 9: Explosives in Cyberspace - Part 2][20160902]                | &#9989;[&#128190;][20160902solution] | &#9989;[&#128190;][20160902tests] |
 | 20161001 | [Day 10: Balance Bots][20161001]                                    | &#9989;[&#128190;][20161001solution] | &#9989;[&#128190;][20161001tests] |
 | 20161002 | [Day 10: Balance Bots - Part 2][20161002]                           | &#9989;[&#128190;][20161002solution] | &#9989;[&#128190;][20161002tests] |
-| 20161101 | [Day 11: Radioisotope Thermoelectric Generators][20161101]          | [&#128190;][20161101solution]        | [&#128190;][20161101tests]        |
-| 20161102 | [Day 11: Radioisotope Thermoelectric Generators - Part 2][20161102] | [&#128190;][20161102solution]        | [&#128190;][20161102tests]        |
+| 20161101 | [Day 11: Radioisotope Thermoelectric Generators][20161101]          | &#9989;[&#128190;][20161101solution] | &#9989;[&#128190;][20161101tests] |
+| 20161102 | [Day 11: Radioisotope Thermoelectric Generators - Part 2][20161102] | &#9989;[&#128190;][20161102solution] | &#9989;[&#128190;][20161102tests] |
 | 20161201 | [Day 12: Leonardo's Monorail][20161201]                             | &#9989;[&#128190;][20161201solution] | &#9989;[&#128190;][20161201tests] |
 | 20161202 | [Day 12: Leonardo's Monorail - Part 2][20161202]                    | &#9989;[&#128190;][20161202solution] | &#9989;[&#128190;][20161202tests] |
 | 20161301 | [Day 13: A Maze of Twisty Little Cubicles][20161301]                | &#9989;[&#128190;][20161301solution] | &#9989;[&#128190;][20161301tests] |

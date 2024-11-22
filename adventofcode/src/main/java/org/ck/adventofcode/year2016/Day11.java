@@ -55,10 +55,6 @@ public class Day11 extends AOCSolution {
       final int elevator = state.elevator();
       final int steps = state.steps();
 
-      if (!isStateValid(floors)) {
-        continue;
-      }
-
       if (isFinalState(floors)) {
         print(state.steps());
         return;

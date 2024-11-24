@@ -330,14 +330,14 @@
 [20161102solution]: src/main/java/org/ck/adventofcode/year2016/Day11.java
 [20161201solution]: src/main/java/org/ck/adventofcode/year2016/Day12.java
 [20161202solution]: src/main/java/org/ck/adventofcode/year2016/Day12.java
-[20161301solution]: src/main/java/org/ck/adventofcode/year2016/day13/Part1.java
-[20161302solution]: src/main/java/org/ck/adventofcode/year2016/day13/Part2.java
-[20161401solution]: src/main/java/org/ck/adventofcode/year2016/day14/Part1.java
-[20161402solution]: src/main/java/org/ck/adventofcode/year2016/day14/Part2.java
-[20161501solution]: src/main/java/org/ck/adventofcode/year2016/day15/Part1.java
-[20161502solution]: src/main/java/org/ck/adventofcode/year2016/day15/Part2.java
-[20161601solution]: src/main/java/org/ck/adventofcode/year2016/day16/Part1.java
-[20161602solution]: src/main/java/org/ck/adventofcode/year2016/day16/Part2.java
+[20161301solution]: src/main/java/org/ck/adventofcode/year2016/Day13.java
+[20161302solution]: src/main/java/org/ck/adventofcode/year2016/Day13.java
+[20161401solution]: src/main/java/org/ck/adventofcode/year2016/Day14.java
+[20161402solution]: src/main/java/org/ck/adventofcode/year2016/Day14.java
+[20161501solution]: src/main/java/org/ck/adventofcode/year2016/Day15.java
+[20161502solution]: src/main/java/org/ck/adventofcode/year2016/Day15.java
+[20161601solution]: src/main/java/org/ck/adventofcode/year2016/Day16.java
+[20161602solution]: src/main/java/org/ck/adventofcode/year2016/Day16.java
 [20161701solution]: src/main/java/org/ck/adventofcode/year2016/day17/Part1.java
 [20161702solution]: src/main/java/org/ck/adventofcode/year2016/day17/Part2.java
 [20161801solution]: src/main/java/org/ck/adventofcode/year2016/day18/Part1.java
@@ -380,14 +380,14 @@
 [20161102tests]: src/test/java/org/ck/adventofcode/year2016/Day11Test.java
 [20161201tests]: src/test/java/org/ck/adventofcode/year2016/Day12Test.java
 [20161202tests]: src/test/java/org/ck/adventofcode/year2016/Day12Test.java
-[20161301tests]: src/test/java/org/ck/adventofcode/year2016/day13/Part1Test.java
-[20161302tests]: src/test/java/org/ck/adventofcode/year2016/day13/Part2Test.java
-[20161401tests]: src/test/java/org/ck/adventofcode/year2016/day14/Part1Test.java
-[20161402tests]: src/test/java/org/ck/adventofcode/year2016/day14/Part2Test.java
-[20161501tests]: src/test/java/org/ck/adventofcode/year2016/day15/Part1Test.java
-[20161502tests]: src/test/java/org/ck/adventofcode/year2016/day15/Part2Test.java
-[20161601tests]: src/test/java/org/ck/adventofcode/year2016/day16/Part1Test.java
-[20161602tests]: src/test/java/org/ck/adventofcode/year2016/day16/Part2Test.java
+[20161301tests]: src/test/java/org/ck/adventofcode/year2016/Day13Test.java
+[20161302tests]: src/test/java/org/ck/adventofcode/year2016/Day13Test.java
+[20161401tests]: src/test/java/org/ck/adventofcode/year2016/Day14Test.java
+[20161402tests]: src/test/java/org/ck/adventofcode/year2016/Day14Test.java
+[20161501tests]: src/test/java/org/ck/adventofcode/year2016/Day15Test.java
+[20161502tests]: src/test/java/org/ck/adventofcode/year2016/Day15Test.java
+[20161601tests]: src/test/java/org/ck/adventofcode/year2016/Day16Test.java
+[20161602tests]: src/test/java/org/ck/adventofcode/year2016/Day16Test.java
 [20161701tests]: src/test/java/org/ck/adventofcode/year2016/day17/Part1Test.java
 [20161702tests]: src/test/java/org/ck/adventofcode/year2016/day17/Part2Test.java
 [20161801tests]: src/test/java/org/ck/adventofcode/year2016/day18/Part1Test.java
@@ -1260,8 +1260,8 @@
 | 20231802 | [Day 18: Lavaduct Lagoon - Part 2][20231802]                | &#9989;[&#128190;][20231802solution] | &#9989;[&#128190;][20231802tests] |
 | 20231901 | [Day 19: Aplenty][20231901]                                 | &#9989;[&#128190;][20231901solution] | &#9989;[&#128190;][20231901tests] |
 | 20231902 | [Day 19: Aplenty - Part 2][20231902]                        | &#9989;[&#128190;][20231902solution] | &#9989;[&#128190;][20231902tests] |
-| 20232001 | [Day 20: ][20232001]                                        | [&#128190;][20232001solution]        | [&#128190;][20232001tests]        |
-| 20232002 | [Day 20:  - Part 2][20232002]                               | [&#128190;][20232002solution]        | [&#128190;][20232002tests]        |
+| 20232001 | [Day 20: Pulse Propagation][20232001]                       | [&#128190;][20232001solution]        | [&#128190;][20232001tests]        |
+| 20232002 | [Day 20: Pulse Propagation - Part 2][20232002]              | [&#128190;][20232002solution]        | [&#128190;][20232002tests]        |
 | 20232101 | [Day 21: ][20232101]                                        | [&#128190;][20232101solution]        | [&#128190;][20232101tests]        |
 | 20232102 | [Day 21:  - Part 2][20232102]                               | [&#128190;][20232102solution]        | [&#128190;][20232102tests]        |
 | 20232201 | [Day 22: ][20232201]                                        | [&#128190;][20232201solution]        | [&#128190;][20232201tests]        |

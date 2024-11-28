@@ -1,7 +1,7 @@
 package org.ck.adventofcode.year2016;
 
 import java.util.*;
-import java.util.function.ToIntFunction;
+import java.util.function.IntUnaryOperator;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -26,8 +26,7 @@ public class Day19 extends AOCSolution {
     run(in, elves -> elves / 2, false);
   }
 
-  private void run(
-      final Scanner in, final ToIntFunction<Integer> getFirstTarget, boolean alwaysSkipTwo) {
+  private void run(final Scanner in, final IntUnaryOperator getFirstTarget, boolean alwaysSkipTwo) {
     final int elves = in.nextInt();
     final int firstTarget = getFirstTarget.applyAsInt(elves);
 

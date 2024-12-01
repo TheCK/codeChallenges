@@ -55,8 +55,8 @@ public class Day01 extends AOCSolution {
     while (in.hasNextLine()) {
       final String[] split = in.nextLine().split(" +");
 
-      one.add(Integer.parseInt(split[0]));
-      two.add(Integer.parseInt(split[1]));
+      one.add(Integer.valueOf(split[0]));
+      two.add(Integer.valueOf(split[1]));
     }
 
     final IntToLongFunction valueGenerator = getValueGenerator.apply(one, two);

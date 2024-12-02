@@ -84,7 +84,7 @@ public class Day02 extends AOCSolution {
     final List<Integer> line = new ArrayList<>();
 
     for (String part : in.nextLine().split(" ")) {
-      line.add(Integer.parseInt(part));
+      line.add(Integer.valueOf(part));
     }
 
     return line;

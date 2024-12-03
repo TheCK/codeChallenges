@@ -42,15 +42,16 @@ public class Day03 extends AOCSolution {
 
     long sum = 0;
     while (matcher.find(index)) {
-      if (enableDisable && deactivationMatcher.find(index)) {
-        if (deactivationMatcher.start() < matcher.start()) {
-          if (activeMatcher.find(deactivationMatcher.start())) {
-            index = activeMatcher.end();
-            continue;
-          }
+      if (enableDisable
+          && deactivationMatcher.find(index)
+          && deactivationMatcher.start() < matcher.start()) {
 
-          break;
+        if (activeMatcher.find(deactivationMatcher.start())) {
+          index = activeMatcher.end();
+          continue;
         }
+
+        break;
       }
 
       final long one = Long.parseLong(matcher.group("one"));
@@ -70,7 +71,6 @@ public class Day03 extends AOCSolution {
       builder.append(in.nextLine());
     }
 
-    final String input = builder.toString();
-    return input;
+    return builder.toString();
   }
 }

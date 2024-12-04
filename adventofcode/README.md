@@ -348,8 +348,8 @@
 [20162002solution]: src/main/java/org/ck/adventofcode/year2016/Day20.java
 [20162101solution]: src/main/java/org/ck/adventofcode/year2016/Day21.java
 [20162102solution]: src/main/java/org/ck/adventofcode/year2016/Day21.java
-[20162201solution]: src/main/java/org/ck/adventofcode/year2016/day22/Part1.java
-[20162202solution]: src/main/java/org/ck/adventofcode/year2016/day22/Part2.java
+[20162201solution]: src/main/java/org/ck/adventofcode/year2016/Day22.java
+[20162202solution]: src/main/java/org/ck/adventofcode/year2016/Day22.java
 [20162301solution]: src/main/java/org/ck/adventofcode/year2016/day23/Part1.java
 [20162302solution]: src/main/java/org/ck/adventofcode/year2016/day23/Part2.java
 [20162401solution]: src/main/java/org/ck/adventofcode/year2016/day24/Part1.java
@@ -398,8 +398,8 @@
 [20162002tests]: src/test/java/org/ck/adventofcode/year2016/Day20Test.java
 [20162101tests]: src/test/java/org/ck/adventofcode/year2016/Day21Test.java
 [20162102tests]: src/test/java/org/ck/adventofcode/year2016/Day21Test.java
-[20162201tests]: src/test/java/org/ck/adventofcode/year2016/day22/Part1Test.java
-[20162202tests]: src/test/java/org/ck/adventofcode/year2016/day22/Part2Test.java
+[20162201tests]: src/test/java/org/ck/adventofcode/year2016/Day22Test.java
+[20162202tests]: src/test/java/org/ck/adventofcode/year2016/Day22Test.java
 [20162301tests]: src/test/java/org/ck/adventofcode/year2016/day23/Part1Test.java
 [20162302tests]: src/test/java/org/ck/adventofcode/year2016/day23/Part2Test.java
 [20162401tests]: src/test/java/org/ck/adventofcode/year2016/day24/Part1Test.java
@@ -1422,7 +1422,7 @@
 [20232402tests]: src/test/java/org/ck/adventofcode/year2023/Day24Test.java
 [20232501tests]: src/test/java/org/ck/adventofcode/year2023/Day25Test.java
 
-# 2024 (6/49)
+# 2024 (8/49)
 
 |        # | Name                                           | Solution                             | Test                              |
 |---------:|------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -1432,8 +1432,8 @@
 | 20240202 | [Day 2: Red-Nosed Reports - Part 2][20240202]  | &#9989;[&#128190;][20240202solution] | &#9989;[&#128190;][20240202tests] |
 | 20240301 | [Day 3: Mull It Over][20240301]                | &#9989;[&#128190;][20240301solution] | &#9989;[&#128190;][20240301tests] |
 | 20240302 | [Day 3: Mull It Over - Part 2][20240302]       | &#9989;[&#128190;][20240302solution] | &#9989;[&#128190;][20240302tests] |
-| 20240401 | [Day 4: ?][20240401]                           | [&#128190;][20240401solution]        | [&#128190;][20240401tests]        |
-| 20240402 | [Day 4: ? - Part 2][20240402]                  | [&#128190;][20240402solution]        | [&#128190;][20240402tests]        |
+| 20240401 | [Day 4: Ceres Search][20240401]                | &#9989;[&#128190;][20240401solution] | &#9989;[&#128190;][20240401tests] |
+| 20240402 | [Day 4: Ceres Search - Part 2][20240402]       | &#9989;[&#128190;][20240402solution] | &#9989;[&#128190;][20240402tests] |
 | 20240501 | [Day 5: ?][20240501]                           | [&#128190;][20240501solution]        | [&#128190;][20240501tests]        |
 | 20240502 | [Day 5: ? - Part 2][20240502]                  | [&#128190;][20240502solution]        | [&#128190;][20240502tests]        |
 | 20240601 | [Day 6: ?][20240601]                           | [&#128190;][20240601solution]        | [&#128190;][20240601tests]        |

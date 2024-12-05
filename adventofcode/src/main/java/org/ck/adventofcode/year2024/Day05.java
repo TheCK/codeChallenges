@@ -14,8 +14,7 @@ import org.ck.codechallengelib.annotation.Solution;
     id = 20240502,
     name = "Day 5: Print Queue - Part 2",
     url = "https://adventofcode.com/2024/day/5#part2",
-    category = "2024",
-    solved = false)
+    category = "2024")
 public class Day05 extends AOCSolution {
 
   @Override
@@ -38,7 +37,16 @@ public class Day05 extends AOCSolution {
         (update, orderRules) -> {
           if (!isValid(update, orderRules)) {
             while (!isValid(update, orderRules)) {
-              break;
+              for (int i = 0; i < update.size() - 1; ++i) {
+                for (int j = i + 1; j < update.size(); ++j) {
+                  if (orderRules.containsKey(update.get(j))
+                      && orderRules.get(update.get(j)).contains(update.get(i))) {
+                    final int tmp = update.get(i);
+                    update.set(i, update.get(j));
+                    update.set(j, tmp);
+                  }
+                }
+              }
             }
 
             return update.get(update.size() / 2);
@@ -80,7 +88,7 @@ public class Day05 extends AOCSolution {
       } else if (!line.isBlank()) {
         final String[] parts = line.split(",");
 
-        updates.add(Arrays.stream(parts).map(Integer::parseInt).toList());
+        updates.add(new ArrayList<>(Arrays.stream(parts).map(Integer::parseInt).toList()));
       }
     }
   }

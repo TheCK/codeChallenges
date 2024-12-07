@@ -1,59 +1,44 @@
-package org.ck.adventofcode.year2016.day23;
+package org.ck.adventofcode.year2016.common;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.ck.codechallengelib.annotation.Solution;
 
-@Solution(
-    id = 20162302,
-    name = "Day 23: Safe Cracking - Part 2",
-    url = "https://adventofcode.com/2016/day/23",
-    category = "2016")
-public class Part2 {
-  public static void main(String[] args) {
-    List<Command> commands = new ArrayList<>();
-    int a;
+public class AssemBunnyComputer {
 
-    try (Scanner in = new Scanner(System.in)) {
-      a = in.nextInt();
-      in.nextLine();
+  private final List<Command> commands = new ArrayList<>();
+  private final Map<String, Integer> registers = new HashMap<>();
 
-      while (in.hasNextLine()) {
-        commands.add(Command.of(in.nextLine()));
-      }
-    }
+  public AssemBunnyComputer(
+      final List<String> initialCommands, final Map<String, Integer> initialRegisters) {
+    this.commands.addAll(initialCommands.stream().map(Command::of).toList());
+    this.registers.putAll(initialRegisters);
+  }
 
-    int finalA = a;
-    Map<String, Integer> registers =
-        new HashMap<>() {
-          {
-            put("a", finalA);
-            put("b", 0);
-            put("c", 0);
-            put("d", 0);
-          }
-        };
-
+  public void run() {
     int p = 0;
     while (p < commands.size()) {
       p += commands.get(p).run(registers, commands, p);
     }
+  }
 
-    System.out.println(registers.get("a"));
+  public int getRegisterValue(final String register) {
+    return registers.get(register);
   }
 
   private abstract static class Command {
-    private static final Pattern pattern =
-        Pattern.compile("([a-z]{3}) ([a-z]|-?\\d+)( (-?\\d+|[a-z]))?");
+    private static final Pattern COMMAND_PATTERN =
+        Pattern.compile(
+            "(?<command>[a-z]{3}) (?<firstOperand>[a-z]|-?\\d+)( (?<secondOperand>-?\\d+|[a-z]))?");
 
-    public static Command of(String line) {
-      final Matcher matcher = pattern.matcher(line);
+    public static Command of(final String line) {
+      final Matcher matcher = COMMAND_PATTERN.matcher(line);
 
       if (matcher.find()) {
-        String command = matcher.group(1);
-
-        return switch (command) {
+        return switch (matcher.group("command")) {
           case "cpy" -> new Copy(matcher);
           case "inc" -> new Increment(matcher);
           case "dec" -> new Decrement(matcher);
@@ -66,7 +51,8 @@ public class Part2 {
       return null;
     }
 
-    public abstract int run(Map<String, Integer> registers, List<Command> commands, final int p);
+    public abstract int run(
+        final Map<String, Integer> registers, final List<Command> commands, final int p);
 
     public abstract Command toggle();
   }
@@ -74,16 +60,17 @@ public class Part2 {
   private static final class Increment extends Command {
     private final String register;
 
-    public Increment(Matcher matcher) {
-      register = matcher.group(2);
+    public Increment(final Matcher matcher) {
+      register = matcher.group("firstOperand");
     }
 
-    public Increment(String register) {
+    public Increment(final String register) {
       this.register = register;
     }
 
     @Override
-    public int run(final Map<String, Integer> registers, List<Command> commands, final int p) {
+    public int run(
+        final Map<String, Integer> registers, final List<Command> commands, final int p) {
       registers.put(register, registers.get(register) + 1);
 
       return 1;
@@ -98,16 +85,17 @@ public class Part2 {
   private static final class Decrement extends Command {
     private final String register;
 
-    public Decrement(Matcher matcher) {
-      register = matcher.group(2);
+    public Decrement(final Matcher matcher) {
+      register = matcher.group("firstOperand");
     }
 
-    public Decrement(String register) {
+    public Decrement(final String register) {
       this.register = register;
     }
 
     @Override
-    public int run(final Map<String, Integer> registers, List<Command> commands, final int p) {
+    public int run(
+        final Map<String, Integer> registers, final List<Command> commands, final int p) {
       registers.put(register, registers.get(register) - 1);
 
       return 1;
@@ -122,13 +110,14 @@ public class Part2 {
   private static final class Toggle extends Command {
     private final String register;
 
-    public Toggle(Matcher matcher) {
-      register = matcher.group(2);
+    public Toggle(final Matcher matcher) {
+      register = matcher.group("firstOperand");
     }
 
     @Override
-    public int run(final Map<String, Integer> registers, List<Command> commands, final int p) {
-      int index = p + registers.get(register);
+    public int run(
+        final Map<String, Integer> registers, final List<Command> commands, final int p) {
+      final int index = p + registers.get(register);
 
       if (index < commands.size()) {
         commands.set(index, commands.get(index).toggle());
@@ -147,27 +136,27 @@ public class Part2 {
     private String firstRegister;
     private Integer firstIntermediate;
 
-    private String secondRegister;
-    private Integer secondIntermediate;
+    private final String secondRegister;
+    private final Integer secondIntermediate;
 
     public Copy(Matcher matcher) {
       try {
+        firstIntermediate = Integer.valueOf(matcher.group("firstOperand"));
         firstRegister = null;
-        firstIntermediate = Integer.valueOf(matcher.group(2));
-      } catch (NumberFormatException e) {
-        firstRegister = matcher.group(2);
+      } catch (final NumberFormatException e) {
+        firstRegister = matcher.group("firstOperand");
         firstIntermediate = null;
       }
 
-      secondRegister = matcher.group(4);
+      secondRegister = matcher.group("secondOperand");
       secondIntermediate = null;
     }
 
     public Copy(
-        String firstRegister,
-        Integer firstIntermediate,
-        String secondRegister,
-        Integer secondIntermediate) {
+        final String firstRegister,
+        final Integer firstIntermediate,
+        final String secondRegister,
+        final Integer secondIntermediate) {
       this.firstRegister = firstRegister;
       this.firstIntermediate = firstIntermediate;
 
@@ -176,7 +165,8 @@ public class Part2 {
     }
 
     @Override
-    public int run(final Map<String, Integer> registers, List<Command> commands, final int p) {
+    public int run(
+        final Map<String, Integer> registers, final List<Command> commands, final int p) {
       if (secondRegister != null) {
         registers.put(
             secondRegister,
@@ -202,26 +192,26 @@ public class Part2 {
     public Jump(Matcher matcher) {
       try {
         firstRegister = null;
-        firstIntermediate = Integer.valueOf(matcher.group(2));
-      } catch (NumberFormatException e) {
-        firstRegister = matcher.group(2);
+        firstIntermediate = Integer.valueOf(matcher.group("firstOperand"));
+      } catch (final NumberFormatException e) {
+        firstRegister = matcher.group("firstOperand");
         firstIntermediate = null;
       }
 
       try {
         secondRegister = null;
-        secondIntermediate = Integer.valueOf(matcher.group(4));
-      } catch (NumberFormatException e) {
-        secondRegister = matcher.group(4);
+        secondIntermediate = Integer.valueOf(matcher.group("secondOperand"));
+      } catch (final NumberFormatException e) {
+        secondRegister = matcher.group("secondOperand");
         secondIntermediate = null;
       }
     }
 
     public Jump(
-        String firstRegister,
-        Integer firstIntermediate,
-        String secondRegister,
-        Integer secondIntermediate) {
+        final String firstRegister,
+        final Integer firstIntermediate,
+        final String secondRegister,
+        final Integer secondIntermediate) {
       this.firstRegister = firstRegister;
       this.firstIntermediate = firstIntermediate;
 
@@ -230,7 +220,8 @@ public class Part2 {
     }
 
     @Override
-    public int run(final Map<String, Integer> registers, List<Command> commands, final int p) {
+    public int run(
+        final Map<String, Integer> registers, final List<Command> commands, final int p) {
       if ((firstIntermediate != null && firstIntermediate != 0)
           || (firstIntermediate == null && registers.get(firstRegister) != 0)) {
         return secondIntermediate != null ? secondIntermediate : registers.get(secondRegister);

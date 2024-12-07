@@ -14,7 +14,7 @@ class Day22Test extends BaseAOCTest {
 
   @ParameterizedTest
   @ValueSource(strings = {"02a", "02"})
-  @Disabled
+  @Disabled("Timing")
   void testTwo(String name) throws Exception {
     runTest(new Day22()::partTwo, "day22/%s".formatted(name));
   }

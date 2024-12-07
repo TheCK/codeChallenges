@@ -23,28 +23,19 @@ public class Day22 extends AOCSolution {
 
   @Override
   protected void runPartOne(final Scanner in) {
-    in.nextLine();
-    in.nextLine();
-
-    final List<Node> nodes = new ArrayList<>();
-    while (in.hasNextLine()) {
-      final Matcher matcher = PATTERN.matcher(in.nextLine());
-
-      if (matcher.find()) {
-        nodes.add(
-            new Node(
-                Integer.parseInt(matcher.group("used")), Integer.parseInt(matcher.group("avail"))));
-      }
-    }
+    final GridResult grid = getGrid(in);
+    final List<InputNode> nodes = grid.nodes();
 
     int viablePairs = 0;
 
     for (int i = 0; i < nodes.size(); ++i) {
       for (int j = i + 1; j < nodes.size(); ++j) {
-        if (nodes.get(i).used() > 0 && nodes.get(i).used() <= nodes.get(j).capacity()) {
+        if (nodes.get(i).used() > 0
+            && nodes.get(i).used() <= nodes.get(j).capacity() - nodes.get(j).used()) {
           ++viablePairs;
         }
-        if (nodes.get(j).used() > 0 && nodes.get(j).used() <= nodes.get(i).capacity()) {
+        if (nodes.get(j).used() > 0
+            && nodes.get(j).used() <= nodes.get(i).capacity() - nodes.get(i).used()) {
           ++viablePairs;
         }
       }
@@ -55,6 +46,43 @@ public class Day22 extends AOCSolution {
 
   @Override
   protected void runPartTwo(final Scanner in) {
+    final GridResult gridResult = getGrid(in);
+    final Coordinates initialEmpty = gridResult.initialEmpty();
+    final Node[][] initialGrid = gridResult.initialGrid();
+
+    final Queue<State> states = new PriorityQueue<>(Comparator.comparingInt(Day22::heuristic));
+    states.add(new State(initialEmpty, new Coordinates(initialGrid.length - 1, 0), 0));
+
+    final Set<State> visited = new HashSet<>();
+
+    while (!states.isEmpty()) {
+      final State state = states.poll();
+
+      if (visited.contains(state)) {
+        continue;
+      }
+
+      visited.add(state);
+
+      final Coordinates empty = state.emptyPosition();
+      final Coordinates goal = state.goalPosition();
+
+      if (goal.x() == 0 && goal.y() == 0) {
+        print(state.steps());
+        return;
+      }
+
+      for (final Coordinates newEmpty : getNewCoordinates(empty)) {
+        if (isInbounds(newEmpty, initialGrid.length - 1, initialGrid[0].length - 1)
+            && initialGrid[newEmpty.x()][newEmpty.y()].used()
+                <= initialGrid[empty.x()][empty.y()].capacity()) {
+          states.add(new State(newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
+        }
+      }
+    }
+  }
+
+  private static GridResult getGrid(final Scanner in) {
     in.nextLine();
     in.nextLine();
 
@@ -96,36 +124,7 @@ public class Day22 extends AOCSolution {
             initialGrid[node.coordinates().x()][node.coordinates().y()] =
                 new Node(node.used(), node.capacity()));
 
-    final Queue<State> states = new PriorityQueue<>(Comparator.comparingInt(Day22::heuristic));
-    states.add(new State(initialEmpty, new Coordinates(maxX, 0), 0));
-
-    final Set<State> visited = new HashSet<>();
-
-    while (!states.isEmpty()) {
-      final State state = states.poll();
-
-      if (visited.contains(state)) {
-        continue;
-      }
-
-      visited.add(state);
-
-      final Coordinates empty = state.emptyPosition();
-      final Coordinates goal = state.goalPosition();
-
-      if (goal.x() == 0 && goal.y() == 0) {
-        print(state.steps());
-        return;
-      }
-
-      for (final Coordinates newEmpty : getNewCoordinates(empty)) {
-        if (isInbounds(newEmpty, maxX, maxY)
-            && initialGrid[newEmpty.x()][newEmpty.y()].used()
-                <= initialGrid[empty.x()][empty.y()].capacity()) {
-          states.add(new State(newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
-        }
-      }
-    }
+    return new GridResult(initialEmpty, initialGrid, nodes);
   }
 
   private static int heuristic(final State state) {
@@ -165,6 +164,9 @@ public class Day22 extends AOCSolution {
       return Objects.hash(emptyPosition, goalPosition);
     }
   }
+
+  private record GridResult(
+      Coordinates initialEmpty, Node[][] initialGrid, List<InputNode> nodes) {}
 
   private record Coordinates(int x, int y) {}
 

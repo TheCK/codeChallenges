@@ -26,7 +26,7 @@ public class Day22 extends AOCSolution {
     in.nextLine();
     in.nextLine();
 
-    List<Node> nodes = new ArrayList<>();
+    final List<Node> nodes = new ArrayList<>();
     while (in.hasNextLine()) {
       final Matcher matcher = PATTERN.matcher(in.nextLine());
 
@@ -55,10 +55,6 @@ public class Day22 extends AOCSolution {
 
   @Override
   protected void runPartTwo(final Scanner in) {
-    run(in);
-  }
-
-  private void run(final Scanner in) {
     in.nextLine();
     in.nextLine();
 
@@ -94,14 +90,14 @@ public class Day22 extends AOCSolution {
       }
     }
 
-    final Node[][] grid = new Node[maxX + 1][maxY + 1];
+    final Node[][] initialGrid = new Node[maxX + 1][maxY + 1];
     nodes.forEach(
         node ->
-            grid[node.coordinates().x()][node.coordinates().y()] =
+            initialGrid[node.coordinates().x()][node.coordinates().y()] =
                 new Node(node.used(), node.capacity()));
 
-    final Queue<State> states = new PriorityQueue<>(Comparator.comparingInt(State::steps));
-    states.add(new State(grid, initialEmpty, new Coordinates(maxX, 0), 0));
+    final Queue<State> states = new PriorityQueue<>(Comparator.comparingInt(Day22::heuristic));
+    states.add(new State(initialEmpty, new Coordinates(maxX, 0), 0));
 
     final Set<State> visited = new HashSet<>();
 
@@ -122,63 +118,37 @@ public class Day22 extends AOCSolution {
         return;
       }
 
-      int emptySpace = grid[empty.x()][empty.y()].capacity();
-      if (empty.x() > 0 && grid[empty.x() - 1][empty.y()].used() <= emptySpace) {
-        final Node[][] copy = Arrays.stream(grid).map(Node[]::clone).toArray(Node[][]::new);
-        final Coordinates newEmpty = new Coordinates(empty.x() - 1, empty.y());
-
-        copy[empty.x()][empty.y()] =
-            new Node(
-                copy[newEmpty.x()][newEmpty.y()].used(), copy[empty.x()][empty.y()].capacity());
-        copy[newEmpty.x()][newEmpty.y()] = new Node(0, copy[newEmpty.x()][newEmpty.y()].capacity());
-
-        states.add(
-            new State(copy, newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
-      }
-      if (empty.x() < grid.length - 1 && grid[empty.x() + 1][empty.y()].used() <= emptySpace) {
-        final Node[][] copy = Arrays.stream(grid).map(Node[]::clone).toArray(Node[][]::new);
-        final Coordinates newEmpty = new Coordinates(empty.x() + 1, empty.y());
-
-        copy[empty.x()][empty.y()] =
-            new Node(
-                copy[newEmpty.x()][newEmpty.y()].used(), copy[empty.x()][empty.y()].capacity());
-        copy[newEmpty.x()][newEmpty.y()] = new Node(0, copy[newEmpty.x()][newEmpty.y()].capacity());
-
-        states.add(
-            new State(copy, newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
-      }
-      if (empty.y() > 0 && grid[empty.x()][empty.y() - 1].used() <= emptySpace) {
-        final Node[][] copy = Arrays.stream(grid).map(Node[]::clone).toArray(Node[][]::new);
-        final Coordinates newEmpty = new Coordinates(empty.x(), empty.y() - 1);
-
-        copy[empty.x()][empty.y()] =
-            new Node(
-                copy[newEmpty.x()][newEmpty.y()].used(), copy[empty.x()][empty.y()].capacity());
-        copy[newEmpty.x()][newEmpty.y()] = new Node(0, copy[newEmpty.x()][newEmpty.y()].capacity());
-
-        states.add(
-            new State(copy, newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
-      }
-      if (empty.y() < grid[empty.x()].length - 1
-          && grid[empty.x()][empty.y() + 1].used() <= emptySpace) {
-        final Node[][] copy = Arrays.stream(grid).map(Node[]::clone).toArray(Node[][]::new);
-        final Coordinates newEmpty = new Coordinates(empty.x(), empty.y() + 1);
-
-        copy[empty.x()][empty.y()] =
-            new Node(
-                copy[newEmpty.x()][newEmpty.y()].used(), copy[empty.x()][empty.y()].capacity());
-        copy[newEmpty.x()][newEmpty.y()] = new Node(0, copy[newEmpty.x()][newEmpty.y()].capacity());
-
-        states.add(
-            new State(copy, newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
+      for (final Coordinates newEmpty : getNewCoordinates(empty)) {
+        if (isInbounds(newEmpty, maxX, maxY)
+            && initialGrid[newEmpty.x()][newEmpty.y()].used()
+                <= initialGrid[empty.x()][empty.y()].capacity()) {
+          states.add(new State(newEmpty, newEmpty.equals(goal) ? empty : goal, state.steps() + 1));
+        }
       }
     }
-
-    print(visited.size());
   }
 
-  private record State(
-      Node[][] grid, Coordinates emptyPosition, Coordinates goalPosition, int steps) {
+  private static int heuristic(final State state) {
+    return state.steps()
+        + state.goalPosition().x()
+        + state.goalPosition().y()
+        + Math.abs(state.goalPosition().x() - state.emptyPosition().x())
+        + Math.abs(state.goalPosition().y() - state.emptyPosition().y());
+  }
+
+  private static boolean isInbounds(final Coordinates newEmpty, final int maxX, final int maxY) {
+    return newEmpty.x() >= 0 && newEmpty.y() >= 0 && newEmpty.x() <= maxX && newEmpty.y() <= maxY;
+  }
+
+  private static List<Coordinates> getNewCoordinates(final Coordinates empty) {
+    return List.of(
+        new Coordinates(empty.x() - 1, empty.y()),
+        new Coordinates(empty.x() + 1, empty.y()),
+        new Coordinates(empty.x(), empty.y() - 1),
+        new Coordinates(empty.x(), empty.y() + 1));
+  }
+
+  private record State(Coordinates emptyPosition, Coordinates goalPosition, int steps) {
     @Override
     public boolean equals(final Object o) {
       if (o == null || getClass() != o.getClass()) {
@@ -186,14 +156,13 @@ public class Day22 extends AOCSolution {
       }
 
       final State state = (State) o;
-      return Objects.deepEquals(grid, state.grid)
-          && Objects.equals(goalPosition, state.goalPosition)
+      return Objects.equals(goalPosition, state.goalPosition)
           && Objects.equals(emptyPosition, state.emptyPosition);
     }
 
     @Override
     public int hashCode() {
-      return Objects.hash(Arrays.deepHashCode(grid), emptyPosition, goalPosition);
+      return Objects.hash(emptyPosition, goalPosition);
     }
   }
 

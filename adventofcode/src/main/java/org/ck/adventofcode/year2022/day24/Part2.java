@@ -162,22 +162,30 @@ public class Part2 {
 
   private static Cyclone move(final Cyclone cyclone, int width, int height) {
     return switch (cyclone.direction()) {
-      case UP -> new Cyclone(
-          new Point(
-              cyclone.point().x(), cyclone.point().y() > 1 ? cyclone.point().y() - 1 : height - 2),
-          Direction.UP);
-      case DOWN -> new Cyclone(
-          new Point(
-              cyclone.point().x(), cyclone.point().y() < height - 2 ? cyclone.point().y() + 1 : 1),
-          Direction.DOWN);
-      case LEFT -> new Cyclone(
-          new Point(
-              cyclone.point().x() > 1 ? cyclone.point().x() - 1 : width - 2, cyclone.point().y()),
-          Direction.LEFT);
-      case RIGHT -> new Cyclone(
-          new Point(
-              cyclone.point().x() < width - 2 ? cyclone.point().x() + 1 : 1, cyclone.point().y()),
-          Direction.RIGHT);
+      case UP ->
+          new Cyclone(
+              new Point(
+                  cyclone.point().x(),
+                  cyclone.point().y() > 1 ? cyclone.point().y() - 1 : height - 2),
+              Direction.UP);
+      case DOWN ->
+          new Cyclone(
+              new Point(
+                  cyclone.point().x(),
+                  cyclone.point().y() < height - 2 ? cyclone.point().y() + 1 : 1),
+              Direction.DOWN);
+      case LEFT ->
+          new Cyclone(
+              new Point(
+                  cyclone.point().x() > 1 ? cyclone.point().x() - 1 : width - 2,
+                  cyclone.point().y()),
+              Direction.LEFT);
+      case RIGHT ->
+          new Cyclone(
+              new Point(
+                  cyclone.point().x() < width - 2 ? cyclone.point().x() + 1 : 1,
+                  cyclone.point().y()),
+              Direction.RIGHT);
     };
   }
 

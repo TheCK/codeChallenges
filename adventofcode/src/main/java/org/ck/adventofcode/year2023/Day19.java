@@ -139,23 +139,30 @@ public class Day19 extends AOCSolution {
         case 'x' -> {
           if (part.x().start() < value && value < part.x().end()) {
             yield switch (condition) {
-              case '<' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      new Range(value, part.x().end()),
-                      part.m(),
-                      part.a(),
-                      part.s()),
-                  new Part(
-                      next, new Range(part.x().start(), value - 1), part.m(), part.a(), part.s()));
-              case '>' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      new Range(part.x().start(), value),
-                      part.m(),
-                      part.a(),
-                      part.s()),
-                  new Part(next, new Range(value + 1, part.x().end), part.m(), part.a(), part.s()));
+              case '<' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          new Range(value, part.x().end()),
+                          part.m(),
+                          part.a(),
+                          part.s()),
+                      new Part(
+                          next,
+                          new Range(part.x().start(), value - 1),
+                          part.m(),
+                          part.a(),
+                          part.s()));
+              case '>' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          new Range(part.x().start(), value),
+                          part.m(),
+                          part.a(),
+                          part.s()),
+                      new Part(
+                          next, new Range(value + 1, part.x().end), part.m(), part.a(), part.s()));
               default -> throw new IllegalStateException();
             };
           }
@@ -165,23 +172,30 @@ public class Day19 extends AOCSolution {
         case 'm' -> {
           if (part.m().start() < value && value < part.m().end()) {
             yield switch (condition) {
-              case '<' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      part.x(),
-                      new Range(value, part.m().end()),
-                      part.a(),
-                      part.s()),
-                  new Part(
-                      next, part.x(), new Range(part.m().start(), value - 1), part.a(), part.s()));
-              case '>' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      part.x(),
-                      new Range(part.m().start(), value),
-                      part.a(),
-                      part.s()),
-                  new Part(next, part.x(), new Range(value + 1, part.m().end), part.a(), part.s()));
+              case '<' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          part.x(),
+                          new Range(value, part.m().end()),
+                          part.a(),
+                          part.s()),
+                      new Part(
+                          next,
+                          part.x(),
+                          new Range(part.m().start(), value - 1),
+                          part.a(),
+                          part.s()));
+              case '>' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          part.x(),
+                          new Range(part.m().start(), value),
+                          part.a(),
+                          part.s()),
+                      new Part(
+                          next, part.x(), new Range(value + 1, part.m().end), part.a(), part.s()));
               default -> throw new IllegalStateException();
             };
           }
@@ -191,23 +205,30 @@ public class Day19 extends AOCSolution {
         case 'a' -> {
           if (part.a().start() < value && value < part.a().end()) {
             yield switch (condition) {
-              case '<' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      part.x(),
-                      part.m(),
-                      new Range(value, part.a().end()),
-                      part.s()),
-                  new Part(
-                      next, part.x(), part.m(), new Range(part.a().start(), value - 1), part.s()));
-              case '>' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      part.x(),
-                      part.m(),
-                      new Range(part.a().start(), value),
-                      part.s()),
-                  new Part(next, part.x(), part.m(), new Range(value + 1, part.a().end), part.s()));
+              case '<' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          part.x(),
+                          part.m(),
+                          new Range(value, part.a().end()),
+                          part.s()),
+                      new Part(
+                          next,
+                          part.x(),
+                          part.m(),
+                          new Range(part.a().start(), value - 1),
+                          part.s()));
+              case '>' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          part.x(),
+                          part.m(),
+                          new Range(part.a().start(), value),
+                          part.s()),
+                      new Part(
+                          next, part.x(), part.m(), new Range(value + 1, part.a().end), part.s()));
               default -> throw new IllegalStateException();
             };
           }
@@ -217,23 +238,30 @@ public class Day19 extends AOCSolution {
         case 's' -> {
           if (part.s().start() < value && value < part.s().end()) {
             yield switch (condition) {
-              case '<' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      part.x(),
-                      part.m(),
-                      part.a(),
-                      new Range(value, part.s().end())),
-                  new Part(
-                      next, part.x(), part.m(), part.a(), new Range(part.s().start(), value - 1)));
-              case '>' -> new ApplyResult(
-                  new Part(
-                      part.workflow(),
-                      part.x(),
-                      part.m(),
-                      part.a(),
-                      new Range(part.s().start(), value)),
-                  new Part(next, part.x(), part.m(), part.a(), new Range(value + 1, part.s().end)));
+              case '<' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          part.x(),
+                          part.m(),
+                          part.a(),
+                          new Range(value, part.s().end())),
+                      new Part(
+                          next,
+                          part.x(),
+                          part.m(),
+                          part.a(),
+                          new Range(part.s().start(), value - 1)));
+              case '>' ->
+                  new ApplyResult(
+                      new Part(
+                          part.workflow(),
+                          part.x(),
+                          part.m(),
+                          part.a(),
+                          new Range(part.s().start(), value)),
+                      new Part(
+                          next, part.x(), part.m(), part.a(), new Range(value + 1, part.s().end)));
               default -> throw new IllegalStateException();
             };
           }
@@ -246,12 +274,14 @@ public class Day19 extends AOCSolution {
 
     private ApplyResult getWholePart(final Range testRange, final Part part) {
       return switch (condition) {
-        case '<' -> testRange.end() < value
-            ? new ApplyResult(null, new Part(next, part.x(), part.m(), part.a(), part.s()))
-            : new ApplyResult(part, null);
-        case '>' -> testRange.end() > value
-            ? new ApplyResult(null, new Part(next, part.x(), part.m(), part.a(), part.s()))
-            : new ApplyResult(part, null);
+        case '<' ->
+            testRange.end() < value
+                ? new ApplyResult(null, new Part(next, part.x(), part.m(), part.a(), part.s()))
+                : new ApplyResult(part, null);
+        case '>' ->
+            testRange.end() > value
+                ? new ApplyResult(null, new Part(next, part.x(), part.m(), part.a(), part.s()))
+                : new ApplyResult(part, null);
         default -> throw new IllegalStateException();
       };
     }

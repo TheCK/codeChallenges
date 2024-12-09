@@ -168,8 +168,8 @@ public class Part1 {
         switch (modes[i]) {
           case 0 -> params[i] = get(memPointer + i + 1);
           case 2 -> params[i] = relativeBase + get(memPointer + i + 1);
-          default -> throw new RuntimeException(
-              "This should not happen: Invalid write param mode!");
+          default ->
+              throw new RuntimeException("This should not happen: Invalid write param mode!");
         }
       }
 

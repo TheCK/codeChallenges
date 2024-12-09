@@ -97,26 +97,30 @@ public class Day16 extends AOCSolution {
 
   private Set<Direction> getDirections(char atPosition, final Direction direction) {
     return switch (atPosition) {
-      case '/' -> Set.of(
-          switch (direction) {
-            case UP -> Direction.RIGHT;
-            case DOWN -> Direction.LEFT;
-            case LEFT -> Direction.DOWN;
-            case RIGHT -> Direction.UP;
-          });
-      case '\\' -> Set.of(
-          switch (direction) {
-            case UP -> Direction.LEFT;
-            case DOWN -> Direction.RIGHT;
-            case LEFT -> Direction.UP;
-            case RIGHT -> Direction.DOWN;
-          });
-      case '-' -> Set.of(Direction.UP, Direction.DOWN).contains(direction)
-          ? Set.of(Direction.LEFT, Direction.RIGHT)
-          : Set.of(direction);
-      case '|' -> Set.of(Direction.LEFT, Direction.RIGHT).contains(direction)
-          ? Set.of(Direction.DOWN, Direction.UP)
-          : Set.of(direction);
+      case '/' ->
+          Set.of(
+              switch (direction) {
+                case UP -> Direction.RIGHT;
+                case DOWN -> Direction.LEFT;
+                case LEFT -> Direction.DOWN;
+                case RIGHT -> Direction.UP;
+              });
+      case '\\' ->
+          Set.of(
+              switch (direction) {
+                case UP -> Direction.LEFT;
+                case DOWN -> Direction.RIGHT;
+                case LEFT -> Direction.UP;
+                case RIGHT -> Direction.DOWN;
+              });
+      case '-' ->
+          Set.of(Direction.UP, Direction.DOWN).contains(direction)
+              ? Set.of(Direction.LEFT, Direction.RIGHT)
+              : Set.of(direction);
+      case '|' ->
+          Set.of(Direction.LEFT, Direction.RIGHT).contains(direction)
+              ? Set.of(Direction.DOWN, Direction.UP)
+              : Set.of(direction);
       default -> Set.of(direction);
     };
   }

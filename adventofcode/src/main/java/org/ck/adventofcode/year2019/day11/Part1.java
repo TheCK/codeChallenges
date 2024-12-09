@@ -151,8 +151,8 @@ public class Part1 {
           case LT -> set((int) params[2], params[0] < params[1] ? 1L : 0L);
           case EQ -> set((int) params[2], params[0] == params[1] ? 1L : 0L);
           case SET_RB -> relativeBase += (int) params[0];
-          default -> throw new IllegalStateException(
-              "This should not happen: Unimplemented command!");
+          default ->
+              throw new IllegalStateException("This should not happen: Unimplemented command!");
         }
 
         if (!jumped) {
@@ -198,8 +198,8 @@ public class Part1 {
           case 0 -> params[i] = get((int) get(memPointer + i + 1));
           case 1 -> params[i] = get(memPointer + i + 1);
           case 2 -> params[i] = get(relativeBase + (int) get(memPointer + i + 1));
-          default -> throw new IllegalStateException(
-              "This should not happen: Invalid read param mode!");
+          default ->
+              throw new IllegalStateException("This should not happen: Invalid read param mode!");
         }
       }
 
@@ -207,8 +207,8 @@ public class Part1 {
         switch (modes[i]) {
           case 0 -> params[i] = get(memPointer + i + 1);
           case 2 -> params[i] = relativeBase + get(memPointer + i + 1);
-          default -> throw new IllegalStateException(
-              "This should not happen: Invalid write param mode!");
+          default ->
+              throw new IllegalStateException("This should not happen: Invalid write param mode!");
         }
       }
 

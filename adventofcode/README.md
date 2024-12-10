@@ -202,7 +202,7 @@
 [20152402tests]: src/test/java/org/ck/adventofcode/year2015/Day24Test.java
 [20152501tests]: src/test/java/org/ck/adventofcode/year2015/Day25Test.java
 
-# 2016 (47/49)
+# 2016 (49/49)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -252,8 +252,8 @@
 | 20162202 | [Day 22: Grid Computing - Part 2][20162202]                         | &#9989;[&#128190;][20162202solution] | &#9989;[&#128190;][20162202tests] |
 | 20162301 | [Day 23: Safe Cracking][20162301]                                   | &#9989;[&#128190;][20162301solution] | &#9989;[&#128190;][20162301tests] |
 | 20162302 | [Day 23: Safe Cracking - Part 2][20162302]                          | &#9989;[&#128190;][20162302solution] | &#9989;[&#128190;][20162302tests] |
-| 20162401 | [Day 24: Air Duct Spelunking][20162401]                             | [&#128190;][20162401solution]        | [&#128190;][20162401tests]        |
-| 20162402 | [Day 24: Air Duct Spelunking - Part 2][20162402]                    | [&#128190;][20162402solution]        | [&#128190;][20162402tests]        |
+| 20162401 | [Day 24: Air Duct Spelunking][20162401]                             | &#9989;[&#128190;][20162401solution] | &#9989;[&#128190;][20162401tests] |
+| 20162402 | [Day 24: Air Duct Spelunking - Part 2][20162402]                    | &#9989;[&#128190;][20162402solution] | &#9989;[&#128190;][20162402tests] |
 | 20162501 | [Day 25: Clock Signal][20162501]                                    | &#9989;[&#128190;][20162501solution] | &#9989;[&#128190;][20162501tests] |
 
 [20160101]: https://adventofcode.com/2016/day/1
@@ -352,8 +352,8 @@
 [20162202solution]: src/main/java/org/ck/adventofcode/year2016/Day22.java
 [20162301solution]: src/main/java/org/ck/adventofcode/year2016/Day23.java
 [20162302solution]: src/main/java/org/ck/adventofcode/year2016/Day23.java
-[20162401solution]: src/main/java/org/ck/adventofcode/year2016/day24/Part1.java
-[20162402solution]: src/main/java/org/ck/adventofcode/year2016/day24/Part2.java
+[20162401solution]: src/main/java/org/ck/adventofcode/year2016/Day24.java
+[20162402solution]: src/main/java/org/ck/adventofcode/year2016/Day24.java
 [20162501solution]: src/main/java/org/ck/adventofcode/year2016/day25/Part1.java
 
 [20160101tests]: src/test/java/org/ck/adventofcode/year2016/Day01Test.java
@@ -402,8 +402,8 @@
 [20162202tests]: src/test/java/org/ck/adventofcode/year2016/Day22Test.java
 [20162301tests]: src/test/java/org/ck/adventofcode/year2016/Day23Test.java
 [20162302tests]: src/test/java/org/ck/adventofcode/year2016/Day23Test.java
-[20162401tests]: src/test/java/org/ck/adventofcode/year2016/day24/Part1Test.java
-[20162402tests]: src/test/java/org/ck/adventofcode/year2016/day24/Part2Test.java
+[20162401tests]: src/test/java/org/ck/adventofcode/year2016/Day24Test.java
+[20162402tests]: src/test/java/org/ck/adventofcode/year2016/Day24Test.java
 [20162501tests]: src/test/java/org/ck/adventofcode/year2016/day25/Part1Test.java
 
 # 2017 (15/16)

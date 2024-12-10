@@ -19,10 +19,18 @@ public class AssemBunnyComputer {
   }
 
   public void run() {
+    runWithWantedOutput(Integer.MAX_VALUE, Integer.MAX_VALUE);
+  }
+
+  public List<Integer> runWithWantedOutput(final int wantedOutput, final int maxSteps) {
+    final List<Integer> output = new ArrayList<>();
+
     int p = 0;
-    while (p < commands.size()) {
-      p += commands.get(p).run(registers, commands, p);
+    while (p < commands.size() && p < maxSteps && output.size() < wantedOutput) {
+      p += commands.get(p).run(registers, commands, p, output);
     }
+
+    return output;
   }
 
   public int getRegisterValue(final String register) {
@@ -44,6 +52,7 @@ public class AssemBunnyComputer {
           case "dec" -> new Decrement(matcher);
           case "jnz" -> new Jump(matcher);
           case "tgl" -> new Toggle(matcher);
+          case "out" -> new Output(matcher);
           default -> null;
         };
       }
@@ -52,7 +61,10 @@ public class AssemBunnyComputer {
     }
 
     public abstract int run(
-        final Map<String, Integer> registers, final List<Command> commands, final int p);
+        final Map<String, Integer> registers,
+        final List<Command> commands,
+        final int p,
+        final List<Integer> output);
 
     public abstract Command toggle();
   }
@@ -70,7 +82,10 @@ public class AssemBunnyComputer {
 
     @Override
     public int run(
-        final Map<String, Integer> registers, final List<Command> commands, final int p) {
+        final Map<String, Integer> registers,
+        final List<Command> commands,
+        final int p,
+        final List<Integer> output) {
       registers.put(register, registers.get(register) + 1);
 
       return 1;
@@ -95,7 +110,10 @@ public class AssemBunnyComputer {
 
     @Override
     public int run(
-        final Map<String, Integer> registers, final List<Command> commands, final int p) {
+        final Map<String, Integer> registers,
+        final List<Command> commands,
+        final int p,
+        final List<Integer> output) {
       registers.put(register, registers.get(register) - 1);
 
       return 1;
@@ -116,13 +134,39 @@ public class AssemBunnyComputer {
 
     @Override
     public int run(
-        final Map<String, Integer> registers, final List<Command> commands, final int p) {
+        final Map<String, Integer> registers,
+        final List<Command> commands,
+        final int p,
+        final List<Integer> output) {
       final int index = p + registers.get(register);
 
       if (index < commands.size()) {
         commands.set(index, commands.get(index).toggle());
       }
 
+      return 1;
+    }
+
+    @Override
+    public Command toggle() {
+      return new Increment(register);
+    }
+  }
+
+  private static final class Output extends Command {
+    private final String register;
+
+    public Output(Matcher matcher) {
+      register = matcher.group("firstOperand");
+    }
+
+    @Override
+    public int run(
+        final Map<String, Integer> registers,
+        List<Command> commands,
+        final int p,
+        final List<Integer> output) {
+      output.add(registers.get(register));
       return 1;
     }
 
@@ -166,7 +210,10 @@ public class AssemBunnyComputer {
 
     @Override
     public int run(
-        final Map<String, Integer> registers, final List<Command> commands, final int p) {
+        final Map<String, Integer> registers,
+        final List<Command> commands,
+        final int p,
+        final List<Integer> output) {
       if (secondRegister != null) {
         registers.put(
             secondRegister,
@@ -221,7 +268,10 @@ public class AssemBunnyComputer {
 
     @Override
     public int run(
-        final Map<String, Integer> registers, final List<Command> commands, final int p) {
+        final Map<String, Integer> registers,
+        final List<Command> commands,
+        final int p,
+        final List<Integer> output) {
       if ((firstIntermediate != null && firstIntermediate != 0)
           || (firstIntermediate == null && registers.get(firstRegister) != 0)) {
         return secondIntermediate != null ? secondIntermediate : registers.get(secondRegister);

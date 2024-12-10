@@ -1,8 +1,6 @@
 package org.ck.adventofcode.year2017;
 
-import java.util.Arrays;
-import java.util.LongSummaryStatistics;
-import java.util.Scanner;
+import java.util.*;
 import java.util.function.ToLongFunction;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
@@ -28,11 +26,12 @@ public class Day02 extends AOCSolution {
     run(in, Day02::getLineValueByDivision);
   }
 
-  private void run(final Scanner in, final ToLongFunction<String[]> getLineValue) {
+  private void run(final Scanner in, final ToLongFunction<List<Long>> getLineValue) {
     long sum = 0;
 
     while (in.hasNextLine()) {
-      final String[] line = in.nextLine().split("\\s");
+      final List<Long> line =
+          new ArrayList<>(Arrays.stream(in.nextLine().split("\\s")).map(Long::valueOf).toList());
 
       sum += getLineValue.applyAsLong(line);
     }
@@ -40,18 +39,17 @@ public class Day02 extends AOCSolution {
     print(sum);
   }
 
-  private static long getLineValueByDifference(final String[] line) {
-    final LongSummaryStatistics summary =
-        Arrays.stream(line).mapToLong(Long::parseLong).summaryStatistics();
+  private static long getLineValueByDifference(final List<Long> line) {
+    Collections.sort(line);
 
-    return summary.getMax() - summary.getMin();
+    return line.getLast() - line.getFirst();
   }
 
-  private static long getLineValueByDivision(final String[] line) {
-    for (int i = 0; i < line.length - 1; ++i) {
-      for (int j = i + 1; j < line.length; ++j) {
-        final int first = Integer.parseInt(line[i]);
-        final int second = Integer.parseInt(line[j]);
+  private static long getLineValueByDivision(final List<Long> line) {
+    for (int i = 0; i < line.size() - 1; ++i) {
+      for (int j = i + 1; j < line.size(); ++j) {
+        final long first = line.get(i);
+        final long second = line.get(j);
 
         if ((first / second) * second == first) {
           return first / second;

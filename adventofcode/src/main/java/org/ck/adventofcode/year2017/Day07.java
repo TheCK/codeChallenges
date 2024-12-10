@@ -27,7 +27,7 @@ public class Day07 extends AOCSolution {
 
   @Override
   protected void runPartOne(final Scanner in) {
-    List<Program> programs = new ArrayList<>();
+    final List<Program> programs = new ArrayList<>();
 
     while (in.hasNextLine()) {
       final Matcher matcher = LINE_PATTERN.matcher(in.nextLine());
@@ -47,7 +47,7 @@ public class Day07 extends AOCSolution {
       }
     }
 
-    List<String> names = programs.stream().map(Program::name).collect(Collectors.toList());
+    final List<String> names = programs.stream().map(Program::name).collect(Collectors.toList());
     programs.forEach(program -> Arrays.stream(program.above()).forEach(names::remove));
 
     print(names.get(0));

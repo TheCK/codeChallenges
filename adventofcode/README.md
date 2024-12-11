@@ -406,7 +406,7 @@
 [20162402tests]: src/test/java/org/ck/adventofcode/year2016/Day24Test.java
 [20162501tests]: src/test/java/org/ck/adventofcode/year2016/Day25Test.java
 
-# 2017 (15/16)
+# 2017 (16/16)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -423,7 +423,7 @@
 | 20170601 | [Day 6: Memory Reallocation][20170601]                              | &#9989;[&#128190;][20170601solution] | &#9989;[&#128190;][20170601tests] |
 | 20170602 | [Day 6: Memory Reallocation - Part 2][20170602]                     | &#9989;[&#128190;][20170602solution] | &#9989;[&#128190;][20170602tests] |
 | 20170701 | [Day 7: Recursive Circus][20170701]                                 | &#9989;[&#128190;][20170701solution] | &#9989;[&#128190;][20170701tests] |
-| 20170702 | [Day 7: Recursive Circus - Part 2][20170702]                        | [&#128190;][20170702solution]        | [&#128190;][20170702tests]        |
+| 20170702 | [Day 7: Recursive Circus - Part 2][20170702]                        | &#9989;[&#128190;][20170702solution] | &#9989;[&#128190;][20170702tests] |
 | 20170801 | [Day 8: I Heard You Like Registers][20170801]                       | &#9989;[&#128190;][20170801solution] | &#9989;[&#128190;][20170801tests] |
 | 20170802 | [Day 8: I Heard You Like Registers - Part 2][20170802]              | &#9989;[&#128190;][20170802solution] | &#9989;[&#128190;][20170802tests] |
 

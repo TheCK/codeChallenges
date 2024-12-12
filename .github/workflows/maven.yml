@@ -29,4 +29,6 @@ jobs:
           distribution: 'zulu'
           cache: maven
       - name: Build with Maven
+        env:
+          AOC_KEY: ${{ secrets.AOC_KEY }}
         run: mvn -B package --file pom.xml

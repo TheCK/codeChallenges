@@ -43,10 +43,23 @@ public abstract class BaseTest {
     }
   }
 
-  protected void pipeResource(String name) {
+  protected void pipeResource(final String name) {
     this.input = getClass().getResourceAsStream(name + ".txt");
 
     System.setIn(this.input);
+  }
+
+  protected void pipeResourceEncryptedResource(final String name, final String key) {
+    final String decrypted = EncryptionHelper.decrypt(getFileAsString(name), key);
+    this.input = new ByteArrayInputStream(decrypted.getBytes());
+
+    System.setIn(this.input);
+  }
+
+  private String getFileAsString(String name) {
+    try (Scanner resultScanner = new Scanner(getClass().getResourceAsStream(name + ".txt"))) {
+      return resultScanner.nextLine();
+    }
   }
 
   protected String[] getFileAsArgs(String name) {

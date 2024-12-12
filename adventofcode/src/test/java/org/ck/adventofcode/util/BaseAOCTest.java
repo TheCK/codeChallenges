@@ -12,4 +12,12 @@ public abstract class BaseAOCTest extends BaseTest {
 
     assertEquals(getFileAsResult(name), this.output.toString());
   }
+
+  protected void runEncryptedTest(Runnable solution, String name) throws Exception {
+    pipeResourceEncryptedResource(name, System.getenv("AOC_KEY"));
+
+    solution.run();
+
+    assertEquals(getFileAsResult(name), this.output.toString());
+  }
 }

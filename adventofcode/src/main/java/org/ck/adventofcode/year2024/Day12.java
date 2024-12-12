@@ -91,9 +91,6 @@ public class Day12 extends AOCSolution {
     final long size = region.plots().size();
     final long fences = getFences.applyAsLong(region.plots());
 
-    System.err.println(
-        "A region of %c plants with price %d * %d = %d"
-            .formatted(region.name(), size, fences, size * fences));
     return size * fences;
   }
 
@@ -120,39 +117,19 @@ public class Day12 extends AOCSolution {
     long sides = 0L;
 
     for (final Coordinate coordinate : coordinates) {
-      final Coordinate left = new Coordinate(coordinate.x() - 1, coordinate.y());
-      final Coordinate right = new Coordinate(coordinate.x() + 1, coordinate.y());
-      final Coordinate above = new Coordinate(coordinate.x(), coordinate.y() - 1);
-      final Coordinate below = new Coordinate(coordinate.x(), coordinate.y() + 1);
+      for (final int dx : List.of(-1, 1)) {
+        for (final int dy : List.of(-1, 1)) {
+          final Coordinate horizontal = new Coordinate(coordinate.x() + dx, coordinate.y());
+          final Coordinate vertical = new Coordinate(coordinate.x(), coordinate.y() + dy);
+          final Coordinate corner = new Coordinate(coordinate.x() + dx, coordinate.y() + dy);
 
-      final Coordinate aboveLeft = new Coordinate(coordinate.x() - 1, coordinate.y() - 1);
-      final Coordinate aboveRight = new Coordinate(coordinate.x() + 1, coordinate.y() - 1);
-      final Coordinate belowLeft = new Coordinate(coordinate.x() - 1, coordinate.y() + 1);
-      final Coordinate belowRight = new Coordinate(coordinate.x() + 1, coordinate.y() + 1);
-
-      if (isOuterCorner(coordinates, left, above)) {
-        ++sides;
-      }
-      if (isOuterCorner(coordinates, above, right)) {
-        ++sides;
-      }
-      if (isOuterCorner(coordinates, left, below)) {
-        ++sides;
-      }
-      if (isOuterCorner(coordinates, below, right)) {
-        ++sides;
-      }
-      if (isInnerCorner(coordinates, above, left, aboveLeft)) {
-        ++sides;
-      }
-      if (isInnerCorner(coordinates, above, right, aboveRight)) {
-        ++sides;
-      }
-      if (isInnerCorner(coordinates, below, left, belowLeft)) {
-        ++sides;
-      }
-      if (isInnerCorner(coordinates, below, right, belowRight)) {
-        ++sides;
+          if (isOuterCorner(coordinates, horizontal, vertical)) {
+            ++sides;
+          }
+          if (isInnerCorner(coordinates, horizontal, vertical, corner)) {
+            ++sides;
+          }
+        }
       }
     }
 
@@ -161,15 +138,17 @@ public class Day12 extends AOCSolution {
 
   private static boolean isInnerCorner(
       final Set<Coordinate> coordinates,
-      final Coordinate one,
-      final Coordinate two,
-      final Coordinate oneTwo) {
-    return coordinates.contains(one) && coordinates.contains(two) && !coordinates.contains(oneTwo);
+      final Coordinate horizontal,
+      final Coordinate vertical,
+      final Coordinate corner) {
+    return coordinates.contains(horizontal)
+        && coordinates.contains(vertical)
+        && !coordinates.contains(corner);
   }
 
   private static boolean isOuterCorner(
-      final Set<Coordinate> coordinates, final Coordinate one, final Coordinate two) {
-    return !coordinates.contains(one) && !coordinates.contains(two);
+      final Set<Coordinate> coordinates, final Coordinate horizontal, final Coordinate vertical) {
+    return !coordinates.contains(horizontal) && !coordinates.contains(vertical);
   }
 
   private record Coordinate(int x, int y) {}

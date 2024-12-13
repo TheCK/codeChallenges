@@ -1,19 +1,24 @@
 package org.ck.adventofcode.year2015;
 
 import org.ck.adventofcode.util.BaseAOCTest;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 class Day11Test extends BaseAOCTest {
   @ParameterizedTest
-  @ValueSource(strings = {"01", "01a", "01b"})
-  void testOne(String name) throws Exception {
+  @ValueSource(strings = {"01a", "01b"})
+  void testPartOneExamples(String name) throws Exception {
     runTest(new Day11()::partOne, ("day11/%s").formatted(name));
   }
 
-  @ParameterizedTest
-  @ValueSource(strings = {"02"})
-  void testTwo(String name) throws Exception {
-    runTest(new Day11()::partTwo, "day11/%s".formatted(name));
+  @Test
+  void testPartOne() throws Exception {
+    runEncryptedTest(new Day11()::partOne, "day11/01");
+  }
+
+  @Test
+  void testPartTwo() throws Exception {
+    runEncryptedTest(new Day11()::partTwo, "day11/02");
   }
 }

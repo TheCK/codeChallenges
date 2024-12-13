@@ -1,4 +1,1 @@
-Frosting: capacity 4, durability -2, flavor 0, texture 0, calories 5
-Candy: capacity 0, durability 5, flavor -1, texture 0, calories 8
-Butterscotch: capacity -1, durability 0, flavor 5, texture 0, calories 6
-Sugar: capacity 0, durability 0, flavor -2, texture 2, calories 1
+DmNdxmwNqGHZKSQbbk90BA==@wpkpSIZwtwSiQxMNttczF8tbQirHH+jtDBFw3eyC223bI3iMiRmgL6mAG9ywcaqpSTBvlptBsoML8JySbtI/7ze175hu2W/8plYpTd3P9YyL4TzstXDdp+Q2FmelgyWJhrHC9ZksCDH8tcqZCTjVBFVOxMeEJQ5RPI0RZ7wp8uYm+Y9XbfCuydmd3ybsNGaq+VcizqDWneR3ImUBPN0hP9Q3OnNVZO0wS+9vojMPJGqf1KMxID9oAN4lpukgWC4q+DkRlfoOiX/PjcrkSxhI8rFj2xhg/0nNRYXy/2Le6dZ+27EiyMQ1C0wH2yA2VyvYPSI4iERGrS4zOSdLlNu7rFeJmjrFy5uRzuIRhvhLh1W9wmpvGy9SeAr6Jfj6XKmA9A==

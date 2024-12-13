@@ -1,10 +1,1 @@
-2503
-Vixen can fly 19 km/s for 7 seconds, but then must rest for 124 seconds.
-Rudolph can fly 3 km/s for 15 seconds, but then must rest for 28 seconds.
-Donner can fly 19 km/s for 9 seconds, but then must rest for 164 seconds.
-Blitzen can fly 19 km/s for 9 seconds, but then must rest for 158 seconds.
-Comet can fly 13 km/s for 7 seconds, but then must rest for 82 seconds.
-Cupid can fly 25 km/s for 6 seconds, but then must rest for 145 seconds.
-Dasher can fly 14 km/s for 3 seconds, but then must rest for 38 seconds.
-Dancer can fly 3 km/s for 16 seconds, but then must rest for 37 seconds.
-Prancer can fly 25 km/s for 6 seconds, but then must rest for 143 seconds.
+OXgGCce7u56fzoV7hY8gbw==@fV8njFskJSVSJQ7z5qbbnImoGm2TmeCY3otsjSPu6sswc155uWUo9IeYqVxfivc6lpxd92uhCPiq/3VqxTIEBs35ldS4shso6g4JRJIhIMvZG4moYw7M9CMDB8ammVJhqMgJU1jAKmRuebN7K0XYScdQOYl5uOSUnJX741zQN2AN3I0Yaw2g9YQF5Jnfu/NOND3iV2XB4xb0WT0zK7Arb/oJY5LfafgVkJa0AxljiD8XAXxx5tneE3prY8STHWtdyyRXf+XqToU2j1pqIYEA8L5fi+8l88FJFEv4Dua+3anyY41dR1+vLwNnIAZ7uAW1h6buO+9nHZrIRRmVsQxmU7bwSBWh7i0h8gBUXJaYwKRt0QAjg8CGfV4+LGtSa19rt+RyJX8n8ZvB1oxjjSa5MMtmDIR+RThyalKJIEV/qW+MdKs5B4d50pZijGgbMUiDGhTn5TTMmuYgBnnNLPvCZo1ax44GckA+cTtmbM5rZzb5tn3FfaN8fPw/1XadNiZDxT6KU7IBllVYOcWnF/9DqCl9YIeMswDuBQtW3RT4Bznftm8kyWWWeqIb6jj2IZPFM6gjb+/1mNxmOADRvmF13SZ+wxQDfsizrNyZ+VyK6YYlodQAuJWOHbxI0jAvw5DSBFn7vUQ5wB5sIM0cEn1jbdMH0J+6sf029ONqRRnaR5fiYjC1gTsPtTpKlmOPBBU9k6ZtQOrcNJVfCHvgxjzzfIoiMGNwzERXFlqTYhVXM1NzppDEOh/et7BP8HOF9r7igll5SOndMyKSWyfc7KlOUHTelryWvChQeY/wM6pBdwx8FSZ6TVw3GuXX05U1KMBaAj7un/JzW5ZdGU5/rKcYaMV3b/4a2K8pw9egzNv3fwRDgvfJknHERqt8NlXNe1gJyBj5UVpgOrD2og==

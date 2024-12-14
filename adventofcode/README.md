@@ -406,7 +406,7 @@
 [20162402tests]: src/test/java/org/ck/adventofcode/year2016/Day24Test.java
 [20162501tests]: src/test/java/org/ck/adventofcode/year2016/Day25Test.java
 
-# 2017 (20/20)
+# 2017 (22/22)
 
 |        # | Name                                                                | Solution                             | Test                              |
 |---------:|---------------------------------------------------------------------|:------------------------------------:|:---------------------------------:|
@@ -430,6 +430,8 @@
 | 20170902 | [Day 9: Stream Processing - Part 2][20170902]                       | &#9989;[&#128190;][20170902solution] | &#9989;[&#128190;][20170902tests] |
 | 20171001 | [Day 10: Knot Hash][20171001]                                       | &#9989;[&#128190;][20171001solution] | &#9989;[&#128190;][20171001tests] |
 | 20171002 | [Day 10: Knot Hash - Part 2][20171002]                              | &#9989;[&#128190;][20171002solution] | &#9989;[&#128190;][20171002tests] |
+| 20171101 | [Day 11: Hex Ed][20171101]                                          | &#9989;[&#128190;][20171101solution] | &#9989;[&#128190;][20171101tests] |
+| 20171102 | [Day 11: Hex Ed - Part 2][20171102]                                 | &#9989;[&#128190;][20171102solution] | &#9989;[&#128190;][20171102tests] |
 
 [20170101]: https://adventofcode.com/2017/day/1
 [20170102]: https://adventofcode.com/2017/day/1#part2
@@ -451,6 +453,8 @@
 [20170902]: https://adventofcode.com/2017/day/9#part2
 [20171001]: https://adventofcode.com/2017/day/10
 [20171002]: https://adventofcode.com/2017/day/10#part2
+[20171101]: https://adventofcode.com/2017/day/11
+[20171102]: https://adventofcode.com/2017/day/11#part2
 
 [20170101solution]: src/main/java/org/ck/adventofcode/year2017/Day01.java
 [20170102solution]: src/main/java/org/ck/adventofcode/year2017/Day01.java
@@ -472,6 +476,8 @@
 [20170902solution]: src/main/java/org/ck/adventofcode/year2017/Day09.java
 [20171001solution]: src/main/java/org/ck/adventofcode/year2017/Day10.java
 [20171002solution]: src/main/java/org/ck/adventofcode/year2017/Day10.java
+[20171101solution]: src/main/java/org/ck/adventofcode/year2017/Day11.java
+[20171102solution]: src/main/java/org/ck/adventofcode/year2017/Day11.java
 
 [20170101tests]: src/test/java/org/ck/adventofcode/year2017/Day01Test.java
 [20170102tests]: src/test/java/org/ck/adventofcode/year2017/Day01Test.java
@@ -493,6 +499,8 @@
 [20170902tests]: src/test/java/org/ck/adventofcode/year2017/Day09Test.java
 [20171001tests]: src/test/java/org/ck/adventofcode/year2017/Day10Test.java
 [20171002tests]: src/test/java/org/ck/adventofcode/year2017/Day10Test.java
+[20171101tests]: src/test/java/org/ck/adventofcode/year2017/Day11Test.java
+[20171102tests]: src/test/java/org/ck/adventofcode/year2017/Day11Test.java
 
 # 2019 (29/30)
 

@@ -6,14 +6,14 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 class Day08Test extends BaseAOCTest {
   @ParameterizedTest
-  @ValueSource(strings = {"01", "01a"})
-  void testOne(String name) throws Exception {
+  @ValueSource(strings = {"01a"})
+  void testPartOneExamples(final String name) throws Exception {
     runTest(new Day08()::partOne, "day08/%s".formatted(name));
   }
 
   @ParameterizedTest
-  @ValueSource(strings = {"02", "02a", "02b"})
-  void testTwo(String name) throws Exception {
+  @ValueSource(strings = {"02a", "02b"})
+  void testPartTwoExamples(final String name) throws Exception {
     runTest(new Day08()::partTwo, "day08/%s".formatted(name));
   }
 }

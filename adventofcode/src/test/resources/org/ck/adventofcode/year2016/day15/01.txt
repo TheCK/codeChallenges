@@ -1,6 +1,1 @@
-Disc #1 has 17 positions; at time=0, it is at position 5.
-Disc #2 has 19 positions; at time=0, it is at position 8.
-Disc #3 has 7 positions; at time=0, it is at position 1.
-Disc #4 has 13 positions; at time=0, it is at position 7.
-Disc #5 has 5 positions; at time=0, it is at position 1.
-Disc #6 has 3 positions; at time=0, it is at position 0.
+kss2/pjvuj5xfc9KGjepPQ==@UdzFJNxWuTW8eq8gdTPbt6K5vXQ23PEGD6UCkp2vMLVNEkGxzyRu9zqSrRLDtD7kykPCyFvgub+/CQ5iMgbun/S8nTwi6NkhITp2j6e9Rt4Nz3hMcLaZH86ipPOYyfPr7id2WC40v6ob72j3naI5GaN4t1Hu0cTzSxR59j2L5qdhlEh712TfT17zbHEBHfrKEhbQSpOKigBabAG9Ai8oScpAr7tYlCLsVRltCZaYM+dOI4AAM5VAspVhtEb4LA5hShqbIC/uXzmU0kSjp28vB9BB7z0+O0IH8pxmBd7hxl/cwrMPLW5ivEPA9QecqhJ8qd+ckZuOY878gTjJtzIfECOghVcWp1fUZngj9q63wtZHtFU8MzFiFavVPB7d94LWvNzEb46JrR0XpubjRI9ZUNq01eLkgDF0zlciS16dkZ01fTeLQADlsiEKMIYF5JjPNQpqnuAWd9VXPQSPY5VhBot6dv7fTzvs

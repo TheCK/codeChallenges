@@ -1,7 +1,1 @@
-Disc #1 has 17 positions; at time=0, it is at position 5.
-Disc #2 has 19 positions; at time=0, it is at position 8.
-Disc #3 has 7 positions; at time=0, it is at position 1.
-Disc #4 has 13 positions; at time=0, it is at position 7.
-Disc #5 has 5 positions; at time=0, it is at position 1.
-Disc #6 has 3 positions; at time=0, it is at position 0.
-Disc #7 has 11 positions; at time=0, it is at position 0.
+oZWJOHqeQxCwuEIH9VEcpQ==@cQPebNq/plf6mth1h7qP31Z7XY6qa6eBOSpDOJQxleckjNPGVaedowVOQcdxHoUM5/BYgbivef4iqjQhLCLyWqCVevay3+ADhIv1Ac3HSSFVfO/48LyAU/2IWngp/zh2W64nKBq9fHG38geDFSH8nV7FKcPxLTbzQXlGcWWppFTJGNpbFjTcETQBMhYPOQrHVNYonLubnMcE1mVW/X21iZcDwLf9wipmsRgXiXC/nJvTByLYQ1feQtSOVRGL+vO9vvbqvTQrdm8xVwT06BZmuUwrnCfvXlK2jEg27znjDdaTUdfb378WHWKh/o+JHUa+VLE7Db2PdV3rpQNzlSoIjhEy24PB+JUsc/edU67tyEsNOIRr5et1CqtwYYymjKP8ZHl8xHQEimtgSWL71ckBCujxHh2Xym5MBO5yjQ/t7QueoKo7m80w37k8JVl7nLW0if/tfhyTXo78UegGJU2ZdOX4a4B2XeRhgYCjSmHb8rg3rjaHRXWpxgev0K93A34r8DyWsPlu0bIEkpg1gar60xZ9kGHzQOftMoIKrwwOJRaahQ==

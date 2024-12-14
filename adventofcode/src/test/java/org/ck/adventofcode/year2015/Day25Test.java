@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class Day25Test extends BaseAOCTest {
   @Test
-  void testPartOne() throws Exception {
-    runEncryptedTest(new Day25()::partOne, "day25/01");
+  void testPartTwo() throws Exception {
+    // no part 2
   }
 }

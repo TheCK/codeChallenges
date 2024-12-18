@@ -89,6 +89,7 @@ public class Day18 extends AOCSolution {
         }
       }
 
+      previousPath.clear();
       Coordinate current = new Coordinate(gridSize, gridSize);
       while (current != null) {
         previousPath.add(current);

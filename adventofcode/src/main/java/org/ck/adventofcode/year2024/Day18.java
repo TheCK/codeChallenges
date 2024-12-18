@@ -16,11 +16,6 @@ import org.ck.codechallengelib.annotation.Solution;
     name = "Day 18: RAM Run - Part 2",
     url = "https://adventofcode.com/2024/day/18#part2",
     category = "2024")
-/// possible optimisations for part 2:
-/// <pre>
-///     - do a binary search on the remaining data packets
-///     - only calculate next path if the new corrupted packed is on the last optimal path
-/// </pre>
 public class Day18 extends AOCSolution {
 
   @Override
@@ -47,6 +42,7 @@ public class Day18 extends AOCSolution {
     }
 
     final Set<Coordinate> corrupted = packets.stream().limit(offset).collect(Collectors.toSet());
+    final Set<Coordinate> previousPath = new HashSet<>();
 
     boolean foundPath = initialFoundPath;
 
@@ -54,7 +50,14 @@ public class Day18 extends AOCSolution {
       foundPath = false;
       corrupted.add(packets.get(offset));
 
-      final Set<Coordinate> visited = new HashSet<>();
+      if (!previousPath.isEmpty() && !previousPath.contains(packets.get(offset))) {
+        foundPath = true;
+        ++offset;
+        continue;
+      }
+
+      final Map<Coordinate, Coordinate> origins = new HashMap<>();
+      origins.put(new Coordinate(0, 0), null);
 
       final Queue<State> queue = new PriorityQueue<>(Comparator.comparingInt(State::count));
       queue.add(new State(new Coordinate(0, 0), 0));
@@ -71,22 +74,25 @@ public class Day18 extends AOCSolution {
           break;
         }
 
-        if (!visited.contains(coordinate)) {
-          visited.add(coordinate);
-
-          for (final Coordinate next :
-              Set.of(
-                  new Coordinate(coordinate.x() + 1, coordinate.y()),
-                  new Coordinate(coordinate.x(), coordinate.y() + 1),
-                  new Coordinate(coordinate.x() - 1, coordinate.y()),
-                  new Coordinate(coordinate.x(), coordinate.y() - 1))) {
-            if (next.x() >= 0 && next.y() >= 0 && next.x() <= gridSize && next.y() <= gridSize) {
-              if (!visited.contains(next) && !corrupted.contains(next)) {
-                queue.add(new State(next, current.count() + 1));
-              }
+        for (final Coordinate next :
+            Set.of(
+                new Coordinate(coordinate.x() + 1, coordinate.y()),
+                new Coordinate(coordinate.x(), coordinate.y() + 1),
+                new Coordinate(coordinate.x() - 1, coordinate.y()),
+                new Coordinate(coordinate.x(), coordinate.y() - 1))) {
+          if (next.x() >= 0 && next.y() >= 0 && next.x() <= gridSize && next.y() <= gridSize) {
+            if (!origins.containsKey(next) && !corrupted.contains(next)) {
+              origins.put(next, coordinate);
+              queue.add(new State(next, current.count() + 1));
             }
           }
         }
+      }
+
+      Coordinate current = new Coordinate(gridSize, gridSize);
+      while (current != null) {
+        previousPath.add(current);
+        current = origins.get(current);
       }
 
       if (!foundPath && initialFoundPath) {

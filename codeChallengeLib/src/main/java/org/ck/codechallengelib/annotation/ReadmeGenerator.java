@@ -19,18 +19,20 @@ import javax.tools.Diagnostic.Kind;
 public class ReadmeGenerator extends AbstractProcessor {
 
   private static void processCategories(
-      FileWriter writer, Messager messager, Map<String, List<SolutionInfo>> byCategory)
+      final FileWriter writer,
+      final Messager messager,
+      final Map<String, List<SolutionInfo>> byCategory)
       throws IOException {
-    List<String> keys = new ArrayList<>(byCategory.keySet());
-    Collections.sort(keys);
+    final List<String> keys = byCategory.keySet().stream().sorted().toList();
 
-    for (String category : keys) {
-      Map<String, List<SolutionInfo>> bySubCategory =
+    for (final String category : keys) {
+      final Map<String, List<SolutionInfo>> bySubCategory =
           byCategory.get(category).stream()
-              .collect(Collectors.groupingBy(SolutionInfo::getSubCategory));
+              .collect(Collectors.groupingBy(SolutionInfo::subCategory));
 
-      int solved = (int) byCategory.get(category).stream().filter(SolutionInfo::isSolved).count();
-      int all = byCategory.get(category).size();
+      final int solved =
+          (int) byCategory.get(category).stream().filter(SolutionInfo::solved).count();
+      final int all = byCategory.get(category).size();
 
       write(writer, messager, getHeading(category, solved, all));
 
@@ -38,21 +40,22 @@ public class ReadmeGenerator extends AbstractProcessor {
     }
   }
 
-  private static String getHeading(String category, int solved, int all) {
+  private static String getHeading(final String category, final int solved, final int all) {
     return String.format("# %s (%d/%d)", category, solved, all);
   }
 
   private static void processSubCategories(
-      FileWriter writer, Messager messager, Map<String, List<SolutionInfo>> bySubCategory)
+      final FileWriter writer,
+      final Messager messager,
+      final Map<String, List<SolutionInfo>> bySubCategory)
       throws IOException {
-    List<String> subCategories = new ArrayList<>(bySubCategory.keySet());
-    Collections.sort(subCategories);
+    final List<String> subCategories = bySubCategory.keySet().stream().sorted().toList();
 
-    for (String subCategory : subCategories) {
-      List<SolutionInfo> infosInThisSubCategory = bySubCategory.get(subCategory);
-      Collections.sort(infosInThisSubCategory);
+    for (final String subCategory : subCategories) {
+      final List<SolutionInfo> infosInThisSubCategory =
+          bySubCategory.get(subCategory).stream().sorted().toList();
 
-      int solved = (int) infosInThisSubCategory.stream().filter(SolutionInfo::isSolved).count();
+      final int solved = (int) infosInThisSubCategory.stream().filter(SolutionInfo::solved).count();
 
       if (!"".equals(subCategory)) {
         write(writer, messager, getSubHeading(subCategory, solved, infosInThisSubCategory.size()));
@@ -63,17 +66,18 @@ public class ReadmeGenerator extends AbstractProcessor {
       int maxDescriptionLength = 0;
       int maxTagLength = 0;
 
-      for (SolutionInfo info : infosInThisSubCategory) {
-        maxIdlength = Math.max(maxIdlength, info.getId().toString().length());
-        maxNameLength = Math.max(maxNameLength, info.getName().length());
-        maxDescriptionLength = Math.max(maxDescriptionLength, info.getDescription().length());
-        maxTagLength = Math.max(maxTagLength, String.join(" <br> ", info.getTags()).length());
+      for (final SolutionInfo info : infosInThisSubCategory) {
+        maxIdlength = Math.max(maxIdlength, info.id().toString().length());
+        maxNameLength = Math.max(maxNameLength, info.name().length());
+        maxDescriptionLength = Math.max(maxDescriptionLength, info.description().length());
+        maxTagLength = Math.max(maxTagLength, String.join(" <br> ", info.tags()).length());
       }
 
       maxIdlength = Math.max(maxIdlength, 2);
 
-      String formatString =
+      final String formatString =
           getTableFormatString(maxIdlength, maxNameLength, maxDescriptionLength, maxTagLength);
+      System.err.println(formatString);
 
       write(writer, messager, "");
       write(writer, messager, getTableHeadline(formatString));
@@ -83,25 +87,25 @@ public class ReadmeGenerator extends AbstractProcessor {
           messager,
           getTableFormatLine(maxIdlength, maxNameLength, maxDescriptionLength, maxTagLength));
 
-      for (SolutionInfo info : infosInThisSubCategory) {
+      for (final SolutionInfo info : infosInThisSubCategory) {
         write(writer, messager, getTableRow(formatString, info));
       }
 
       write(writer, messager, "");
 
-      for (SolutionInfo info : infosInThisSubCategory) {
+      for (final SolutionInfo info : infosInThisSubCategory) {
         write(writer, messager, getLinkLine(info));
       }
 
       write(writer, messager, "");
 
-      for (SolutionInfo info : infosInThisSubCategory) {
+      for (final SolutionInfo info : infosInThisSubCategory) {
         write(writer, messager, getSolutionLinkLine(info));
       }
 
       write(writer, messager, "");
 
-      for (SolutionInfo info : infosInThisSubCategory) {
+      for (final SolutionInfo info : infosInThisSubCategory) {
         write(writer, messager, getTestsLinkLine(info));
       }
 
@@ -109,75 +113,65 @@ public class ReadmeGenerator extends AbstractProcessor {
     }
   }
 
-  private static String getTestsLinkLine(SolutionInfo info) {
-    return String.format("[%stests]: %s", info.getId(), info.getTestPath());
+  private static String getTestsLinkLine(final SolutionInfo info) {
+    return String.format("[%stests]: %s", info.id(), info.getTestPath());
   }
 
-  private static String getSolutionLinkLine(SolutionInfo info) {
-    return String.format("[%ssolution]: %s", info.getId(), info.getSolutionPath());
+  private static String getSolutionLinkLine(final SolutionInfo info) {
+    return String.format("[%ssolution]: %s", info.id(), info.getSolutionPath());
   }
 
-  private static String getLinkLine(SolutionInfo info) {
-    return String.format("[%s]: %s", info.getId(), info.getUrl());
+  private static String getLinkLine(final SolutionInfo info) {
+    return String.format("[%s]: %s", info.id(), info.url());
   }
 
-  private static String getTableRow(String formatString, SolutionInfo info) {
-    String name = info.getName();
-    String description = String.format("[%s][%s]", info.getDescription(), info.getId());
-    String solution = String.format("[&#128190;][%ssolution]", info.getId());
-    String tests = String.format("[&#128190;][%stests]", info.getId());
-    if (info.isSolved()) {
-      solution = "&#9989;" + solution;
-      tests = "&#9989;" + tests;
-    }
-    if ("".equals(info.getDescription())) {
-      name = String.format("[%s][%s]", info.getName(), info.getId());
-    }
+  private static String getTableRow(final String formatString, final SolutionInfo info) {
+    final String name = String.format("[%s][%s]", info.name(), info.id());
+    final String description = info.description();
+    final String solution =
+        String.format("%s[&#128190;][%ssolution]", info.solved() ? "&#9989;" : "", info.id());
+    final String tests =
+        String.format("%s[&#128190;][%stests]", info.solved() ? "&#9989;" : "", info.id());
 
     return String.format(
         formatString,
-        info.getId(),
+        info.id(),
         name,
         description,
-        String.join(" <br> ", info.getTags()),
+        String.join(" <br> ", info.tags()),
         solution,
         tests);
   }
 
   private static String getTableFormatLine(
-      int idLength, int nameLength, int descriptionLength, int tagLength) {
-    int actualDescriptionLength = descriptionLength;
-    int actualNameLength = nameLength;
-    int solutionLength = idLength + 28;
-    int testsLength = idLength + 25;
+      final int idLength, final int nameLength, final int descriptionLength, final int tagLength) {
+    final int actualNameLength = nameLength + idLength + 4;
+    final int solutionLength = idLength + 28;
+    final int testsLength = idLength + 25;
 
-    String formatString;
+    final String formatString;
 
-    if (actualDescriptionLength != 0 && tagLength != 0) {
-      actualDescriptionLength += idLength + 4;
+    if (descriptionLength != 0 && tagLength != 0) {
       formatString =
           String.format(
               "| %%1$%ds:| %%2$-%ds | %%3$-%ds | %%4$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
               idLength,
               actualNameLength,
-              actualDescriptionLength,
+              descriptionLength,
               tagLength,
               solutionLength,
               testsLength);
-    } else if (actualDescriptionLength != 0) {
-      actualDescriptionLength += idLength + 4;
+    } else if (descriptionLength != 0) {
       formatString =
           String.format(
               "| %%1$%ds:| %%2$-%ds | %%3$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
-              idLength, actualNameLength, actualDescriptionLength, solutionLength, testsLength);
+              idLength, actualNameLength, descriptionLength, solutionLength, testsLength);
     } else if (tagLength != 0) {
-      actualNameLength += idLength + 4;
       formatString =
           String.format(
               "| %%1$%ds:| %%2$-%ds | %%4$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
               idLength, actualNameLength, tagLength, solutionLength, testsLength);
     } else {
-      actualNameLength += idLength + 4;
       formatString =
           String.format(
               "| %%1$%ds:| %%2$-%ds |:%%5$-%ds:|:%%6$-%ds:|",
@@ -187,60 +181,55 @@ public class ReadmeGenerator extends AbstractProcessor {
     return String.format(formatString, "", "", "", "", "", "").replace(' ', '-');
   }
 
-  private static String getTableHeadline(String formatString) {
+  private static String getTableHeadline(final String formatString) {
     return String.format(formatString, "#", "Name", "Description", "Tags", "Solution", "Test");
   }
 
   private static String getTableFormatString(
-      int idlength, int nameLength, int descriptionLength, int tagLength) {
-    int actualDescriptionLength = descriptionLength;
-    int actualNameLength = nameLength;
-    int solutionLength = idlength + 28;
-    int testsLength = idlength + 25;
+      final int idLength, final int nameLength, final int descriptionLength, final int tagLength) {
+    final int actualNameLength = nameLength + idLength + 4;
+    final int solutionLength = idLength + 28;
+    final int testsLength = idLength + 25;
 
-    String formatString;
+    final String formatString;
 
-    if (actualDescriptionLength != 0 && tagLength != 0) {
-      actualDescriptionLength += idlength + 4;
+    if (descriptionLength != 0 && tagLength != 0) {
       formatString =
           String.format(
               "| %%1$%ds | %%2$-%ds | %%3$-%ds | %%4$-%ds | %%5$-%ds | %%6$-%ds |",
-              idlength,
+              idLength,
               actualNameLength,
-              actualDescriptionLength,
+              descriptionLength,
               tagLength,
               solutionLength,
               testsLength);
-    } else if (actualDescriptionLength != 0) {
-      actualDescriptionLength += idlength + 4;
+    } else if (descriptionLength != 0) {
       formatString =
           String.format(
               "| %%1$%ds | %%2$-%ds | %%3$-%ds | %%5$-%ds | %%6$-%ds |",
-              idlength, actualNameLength, actualDescriptionLength, solutionLength, testsLength);
+              idLength, actualNameLength, descriptionLength, solutionLength, testsLength);
 
     } else if (tagLength != 0) {
-      actualNameLength += idlength + 4;
       formatString =
           String.format(
               "| %%1$%ds | %%2$-%ds | %%4$-%ds | %%5$-%ds | %%6$-%ds |",
-              idlength, actualNameLength, tagLength, solutionLength, testsLength);
+              idLength, actualNameLength, tagLength, solutionLength, testsLength);
 
     } else {
-      actualNameLength += idlength + 4;
       formatString =
           String.format(
               "| %%1$%ds | %%2$-%ds | %%5$-%ds | %%6$-%ds |",
-              idlength, actualNameLength, solutionLength, testsLength);
+              idLength, actualNameLength, solutionLength, testsLength);
     }
 
     return formatString;
   }
 
-  private static String getSubHeading(String subCategory, int solved, int all) {
+  private static String getSubHeading(final String subCategory, final int solved, final int all) {
     return String.format("%n## %s (%d/%d)", subCategory, solved, all);
   }
 
-  private static void write(FileWriter writer, Messager messager, String message)
+  private static void write(final FileWriter writer, final Messager messager, final String message)
       throws IOException {
     messager.printMessage(Kind.NOTE, message);
     writer.write(message + "\n");
@@ -249,22 +238,20 @@ public class ReadmeGenerator extends AbstractProcessor {
   @Override
   public boolean process(Set<? extends TypeElement> typeElements, RoundEnvironment environment) {
     if (!environment.processingOver()) {
-      File file = new File("README.md");
+      final File file = new File("README.md");
 
       try {
         if (file.exists()) {
           Files.delete(file.toPath());
         }
 
-        try (FileWriter writer = new FileWriter(file, true)) {
-          Messager messager = this.processingEnv.getMessager();
+        try (final FileWriter writer = new FileWriter(file, true)) {
+          final Messager messager = this.processingEnv.getMessager();
 
-          List<SolutionInfo> infos = getAllInfos(environment);
+          final List<SolutionInfo> infos = getAllInfos(environment);
 
-          Collections.sort(infos);
-
-          Map<String, List<SolutionInfo>> byCategory =
-              infos.stream().collect(Collectors.groupingBy(SolutionInfo::getCategory));
+          final Map<String, List<SolutionInfo>> byCategory =
+              infos.stream().collect(Collectors.groupingBy(SolutionInfo::category));
 
           processCategories(writer, messager, byCategory);
         }
@@ -276,44 +263,48 @@ public class ReadmeGenerator extends AbstractProcessor {
     return true;
   }
 
-  private List<SolutionInfo> getAllInfos(RoundEnvironment environment) {
-    List<SolutionInfo> infos = new ArrayList<>();
+  private static List<SolutionInfo> getAllInfos(final RoundEnvironment environment) {
+    final Queue<SolutionInfo> infos = new PriorityQueue<>();
 
-    for (Element element : environment.getElementsAnnotatedWith(Solution.class)) {
-      Solution solution = element.getAnnotation(Solution.class);
+    for (final Element element : environment.getElementsAnnotatedWith(Solution.class)) {
+      final Solution solution = element.getAnnotation(Solution.class);
 
       infos.add(
           new SolutionInfo(
               solution.id(),
               solution.name(),
-              solution.description(),
+              escapeString(solution.description()),
               solution.url(),
               solution.category(),
               solution.subCategory(),
-              solution.tags(),
+              Arrays.asList(solution.tags()),
               solution.solved(),
               ((TypeElement) element).getQualifiedName().toString()));
     }
 
-    for (Element element : environment.getElementsAnnotatedWith(Solutions.class)) {
-      Solutions solutions = element.getAnnotation(Solutions.class);
+    for (final Element element : environment.getElementsAnnotatedWith(Solutions.class)) {
+      final Solutions solutions = element.getAnnotation(Solutions.class);
 
-      for (Solution solution : solutions.value()) {
+      for (final Solution solution : solutions.value()) {
         infos.add(
             new SolutionInfo(
                 solution.id(),
                 solution.name(),
-                solution.description(),
+                escapeString(solution.description()),
                 solution.url(),
                 solution.category(),
                 solution.subCategory(),
-                solution.tags(),
+                Arrays.asList(solution.tags()),
                 solution.solved(),
                 ((TypeElement) element).getQualifiedName().toString()));
       }
     }
 
-    return infos;
+    return infos.stream().toList();
+  }
+
+  private static String escapeString(final String string) {
+    return string.replace("|", "&#124;").replace("[", "&#91;").replace("]", "&#93;");
   }
 
   @Override
@@ -321,81 +312,17 @@ public class ReadmeGenerator extends AbstractProcessor {
     return SourceVersion.latestSupported();
   }
 
-  private static class SolutionInfo implements Comparable<SolutionInfo> {
-    Integer id;
-
-    String name;
-    String description;
-    String url;
-
-    String category;
-    String subCategory;
-
-    String[] tags;
-
-    boolean solved;
-
-    String fullyQualifiedName;
-
-    public SolutionInfo(
-        int id,
-        String name,
-        String description,
-        String url,
-        String category,
-        String subCategory,
-        String[] tags,
-        boolean solved,
-        String fullyQualifiedName) {
-      this.id = id;
-
-      this.name = name;
-      this.description =
-          description.replace("|", "&#124;").replace("[", "&#91;").replace("]", "&#93;");
-      this.url = url;
-
-      this.category = category;
-      this.subCategory = subCategory;
-
-      this.tags = tags;
-
-      this.solved = solved;
-
-      this.fullyQualifiedName = fullyQualifiedName;
-    }
-
-    public Integer getId() {
-      return this.id;
-    }
-
-    public String getName() {
-      return this.name;
-    }
-
-    public String getDescription() {
-      return this.description;
-    }
-
-    public String getUrl() {
-      return this.url;
-    }
-
-    public String getCategory() {
-      return this.category;
-    }
-
-    public String getSubCategory() {
-      return this.subCategory;
-    }
-
-    public String[] getTags() {
-      return this.tags;
-    }
-
-    public boolean isSolved() {
-      return this.solved;
-    }
-
+  private record SolutionInfo(
+      Integer id,
+      String name,
+      String description,
+      String url,
+      String category,
+      String subCategory,
+      List<String> tags,
+      boolean solved,
+      String fullyQualifiedName)
+      implements Comparable<SolutionInfo> {
     public String getSolutionPath() {
       return String.format("%s.java", getFullPath("main"));
     }
@@ -409,12 +336,12 @@ public class ReadmeGenerator extends AbstractProcessor {
     }
 
     private String getNameAsPath() {
-      return this.fullyQualifiedName.replace('.', '/');
+      return fullyQualifiedName.replace('.', '/');
     }
 
     @Override
     public int compareTo(SolutionInfo other) {
-      return this.id.compareTo(other.id);
+      return id.compareTo(other.id);
     }
   }
 }

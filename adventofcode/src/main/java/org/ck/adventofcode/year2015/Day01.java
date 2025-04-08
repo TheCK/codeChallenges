@@ -1,8 +1,9 @@
 package org.ck.adventofcode.year2015;
 
 import java.util.Scanner;
-import java.util.function.IntBinaryOperator;
 import java.util.function.IntPredicate;
+import java.util.function.ToIntFunction;
+import java.util.stream.Gatherer;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -19,31 +20,41 @@ import org.ck.codechallengelib.annotation.Solution;
 public class Day01 extends AOCSolution {
   @Override
   protected void runPartOne(final Scanner in) {
-    run(in, (floor) -> false, (floor, position) -> floor);
+    run(in, _ -> true, state -> state.floor);
   }
 
   @Override
   protected void runPartTwo(final Scanner in) {
-    run(in, (floor) -> floor < 0, (floor, position) -> position);
+    run(in, floor -> floor >= 0, state -> state.position - 1);
   }
 
   private void run(
-      final Scanner in, final IntPredicate getBreakCondition, final IntBinaryOperator getResult) {
-    int floor = 0;
-    int position = 1;
+      final Scanner in,
+      final IntPredicate getBreakCondition,
+      final ToIntFunction<State> getResult) {
+    in.nextLine()
+        .chars()
+        .boxed()
+        .gather(
+            Gatherer.ofSequential(
+                () -> new State(0, 1),
+                (state, element, _) -> {
+                  state.floor += element == '(' ? 1 : -1;
+                  state.position += 1;
 
-    final String path = in.nextLine();
+                  return getBreakCondition.test(state.floor);
+                },
+                (state, downstream) -> downstream.push(getResult.applyAsInt(state))))
+        .forEach(this::print);
+  }
 
-    for (char command : path.toCharArray()) {
-      floor += command == '(' ? 1 : -1;
+  private static final class State {
+    private int floor;
+    private int position;
 
-      if (getBreakCondition.test(floor)) {
-        break;
-      }
-
-      ++position;
+    public State(final int floor, final int position) {
+      this.floor = floor;
+      this.position = position;
     }
-
-    print(getResult.applyAsInt(floor, position));
   }
 }

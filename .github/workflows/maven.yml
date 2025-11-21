@@ -20,6 +20,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      - name: Add focal-security repo
+        run: sudo echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" > /etc/apt/sources.list.d/ubuntu-focal-sources.list
+      - name: Update packages
+        run: sudo apt-get update
       - name: Install libncurses5
         run: sudo apt-get install -y libncurses5
       - name: Set up JDK 25

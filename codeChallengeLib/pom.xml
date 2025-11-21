@@ -10,9 +10,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
-        <compiler.version>3.11.0</compiler.version>
-        <spottless.version>2.40.0</spottless.version>
+        <java.version>25</java.version>
+        <compiler.version>3.14.1</compiler.version>
+        <spottless.version>3.0.0</spottless.version>
     </properties>
 
     <build>
@@ -53,25 +53,25 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.10.0</version>
+            <version>6.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>ch.vorburger.mariaDB4j</groupId>
             <artifactId>mariaDB4j</artifactId>
-            <version>3.0.1</version>
+            <version>3.3.0</version>
         </dependency>
 
         <dependency>
             <groupId>commons-dbutils</groupId>
             <artifactId>commons-dbutils</artifactId>
-            <version>1.7</version>
+            <version>1.8.1</version>
         </dependency>
 
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>3.2.0</version>
+            <version>3.5.6</version>
         </dependency>
     </dependencies>
 </project>

@@ -2,7 +2,6 @@ package org.ck.adventofcode.year2023;
 
 import java.util.*;
 import java.util.function.ToLongFunction;
-import java.util.stream.Collectors;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -48,11 +47,11 @@ public class Day20 extends AOCSolution {
     run(
         in,
         (modules, cycles, rxLow) -> {
-          System.err.println(
-              modules.stream()
-                  .filter(module -> !module.isDefault())
-                  .map(Module::getName)
-                  .collect(Collectors.joining(", ")));
+          // System.err.println(
+          //     modules.stream()
+          //         .filter(module -> !module.isDefault())
+          //         .map(Module::getName)
+          //         .collect(Collectors.joining(", ")));
 
           return rxLow != 1;
         },

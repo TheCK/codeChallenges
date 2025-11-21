@@ -1,5 +1,7 @@
 package org.ck.adventofcode.year2024;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.ck.adventofcode.util.BaseAOCTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -14,8 +16,9 @@ class Day24Test extends BaseAOCTest {
   }
 
   @Test
-  @Disabled
-  void testPartTwo() throws Exception {
-    // not working yet
+  @Disabled("does not work yet")
+  @Override
+  protected void testPartTwo() throws Exception {
+    assertTrue(true);
   }
 }

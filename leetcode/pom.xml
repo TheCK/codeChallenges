@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>org.ck</groupId>
     <artifactId>leetcode</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -10,10 +10,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
-        <compiler.version>3.11.0</compiler.version>
-        <surefire.version>3.1.2</surefire.version>
-        <spottless.version>2.40.0</spottless.version>
+        <java.version>25</java.version>
+        <compiler.version>3.14.1</compiler.version>
+        <surefire.version>3.5.4</surefire.version>
+        <spottless.version>3.0.0</spottless.version>
     </properties>
 
     <build>

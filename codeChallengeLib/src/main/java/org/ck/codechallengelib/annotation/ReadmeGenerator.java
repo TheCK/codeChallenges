@@ -77,7 +77,6 @@ public class ReadmeGenerator extends AbstractProcessor {
 
       final String formatString =
           getTableFormatString(maxIdlength, maxNameLength, maxDescriptionLength, maxTagLength);
-      System.err.println(formatString);
 
       write(writer, messager, "");
       write(writer, messager, getTableHeadline(formatString));

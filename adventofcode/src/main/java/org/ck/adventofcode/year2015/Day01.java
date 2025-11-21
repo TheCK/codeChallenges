@@ -3,7 +3,7 @@ package org.ck.adventofcode.year2015;
 import java.util.Scanner;
 import java.util.function.IntPredicate;
 import java.util.function.ToIntFunction;
-import java.util.stream.Gatherer;
+import java.util.stream.Collector;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -30,22 +30,26 @@ public class Day01 extends AOCSolution {
 
   private void run(
       final Scanner in,
-      final IntPredicate getBreakCondition,
+      final IntPredicate continueCondition,
       final ToIntFunction<State> getResult) {
-    in.nextLine()
-        .chars()
-        .boxed()
-        .gather(
-            Gatherer.ofSequential(
-                () -> new State(0, 1),
-                (state, element, _) -> {
-                  state.floor += element == '(' ? 1 : -1;
-                  state.position += 1;
+    final State state = new State(0, 1);
 
-                  return getBreakCondition.test(state.floor);
-                },
-                (state, downstream) -> downstream.push(getResult.applyAsInt(state))))
-        .forEach(this::print);
+    print(
+        in.nextLine()
+            .chars()
+            .boxed()
+            .takeWhile(_ -> continueCondition.test(state.floor))
+            .collect(
+                Collector.of(
+                    () -> state,
+                    Day01::moveElevator,
+                    (_, _) -> null,
+                    _ -> getResult.applyAsInt(state))));
+  }
+
+  private static void moveElevator(final State state, final int element) {
+    state.floor += element == '(' ? 1 : -1;
+    state.position += 1;
   }
 
   private static final class State {

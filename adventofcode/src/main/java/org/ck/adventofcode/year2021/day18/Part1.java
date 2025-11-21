@@ -30,7 +30,7 @@ public class Part1 {
         checkAndApplyRules(root);
       }
 
-      System.err.println(root.toString());
+      // System.err.println(root.toString());
       System.out.println(root.getMagnitude());
     }
   }

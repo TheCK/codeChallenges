@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 
 public abstract class BaseAOCTest extends BaseTest {
   @Test
-  void testPartOne() throws Exception {
+  protected void testPartOne() throws Exception {
     final AOCSolution solution = getSolution();
     runRealInputTest(solution, solution::partOne, "01");
   }
 
   @Test
-  void testPartTwo() throws Exception {
+  protected void testPartTwo() throws Exception {
     final AOCSolution solution = getSolution();
     runRealInputTest(solution, solution::partTwo, "02");
   }

@@ -1,5 +1,7 @@
 package org.ck.adventofcode.year2024;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.ck.adventofcode.util.BaseAOCTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,7 +15,9 @@ class Day25Test extends BaseAOCTest {
   }
 
   @Test
-  void testPartTwo() throws Exception {
+  @Override
+  protected void testPartTwo() throws Exception {
     // no part 2
+    assertTrue(true);
   }
 }

@@ -51,3 +51,4 @@ jobs:
         uses: github/codeql-action/upload-sarif@main
         with:
           sarif_file: results.sarif
+          category: Codacy Security Scan

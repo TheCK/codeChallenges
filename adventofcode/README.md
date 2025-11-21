@@ -1658,3 +1658,107 @@
 [20242402tests]: src/test/java/org/ck/adventofcode/year2024/Day24Test.java
 [20242501tests]: src/test/java/org/ck/adventofcode/year2024/Day25Test.java
 
+# 2025 (0/24)
+
+|        # | Name                          | Solution                             | Test                              |
+|---------:|-------------------------------|:------------------------------------:|:---------------------------------:|
+| 20250101 | [Day 1: ][20250101]           | [&#128190;][20250101solution]        | [&#128190;][20250101tests]        |
+| 20250102 | [Day 1:  - Part 2][20250102]  | [&#128190;][20250102solution]        | [&#128190;][20250102tests]        |
+| 20250201 | [Day 2: ][20250201]           | [&#128190;][20250201solution]        | [&#128190;][20250201tests]        |
+| 20250202 | [Day 2:  - Part 2][20250202]  | [&#128190;][20250202solution]        | [&#128190;][20250202tests]        |
+| 20250301 | [Day 3: ][20250301]           | [&#128190;][20250301solution]        | [&#128190;][20250301tests]        |
+| 20250302 | [Day 3:  - Part 2][20250302]  | [&#128190;][20250302solution]        | [&#128190;][20250302tests]        |
+| 20250401 | [Day 4: ][20250401]           | [&#128190;][20250401solution]        | [&#128190;][20250401tests]        |
+| 20250402 | [Day 4:  - Part 2][20250402]  | [&#128190;][20250402solution]        | [&#128190;][20250402tests]        |
+| 20250501 | [Day 5: ][20250501]           | [&#128190;][20250501solution]        | [&#128190;][20250501tests]        |
+| 20250502 | [Day 5:  - Part 2][20250502]  | [&#128190;][20250502solution]        | [&#128190;][20250502tests]        |
+| 20250601 | [Day 6: ][20250601]           | [&#128190;][20250601solution]        | [&#128190;][20250601tests]        |
+| 20250602 | [Day 6:  - Part 2][20250602]  | [&#128190;][20250602solution]        | [&#128190;][20250602tests]        |
+| 20250701 | [Day 7: ][20250701]           | [&#128190;][20250701solution]        | [&#128190;][20250701tests]        |
+| 20250702 | [Day 7:  - Part 2][20250702]  | [&#128190;][20250702solution]        | [&#128190;][20250702tests]        |
+| 20250801 | [Day 8: ][20250801]           | [&#128190;][20250801solution]        | [&#128190;][20250801tests]        |
+| 20250802 | [Day 8:  - Part 2][20250802]  | [&#128190;][20250802solution]        | [&#128190;][20250802tests]        |
+| 20250901 | [Day 9: ][20250901]           | [&#128190;][20250901solution]        | [&#128190;][20250901tests]        |
+| 20250902 | [Day 9:  - Part 2][20250902]  | [&#128190;][20250902solution]        | [&#128190;][20250902tests]        |
+| 20251001 | [Day 10: ][20251001]          | [&#128190;][20251001solution]        | [&#128190;][20251001tests]        |
+| 20251002 | [Day 10:  - Part 2][20251002] | [&#128190;][20251002solution]        | [&#128190;][20251002tests]        |
+| 20251101 | [Day 11: ][20251101]          | [&#128190;][20251101solution]        | [&#128190;][20251101tests]        |
+| 20251102 | [Day 11:  - Part 2][20251102] | [&#128190;][20251102solution]        | [&#128190;][20251102tests]        |
+| 20251201 | [Day 12: ][20251201]          | [&#128190;][20251201solution]        | [&#128190;][20251201tests]        |
+| 20251202 | [Day 12:  - Part 2][20251202] | [&#128190;][20251202solution]        | [&#128190;][20251202tests]        |
+
+[20250101]: https://adventofcode.com/2025/day/1
+[20250102]: https://adventofcode.com/2025/day/1#part2
+[20250201]: https://adventofcode.com/2025/day/2
+[20250202]: https://adventofcode.com/2025/day/2#part2
+[20250301]: https://adventofcode.com/2025/day/3
+[20250302]: https://adventofcode.com/2025/day/3#part2
+[20250401]: https://adventofcode.com/2025/day/4
+[20250402]: https://adventofcode.com/2025/day/4#part2
+[20250501]: https://adventofcode.com/2025/day/5
+[20250502]: https://adventofcode.com/2025/day/5#part2
+[20250601]: https://adventofcode.com/2025/day/6
+[20250602]: https://adventofcode.com/2025/day/6#part2
+[20250701]: https://adventofcode.com/2025/day/7
+[20250702]: https://adventofcode.com/2025/day/7#part2
+[20250801]: https://adventofcode.com/2025/day/8
+[20250802]: https://adventofcode.com/2025/day/8#part2
+[20250901]: https://adventofcode.com/2025/day/9
+[20250902]: https://adventofcode.com/2025/day/9#part2
+[20251001]: https://adventofcode.com/2025/day/10
+[20251002]: https://adventofcode.com/2025/day/10#part2
+[20251101]: https://adventofcode.com/2025/day/11
+[20251102]: https://adventofcode.com/2025/day/11#part2
+[20251201]: https://adventofcode.com/2025/day/12
+[20251202]: https://adventofcode.com/2025/day/12#part2
+
+[20250101solution]: src/main/java/org/ck/adventofcode/year2025/Day01.java
+[20250102solution]: src/main/java/org/ck/adventofcode/year2025/Day01.java
+[20250201solution]: src/main/java/org/ck/adventofcode/year2025/Day02.java
+[20250202solution]: src/main/java/org/ck/adventofcode/year2025/Day02.java
+[20250301solution]: src/main/java/org/ck/adventofcode/year2025/Day03.java
+[20250302solution]: src/main/java/org/ck/adventofcode/year2025/Day03.java
+[20250401solution]: src/main/java/org/ck/adventofcode/year2025/Day04.java
+[20250402solution]: src/main/java/org/ck/adventofcode/year2025/Day04.java
+[20250501solution]: src/main/java/org/ck/adventofcode/year2025/Day05.java
+[20250502solution]: src/main/java/org/ck/adventofcode/year2025/Day05.java
+[20250601solution]: src/main/java/org/ck/adventofcode/year2025/Day06.java
+[20250602solution]: src/main/java/org/ck/adventofcode/year2025/Day06.java
+[20250701solution]: src/main/java/org/ck/adventofcode/year2025/Day07.java
+[20250702solution]: src/main/java/org/ck/adventofcode/year2025/Day07.java
+[20250801solution]: src/main/java/org/ck/adventofcode/year2025/Day08.java
+[20250802solution]: src/main/java/org/ck/adventofcode/year2025/Day08.java
+[20250901solution]: src/main/java/org/ck/adventofcode/year2025/Day09.java
+[20250902solution]: src/main/java/org/ck/adventofcode/year2025/Day09.java
+[20251001solution]: src/main/java/org/ck/adventofcode/year2025/Day10.java
+[20251002solution]: src/main/java/org/ck/adventofcode/year2025/Day10.java
+[20251101solution]: src/main/java/org/ck/adventofcode/year2025/Day11.java
+[20251102solution]: src/main/java/org/ck/adventofcode/year2025/Day11.java
+[20251201solution]: src/main/java/org/ck/adventofcode/year2025/Day12.java
+[20251202solution]: src/main/java/org/ck/adventofcode/year2025/Day12.java
+
+[20250101tests]: src/test/java/org/ck/adventofcode/year2025/Day01Test.java
+[20250102tests]: src/test/java/org/ck/adventofcode/year2025/Day01Test.java
+[20250201tests]: src/test/java/org/ck/adventofcode/year2025/Day02Test.java
+[20250202tests]: src/test/java/org/ck/adventofcode/year2025/Day02Test.java
+[20250301tests]: src/test/java/org/ck/adventofcode/year2025/Day03Test.java
+[20250302tests]: src/test/java/org/ck/adventofcode/year2025/Day03Test.java
+[20250401tests]: src/test/java/org/ck/adventofcode/year2025/Day04Test.java
+[20250402tests]: src/test/java/org/ck/adventofcode/year2025/Day04Test.java
+[20250501tests]: src/test/java/org/ck/adventofcode/year2025/Day05Test.java
+[20250502tests]: src/test/java/org/ck/adventofcode/year2025/Day05Test.java
+[20250601tests]: src/test/java/org/ck/adventofcode/year2025/Day06Test.java
+[20250602tests]: src/test/java/org/ck/adventofcode/year2025/Day06Test.java
+[20250701tests]: src/test/java/org/ck/adventofcode/year2025/Day07Test.java
+[20250702tests]: src/test/java/org/ck/adventofcode/year2025/Day07Test.java
+[20250801tests]: src/test/java/org/ck/adventofcode/year2025/Day08Test.java
+[20250802tests]: src/test/java/org/ck/adventofcode/year2025/Day08Test.java
+[20250901tests]: src/test/java/org/ck/adventofcode/year2025/Day09Test.java
+[20250902tests]: src/test/java/org/ck/adventofcode/year2025/Day09Test.java
+[20251001tests]: src/test/java/org/ck/adventofcode/year2025/Day10Test.java
+[20251002tests]: src/test/java/org/ck/adventofcode/year2025/Day10Test.java
+[20251101tests]: src/test/java/org/ck/adventofcode/year2025/Day11Test.java
+[20251102tests]: src/test/java/org/ck/adventofcode/year2025/Day11Test.java
+[20251201tests]: src/test/java/org/ck/adventofcode/year2025/Day12Test.java
+[20251202tests]: src/test/java/org/ck/adventofcode/year2025/Day12Test.java
+

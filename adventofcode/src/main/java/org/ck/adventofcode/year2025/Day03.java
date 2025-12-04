@@ -47,7 +47,7 @@ public class Day03 extends AOCSolution {
         }
 
         startIndex = maxIndex + 1;
-        currentJolts += maxValue * (long) Math.pow(10, battery);
+        currentJolts = 10 * currentJolts + maxValue;
       }
 
       jolts += currentJolts;

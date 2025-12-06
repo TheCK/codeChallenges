@@ -1,7 +1,8 @@
 package org.ck.adventofcode.year2025;
 
 import java.util.*;
-import java.util.function.ToLongFunction;
+import java.util.function.Function;
+import java.util.stream.IntStream;
 import org.ck.adventofcode.util.AOCSolution;
 import org.ck.codechallengelib.annotation.Solution;
 
@@ -19,111 +20,134 @@ public class Day06 extends AOCSolution {
 
   @Override
   protected void runPartOne(final Scanner in) {
-    run(in, Day06::getPart1Result);
+    run(in, strings -> Arrays.stream(strings).map(String::trim).map(Long::valueOf).toList());
   }
 
   @Override
   protected void runPartTwo(final Scanner in) {
-    run(in, Day06::getPart2Result);
+    run(in, Day06::parseVertical);
   }
 
-  private void run(final Scanner in, final ToLongFunction<List<List<String>>> getResult) {
+  private void run(final Scanner in, final Function<String[], List<Long>> numberParser) {
     final List<String> inputs = new ArrayList<>();
 
     while (in.hasNextLine()) {
       inputs.add(in.nextLine());
     }
 
-    final String operations = inputs.getLast();
-    final List<List<String>> columns = new ArrayList<>();
-    for (int j = 0; j < inputs.size() - 1; ++j) {
-      columns.add(new ArrayList<>());
-    }
-
-    int start = 1;
-    while (true) {
-      final int nextPlus = operations.indexOf('+', start);
-      final int nextTimes = operations.indexOf('*', start);
-
-      final int nextNumberStart;
-      if (nextPlus == -1 && nextTimes == -1) {
-        break;
-      } else if (nextPlus == -1) {
-        nextNumberStart = nextTimes;
-      } else if (nextTimes == -1) {
-        nextNumberStart = nextPlus;
-      } else {
-        nextNumberStart = Math.min(nextPlus, nextTimes);
-      }
-
-      for (int j = 0; j < inputs.size() - 1; ++j) {
-        columns.get(j).add(inputs.get(j).substring(start - 1, nextNumberStart - 1));
-      }
-
-      start = nextNumberStart + 1;
-    }
-    for (int j = 0; j < inputs.size() - 1; ++j) {
-      columns.get(j).add(inputs.get(j).substring(start - 1));
-    }
-
-    columns.add(new ArrayList<>(Arrays.asList(operations.trim().split("\\s+"))));
-
-    print(getResult.applyAsLong(columns));
+    final List<Problem> problems = getProblems(inputs, numberParser);
+    print(problems.stream().mapToLong(Problem::solve).sum());
   }
 
-  private static Long getPart1Result(List<List<String>> inputs) {
-    long sum = 0;
-    for (int i = 0; i < inputs.get(0).size(); ++i) {
-      final String operation = inputs.get(inputs.size() - 1).get(i);
-      long result = "*".equals(operation) ? 1 : 0;
+  private List<Problem> getProblems(
+      final List<String> inputs, final Function<String[], List<Long>> numberParser) {
+    final List<Integer> emptyColumns = getEmptyColumns(inputs);
 
-      for (int j = 0; j < inputs.size() - 1; ++j) {
-        switch (operation) {
-          case "+" -> result += Long.parseLong(inputs.get(j).get(i).trim());
-          case "*" -> result *= Long.parseLong(inputs.get(j).get(i).trim());
-        }
+    final String[][] inputArray = new String[emptyColumns.size() + 1][inputs.size()];
+    for (int inputRow = 0; inputRow < inputs.size(); ++inputRow) {
+      final String input = inputs.get(inputRow);
+
+      int previousIndex = 0;
+      for (int column = 0; column < emptyColumns.size(); ++column) {
+        final int emptyColumnIndex = emptyColumns.get(column);
+        inputArray[column][inputRow] = input.substring(previousIndex, emptyColumnIndex);
+
+        previousIndex = emptyColumnIndex + 1;
       }
 
-      sum += result;
+      inputArray[inputArray.length - 1][inputRow] = input.substring(previousIndex);
     }
 
-    return sum;
+    final List<Problem> problems = new ArrayList<>();
+    for (int problemIndex = 0; problemIndex < emptyColumns.size() + 1; ++problemIndex) {
+      problems.add(
+          new Problem(
+              numberParser.apply(
+                  Arrays.copyOfRange(
+                      inputArray[problemIndex], 0, inputArray[problemIndex].length - 1)),
+              inputArray[problemIndex][inputArray[problemIndex].length - 1].startsWith("+")
+                  ? new Operation.Addition()
+                  : new Operation.Multiplication()));
+    }
+
+    return problems;
   }
 
-  private static Long getPart2Result(List<List<String>> inputs) {
-    long sum = 0;
-    for (int i = 0; i < inputs.get(0).size(); ++i) {
-      int numbersCount = 0;
-      for (int j = 0; j < inputs.size() - 1; ++j) {
-        numbersCount = Math.max(numbersCount, inputs.get(j).get(i).length());
-      }
+  private static List<Integer> getEmptyColumns(final List<String> inputs) {
+    final Set<Integer> emptyIndices =
+        new HashSet<>(IntStream.range(0, inputs.getFirst().length()).boxed().toList());
+    for (final String input : inputs) {
+      final Set<Integer> emptyIndicesOnLine = new HashSet<>();
 
-      final List<Long> numbers = new ArrayList<>();
-      for (int numberIndex = 0; numberIndex < numbersCount; ++numberIndex) {
-        long number = 0;
-        for (int j = 0; j < inputs.size() - 1; ++j) {
-          char current = inputs.get(j).get(i).charAt(numberIndex);
-
-          if (current != ' ') {
-            number = number * 10 + (current - '0');
-          }
-        }
-
-        numbers.add(number);
-      }
-
-      final String operation = inputs.get(inputs.size() - 1).get(i);
-      long result = "*".equals(operation) ? 1 : 0;
-      for (Long number : numbers) {
-        switch (operation) {
-          case "+" -> result += number;
-          case "*" -> result *= number;
+      for (int i = 0; i < input.length(); ++i) {
+        if (' ' == input.charAt(i)) {
+          emptyIndicesOnLine.add(i);
         }
       }
 
-      sum += result;
+      emptyIndices.retainAll(emptyIndicesOnLine);
     }
 
-    return sum;
+    return emptyIndices.stream().sorted().toList();
+  }
+
+  private static List<Long> parseVertical(final String[] strings) {
+    final List<Long> numbers = new ArrayList<>();
+    for (int numberIndex = 0; numberIndex < strings[0].length(); ++numberIndex) {
+      long number = 0;
+      for (final String string : strings) {
+        char current = string.charAt(numberIndex);
+
+        if (current != ' ') {
+          number = number * 10 + (current - '0');
+        }
+      }
+
+      numbers.add(number);
+    }
+
+    return numbers;
+  }
+
+  private record Problem(List<Long> values, Operation operation) {
+    public long solve() {
+      values.forEach(operation::apply);
+
+      return operation.getResult();
+    }
+  }
+
+  private sealed interface Operation {
+    void apply(Long value);
+
+    long getResult();
+
+    final class Multiplication implements Operation {
+      private long result = 1;
+
+      @Override
+      public void apply(Long value) {
+        result *= value;
+      }
+
+      @Override
+      public long getResult() {
+        return result;
+      }
+    }
+
+    final class Addition implements Operation {
+      private long result = 0;
+
+      @Override
+      public void apply(Long value) {
+        result += value;
+      }
+
+      @Override
+      public long getResult() {
+        return result;
+      }
+    }
   }
 }

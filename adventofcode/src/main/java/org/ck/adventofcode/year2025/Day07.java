@@ -13,7 +13,7 @@ import org.ck.codechallengelib.annotation.Solution;
     category = "2025")
 @Solution(
     id = 20250702,
-    name = "Day 7: Laboratories  - Part 2",
+    name = "Day 7: Laboratories - Part 2",
     url = "https://adventofcode.com/2025/day/7#part2",
     category = "2025")
 public class Day07 extends AOCSolution {

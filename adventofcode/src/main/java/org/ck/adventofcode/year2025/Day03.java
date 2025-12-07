@@ -6,12 +6,12 @@ import org.ck.codechallengelib.annotation.Solution;
 
 @Solution(
     id = 20250301,
-    name = "Day 3: Lobby ",
+    name = "Day 3: Lobby",
     url = "https://adventofcode.com/2025/day/3",
     category = "2025")
 @Solution(
     id = 20250302,
-    name = "Day 3: Lobby  - Part 2",
+    name = "Day 3: Lobby - Part 2",
     url = "https://adventofcode.com/2025/day/3#part2",
     category = "2025")
 public class Day03 extends AOCSolution {

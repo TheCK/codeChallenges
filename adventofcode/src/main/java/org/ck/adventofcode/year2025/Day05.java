@@ -27,8 +27,8 @@ public class Day05 extends AOCSolution {
     run(in, Day05::getAllFreshIngredientsCount);
   }
 
-  private void run(final Scanner in, final ToLongFunction<Set<Range>> getPartIngredientCount) {
-    final Set<Range> ranges = new HashSet<>();
+  private void run(final Scanner in, final ToLongFunction<List<Range>> getPartIngredientCount) {
+    final List<Range> ranges = new ArrayList<>();
 
     while (in.hasNextLine()) {
       final String line = in.nextLine();
@@ -44,7 +44,7 @@ public class Day05 extends AOCSolution {
     print(getPartIngredientCount.applyAsLong(ranges));
   }
 
-  private static ToLongFunction<Set<Range>> getAvailableFreshIngredientsCount(final Scanner in) {
+  private static ToLongFunction<List<Range>> getAvailableFreshIngredientsCount(final Scanner in) {
     return ranges -> {
       long fresh = 0;
       while (in.hasNextLine()) {
@@ -62,37 +62,25 @@ public class Day05 extends AOCSolution {
     };
   }
 
-  private static long getAllFreshIngredientsCount(final Set<Range> ranges) {
-    Set<Range> fresh = ranges;
-    boolean merged = true;
-    while (merged) {
-      Set<Range> newFresh = new HashSet<>(fresh);
-      merged = false;
+  private static long getAllFreshIngredientsCount(final List<Range> ranges) {
+    ranges.sort(Comparator.comparing(Range::start));
 
-      for (Range first : fresh) {
-        for (Range second : fresh) {
-          if (first != second && first.end >= second.start && first.end <= second.end) {
-            merged = true;
-            newFresh.remove(first);
-            newFresh.remove(second);
-            newFresh.add(new Range(Math.min(first.start, second.start), second.end));
-            break;
-          }
-        }
+    final List<Range> merged = new ArrayList<>();
+    Range current = ranges.get(0);
 
-        if (merged) {
-          break;
-        }
+    for (int i = 1; i < ranges.size(); ++i) {
+      final Range next = ranges.get(i);
+
+      if (next.start <= current.end + 1) {
+        current = new Range(current.start, Math.max(current.end, next.end));
+      } else {
+        merged.add(current);
+        current = next;
       }
-
-      fresh = newFresh;
     }
+    merged.add(current);
 
-    long freshCount = 0;
-    for (Range range : fresh) {
-      freshCount += range.end - range.start + 1;
-    }
-    return freshCount;
+    return merged.stream().mapToLong(range -> range.end - range.start + 1).sum();
   }
 
   private record Range(long start, long end) {}

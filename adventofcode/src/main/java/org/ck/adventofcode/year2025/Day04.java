@@ -26,53 +26,80 @@ public class Day04 extends AOCSolution {
     run(in, true);
   }
 
-  private void run(final Scanner in, final boolean loop) {
+  private void run(final Scanner in, final boolean repeat) {
     final List<String> rows = new ArrayList<>();
 
     while (in.hasNextLine()) {
       rows.add(in.nextLine());
     }
 
-    char[][] grid = new char[rows.size()][rows.get(0).length()];
-    for (int i = 0; i < rows.size(); ++i) {
-      for (int j = 0; j < rows.get(i).length(); ++j) {
-        grid[i][j] = rows.get(i).charAt(j);
+    final boolean[][] done = new boolean[rows.size()][rows.getFirst().length()];
+    final Queue<Coordinate> queue = new ArrayDeque<>(getInitialEmptyCoordinates(rows));
+
+    int movable = 0;
+    while (!queue.isEmpty()) {
+      final Coordinate coordinate = queue.poll();
+      if (done[coordinate.x][coordinate.y]) {
+        continue;
+      }
+
+      final char current = rows.get(coordinate.x).charAt(coordinate.y);
+      final Set<Coordinate> neighbours = getNeighbours(done, coordinate, rows, repeat);
+      if (current == '.') {
+        queue.addAll(neighbours);
+        done[coordinate.x][coordinate.y] = true;
+      } else {
+        if (neighbours.size() < 4) {
+          ++movable;
+          done[coordinate.x][coordinate.y] = true;
+          if (repeat) {
+            queue.addAll(neighbours);
+          }
+        } else {
+          done[coordinate.x][coordinate.y] = !repeat;
+        }
       }
     }
 
-    int movable = 0;
-    boolean moved = false;
-    do {
-      char[][] newGrid = new char[grid.length][grid[0].length];
-      moved = false;
-
-      for (int row = 0; row < grid.length; ++row) {
-        for (int column = 0; column < grid[row].length; ++column) {
-          int surrounding = 0;
-
-          for (int i = Math.max(row - 1, 0); i <= Math.min(row + 1, grid.length - 1); ++i) {
-            for (int j = Math.max(column - 1, 0);
-                j <= Math.min(column + 1, grid[i].length - 1);
-                ++j) {
-              if (i != row || j != column) {
-                surrounding += grid[i][j] == '@' ? 1 : 0;
-              }
-            }
-          }
-
-          if (grid[row][column] == '@' && surrounding < 4) {
-            moved = true;
-            ++movable;
-            newGrid[row][column] = '.';
-          } else {
-            newGrid[row][column] = grid[row][column];
-          }
-        }
-      }
-
-      grid = newGrid;
-    } while (loop && moved);
-
     print(movable);
   }
+
+  private static List<Coordinate> getInitialEmptyCoordinates(final List<String> rows) {
+    final List<Coordinate> coordinates = new ArrayList<>();
+    for (int i = 0; i < rows.size(); ++i) {
+      for (int j = 0; j < rows.get(i).length(); ++j) {
+        if (rows.get(i).charAt(j) == '.') {
+          coordinates.add(new Coordinate(i, j));
+        }
+      }
+    }
+
+    return coordinates;
+  }
+
+  private Set<Coordinate> getNeighbours(
+      final boolean[][] done,
+      final Coordinate coordinate,
+      final List<String> rows,
+      final boolean repeat) {
+    final Set<Coordinate> neighbours = new HashSet<>();
+
+    for (int x = Math.max(coordinate.x - 1, 0);
+        x <= Math.min(coordinate.x + 1, done.length - 1);
+        ++x) {
+      for (int y = Math.max(coordinate.y - 1, 0);
+          y <= Math.min(coordinate.y + 1, done[coordinate.x].length - 1);
+          ++y) {
+        if ((x != coordinate.x || y != coordinate.y)
+            && rows.get(x).charAt(y) == '@'
+            && (!done[x][y] || !repeat)) {
+          neighbours.add(new Coordinate(x, y));
+        }
+      }
+    }
+
+    return neighbours;
+  }
+
+  private record Coordinate(int x, int y) {}
 }
